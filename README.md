@@ -11,6 +11,8 @@
 
 > **Disclaimer.** This is an **unofficial fan project**. Harry Potter, Hogwarts, the wizarding-world setting, and all related names, characters, places, and indicia are trademarks of Warner Bros. Entertainment Inc., J.K. Rowling, and other rights holders. This mod is **not affiliated with, endorsed by, or sponsored by** any rights holder. Non-commercial fan use only — see [License & IP disclaimer](#license--ip-disclaimer) at the bottom.
 
+> **Project status — design-complete, not yet playtested.** All systems and content are designed and implemented in code, but the maintainer has **not yet run a full in-game play-through inside tModLoader**. The mod is **not on Steam Workshop**. The repository is open for **collaborators** — see [Looking for help](#looking-for-help) below — and is not currently a player-facing release.
+
 A comprehensive Harry Potter Hogwarts experience mod for Terraria via tModLoader. **590 C# source files, 682 sprites, 1,576 project files.** Canon-audited and redesigned with cleaner Hallows/Horcrux progression and stronger late-game consistency.
 
 **Core Identity:** You are a Hogwarts student experiencing memories from across wizarding history through a Pensieve, learning spells, mastering your wand, and facing the rising darkness.
@@ -160,6 +162,25 @@ The included in-game sprites are complete and release-checked. Asset coverage is
 - **Game**: Terraria by Re-Logic
 - **Modding Framework**: tModLoader
 - **Inspiration**: J.K. Rowling's Harry Potter series, Fantastic Beasts
+
+## Looking for help
+
+This mod is **design-complete in code but not yet gameplay-verified**. Before any player-facing release (Steam Workshop), it needs collaborators in the following areas. If any of these match what you'd like to work on, browse [open issues](https://github.com/SamSi0322/WizardingWorld/issues) or open a new one — see [CONTRIBUTING.md](CONTRIBUTING.md) for build setup.
+
+| Need | What it looks like | Label |
+|------|--------------------|-------|
+| **Playtesters** | Run a full play-through (or one boss fight, one biome, one questline). File issues for crashes, missing assets, broken progression, or balance problems. | `playtest needed` |
+| **Multiplayer-sync verifiers** | Specifically test `Common/Players/` and `Common/Systems/` paths in 2+ player co-op (save/load, host-vs-client desyncs). | `multiplayer-sync` |
+| **Balance reviewers** | Review the 23 wands × 5 cores DPS / mana spread, 12 boss HP curves, drop rates. Flag obvious outliers. | `balance` |
+| **Sprite artists** | Replace or polish placeholder SVG sprites in `Assets/SVG/`. Style is line-art monoline indigo. | `sprite-polish` |
+| **Localizers** | Native-speaker review or new-language translation of the three HJSON files in `Localization/`. Currently English / Simplified Chinese / Traditional Chinese. | `localization` |
+| **Canon-audit reviewers** | Cross-check content against `HarryPotterModCatalog.txt` for canon consistency or design suggestions. | `audit` |
+
+Issues are tagged with the labels above. The maintainer has limited bandwidth, so:
+
+- **Take ownership** — comment "I'll take this" on an issue, work on a fork, open a PR.
+- **Small first PR** — a single sprite polish, a typo fix, a balance tweak with rationale. Big rewrites need an issue first.
+- **Discussions** — design questions / ideas / "should we do X?" go in [GitHub Discussions](https://github.com/SamSi0322/WizardingWorld/discussions), not issues.
 
 ## License & IP disclaimer
 
