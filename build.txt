@@ -1,0 +1,6 @@
+displayName = Wizarding World
+author = Sam
+version = 1.0.0
+homepage =
+side = Both
+buildIgnore = *.csproj, *.user, obj\*, bin\*, .vs\*, *.sln, sprites\*

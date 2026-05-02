@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 42 42">
+  <!-- Ash Wand - loyal to its owner, casts Incendio -->
+  <defs>
+    <linearGradient id="ashWood" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#D4C4A8"/>
+      <stop offset="50%" stop-color="#BBA88A"/>
+      <stop offset="100%" stop-color="#8E7B62"/>
+    </linearGradient>
+    <linearGradient id="fireGlow" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FF6600" stop-opacity="0.9"/>
+      <stop offset="50%" stop-color="#FF4400" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#FF2200" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <circle cx="8" cy="8" r="4" fill="url(#fireGlow)" opacity="0.7"/>
+  <!-- Flame wisps at tip -->
+  <path d="M6,6 Q5,3 7,4" stroke="#FF8800" stroke-width="0.6" fill="none" opacity="0.6"/>
+  <path d="M9,5 Q10,2 8,3" stroke="#FFAA00" stroke-width="0.5" fill="none" opacity="0.5"/>
+  <!-- Ash shaft - pale wood with dark streaks -->
+  <line x1="8" y1="8" x2="34" y2="34" stroke="url(#ashWood)" stroke-width="2.8" stroke-linecap="round"/>
+  <line x1="15" y1="14" x2="17" y2="16" stroke="#7A6852" stroke-width="0.6" opacity="0.4"/>
+  <line x1="22" y1="21" x2="25" y2="24" stroke="#7A6852" stroke-width="0.6" opacity="0.4"/>
+  <!-- Carved handle band -->
+  <line x1="31" y1="33" x2="33" y2="31" stroke="#6E5C44" stroke-width="0.8"/>
+  <ellipse cx="35" cy="35" rx="2.3" ry="2.3" fill="#7E6B52" stroke="#6E5C44" stroke-width="0.5"/>
+</svg>

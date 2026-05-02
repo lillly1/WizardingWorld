@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 32">
+  <rect width="40" height="32" fill="#1a1a2a"/>
+  <!-- Faint moon -->
+  <circle cx="35" cy="5" r="3" fill="#3a3a5a" opacity="0.3"/>
+  <!-- Bat-like wings -->
+  <g fill="#1a1a2a" stroke="#2a2a3a" stroke-width="0.5">
+    <!-- Left wing -->
+    <path d="M14 10 L4 4 L6 10 L2 6 L5 12 L1 10 L8 15 Z" fill="#1a1a25"/>
+    <!-- Wing membrane -->
+    <path d="M4 4 L6 10 L8 8 Z" fill="#22222f" opacity="0.6"/>
+    <path d="M2 6 L5 12 L7 10 Z" fill="#22222f" opacity="0.6"/>
+    <!-- Right wing -->
+    <path d="M22 8 L32 2 L30 8 L35 4 L31 10 L37 6 L28 13 Z" fill="#1a1a25"/>
+    <!-- Wing membrane -->
+    <path d="M32 2 L30 8 L28 6 Z" fill="#22222f" opacity="0.6"/>
+    <path d="M35 4 L31 10 L29 8 Z" fill="#22222f" opacity="0.6"/>
+  </g>
+  <!-- Wing bone structure -->
+  <g stroke="#3a3a4a" stroke-width="0.4" fill="none" opacity="0.5">
+    <path d="M14 10 L4 4"/>
+    <path d="M14 10 L2 6"/>
+    <path d="M14 10 L1 10"/>
+    <path d="M22 8 L32 2"/>
+    <path d="M22 8 L35 4"/>
+    <path d="M22 8 L37 6"/>
+  </g>
+  <!-- Skeletal horse body -->
+  <g>
+    <!-- Ribcage visible torso -->
+    <ellipse cx="20" cy="16" rx="7" ry="4" fill="#2a2a3a"/>
+    <!-- Visible ribs -->
+    <g stroke="#3a3a4a" stroke-width="0.6" fill="none">
+      <path d="M15 14 Q17 13 19 14"/>
+      <path d="M15 15.5 Q17 14.5 19 15.5"/>
+      <path d="M15 17 Q17 16 19 17"/>
+      <path d="M21 14 Q23 13 25 14"/>
+      <path d="M21 15.5 Q23 14.5 25 15.5"/>
+      <path d="M21 17 Q23 16 25 17"/>
+    </g>
+    <!-- Spine ridge -->
+    <path d="M12 14 Q20 12 27 14" stroke="#3a3a4a" stroke-width="0.5" fill="none"/>
+    <!-- Hindquarters - bony -->
+    <path d="M25 15 Q29 14 29 18 Q29 20 27 20" fill="#2a2a3a"/>
+    <!-- Hip bones protruding -->
+    <circle cx="26" cy="14.5" r="1" fill="#3a3a4a" opacity="0.5"/>
+    <!-- Neck - long and thin -->
+    <path d="M14 13 Q11 10 10 7 Q10 5 11 4" stroke="#2a2a3a" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <!-- Head - horse skull-like -->
+    <path d="M9 4 Q7 3 6 4 Q5 5 6 7 L9 7 Q11 6 11 4 Z" fill="#2a2a3a"/>
+    <!-- Hollow eye -->
+    <circle cx="8" cy="5" r="1" fill="#1a1a2a"/>
+    <!-- Eerie white eye glow -->
+    <circle cx="8" cy="5" r="0.4" fill="#8080a0" opacity="0.7"/>
+    <!-- Nostril -->
+    <ellipse cx="6.5" cy="6" rx="0.5" ry="0.3" fill="#1a1a1a"/>
+    <!-- Skeletal front legs -->
+    <path d="M15 19 L14 25 L13 28 L14.5 28 L15 25 L16 20" fill="#2a2a3a"/>
+    <path d="M18 20 L17 25 L16 28 L17.5 28 L18 25 L19 20" fill="#2a2a3a"/>
+    <!-- Skeletal back legs -->
+    <path d="M25 19 L24 25 L23 28 L24.5 28 L25 25 L26 20" fill="#2a2a3a"/>
+    <path d="M28 19 L27 25 L26 28 L27.5 28 L28 25 L29 20" fill="#2a2a3a"/>
+    <!-- Hooves -->
+    <g fill="#1a1a2a">
+      <rect x="13" y="27.5" width="2" height="1.5" rx="0.5"/>
+      <rect x="16" y="27.5" width="2" height="1.5" rx="0.5"/>
+      <rect x="23" y="27.5" width="2" height="1.5" rx="0.5"/>
+      <rect x="26" y="27.5" width="2" height="1.5" rx="0.5"/>
+    </g>
+    <!-- Tail - thin and bony -->
+    <path d="M29 17 Q33 18 34 22 Q33 25 31 24" stroke="#2a2a3a" stroke-width="1" fill="none"/>
+  </g>
+  <!-- Eerie mist at feet -->
+  <g fill="#3a3a5a" opacity="0.15">
+    <ellipse cx="15" cy="30" rx="6" ry="1.5"/>
+    <ellipse cx="27" cy="30" rx="6" ry="1.5"/>
+  </g>
+</svg>

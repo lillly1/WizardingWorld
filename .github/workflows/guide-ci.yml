@@ -1,0 +1,105 @@
+name: Guide Pipeline
+
+on:
+  push:
+    branches: [main, master]
+    paths:
+      - 'Content/**'
+      - 'Common/**'
+      - 'scripts/**'
+      - 'schemas/**'
+      - 'generate_english_pdf.py'
+      - 'generate_chinese_pdf.py'
+  pull_request:
+    paths:
+      - 'Content/**'
+      - 'Common/**'
+      - 'scripts/**'
+      - 'schemas/**'
+      - 'generate_english_pdf.py'
+      - 'generate_chinese_pdf.py'
+  workflow_dispatch:
+
+jobs:
+  verify-and-generate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: pip install fpdf2
+
+      # Layer A: Auto-derived counts
+      - name: Scan content
+        run: python scripts/scan_content.py --pretty
+
+      # Layer A: Auto-derived mechanical data
+      - name: Export mechanical data
+        run: python scripts/export_mechanical_data.py
+
+      # Layer B: Curated narrative content
+      - name: Export guide content
+        run: python scripts/export_guide_data.py
+
+      # Layer C: Strict verification (48 checks -- fails pipeline on drift)
+      - name: Verify guide consistency
+        run: python scripts/verify_guide.py --strict
+
+      # Generate outputs
+      - name: Generate English PDF
+        run: python generate_english_pdf.py
+
+      - name: Generate Chinese PDF
+        continue-on-error: true
+        run: python generate_chinese_pdf.py
+
+      # Generate release manifest
+      - name: Generate release manifest
+        run: |
+          python -c "
+          import json, datetime
+          with open('scripts/content_manifest.json') as f:
+              manifest = json.load(f)
+          release = {
+              'phase': 'Phase 7',
+              'timestamp': datetime.datetime.utcnow().isoformat() + 'Z',
+              'commit': '${{ github.sha }}',
+              'counts': manifest['summary'],
+              'verification': '48 checks passed',
+              'artifacts': [
+                  'WizardingWorld_Guide_EN.pdf',
+                  'scripts/content_manifest.json',
+                  'scripts/guide_content.json',
+                  'scripts/mechanical_data/',
+              ],
+          }
+          with open('release_manifest.json', 'w') as f:
+              json.dump(release, f, indent=2)
+          print('Release manifest generated')
+          "
+
+      # Upload all truth artifacts
+      - name: Upload artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: guide-artifacts
+          path: |
+            WizardingWorld_Guide_EN.pdf
+            release_manifest.json
+            scripts/content_manifest.json
+            scripts/guide_content.json
+            scripts/mechanical_data/
+          retention-days: 90
+
+      - name: Summary
+        run: |
+          echo "## Guide Pipeline Results" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          python scripts/scan_content.py --check >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "Verification: **48 checks passed**" >> $GITHUB_STEP_SUMMARY

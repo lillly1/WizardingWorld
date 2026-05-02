@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36">
+  <defs>
+    <linearGradient id="blade" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E8E8EE"/>
+      <stop offset="35%" stop-color="#C0C0D0"/>
+      <stop offset="50%" stop-color="#F0F0FF"/>
+      <stop offset="65%" stop-color="#C0C0D0"/>
+      <stop offset="100%" stop-color="#A0A0B0"/>
+    </linearGradient>
+    <linearGradient id="bladeEdge" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0"/>
+      <stop offset="45%" stop-color="#FFFFFF" stop-opacity="0.8"/>
+      <stop offset="55%" stop-color="#FFFFFF" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFD700"/>
+      <stop offset="50%" stop-color="#FFC200"/>
+      <stop offset="100%" stop-color="#B8860B"/>
+    </linearGradient>
+    <radialGradient id="ruby" cx="50%" cy="40%" r="50%">
+      <stop offset="0%" stop-color="#FF3040"/>
+      <stop offset="60%" stop-color="#CC0020"/>
+      <stop offset="100%" stop-color="#8B0000"/>
+    </radialGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="0.5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <linearGradient id="grip" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8B0000"/>
+      <stop offset="50%" stop-color="#A00010"/>
+      <stop offset="100%" stop-color="#600000"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Blade - diagonal from top-right to center -->
+  <polygon points="28,3 30,5 18.5,18 16.5,16" fill="url(#blade)" stroke="#9090A0" stroke-width="0.3"/>
+  <!-- Blade gleam highlight -->
+  <line x1="28.5" y1="3.5" x2="17.5" y2="17" stroke="url(#bladeEdge)" stroke-width="0.8" opacity="0.6"/>
+  <!-- Blade edge line -->
+  <line x1="29" y1="4" x2="17.5" y2="17" stroke="#FFFFFF" stroke-width="0.2" opacity="0.4"/>
+
+  <!-- Fuller (blood groove) -->
+  <line x1="27.5" y1="5" x2="18" y2="16.5" stroke="#A0A0B8" stroke-width="0.5" opacity="0.5"/>
+
+  <!-- Crossguard -->
+  <rect x="11" y="16" width="14" height="2.5" rx="0.8" transform="rotate(-45 18 17.5)" fill="url(#gold)" stroke="#8B6914" stroke-width="0.3"/>
+  <!-- Crossguard ornate ends -->
+  <circle cx="12.5" cy="14" r="1.2" fill="url(#gold)" stroke="#8B6914" stroke-width="0.2"/>
+  <circle cx="21.5" cy="23" r="1.2" fill="url(#gold)" stroke="#8B6914" stroke-width="0.2"/>
+
+  <!-- Rubies on crossguard -->
+  <circle cx="12.5" cy="14" r="0.7" fill="url(#ruby)" filter="url(#glow)"/>
+  <circle cx="21.5" cy="23" r="0.7" fill="url(#ruby)" filter="url(#glow)"/>
+  <!-- Center ruby at guard junction -->
+  <circle cx="17" cy="18.5" r="0.9" fill="url(#ruby)" filter="url(#glow)"/>
+
+  <!-- Grip/Handle -->
+  <rect x="16" y="19.5" width="2.8" height="8" rx="0.5" transform="rotate(-45 17.4 23.5)" fill="url(#grip)" stroke="#500000" stroke-width="0.3"/>
+  <!-- Grip wrapping lines -->
+  <line x1="14" y1="23" x2="16" y2="21" stroke="#FFD700" stroke-width="0.3" opacity="0.6"/>
+  <line x1="13" y1="24" x2="15" y2="22" stroke="#FFD700" stroke-width="0.3" opacity="0.6"/>
+  <line x1="12" y1="25" x2="14" y2="23" stroke="#FFD700" stroke-width="0.3" opacity="0.6"/>
+  <line x1="11" y1="26" x2="13" y2="24" stroke="#FFD700" stroke-width="0.3" opacity="0.6"/>
+  <line x1="10" y1="27" x2="12" y2="25" stroke="#FFD700" stroke-width="0.3" opacity="0.6"/>
+
+  <!-- Pommel -->
+  <circle cx="9.5" cy="27.5" r="1.8" fill="url(#gold)" stroke="#8B6914" stroke-width="0.3"/>
+  <circle cx="9.5" cy="27.5" r="1" fill="url(#ruby)" filter="url(#glow)"/>
+
+  <!-- Subtle sparkle on blade -->
+  <circle cx="25" cy="7" r="0.4" fill="#FFFFFF" opacity="0.8"/>
+  <line x1="24.5" y1="7" x2="25.5" y2="7" stroke="#FFFFFF" stroke-width="0.2" opacity="0.6"/>
+  <line x1="25" y1="6.5" x2="25" y2="7.5" stroke="#FFFFFF" stroke-width="0.2" opacity="0.6"/>
+</svg>

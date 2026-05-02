@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <defs>
+    <linearGradient id="huffBg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#c8a800"/>
+      <stop offset="100%" stop-color="#8a7500"/>
+    </linearGradient>
+  </defs>
+  <rect width="32" height="32" rx="4" fill="url(#huffBg)"/>
+  <!-- Black border accent -->
+  <rect x="1" y="1" width="30" height="30" rx="3" fill="none" stroke="#2a2a2a" stroke-width="0.8"/>
+  <!-- Badger emblem -->
+  <g transform="translate(6,2) scale(0.85)">
+    <!-- Body -->
+    <ellipse cx="10" cy="11" rx="5" ry="3.5" fill="#3a3a3a"/>
+    <!-- Head -->
+    <ellipse cx="15" cy="9" rx="3" ry="2.5" fill="#3a3a3a"/>
+    <!-- White face stripe -->
+    <path d="M14 6.5 L15 6 L16 6.5 L16 12 L14 12 Z" fill="#f0f0f0" opacity="0.8"/>
+    <!-- Eyes -->
+    <circle cx="14" cy="8.5" r="0.5" fill="#1a1a1a"/>
+    <circle cx="16" cy="8.5" r="0.5" fill="#1a1a1a"/>
+    <!-- Nose -->
+    <ellipse cx="15" cy="10" rx="0.6" ry="0.4" fill="#1a1a1a"/>
+    <!-- Ears -->
+    <circle cx="13.5" cy="6.8" r="0.8" fill="#4a4a4a"/>
+    <circle cx="16.5" cy="6.8" r="0.8" fill="#4a4a4a"/>
+    <!-- Legs -->
+    <rect x="7" y="13" width="2" height="3" rx="0.8" fill="#3a3a3a"/>
+    <rect x="11" y="13" width="2" height="3" rx="0.8" fill="#3a3a3a"/>
+    <!-- Tail -->
+    <ellipse cx="5.5" cy="11" rx="1.5" ry="0.8" fill="#3a3a3a"/>
+  </g>
+  <!-- Black goblet -->
+  <g transform="translate(3,18)">
+    <path d="M2 0 L0 6 Q0 8 3 8 L9 8 Q12 8 12 6 L10 0 Z" fill="#2a2a2a"/>
+    <rect x="1.5" y="0" width="9" height="1" rx="0.5" fill="#3a3a3a"/>
+    <rect x="4.5" y="8" width="3" height="2" fill="#1a1a1a"/>
+    <ellipse cx="6" cy="11" rx="4" ry="1" fill="#2a2a2a"/>
+    <path d="M3 2 L1.5 6 Q2 7 6 7 Q10 7 10.5 6 L9 2 Z" fill="#c8a800" opacity="0.4"/>
+  </g>
+  <!-- Sparkle -->
+  <circle cx="26" cy="6" r="0.6" fill="#ffd700" opacity="0.8"/>
+  <circle cx="28" cy="22" r="0.5" fill="#ffd700" opacity="0.6"/>
+</svg>

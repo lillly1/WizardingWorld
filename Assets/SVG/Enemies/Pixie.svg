@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36">
+  <defs>
+    <radialGradient id="pixieGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#40a0ff" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#2060cc" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="36" height="36" fill="#1a2a4a"/>
+  <!-- Glow aura -->
+  <circle cx="18" cy="18" r="14" fill="url(#pixieGlow)"/>
+  <!-- Wings -->
+  <g fill="#80c0ff" opacity="0.5" stroke="#60a0e0" stroke-width="0.4">
+    <!-- Left wing upper -->
+    <path d="M15 14 Q8 8 6 12 Q5 16 14 16 Z"/>
+    <!-- Left wing lower -->
+    <path d="M14 17 Q7 18 6 22 Q7 24 14 20 Z"/>
+    <!-- Right wing upper -->
+    <path d="M21 14 Q28 8 30 12 Q31 16 22 16 Z"/>
+    <!-- Right wing lower -->
+    <path d="M22 17 Q29 18 30 22 Q29 24 22 20 Z"/>
+  </g>
+  <!-- Wing veins -->
+  <g stroke="#90d0ff" stroke-width="0.3" fill="none" opacity="0.4">
+    <path d="M14 15 L8 11"/>
+    <path d="M14 15 L7 14"/>
+    <path d="M22 15 L28 11"/>
+    <path d="M22 15 L29 14"/>
+  </g>
+  <!-- Body -->
+  <ellipse cx="18" cy="18" rx="3" ry="5" fill="#3080dd"/>
+  <!-- Head -->
+  <circle cx="18" cy="12" r="3.5" fill="#40a0ff"/>
+  <!-- Pointed ears -->
+  <polygon points="14.5,11 11,9 14,12.5" fill="#40a0ff"/>
+  <polygon points="21.5,11 25,9 22,12.5" fill="#40a0ff"/>
+  <!-- Mischievous face -->
+  <!-- Eyes - big and expressive -->
+  <ellipse cx="16.5" cy="11.5" rx="1.2" ry="1" fill="#000030"/>
+  <ellipse cx="19.5" cy="11.5" rx="1.2" ry="1" fill="#000030"/>
+  <!-- Eye glints -->
+  <circle cx="17" cy="11.2" r="0.3" fill="#ffffff"/>
+  <circle cx="20" cy="11.2" r="0.3" fill="#ffffff"/>
+  <!-- Mischievous grin -->
+  <path d="M16 13.5 Q18 15.5 20 13.5" stroke="#002060" stroke-width="0.6" fill="none"/>
+  <!-- Nose -->
+  <circle cx="18" cy="12.5" r="0.4" fill="#3080cc"/>
+  <!-- Arms - gesturing -->
+  <path d="M15 16 L10 14 L9 15" stroke="#3080dd" stroke-width="1.2" fill="none" stroke-linecap="round"/>
+  <path d="M21 16 L26 14 L27 15" stroke="#3080dd" stroke-width="1.2" fill="none" stroke-linecap="round"/>
+  <!-- Little hands -->
+  <circle cx="9" cy="15" r="0.8" fill="#40a0ff"/>
+  <circle cx="27" cy="15" r="0.8" fill="#40a0ff"/>
+  <!-- Legs -->
+  <path d="M17 23 L16 28 L15 29" stroke="#3080dd" stroke-width="1" fill="none" stroke-linecap="round"/>
+  <path d="M19 23 L20 28 L21 29" stroke="#3080dd" stroke-width="1" fill="none" stroke-linecap="round"/>
+  <!-- Sparkle trail -->
+  <g fill="#a0d8ff" opacity="0.7">
+    <circle cx="8" cy="26" r="0.5"/>
+    <circle cx="12" cy="28" r="0.4"/>
+    <circle cx="6" cy="30" r="0.6"/>
+    <circle cx="10" cy="32" r="0.3"/>
+    <circle cx="28" cy="26" r="0.4"/>
+    <circle cx="26" cy="30" r="0.5"/>
+  </g>
+</svg>

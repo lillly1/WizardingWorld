@@ -1,0 +1,66 @@
+# =============================================================================
+# .NET / Visual Studio
+# =============================================================================
+bin/
+obj/
+.vs/
+*.user
+*.userprefs
+*.suo
+*.cache
+*.csproj.user
+*.dotnet-tools.json
+
+# Build artefacts
+*.tmod
+*.dll
+*.pdb
+
+# Resharper / Rider
+_ReSharper*/
+*.[Rr]e[Ss]harper
+.idea/
+
+# =============================================================================
+# Python (sprite generators, scripts, build helpers)
+# =============================================================================
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+
+# =============================================================================
+# Mod build / release outputs
+# =============================================================================
+dist/
+generated_artifacts/
+
+# =============================================================================
+# Development reference assets (large, not part of the mod)
+# =============================================================================
+# Gemini-generated sprite reference images (~68 MB) used during design,
+# not shipped with the mod itself.
+tools/gemini/
+
+# =============================================================================
+# IDE / Editor / OS
+# =============================================================================
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# =============================================================================
+# tModLoader runtime + secrets
+# =============================================================================
+# Local Terraria save data must never be committed.
+*.plr
+*.wld
+*.bak
+.env
+.env.local

@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <defs>
+    <linearGradient id="furBrown" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#8B5E3C"/>
+      <stop offset="50%" stop-color="#6B4226"/>
+      <stop offset="100%" stop-color="#4a2d1a"/>
+    </linearGradient>
+    <linearGradient id="spine" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#5a3620"/>
+      <stop offset="50%" stop-color="#4a2810"/>
+      <stop offset="100%" stop-color="#5a3620"/>
+    </linearGradient>
+  </defs>
+  <!-- Book body / cover -->
+  <rect x="5" y="7" width="22" height="18" rx="2" fill="url(#furBrown)" stroke="#3a1e0a" stroke-width="0.5"/>
+  <!-- Spine -->
+  <rect x="5" y="7" width="3" height="18" rx="1" fill="url(#spine)"/>
+  <!-- Fur texture (tufts) -->
+  <path d="M10 7 Q10.5 5 11 7" stroke="#7a4e2c" stroke-width="0.5" fill="none"/>
+  <path d="M14 7 Q14.5 4.5 15 7" stroke="#7a4e2c" stroke-width="0.5" fill="none"/>
+  <path d="M18 7 Q18.5 5.5 19 7" stroke="#7a4e2c" stroke-width="0.5" fill="none"/>
+  <path d="M22 7 Q22.5 5 23 7" stroke="#7a4e2c" stroke-width="0.5" fill="none"/>
+  <path d="M10 25 Q10.5 27 11 25" stroke="#7a4e2c" stroke-width="0.5" fill="none"/>
+  <path d="M14 25 Q14.5 27.5 15 25" stroke="#7a4e2c" stroke-width="0.5" fill="none"/>
+  <path d="M18 25 Q18.5 27 19 25" stroke="#7a4e2c" stroke-width="0.5" fill="none"/>
+  <path d="M22 25 Q22.5 27 23 25" stroke="#7a4e2c" stroke-width="0.5" fill="none"/>
+  <!-- Side fur -->
+  <path d="M27 10 Q29 10.5 27 11" stroke="#7a4e2c" stroke-width="0.5" fill="none"/>
+  <path d="M27 14 Q29 14.5 27 15" stroke="#7a4e2c" stroke-width="0.5" fill="none"/>
+  <path d="M27 18 Q29 18.5 27 19" stroke="#7a4e2c" stroke-width="0.5" fill="none"/>
+  <!-- Angry eyes -->
+  <ellipse cx="14" cy="14" rx="3" ry="2.2" fill="#ffffcc" stroke="#3a1e0a" stroke-width="0.5"/>
+  <ellipse cx="22" cy="14" rx="3" ry="2.2" fill="#ffffcc" stroke="#3a1e0a" stroke-width="0.5"/>
+  <!-- Angry eyebrows (angled down toward center) -->
+  <line x1="11.5" y1="11" x2="16" y2="12.5" stroke="#3a1e0a" stroke-width="1" stroke-linecap="round"/>
+  <line x1="24.5" y1="11" x2="20" y2="12.5" stroke="#3a1e0a" stroke-width="1" stroke-linecap="round"/>
+  <!-- Pupils (looking angry/forward) -->
+  <ellipse cx="14.8" cy="14" rx="1.2" ry="1.5" fill="#8B0000"/>
+  <ellipse cx="21.2" cy="14" rx="1.2" ry="1.5" fill="#8B0000"/>
+  <circle cx="14.8" cy="14" r="0.6" fill="#2a0000"/>
+  <circle cx="21.2" cy="14" r="0.6" fill="#2a0000"/>
+  <!-- Eye gleam -->
+  <circle cx="14.2" cy="13.3" r="0.4" fill="white" opacity="0.7"/>
+  <circle cx="20.6" cy="13.3" r="0.4" fill="white" opacity="0.7"/>
+  <!-- Mouth with teeth -->
+  <path d="M11 19 Q18 22 25 19" fill="#2a0000" stroke="#3a1e0a" stroke-width="0.5"/>
+  <!-- Sharp teeth top -->
+  <polygon points="12,19 13,21 14,19" fill="#ffffee" stroke="#cccc99" stroke-width="0.2"/>
+  <polygon points="14.5,19 15.5,21.5 16.5,19" fill="#ffffee" stroke="#cccc99" stroke-width="0.2"/>
+  <polygon points="17,19 18,21.5 19,19.2" fill="#ffffee" stroke="#cccc99" stroke-width="0.2"/>
+  <polygon points="19.5,19.2 20.5,21 21.5,19.3" fill="#ffffee" stroke="#cccc99" stroke-width="0.2"/>
+  <polygon points="22,19.4 23,20.5 24,19.2" fill="#ffffee" stroke="#cccc99" stroke-width="0.2"/>
+  <!-- Bottom teeth -->
+  <polygon points="13,21.2 14,19.5 15,21.5" fill="#ffffee" stroke="#cccc99" stroke-width="0.2"/>
+  <polygon points="16,21.3 17,19.5 18,21.5" fill="#ffffee" stroke="#cccc99" stroke-width="0.2"/>
+  <polygon points="19,21 20,19.5 21,20.8" fill="#ffffee" stroke="#cccc99" stroke-width="0.2"/>
+</svg>

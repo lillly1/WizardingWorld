@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36">
+  <defs>
+    <linearGradient id="coat" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#5a4a32"/>
+      <stop offset="100%" stop-color="#3a2e1e"/>
+    </linearGradient>
+    <linearGradient id="hair" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2a1a0a"/>
+      <stop offset="100%" stop-color="#1a0e05"/>
+    </linearGradient>
+  </defs>
+  <!-- Massive moleskin coat shoulders - Hagrid is huge -->
+  <path d="M2 26 Q4 22 10 20 L18 19 L26 20 Q32 22 34 26 L34 36 L2 36Z" fill="url(#coat)"/>
+  <!-- Coat texture patches -->
+  <path d="M8 28 L10 27 L12 29" fill="none" stroke="#4a3a22" stroke-width="0.5"/>
+  <path d="M24 28 L26 27 L28 29" fill="none" stroke="#4a3a22" stroke-width="0.5"/>
+  <!-- Coat buttons -->
+  <circle cx="18" cy="28" r="0.8" fill="#8a7a5a"/>
+  <circle cx="18" cy="32" r="0.8" fill="#8a7a5a"/>
+  <!-- Neck - thick -->
+  <rect x="14" y="17" width="8" height="3" rx="2" fill="#d4a882"/>
+  <!-- Large head -->
+  <ellipse cx="18" cy="13" rx="8" ry="8" fill="#d4a882"/>
+  <!-- Wild bushy black hair -->
+  <path d="M10 8 Q8 4 10 2 Q14 0 18 0 Q22 0 26 2 Q28 4 26 8" fill="url(#hair)"/>
+  <path d="M10 8 Q8 10 8 14 Q8 16 9 18" fill="url(#hair)"/>
+  <path d="M26 8 Q28 10 28 14 Q28 16 27 18" fill="url(#hair)"/>
+  <!-- Wild hair strands -->
+  <path d="M9 5 Q7 3 8 1" fill="none" stroke="#1a0e05" stroke-width="0.8"/>
+  <path d="M27 5 Q29 3 28 1" fill="none" stroke="#1a0e05" stroke-width="0.8"/>
+  <path d="M11 3 Q10 1 12 0" fill="none" stroke="#2a1a0a" stroke-width="0.6"/>
+  <path d="M25 3 Q26 1 24 0" fill="none" stroke="#2a1a0a" stroke-width="0.6"/>
+  <!-- Beetle-black eyes - small for big face -->
+  <circle cx="15" cy="12" r="1.2" fill="#1a1a1a"/>
+  <circle cx="21" cy="12" r="1.2" fill="#1a1a1a"/>
+  <circle cx="15.3" cy="11.7" r="0.3" fill="white" opacity="0.5"/>
+  <circle cx="21.3" cy="11.7" r="0.3" fill="white" opacity="0.5"/>
+  <!-- Bushy eyebrows -->
+  <path d="M13 10.5 Q15 9.5 17 10.5" fill="#2a1a0a" stroke="#1a0e05" stroke-width="0.3"/>
+  <path d="M19 10.5 Q21 9.5 23 10.5" fill="#2a1a0a" stroke="#1a0e05" stroke-width="0.3"/>
+  <!-- Big round nose -->
+  <ellipse cx="18" cy="14" rx="1.5" ry="1.2" fill="#c4956e"/>
+  <!-- Massive bushy beard -->
+  <path d="M10 14 Q9 16 9 20 Q10 26 18 28 Q26 26 27 20 Q27 16 26 14" fill="url(#hair)"/>
+  <!-- Beard texture -->
+  <path d="M12 16 Q14 20 14 24" fill="none" stroke="#2a1a0a" stroke-width="0.4" opacity="0.5"/>
+  <path d="M18 16 Q18 22 18 27" fill="none" stroke="#2a1a0a" stroke-width="0.4" opacity="0.5"/>
+  <path d="M24 16 Q22 20 22 24" fill="none" stroke="#2a1a0a" stroke-width="0.4" opacity="0.5"/>
+  <!-- Mouth in beard -->
+  <path d="M16 17 Q18 18 20 17" fill="#8a3030" stroke="none"/>
+  <!-- Rosy cheeks -->
+  <circle cx="12" cy="14" r="1.5" fill="#d4806a" opacity="0.3"/>
+  <circle cx="24" cy="14" r="1.5" fill="#d4806a" opacity="0.3"/>
+</svg>

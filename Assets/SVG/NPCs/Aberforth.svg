@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36">
+  <defs>
+    <linearGradient id="apron" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#8a7a5a"/>
+      <stop offset="100%" stop-color="#5c4e38"/>
+    </linearGradient>
+    <linearGradient id="beard" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#9a9a90"/>
+      <stop offset="100%" stop-color="#7a7a70"/>
+    </linearGradient>
+  </defs>
+  <!-- Barkeep clothing -->
+  <path d="M6 28 Q8 24 13 23 L18 22 L23 23 Q28 24 30 28 L30 36 L6 36Z" fill="#4a4a3a"/>
+  <!-- Apron -->
+  <path d="M12 26 L12 36 L24 36 L24 26 Q20 25 18 25 Q16 25 12 26Z" fill="url(#apron)"/>
+  <path d="M12 26 Q16 25 18 25 Q20 25 24 26" fill="none" stroke="#6a5a3a" stroke-width="0.4"/>
+  <!-- Apron strings -->
+  <path d="M12 26 Q10 27 9 28" fill="none" stroke="#7a6a4a" stroke-width="0.4"/>
+  <path d="M24 26 Q26 27 27 28" fill="none" stroke="#7a6a4a" stroke-width="0.4"/>
+  <!-- Thick neck -->
+  <rect x="15" y="19" width="6" height="3.5" rx="2" fill="#e0c0a0"/>
+  <!-- Gruff head -->
+  <ellipse cx="18" cy="14" rx="6.5" ry="7" fill="#e0c0a0"/>
+  <!-- Long gray wiry hair -->
+  <path d="M11.5 11 Q13 6 18 5.5 Q23 6 24.5 11" fill="#8a8a80"/>
+  <path d="M11.5 11 Q10.5 14 11 18" fill="#8a8a80"/>
+  <path d="M24.5 11 Q25.5 14 25 18" fill="#8a8a80"/>
+  <!-- Hair wisps -->
+  <path d="M11 10 Q10 8 11 6" fill="none" stroke="#9a9a90" stroke-width="0.5"/>
+  <path d="M25 10 Q26 8 25 6" fill="none" stroke="#9a9a90" stroke-width="0.5"/>
+  <!-- Gruff eyebrows - thick and wild -->
+  <path d="M13 11.5 Q15 10 17 11" fill="#7a7a70" stroke="none"/>
+  <path d="M19 11 Q21 10 23 11.5" fill="#7a7a70" stroke="none"/>
+  <!-- Blue eyes like Dumbledore -->
+  <ellipse cx="15.5" cy="13" rx="1.4" ry="1.2" fill="white"/>
+  <ellipse cx="20.5" cy="13" rx="1.4" ry="1.2" fill="white"/>
+  <circle cx="15.5" cy="13" r="0.8" fill="#4a8abf"/>
+  <circle cx="20.5" cy="13" r="0.8" fill="#4a8abf"/>
+  <circle cx="15.5" cy="13" r="0.35" fill="#1a1a2e"/>
+  <circle cx="20.5" cy="13" r="0.35" fill="#1a1a2e"/>
+  <!-- Broad nose -->
+  <path d="M17.5 14 Q17 16 17 17 Q18 17.5 19 17 Q19 16 18.5 14" fill="#d0a880" opacity="0.5"/>
+  <!-- Long gray scraggly beard - less elegant than Dumbledore -->
+  <path d="M13 16 Q12 18 11 22 Q13 27 18 28 Q23 27 25 22 Q24 18 23 16" fill="url(#beard)"/>
+  <!-- Beard is more scraggly/wiry -->
+  <path d="M14 18 Q13 21 13 25" fill="none" stroke="#8a8a7a" stroke-width="0.5"/>
+  <path d="M18 18 Q17 23 18 27" fill="none" stroke="#8a8a7a" stroke-width="0.5"/>
+  <path d="M22 18 Q23 21 23 25" fill="none" stroke="#8a8a7a" stroke-width="0.5"/>
+  <path d="M15 19 Q14 22 15 26" fill="none" stroke="#7a7a6a" stroke-width="0.3"/>
+  <path d="M21 19 Q22 22 21 26" fill="none" stroke="#7a7a6a" stroke-width="0.3"/>
+  <!-- Grumpy mouth in beard -->
+  <path d="M16 17.5 Q18 17 20 17.5" fill="none" stroke="#8a5040" stroke-width="0.5"/>
+  <!-- Wrinkles/frown lines -->
+  <path d="M14 15 L13.5 16" fill="none" stroke="#c8a880" stroke-width="0.2" opacity="0.5"/>
+  <path d="M22 15 L22.5 16" fill="none" stroke="#c8a880" stroke-width="0.2" opacity="0.5"/>
+  <!-- Dirty rag/towel over shoulder -->
+  <path d="M26 24 Q28 23 29 25 Q28 27 26 26" fill="#9a9080" stroke="#7a7068" stroke-width="0.3"/>
+</svg>

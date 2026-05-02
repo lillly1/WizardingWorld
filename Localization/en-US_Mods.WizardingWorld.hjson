@@ -1,0 +1,2945 @@
+Mods: {
+	WizardingWorld: {
+		DamageClasses: {
+			SpellDamage.DisplayName: spell
+		}
+
+		Conditions: {
+			DownedBasilisk: After defeating the Basilisk
+			DownedHorntail: After defeating the Hungarian Horntail
+			DownedVoldemort: After defeating the Dark Lord
+			DownedTroll: After defeating the Mountain Troll
+			DownedAragog: After defeating Aragog
+			DownedFluffy: After defeating Fluffy
+			DownedBellatrix: After defeating Bellatrix Lestrange
+			DownedFenrir: After defeating Fenrir Greyback
+			DownedDementorKing: After defeating Azkaban's Despair
+			DownedQuirrell: After defeating Professor Quirrell
+			DownedUmbridge: After defeating Dolores Umbridge
+			DownedBartyCrouch: After defeating Barty Crouch Jr
+		}
+
+		Items: {
+			// === WANDS ===
+			OakWand: {
+				DisplayName: Oak Wand
+				Tooltip: "'A sturdy first wand for any young witch or wizard'\nCasts Stupefy — stuns enemies on hit"
+			}
+			WillowWand: {
+				DisplayName: Willow Wand
+				Tooltip: "'Flexible and elegant'\nCasts Expelliarmus — disarms with powerful knockback"
+			}
+			AshWand: {
+				DisplayName: Ash Wand
+				Tooltip: "'Loyal to its owner, never to another'\nCasts Incendio — fire bolt that ignites enemies"
+			}
+			PhoenixFeatherWand: {
+				DisplayName: Phoenix Feather Wand
+				Tooltip:
+					'''
+					'The phoenix feather core provides great power'
+					Casts Incendio with a 25% chance for a double shot
+					'''
+			}
+			DragonHeartstringWand: {
+				DisplayName: Dragon Heartstring Wand
+				Tooltip:
+					'''
+					'Produces the most powerful magic, prone to accidents'
+					Casts Sectumsempra — dark slashing curse that bleeds enemies
+					'''
+			}
+			UnicornHairWand: {
+				DisplayName: Unicorn Hair Wand
+				Tooltip:
+					'''
+					'Consistent and faithful, difficult to turn to the Dark Arts'
+					Casts Expecto Patronum — summons a homing silver guardian
+					'''
+			}
+			ElderWand: {
+				DisplayName: Elder Wand
+				Tooltip:
+					'''
+					'The Deathstick. The Wand of Destiny. The Elder Wand.'
+					Casts Avada Kedavra — the Killing Curse
+					Instantly kills non-boss enemies below 15% HP
+					[c/FF3333:WARNING: Each cast builds Dark Arts Corruption]
+					[c/FF3333:Corruption weakens your Patronus and causes paranoia]
+					[c/AAAAAA:The singular Deathly Hallow — one of a kind]
+					'''
+			}
+			AlderWand: {
+				DisplayName: Alder Wand
+				Tooltip: "'Alder is an unyielding wood, yet its ideal owner is helpful and considerate'\nCasts Stupefy — faster and stronger than Oak Wand\nEasy early-game upgrade — no gems required"
+			}
+			SwordOfGryffindor: {
+				DisplayName: Sword of Gryffindor
+				Tooltip:
+					'''
+					'Goblin-made, it imbibes that which makes it stronger'
+					Imbued with Basilisk venom
+					'''
+			}
+			NimbusBroomstick: {
+				DisplayName: Nimbus 2000
+				Tooltip: "'The fastest broomstick in the world!'\nSummons a flying broomstick mount"
+			}
+
+			// === ARMOR ===
+			GryffindorHood: {
+				DisplayName: Gryffindor Hood
+				Tooltip: "+8% spell damage"
+				SetBonus: "Bravery: +15% damage, +10% melee speed"
+			}
+			GryffindorRobes: {
+				DisplayName: Gryffindor Robes
+				Tooltip: "+5% spell damage, +20 max life"
+			}
+			GryffindorLeggings: {
+				DisplayName: Gryffindor Leggings
+				Tooltip: "+10% movement speed"
+			}
+			SlytherinHood: {
+				DisplayName: Slytherin Hood
+				Tooltip: "+8% spell crit chance"
+				SetBonus: "Cunning: +12% crit chance"
+			}
+			SlytherinRobes: {
+				DisplayName: Slytherin Robes
+				Tooltip: "+8% spell damage, +4% crit chance"
+			}
+			SlytherinLeggings: {
+				DisplayName: Slytherin Leggings
+				Tooltip: "+8% movement speed, reduced enemy aggro"
+			}
+			RavenclawHood: {
+				DisplayName: Ravenclaw Hood
+				Tooltip: "+20 max mana"
+				SetBonus: "Wisdom: +20% spell damage, +40 max mana, mana regeneration"
+			}
+			RavenclawRobes: {
+				DisplayName: Ravenclaw Robes
+				Tooltip: "+10% spell damage, +20 max mana, -10% mana cost"
+			}
+			RavenclawLeggings: {
+				DisplayName: Ravenclaw Leggings
+				Tooltip: "+6% movement speed, mana regen +3"
+			}
+			HufflepuffHood: {
+				DisplayName: Hufflepuff Hood
+				Tooltip: "+3 defense, +1 life regen"
+				SetBonus: "Loyalty: +8 defense, +4 life regen, 30% thorns damage"
+			}
+			HufflepuffRobes: {
+				DisplayName: Hufflepuff Robes
+				Tooltip: "+40 max life, +2 life regen"
+			}
+			HufflepuffLeggings: {
+				DisplayName: Hufflepuff Leggings
+				Tooltip: "+5% movement speed, +2 defense"
+			}
+			DarkWizardHood: {
+				DisplayName: Dark Wizard Hood
+				Tooltip: "+12% spell damage, +30 max mana"
+				SetBonus: "Dark Arts: +25% spell damage, +15% spell crit"
+			}
+			DarkWizardRobes: {
+				DisplayName: Dark Wizard Robes
+				Tooltip: "+10% spell damage, +40 max mana, -15% mana cost"
+			}
+			DarkWizardLeggings: {
+				DisplayName: Dark Wizard Leggings
+				Tooltip: "+12% movement speed, mana regen +5"
+			}
+
+			// === ACCESSORIES ===
+			BasiliskFang: {
+				DisplayName: Basilisk Fang
+				Tooltip: "'Deadly venom, even deadlier as an accessory'\nImmunity to Poison and Venom"
+			}
+			InvisibilityCloak: {
+				DisplayName: Invisibility Cloak
+				Tooltip:
+					'''
+					'The true Cloak of Invisibility, handed down through the Peverell line'
+					Grants invisibility and greatly reduced enemy aggro
+					Part of the Deathly Hallows
+					[c/AAAAAA:A unique relic reclaimed through Dumbledore's Hallows guidance]
+					[c/AAAAAA:Not craftable from ordinary materials]
+					'''
+			}
+			DemiguiseCloak: {
+				DisplayName: Demiguise Weave Cloak
+				Tooltip:
+					'''
+					'Woven from Demiguise hair — excellent stealth work, but not the Hallow'
+					Grants invisibility, reduced aggro, and +5% movement speed
+					[c/AAAAAA:Ordinary wizarding gear inspired by Demiguise pelts]
+					'''
+			}
+			TimeTurner: {
+				DisplayName: Time Turner
+				Tooltip:
+					'''
+					'Mysterious is the nature of time'
+					Dodge one lethal hit every 10 seconds
+					+10% movement speed
+					'''
+			}
+			MaraudersMap: {
+				DisplayName: Marauder's Map
+				Tooltip:
+					'''
+					'I solemnly swear that I am up to no good'
+					Reveals all enemies on the minimap
+					Grants danger sense
+					Reduces Secret Passage cooldown
+					[c/AAAAAA:Created by Moony, Wormtail, Padfoot, and Prongs]
+					'''
+			}
+			ResurrectionStone: {
+				DisplayName: Resurrection Stone
+				Tooltip:
+					'''
+					'The second Hallow, the stone that recalls the dead'
+					+6 life regen, +40 max life
+					Part of the Deathly Hallows
+					[c/AAAAAA:Awakened from Gaunt's Ring after the Horcrux Hunt]
+					[c/AAAAAA:Dumbledore must strip away the curse first]
+					'''
+			}
+			GauntsRing: {
+				DisplayName: Gaunt's Ring
+				Tooltip:
+					'''
+					'A cursed Horcrux ring hiding the Resurrection Stone'
+					+8% all damage, but the curse gnaws at you
+					[c/FFD700:Destroy all 4 core Horcruxes, then bring it to Dumbledore]
+					'''
+				Dynamic: {
+					GauntCurse: "A cursed Horcrux — the Resurrection Stone lies within"
+					HorcruxProgress: "Horcruxes destroyed: {0}/4"
+					AwakenedStatus: "[c/FFD700:The stone within has already been awakened by Dumbledore]"
+					PurifiableStatus: "[c/FFD700:Take this to Dumbledore's portrait to awaken the Stone]"
+					LockedStatus: "[c/FF4444:Destroy all Horcruxes to purify this ring]"
+				}
+			}
+			AzkabanWardensKey: {
+				DisplayName: Azkaban Warden's Key
+				Tooltip:
+					'''
+					'An old ward-key from the prison fortress'
+					+6 defense, +5% endurance
+					Resists despair, Darkness, and Dark Curse
+					Empowers you while a Patronus is active
+					'''
+			}
+			BossCompass: {
+				DisplayName: Boss Progression Compass
+				Tooltip:
+					'''
+					'It always points to your next great challenge'
+					Shows which wizard boss to fight next in the tooltip
+					Tracks boss progression, Horcrux Hunt progress, and Hallows guidance
+					+3% damage passive bonus
+					'''
+				Dynamic: {
+					NextChallenge: "[c/FFD700:Next Challenge: {0}]"
+					ProgressTooltip: "[c/AAAAAA:{0}]"
+					HorcruxTooltip: "[c/CC88FF:Horcrux Hunt: {0}/4 destroyed{1}]"
+					NaginiSuffix: ", Nagini fallen"
+					NextTroll: "Mountain Troll (use Smelly Sock)"
+					NextQuirrell: "Professor Quirrell (use Suspicious Turban)"
+					NextBasilisk: "Basilisk (use Serpent's Diary)"
+					NextAragog: "Aragog (use Acromantula Egg — Hardmode)"
+					NextFluffy: "Fluffy (use Enchanted Flute — post-Mech)"
+					NextHorntail: "Hungarian Horntail (use Dragon Egg)"
+					NextUmbridge: "Dolores Umbridge (use Educational Decree)"
+					NextFenrir: "Fenrir Greyback (use Bloodied Claw — Blood Moon)"
+					NextBellatrix: "Bellatrix Lestrange (use Prisoner Tag — post-Plantera)"
+					NextBartyCrouch: "Barty Crouch Jr (use Suspicious Flask)"
+					NextDementorKing: "Dementor King (use Frozen Soul Lantern — post-Golem)"
+					NextVoldemortReady: "Lord Voldemort (use Dark Mark — post-Cultist, weakened by the Hunt)"
+					NextVoldemortBlocked: "Destroy more Horcruxes before facing Lord Voldemort"
+					NextPurifyRing: "Take Gaunt's Ring to Dumbledore"
+					NextClaimCloak: "Speak to Dumbledore about the true Invisibility Cloak"
+					NextUniteHallows: "Unite the Hallows to complete the hidden ending path"
+					Completed: "All wizard goals completed. Master of Death achieved."
+					ProgressSummary: "Wizard Bosses: {0}/12 defeated"
+				}
+			}
+
+			// === CONSUMABLES ===
+			EnchantingTableItem: {
+				DisplayName: Enchanting Table
+				Tooltip: "'Where magic takes form'\nUsed to craft wands, potions, and magical equipment"
+			}
+			BasiliskSummonItem: {
+				DisplayName: Serpent's Diary
+				Tooltip: "'Open at your own peril'\nSummons the Basilisk"
+			}
+			HorntailSummonItem: {
+				DisplayName: Cracked Dragon Egg
+				Tooltip: "'It's hatching!'\nSummons the Hungarian Horntail"
+			}
+			VoldemortSummonItem: {
+				DisplayName: Dark Mark
+				Tooltip: "'He Who Must Not Be Named returns'\nSummons Lord Voldemort — the TRUE final boss\nRequires post-Lunatic Cultist. Night only.\n[c/FFD700:Destroy Horcruxes first to weaken him!]"
+			}
+			DragonScale: {
+				DisplayName: Dragon Scale
+				Tooltip: "'Still warm to the touch'\nCrafting material"
+			}
+			GoldenEgg: {
+				DisplayName: Golden Egg
+				Tooltip: "'Contains a clue... and something more'\nRare crafting material"
+			}
+			LakeRescueToken: {
+				DisplayName: Lake Rescue Token
+				Tooltip: "'A glowing token from the lake bed'\nCollect 3 during the Great Lake Trial"
+			}
+			ChampionsTrophy: {
+				DisplayName: Triwizard Cup
+				Tooltip:
+					'''
+					'Eternal glory awaits the champion!'
+					The actual grand prize of the Triwizard Tournament
+					Awarded for completing all three tasks
+					+12% all damage, +8% crit, +6 defense, +4 life regen
+					'''
+			}
+
+			WizardsAlmanac: {
+				DisplayName: Wizard's Almanac
+				Tooltip:
+					'''
+					'The complete encyclopedia of the Wizarding World'
+					10 pages covering EVERY system in the mod
+					Bosses, armor, accessories, potions, mounts, pets, crafting, systems, tips
+					Use repeatedly to browse pages
+					Sold by Dumbledore. Crafted from Spell Book + Books + Essence
+					'''
+			}
+
+			// === POTIONS ===
+			Butterbeer: {
+				DisplayName: Butterbeer
+				Tooltip: "'A warm drink from the Three Broomsticks'\nGrants Well Fed, +2 regen, +2 defense"
+			}
+			FelixFelicis: {
+				DisplayName: Felix Felicis
+				Tooltip: "'Liquid Luck'\nGreatly increases luck, +10% crit chance, increased coin drops"
+			}
+			PolyjuicePotion: {
+				DisplayName: Polyjuice Potion
+				Tooltip: "'Tastes like goblin p-'\nGrants invisibility and reduced aggro"
+			}
+			WolfsbanePotion: {
+				DisplayName: Wolfsbane Potion
+				Tooltip: "'Keeps the wolf at bay... mostly'\nGrants werewolf power boost, stronger at night"
+			}
+
+			// === PET ===
+			GoldenSnitchItem: {
+				DisplayName: Golden Snitch
+				Tooltip: "'I open at the close'\nSummons a Golden Snitch pet"
+			}
+
+			// === WEAPON UPGRADES ===
+			InfernalPhoenixWand: {
+				DisplayName: Infernal Phoenix Wand
+				Tooltip:
+					'''
+					'The phoenix feather, tempered by dragonfire'
+					Upgraded Phoenix Feather Wand — fires 5-bolt Incendio spread
+					Crafted from Phoenix Feather Wand + Dragon Scale
+					'''
+			}
+			VenomousSwordOfGryffindor: {
+				DisplayName: Venomous Sword of Gryffindor
+				Tooltip:
+					'''
+					'It imbibes that which makes it stronger — now with spider venom'
+					Upgraded Sword of Gryffindor — AoE poison cloud + lifesteal
+					Triple venom: Basilisk + Spider + Jinxed on every hit
+					Crafted from Sword of Gryffindor + Spider Silk + Basilisk Fang
+					'''
+			}
+			ShadowElderWand: {
+				DisplayName: Legacy Shadow Elder Wand
+				Tooltip:
+					'''
+					[Legacy item]
+					Automatically converts to the Elder Wand in old saves
+					The separate shadow upgrade path has been retired
+					'''
+			}
+
+			// === DUMBLEDORE'S ARMY ===
+			DAGalleon: {
+				DisplayName: D.A. Galleon
+				Tooltip: "'The coin burns when Dumbledore's Army is called to gather'\nActivates a D.A. Meeting coordination buff (8 min)\nAlso serves as DA membership token for the Room of Requirement"
+			}
+			CastleWardThread: {
+				DisplayName: Castle Ward Thread
+				Tooltip: "Residual enchantment thread from stabilized castle wards\nCrafting material"
+			}
+			DefendersSignet: {
+				DisplayName: Defender's Signet
+				Tooltip:
+					'''
+					'Earned by those who stood when the wards were falling'
+					+6 defense, +5% endurance
+					Immunity to Jinxed and Confused
+					+5% movement speed
+					'''
+			}
+
+			// === ST MUNGO'S ===
+			StMungosPass: {
+				DisplayName: St Mungo's Visitor Pass
+				Tooltip: "'Purge and Dowse, Ltd. -- please state your purpose'\nUnlocks St Mungo's Hospital after the Horntail\nUse again to start triage missions"
+			}
+			HealersSalts: {
+				DisplayName: Healer's Salts
+				Tooltip: "Purified remedy residue from St Mungo's triage wards\nCrafting material"
+			}
+			HealersSatchel: {
+				DisplayName: Healer's Satchel
+				Tooltip:
+					'''
+					'Standard issue for Healers on ward rotation'
+					+6 life regen, +5% endurance
+					Immunity to Venom and Confused
+					Reduced potion cooldown
+					Passive despair relief
+					'''
+			}
+
+			// === BATTLE OF HOGWARTS ===
+			HorcruxTracker: {
+				DisplayName: Horcrux Tracker
+				Tooltip: "'Dumbledore's wartime intelligence'\nShows Horcrux Hunt progress and battle readiness\nUse to unlock or start the Battle of Hogwarts\nReusable"
+			}
+			CastleDefenseRune: {
+				DisplayName: Castle Defense Rune
+				Tooltip: "Residual ward energy from the Battle of Hogwarts\nCrafting material"
+			}
+			ProtectorsBadge: {
+				DisplayName: Protector's Badge
+				Tooltip:
+					'''
+					'Awarded to those who defended Hogwarts when it mattered most'
+					+8 defense, +6% endurance
+					Immunity to Jinxed and Dark Curse
+					+4 life regen
+					Passive despair relief
+					'''
+			}
+		}
+
+		NPCs: {
+			// === ENEMIES ===
+			Dementor.DisplayName: Dementor
+			Acromantula.DisplayName: Acromantula
+			MagicPixie.DisplayName: Cornish Pixie
+			Troll.DisplayName: Mountain Troll
+			Inferius.DisplayName: Inferius
+			Thestral.DisplayName: Thestral
+			DeathEater.DisplayName: Death Eater
+			UnstableHourglass.DisplayName: Unstable Hourglass
+			VeilFracture.DisplayName: Veil Fracture
+			Dobby.DisplayName: House-Elf
+			Lupin.DisplayName: Remus Lupin
+			Mandrake.DisplayName: Mandrake
+			Boggart.DisplayName: Boggart
+			Werewolf.DisplayName: Werewolf
+			Grindylow.DisplayName: Grindylow
+			Doxy.DisplayName: Doxy
+			DoxyNest.DisplayName: Doxy Nest
+			WalburgaPortrait.DisplayName: Walburga's Portrait
+			GrimmauldBoggart.DisplayName: Grimmauld Boggart
+			Peeves.DisplayName: Peeves
+			Nagini.DisplayName: Nagini
+			Obscurus.DisplayName: Obscurus
+			Dumbledore.DisplayName: Dumbledore's Portrait
+			Bowtruckle.DisplayName: Bowtruckle
+			Flobberworm.DisplayName: Flobberworm
+			BlastEndedSkrewt.DisplayName: Blast-Ended Skrewt
+			AzkabanGuard.DisplayName: Azkaban Guard
+			PrisonWraith.DisplayName: Prison Wraith
+			DespairAnchor.DisplayName: Despair Anchor
+			Merfolk.DisplayName: Merfolk
+			Sphinx.DisplayName: Sphinx
+			Giant.DisplayName: Giant
+			Fwooper.DisplayName: Fwooper
+			SnowWraith.DisplayName: Snow Wraith
+			CursedMummy.DisplayName: Cursed Mummy
+			PhantomStag.DisplayName: Phantom Stag
+			CursedSpecter.DisplayName: Cursed Specter
+			Thunderbird.DisplayName: Thunderbird
+			GoblinRebel.DisplayName: Goblin Rebel
+			Lethifold.DisplayName: Lethifold
+			Erumpent.DisplayName: Erumpent
+			Occamy.DisplayName: Occamy
+			Zouwu.DisplayName: Zouwu
+			Demiguise.DisplayName: Demiguise
+			Mooncalf.DisplayName: Mooncalf
+			Billywig.DisplayName: Billywig
+			Ashwinder.DisplayName: Ashwinder
+			Nundu.DisplayName: Nundu
+			Runespoor.DisplayName: Runespoor
+			Jarvey.DisplayName: Jarvey
+			FireCrab.DisplayName: Fire Crab
+			Puffskein.DisplayName: Puffskein
+			Streeler.DisplayName: Streeler
+			PeruvianVipertooth.DisplayName: Peruvian Vipertooth
+			Diricawl.DisplayName: Diricawl
+			Knarl.DisplayName: Knarl
+			Horklump.DisplayName: Horklump
+			Jobberknoll.DisplayName: Jobberknoll
+			Dugbog.DisplayName: Dugbog
+			CorruptedTrace.DisplayName: Corrupted Trace
+			OmenStone.DisplayName: Omen Stone
+			BroodMarker.DisplayName: Brood Marker
+			MagicalImp.DisplayName: Magical Imp
+			QuidditchHoop.DisplayName: Quidditch Hoop
+			Bludger.DisplayName: Bludger
+			ProphecyOrb.DisplayName: Prophecy Orb
+			HexResidueNode.DisplayName: Hex Residue Node
+			VenomWoundNode.DisplayName: Venom Wound Node
+			CauldronSpillNode.DisplayName: Cauldron Spill Node
+			WillowKnot.DisplayName: Whomping Willow Knot
+			TunnelWard.DisplayName: Tunnel Ward
+			MoonWardFracture.DisplayName: Moon Ward Fracture
+			WardAnchor.DisplayName: Ward Anchor
+			CastleWardNode.DisplayName: Castle Ward Node
+			BreachSeal.DisplayName: Breach Seal
+
+			// === BOSSES ===
+			BasiliskBoss.DisplayName: Basilisk
+			HorntailBoss.DisplayName: Hungarian Horntail
+			VoldemortBoss.DisplayName: Lord Voldemort
+			TrollBoss.DisplayName: Mountain Troll
+			AragogBoss.DisplayName: Aragog
+			FluffyBoss.DisplayName: Fluffy
+			BellatrixBoss.DisplayName: Bellatrix Lestrange
+			FenrirBoss.DisplayName: Fenrir Greyback
+			DementorKingBoss.DisplayName: Azkaban's Despair
+			QuirrellBoss.DisplayName: Professor Quirrell
+			UmbridgeBoss.DisplayName: Dolores Umbridge
+			BartyCrouchBoss.DisplayName: Barty Crouch Jr
+
+			// === TOWN NPCs ===
+			Ollivander.DisplayName: Wandmaker
+			Hagrid.DisplayName: Keeper of Creatures
+			PotionsMaster.DisplayName: Potions Master
+			Centaur.DisplayName: Stargazer
+			FredAndGeorge.DisplayName: Weasley Twins
+			MadamHooch.DisplayName: Madam Hooch
+			Kingsley.DisplayName: Kingsley Shacklebolt
+			GoblinTeller.DisplayName: Goblin Teller
+			VaultRelic.DisplayName: Vault Relic
+			CursedTreasure.DisplayName: Cursed Treasure
+			MrBorgin.DisplayName: Mr Borgin
+			Healer.DisplayName: Healer
+			Aberforth.DisplayName: Aberforth Dumbledore
+			Neville.DisplayName: Neville Longbottom
+			CursedOpalDisplay.DisplayName: Cursed Opal Necklace
+			VanishingCabinetEcho.DisplayName: Vanishing Cabinet Echo
+			MadamRosmerta: {
+				DisplayName: Madam Rosmerta
+				TownNPCMood: {
+					HateBiome: "{BiomeName} is no place for a tavern."
+					LikeBiome: "{BiomeName} reminds me of Hogsmeade."
+					LoveNPC: "I always enjoy {NPCName}'s company!"
+					HateNPC: "I'd rather not serve {NPCName}."
+				}
+			}
+		}
+
+		Buffs: {
+			ForestWisdomBuff: {
+				DisplayName: Forest Wisdom
+				Description: "The forest shares its ancient knowledge. +6% damage, danger sense, night vision, +4 life regen."
+			}
+			SafehouseResolveBuff: {
+				DisplayName: Safehouse Resolve
+				Description: "The Order's safehouse strengthens your resolve. +6 defense, +4 life regen, Jinxed immunity, -100 aggro."
+			}
+			TriageResolvedBuff: {
+				DisplayName: Triage Resolved
+				Description: "St Mungo's treatment stabilized. +8 life regen, +5 defense, venom immunity."
+			}
+			GoldenSnitchBuff: {
+				DisplayName: Golden Snitch
+				Description: "'I open at the close'"
+			}
+			NimbusMountBuff: {
+				DisplayName: Nimbus 2000
+				Description: Riding a magical broomstick
+			}
+			ButterbeerBuff: {
+				DisplayName: Warm and Content
+				Description: "'That hit the spot!'\nWell Fed, +2 regen, +2 defense"
+			}
+			FelixFelicisBuff: {
+				DisplayName: Liquid Luck
+				Description: Everything seems to go your way
+			}
+			PolyjuiceBuff: {
+				DisplayName: Polyjuice Disguise
+				Description: You look like someone else entirely
+			}
+			WolfsbaneBuff: {
+				DisplayName: Wolfsbane
+				Description: The beast within is controlled... mostly
+			}
+			HippogriffMountBuff: {
+				DisplayName: Hippogriff
+				Description: Riding a majestic Hippogriff
+			}
+			FireboltMountBuff: {
+				DisplayName: Firebolt
+				Description: The finest racing broom in existence
+			}
+			PhoenixMinionBuff: {
+				DisplayName: Phoenix Companion
+				Description: A phoenix fights by your side and heals your wounds
+			}
+			NifflerBuff: {
+				DisplayName: Niffler
+				Description: Increased coin drops from a shiny-seeking companion
+			}
+			HedwigBuff: {
+				DisplayName: Hedwig
+				Description: A loyal snowy owl lights your way
+			}
+			HouseElfMinionBuff: {
+				DisplayName: House-Elf
+				Description: A loyal house-elf fights at your command
+			}
+			VeritaserumBuff: {
+				DisplayName: Truth Serum
+				Description: Nothing can hide from you
+			}
+			AmortentiaBuff: {
+				DisplayName: Love Potion
+				Description: Enemies seem less interested in you
+			}
+			GillyweedBuff: {
+				DisplayName: Gillyweed
+				Description: You can breathe underwater and swim freely
+			}
+			PetrifiedDebuff: {
+				DisplayName: Petrified
+				Description: Turned to stone! Cannot move or act
+			}
+			JinxedDebuff: {
+				DisplayName: Jinxed
+				Description: "'A minor Dark hex'\n-20% damage, -15% speed, -5 defense"
+			}
+			DarkCurseDebuff: {
+				DisplayName: Dark Curse
+				Description: "'The darkest of magics'\nDamage over time, blocks healing, -10 defense"
+			}
+			PatronusCharmBuff: {
+				DisplayName: Patronus Guardian
+				Description: A silver guardian protects you (+10 defense, +2 life regen)
+			}
+			PepperupBuff: {
+				DisplayName: Peppered Up
+				Description: Energized! Speed and attack speed boosted, fire/cold immune, steam from ears
+			}
+			SkeleGroBuff: {
+				DisplayName: Regrowing Bones
+				Description: Massive life regen but painful — reduced movement speed
+			}
+			KneazleBuff: {
+				DisplayName: Kneazle
+				Description: A magical cat follows you and detects enemies
+			}
+			Nimbus2001MountBuff: {
+				DisplayName: Nimbus 2001
+				Description: The fastest broomstick — aerial superiority grants bonus damage
+			}
+			FirewhiskeyBuff: {
+				DisplayName: Firewhiskey Buzz
+				Description: Damage and crit boosted, but occasionally tipsy. Fire breath.
+			}
+			PygmyPuffBuff: {
+				DisplayName: Pygmy Puff
+				Description: An adorable pink puffball follows you around
+			}
+			ThestralMountBuff: {
+				DisplayName: Thestral
+				Description: Riding an invisible skeletal horse — grants night vision and detection
+			}
+			AquaFortisBuff: {
+				DisplayName: Aqua Fortis
+				Description: Water warrior — gills, water immunity, massive underwater combat bonuses
+			}
+			SeekersReflexesBuff: {
+				DisplayName: Seeker's Reflexes
+				Description: Lightning-fast reflexes — speed, dodge, and attack speed boosted
+			}
+			BabyDragonBuff: {
+				DisplayName: Baby Horntail
+				Description: A baby Hungarian Horntail lights your way with dragonfire
+			}
+			ResurrectionBuff: {
+				DisplayName: Resurrection
+				Description: One death prevented — you will rise from the ashes instead of dying
+			}
+			ShieldCharmBuff: {
+				DisplayName: Shield Charm
+				Description: Protego — +10 defense, +8% damage reduction
+			}
+			FenrirsWolfsbaneBuff: {
+				DisplayName: Fenrir's Wolfsbane
+				Description: Alpha werewolf power — massive melee and speed bonuses at night
+			}
+			StealthDraughtBuff: {
+				DisplayName: Stealth Draught
+				Description: Invisible, greatly reduced aggro, speed boosted -- hiding in plain sight
+			}
+			WardOfHopeBuff: {
+				DisplayName: Ward of Hope
+				Description: A silver ward against despair -- +4 defense, +2 life regen, calming light
+			}
+			RoomRecoveryBuff: {
+				DisplayName: Room of Recovery
+				Description: The Room provides healing -- +12 life regen, +15 defense, +10% damage reduction
+			}
+			RoomTrainingBuff: {
+				DisplayName: Room of Practice
+				Description: The Room provides a training ground -- +20% spell damage, +10 spell crit, +40 max mana
+			}
+			RoomVaultBuff: {
+				DisplayName: Come and Go Room
+				Description: The Room reveals hidden treasure -- increased luck, treasure sense, coin attraction
+			}
+			RoomSanctuaryBuff: {
+				DisplayName: Room of Sanctuary
+				Description: The Room provides shelter -- +8 defense, +4 life regen, mana regen, +5% damage reduction
+			}
+			RoomRestorationBuff: {
+				DisplayName: Room of Restoration
+				Description: The Room soothes despair -- relieves dark aftereffects, +6 defense, +6 life regen, ward extension
+			}
+			RoomResistanceBuff: {
+				DisplayName: Resistance Headquarters
+				Description: The Room becomes a resistance headquarters -- +10 defense, +8% endurance, +6 life regen, Jinxed/DarkCurse immunity
+			}
+			DAMeetingBuff: {
+				DisplayName: D.A. Meeting
+				Description: "Dumbledore's Army rallies together. +5% damage, +4 defense, danger sense, +3 life regen."
+			}
+			ResistanceResolveBuff: {
+				DisplayName: Resistance Resolve
+				Description: "The wards hold because of you. +8 defense, +6% endurance, Jinxed immunity, +4 life regen, +5% luck."
+			}
+			GryffindorFeastBuff: {
+				DisplayName: Gryffindor Feast Blessing
+				Description: Courage fills your heart -- +12% damage, +8 defense, +2 life regen
+			}
+			SlytherinFeastBuff: {
+				DisplayName: Slytherin Feast Blessing
+				Description: Ambition sharpens your mind -- +10% crit, +8% speed
+			}
+			RavenclawFeastBuff: {
+				DisplayName: Ravenclaw Feast Blessing
+				Description: Wisdom guides your spells -- +15% spell damage, +60 max mana, enhanced mana regen
+			}
+			HufflepuffFeastBuff: {
+				DisplayName: Hufflepuff Feast Blessing
+				Description: Loyalty strengthens your resolve -- +10 defense, +6 life regen, +8% damage reduction
+			}
+			QuidditchCupBuff: {
+				DisplayName: Quidditch Cup Victory
+				Description: Your house won the Quidditch Cup! +10% damage, +10% speed, +luck
+			}
+			TriwizardChampionBuff: {
+				DisplayName: Triwizard Champion
+				Description: Eternal glory! +15% damage, +10% speed, enhanced luck
+			}
+			OrderCommendationBuff: {
+				DisplayName: Order Commendation
+				Description: The Order recognizes your service -- +10% spell damage, +4 defense, +3 life regen
+			}
+			TemporalInsightBuff: {
+				DisplayName: Temporal Insight
+				Description: Time flows clearly -- +8% damage, +5% speed, danger sense
+			}
+			VeilWardBuff: {
+				DisplayName: Veil Ward
+				Description: The Veil's pull cannot reach you -- +8 defense, +6% endurance, darkness immunity, despair resistance
+			}
+			VaultFortuneBuff: {
+				DisplayName: Vault Fortune
+				Description: Gringotts rewards the diligent -- +luck, coin attraction, +5% damage
+			}
+			ShoppingDayBuff: {
+				DisplayName: Shopping Day
+				Description: Diagon Alley commerce! Reduced shop prices, +luck, treasure sense, coin attraction
+			}
+			DarkAppraiserBuff: {
+				DisplayName: Dark Appraiser
+				Description: Eyes sharpened by dark knowledge -- night vision, +6% damage, danger sense
+			}
+			MoonwardBuff: {
+				DisplayName: Moonward Protection
+				Description: The Shack's wards hold -- +6 defense, +4 life regen, Darkness/Jinxed immunity, +5% speed
+			}
+			CastleVictoryBuff: {
+				DisplayName: Castle Victory
+				Description: "Hogwarts stands! +12% all damage, +10 defense, +6 life regen, +0.1 luck."
+			}
+			CastleDefenseBuff: {
+				DisplayName: Castle Defenders
+				Description: "Animated armor and stone guardians fight alongside you. +8 defense."
+			}
+		}
+
+		Projectiles: {
+			LumosProjectile.DisplayName: Lumos
+			StupefyProjectile.DisplayName: Stupefy
+			ExpelliarmusProjectile.DisplayName: Expelliarmus
+			IncendioProjectile.DisplayName: Incendio
+			PatronusProjectile.DisplayName: Patronus
+			SectumsempraProjectile.DisplayName: Sectumsempra
+			AvadaKedavraProjectile.DisplayName: Avada Kedavra
+			GoldenSnitchProjectile.DisplayName: Golden Snitch
+			ProtegoProjectile.DisplayName: Protego
+			WingardiumProjectile.DisplayName: Wingardium Leviosa
+			CrucioProjectile.DisplayName: Crucio
+			ReductoProjectile.DisplayName: Reducto
+			AguamentiProjectile.DisplayName: Aguamenti
+			PhoenixMinion.DisplayName: Phoenix
+			QuaffleProjectile.DisplayName: Quaffle
+			NifflerProjectile.DisplayName: Niffler
+			FiendfyreProjectile.DisplayName: Fiendfyre
+			HowlerProjectile.DisplayName: Howler
+			HedwigProjectile.DisplayName: Hedwig
+			EpiskeyProjectile.DisplayName: Episkey
+			HouseElfMinion.DisplayName: House-Elf
+			ChainStupefyProjectile.DisplayName: Chain Stupefy
+			ImpedimentaProjectile.DisplayName: Impedimenta
+			WeasleyFireworkProjectile.DisplayName: Weasley Firework
+			LumosMaximaProjectile.DisplayName: Lumos Maxima
+			DarknessPowderProjectile.DisplayName: Darkness Powder
+			DecoyDetonatorProjectile.DisplayName: Decoy Detonator
+			PatronusGuardian.DisplayName: Patronus Guardian
+			ConjunctivitisProjectile.DisplayName: Conjunctivitis Curse
+			BombardaProjectile.DisplayName: Bombarda
+			LevicorpusProjectile.DisplayName: Levicorpus
+			BlazeBoxProjectile.DisplayName: Blaze Box
+			FiniteIncantatemProjectile.DisplayName: Finite Incantatem
+			AccioProjectile.DisplayName: Accio
+			RiddikulusProjectile.DisplayName: Riddikulus
+			KneazleProjectile.DisplayName: Kneazle
+			ApparitionProjectile.DisplayName: Apparition
+			PygmyPuffProjectile.DisplayName: Pygmy Puff
+			BabyDragonProjectile.DisplayName: Baby Horntail
+			AlohomoraProjectile.DisplayName: Alohomora
+		}
+
+		Tiles: {
+			EnchantingTable.MapEntry: Enchanting Table
+
+			// === LANDMARKS ===
+			HousePointHourglass.MapEntry: House Point Hourglass
+			QuidditchGoalpost.MapEntry: Quidditch Goalpost
+			CastleWardStone.MapEntry: Castle Ward Stone
+			WhompingWillowStump.MapEntry: Whomping Willow Stump
+			ShriekingShackSign.MapEntry: Shrieking Shack Sign
+			GrimmauldDoorway.MapEntry: Grimmauld Doorway
+			LeakyCauldronSign.MapEntry: Leaky Cauldron Sign
+			GringottsFacade.MapEntry: Gringotts Facade
+			BorginStorefront.MapEntry: Borgin Storefront
+			StMungosMannequin.MapEntry: St Mungos Mannequin
+			ProphecyShelf.MapEntry: Prophecy Shelf
+			VeilArch.MapEntry: Veil Arch
+		}
+
+		// === PHASE 2 ITEMS ===
+		Items: {
+			HollyWand: {
+				DisplayName: Holly Wand
+				Tooltip: "'The brother wand to the Dark Lord's'\nCasts Expelliarmus with periodic Protego shield"
+			}
+			VineWand: {
+				DisplayName: Vine Wand
+				Tooltip: "'Ten and three-quarter inches, dragon heartstring core'\nAlternates Wingardium Leviosa and Aguamenti"
+			}
+			YewWand: {
+				DisplayName: Yew Wand
+				Tooltip: "'Thirteen and a half inches, phoenix feather core'\nCasts Crucio (channeled) with chance for Reducto explosions"
+			}
+			BeatersBat: {
+				DisplayName: Beater's Bat
+				Tooltip: "'Standard Quidditch equipment — for Bludgers, not people'\nMassive knockback, launches enemies upward"
+			}
+			Quaffle: {
+				DisplayName: Quaffle
+				Tooltip: "'The ball that scores points in Quidditch'\nBounces off walls and returns to you"
+			}
+			FireboltBroomstick: {
+				DisplayName: Firebolt
+				Tooltip: "'The finest racing broom in existence'\nUpgraded flying broomstick mount — faster than Nimbus 2000"
+			}
+			HippogriffFeather: {
+				DisplayName: Hippogriff Feather
+				Tooltip: "'You must bow and wait. Always let a Hippogriff make the first move.'\nSummons a Hippogriff mount"
+			}
+			PhoenixFeatherStaff: {
+				DisplayName: Phoenix Feather Staff
+				Tooltip: "'Fawkes has given you a most faithful companion'\nSummons a Phoenix minion that attacks and heals"
+			}
+			NifflerItem: {
+				DisplayName: Niffler Pouch
+				Tooltip: "'They go after anything shiny'\nSummons a coin-finding Niffler pet"
+			}
+			RiddlesDiary: {
+				DisplayName: Riddle's Diary
+				Tooltip: "'The first Horcrux'\n+18% spell damage, +8% spell crit\n[c/FF3333:HORCRUX: Drains life, builds Dark Arts Corruption]\n[c/FF3333:Causes paranoia. Weakens your Patronus.]\n[c/FFD700:Can be destroyed at the Enchanting Table to weaken Voldemort]"
+			}
+			SlytherinsLocket: {
+				DisplayName: Slytherin's Locket
+				Tooltip: "'None could open the locket but a Parselmouth'\n+12 defense, +8% damage reduction, poison immunity\n[c/FF3333:HORCRUX: Builds Dark Arts Corruption over time]\n[c/FF3333:Breeds distrust and aggression. Weakens Patronus.]\n[c/FFD700:Can be destroyed at the Enchanting Table to weaken Voldemort]"
+			}
+			HufflepuffsCup: {
+				DisplayName: Hufflepuff's Cup
+				Tooltip: "'A small golden cup with two finely wrought handles'\n+8 life regen, +60 max life, faster potion recovery\n[c/FF3333:HORCRUX: Builds Dark Arts Corruption over time]\n[c/FF3333:Drains vitality. Reduces vision.]\n[c/FFD700:Can be destroyed at the Enchanting Table to weaken Voldemort]"
+			}
+			DiademOfRavenclaw: {
+				DisplayName: Diadem of Ravenclaw
+				Tooltip: "'Wit beyond measure is man's greatest treasure'\n+80 max mana, +15% spell damage, -15% mana cost\n[c/FF3333:HORCRUX: Builds Dark Arts Corruption over time]\n[c/FF3333:Clouds judgment. Drains mana. Reduces max life.]\n[c/FFD700:Can be destroyed at the Enchanting Table to weaken Voldemort]"
+			}
+			SortingHat: {
+				DisplayName: Sorting Hat
+				Tooltip: "'Oh you may not think I'm pretty, but don't judge on what you see'\nBoosts the set bonus of any Hogwarts house armor worn\nSmall generic bonus without house armor"
+			}
+			FiendfyreWand: {
+				DisplayName: Fiendfyre Wand
+				Tooltip: "'I would never, ever have dared use it — it was too dangerous' — Hermione\nFires growing, homing cursed flames\n[c/FF3333:UNSTABLE: Fire sometimes swerves unpredictably]\n[c/FF3333:Can damage the caster if too close]\n[c/FF3333:Builds Dark Arts Corruption on use]"
+			}
+			Howler: {
+				DisplayName: Howler
+				Tooltip: "'YOUR FATHER AND I ARE ABSOLUTELY DISGUSTED!'\nHoming screaming letter that explodes with confusion"
+			}
+			ScreechingHowler: {
+				DisplayName: Screeching Howler
+				Tooltip: "'When a Howler meets a Mandrake, the result is truly deafening'\nUpgraded Howler with massive AoE and higher damage\nCrafted from Howler + Mandrake materials"
+			}
+			ApparitionCharm: {
+				DisplayName: Apparition Charm
+				Tooltip: "'Destination, Determination, Deliberation'\n+5% spell damage, +8% movement speed"
+			}
+			HedwigItem: {
+				DisplayName: Owl Treat
+				Tooltip: "'Hedwig!'\nSummons a snowy owl light pet"
+			}
+			ChocolateFrog: {
+				DisplayName: Chocolate Frog
+				Tooltip: "'Eat up, it'll help. I just got Dumbledore!'\nHeals 100 HP, grants Swiftness and Well Fed"
+			}
+			BertieBottsBeans: {
+				DisplayName: Bertie Bott's Every Flavour Beans
+				Tooltip: "'They mean every flavour'\nGrants a random buff... or debuff. Feeling lucky?"
+			}
+			FizzyWhizbee: {
+				DisplayName: Fizzing Whizbee
+				Tooltip:
+					'''
+					Honeydukes levitation sherbet balls
+					'Makes you float like a fairy!'
+					Grants Featherfall
+					'''
+			}
+			PepperImp: {
+				DisplayName: Pepper Imp
+				Tooltip:
+					'''
+					Honeydukes pepper-flavoured sweets
+					'Breathe fire for your friends!'
+					Grants fire breath attack on hit
+					'''
+			}
+			SugarQuill: {
+				DisplayName: Sugar Quill
+				Tooltip:
+					'''
+					Honeydukes sugar-spun writing quill
+					'Suck on it in class and look thoughtful!'
+					Grants mana regeneration
+					'''
+			}
+			AcidPop: {
+				DisplayName: Acid Pop
+				Tooltip:
+					'''
+					Honeydukes acid-flavoured lollipop
+					'Burned a hole right through my tongue!'
+					Grants Acid Spit ranged attack
+					'''
+			}
+			DrooblesBestBlowingGum: {
+				DisplayName: Drooble's Best Blowing Gum
+				Tooltip:
+					'''
+					Honeydukes bluebell-coloured bubblegum
+					'Lets you blow bubbles that won't pop for days!'
+					Grants a protective bubble shield
+					'''
+			}
+			ElmWand: {
+				DisplayName: Elm Wand
+				Tooltip: "'Elm favours dignity, precision, and refined magical work'\nCasts Reparo — restores Protego fields, Room buffs, and anti-despair wards\nUtility support, not flesh-healing"
+			}
+			AlohomoraKey: {
+				DisplayName: Alohomora Key
+				Tooltip: "'Standard Book of Spells, Chapter Seven'\nCasts Alohomora — the Unlocking Charm\nOpens doors and locks. Does not deal damage.\nThe mod's first true utility spell — Canon Tier A"
+			}
+			RoomOfRequirementKey: {
+				DisplayName: Room of Requirement Key
+				Tooltip:
+					'''
+					'I need a place to...'
+					Summons a magical room that adapts to your current need
+					The Room detects your state and grants the appropriate buff for 3 minutes
+					Cannot be used while a Room buff is active
+					'''
+			}
+			HouseElfBell: {
+				DisplayName: House-Elf Bell
+				Tooltip: "'Ring for service'\nSummons a House-Elf minion that teleports and attacks enemies"
+			}
+			Veritaserum: {
+				DisplayName: Veritaserum
+				Tooltip: "'Three drops and the Dark Lord himself would spill his secrets'\nReveals all enemies, traps, and treasure"
+			}
+			Amortentia: {
+				DisplayName: Amortentia
+				Tooltip: "'The most powerful love potion in existence'\nGreatly reduces enemy aggro, grants regen"
+			}
+			HawthornWand: {
+				DisplayName: Hawthorn Wand
+				Tooltip: "'Reasonably springy, unicorn hair core'\nCasts Chain Stupefy — stun bolt that bounces between up to 4 enemies"
+			}
+			BasiliskFangDagger: {
+				DisplayName: Basilisk Fang Dagger
+				Tooltip: "'One of the few substances that can destroy a Horcrux'\nFast melee dagger, inflicts Venom"
+			}
+			Gillyweed: {
+				DisplayName: Gillyweed
+				Tooltip: "'Gives the eater gills and flippers'\nFull underwater breathing, swim speed, no water penalty"
+			}
+			Remembrall: {
+				DisplayName: Remembrall
+				Tooltip: "'The only problem is, I can't remember what I've forgotten'\nGrants danger sense and treasure detection\nGlows red when enemies are near"
+			}
+			BlackthornWand: {
+				DisplayName: Blackthorn Wand
+				Tooltip: "'Twelve and three-quarter inches, dragon heartstring'\nCasts Impedimenta — AoE jinx that slows all nearby enemies"
+			}
+			WeasleyFireworks: {
+				DisplayName: Weasley's Wildfire Whiz-Bangs
+				Tooltip: "'Weasleys' Wizard Wheezes proudly presents...'\nColorful fireworks that home into enemies and explode"
+			}
+			Pensieve: {
+				DisplayName: Pensieve
+				Tooltip: "'I use the Pensieve. One simply siphons the excess thoughts'\nGrants full GPS info, enemy detection, night vision, and treasure finding"
+			}
+			WizardHat: {
+				DisplayName: Wizard Hat
+				Tooltip: Vanity item
+			}
+			WizardRobe: {
+				DisplayName: Wizard Robe
+				Tooltip: Vanity item
+			}
+			WizardBoots: {
+				DisplayName: Wizard Boots
+				Tooltip: Vanity item
+			}
+			CedarWand: {
+				DisplayName: Cedar Wand
+				Tooltip: "'Those who are well-matched with cedar carry the potential to be a frightening adversary'\nCasts Lumos Maxima — massive light orb that damages undead"
+			}
+			Portkey: {
+				DisplayName: Portkey
+				Tooltip: "'I've gone and used a Portkey...'\nInstantly teleports you to your spawn point\nCan be crafted from an old shoe!"
+			}
+			ExtendableEars: {
+				DisplayName: Extendable Ears
+				Tooltip: "'Weasleys' Wizard Wheezes — hear everything'\nGrants enemy detection, danger sense, and wire vision"
+			}
+			PeruvianDarknessPowder: {
+				DisplayName: Peruvian Instant Darkness Powder
+				Tooltip: "'Handy if you need to make a quick escape'\nCreates a cloud that blinds and confuses enemies"
+			}
+			PhilosophersStone: {
+				DisplayName: Philosopher's Stone
+				Tooltip:
+					'''
+					'After all, to the well-organised mind, death is but the next great adventure'
+					+10% all damage, +10% spell damage
+					+8 life regen, +40 max life
+					Enemies drop more coins
+					Reduced potion cooldown
+					'''
+			}
+			Deluminator: {
+				DisplayName: Deluminator
+				Tooltip:
+					'''
+					'Put-Outer. I invented it myself.'
+					Surrounds you with light
+					Grants night vision and calming aura
+					'''
+			}
+			Sneakoscope: {
+				DisplayName: Sneakoscope
+				Tooltip:
+					'''
+					'A Dark detector, very useful'
+					Grants danger sense permanently
+					+5 defense and enemy detection when enemies are near
+					Extra protection when bosses are nearby
+					'''
+			}
+			FlooPowder: {
+				DisplayName: Floo Powder
+				Tooltip: "'Diagon Alley!'\nInstant teleport to spawn — faster than Recall Potion\nGreen flame effect"
+			}
+			TriwizardCup: {
+				DisplayName: "[Legacy] Triwizard Cup"
+				Tooltip: "'This item has been renamed to Champion's Medallion'\nAuto-converts in inventory"
+			}
+			ChampionsMedallion: {
+				DisplayName: Champion's Medallion
+				Tooltip:
+					'''
+					'Forged from the trophies of defeated magical beasts'
+					+15% all damage, +10% crit, +8 defense, +40 mana, +4 life regen
+					Crafted from boss materials at the Enchanting Table
+					'''
+			}
+			ShieldHat: {
+				DisplayName: Shield Hat
+				Tooltip: "'Weasleys' Wizard Wheezes — Shield Line'\n+3 defense, +3% spell damage\nEnchanted with protective charms"
+			}
+			DecoyDetonator: {
+				DisplayName: Decoy Detonator
+				Tooltip: "'Weasleys' Wizard Wheezes — Defense Line'\nDraws enemy aggro, then explodes dealing damage + Jinxed debuff\nBrilliant tactical diversion"
+			}
+			PrefectBadge: {
+				DisplayName: Prefect Badge
+				Tooltip: "'Made prefect? That's everyone in the family!'\n+5 defense, +5% spell damage\n+3% damage per nearby town NPC (max +15%)"
+			}
+			BowtruckleCatch: {
+				DisplayName: Bowtruckle
+				Tooltip: "'A peaceful little tree guardian'\nCan be released or used as fishing bait"
+			}
+			EssenceOfMagic: {
+				DisplayName: Essence of Magic
+				Tooltip: "'The concentrated residue of magical energy'\nDrops from all magical creatures\nUsed in mid-to-late game wizard crafting"
+			}
+			SecretKeeperNote: {
+				DisplayName: Secret Keeper's Note
+				Tooltip: "'The headquarters of the Order of the Phoenix may be found at Number Twelve, Grimmauld Place'\nReveals the safehouse and starts maintenance missions\nSold by Kingsley after defeating Azkaban's Despair"
+			}
+			ConcealmentThread: {
+				DisplayName: Concealment Thread
+				Tooltip: "'Woven from residual ward magic'\nCrafting material from Grimmauld Place missions"
+			}
+			GladeDew: {
+				DisplayName: Glade Dew
+				Tooltip: "'Purified essence collected from the Unicorn Glade'\nCrafting material from forest expeditions"
+			}
+			StarTrace: {
+				DisplayName: Star Trace
+				Tooltip: "'Celestial residue from stabilized omen stones'\nCrafting material from forest expeditions"
+			}
+			BroodVenom: {
+				DisplayName: Brood Venom
+				Tooltip: "'Toxic extract from destroyed Acromantula nest nodes'\nCrafting material from forest expeditions"
+			}
+			ForestLantern: {
+				DisplayName: Forest Expedition Lantern
+				Tooltip: "'Hagrid's enchanted lantern lights the way'\nUse in the Forbidden Forest at night to begin an expedition\nRequires post-Basilisk"
+			}
+			WillowPassageToken: {
+				DisplayName: Willow Passage Token
+				Tooltip:
+					'''
+					'The knot freezes... the passage opens'
+					Secret access to the Whomping Willow tunnel and Shrieking Shack
+					Requires: post-Fenrir, nighttime only
+					'''
+			}
+			MoonsilverThread: {
+				DisplayName: Moonsilver Thread
+				Tooltip: "'Woven from moon-touched ward residue'\nCrafting material for protective moonward gear"
+			}
+			MoonwardPendant: {
+				DisplayName: Moonward Pendant
+				Tooltip:
+					'''
+					'The moon cannot harm what it cannot touch'
+					+5 defense, +4% endurance
+					Darkness and Jinxed immunity
+					Faster movement at night
+					'''
+			}
+			ForestWarden: {
+				DisplayName: Forest Warden's Badge
+				Tooltip:
+					'''
+					'Earned through service to the forest'
+					+6 defense, +5% damage reduction
+					Danger sense always active
+					Night vision and +8% speed in the Forbidden Forest
+					Crafted from all three expedition materials
+					'''
+			}
+			OrderSignet: {
+				DisplayName: Order Signet
+				Tooltip:
+					'''
+					'Membership has its privileges'
+					+5 defense, -200 aggro
+					+4% damage reduction
+					Immunity to Jinxed and Confused
+					Slowly relieves despair
+					'''
+			}
+			WandOfDestiny: {
+				DisplayName: Legacy Wand of Destiny
+				Tooltip:
+					'''
+					[Legacy item]
+					Automatically converts to the Elder Wand in old saves
+					'Wand of Destiny' is now Elder Wand flavor text, not a separate item
+					'''
+			}
+			PatronusCharm: {
+				DisplayName: Patronus Charm
+				Tooltip:
+					'''
+					'Expecto Patronum!'
+					Summons a powerful Patronus Guardian (costs 2 minion slots)
+					+10 defense and +2 life regen while active
+					Deals heavy bonus damage to Dementors and Azkaban horrors — the true counter
+					Casting cleanses Dark Arts Corruption
+					WARNING: Patronus weakens as corruption increases
+					'''
+			}
+			DarkMarkSummon: {
+				DisplayName: Dark Mark (Morsmordre)
+				Tooltip: "'MORSMORDRE!'\nCasts the Dark Mark into the sky\nTriggers a Death Eater Invasion\nUsable only at night during Hardmode"
+			}
+			CypressWand: {
+				DisplayName: Cypress Wand
+				Tooltip: "'Associated with nobility and the willingness to die heroically'\nCasts Conjunctivitis Curse — blinds and jinxes enemies\nDesigned for boss fights: long Jinxed duration weakens powerful foes"
+			}
+			UnbreakableVow: {
+				DisplayName: Unbreakable Vow
+				Tooltip:
+					'''
+					'You must understand that one who breaks an Unbreakable Vow... dies'
+					+25% summon damage, +1 max minion
+					But you take 15% more damage
+					High risk, high reward
+					'''
+			}
+			RowanWand: {
+				DisplayName: Rowan Wand
+				Tooltip: "'Rowan has always been much-favoured for protective magic'\nCasts Bombarda — explosive curse that destroys terrain in an area\nThe mining wand for wizard players"
+			}
+			BirchWand: {
+				DisplayName: Birch Wand
+				Tooltip: "'Highly adaptable and always best-suited to the young'\nCasts Levicorpus — launches enemies skyward and jinxes them"
+			}
+			PeppermintToad: {
+				DisplayName: Peppermint Toad
+				Tooltip: "'From Honeydukes — it really hops in your stomach!'\nGrants Swiftness, Flipper, and Well Fed for 5 minutes"
+			}
+			ChocolateCauldron: {
+				DisplayName: Chocolate Cauldron
+				Tooltip: "'Filled with Firewhisky — Honeydukes finest'\nRestores 100 mana, grants Magic Power and Mana Regen"
+			}
+			WeasleyBlazeBox: {
+				DisplayName: Weasley's Basic Blaze Box
+				Tooltip: "'Weasleys' Wizard Wheezes — Fire Line'\nAoE fire burst that ignites enemies in a wide area"
+			}
+			LarchWand: {
+				DisplayName: Larch Wand
+				Tooltip:
+					'''
+					'Larch has always been a much underrated wood'
+					Alternates between two utility spells:
+					Finite Incantatem — clears ALL debuffs from you and nearby allies
+					Accio — pulls all dropped items toward you in a massive radius
+					'''
+			}
+			RedOakWand: {
+				DisplayName: Red Oak Wand
+				Tooltip: "'Red oak is an ideal match for those with quick reactions'\nCasts Riddikulus — the anti-Boggart charm\nDeals 5x damage to Boggarts (its true purpose)\nCleanses fear and dark debuffs on cast\nUse Patronus for Dementors instead"
+			}
+			PepperupPotion: {
+				DisplayName: Pepperup Potion
+				Tooltip: "'Steam will come out of your ears for several hours'\n+25% speed, +15% attack speed\nFire and cold immunity"
+			}
+			SkeleGro: {
+				DisplayName: Skele-Gro
+				Tooltip: "'You're in for a rough night' — Madam Pomfrey\nMassive life regeneration (+20 regen)\nBut painful: -10% movement speed while bones regrow"
+			}
+
+			// === BOSS LOOT ===
+			BasiliskBag: {
+				DisplayName: Treasure Bag (Basilisk)
+				Tooltip: "{$CommonItemTooltip.RightClickToOpen}"
+			}
+			BasiliskEye: {
+				DisplayName: Basilisk Eye
+				Tooltip: "'Do not look directly into its eyes'\nImmunity to Petrified and Stone\n+8% spell damage\n[Expert exclusive]"
+			}
+			BasiliskTrophy: {
+				DisplayName: Basilisk Trophy
+				Tooltip: ""
+			}
+			HorntailBag: {
+				DisplayName: Treasure Bag (Hungarian Horntail)
+				Tooltip: "{$CommonItemTooltip.RightClickToOpen}"
+			}
+			DragonHeart: {
+				DisplayName: Dragon Heart
+				Tooltip: "'Dragon heartstring produces wands of the most power'\nFire, lava, and burn immunity\n+12% spell damage, fire trail when fast\n[Expert exclusive]"
+			}
+			HorntailTrophy: {
+				DisplayName: Horntail Trophy
+				Tooltip: ""
+			}
+			VoldemortBag: {
+				DisplayName: Treasure Bag (Lord Voldemort)
+				Tooltip: "{$CommonItemTooltip.RightClickToOpen}"
+			}
+			SoulFragment: {
+				DisplayName: Fragment of Voldemort's Soul
+				Tooltip:
+					'''
+					'He split his soul seven times... but this fragment was the last'
+					+20% all damage, +15% spell damage, +10 defense
+					But corrupts: -20 max HP, dark aura
+					[Expert exclusive]
+					'''
+			}
+			VoldemortTrophy: {
+				DisplayName: Voldemort Trophy
+				Tooltip: ""
+			}
+
+			// === PHASE 17 ===
+			DuelingDummyItem: {
+				DisplayName: Dueling Dummy
+				Tooltip: "'On your guard!'\nPlaces a training target that shows damage numbers\nTest your spell DPS — the dummy cannot be destroyed"
+			}
+			WizardChessSet: {
+				DisplayName: Wizard's Chess Set
+				Tooltip: "'That's totally barbaric!' 'That's wizard's chess.'\nStudy tactics to gain Battle and Rage buffs for 5 minutes\nReusable"
+				UseMessage: "You study the chess board... your tactical awareness sharpens!"
+			}
+
+			// === PHASE 18 ===
+			HogwartsLetter: {
+				DisplayName: Hogwarts Acceptance Letter
+				Tooltip:
+					'''
+					'Dear student, we are pleased to inform you...'
+					Opens the letter to learn about the Wizarding World mod
+					Grants a starter pack of Essence of Magic
+					'''
+			}
+			EbonyWand: {
+				DisplayName: Ebony Wand
+				Tooltip:
+					'''
+					'Highly suited to all manner of combative magic'
+					Casts Apparition — teleport to your cursor!
+					Max range: 37 tiles. Cannot pass through walls.
+					3-second cooldown between teleports
+					'''
+			}
+
+			// === PHASE 15 ===
+			WizardSpectacles: {
+				DisplayName: Wizard Spectacles
+				Tooltip: "'Round glasses, just like Harry's'\nVanity accessory"
+			}
+			LightningScar: {
+				DisplayName: Lightning Scar
+				Tooltip: "'The scar had not pained Harry for nineteen years. All was well.'\nGrants danger sense — the scar burns when evil is near\n+3% spell damage"
+			}
+			WizardBeard: {
+				DisplayName: Long Wizard Beard
+				Tooltip: "'It was long enough to tuck into his belt'\nVanity accessory — channel your inner Dumbledore"
+			}
+			KneazleItem: {
+				DisplayName: Cat Treats
+				Tooltip: "'Kneazles are very intelligent cat-like creatures'\nSummons a Kneazle pet that detects enemies"
+			}
+			DailyProphet: {
+				DisplayName: The Daily Prophet
+				Tooltip: "'All the news that's fit to print'\nDisplays current world state: boss status, events, moon phase\nReusable — not consumed on use"
+			}
+
+			// === PHASE 20 ===
+			SpellBook: {
+				DisplayName: Standard Book of Spells
+				Tooltip:
+					'''
+					'by Miranda Goshawk'
+					An in-game reference guide to all wands and spells
+					Use multiple times to browse 5 pages
+					Shows wand tiers, damage values, spells, and crafting tips
+					Sold by Ollivander. Reusable
+					'''
+				Guide: {
+					OverviewTitle: "=== STANDARD BOOK OF SPELLS ==="
+					OverviewAuthor: "by Miranda Goshawk"
+					OverviewBrowse: "Use again to browse pages (5 total):"
+					OverviewPage1: "  Page 1: Early Wands (Pre-Boss)"
+					OverviewPage2: "  Page 2: Mid-Tier Wands (Post-Boss / Hardmode)"
+					OverviewPage3: "  Page 3: Late-Game Wands (Post-Mech / Endgame)"
+					OverviewPage4: "  Page 4: Utility Spells"
+					Page1Title: "=== PAGE 1: EARLY WANDS ==="
+					Page1Line1: "Oak Wand [12 dmg] — Stupefy (stun bolt)"
+					Page1Line2: "  Recipe: Wood + Fallen Stars @ Workbench"
+					Page1Line3: "Willow Wand [16 dmg] — Expelliarmus (knockback bolt)"
+					Page1Line4: "  Recipe: Wood + Fallen Stars + Sapphire @ Workbench"
+					Page1Line5: "Ash Wand [22 dmg] — Incendio (fire bolt)"
+					Page1Line6: "  Recipe: Ash Wood + Hellstone + Ruby @ Enchanting Table"
+					Page1Line7: "Holly Wand [28 dmg] — Expelliarmus + Protego shield"
+					Page1Line8: "Red Oak Wand [32 dmg] — Riddikulus (anti-Boggart, anti-fear)"
+					Page1Line9: "Rowan Wand [30 dmg] — Bombarda (destroys terrain!)"
+					Page1Line10: "Birch Wand [28 dmg] — Levicorpus (launches enemies skyward)"
+					Page2Title: "=== PAGE 2: MID-TIER WANDS ==="
+					Page2Line1: "Phoenix Feather [30 dmg] — Incendio (double shot chance)"
+					Page2Line2: "  Requires: Hellstone Bars + Feathers"
+					Page2Line3: "Dragon Heartstring [42 dmg] — Sectumsempra (bleed curse)"
+					Page2Line4: "Hawthorn [38 dmg] — Chain Stupefy (bounces 4 enemies)"
+					Page2Line5: "Blackthorn [35 dmg] — Impedimenta (AoE slow)"
+					Page2Line6: "Cypress [30 dmg] — Conjunctivitis (boss debuff tool)"
+					Page2Line7: "Unicorn Hair [55 dmg] — Expecto Patronum (homing guardian)"
+					Page2Line8: "  Requires: Pearlwood + Unicorn Horn + Souls of Light"
+					Page2Line9: "Yew [48 dmg] — Crucio (channeled DoT beam)"
+					Page3Title: "=== PAGE 3: LATE-GAME & ENDGAME WANDS ==="
+					Page3Line1: "Ebony Wand — Apparition (teleport to cursor!)"
+					Page3Line2: "  Requires: Ebonwood + Souls of Light/Night + Essence"
+					Page3Line3: "Elder Wand [120 dmg] — Avada Kedavra (killing curse)"
+					Page3Line4: "  Drops from: Lord Voldemort"
+					Page3Line5: "Fiendfyre Wand [95 dmg] — Growing cursed fire"
+					Page3Line6: "  Requires: Hellstone + Souls + Solar Fragments + Essence"
+					Page3Line7: "Elder Wand mastery replaces the old Wand of Destiny path"
+					Page3Line8: "  Master the Elder Wand through Wand Mastery to earn its legend-title"
+					Page3Line9: "  'Wand of Destiny' is now lore flavor, not a separate item"
+					Page4Title: "=== PAGE 4: UTILITY SPELLS ==="
+					Page4Line1: "Larch Wand — Alternates Finite Incantatem (clear debuffs) + Accio (pull items)"
+					Page4Line2: "Cedar Wand — Lumos Maxima (massive light orb, hurts undead)"
+					Page4Line3: "Elm Wand — Reparo (repairs wards, Protego fields, and Room buffs)"
+					Page4Tip1: "TIP: The Enchanting Table counts as a Workbench too!"
+					Page4Tip2: "TIP: Essence of Magic drops from all magical creatures!"
+					Page4Tip3: "TIP: Patronus is the real anti-Dementor answer. Use Riddikulus for Boggarts."
+				}
+			}
+
+			// === PHASE 22 ===
+			SlytherinsDagger: {
+				DisplayName: House Champion's Dagger
+				Tooltip:
+					'''
+					'Awarded to the champion of Slytherin'
+					Earned through House Standing
+					Massive +20% critical strike chance
+					Applies Jinxed on crits, Venom on every hit
+					The serpent's bite — fast and deadly
+					'''
+			}
+			RavenclawsStaff: {
+				DisplayName: House Champion's Staff
+				Tooltip:
+					'''
+					'Awarded to the champion of Ravenclaw'
+					Earned through House Standing
+					Very low mana cost (5) — wisdom conserves energy
+					Fires piercing intellect beams
+					-10% mana cost on ALL spells while held
+					'''
+			}
+			HufflepuffsMace: {
+				DisplayName: House Champion's Mace
+				Tooltip:
+					'''
+					'Awarded to the champion of Hufflepuff'
+					Earned through House Standing
+					Heavy smash with massive knockback
+					Heals you for 10% of damage dealt
+					+5 defense while held — the badger protects its own
+					'''
+			}
+			UnicornBlood: {
+				DisplayName: Unicorn Blood
+				Tooltip:
+					'''
+					'It will keep you alive, even if you are an inch from death, but at a terrible price'
+					Found as tainted remnants in the Forbidden Forest -- never from harming unicorns
+					Crafting material for powerful wizard items
+					'''
+			}
+			MasterWizardBanner: {
+				DisplayName: Master Wizard's Banner
+				Tooltip:
+					'''
+					'The greatest witch or wizard of their age'
+					The ultimate trophy — requires all 3 boss trophies + Triwizard Cup + Unicorn Blood
+					+10% all damage, +5% spell damage, +8 defense, +20 mana, +2 regen
+					Golden master wizard aura
+					'''
+			}
+			FelixCauldron: {
+				DisplayName: Felix Felicis Cauldron
+				Tooltip:
+					'''
+					'A cauldron that perpetually brews Liquid Luck'
+					Grants 10-minute Lucky buff to all nearby players when used
+					The ultimate celebration of victory
+					'''
+				UseMessage: "The cauldron bubbles with liquid gold... you feel incredibly lucky!"
+			}
+
+			// === PHASE 24 ===
+			DragonScaleHelm: {
+				DisplayName: Dragon Scale Helm
+				Tooltip: "+10% spell damage, +30 max mana"
+				SetBonus: "Dragon Fire Shield: Fire/lava immunity, +18% spell damage, fire aura"
+			}
+			DragonScaleBreastplate: {
+				DisplayName: Dragon Scale Breastplate
+				Tooltip: "+12% spell damage, +6% damage reduction, +40 max life"
+			}
+			DragonScaleGreaves: {
+				DisplayName: Dragon Scale Greaves
+				Tooltip: "+15% movement speed, +1 max run speed, +5 mana regen"
+			}
+			Nimbus2001Broomstick: {
+				DisplayName: Nimbus Two Thousand and One
+				Tooltip:
+					'''
+					'Malfoy's father bought the whole team Nimbus Two Thousand and Ones'
+					The fastest broomstick in existence
+					+8% damage while flying at high speed
+					'''
+			}
+
+			// === PHASE 25 ===
+			PadfootAmulet: {
+				DisplayName: Padfoot's Amulet
+				Tooltip:
+					'''
+					'Mischief managed'
+					Sirius Black's Animagus charm
+					+20% movement speed, +2 max run speed
+					-200 enemy aggro — the dog slips through unnoticed
+					'''
+			}
+			ProngsCharm: {
+				DisplayName: Prongs' Charm
+				Tooltip:
+					'''
+					'The ones that love us never really leave us'
+					James Potter's stag Patronus charm
+					+10% spell damage, +5% spell crit
+					+10% summon damage — empowers your Patronus Guardian
+					'''
+			}
+
+			// === BOSS EXPANSION ===
+			TrollClub: {
+				DisplayName: Troll Club
+				Tooltip: "'Troll bogies. That's even more disgusting.'\nSlow but devastating — massive knockback"
+			}
+			TrollSummonItem: {
+				DisplayName: Smelly Sock
+				Tooltip: "'The smell attracts it'\nSummons the Mountain Troll"
+			}
+			TrollBag: {
+				DisplayName: Treasure Bag (Mountain Troll)
+				Tooltip: "{$CommonItemTooltip.RightClickToOpen}"
+			}
+			TrollHide: {
+				DisplayName: Troll Hide
+				Tooltip: "'Thick as a castle wall'\n+8 defense, +10% knockback resistance\n[Expert exclusive]"
+			}
+			TrollTrophy: {
+				DisplayName: Mountain Troll Trophy
+				Tooltip: ""
+			}
+			AragogSummonItem: {
+				DisplayName: Acromantula Egg
+				Tooltip: "'Follow the spiders...'\nSummons Aragog, patriarch of the Acromantulas\nHardmode only"
+			}
+			SpiderSilkWeave: {
+				DisplayName: Spider Silk Weave
+				Tooltip: "'Stronger than steel, lighter than air'\nCrafting material"
+			}
+			AragogBag: {
+				DisplayName: Treasure Bag (Aragog)
+				Tooltip: "{$CommonItemTooltip.RightClickToOpen}"
+			}
+			AragogsFang: {
+				DisplayName: Aragog's Fang
+				Tooltip: "'The patriarch's gift'\n+15% critical strike chance\nEnemies have 10% chance to drop bonus loot\n[Expert exclusive]"
+			}
+			AragogTrophy: {
+				DisplayName: Aragog Trophy
+				Tooltip: ""
+			}
+			FluffySummonItem: {
+				DisplayName: Enchanted Flute
+				Tooltip: "'Music soothes the savage beast'\nSummons Fluffy, the three-headed dog\nRequires post-Mechanical Boss"
+			}
+			CerberusFang: {
+				DisplayName: Cerberus Fang
+				Tooltip: "'From the guardian of the trapdoor'\nCrafting material"
+			}
+			FluffyBag: {
+				DisplayName: Treasure Bag (Fluffy)
+				Tooltip: "{$CommonItemTooltip.RightClickToOpen}"
+			}
+			ThreeHeadedCollar: {
+				DisplayName: Three-Headed Collar
+				Tooltip: "'Even Fluffy can be tamed... sort of'\n+3 max minions\n-10% movement speed\n[Expert exclusive]"
+			}
+			FluffyTrophy: {
+				DisplayName: Fluffy Trophy
+				Tooltip: ""
+			}
+			BellatrixSummonItem: {
+				DisplayName: Azkaban Prisoner Tag
+				Tooltip: "'She was his most faithful servant'\nSummons Bellatrix Lestrange\nRequires post-Plantera"
+			}
+			DarkArtsTome: {
+				DisplayName: Dark Arts Tome
+				Tooltip: "'Advanced dark magic knowledge'\nCrafting material"
+			}
+			BellatrixBag: {
+				DisplayName: Treasure Bag (Bellatrix Lestrange)
+				Tooltip: "{$CommonItemTooltip.RightClickToOpen}"
+			}
+			BellatrixWandHand: {
+				DisplayName: Bellatrix's Wand Hand
+				Tooltip: "'She was a true believer'\n+20% spell damage, -15% mana cost\nBut incoming damage increased by 8%\n[Expert exclusive]"
+			}
+			BellatrixTrophy: {
+				DisplayName: Bellatrix Trophy
+				Tooltip: ""
+			}
+			FenrirSummonItem: {
+				DisplayName: Bloodied Claw
+				Tooltip: "'The bite that changes everything'\nSummons Fenrir Greyback\nOnly usable during Blood Moon!"
+			}
+			WerewolfPelt: {
+				DisplayName: Werewolf Pelt
+				Tooltip: "'Still warm'\nCrafting material"
+			}
+			FenrirBag: {
+				DisplayName: Treasure Bag (Fenrir Greyback)
+				Tooltip: "{$CommonItemTooltip.RightClickToOpen}"
+			}
+			LycansBiteMark: {
+				DisplayName: Lycan's Bite Mark
+				Tooltip: "'The bite that changes everything'\n+20% melee damage\n+15% movement speed at night\n-5% damage during day\n[Expert exclusive]"
+			}
+			FenrirTrophy: {
+				DisplayName: Fenrir Trophy
+				Tooltip: ""
+			}
+			DementorKingSummonItem: {
+				DisplayName: Frozen Soul Lantern
+				Tooltip: "'The light that attracts the darkest creatures'\nSummons Azkaban's Despair\nRequires post-Golem, night only"
+			}
+			DementorsShroud: {
+				DisplayName: Dementor's Shroud
+				Tooltip: "'Woven from pure despair'\nEndgame crafting material"
+			}
+			DementorKingBag: {
+				DisplayName: Treasure Bag (Azkaban's Despair)
+				Tooltip: "{$CommonItemTooltip.RightClickToOpen}"
+			}
+			SoulSiphon: {
+				DisplayName: Soul Siphon
+				Tooltip: "'It feeds on despair'\nAll damage heals you for 3%\nNearby enemies have -5 defense\n[Expert exclusive]"
+			}
+			DementorKingTrophy: {
+				DisplayName: Azkaban's Despair Trophy
+				Tooltip: ""
+			}
+			QuirrellSummonItem: {
+				DisplayName: Suspicious Turban
+				Tooltip: "'There is no good and evil, there is only power'\nSummons Professor Quirrell"
+			}
+			QuirrellBag: {
+				DisplayName: Treasure Bag (Professor Quirrell)
+				Tooltip: "{$CommonItemTooltip.RightClickToOpen}"
+			}
+			QuirrellsTurban: {
+				DisplayName: Quirrell's Turban
+				Tooltip: "'Something is hiding under there...'\n+5% spell damage, reveals nearby enemies\nBut you take 3% more damage (Voldemort's influence)\n[Expert exclusive]"
+			}
+			QuirrellTrophy: {
+				DisplayName: Quirrell Trophy
+				Tooltip: ""
+			}
+			UmbridgeSummonItem: {
+				DisplayName: Educational Decree
+				Tooltip: "'I must not tell lies'\nSummons Dolores Umbridge\nRequires post-Mechanical Boss"
+			}
+			UmbridgeBag: {
+				DisplayName: Treasure Bag (Dolores Umbridge)
+				Tooltip: "{$CommonItemTooltip.RightClickToOpen}"
+			}
+			MinistryBadge: {
+				DisplayName: Ministry Badge
+				Tooltip: "'The Ministry has decided...'\nImmune to Jinxed and Confused\n+5 defense, but -5% damage\n[Expert exclusive]"
+			}
+			UmbridgeTrophy: {
+				DisplayName: Umbridge Trophy
+				Tooltip: ""
+			}
+			UmbridgesQuill: {
+				DisplayName: Umbridge's Blood Quill
+				Tooltip: "'I must not tell lies'\nFast spell weapon that inflicts Bleeding + Jinxed"
+			}
+			BartyCrouchSummonItem: {
+				DisplayName: Suspicious Flask
+				Tooltip: "'CONSTANT VIGILANCE!'\nSummons Barty Crouch Jr in disguise\nRequires post-Plantera"
+			}
+			BartyCrouchBag: {
+				DisplayName: Treasure Bag (Barty Crouch Jr)
+				Tooltip: "{$CommonItemTooltip.RightClickToOpen}"
+			}
+			PolyjuiceFlask: {
+				DisplayName: Polyjuice Flask
+				Tooltip: "'Constant vigilance!'\n+12% all damage, +10% movement speed\nBriefly become invisible every 30 seconds\n[Expert exclusive]"
+			}
+			BartyCrouchTrophy: {
+				DisplayName: Barty Crouch Jr Trophy
+				Tooltip: ""
+			}
+			SpiderSilkCloak: {
+				DisplayName: Spider Silk Cloak
+				Tooltip: "'Woven from Aragog's finest silk'\n-300 enemy aggro, +10% speed, +8% spell damage\nLightweight and nearly invisible"
+			}
+			CerberusFangNecklace: {
+				DisplayName: Cerberus Fang Necklace
+				Tooltip: "'Three heads, three servants'\n+5 defense, +1 max minion, increased summon knockback"
+			}
+			DarkArtsGrimoire: {
+				DisplayName: Dark Arts Grimoire
+				Tooltip: "'Advanced dark magic, weaponized'\nFires a spread of 3 shadow beams\nCrafted from Bellatrix's forbidden knowledge"
+			}
+			WerewolfCloak: {
+				DisplayName: Werewolf Cloak
+				Tooltip: "'The beast within empowers you under the moon'\nNight: +20% melee, +15% speed, +10 defense\nDay: +5% melee, +5% speed"
+			}
+			DementorsEmbrace: {
+				DisplayName: Dementor's Embrace
+				Tooltip: "'To embrace the Dementor is to accept despair as power'\n+15% all damage, +10% spell damage\nBut -30 max HP and dark aura\nEndgame dark accessory"
+			}
+			MagicalKoi: {
+				DisplayName: Magical Koi
+				Tooltip: "'A fish that glows with inner magic'\nEat for 2-minute Luck + Mana Regen buff\nAlso usable as a potion ingredient"
+			}
+			MerfolkScale: {
+				DisplayName: Merfolk Scale
+				Tooltip: "'Shed by the merpeople of the deep'\nCrafting material — caught while ocean fishing"
+			}
+			EnchantedTadpole: {
+				DisplayName: Enchanted Tadpole
+				Tooltip: "'It sparkles!'\nExcellent bait (40 power) or eat for 2-4 Essence of Magic\nCaught in the Forbidden Forest"
+			}
+			WizardCrate: {
+				DisplayName: Wizard Crate
+				Tooltip: "'A crate of wizarding goods'\nRight-click to open for random wizard potions, accessories, and Essence\nRare hardmode fishing catch"
+			}
+			WizardCrateHardmode: {
+				DisplayName: Archmage's Crate
+				Tooltip: "'A crate imbued with hardmode magic'\nRight-click for hardmode wizard potions, rare accessories, boss materials\nRare post-Mechanical Boss fishing catch"
+			}
+			SkivingSnackbox: {
+				DisplayName: Skiving Snackbox
+				Tooltip: "'Weasleys' Wizard Wheezes — get out of anything!'\nEat to fake illness: 5 seconds of invincibility + invisibility\nEnemies completely lose interest in you\nTriggers potion cooldown"
+			}
+			PukingPastille: {
+				DisplayName: Puking Pastille
+				Tooltip: "'Not for the faint of stomach'\nInstantly purges ALL debuffs\nBut costs 30 HP — emergency use only"
+			}
+			NosebleedNougat: {
+				DisplayName: Nosebleed Nougat
+				Tooltip: "'Trade blood for power'\nLose 50 HP, instantly restore 200 mana\n+30 seconds mana regeneration"
+			}
+			DemiguiseHair: {
+				DisplayName: Demiguise Hair
+				Tooltip: "'Used to weave ordinary stealth cloaks and concealment gear'\nConsume for 30 seconds of invisibility\nOr use as crafting material"
+			}
+			MinistryVisitorBadge: {
+				DisplayName: Ministry Visitor Badge
+				Tooltip:
+					'''
+					'The Ministry of Magic welcomes you'
+					Activates Department of Mysteries retrieval missions
+					Requires: post-Bellatrix progression
+					Reusable -- shows mission status between runs
+					'''
+			}
+			ProphecyDust: {
+				DisplayName: Prophecy Dust
+				Tooltip: "'Ethereal residue from handled prophecy orbs'\nCrafting material for Order-aligned gear"
+			}
+			ChronalSand: {
+				DisplayName: Chronal Sand
+				Tooltip: "'Time-infused residue from stabilized hourglasses'\nCrafting material for temporal gear"
+			}
+			VeilThread: {
+				DisplayName: Veil Thread
+				Tooltip: "'Dark gossamer from sealed Veil fractures'\nCrafting material for death-ward gear"
+			}
+			OrderBadge: {
+				DisplayName: Order of the Phoenix Badge
+				Tooltip:
+					'''
+					'Dumbledore's Army -- the Order stands'
+					+8% spell damage, +5 defense, +4% endurance
+					Immune to Dark Curse, passive despair resistance
+					'''
+			}
+			AzkabanBreachStone: {
+				DisplayName: Azkaban Breach Stone
+				Tooltip: "'A cracked shard of the prison's anti-apparition ward'\nSummons Azkaban's Despair\nRequires post-Golem, night only"
+			}
+			AzkabanWardSigil: {
+				DisplayName: Azkaban Ward Sigil
+				Tooltip: "'A small ward-circle traced in silver and hope'\nApplies Ward of Hope for 3 minutes\nHelps resist despair buildup during Azkaban content"
+			}
+			GringottsVaultKey: {
+				DisplayName: Gringotts Vault Key
+				Tooltip:
+					'''
+					'Goblin-forged, goblin-authorized'
+					Activates sanctioned Gringotts vault retrieval missions
+					Reusable -- shows vault status between runs
+					'''
+			}
+			KnockturnPass: {
+				DisplayName: Knockturn Pass
+				Tooltip:
+					'''
+					'Down the dark side-street...'
+					Activates cursed-object containment contracts in Knockturn Alley
+					Requires: visited Diagon Alley + post-Bellatrix
+					'''
+			}
+			CursedResidue: {
+				DisplayName: Cursed Residue
+				Tooltip: "'Dark taint from contained cursed objects'\nCrafting material for dark-handling gear"
+			}
+			HandOfGlory: {
+				DisplayName: Hand of Glory
+				Tooltip:
+					'''
+					'It gives light only to the holder'
+					Night vision, spelunker sense, reduced aggro
+					In darkness: +6% damage, +4 defense
+					Crafted from Knockturn materials
+					'''
+			}
+			LeakyCauldronToken: {
+				DisplayName: Leaky Cauldron Token
+				Tooltip:
+					'''
+					'The gateway to Diagon Alley'
+					Use to enter the wizarding shopping street
+					Grants Shopping Day buff: better prices, luck, treasure sense
+					Requires: post-Basilisk progression
+					'''
+			}
+			GalleonDust: {
+				DisplayName: Galleon Dust
+				Tooltip: "'Enchanted gold residue from ancient vaults'\nCrafting material for treasure-finding gear"
+			}
+			GoblinLedger: {
+				DisplayName: Goblin Ledger
+				Tooltip:
+					'''
+					'The goblins keep meticulous records'
+					+luck, coin attraction, treasure sense, +5% all damage
+					Crafted from Gringotts vault materials
+					'''
+			}
+			SoulAsh: {
+				DisplayName: Soul Ash
+				Tooltip:
+					'''
+					Residue of despair from broken Azkaban wards
+					Crafting material for anti-despair gear
+					'''
+			}
+			PatronusFocus: {
+				DisplayName: Patronus Focus
+				Tooltip:
+					'''
+					'Concentrates hope into a tangible ward'
+					Passive despair relief and +4 defense
+					While Patronus active: +8 defense, +3 life regen, +8% damage
+					Enhances Patronus duration
+					'''
+			}
+			MerfolkAmulet: {
+				DisplayName: Merfolk Amulet
+				Tooltip: "'The sea answers to those who wear it'\nGrants gills and flipper permanently\n+10% damage and +15% speed while underwater"
+			}
+			DragonToothNecklace: {
+				DisplayName: Dragon-Tooth Necklace
+				Tooltip:
+					'''
+					'Forged from dragonfire and three-headed fury'
+					Requires Horntail + Fluffy materials — cross-boss reward
+					+12% all damage, +8 armor penetration
+					Leaves a fire trail while moving
+					'''
+			}
+			VenomSilkWraps: {
+				DisplayName: Venom-Silk Wraps
+				Tooltip:
+					'''
+					'Spider silk imbued with Basilisk venom'
+					Requires Aragog + Basilisk materials — cross-boss reward
+					+10% spell damage, +15% crit chance
+					Immunity to Poison and Venom
+					'''
+			}
+			DarkLordsBane: {
+				DisplayName: Dark Lord's Bane
+				Tooltip:
+					'''
+					'The combined power of every challenge overcome'
+					Requires materials from ALL wizard bosses
+					+15% all damage, +10% spell, +10 defense, +4 regen
+					Immune to poison, venom, and fire
+					The ultimate cross-boss accessory
+					'''
+			}
+			WizardFishingRod: {
+				DisplayName: Enchanted Fishing Rod
+				Tooltip: "'The fish practically catch themselves!'\n30% fishing power\nEnchanted to attract magical fish"
+			}
+			Firewhiskey: {
+				DisplayName: Ogden's Old Firewhiskey
+				Tooltip: "'Warms you from the inside out... violently'\n+12% all damage, +8% crit for 4 minutes\nSide effect: occasional brief tipsy confusion + fire breath"
+			}
+			PygmyPuffItem: {
+				DisplayName: Pygmy Puff
+				Tooltip: "'Weasleys' Wizard Wheezes — our most adorable product!'\nSummons a pink Pygmy Puff pet\nMiniature Puffskein — cute and harmless"
+			}
+			DirigiblePlumEarring: {
+				DisplayName: Dirigible Plum Earring
+				Tooltip: "'Dirigible Plums help you accept the extraordinary'\nSlow fall, +2 jump speed, auto-jump\nLuna Lovegood's signature accessory"
+			}
+			EnchantedTrollClub: {
+				DisplayName: Enchanted Troll Club
+				Tooltip: "'Somehow, enchanting a troll's club made it even more brutish'\nUpgraded Troll Club — hits create AoE shockwaves\nMassive knockback"
+			}
+			WandHolster: {
+				DisplayName: Wand Holster
+				Tooltip: "'Draw faster, cast faster, win faster'\n+10% spell casting speed\n+5% spell damage, -5% mana cost"
+			}
+			ThestralReins: {
+				DisplayName: Thestral Reins
+				Tooltip: "'Only visible to those who have witnessed death'\nSummons a Thestral mount — dark flying steed\nGrants night vision + enemy detection while riding"
+			}
+			AshwinderEgg: {
+				DisplayName: Ashwinder Egg
+				Tooltip: "'Intensely hot — freeze it before it burns your house down!'\nConsume for 2-min fire/lava immunity + inferno aura\nKey ingredient for Love Potions"
+			}
+			WizengamotHood: {
+				DisplayName: Wizengamot Hood
+				Tooltip: "+15% spell damage, +40 max mana"
+				SetBonus: "Arcane Authority: +30% spell damage, -20% mana cost, +60 mana, +8 mana regen"
+			}
+			WizengamotRobes: {
+				DisplayName: Wizengamot Robes
+				Tooltip: "+15% spell damage, +15% spell crit, +8% damage reduction, +60 max life"
+			}
+			WizengamotBoots: {
+				DisplayName: Wizengamot Boots
+				Tooltip: "+15% movement speed, +1.5 run speed, +6 mana regen"
+			}
+			PhoenixTear: {
+				DisplayName: Phoenix Tear
+				Tooltip:
+					'''
+					'Phoenix tears have immense healing powers'
+					Instantly restores ALL health and mana
+					Clears ALL debuffs
+					Does NOT trigger potion sickness
+					The rarest healing item in the wizarding world
+					'''
+			}
+			GrindylowTooth: {
+				DisplayName: Grindylow Tooth
+				Tooltip: "'Sharp and faintly magical'\nCrafting material — dropped by Grindylows or caught while fishing"
+			}
+			AquaFortis: {
+				DisplayName: Aqua Fortis
+				Tooltip: "'Water warrior's elixir'\nGills + water immunity\nWhile underwater: +20% damage, +8 defense, +20% speed\nCrafted from fishing catches"
+			}
+			WizardPocketWatch: {
+				DisplayName: Wizard's Pocket Watch
+				Tooltip: "'Time is a mysterious thing'\nShows time of day, +5% movement speed, +5% attack speed"
+			}
+			MandrakeRestorative: {
+				DisplayName: Mandrake Restorative Draught
+				Tooltip: "'When matured, their cry will revive anyone petrified'\nHeals 50 HP + cures Petrified, Jinxed, Dark Curse, and all debilitating debuffs\nThe canonical cure for Basilisk petrification"
+			}
+			KeeperGloves: {
+				DisplayName: Quidditch Keeper Gloves
+				Tooltip: "'You shall not pass the Quaffle through these hoops'\n+8 defense, knockback immunity, 20% thorns damage\nThe goalkeeper's best friend"
+			}
+			SeekersReflexes: {
+				DisplayName: Seeker's Reflexes Potion
+				Tooltip: "'You have to be quick to catch the Snitch'\n+15% speed, +10% dodge, +10% attack speed for 4 min\nCrafted from the rare Golden Egg"
+			}
+			Spectrespecs: {
+				DisplayName: Spectrespecs
+				Tooltip: "'They make Wrackspurts visible, you know'\nReveals all enemies + danger sense\n+5% spell crit chance\nLuna Lovegood's signature rainbow glasses"
+			}
+			FoeGlass: {
+				DisplayName: Foe-Glass
+				Tooltip: "'The shadows grow clearer as your enemies approach'\nReveals all enemies, danger sense, night vision\n+3% damage. Shows boss HP % in tooltip when bosses are active\nMoody's favorite Dark detector"
+			}
+			GobletOfFire: {
+				DisplayName: Goblet of Fire
+				Tooltip: "'The Goblet of Fire selects the champions'\nGrants Battle + Wrath + Rage to all nearby players when used\nReusable legendary furniture piece"
+				UseMessage: The Goblet of Fire blazes! All nearby champions are empowered!
+			}
+			BabyDragonItem: {
+				DisplayName: Dragon Egg (Hatched)
+				Tooltip: "'It's a dragon! Hagrid would be so proud.'\nSummons a Baby Hungarian Horntail light pet\nCrafted from the Horntail's Golden Egg"
+			}
+			FairyWings: {
+				DisplayName: Fairy Wings
+				Tooltip: "'The fairies of the wizarding world are far more beautiful'\nGrants flight + slow fall\nSparkle trail while flying"
+			}
+			QuillOfAcceptance: {
+				DisplayName: Quill of Acceptance
+				Tooltip: "'The Quill has sat in Hogwarts since the school was founded'\n+8% spell damage, +5% spell crit, +5 spell armor penetration"
+			}
+			GoblinSilverSword: {
+				DisplayName: Goblin-Wrought Silver Sword
+				Tooltip: "'Goblins are the finest metalworkers in the wizarding world'\nApplies Midas on hit — goblin-made, absorbs enemy wealth\nCrafted from silver and gold at the Enchanting Table"
+			}
+			MoodysEye: {
+				DisplayName: Moody's Magical Eye
+				Tooltip: "'CONSTANT VIGILANCE!'\nReveals all enemies, treasure, traps, wires\nNight vision + danger sense + 5% damage\nThe eye sees ALL"
+			}
+			DragonScaleRing: {
+				DisplayName: Dragon Scale Ring
+				Tooltip: "'Forged in dragonfire'\nFire immunity + 8% spell damage + 5% all damage\nCompact fire-resistant ring"
+			}
+			PhoenixAsh: {
+				DisplayName: Phoenix Ash
+				Tooltip: "'The remains of a Burning Day'\nConsume for 30-sec fire immunity + regen\nOr use as crafting material for resurrection items"
+			}
+			ResurrectionPotion: {
+				DisplayName: Resurrection Potion
+				Tooltip: "'Rise from the ashes'\nPrevents one death: if you would die, heal to 50% instead\nBuff lasts 10 minutes, triggers once"
+			}
+			ShieldCharmPotion: {
+				DisplayName: Shield Charm Potion
+				Tooltip: "'Protego in a bottle'\n+10 defense, +8% damage reduction for 5 minutes"
+			}
+			EnchantedMirror: {
+				DisplayName: Enchanted Hand Mirror
+				Tooltip: "'Not quite the Mirror of Erised, but it'll get you home'\n+3% spell damage passive\nCrafted from Magic Mirror + Essence"
+			}
+			DraconisElixir: {
+				DisplayName: Draconis Elixir
+				Tooltip: "'Dragon blood has twelve uses — this potion harnesses them all'\nGrants Wrath + Rage + Fire Immunity + Inferno Aura for 4 minutes\nThe ultimate dragon-powered combat potion"
+			}
+			JobberknollFeather: {
+				DisplayName: Jobberknoll Feather
+				Tooltip: "'Contains echoes of every sound the bird ever heard'\nKey ingredient for Truth Serums\nDropped by Jobberknoll birds"
+			}
+			BeastHuntersCharm: {
+				DisplayName: Beast Hunter's Charm
+				Tooltip:
+					'''
+					'Newt Scamander would be horrified. Charlie Weasley would approve.'
+					Requires Dragon Scale + Cerberus Fang + Werewolf Pelt — three beast kills
+					+12% all damage, immune to Bleeding + Broken Armor
+					Detects all creatures nearby
+					'''
+			}
+			ImpFlame: {
+				DisplayName: Imp Flame
+				Tooltip: "'A tiny living ember'\nConsume for 30-sec Inferno aura\nCrafting material for fire potions\nDropped by Magical Imps"
+			}
+			DugbogHide: {
+				DisplayName: Dugbog Hide
+				Tooltip: "'Tough as bark, blends with the environment'\nCrafting material for stealth items\nDropped by Dugbogs"
+			}
+			CamouflageCloak: {
+				DisplayName: Camouflage Cloak
+				Tooltip: "'Nearly as good as an Invisibility Cloak. Nearly.'\n-400 aggro, +10% speed\nBecomes invisible when standing still\nCrafted from Dugbog Hide + Demiguise Hair"
+			}
+			FenrirsWolfsbane: {
+				DisplayName: Fenrir's Wolfsbane
+				Tooltip: "'Brewed from the alpha werewolf's own essence'\nUpgraded Wolfsbane — much stronger night bonuses\nNight: +25% melee, +25% speed, +15 defense, +10% crit"
+			}
+			StealthDraught: {
+				DisplayName: Stealth Draught
+				Tooltip: "'Blend into the shadows like a Dugbog blends into a log'\nInvisibility, -500 aggro, +15% speed for 4 minutes\nBrewed from Dugbog Hide + Demiguise Hair"
+			}
+			MemoryPotion: {
+				DisplayName: Memory Potion
+				Tooltip: "'The Jobberknoll's feather unlocks every memory the land holds'\nGrants Spelunker + Hunter + Night Owl + Danger Sense for 4 minutes\nBrewed from Jobberknoll Feather — reveals everything hidden"
+			}
+			GreatHallBell: {
+				DisplayName: Great Hall Bell
+				Tooltip:
+					'''
+					'The enchanted ceiling shows a sky full of stars...'
+					Ring to attend the Great Hall Feast (every 7 days)
+					Shows House Cup standings between feasts
+					Requires house armor to attend
+					'''
+			}
+			QuidditchWhistle: {
+				DisplayName: Quidditch Whistle
+				Tooltip:
+					'''
+					'Madam Hooch's silver whistle -- the match begins!'
+					Starts an inter-house Quidditch match
+					Requires: daytime, on a broom, wearing house armor
+					Shows standings between matches
+					'''
+			}
+			SpectralEssence: {
+				DisplayName: Spectral Essence
+				Tooltip:
+					'''
+					'Moonlit residue gathered from Thestral beacons'
+					Crafting material
+					'''
+			}
+
+			// === LANDMARK PLACEABLE ITEMS ===
+			HousePointHourglassItem: {
+				DisplayName: House Point Hourglass
+				Tooltip: "'The four giant hourglasses that track house points'\nDecorative Great Hall landmark"
+			}
+			QuidditchGoalpostItem: {
+				DisplayName: Quidditch Goalpost
+				Tooltip: "'Three hoops at each end of the pitch'\nDecorative Quidditch pitch landmark"
+			}
+			CastleWardStoneItem: {
+				DisplayName: Castle Ward Stone
+				Tooltip: "'Ancient protective wards surround the castle'\nDecorative Hogwarts defense landmark"
+			}
+			WhompingWillowStumpItem: {
+				DisplayName: Whomping Willow Stump
+				Tooltip: "'There's a secret passage beneath the roots'\nDecorative passage entrance landmark"
+			}
+			ShriekingShackSignItem: {
+				DisplayName: Shrieking Shack Sign
+				Tooltip: "'The most haunted building in Britain'\nDecorative Hogsmeade landmark"
+			}
+			GrimmauldDoorwayItem: {
+				DisplayName: Grimmauld Doorway
+				Tooltip: "'The headquarters of the Order of the Phoenix'\nDecorative safehouse landmark"
+			}
+			LeakyCauldronSignItem: {
+				DisplayName: Leaky Cauldron Sign
+				Tooltip: "'The gateway between Muggle London and Diagon Alley'\nDecorative pub landmark"
+			}
+			GringottsFacadeItem: {
+				DisplayName: Gringotts Facade
+				Tooltip: "'The safest place in the wizarding world — besides Hogwarts'\nDecorative Gringotts Bank landmark"
+			}
+			BorginStorefrontItem: {
+				DisplayName: Borgin Storefront
+				Tooltip: "'Borgin and Burkes — purveyors of dark artifacts'\nDecorative Knockturn Alley landmark"
+			}
+			StMungosMannequinItem: {
+				DisplayName: St Mungos Mannequin
+				Tooltip: "'The old mannequin in the Purge and Dowse Ltd window'\nDecorative hospital entrance landmark"
+			}
+			ProphecyShelfItem: {
+				DisplayName: Prophecy Shelf
+				Tooltip: "'Rows upon rows of dusty glass orbs, each holding a prophecy'\nDecorative Hall of Prophecy landmark"
+			}
+			VeilArchItem: {
+				DisplayName: Veil Arch
+				Tooltip: "'The ancient stone archway with its fluttering veil'\nDecorative Death Chamber landmark"
+			}
+		}
+
+		Bestiary: {
+			Dementor: Among the foulest creatures to walk this earth. They drain peace, hope, and happiness from everything around them. Only a Patronus can repel them.
+			Acromantula: A giant spider of immense intelligence and terrifying size. They were first bred by wizards, likely as guard creatures for dwellings or treasure stores.
+			MagicPixie: Electric-blue mischief-makers that delight in chaos. Small but deceptively strong, capable of lifting and carrying heavy objects.
+			Troll: A fearsome creature standing twelve feet tall with dull, granite-gray skin. Mountain trolls are the largest and most vicious of their kind.
+			Inferius: A corpse reanimated by dark magic. They feel no pain and fear only fire. Used as puppet soldiers by the darkest of wizards.
+			Basilisk: The King of Serpents. Born from a chicken's egg hatched beneath a toad. Its gaze is fatal, and its venom destroys everything except phoenix tears.
+			Horntail: The most dangerous of all dragon breeds. It has bronze horns and a tail covered in spikes. Its fire can reach distances of forty feet.
+			Voldemort: The most feared Dark Wizard of all time. Born Tom Marvolo Riddle, he split his soul into fragments to cheat death. Only the united Deathly Hallows can truly end him.
+			Thestral: Visible only to those who have witnessed death, these skeletal winged horses are gentle despite their fearsome appearance. They are attracted to the smell of blood.
+			DeathEater: A follower of the Dark Lord, marked with the Dark Mark. They practice the darkest of magic and answer only to their master's call.
+			Ollivander: A master wandmaker whose family has been crafting fine wands since 382 B.C. He believes the wand chooses the wizard.
+			Hagrid: A half-giant with a heart of gold and an unfortunate fondness for dangerous creatures. Now serves as a keeper of magical beasts.
+			PotionsMaster: A brilliant but temperamental potioneer. Demands perfection in the art of brewing and has little patience for incompetence.
+			Dobby: A free house-elf who delights in helping wizards. Give him a sock and he'll be your friend forever. Known for his collection of mismatched socks and fierce loyalty.
+			Lupin: Remus Lupin -- one of the original Marauders and a former Defense Against the Dark Arts professor. A werewolf who bears his affliction with quiet dignity. His deep knowledge of Hogwarts' secret passages makes him an invaluable ally.
+			MadamHooch: Hogwarts' flying instructor and Quidditch referee. With hawk-like yellow eyes and decades of experience, she ensures every match is played fairly and every student learns to fly safely.
+			Kingsley: Kingsley Shacklebolt -- senior Auror and Order of the Phoenix member. Calm, competent, and deeply trusted by Dumbledore. Serves as the Order's liaison for Ministry-related operations.
+			GoblinTeller: A Gringotts bank teller -- sharp-eyed, sharp-tongued, and absolutely precise about gold. Goblins run the wizarding world's only bank with centuries of accumulated expertise and a healthy distrust of wand-carriers.
+			MadamRosmerta: The beloved innkeeper of the Three Broomsticks tavern in Hogsmeade. She stocks Honeydukes sweets alongside her famous Butterbeer, making her pub the social anchor of the village and the go-to contact for Owl Post deliveries.
+			Mandrake: A magical plant with a root that looks like a small, muddy baby. Its cry is fatal to anyone who hears it at full maturity, though young Mandrakes will merely knock you unconscious.
+			Boggart: A shape-shifting creature that takes on the form of whatever most frightens the person nearest to it. Nobody knows what a Boggart looks like when it is alone. Riddikulus!
+			Dumbledore: A sentient portrait of the late Albus Dumbledore, greatest Headmaster Hogwarts ever knew. Like all Hogwarts headmaster portraits, it retains his wisdom, personality, and counsel — though it is a reflection, not the man himself. The portrait continues to guide those who seek his advice.
+			Werewolf: A wizard or witch afflicted with lycanthropy. Under the full moon they transform into savage beasts. The Wolfsbane Potion allows them to keep their mind during transformation.
+			Grindylow: A small, horned water demon with long, brittle fingers. They inhabit lakes and are particularly aggressive toward humans who enter their territory.
+			Doxy: A small fairy-like creature covered in thick black hair, with an extra pair of arms and legs. Its venomous bite requires an antidote. They infest curtains and old houses.
+			Peeves: The most notorious poltergeist in history. He delights in chaos, pranks, and driving people mad. The only ones he ever listened to were Dumbledore and the Bloody Baron.
+			Nagini: The Dark Lord's most faithful companion and final Horcrux. A massive magical serpent of unknown breed, capable of assuming human form. Her venom keeps Voldemort's mortal shell alive.
+			Obscurus: A dark parasitic magical force that develops inside a witch or wizard who suppresses their magic. When released, it becomes an uncontrollable destructive entity of immense power. Few Obscurials survive past childhood.
+			Aberforth: Aberforth Dumbledore -- younger brother of Albus and keeper of the Hog's Head Inn in Hogsmeade. A gruff, private man who quietly aids the resistance from behind his bar. His Patronus is a goat.
+			PrisonWraith: Spectral remains of condemned prisoners who perished within Azkaban's walls. Their despair lingers as ghostly echoes that haunt anyone who disturbs the prison's wards. [Mod-original content]
+			DespairAnchor: A corrupted ward anchor from Azkaban's ancient defenses. Once designed to contain prisoners, now it radiates despair to all nearby. Destroying these weakens the dark forces during an Azkaban event. [Mod-original content]
+			Bowtruckle: A tree-guardian creature, no taller than eight inches, made of bark and twigs with two small brown eyes. Peaceful unless its home tree is threatened, when it will gouge at eyes with its sharp fingers.
+			Flobberworm: The most boring creature in the wizarding world. A thick brown worm that eats lettuce. Its mucus is sometimes used to thicken potions, which is its only known use.
+			BlastEndedSkrewt: A horrifying crossbreed of Manticores and Fire Crabs, created by Hagrid. Ten feet long when fully grown, with an armored shell, a powerful stinger, and a blast of fire from its rear end.
+			Centaur: A proud and noble creature with the upper body of a human and the lower body of a horse. They are gifted stargazers and consider most human magic beneath them. Do not call them half-breeds.
+			AzkabanGuard: An elite Dementor assigned to guard the wizard prison of Azkaban. Larger and far more powerful than its lesser kin, its mere presence extinguishes all light and warmth. Its kiss does not merely feed — it devours the soul entirely.
+			Merfolk: The merpeople of the wizarding world dwell in the depths of lakes and oceans. They speak Mermish, a language that sounds like screeching above water. Fierce guardians of their underwater realm, they do not welcome trespassers.
+			Sphinx: An ancient creature with the body of a lion, the wings of an eagle, and the head of a human. Sphinxes are highly intelligent and fond of riddles, puzzles, and enigmas. They make excellent guardians of treasure and secret places.
+			Giant: Standing twenty feet tall or more, giants are among the most feared creatures in the wizarding world. Though not especially intelligent, their raw strength is unmatched. Some were recruited by Voldemort for the Battle of Hogwarts.
+			Fwooper: A brightly coloured African magical bird whose song will drive the listener insane. Fwooper owners are required to place a Silencing Charm on their bird. Comes in vivid pink, lime green, orange, and mustard yellow.
+			SnowWraith: A frozen spirit of a long-dead northern wizard. Found in snow biomes at night, they bring an unnatural chill that freezes everything they touch. Rumored to be the ghosts of Durmstrang students who perished in the cold.
+			MrBorgin: The oily proprietor of Borgin and Burkes, Knockturn Alley's most notorious shop of dark artefacts. Suspicious, transactional, and profoundly self-interested. He knows the value of every cursed object in his inventory.
+			CursedMummy: An ancient Egyptian wizard whose body was cursed to guard their tomb for eternity. The dark magic that preserves them has only grown stronger over millennia. Bill Weasley would know how to handle these.
+			FredAndGeorge: The legendary Weasley twins, founders of Weasleys' Wizard Wheezes. Inventors, pranksters, and surprisingly gifted wizards. Their shop in Diagon Alley is the most colorful — and most dangerous — place to shop.
+			TrollBoss: A fully grown mountain troll, twelve feet tall with dull grey skin and a massive wooden club. Not bright, but devastating in close quarters. A classic first encounter for any young wizard.
+			AragogBoss: Patriarch of the Acromantula colony in the Forbidden Forest. Raised from an egg by Hagrid, Aragog commands an army of his children. When he calls, the spiders come.
+			FluffyBoss: A massive three-headed dog placed by Dumbledore to guard the trapdoor. Each head attacks independently. The only way past is music — or brute force.
+			BellatrixBoss: The most dangerous and devoted of Voldemort's Death Eaters. Bellatrix Lestrange is a dueling prodigy who delights in cruelty. She killed Sirius Black, tortured the Longbottoms, and fears nothing but her master's displeasure.
+			FenrirBoss: The most savage werewolf alive. Fenrir Greyback positions himself near victims at the full moon, driven by a desire to bite and contaminate as many people as possible. He especially targets children.
+			DementorKingBoss: Azkaban's Despair — an ancient being of pure darkness that commands legions of soul-sucking wraiths. Its presence extinguishes all light and hope. Only the strongest Patronus can stand against it.
+			PhantomStag: A spectral mockery of a true Patronus, twisted by the Hallow's wild magic. Not a real Patronus — a magical echo corrupted by overcharged positive energy. A fully original creature born of the Hallow's excess.
+			CursedSpecter: The ghost of a wizard who delved too deep into dark magic and was consumed by the Corruption. Trapped between life and death, it fires cursed flames at any living creature that crosses its path.
+			Thunderbird: A massive magical bird native to Arizona, closely related to the phoenix. It can create storms as it flies and sense danger before it arrives. Found wherever storms gather in the sky.
+			GoblinRebel: A rogue goblin from the great goblin rebellions of wizarding history. Armed with enchanted Gringotts gold that they weaponize as projectiles. They carry significant wealth — if you can take it from them.
+			Lethifold: Also known as the Living Shroud, one of the most dangerous creatures in the magical world. It resembles a black cloak that glides along the ground, smothering sleeping victims. Only a Patronus Charm can repel it.
+			QuirrellBoss: A stuttering professor of Defence Against the Dark Arts with a terrible secret. Beneath his turban lurks the face of the Dark Lord himself, sharing Quirrell's body as a parasitic host. What begins as a simple duel becomes a fight for survival when Voldemort reveals himself.
+			UmbridgeBoss: Senior Undersecretary to the Minister for Magic and the most hated woman in the wizarding world. She doesn't fight with raw power — she fights with bureaucracy, debuffs, and Educational Decrees. The only boss that makes you WISH for Voldemort instead.
+			BartyCrouchBoss: A Death Eater so dedicated he escaped Azkaban and spent a year disguised as Mad-Eye Moody using Polyjuice Potion. His true form is just as dangerous as his disguise — a master duelist who served the Dark Lord with fanatical loyalty.
+			Erumpent: A massive creature resembling a rhinoceros, native to Africa. Its horn contains a deadly fluid that causes whatever it is injected into to explode. Erumpent horns, tails, and exploding fluid are all Class B Tradeable Materials.
+			Occamy: A plumed, serpentine creature with wings, native to the Far East and India. It is choranaptyxic — meaning it grows or shrinks to fit available space. Its eggs are made of the purest, softest silver.
+			Zouwu: An enormous magical feline beast, as big as an elephant, with a multicoloured mane and a body that can grow or shrink at will. Incredibly fast and powerful — it can travel a thousand miles in a day. Native to China.
+			Demiguise: A peaceful, ape-like creature with large, soulful eyes and long, silky, silvery hair. It can make itself invisible when threatened, which makes it extremely hard to catch. Its pelts are used for ordinary invisibility cloaks and concealment gear — not the unique Deathly Hallow.
+			Mooncalf: A shy creature that emerges only at night during a full moon. Mooncalves perform complicated dances on their hind legs in the moonlight, which creates intricate geometric patterns in wheat fields. Their silvery dung, if collected before sunrise, makes magical plants grow extraordinarily fast.
+			Billywig: A tiny sapphire-blue insect native to Australia. Its sting causes giddiness followed by levitation. Dried Billywig stings are used as an ingredient in Fizzing Whizzbees. The insect is incredibly fast and rarely seen by Muggles.
+			Ashwinder: A thin, pale grey serpent with glowing red eyes that is born from the embers of a magical fire left to burn unchecked. It lives for only an hour, seeking a dark, secluded spot to lay its eggs before crumbling to dust. The eggs are intensely hot and will ignite dwellings within minutes if not frozen.
+			Nundu: A gigantic magical leopard native to East Africa and considered the most dangerous living creature in the wizarding world. Its breath is toxic and can decimate entire villages. It has never been subdued by fewer than a hundred wizards working together.
+			Runespoor: A three-headed serpent commonly reaching six to seven feet in length. The left head is the planner, the middle head is the dreamer, and the right head is the critic. Native to Burkina Faso. Its eggs are valuable in potion-making.
+			Jarvey: A magical creature that resembles an overgrown ferret, except that it can talk. Unfortunately, a Jarvey is incapable of true conversation and confines itself to short, usually rude, phrases in an almost constant stream. Found in Britain, Ireland, and North America.
+			FireCrab: Despite its name, the Fire Crab resembles a large tortoise with a heavily jewelled shell. It is found on the coast of Fiji and exports are strictly controlled. The Fire Crab's chief defence is shooting flames from its rear end when attacked.
+			Puffskein: A round, custard-coloured creature covered in soft fur. It is a docile, even cuddly creature that has no objection to being tossed around or cuddled. It hums when content. A popular wizard pet and the ancestor of the Pygmy Puff.
+			Streeler: A giant snail that changes colour on an hourly basis. It leaves behind a trail of venomous slime so toxic it shrivels and burns all vegetation it touches. The Streeler is kept as a pet by those who enjoy its kaleidoscopic colour changes.
+			PeruvianVipertooth: The smallest of all known dragons, reaching only fifteen feet in length. Its scales are smooth and copper-coloured, with a distinctive black ridge marking. It has venomous fangs and is particularly fast, making it exceptionally dangerous despite its size.
+			Diricawl: A plump, fluffy, flightless bird with the remarkable ability to vanish in a puff of feathers when threatened. Muggles once knew it as the Dodo and believe they drove it to extinction — unaware that it simply teleported away.
+			Knarl: Resembles a hedgehog so closely that there is only one known difference: if you leave food out for a hedgehog, it will appreciate it. A Knarl will assume you are trying to lure it into a trap and savage your garden.
+			Horklump: A fleshy, pink, mushroom-like creature. It is difficult to distinguish from a mushroom, which is just as well since it does nothing at all besides spread itself. The only known use for a Horklump is as Flobberworm food.
+			Jobberknoll: A tiny blue speckled bird that makes absolutely no sound until the moment of its death, at which point it lets out a long scream consisting of every sound it has ever heard, regurgitated backwards. Jobberknoll feathers are used in Truth Serums and Memory Potions.
+			Dugbog: A marsh-dwelling creature that resembles a dead piece of wood while stationary. When an unsuspecting creature or person walks past, the Dugbog lunges with its toothed maw. It feeds mainly on Mandrakes and has been known to bite the ankles of humans.
+			MagicalImp: A tiny mischievous creature made of living flame. Imps are not especially dangerous individually, but they spawn in swarms in hot environments. They delight in starting small fires and throwing fireballs at passersby.
+		}
+
+		GreatHall: {
+			FeastAvailable: An owl arrives with a scroll: 'The Great Hall Feast is ready! Ring your bell to attend.'
+			FeastBlessing: "The Great Hall echoes with cheers as {0} receives their house blessing!"
+			FeastAttendance: Feast attendance
+			NeedHouseArmor: You must wear house armor to attend the Great Hall Feast.
+			AlreadyAttended: You have already attended today's feast.
+			NextFeast: "Next feast in {0} days."
+			PointsAwarded: "+{0} House Points for {1}! ({2})"
+			HouseCupWon: "{0} wins the House Cup!"
+			HouseCupCeremony: "The Great Hall erupts in celebration! All house banners change to the winning colors!"
+			Standings: "House Cup Standings: Gryffindor {0} | Slytherin {1} | Ravenclaw {2} | Hufflepuff {3} | Leader: {4}"
+			SourceChampion: House Champion milestone
+			SourceOwlPost: Owl Post delivery
+			SourceAzkaban: Azkaban expedition cleared
+			SourceSnitch: Golden Snitch catch
+		}
+
+		Quidditch: {
+			MatchStart: "Quidditch match: {0} vs {1}! Score goals with your Quaffle!"
+			ScoreGoals: "Throw Quaffle at enemies to score goals (10 points each). Snitch appears after the scoring phase!"
+			PlayerScores: "{0} scores! ({1} points)"
+			OpponentScores: "{0} scores {1} points!"
+			SnitchReleased: "The Golden Snitch has been released! Catch it to end the match! (+150 points)"
+			CurrentScore: "Score: You {0} - Opponent {1}"
+			PlayerCatchesSnitch: "You caught the Golden Snitch! +150 points!"
+			OpponentCatchesSnitch: "{0}'s Seeker catches the Snitch!"
+			MatchWin: "{0} wins! Final score: {1} - {2}"
+			MatchLoss: "{0} wins. Final score: {1} - {2}"
+			CupWon: "{0} wins the Quidditch Cup!"
+			CupCeremony: "The pitch erupts in celebration! The silver Quidditch Cup gleams in the sunlight!"
+			Standings: "Quidditch Cup: G:{0} S:{1} R:{2} H:{3} | Matches: {4}/{5}"
+			SeasonComplete: The Quidditch Cup season is complete!
+			NewSeason: A new Quidditch season begins!
+			NeedHouseArmor: You must wear house armor to play Quidditch.
+			NeedBroom: You must be riding a broom to play Quidditch.
+			NeedDaytime: Quidditch matches are played during the day.
+			SourceMatch: Quidditch match
+			SourceCup: Quidditch Cup victory
+			StandingsButton: Standings
+		}
+
+		Dialogue: {
+			Ollivander: {
+				Standard1: "Curious... very curious. The wand chooses the wizard, you know."
+				Standard2: "I remember every wand I've ever sold. Every single wand."
+				Standard3: "Try this one. Unicorn hair core, eleven inches. Give it a wave!"
+				Standard4: "The wand of yew is among the rarer kinds, and their ideal matches are likewise unusual."
+				Standard5: "Dragon heartstring wands learn more quickly than others, but can be prone to accidents."
+				Standard6: "Unicorn hair cores are the most faithful, though they rarely produce the strongest magic."
+				Standard7: "Have you tried the Enchanting Table? It's where all the finest wands are crafted these days."
+				Rare: "He Who Must Not Be Named did great things... terrible, yes, but great."
+				PostVoldemort: "The Elder Wand has chosen you. I never thought I'd see the day..."
+				PostBasilisk: "You defeated the Basilisk? With THAT wand? Remarkable. Perhaps you're ready for something stronger."
+				Hardmode: "The world has changed. Darker creatures roam now. You'll need more powerful wands. Have a look."
+			}
+			Hagrid: {
+				Standard1: "I shouldn't have told yer that. I should NOT have told yer that."
+				Standard2: "There's no place safer than right here, I reckon."
+				Standard3: "Yer a wizard! Well... close enough."
+				Standard4: "Beautifully misunderstood creatures, really. Dragons, I mean."
+				Standard5: "Norbert? Norberta? Ah, don't remind me..."
+				Standard6: "The Forbidden Forest ain't for the faint of heart, but there's beauties in there too."
+				Standard7: "I've got some lovely Flobberworms out back if yer interested. No? Suit yerself."
+				Rare: "I'd trust Dumbledore with me life, I would."
+				PostBasilisk: "Yeh did it! The Basilisk is gone. Chamber's safe now, I reckon."
+				PostAragog: "Aragog... he was a good friend. But I understand why yeh had to."
+				PostHorntail: "A Hungarian Horntail! Blimey, even Charlie would be impressed!"
+				PostVoldemort: "He's gone. Really gone this time. Dumbledore would be proud of yeh."
+				Night: "Best not wander the forest at night. Not all creatures in there are friendly."
+			}
+			PotionsMaster: {
+				Standard1: "I can teach you how to bottle fame, brew glory, even stopper death."
+				Standard2: "Clearly, fame isn't everything. Turn to page 394."
+				Standard3: "The art of potion-making requires... subtlety."
+				Standard4: "There will be no foolish wand-waving in this shop."
+				Standard5: "I see no difference between your last potion and pond water."
+				Standard6: "Felix Felicis is extraordinarily tricky to brew. One mistake and the consequences are disastrous."
+				Standard7: "If I catch you pocketing ingredients, I shall make you wish you hadn't."
+				Rare: "Always."
+				SeeFelixBuff: "I see you're under the influence of Felix Felicis. Brewed it yourself, did you? ...Adequate."
+				SeeFirewhiskeyBuff: "*sniff* ...Is that Firewhiskey? In MY shop? I should confiscate that. ...But I won't."
+				PostVoldemort: "The Dark Lord is gone. I fulfilled my promise. That is all you need to know."
+			}
+			Dobby: {
+				Standard1: "Dobby is a free elf! Dobby can help however sir or madam wishes!"
+				Standard2: "Dobby has heard of your greatness, but Dobby never knew..."
+				Standard3: "Would sir like a pair of socks? Dobby's favorite clothing article!"
+				Standard4: "Dobby has no master! Dobby is a free elf and Dobby has come to help!"
+				Standard5: "Dobby will always be there for those who ask for help at Hogwarts."
+				Standard6: "Dobby tried to bake a cake once. It... did not go well for the house."
+				Standard7: "Dobby likes this place very much. Nobody throws shoes at Dobby here."
+				Rare: "Master has given Dobby a sock! Dobby is free!"
+				PostVoldemort: "The Dark Lord is gone! Dobby is so happy! Dobby wants to celebrate with socks for everyone!"
+				Night: "Dobby does not like the dark. Bad things happen in the dark. But Dobby is brave!"
+				PostBasilisk: "The big snake is gone? Dobby remembers the chamber... Dobby is glad it is safe now."
+			}
+			Dumbledore: {
+				Standard1: "It does not do to dwell on dreams and forget to live."
+				Standard2: "Happiness can be found even in the darkest of times, if one only remembers to turn on the light."
+				Standard3: "It is our choices that show what we truly are, far more than our abilities."
+				Standard4: "Words are, in my not-so-humble opinion, our most inexhaustible source of magic."
+				Standard5: "Of course it is happening inside your head, but why on earth should that mean that it is not real?"
+				Standard6: "To the well-organized mind, death is but the next great adventure."
+				Standard7: "Nitwit! Blubber! Oddment! Tweak! ...I do enjoy a good feast."
+				Rare: "After all this time? Always."
+				PostDementorKing: "You have conquered despair itself. There is no greater victory than hope prevailing over darkness."
+				BloodMoon: "Even the moon bleeds tonight. Stay vigilant — dark creatures grow bold under crimson light."
+				HighMana: "I sense great magical power within you. Use it wisely — power is neither good nor evil, only the wielder decides."
+			}
+			Centaur: {
+				Standard1: "Mars is bright tonight. There will be conflict."
+				Standard2: "We observe, we do not interfere. Usually."
+				Standard3: "The stars do not lie. But they are often misinterpreted."
+				Standard4: "Humans are so hasty. The planets move in centuries, not minutes."
+				Standard5: "Venus is in retrograde. I would not craft anything important today."
+				Standard6: "The centaurs of this forest have watched many ages pass. We remember what others forget."
+				Standard7: "You walk with purpose. The stars say you carry a great destiny... or a heavy bag."
+				Rare: "I have seen things in the stars that trouble me greatly, human."
+				FullMoon: "The full moon reveals all truths. Tonight, the stars speak clearly — something ancient stirs."
+				NewMoon: "The new moon hides much. Even the stars are uncertain tonight. Tread carefully."
+				BloodMoon: "Mars burns with fury! The blood moon is upon us — the darkest creatures will hunt tonight. Stay armed."
+			}
+			MadamHooch: {
+				Standard1: "Everyone on their brooms, please! And do try not to fall off this time."
+				Standard2: "I've been refereeing Quidditch at Hogwarts for longer than most of you have been alive."
+				Standard3: "A good broom is worth every Galleon. Keep yours well-polished."
+				Standard4: "The Quidditch Cup is what makes Hogwarts truly alive, if you ask me."
+				Season: "The season is heating up! Make sure you're practicing your Quaffle throws."
+				CupWon: "What a season that was! I haven't seen flying like that in years."
+			}
+			Kingsley: {
+				Standard1: The Order is always watching. Dark times call for constant vigilance.
+				Standard2: I work undercover at the Ministry. Trust no one you haven't tested.
+				Standard3: Dumbledore's network runs deeper than most realize.
+				Standard4: The Department of Mysteries holds secrets worth protecting.
+				Veteran: You've proven yourself in the field. The Order is grateful.
+				Night: The Order keeps watch through the night. Darkness is no stranger to us.
+				Grimmauld: Number Twelve needs maintenance. The wards weaken if the safehouse is neglected.
+			}
+			GoblinTeller: {
+				Standard1: Time is Galleons, wizard. State your business.
+				Standard2: Gringotts has stood for centuries. We intend to keep it that way.
+				Standard3: Touch nothing that is not yours. The vaults remember.
+				Standard4: The deeper the vault, the stronger the wards. You have been warned.
+				Returning: Back again? Your contract record is satisfactory. Proceed.
+			}
+			MadamRosmerta: {
+				Standard1: "Welcome to the Three Broomsticks! What'll it be — Butterbeer or something stronger?"
+				Standard2: "I stock all the best Honeydukes sweets right here at the tavern. Saves you a trip down the lane!"
+				Standard3: "Hogsmeade's the heart of the wizarding world, if you ask me. Everyone passes through sooner or later."
+				Standard4: "Running an inn means you hear everything. Owls in, owls out — I keep this village connected."
+				Standard5: "Honeydukes sends me a fresh crate of Chocolate Frogs every week. They sell faster than Butterbeer some days!"
+				Night: "The Three Broomsticks never truly closes. Pull up a chair — nights in Hogsmeade can be long."
+				PostVoldemort: "He's gone... I can hardly believe it. The Three Broomsticks will be pouring free Butterbeer all week!"
+				OwlPostComplete: "Today's delivery has already been completed. Check back tomorrow!"
+				OwlPostSuccess: "Wonderful! The owl has been dispatched with your delivery. Here's your reward!"
+				OwlPostButton: Owl Post
+			}
+			MrBorgin: {
+				Standard1: Ah, a customer. Or... are you here on Ministry business? Either way, gold speaks.
+				Standard2: I deal in rare and unusual objects. Nothing illegal, of course. Not anymore.
+				Standard3: Touch nothing without asking. Some of these items bite back. Literally.
+				Standard4: Borgin and Burkes has served discerning wizards for generations. We ask no questions.
+				Returning: Back again? Your containment work has been... adequate. There is more to do.
+			}
+			FredAndGeorge: {
+				Standard1: "Step right up! Weasleys' Wizard Wheezes — your one-stop shop for all things magical and mischievous!"
+				Standard2: "We've got everything from Skiving Snackboxes to Peruvian Instant Darkness Powder!"
+				Standard3: "Mum still doesn't approve, but have you SEEN our sales figures?"
+				Standard4: "Give us a bad review and the next Howler's on the house. Literally."
+				Standard5: "Try our new Nosebleed Nougat! Trade blood for mana — it's perfectly safe! Mostly."
+				Standard6: "The Puking Pastille is our best seller. Nothing clears debuffs faster — or your stomach."
+				Standard7: "Skiving Snackbox: when you absolutely MUST fake your own death to avoid a boss attack."
+				Standard8: "We once turned an entire corridor into a swamp. Best day of our lives."
+				Rare: "We solemnly swear that we are up to no good."
+				DuringInvasion: "Death Eaters? BRILLIANT! Time to test our new Shield Hats in ACTUAL combat!"
+				PostVoldemort: "You-Know-Who is GONE? This calls for a celebration! Fireworks on the house — literally!"
+				PostUmbridge: "You got rid of Umbridge?! We've been wanting to do that for YEARS. Our hero!"
+				BloodMoon: "Red moon, red sales! Everything's half-off tonight! ...Okay, not really. But the Nosebleed Nougats are fitting."
+			}
+			Healer: {
+				Standard1: "St Mungo's is always short-staffed. Every wand that can help is welcome."
+				Standard2: "Spell damage, creature injuries, potion accidents — we see it all in triage."
+				Standard3: "The wards rotate. Each one has its own hazards. Stay alert in there."
+				Standard4: "Healer's Salts are distilled from the residue we neutralize. Useful for crafting."
+				Veteran: "You've done good work in the wards. The patients owe you a debt."
+			}
+			Lupin: {
+				Standard1: "The trick to Defense Against the Dark Arts is knowing what you're afraid of — and facing it anyway."
+				Standard2: "I knew your parents, in a manner of speaking. They were brave people."
+				Standard3: "The Marauder's Map never lies. It shows every person, every passage, every secret."
+				Standard4: "Chocolate helps after encounters with dark creatures. Trust me on this one."
+				FullMoon: "I'm... not feeling entirely myself tonight. Perhaps keep your distance."
+				Shack: "The Shrieking Shack holds memories for me. Not all of them pleasant, but important nonetheless."
+			}
+			Aberforth: {
+				Standard1: "The Hog's Head serves everyone. No questions asked. That's how it's always been."
+				Standard2: "My brother had his grand plans. I prefer keeping my head down and my bar open."
+				Standard3: "Don't trust everything you hear about Albus. He was brilliant, but he wasn't perfect."
+				Standard4: "The passage behind the portrait leads to Hogwarts. Use it wisely."
+				Standard5: "I've seen dark times before. Survived them all. You will too, if you're clever."
+				Resistance: "The D.A. is meeting tonight. The wards need reinforcing -- Hogwarts depends on it."
+			}
+			Neville: {
+				Standard1: "I'm not as brave as people say. I just do what needs doing."
+				Standard2: "Gran always said I'd amount to nothing. Proved her wrong, didn't I?"
+				Standard3: "The D.A. taught me more than any class ever did. We look after each other."
+				Standard4: "Hogwarts is worth fighting for. Every stone, every corridor, every student."
+				NaginiDone: "Nagini is gone. That's one less tether holding the Dark Lord to this world."
+			}
+		}
+
+		DA: {
+			RoomResistance: "The Room of Requirement: Resistance Headquarters"
+			Unlocked: "Dumbledore's Army has been reformed. The D.A. Galleons glow with purpose."
+			DefenseStart: "WARD DEFENSE -- The castle wards are under attack! Stabilize the Ward Anchors!"
+			DefenseComplete: "The wards hold firm. Hogwarts stands protected."
+			DefenseFailed: "The wards have fractured. Regroup and try again."
+			MeetingCalled: "The D.A. Galleon burns in your pocket. Dumbledore's Army assembles."
+			MeetingComplete: "The meeting concludes. Everyone leaves stronger and more resolved."
+			Progress: "Ward Anchors stabilized: {0}. The castle's defenses strengthen."
+			WardHolds: "The ward holds! The castle's enchantments pulse with renewed strength."
+			WardFalling: "A ward is failing! Reach the anchor before it collapses!"
+			SourceDefense: Castle ward defense
+			AnchorStabilized: "Ward Anchor stabilized! The enchantment network strengthens."
+			AnchorSpawned: "A Ward Anchor materializes as the castle defenses waver."
+			ThreadWoven: "Castle Ward Thread materializes from the stabilized ward residue."
+			RewardGiven: "The castle's wards leave residual magic for your service. Resistance Resolve strengthens you."
+			AberfortthContact: "Aberforth nods from behind the bar. 'The passage is open. Go.'"
+			DANotWeapon: "Dumbledore's Army is a defensive organization -- students protecting each other and their school."
+			HogsHeadDescription: "A dingy but trustworthy pub at the edge of Hogsmeade. Not a luxury inn."
+			ResistanceNotTournament: "This is no tournament. The wards are real, and so is the danger."
+		}
+
+		Passages: {
+			PassageButton: Passages
+			NetworkUnlocked: "The Secret Passage Network has been revealed! Covert transit is now available."
+			Discovered: "Secret passage discovered: {0}!"
+			Used: "You slip through the hidden passage..."
+			NotUnlocked: "The passage network is not yet revealed. {0}/2 passages discovered."
+			OnCooldown: "The passages are still settling. Available in {0} seconds."
+			Ready: "The passage network is ready. {0} passages discovered. Speak to Lupin to travel."
+		}
+
+		Events: {
+			DeathEaterInvasion: {
+				Start: The Dark Mark rises... Death Eaters are attacking!
+				End: The Death Eaters have been driven back. The night is safe once more.
+				Wave2: More Dark creatures emerge from the shadows!
+				Wave3: The Dark Lord's most dangerous servants have arrived!
+			}
+			QuidditchSnitch: {
+				Spawn: A Golden Snitch has appeared! Catch it on a broomstick for a reward!
+				Escaped: The Golden Snitch has escaped!
+				Warning: The Golden Snitch is getting away! 10 seconds left!
+				Caught: "{0} caught the Golden Snitch! 150 points to their house!"
+			}
+			UmbridgeTaunts: {
+				Decree1: "Educational Decree #24: All students must submit to questioning!"
+				Decree2: "Educational Decree #31: Wands are hereby confiscated!"
+				Decree3: "Educational Decree #42: Fun is now prohibited!"
+				Decree4: "I WILL have order!"
+				Decree5: "The Ministry knows best, dear."
+			}
+		}
+
+		Biomes: {
+			ForbiddenForestBiome: {
+				DisplayName: Forbidden Forest
+				TownNPCDialogueName: the Forbidden Forest
+			}
+		}
+
+		LoadingTips: {
+			Tip1: "Wizarding World: Craft an Enchanting Table to begin your magical journey!"
+			Tip2: "Wizarding World: The wand chooses the wizard — try different wands for different spells."
+			Tip3: "Wizarding World: Visit the Forbidden Forest at night for unique magical creatures."
+			Tip4: "Wizarding World: Collect Essence of Magic from magical creatures for advanced crafting."
+			Tip5: "Wizarding World: Defeat the Basilisk, Hungarian Horntail, and Lord Voldemort!"
+			Tip6: "Wizarding World: Buy the Standard Book of Spells from Ollivander for a complete guide."
+			Tip7: "Wizarding World: Each Hogwarts house armor has a matching signature weapon."
+			Tip8: "Wizarding World: Unicorn Blood only drops in the Forbidden Forest — a rare treasure."
+			Tip9: "Wizarding World: Check the Daily Prophet for today's Wizard Challenge — earn bonus Essence!"
+			Tip10: "Wizarding World: The Wizard's Almanac (sold by Dumbledore) is a 10-page encyclopedia of the entire mod."
+		}
+
+		InfoDisplays: {
+			WizardInfoDisplay.DisplayName: Wizard Boss Progress
+		}
+
+		Triwizard: {
+			Unlocked: "The Goblet of Fire selects you as Hogwarts champion! The Triwizard Tournament begins!"
+			Task1Intro: "First Task: Retrieve the Golden Egg from the dragon's nest. Defeat or outsmart the Horntail!"
+			Task1Start: "FIRST TASK: The Hungarian Horntail guards the Golden Egg! Retrieve it before time runs out!"
+			Task1Complete: "The Golden Egg is yours! First Task complete!"
+			Task2Start: "SECOND TASK: Dive into the Great Lake! Rescue 3 tokens from the merpeople. Gillyweed granted!"
+			Task2Complete: "All hostages rescued! Second Task complete!"
+			Task3Start: "THIRD TASK: Enter the Triwizard Maze! Clear 5 magical obstacles to reach the Cup!"
+			Task3Complete: "The Triwizard Cup is yours!"
+			Champion: "You are the Triwizard Champion! Eternal glory is yours!"
+			ChampionCeremony: "The Great Hall erupts in celebration! A champion worthy of legend!"
+			RescueProgress: "Rescue tokens: {0}/{1}"
+			MazeProgress: "Obstacles cleared: {0}/{1}"
+			TimeWarning: "30 seconds remaining! Hurry!"
+			TaskFailed: "Time's up! The task has failed."
+			TryAgain: "Use the Goblet of Fire to try again."
+			NotUnlocked: "The Triwizard Tournament has not yet begun. Defeat the Hungarian Horntail first."
+			AlreadyChampion: "You have already been crowned Triwizard Champion!"
+			Status: "Triwizard Tournament: Task 1: {0} | Task 2: {1} | Task 3: {2}"
+			SourceTask: Triwizard Task completed
+			GobletSelection: "The Goblet of Fire blazes blue! It selects you as the Hogwarts champion! Durmstrang and Beauxbatons have also chosen their champions. The Triwizard Tournament begins!"
+			FinalStandings: "Final Standings: Hogwarts {0} | Durmstrang {1} | Beauxbatons {2}"
+			SchoolStandings: "Schools: Hogwarts {0} | Durmstrang {1} | Beauxbatons {2}"
+		}
+
+		Ministry: {
+			Unlocked: "Kingsley's owl arrives: 'The Order needs you. The Department of Mysteries has been compromised.'"
+			OrderBriefing: "Your mission: retrieve prophecy orbs before the Death Eaters can seize them."
+			MissionStart: "DEPARTMENT OF MYSTERIES -- You enter the Hall of Prophecy. Retrieve the marked orbs!"
+			CollectOrbs: "Collect {0} Prophecy Orbs before time runs out."
+			OrbProgress: "Prophecy Orbs: {0}/{1}"
+			TimeWarning: "30 seconds! The Death Eaters are closing in!"
+			MissionComplete: "Mission complete! {0} Death Eaters neutralized. The prophecies are secure."
+			OrderReward: "The Order sends its regards -- Prophecy Dust and commendation received."
+			MissionFailed: "Mission failed. The Death Eaters have seized the prophecies."
+			TryAgain: "Use the Ministry Visitor Badge to try again."
+			NotUnlocked: "The Department of Mysteries is sealed. Defeat Bellatrix Lestrange first."
+			ActiveStatus: "Mission active: {0}/{1} orbs collected, {2} seconds remaining."
+			ReadyStatus: "Ministry missions completed: {0}. Ready for the next dispatch."
+			SourceMission: Ministry mission completed
+			MissionButton: Mission Status
+			TimeChamberUnlocked: "The Time Chamber has been revealed. Unstable temporal artifacts need stabilizing."
+			TimeChamberStart: "TIME CHAMBER -- Temporal artifacts are destabilizing! Collect the hourglasses!"
+			CollectHourglasses: "Stabilize {0} Unstable Hourglasses before time collapses."
+			HourglassProgress: "Hourglasses: {0}/{1}"
+			TimeChamberComplete: "Temporal crisis averted. The hourglasses are stable."
+			TimeChamberFailed: "Time collapsed. The temporal artifacts are lost."
+			SourceTimeChamber: Time Chamber stabilized
+			DeathChamberUnlocked: "The Death Chamber has been opened. The Veil is fracturing."
+			VeilWarning: "WARNING: The Veil between life and death is not to be trifled with. Seal the fractures. Do not linger."
+			DeathChamberStart: "DEATH CHAMBER -- The Veil is fracturing! Seal the breaches before the boundary collapses!"
+			SealFractures: "Seal {0} Veil Fractures. Destroy them with force."
+			FractureProgress: "Fractures sealed: {0}/{1}"
+			DeathChamberComplete: "The Veil fractures are sealed. The boundary between life and death holds."
+			VeilSealed: "The Department sends its thanks. Few would dare approach the Veil."
+			DeathChamberFailed: "The fractures spread beyond control. The Veil remains unstable."
+			SourceDeathChamber: Death Chamber sealed
+		}
+
+		Gringotts: {
+			Unlocked: "A Gringotts goblin approaches: 'We have authorized vault recovery contracts for qualified wizards.'"
+			MissionStart: "GRINGOTTS VAULT -- Enter the vault and retrieve the marked relics. Mind the security wards."
+			CollectRelics: "Retrieve {0} Vault Relics. The goblins are watching."
+			RelicProgress: "Relics: {0}/{1}"
+			JinxWarning: "Anti-theft jinx triggered! The vault's wards are active!"
+			TimeWarning: "30 seconds! The vault doors are closing!"
+			MissionComplete: "All relics recovered. The goblins approve of your efficiency."
+			GoblinThanks: "Galleon Dust and gold -- a fair payment for fair work."
+			MissionFailed: "Time expired. The vault has sealed itself."
+			NotUnlocked: "Gringotts vault access requires defeating the Basilisk first."
+			ActiveStatus: "Vault run active: {0}/{1} relics collected, {2} seconds remaining."
+			ReadyStatus: "Vault runs completed: {0}. Ready for next contract."
+			SourceVault: Gringotts vault contract
+			VaultButton: Vault Status
+		}
+
+		DiagonAlley: {
+			Welcome: "You tap the wall behind the Leaky Cauldron... the bricks rearrange themselves, and Diagon Alley opens before you!"
+			StreetDescription: "The cobblestone street stretches ahead, lined with magical shopfronts and bustling with wizards."
+			Gringotts: "  GRINGOTTS BANK -- the white marble building towers ahead. Speak to the Goblin Teller for vault contracts."
+			Ollivanders: "  OLLIVANDERS -- Fine Wands since 382 B.C. The best wands choose their wizard here."
+			Wheezes: "  WEASLEYS' WIZARD WHEEZES -- Fred and George's joke shop blazes with colour and noise."
+			SourceVisit: Diagon Alley visit
+			CartDescent1: "The goblin leads you to a cart on iron rails. 'Vault access authorized. Hold on.'"
+			CartDescent2: "The cart lurches forward, descending deep beneath London. Torches blur past."
+			CartDescent3: "With a screech of brakes, the cart stops. 'Your vault. Touch nothing that is not yours.'"
+		}
+
+		StMungos: {
+			Unlocked: "St Mungo's Hospital for Magical Maladies and Injuries is now accessible. Speak to a Healer or use the Visitor Pass."
+			Entrance: "The wards are open. Healers need assistance with triage."
+			SpellWardStart: "SPELL DAMAGE WARD -- Hex residue nodes are destabilizing. Destroy them to stabilize."
+			CreatureWardStart: "CREATURE INJURIES WARD -- Venom wound nodes are spreading toxins. Destroy them."
+			PotionWardStart: "POTION ACCIDENTS WARD -- Cauldron spill nodes are leaking fumes. Neutralize them."
+			StabilizeNodes: "Stabilize {0} nodes before time runs out."
+			NodeProgress: "Nodes stabilized: {0}/{1}"
+			TimeWarning: "30 seconds remaining! Hurry!"
+			SpellWardComplete: "Spell Damage Ward stabilized. The hexes are contained."
+			CreatureWardComplete: "Creature Injuries Ward stabilized. The venom is neutralized."
+			PotionWardComplete: "Potion Accidents Ward stabilized. The fumes have cleared."
+			MissionFailed: "The ward has been overwhelmed. Triage failed."
+			NotUnlocked: "St Mungo's access requires defeating the Hungarian Horntail first."
+			ActiveStatus: "Triage active: {0}/{1} nodes stabilized, {2} seconds remaining."
+			ReadyStatus: "Missions completed: {0}. Next ward: {1}."
+			SourceTriage: St Mungo's triage
+			TriageButton: Triage Status
+		}
+
+		Knockturn: {
+			Unlocked: "A narrow side-alley catches your eye... Knockturn Alley. The shadows here have weight."
+			Warning: "Borgin and Burkes has containment contracts for those bold enough. Handle cursed objects at your own risk."
+			MissionStart: "KNOCKTURN ALLEY -- Borgin has cursed objects that need containment. Destroy them carefully."
+			ContainObjects: "Contain {0} dangerous dark objects. Strike them down before their curses spread."
+			ContainProgress: "Objects contained: {0}/{1}"
+			TimeWarning: "30 seconds! The curses are growing stronger!"
+			MissionComplete: "Contract fulfilled. The dark objects are contained."
+			BorginPays: "Borgin slides your payment across the counter without a word."
+			MissionFailed: "The curses overwhelmed the containment. Borgin looks displeased."
+			NotUnlocked: "Knockturn Alley is sealed. Defeat Bellatrix and visit Diagon Alley first."
+			ActiveStatus: "Contract active: {0}/{1} objects contained, {2} seconds remaining."
+			ReadyStatus: "Contracts completed: {0}. Borgin has more work if you want it."
+			SourceContract: Knockturn containment contract
+			ContractButton: Contract Status
+			OpalContained: "The cursed opal necklace shatters! Its dark enchantment is broken."
+			CabinetSealed: "The Vanishing Cabinet shudders and goes still. The breach is sealed."
+		}
+
+		Forest: {
+			Unlocked: "The Forbidden Forest opens its deeper paths. Hagrid's expeditions are now available."
+			HagridBriefing: "Use the Forest Expedition Lantern at night in the Forbidden Forest to begin a mission."
+			UnicornGladeStart: "UNICORN GLADE -- Dark corrupted traces have appeared. Cleanse them to restore the glade's purity."
+			SkywatchStart: "CENTAUR SKYWATCH -- Unstable omen stones are disrupting celestial readings. Stabilize them."
+			NestStart: "ACROMANTULA NEST -- Brood markers are spawning spiders. Destroy them to clear the den."
+			CompleteObjectives: "Destroy {0} objectives before time runs out."
+			ObjectiveProgress: "Objectives completed: {0}/{1}"
+			TimeWarning: "30 seconds remaining! The forest grows restless!"
+			UnicornGladeComplete: "The corrupted traces are cleansed. The Unicorn Glade shimmers with restored purity."
+			SkywatchComplete: "The omen stones are stabilized. The centaurs can read the stars once more."
+			NestComplete: "The brood markers are destroyed. The spider den falls silent."
+			MissionFailed: "Time expired. The forest reclaims its secrets."
+			NotUnlocked: "The deeper forest paths are sealed. Defeat the Basilisk first."
+			ActiveStatus: "Expedition active: {0}/{1} objectives, {2} seconds remaining."
+			ReadyStatus: "Expeditions completed: {0}. Next mission: {1}."
+			SourceExpedition: Forest expedition
+			ExpeditionButton: Expedition Status
+			ThestralStart: "THESTRAL CLEARING -- Moonlit beacons have appeared in the clearing. Activate them to stabilize the spectral energy."
+			ThestralComplete: "The beacons are stabilized. The Thestral Clearing glows softly with moonlit tranquility."
+			HagridExpedition1: "Right then! The forest needs our help. Take this lantern and head in after dark."
+			HagridExpedition2: "The Unicorn Glade's been tainted -- dark traces, not the unicorns themselves. We protect them, we don't hunt them."
+			HagridExpedition3: "The centaurs are worried about their star readings. Unstable omen stones, they say."
+			HagridExpedition4: "Aragog's old colony has gone wild. Brood markers keepin' them organized. Smash those and they'll scatter."
+			HagridExpedition5: "Yeh've done good work in there. The forest remembers those who help it."
+			HagridExpedition6: "There's a clearing deeper in the forest where Thestrals gather. Beautiful creatures, really. Only those who've seen death can see 'em."
+		}
+
+		Shack: {
+			Unlocked: "Hagrid slips you a small wooden token. 'Know how to freeze the Willow? Good. Be careful in there.'"
+			WillowStart: "WILLOW SUPPRESSION -- The Whomping Willow is thrashing! Disable 3 branch knots!"
+			TunnelStart: "TUNNEL STABILIZATION -- The passage is collapsing! Secure 4 tunnel wards!"
+			ShackStart: "SHACK CONTAINMENT -- The moon wards are fracturing! Seal 3 ward cracks before the barrier fails!"
+			CompleteObjectives: "Clear {0} objectives before time runs out."
+			ObjectiveProgress: "Objectives: {0}/{1}"
+			TimeWarning: "30 seconds! The passage is destabilizing!"
+			WillowComplete: "The Willow calms. The passage is safe... for now."
+			TunnelComplete: "The tunnel holds. The wards are stable."
+			ShackComplete: "The Shack's containment wards are reinforced. The moon cannot reach what lies within."
+			MissionFailed: "The passage has collapsed. Try again another night."
+			NotUnlocked: "The Whomping Willow guards its secrets. Defeat Fenrir Greyback first."
+			ActiveStatus: "Mission active: {0}/{1} objectives cleared, {2} seconds remaining."
+			ReadyStatus: "Missions completed: {0}. Next: {1}."
+			SourceMission: Shrieking Shack mission
+			FullMoonWarning: "The full moon rises! The Shack's wards strain under amplified moonlight. Hazards will be stronger -- but so will the rewards."
+		}
+
+		Grimmauld: {
+			Revealed: "The Fidelius Charm lifts. Number Twelve, Grimmauld Place materializes before you."
+			Address: "The headquarters of the Order of the Phoenix may be found at Number Twelve, Grimmauld Place."
+			Description: "The safehouse needs constant upkeep against infestations, cursed portraits, and dark creatures."
+			DoxySweepStart: "DOXY SWEEP -- The house is buzzing with Doxy nests. Destroy them before they breed out of control!"
+			PortraitStart: "PORTRAIT SUPPRESSION -- Walburga's portrait is shrieking again. Silence the cursed frames!"
+			BoggartStart: "BOGGART WARD -- Fear manifestations have taken root. Banish them -- Riddikulus is most effective!"
+			ClearThreats: "Clear {0} threats before time runs out."
+			ThreatProgress: "Threats cleared: {0}/{1}"
+			TimeWarning: "30 seconds! The infestations are spreading!"
+			DoxySweepComplete: "The Doxy nests are destroyed. The buzzing has stopped -- Number Twelve breathes easy."
+			PortraitComplete: "Walburga's portrait falls silent at last. The shrieking has stopped."
+			BoggartComplete: "The Boggart dissolves into mist! The wardrobe is clear."
+			MissionFailed: "The safehouse has been overwhelmed. The wards have sealed it again."
+			NotRevealed: "The Fidelius Charm conceals this place. Defeat Azkaban's Despair and complete a Department mission first."
+			ActiveStatus: "Safehouse maintenance active: {0}/{1} threats cleared, {2} seconds remaining."
+			ReadyStatus: "Missions completed: {0}. Next maintenance: {1}."
+			SourceMaintenance: Grimmauld safehouse maintenance
+			MissionButton: Safehouse Status
+			PortraitSilenced: "Walburga's portrait falls silent at last. The shrieking has stopped."
+			RewardGiven: "The Order leaves supplies for your service. Safehouse Resolve strengthens you."
+			NestSpawning: "Buzzing fills the room -- a Doxy nest is spawning swarms!"
+			PortraitShrieking: "FILTH! SCUM! BLOOD TRAITORS! -- Walburga's portrait shrieks curses at everyone nearby."
+			BoggartLurking: "Something shifts in the wardrobe... a Boggart. Use Riddikulus!"
+			WardStable: "The Fidelius ward holds strong. Number Twelve remains hidden from enemies."
+			OrderGratitude: "Kingsley nods approvingly. The Order of the Phoenix thanks you for safeguarding the headquarters."
+			ConcealmentWoven: "Concealment Thread materializes from the stabilized ward residue."
+		}
+
+		Battle: {
+			Unlocked: "The castle wards shudder. The Battle of Hogwarts can now begin. Prepare yourself."
+			Preparation: "Destroy all core Horcruxes, defend the wards, and face Azkaban's Despair before the castle siege unlocks."
+			Phase1Start: "PHASE 1: CASTLE DEFENSE -- Death Eaters assault the outer wards! Protect the Castle Ward Nodes!"
+			DefendCastle: "Defend {0} Castle Ward Nodes before the wards collapse!"
+			Phase2Start: "PHASE 2: BREACH -- The outer defenses have fallen! Seal the Breach Seals before darkness overwhelms the castle!"
+			TimeWarning: "30 seconds! The castle defenses are failing!"
+			ObjectiveProgress: "Objectives completed: {0}/{1}"
+			NaginiSlain: "Nagini falls -- the final Horcrux is destroyed. Voldemort's last tether to immortality is severed."
+			Victory: "The Battle of Hogwarts is won. The castle stands. Hope endures."
+			VoldemortReady: "The Dark Lord's defenses are shattered. He can now be confronted at full vulnerability."
+			Failed: "The castle has fallen. The wards are broken. Regroup and try again."
+			NotUnlocked: "The Battle of Hogwarts is not yet available. Destroy all core Horcruxes, defend wards, and defeat Azkaban's Despair."
+			ActiveStatus: "Battle active: Phase {0}, objectives {1}, {2} seconds remaining."
+			ReadyStatus: "Battles won: {0}. The castle remembers your service."
+			SourceBattle: Battle of Hogwarts
+			TrackerTitle: "=== HORCRUX HUNT STATUS ==="
+			VoldemortPower: "Voldemort's power: {0}%"
+		}
+
+		Houses: {
+			Gryffindor: Gryffindor
+			Slytherin: Slytherin
+			Ravenclaw: Ravenclaw
+			Hufflepuff: Hufflepuff
+			Unknown: Unknown
+		}
+
+		DarkArts: {
+			Tier2Warning: "You feel the dark magic taking hold... your Patronus weakens."
+			Tier3Warning: "Paranoia creeps in. The Ministry grows suspicious."
+			Tier4Warning: "Dark magic consumes you. Healing magic falters."
+			Tier5Warning: "You have embraced the Dark Arts fully. There may be no return."
+			Cleansed: "The darkness recedes..."
+		}
+
+		RoomOfRequirement: {
+			Restoration: "The Room of Restoration"
+			Recovery: "The Room of Recovery"
+			HiddenThings: "The Room of Hidden Things"
+			ComeAndGo: "The Come and Go Room"
+			Sanctuary: "The Room of Sanctuary"
+			Manifests: "{0} manifests around you..."
+			TooltipInfo: "Summons a magical room that adapts to your current need"
+			TooltipResistance: "[c/C8B48C:DA Galleon + Wards Defended: Resistance HQ]"
+			TooltipModes1: "[c/B4C8FF:Despair > 15%: Restoration Room] | [c/66FF66:Low HP: Recovery Room]"
+			TooltipModes2: "[c/6666FF:Holding Wand: Training Room]"
+			TooltipModes3: "[c/FFD700:Carrying Gold: Vault Room] | [c/C8B4FF:Default: Sanctuary Room]"
+		}
+
+		OwlPost: {
+			DescMushroom: "10 Mushrooms for a potion order"
+			DescDaybloom: "5 Daybloom for Potions Master"
+			DescFallenStar: "3 Fallen Stars for Ollivander"
+			DescCobweb: "20 Cobweb for Hagrid's creatures"
+			DescLens: "5 Lenses for Centaur's stargazing"
+			DescBook: "3 Books for the Hogwarts library"
+			DescBottle: "10 Bottles for the Potions classroom"
+			DescGoldBar: "2 Gold Bars for Gringotts"
+			DescFeather: "5 Feathers for owl grooming"
+			DescSilk: "5 Silk for new school robes"
+			DeliveryComplete: "Owl Post delivery complete! Received {0} Essence of Magic."
+			CompletedToday: "Today's delivery has been completed. Check back tomorrow!"
+			NoDeliveries: "No deliveries posted yet."
+			RequestFormat: "Owl Post Request: Deliver {0}x {1}. Reward: Essence of Magic + buff."
+		}
+
+		HorcruxHunt: {
+			DiaryName: "Riddle's Diary"
+			LocketName: "Slytherin's Locket"
+			CupName: "Hufflepuff's Cup"
+			DiademName: "Ravenclaw's Diadem"
+			NaginiName: "Nagini"
+			DiaryFlavor: "The diary shrieks as ink pours from its pages like blood!"
+			LocketFlavor: "The locket bursts open — a shadowy figure screams and dissolves!"
+			CupFlavor: "The cup melts and warps, dark magic hemorrhaging from within!"
+			DiademFlavor: "The diadem shatters — a ghostly wail echoes through the air!"
+			DefaultFlavor: "The Horcrux is destroyed!"
+			SoulDestroyed: "A piece of Voldemort's soul has been destroyed! ({0}/4)"
+			DarkLordWeakens: "The Dark Lord grows weaker... ({0}% power remaining)"
+			AllDestroyed: "All core Horcruxes destroyed! Voldemort's soul can no longer hide behind them."
+			SeekCloak: "Seek Dumbledore's portrait. The true Invisibility Cloak can now be reclaimed."
+			EndureAzkaban: "Hope must endure Azkaban's Despair before the Hallows path can continue."
+			NaginiFalls: "Nagini falls. Another tether holding Voldemort to life has been severed."
+			NeedTool: "You need a Basilisk Fang or the Sword of Gryffindor to destroy this Horcrux!"
+		}
+
+		Azkaban: {
+			EventStart1: "A chill sweeps across the land... Azkaban's wards are failing!"
+			EventStart2: "Keep a Patronus or a warded light close. Despair itself hunts with the Dementors."
+			EventEnd: "The Dementors retreat to Azkaban... {0} Despair Anchors were sealed."
+		}
+
+		SceneEffects: {
+			AzkabanOppression: "The air grows cold. Despair seeps from the walls."
+			MysteryProphecy: "Whispers of fate echo through the Hall of Prophecy."
+			MysteryTime: "Time bends here. The air shimmers with temporal distortion."
+			MysteryDeath: "The Veil calls. Stay back from the arch."
+			GrimmauldHostile: "Dark objects stir. The Black family's legacy persists."
+			StMungosWard: "Magical maladies fill the air. Caution is advised."
+			BattleSiege: "The castle shakes under the assault. Hold the line."
+			DiagonBustle: "The magical bustle of Diagon Alley surrounds you."
+			KnockturnShadow: "Shadows deepen in Knockturn Alley. Watch your step."
+			GringottsDepth: "Deep beneath London, the vaults of Gringotts await."
+			ShriekingMoonlit: "Moonlight pierces through the broken shutters. Something stirs."
+			WillowDanger: "The Whomping Willow lashes overhead. Stay low."
+		}
+
+		QuidditchMatch: {
+			PitchEntry: "You've entered the Quidditch Pitch! Boundary markers flare."
+			ScoreUpdate: "SCORE: {0} - {1}"
+			GoalScored: "GOAL! {0} points scored!"
+			HoopHit: "Through the hoop! 10 points!"
+			Commentary1: "And the Quaffle is released!"
+			Commentary2: "Magnificent flying!"
+			Commentary3: "The crowd goes wild!"
+			MatchStart: "The match begins! Players, mount your brooms!"
+			MatchEnd: "The match is over! Final score: {0} to {1}"
+			SeasonEvent: "It's Quidditch Season! Multiple Golden Snitches have appeared!"
+			SeasonEvent2: "Catch as many as you can on your broomstick!"
+			RankUp: "Quidditch Rank Up: {0}!"
+			BoundaryMarker: "Quidditch Pitch Boundary"
+			StandsBanner: "Quidditch Stands"
+		}
+
+		Transit: {
+			PassageFade: "The wall shimmers and a hidden passage appears..."
+			PassageTravel: "You slip through the secret passage, footsteps echoing in the dark..."
+			PassageArrive: "You emerge from the passage, dusting yourself off."
+			HogsHeadEntry: "Aberforth nods. The passage behind the portrait swings open."
+			HogsHeadTravel: "The winding tunnel stretches ahead, lit by distant wand-light."
+			WillowEntry: "The knot freezes. The Whomping Willow goes still. Quickly now..."
+			WillowTunnel: "Low ceiling, damp earth. The passage narrows toward the Shack."
+			GringottsDescend: "The cart plunges downward. Torches blur past. Your stomach lurches."
+			GringottsDeep: "Deeper and deeper beneath London. The air grows colder."
+			GringottsArrive: "The cart screeches to a halt. Before you: a vault door."
+		}
+
+		BattleEndgame: {
+			NaginiPhase: "Nagini coils protectively! Strike now -- destroy the final Horcrux!"
+			NaginiStrike: "Neville raises the Sword of Gryffindor! Nagini must fall!"
+			CastleDefenders: "The castle's defenders rally! Animated armor marches to the front line."
+			McGonagallRally: "Professor McGonagall raises her wand: 'Piertotum Locomotor!' The castle's statues march to war."
+			DefenderFlavor: "Stone guardians patrol the corridors, shielding students from harm."
+			SiegeIntensity: "The castle trembles. Explosions of light and dark magic fill the sky."
+		}
+
+		// === PHASE 30 ===
+		DailyChallenge: {
+			Complete: "Daily Wizard Challenge COMPLETE! Essence of Magic rewarded!"
+		}
+
+		HogwartsLetterEvent: {
+			OwlArrives: "An owl swoops down and drops a letter at your feet!"
+			Accepted: "You've been accepted to the Wizarding World!"
+		}
+
+		Renown: {
+			Champion: "HOUSE CHAMPION! Maximum renown achieved!"
+			MajorBuff: "150 House Renown! Major house buff activated!"
+			MinorBuff: "50 House Renown! Minor house buff activated!"
+		}
+
+		Resurrection: {
+			RiseFromAshes: "You rise from the ashes!"
+		}
+
+		Bestiary: {
+			Neville: "Neville Longbottom -- Gryffindor student, D.A. member, and hero of the Battle of Hogwarts. Sells battle supplies and the Horcrux Tracker. Appears after winning the Battle of Hogwarts."
+		}
+	}
+}

@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36">
+  <defs>
+    <linearGradient id="skin" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#d4c4a0"/>
+      <stop offset="100%" stop-color="#b8a880"/>
+    </linearGradient>
+    <linearGradient id="pillowcase" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#e8dcc8"/>
+      <stop offset="100%" stop-color="#c8b8a0"/>
+    </linearGradient>
+  </defs>
+  <!-- Pillowcase clothing -->
+  <path d="M10 26 Q12 23 15 22 L18 21 L21 22 Q24 23 26 26 L27 36 L9 36Z" fill="url(#pillowcase)"/>
+  <!-- Pillowcase holes/tears -->
+  <path d="M12 28 Q13 27 14 28" fill="none" stroke="#a89878" stroke-width="0.3"/>
+  <path d="M22 30 Q23 29 24 30" fill="none" stroke="#a89878" stroke-width="0.3"/>
+  <!-- Thin neck -->
+  <rect x="16" y="19" width="4" height="3" rx="1" fill="url(#skin)"/>
+  <!-- Small round head -->
+  <ellipse cx="18" cy="14" rx="6.5" ry="6" fill="url(#skin)"/>
+  <!-- Large bat-like ears -->
+  <path d="M11.5 14 Q7 8 5 10 Q4 13 8 16 Q10 16 11.5 15" fill="#c8b490" stroke="#a89870" stroke-width="0.3"/>
+  <path d="M24.5 14 Q29 8 31 10 Q32 13 28 16 Q26 16 24.5 15" fill="#c8b490" stroke="#a89870" stroke-width="0.3"/>
+  <!-- Inner ear pink -->
+  <path d="M10 13 Q7 10 6.5 11 Q6 13 9 15" fill="#d4a8a0" opacity="0.4"/>
+  <path d="M26 13 Q29 10 29.5 11 Q30 13 27 15" fill="#d4a8a0" opacity="0.4"/>
+  <!-- Bald wrinkly head top -->
+  <path d="M14 9 Q16 8 18 8 Q20 8 22 9" fill="none" stroke="#b8a478" stroke-width="0.3" opacity="0.5"/>
+  <path d="M15 10 Q17 9.5 18 9.5 Q19 9.5 21 10" fill="none" stroke="#b8a478" stroke-width="0.2" opacity="0.4"/>
+  <!-- Enormous green eyes -->
+  <ellipse cx="15" cy="14" rx="2.5" ry="2.2" fill="white"/>
+  <ellipse cx="21" cy="14" rx="2.5" ry="2.2" fill="white"/>
+  <ellipse cx="15" cy="14" rx="1.6" ry="1.6" fill="#3a8a3a"/>
+  <ellipse cx="21" cy="14" rx="1.6" ry="1.6" fill="#3a8a3a"/>
+  <circle cx="15" cy="14" r="0.8" fill="#1a1a2e"/>
+  <circle cx="21" cy="14" r="0.8" fill="#1a1a2e"/>
+  <!-- Eye gleams -->
+  <circle cx="15.6" cy="13.3" r="0.4" fill="white" opacity="0.8"/>
+  <circle cx="21.6" cy="13.3" r="0.4" fill="white" opacity="0.8"/>
+  <circle cx="14.5" cy="14.5" r="0.25" fill="white" opacity="0.5"/>
+  <circle cx="20.5" cy="14.5" r="0.25" fill="white" opacity="0.5"/>
+  <!-- Long thin nose -->
+  <path d="M18 14 L17.2 17 L18 17.8 L18.8 17" fill="#c4a880" stroke="#b09868" stroke-width="0.3"/>
+  <!-- Small happy mouth -->
+  <path d="M16 19 Q18 20.5 20 19" fill="none" stroke="#a0806a" stroke-width="0.4"/>
+  <!-- Mismatched socks visible -->
+  <ellipse cx="13" cy="35.5" rx="2" ry="1" fill="#cc3333"/>
+  <ellipse cx="23" cy="35.5" rx="2" ry="1" fill="#33aa33"/>
+  <!-- Sock stripes -->
+  <line x1="12" y1="35.5" x2="14" y2="35.5" stroke="#ff6666" stroke-width="0.3"/>
+  <line x1="22" y1="35.5" x2="24" y2="35.5" stroke="#66cc66" stroke-width="0.3"/>
+</svg>

@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 42 42">
+  <!-- Phoenix Feather Wand - great power, double shot Incendio -->
+  <defs>
+    <linearGradient id="pfWood" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#CD853F"/>
+      <stop offset="100%" stop-color="#8B6508"/>
+    </linearGradient>
+    <linearGradient id="pfGlow" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FF6600" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#CC3300" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <circle cx="8" cy="8" r="4.5" fill="url(#pfGlow)" opacity="0.7"/>
+  <line x1="8" y1="8" x2="34" y2="34" stroke="url(#pfWood)" stroke-width="2.8" stroke-linecap="round"/>
+  <!-- Phoenix feather core visible as golden-red stripe -->
+  <line x1="10" y1="10" x2="32" y2="32" stroke="#FF6B00" stroke-width="0.6" opacity="0.5" stroke-dasharray="2,2"/>
+  <!-- Feather detail near tip -->
+  <path d="M10,7 Q7,5 6,8" stroke="#FF8C00" stroke-width="0.5" fill="none" opacity="0.6"/>
+  <path d="M7,10 Q4,8 6,6" stroke="#FFD700" stroke-width="0.4" fill="none" opacity="0.5"/>
+  <!-- Wood grain -->
+  <line x1="16" y1="15" x2="18" y2="17" stroke="#7A5518" stroke-width="0.4" opacity="0.5"/>
+  <line x1="24" y1="23" x2="26" y2="25" stroke="#7A5518" stroke-width="0.4" opacity="0.5"/>
+  <ellipse cx="35" cy="35" rx="2.2" ry="2.2" fill="#7A5518" stroke="#6A4508" stroke-width="0.5"/>
+</svg>

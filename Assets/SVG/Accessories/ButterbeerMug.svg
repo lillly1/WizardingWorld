@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <defs>
+    <linearGradient id="mugBody" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#c8a060"/>
+      <stop offset="40%" stop-color="#a88040"/>
+      <stop offset="100%" stop-color="#886830"/>
+    </linearGradient>
+    <linearGradient id="butterbeer" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffcc44"/>
+      <stop offset="50%" stop-color="#eebb33"/>
+      <stop offset="100%" stop-color="#ddaa22"/>
+    </linearGradient>
+    <radialGradient id="foam" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#fff8e0"/>
+      <stop offset="60%" stop-color="#ffeecc"/>
+      <stop offset="100%" stop-color="#ffe0aa"/>
+    </radialGradient>
+    <radialGradient id="warmth" cx="50%" cy="30%" r="60%">
+      <stop offset="0%" stop-color="#ffdd66" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#cc9922" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <!-- Warm glow -->
+  <ellipse cx="14" cy="16" rx="12" ry="13" fill="url(#warmth)"/>
+  <!-- Mug body -->
+  <path d="M7 10 L7 26 Q7 28 9 28 L19 28 Q21 28 21 26 L21 10 Z" fill="url(#mugBody)" stroke="#6a5020" stroke-width="0.5"/>
+  <!-- Mug interior visible at top -->
+  <ellipse cx="14" cy="10" rx="7" ry="2" fill="#886830" stroke="#6a5020" stroke-width="0.3"/>
+  <!-- Butterbeer liquid -->
+  <path d="M7.5 11 L7.5 25.5 Q7.5 27.5 9 27.5 L19 27.5 Q20.5 27.5 20.5 25.5 L20.5 11 Z" fill="url(#butterbeer)" opacity="0.8"/>
+  <!-- Frothy foam top -->
+  <ellipse cx="14" cy="10" rx="7" ry="2.5" fill="url(#foam)"/>
+  <!-- Foam bubbles -->
+  <circle cx="11" cy="9.5" r="1" fill="#fff8e8" stroke="#ffe8c0" stroke-width="0.2"/>
+  <circle cx="14" cy="9" r="1.2" fill="#fffae8" stroke="#ffe8c0" stroke-width="0.2"/>
+  <circle cx="17" cy="9.5" r="0.9" fill="#fff8e8" stroke="#ffe8c0" stroke-width="0.2"/>
+  <circle cx="12.5" cy="10.5" r="0.7" fill="#fff8e8" stroke="#ffe8c0" stroke-width="0.2"/>
+  <circle cx="15.5" cy="10.2" r="0.8" fill="#fffae8" stroke="#ffe8c0" stroke-width="0.2"/>
+  <!-- Foam drip -->
+  <path d="M9 11 Q8.5 13 9 14" fill="none" stroke="#ffe8c0" stroke-width="0.8" stroke-linecap="round" opacity="0.6"/>
+  <!-- Handle -->
+  <path d="M21 13 Q26 13 26 19 Q26 25 21 25" fill="none" stroke="url(#mugBody)" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M21 14 Q25 14 25 19 Q25 24 21 24" fill="none" stroke="#c8a868" stroke-width="0.5"/>
+  <!-- Mug highlight -->
+  <line x1="9" y1="12" x2="9" y2="26" stroke="#d8b870" stroke-width="0.5" opacity="0.4"/>
+  <!-- Steam wisps -->
+  <path d="M11 7 Q10 5 11 3" fill="none" stroke="#ffeecc" stroke-width="0.4" opacity="0.4"/>
+  <path d="M14 6.5 Q13.5 4 14.5 2" fill="none" stroke="#ffeecc" stroke-width="0.4" opacity="0.3"/>
+  <path d="M17 7 Q17.5 5 17 3.5" fill="none" stroke="#ffeecc" stroke-width="0.4" opacity="0.35"/>
+</svg>

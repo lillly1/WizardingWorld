@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <defs>
+    <linearGradient id="huffRobe" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#c8a800"/>
+      <stop offset="100%" stop-color="#8a7500"/>
+    </linearGradient>
+  </defs>
+  <rect width="32" height="32" rx="4" fill="#2a2a1a"/>
+  <!-- Robe body -->
+  <g>
+    <!-- Main robe -->
+    <path d="M10 8 L8 28 Q8 30 10 30 L22 30 Q24 30 24 28 L22 8 Z" fill="url(#huffRobe)"/>
+    <!-- Collar / neckline -->
+    <path d="M12 8 Q16 6 20 8 L20 10 Q16 9 12 10 Z" fill="#2a2a2a"/>
+    <!-- Shoulder seams -->
+    <path d="M10 8 L8 10 L10 10 Z" fill="#a89000"/>
+    <path d="M22 8 L24 10 L22 10 Z" fill="#a89000"/>
+    <!-- Sleeves -->
+    <path d="M8 10 L4 18 L5 19 L10 13 Z" fill="url(#huffRobe)"/>
+    <path d="M24 10 L28 18 L27 19 L22 13 Z" fill="url(#huffRobe)"/>
+    <!-- Sleeve cuffs -->
+    <rect x="4" y="17" width="2" height="2" rx="0.5" fill="#2a2a2a"/>
+    <rect x="26" y="17" width="2" height="2" rx="0.5" fill="#2a2a2a"/>
+    <!-- Center robe opening line -->
+    <line x1="16" y1="10" x2="16" y2="30" stroke="#8a7000" stroke-width="0.5"/>
+    <!-- Black trim lines -->
+    <line x1="11" y1="10" x2="10" y2="30" stroke="#2a2a2a" stroke-width="0.4" opacity="0.5"/>
+    <line x1="21" y1="10" x2="22" y2="30" stroke="#2a2a2a" stroke-width="0.4" opacity="0.5"/>
+    <!-- Belt/sash -->
+    <rect x="10" y="18" width="12" height="1.5" rx="0.5" fill="#2a2a2a"/>
+    <!-- Badger crest on chest -->
+    <g transform="translate(13,11) scale(0.4)">
+      <circle cx="7" cy="7" r="6" fill="#2a2a2a" stroke="#3a3a3a" stroke-width="0.5"/>
+      <!-- Mini badger -->
+      <ellipse cx="7" cy="8" rx="3.5" ry="2" fill="#4a4a4a"/>
+      <ellipse cx="9" cy="7" rx="2" ry="1.5" fill="#4a4a4a"/>
+      <!-- White stripe -->
+      <path d="M8.5 5.5 L9 6 L9 8.5" stroke="#f0f0f0" stroke-width="0.8" fill="none"/>
+      <!-- Eye -->
+      <circle cx="9.5" cy="6.8" r="0.3" fill="#1a1a1a"/>
+    </g>
+    <!-- Robe bottom hem -->
+    <path d="M8 28 Q12 29 16 28 Q20 29 24 28 L24 30 L8 30 Z" fill="#8a7500"/>
+  </g>
+  <!-- Black buttons -->
+  <circle cx="15" cy="13" r="0.5" fill="#3a3a3a"/>
+  <circle cx="15" cy="15.5" r="0.5" fill="#3a3a3a"/>
+</svg>

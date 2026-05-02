@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <defs>
+    <linearGradient id="ravRobe" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1a3a8b"/>
+      <stop offset="100%" stop-color="#0a1a5a"/>
+    </linearGradient>
+  </defs>
+  <rect width="32" height="32" rx="4" fill="#1a1a2a"/>
+  <!-- Robe body -->
+  <g>
+    <!-- Main robe -->
+    <path d="M10 8 L8 28 Q8 30 10 30 L22 30 Q24 30 24 28 L22 8 Z" fill="url(#ravRobe)"/>
+    <!-- Collar / neckline -->
+    <path d="M12 8 Q16 6 20 8 L20 10 Q16 9 12 10 Z" fill="#cd7f32"/>
+    <!-- Shoulder seams -->
+    <path d="M10 8 L8 10 L10 10 Z" fill="#143070"/>
+    <path d="M22 8 L24 10 L22 10 Z" fill="#143070"/>
+    <!-- Sleeves -->
+    <path d="M8 10 L4 18 L5 19 L10 13 Z" fill="url(#ravRobe)"/>
+    <path d="M24 10 L28 18 L27 19 L22 13 Z" fill="url(#ravRobe)"/>
+    <!-- Sleeve cuffs -->
+    <rect x="4" y="17" width="2" height="2" rx="0.5" fill="#cd7f32"/>
+    <rect x="26" y="17" width="2" height="2" rx="0.5" fill="#cd7f32"/>
+    <!-- Center robe opening line -->
+    <line x1="16" y1="10" x2="16" y2="30" stroke="#0a1a4a" stroke-width="0.5"/>
+    <!-- Bronze trim lines -->
+    <line x1="11" y1="10" x2="10" y2="30" stroke="#cd7f32" stroke-width="0.4" opacity="0.5"/>
+    <line x1="21" y1="10" x2="22" y2="30" stroke="#cd7f32" stroke-width="0.4" opacity="0.5"/>
+    <!-- Belt/sash -->
+    <rect x="10" y="18" width="12" height="1.5" rx="0.5" fill="#cd7f32"/>
+    <!-- Eagle crest on chest -->
+    <g transform="translate(13,11) scale(0.4)">
+      <circle cx="7" cy="7" r="6" fill="#cd7f32" stroke="#daa520" stroke-width="0.5"/>
+      <!-- Mini eagle -->
+      <path d="M7 4 L4 6 L5 7 L7 5.5 L9 7 L10 6 Z" fill="#1a3a8b"/>
+      <path d="M7 5.5 L7 10" stroke="#1a3a8b" stroke-width="1" fill="none"/>
+      <!-- Wings hint -->
+      <path d="M5 7 L3 9" stroke="#1a3a8b" stroke-width="0.8"/>
+      <path d="M9 7 L11 9" stroke="#1a3a8b" stroke-width="0.8"/>
+      <!-- Eye -->
+      <circle cx="7" cy="4.5" r="0.3" fill="#ffd700"/>
+    </g>
+    <!-- Robe bottom hem -->
+    <path d="M8 28 Q12 29 16 28 Q20 29 24 28 L24 30 L8 30 Z" fill="#0a1a5a"/>
+  </g>
+  <!-- Bronze buttons -->
+  <circle cx="15" cy="13" r="0.5" fill="#daa520"/>
+  <circle cx="15" cy="15.5" r="0.5" fill="#daa520"/>
+</svg>

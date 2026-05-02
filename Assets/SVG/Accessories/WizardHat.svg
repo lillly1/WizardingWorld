@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <defs>
+    <linearGradient id="hatGrad" x1="0" y1="0" x2="0.3" y2="1">
+      <stop offset="0%" stop-color="#3333aa"/>
+      <stop offset="40%" stop-color="#222277"/>
+      <stop offset="100%" stop-color="#1a1a55"/>
+    </linearGradient>
+    <linearGradient id="brimGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2a2a77"/>
+      <stop offset="100%" stop-color="#1a1a44"/>
+    </linearGradient>
+    <filter id="starTwinkle">
+      <feGaussianBlur stdDeviation="0.4" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <!-- Hat cone -->
+  <path d="M16 2 Q14 3 8 22 L24 22 Q18 3 16 2 Z" fill="url(#hatGrad)" stroke="#111144" stroke-width="0.5"/>
+  <!-- Hat tip curves slightly -->
+  <path d="M15 2 Q13 1 12 3" fill="none" stroke="#3333aa" stroke-width="1" stroke-linecap="round"/>
+  <!-- Hat brim -->
+  <ellipse cx="16" cy="23" rx="13" ry="4" fill="url(#brimGrad)" stroke="#111144" stroke-width="0.5"/>
+  <!-- Brim top surface -->
+  <path d="M3 23 Q8 20 16 20 Q24 20 29 23 Q24 22 16 22 Q8 22 3 23 Z" fill="#2a2a88" opacity="0.5"/>
+  <!-- Hat band -->
+  <path d="M8.5 21 Q16 19 23.5 21" fill="none" stroke="#7744aa" stroke-width="1.5"/>
+  <!-- Buckle on band -->
+  <rect x="14.5" y="19.5" width="3" height="2.5" rx="0.3" fill="none" stroke="#daa520" stroke-width="0.7"/>
+  <rect x="15.5" y="19.5" width="1" height="2.5" fill="#daa520" opacity="0.5"/>
+  <!-- Stars on hat -->
+  <polygon points="11,10 11.3,10.8 12.1,10.8 11.4,11.3 11.7,12.1 11,11.6 10.3,12.1 10.6,11.3 9.9,10.8 10.7,10.8" fill="#ffdd44" opacity="0.8" filter="url(#starTwinkle)"/>
+  <polygon points="19,8 19.2,8.6 19.8,8.6 19.3,9 19.5,9.6 19,9.2 18.5,9.6 18.7,9 18.2,8.6 18.8,8.6" fill="#ffdd44" opacity="0.7" filter="url(#starTwinkle)"/>
+  <polygon points="14,15 14.2,15.5 14.8,15.5 14.3,15.8 14.5,16.3 14,16 13.5,16.3 13.7,15.8 13.2,15.5 13.8,15.5" fill="#ffdd44" opacity="0.6" filter="url(#starTwinkle)"/>
+  <polygon points="20,14 20.2,14.5 20.8,14.5 20.3,14.8 20.5,15.3 20,15 19.5,15.3 19.7,14.8 19.2,14.5 19.8,14.5" fill="#aaccff" opacity="0.7" filter="url(#starTwinkle)"/>
+  <polygon points="12,18 12.15,18.4 12.55,18.4 12.2,18.65 12.35,19.05 12,18.8 11.65,19.05 11.8,18.65 11.45,18.4 11.85,18.4" fill="#aaccff" opacity="0.5" filter="url(#starTwinkle)"/>
+  <!-- Moon crescent -->
+  <path d="M17 5 Q19 5.5 19 8 Q19 10.5 17 11 Q20 10 20 8 Q20 6 17 5 Z" fill="#ffdd88" opacity="0.6" filter="url(#starTwinkle)"/>
+  <!-- Fabric highlight -->
+  <path d="M14 5 Q13 12 10 20" fill="none" stroke="#4444bb" stroke-width="0.4" opacity="0.4"/>
+</svg>

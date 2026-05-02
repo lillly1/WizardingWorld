@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Wizarding World Wand Mechanical Data",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": ["id", "_source"],
+    "properties": {
+      "id": {"type": "string", "description": "Wand class name (unique ID)"},
+      "_source": {"type": "string"},
+      "damage": {"type": "integer", "minimum": 0},
+      "useTime": {"type": "integer", "minimum": 1},
+      "mana": {"type": "integer", "minimum": 0},
+      "knockBack": {"type": "number", "minimum": 0},
+      "crit": {"type": "integer", "minimum": 0},
+      "rarity": {"type": "string", "enum": ["White", "Blue", "Green", "Orange", "Lt Red", "Pink", "Lt Purple", "Lime", "Yellow", "Cyan", "Red", "Purple", "Expert", "Master"]},
+      "projectile": {"type": "string"},
+      "obsolete": {"type": "boolean"},
+      "hasRecipe": {"type": "boolean"},
+      "isAccessory": {"type": "boolean"}
+    },
+    "additionalProperties": true
+  },
+  "uniqueItems": true
+}

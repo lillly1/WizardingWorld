@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <defs>
+    <radialGradient id="coinGold" cx="45%" cy="40%" r="55%">
+      <stop offset="0%" stop-color="#FFE860"/>
+      <stop offset="30%" stop-color="#FFD700"/>
+      <stop offset="60%" stop-color="#D4A017"/>
+      <stop offset="100%" stop-color="#A07810"/>
+    </radialGradient>
+    <radialGradient id="coinEdge" cx="50%" cy="50%" r="50%">
+      <stop offset="85%" stop-color="#D4A017" stop-opacity="0"/>
+      <stop offset="95%" stop-color="#8B6914"/>
+      <stop offset="100%" stop-color="#6A5010"/>
+    </radialGradient>
+    <radialGradient id="activeGlow" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#FFE880" stop-opacity="0.5"/>
+      <stop offset="40%" stop-color="#FFD040" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#D4A017" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="coinGlow">
+      <feGaussianBlur stdDeviation="1.5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="emboss">
+      <feGaussianBlur stdDeviation="0.3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Warm active glow -->
+  <circle cx="16" cy="16" r="14" fill="url(#activeGlow)" filter="url(#coinGlow)"/>
+
+  <!-- Coin shadow -->
+  <ellipse cx="16.5" cy="27" rx="8" ry="2" fill="#000000" opacity="0.15"/>
+
+  <!-- Coin edge (3D thickness) -->
+  <ellipse cx="16" cy="16.5" rx="10.5" ry="10.5" fill="#8B6914" stroke="#6A5010" stroke-width="0.3"/>
+
+  <!-- Main coin face -->
+  <circle cx="16" cy="16" r="10.5" fill="url(#coinGold)" stroke="#A07810" stroke-width="0.5"/>
+
+  <!-- Coin rim raised border -->
+  <circle cx="16" cy="16" r="9.5" fill="none" stroke="#B8960B" stroke-width="0.6"/>
+  <circle cx="16" cy="16" r="9" fill="none" stroke="#FFE040" stroke-width="0.3" opacity="0.4"/>
+
+  <!-- Inner decorative ring -->
+  <circle cx="16" cy="16" r="7.5" fill="none" stroke="#B8860B" stroke-width="0.3" opacity="0.5"/>
+
+  <!-- "DA" text - bold, centered -->
+  <g filter="url(#emboss)">
+    <text x="16" y="15" font-family="serif" font-size="7" font-weight="bold" fill="#A07810" text-anchor="middle" opacity="0.8">DA</text>
+  </g>
+  <!-- DA text highlight -->
+  <text x="15.8" y="14.8" font-family="serif" font-size="7" font-weight="bold" fill="#FFE860" text-anchor="middle" opacity="0.3">DA</text>
+
+  <!-- Dumbledore's Army subtitle -->
+  <text x="16" y="19.5" font-family="serif" font-size="1.6" fill="#8B6914" text-anchor="middle" opacity="0.6">DUMBLEDORE'S</text>
+  <text x="16" y="21.5" font-family="serif" font-size="1.6" fill="#8B6914" text-anchor="middle" opacity="0.6">ARMY</text>
+
+  <!-- Wand and phoenix motif around DA -->
+  <g stroke="#B8860B" stroke-width="0.3" fill="none" opacity="0.5">
+    <!-- Crossed wands beneath text -->
+    <line x1="11" y1="22.5" x2="21" y2="22.5"/>
+    <line x1="11" y1="8" x2="21" y2="8"/>
+    <!-- Phoenix wing left -->
+    <path d="M8,13 Q6,11 8,9 Q9,10 9,12"/>
+    <!-- Phoenix wing right -->
+    <path d="M24,13 Q26,11 24,9 Q23,10 23,12"/>
+  </g>
+
+  <!-- Stars around rim -->
+  <g fill="#FFE860" opacity="0.5">
+    <circle cx="16" cy="6.8" r="0.4"/>
+    <circle cx="16" cy="25.2" r="0.4"/>
+    <circle cx="6.8" cy="16" r="0.4"/>
+    <circle cx="25.2" cy="16" r="0.4"/>
+    <circle cx="9" cy="9" r="0.3"/>
+    <circle cx="23" cy="9" r="0.3"/>
+    <circle cx="9" cy="23" r="0.3"/>
+    <circle cx="23" cy="23" r="0.3"/>
+  </g>
+
+  <!-- Coin surface highlight -->
+  <ellipse cx="13" cy="12" rx="4" ry="3" fill="#FFFFFF" opacity="0.06" transform="rotate(-15 13 12)"/>
+
+  <!-- Warm glow sparkle -->
+  <circle cx="22" cy="10" r="0.3" fill="#FFFFFF" opacity="0.6"/>
+  <line x1="21.5" y1="10" x2="22.5" y2="10" stroke="#FFFFFF" stroke-width="0.15"/>
+  <line x1="22" y1="9.5" x2="22" y2="10.5" stroke="#FFFFFF" stroke-width="0.15"/>
+
+  <!-- Edge notch details (milled edge) -->
+  <g stroke="#A07810" stroke-width="0.2" opacity="0.3">
+    <line x1="6" y1="13" x2="5.5" y2="13"/>
+    <line x1="6" y1="15" x2="5.5" y2="15"/>
+    <line x1="6" y1="17" x2="5.5" y2="17"/>
+    <line x1="6" y1="19" x2="5.5" y2="19"/>
+    <line x1="26" y1="13" x2="26.5" y2="13"/>
+    <line x1="26" y1="15" x2="26.5" y2="15"/>
+    <line x1="26" y1="17" x2="26.5" y2="17"/>
+    <line x1="26" y1="19" x2="26.5" y2="19"/>
+  </g>
+</svg>

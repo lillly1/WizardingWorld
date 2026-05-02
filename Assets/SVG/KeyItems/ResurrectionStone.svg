@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <defs>
+    <radialGradient id="stoneBody" cx="45%" cy="40%" r="55%">
+      <stop offset="0%" stop-color="#484848"/>
+      <stop offset="40%" stop-color="#2A2A2A"/>
+      <stop offset="80%" stop-color="#1A1A1A"/>
+      <stop offset="100%" stop-color="#0E0E0E"/>
+    </radialGradient>
+    <radialGradient id="ghostGlow" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#90A8C0" stop-opacity="0.3"/>
+      <stop offset="50%" stop-color="#6080A0" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#405060" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="symbolGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#B0C8E0" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#6080A0" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="ghostBlur">
+      <feGaussianBlur stdDeviation="1.2"/>
+    </filter>
+    <filter id="stoneTexture">
+      <feTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves="3" result="noise"/>
+      <feComposite in="SourceGraphic" in2="noise" operator="in" result="textured"/>
+      <feMerge>
+        <feMergeNode in="textured"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Ghostly outer glow -->
+  <ellipse cx="16" cy="17" rx="12" ry="11" fill="url(#ghostGlow)" filter="url(#ghostBlur)"/>
+
+  <!-- Ghostly wisps -->
+  <path d="M8,12 Q6,8 9,6" stroke="#80A0C0" stroke-width="0.4" fill="none" opacity="0.2" filter="url(#ghostBlur)"/>
+  <path d="M24,12 Q26,8 23,6" stroke="#80A0C0" stroke-width="0.4" fill="none" opacity="0.2" filter="url(#ghostBlur)"/>
+  <path d="M12,8 Q10,5 12,4" stroke="#80A0C0" stroke-width="0.3" fill="none" opacity="0.15" filter="url(#ghostBlur)"/>
+  <path d="M20,8 Q22,5 20,4" stroke="#80A0C0" stroke-width="0.3" fill="none" opacity="0.15" filter="url(#ghostBlur)"/>
+
+  <!-- Stone shadow -->
+  <ellipse cx="16" cy="27" rx="8" ry="2" fill="#000000" opacity="0.3"/>
+
+  <!-- Main stone shape - irregular, rough -->
+  <path d="M10,12 L12,9 L15,8 L18,8.5 L21,10 L23,13 L24,17 L23,21 L20,24 L17,25 L13,24.5 L10,22 L8,18 L8,14Z"
+        fill="url(#stoneBody)" stroke="#333333" stroke-width="0.4"/>
+
+  <!-- Stone surface texture/facets -->
+  <path d="M12,9 L14,14 L10,14" fill="#303030" opacity="0.4"/>
+  <path d="M18,8.5 L20,13 L15,12" fill="#353535" opacity="0.3"/>
+  <path d="M23,13 L20,18 L22,20" fill="#282828" opacity="0.3"/>
+  <path d="M13,24.5 L14,19 L10,20" fill="#252525" opacity="0.3"/>
+
+  <!-- Crack lines -->
+  <path d="M14,9 L15,13 L13,17 L14,22" stroke="#0A0A0A" stroke-width="0.5" fill="none"/>
+  <path d="M15,13 L18,14" stroke="#0A0A0A" stroke-width="0.4" fill="none"/>
+  <path d="M20,11 L19,15 L21,19" stroke="#0A0A0A" stroke-width="0.4" fill="none"/>
+  <path d="M13,17 L10,18" stroke="#0A0A0A" stroke-width="0.3" fill="none"/>
+
+  <!-- Deathly Hallows symbol carved into stone -->
+  <g transform="translate(16,16)" opacity="0.7">
+    <!-- Outer glow of symbol -->
+    <polygon points="0,-5.5 -4.5,4 4.5,4" fill="url(#symbolGlow)" opacity="0.3"/>
+
+    <!-- Triangle -->
+    <polygon points="0,-5 -4,3.5 4,3.5" fill="none" stroke="#8AAAC8" stroke-width="0.6" opacity="0.8"/>
+    <!-- Circle -->
+    <circle cx="0" cy="0.5" r="2.2" fill="none" stroke="#8AAAC8" stroke-width="0.6" opacity="0.8"/>
+    <!-- Line (Elder Wand) -->
+    <line x1="0" y1="-5" x2="0" y2="3.5" stroke="#8AAAC8" stroke-width="0.6" opacity="0.8"/>
+  </g>
+
+  <!-- Subtle surface highlights -->
+  <ellipse cx="13" cy="12" rx="2" ry="1.5" fill="#FFFFFF" opacity="0.06"/>
+  <ellipse cx="19" cy="14" rx="1.5" ry="1" fill="#FFFFFF" opacity="0.04"/>
+</svg>

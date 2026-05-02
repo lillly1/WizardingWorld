@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 42 42">
+  <!-- Holly Wand - Harry Potter's wand, phoenix feather core -->
+  <defs>
+    <linearGradient id="hollyWood" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#C4956A"/>
+      <stop offset="40%" stop-color="#A67B5B"/>
+      <stop offset="100%" stop-color="#8B6914"/>
+    </linearGradient>
+    <linearGradient id="hollyGlow" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FF4444" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#FF2222" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="holGlow">
+      <feGaussianBlur stdDeviation="1.2" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <!-- Tip glow (Expelliarmus red) -->
+  <circle cx="8" cy="8" r="4" fill="url(#hollyGlow)" filter="url(#holGlow)" opacity="0.7"/>
+  <!-- Wand shaft - warm holly wood -->
+  <line x1="8" y1="8" x2="34" y2="34" stroke="url(#hollyWood)" stroke-width="2.8" stroke-linecap="round"/>
+  <!-- Wood grain lines -->
+  <line x1="13" y1="12" x2="17" y2="16" stroke="#9A6B4B" stroke-width="0.4" opacity="0.6"/>
+  <line x1="20" y1="19" x2="24" y2="23" stroke="#9A6B4B" stroke-width="0.4" opacity="0.6"/>
+  <line x1="27" y1="26" x2="30" y2="29" stroke="#9A6B4B" stroke-width="0.4" opacity="0.6"/>
+  <!-- Phoenix feather core (golden-red shimmer) -->
+  <line x1="10" y1="10" x2="31" y2="31" stroke="#FFD700" stroke-width="0.4" opacity="0.4" stroke-dasharray="1.5,2.5"/>
+  <!-- Handle wrapping -->
+  <g stroke="#6B4914" stroke-width="0.6" opacity="0.7">
+    <line x1="30" y1="32" x2="32" y2="30"/>
+    <line x1="31" y1="33" x2="33" y2="31"/>
+    <line x1="32" y1="34" x2="34" y2="32"/>
+  </g>
+  <!-- Handle end -->
+  <circle cx="35" cy="35" r="2" fill="#6B4914" stroke="#5A3A0A" stroke-width="0.5"/>
+  <!-- Spark at tip -->
+  <circle cx="7" cy="7" r="1" fill="#FFFFFF" opacity="0.8"/>
+</svg>

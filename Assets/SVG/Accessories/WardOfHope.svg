@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <defs>
+    <linearGradient id="goldShield" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffd700"/>
+      <stop offset="50%" stop-color="#daa520"/>
+      <stop offset="100%" stop-color="#b8860b"/>
+    </linearGradient>
+    <radialGradient id="warmGlow" cx="50%" cy="40%" r="50%">
+      <stop offset="0%" stop-color="#ffee88" stop-opacity="0.8"/>
+      <stop offset="60%" stop-color="#ffdd44" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#ffcc00" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="chainGold" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#daa520"/>
+      <stop offset="50%" stop-color="#ffd700"/>
+      <stop offset="100%" stop-color="#daa520"/>
+    </linearGradient>
+  </defs>
+  <!-- Chain -->
+  <path d="M8 4 Q12 7 16 8 Q20 7 24 4" fill="none" stroke="url(#chainGold)" stroke-width="1" stroke-linecap="round"/>
+  <!-- Glow -->
+  <ellipse cx="16" cy="18" rx="9" ry="10" fill="url(#warmGlow)"/>
+  <!-- Shield shape -->
+  <path d="M16 8 L22 11 L22 18 Q22 24 16 27 Q10 24 10 18 L10 11 Z" fill="url(#goldShield)" stroke="#b8860b" stroke-width="0.5"/>
+  <!-- Shield inner border -->
+  <path d="M16 10 L20 12.5 L20 18 Q20 22.5 16 25 Q12 22.5 12 18 L12 12.5 Z" fill="none" stroke="#ffee88" stroke-width="0.5" opacity="0.6"/>
+  <!-- Sun symbol -->
+  <circle cx="16" cy="17" r="2.5" fill="#fff8dc" stroke="#daa520" stroke-width="0.5"/>
+  <!-- Sun rays -->
+  <line x1="16" y1="13" x2="16" y2="14" stroke="#fff8dc" stroke-width="0.8" stroke-linecap="round"/>
+  <line x1="16" y1="20" x2="16" y2="21" stroke="#fff8dc" stroke-width="0.8" stroke-linecap="round"/>
+  <line x1="12.5" y1="17" x2="13.5" y2="17" stroke="#fff8dc" stroke-width="0.8" stroke-linecap="round"/>
+  <line x1="18.5" y1="17" x2="19.5" y2="17" stroke="#fff8dc" stroke-width="0.8" stroke-linecap="round"/>
+  <line x1="13.5" y1="14.5" x2="14.2" y2="15.2" stroke="#fff8dc" stroke-width="0.7" stroke-linecap="round"/>
+  <line x1="17.8" y1="18.8" x2="18.5" y2="19.5" stroke="#fff8dc" stroke-width="0.7" stroke-linecap="round"/>
+  <line x1="18.5" y1="14.5" x2="17.8" y2="15.2" stroke="#fff8dc" stroke-width="0.7" stroke-linecap="round"/>
+  <line x1="14.2" y1="18.8" x2="13.5" y2="19.5" stroke="#fff8dc" stroke-width="0.7" stroke-linecap="round"/>
+  <!-- Center light dot -->
+  <circle cx="16" cy="17" r="1" fill="white" opacity="0.8"/>
+</svg>

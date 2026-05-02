@@ -1,0 +1,646 @@
+[
+  {
+    "id": "AragogBoss",
+    "_source": "AragogBoss.cs",
+    "damage": 45,
+    "defense": 18,
+    "lifeMax": 8000,
+    "knockBackResist": 0.0,
+    "isBoss": true,
+    "noGravity": false,
+    "_dynamicScaling": true,
+    "_curated": true,
+    "folder": "Aragog",
+    "bagDrops": [
+      {
+        "item": "SpiderSilkWeave",
+        "chance": "1/1",
+        "stack": "8-15"
+      },
+      {
+        "item": "Vanilla:SpiderFang",
+        "chance": "1/1",
+        "stack": "5-10"
+      },
+      {
+        "item": "Vanilla:GreaterHealingPotion",
+        "chance": "1/1",
+        "stack": "5-10"
+      },
+      {
+        "item": "Vanilla:GoldCoin",
+        "chance": "1/1",
+        "stack": "5-10"
+      }
+    ],
+    "directDrops": [
+      {
+        "item": "AragogTrophy",
+        "chance": "1/10"
+      },
+      {
+        "item": "SpiderSilkWeave",
+        "chance": "1/1",
+        "stack": "5-10"
+      },
+      {
+        "item": "Vanilla:SpiderFang",
+        "chance": "1/1",
+        "stack": "5-10"
+      },
+      {
+        "item": "Vanilla:GreaterHealingPotion",
+        "chance": "1/1",
+        "stack": "5-10"
+      }
+    ]
+  },
+  {
+    "id": "BartyCrouchBoss",
+    "_source": "BartyCrouchBoss.cs",
+    "damage": 65,
+    "defense": 28,
+    "lifeMax": 30000,
+    "knockBackResist": 0.0,
+    "isBoss": true,
+    "noGravity": true,
+    "_dynamicScaling": true,
+    "_curated": true,
+    "folder": "BartyCrouch",
+    "bagDrops": [
+      {
+        "item": "EssenceOfMagic",
+        "chance": "1/1",
+        "stack": "20-35"
+      },
+      {
+        "item": "Vanilla:GreaterHealingPotion",
+        "chance": "1/1",
+        "stack": "5-15"
+      },
+      {
+        "item": "Vanilla:GoldCoin",
+        "chance": "1/1",
+        "stack": "8-15"
+      }
+    ],
+    "directDrops": [
+      {
+        "item": "BartyCrouchTrophy",
+        "chance": "1/10"
+      },
+      {
+        "item": "PolyjuiceFlask",
+        "chance": "1/3"
+      },
+      {
+        "item": "EssenceOfMagic",
+        "chance": "1/1",
+        "stack": "20-35"
+      },
+      {
+        "item": "Vanilla:GreaterHealingPotion",
+        "chance": "1/1",
+        "stack": "5-15"
+      }
+    ]
+  },
+  {
+    "id": "BasiliskBoss",
+    "_source": "BasiliskBoss.cs",
+    "damage": 40,
+    "defense": 16,
+    "lifeMax": 4500,
+    "knockBackResist": 0.0,
+    "isBoss": true,
+    "noGravity": true,
+    "folder": "Basilisk",
+    "bagDrops": [
+      {
+        "item": "BasiliskFang",
+        "chance": "1/1",
+        "stack": "3-5"
+      },
+      {
+        "item": "SwordOfGryffindor",
+        "chance": "1/3"
+      },
+      {
+        "item": "EssenceOfMagic",
+        "chance": "1/1",
+        "stack": "15-25"
+      },
+      {
+        "item": "Vanilla:HealingPotion",
+        "chance": "1/1",
+        "stack": "5-10"
+      },
+      {
+        "item": "Vanilla:GoldCoin",
+        "chance": "1/1",
+        "stack": "3-7"
+      }
+    ],
+    "directDrops": [
+      {
+        "item": "BasiliskTrophy",
+        "chance": "1/10"
+      },
+      {
+        "item": "BasiliskFang",
+        "chance": "1/1",
+        "stack": "3-5"
+      },
+      {
+        "item": "SwordOfGryffindor",
+        "chance": "1/3"
+      },
+      {
+        "item": "Vanilla:HealingPotion",
+        "chance": "1/1",
+        "stack": "5-10"
+      }
+    ]
+  },
+  {
+    "id": "BellatrixBoss",
+    "_source": "BellatrixBoss.cs",
+    "damage": 70,
+    "defense": 30,
+    "lifeMax": 35000,
+    "knockBackResist": 0.0,
+    "isBoss": true,
+    "noGravity": true,
+    "_dynamicScaling": true,
+    "_curated": true,
+    "folder": "Bellatrix",
+    "bagDrops": [
+      {
+        "item": "DarkArtsTome",
+        "chance": "1/1",
+        "stack": "5-10"
+      },
+      {
+        "item": "EssenceOfMagic",
+        "chance": "1/1",
+        "stack": "25-40"
+      },
+      {
+        "item": "Vanilla:GreaterHealingPotion",
+        "chance": "1/1",
+        "stack": "5-15"
+      },
+      {
+        "item": "Vanilla:GoldCoin",
+        "chance": "1/1",
+        "stack": "8-15"
+      }
+    ],
+    "directDrops": [
+      {
+        "item": "BellatrixTrophy",
+        "chance": "1/10"
+      },
+      {
+        "item": "DarkArtsTome",
+        "chance": "1/1",
+        "stack": "3-7"
+      },
+      {
+        "item": "Vanilla:GreaterHealingPotion",
+        "chance": "1/1",
+        "stack": "5-15"
+      }
+    ]
+  },
+  {
+    "id": "DementorKingBoss",
+    "_source": "DementorKingBoss.cs",
+    "damage": 85,
+    "defense": 35,
+    "lifeMax": 45000,
+    "knockBackResist": 0.0,
+    "isBoss": true,
+    "noGravity": true,
+    "_dynamicScaling": true,
+    "_curated": true,
+    "folder": "DementorKing",
+    "bagDrops": [
+      {
+        "item": "DementorsShroud",
+        "chance": "1/1",
+        "stack": "8-15"
+      },
+      {
+        "item": "EssenceOfMagic",
+        "chance": "1/1",
+        "stack": "30-50"
+      },
+      {
+        "item": "Vanilla:SuperHealingPotion",
+        "chance": "1/1",
+        "stack": "5-15"
+      },
+      {
+        "item": "Vanilla:GoldCoin",
+        "chance": "1/1",
+        "stack": "10-20"
+      }
+    ],
+    "directDrops": [
+      {
+        "item": "DementorKingTrophy",
+        "chance": "1/10"
+      },
+      {
+        "item": "DementorsShroud",
+        "chance": "1/1",
+        "stack": "5-10"
+      },
+      {
+        "item": "EssenceOfMagic",
+        "chance": "1/1",
+        "stack": "30-50"
+      },
+      {
+        "item": "Vanilla:SuperHealingPotion",
+        "chance": "1/1",
+        "stack": "5-15"
+      }
+    ]
+  },
+  {
+    "id": "FenrirBoss",
+    "_source": "FenrirBoss.cs",
+    "damage": 75,
+    "defense": 22,
+    "lifeMax": 25000,
+    "knockBackResist": 0.0,
+    "isBoss": true,
+    "noGravity": false,
+    "_dynamicScaling": true,
+    "_curated": true,
+    "folder": "Fenrir",
+    "bagDrops": [
+      {
+        "item": "WerewolfPelt",
+        "chance": "1/1",
+        "stack": "8-15"
+      },
+      {
+        "item": "EssenceOfMagic",
+        "chance": "1/1",
+        "stack": "20-35"
+      },
+      {
+        "item": "Vanilla:GreaterHealingPotion",
+        "chance": "1/1",
+        "stack": "5-15"
+      },
+      {
+        "item": "Vanilla:GoldCoin",
+        "chance": "1/1",
+        "stack": "5-12"
+      }
+    ],
+    "directDrops": [
+      {
+        "item": "FenrirTrophy",
+        "chance": "1/10"
+      },
+      {
+        "item": "WerewolfPelt",
+        "chance": "1/1",
+        "stack": "5-10"
+      },
+      {
+        "item": "EssenceOfMagic",
+        "chance": "1/1",
+        "stack": "20-35"
+      },
+      {
+        "item": "Vanilla:GreaterHealingPotion",
+        "chance": "1/1",
+        "stack": "5-15"
+      }
+    ]
+  },
+  {
+    "id": "FluffyBoss",
+    "_source": "FluffyBoss.cs",
+    "damage": 60,
+    "defense": 25,
+    "lifeMax": 18000,
+    "knockBackResist": 0.0,
+    "isBoss": true,
+    "noGravity": false,
+    "_dynamicScaling": true,
+    "_curated": true,
+    "folder": "Fluffy",
+    "bagDrops": [
+      {
+        "item": "CerberusFang",
+        "chance": "1/1",
+        "stack": "5-10"
+      },
+      {
+        "item": "EssenceOfMagic",
+        "chance": "1/1",
+        "stack": "20-35"
+      },
+      {
+        "item": "Vanilla:GreaterHealingPotion",
+        "chance": "1/1",
+        "stack": "5-15"
+      },
+      {
+        "item": "Vanilla:GoldCoin",
+        "chance": "1/1",
+        "stack": "5-12"
+      }
+    ],
+    "directDrops": [
+      {
+        "item": "FluffyTrophy",
+        "chance": "1/10"
+      },
+      {
+        "item": "CerberusFang",
+        "chance": "1/1",
+        "stack": "3-7"
+      },
+      {
+        "item": "Vanilla:GreaterHealingPotion",
+        "chance": "1/1",
+        "stack": "5-15"
+      }
+    ]
+  },
+  {
+    "id": "HorntailBoss",
+    "_source": "HorntailBoss.cs",
+    "damage": 70,
+    "defense": 30,
+    "lifeMax": 28000,
+    "knockBackResist": 0.0,
+    "isBoss": true,
+    "noGravity": true,
+    "_dynamicScaling": true,
+    "_curated": true,
+    "folder": "Horntail",
+    "bagDrops": [
+      {
+        "item": "DragonScale",
+        "chance": "1/1",
+        "stack": "8-15"
+      },
+      {
+        "item": "GoldenEgg",
+        "chance": "1/3"
+      },
+      {
+        "item": "EssenceOfMagic",
+        "chance": "1/1",
+        "stack": "20-35"
+      },
+      {
+        "item": "Vanilla:GreaterHealingPotion",
+        "chance": "1/1",
+        "stack": "5-15"
+      },
+      {
+        "item": "Vanilla:GoldCoin",
+        "chance": "1/1",
+        "stack": "5-12"
+      }
+    ],
+    "directDrops": [
+      {
+        "item": "HorntailTrophy",
+        "chance": "1/10"
+      },
+      {
+        "item": "DragonScale",
+        "chance": "1/1",
+        "stack": "5-10"
+      },
+      {
+        "item": "GoldenEgg",
+        "chance": "1/3"
+      },
+      {
+        "item": "Vanilla:GreaterHealingPotion",
+        "chance": "1/1",
+        "stack": "5-15"
+      }
+    ]
+  },
+  {
+    "id": "QuirrellBoss",
+    "_source": "QuirrellBoss.cs",
+    "damage": 35,
+    "defense": 12,
+    "lifeMax": 3500,
+    "knockBackResist": 0.0,
+    "isBoss": true,
+    "noGravity": true,
+    "_dynamicScaling": true,
+    "_curated": true,
+    "folder": "Quirrell",
+    "bagDrops": [
+      {
+        "item": "EssenceOfMagic",
+        "chance": "1/1",
+        "stack": "10-20"
+      },
+      {
+        "item": "Vanilla:HealingPotion",
+        "chance": "1/1",
+        "stack": "5-10"
+      },
+      {
+        "item": "Vanilla:GoldCoin",
+        "chance": "1/1",
+        "stack": "2-5"
+      }
+    ],
+    "directDrops": [
+      {
+        "item": "QuirrellTrophy",
+        "chance": "1/10"
+      },
+      {
+        "item": "QuirrellsTurban",
+        "chance": "1/3"
+      },
+      {
+        "item": "Vanilla:HealingPotion",
+        "chance": "1/1",
+        "stack": "5-10"
+      }
+    ]
+  },
+  {
+    "id": "TrollBoss",
+    "_source": "TrollBoss.cs",
+    "damage": 30,
+    "defense": 8,
+    "lifeMax": 2000,
+    "knockBackResist": 0.0,
+    "isBoss": true,
+    "noGravity": true,
+    "_dynamicScaling": true,
+    "_curated": true,
+    "folder": "Troll",
+    "bagDrops": [
+      {
+        "item": "TrollClub",
+        "chance": "1/3"
+      },
+      {
+        "item": "Vanilla:HealingPotion",
+        "chance": "1/1",
+        "stack": "5-10"
+      },
+      {
+        "item": "Vanilla:GoldCoin",
+        "chance": "1/1",
+        "stack": "1-3"
+      }
+    ],
+    "directDrops": [
+      {
+        "item": "TrollTrophy",
+        "chance": "1/10"
+      },
+      {
+        "item": "TrollClub",
+        "chance": "1/3"
+      },
+      {
+        "item": "Vanilla:HealingPotion",
+        "chance": "1/1",
+        "stack": "5-10"
+      }
+    ]
+  },
+  {
+    "id": "UmbridgeBoss",
+    "_source": "UmbridgeBoss.cs",
+    "damage": 40,
+    "defense": 35,
+    "lifeMax": 20000,
+    "knockBackResist": 0.0,
+    "isBoss": true,
+    "noGravity": true,
+    "folder": "Umbridge",
+    "bagDrops": [
+      {
+        "item": "UmbridgesQuill",
+        "chance": "1/1"
+      },
+      {
+        "item": "EssenceOfMagic",
+        "chance": "1/1",
+        "stack": "20-35"
+      },
+      {
+        "item": "Vanilla:GreaterHealingPotion",
+        "chance": "1/1",
+        "stack": "5-15"
+      },
+      {
+        "item": "Vanilla:GoldCoin",
+        "chance": "1/1",
+        "stack": "6-12"
+      }
+    ],
+    "directDrops": [
+      {
+        "item": "UmbridgeTrophy",
+        "chance": "1/10"
+      },
+      {
+        "item": "UmbridgesQuill",
+        "chance": "1/3"
+      },
+      {
+        "item": "Vanilla:GreaterHealingPotion",
+        "chance": "1/1",
+        "stack": "5-15"
+      }
+    ]
+  },
+  {
+    "id": "VoldemortBoss",
+    "_source": "VoldemortBoss.cs",
+    "knockBackResist": 0.0,
+    "isBoss": true,
+    "noGravity": true,
+    "_dynamicScaling": true,
+    "_curated": true,
+    "lifeMax_base": 60000,
+    "damage_base": 80,
+    "defense_base": 40,
+    "folder": "Voldemort",
+    "bagDrops": [
+      {
+        "item": "ElderWand",
+        "chance": "1/1"
+      },
+      {
+        "item": "DarkArtsTome",
+        "chance": "1/1",
+        "stack": "5-10"
+      },
+      {
+        "item": "EssenceOfMagic",
+        "chance": "1/1",
+        "stack": "50-80"
+      },
+      {
+        "item": "GauntsRing",
+        "chance": "1/1"
+      },
+      {
+        "item": "Vanilla:SuperHealingPotion",
+        "chance": "1/1",
+        "stack": "5-15"
+      },
+      {
+        "item": "Vanilla:GoldCoin",
+        "chance": "1/1",
+        "stack": "10-20"
+      }
+    ],
+    "directDrops": [
+      {
+        "item": "VoldemortTrophy",
+        "chance": "1/10"
+      },
+      {
+        "item": "ElderWand",
+        "chance": "1/1"
+      },
+      {
+        "item": "DarkArtsTome",
+        "chance": "1/1",
+        "stack": "5-10"
+      },
+      {
+        "item": "EssenceOfMagic",
+        "chance": "1/1",
+        "stack": "30-50"
+      },
+      {
+        "item": "GauntsRing",
+        "chance": "1/1"
+      },
+      {
+        "item": "Vanilla:SuperHealingPotion",
+        "chance": "1/1",
+        "stack": "5-15"
+      }
+    ]
+  }
+]

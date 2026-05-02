@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 42 42">
+  <!-- Pine Wand - Warm light brown pine, creative and independent -->
+  <defs>
+    <linearGradient id="pineWood" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#C4A66A"/>
+      <stop offset="50%" stop-color="#A88B55"/>
+      <stop offset="100%" stop-color="#8B7240"/>
+    </linearGradient>
+    <linearGradient id="pineGlow" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#AAFF44" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#77CC22" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="pinGlow">
+      <feGaussianBlur stdDeviation="1.3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <!-- Tip glow (yellow-green) -->
+  <circle cx="8" cy="8" r="4.5" fill="url(#pineGlow)" filter="url(#pinGlow)" opacity="0.7"/>
+  <!-- Wand shaft -->
+  <line x1="8" y1="8" x2="34" y2="34" stroke="url(#pineWood)" stroke-width="2.7" stroke-linecap="round"/>
+  <!-- Wood grain lines -->
+  <line x1="13" y1="12" x2="15" y2="14" stroke="#8A7240" stroke-width="0.4" opacity="0.5"/>
+  <line x1="20" y1="19" x2="22" y2="21" stroke="#8A7240" stroke-width="0.4" opacity="0.5"/>
+  <line x1="27" y1="26" x2="29" y2="28" stroke="#8A7240" stroke-width="0.4" opacity="0.5"/>
+  <!-- Pine needle cluster detail near tip -->
+  <line x1="10" y1="8" x2="8" y2="6" stroke="#6A8A35" stroke-width="0.5" opacity="0.5"/>
+  <line x1="10" y1="8" x2="12" y2="6" stroke="#6A8A35" stroke-width="0.5" opacity="0.5"/>
+  <line x1="10" y1="8" x2="10" y2="5.5" stroke="#6A8A35" stroke-width="0.5" opacity="0.5"/>
+  <!-- Pine resin knot -->
+  <circle cx="22" cy="22" r="0.9" fill="#A08840" opacity="0.6"/>
+  <!-- Handle end -->
+  <circle cx="35" cy="35" r="2" fill="#7A6238" stroke="#6A5228" stroke-width="0.5"/>
+  <!-- Yellow-green spark -->
+  <circle cx="7.5" cy="7.5" r="0.9" fill="#DDFF88" opacity="0.8"/>
+</svg>

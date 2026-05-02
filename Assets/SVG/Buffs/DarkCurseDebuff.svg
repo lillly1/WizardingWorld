@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <defs>
+    <radialGradient id="curseGlow" cx="50%" cy="40%" r="50%">
+      <stop offset="0%" stop-color="#30ff30" stop-opacity="0.5"/>
+      <stop offset="60%" stop-color="#0a3a0a" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#0a0a0a" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="32" height="32" rx="4" fill="#0a0a0a"/>
+  <circle cx="16" cy="14" r="12" fill="url(#curseGlow)"/>
+  <!-- Skull -->
+  <g fill="#2acd2a">
+    <!-- Cranium -->
+    <path d="M10 14 Q10 6 16 5 Q22 6 22 14 L22 16 Q22 18 20 19 L12 19 Q10 18 10 16 Z"/>
+    <!-- Jaw -->
+    <path d="M11.5 19 L11 22 Q13 24 16 24 Q19 24 21 22 L20.5 19 Z"/>
+  </g>
+  <!-- Skull dark details -->
+  <g fill="#0a2a0a">
+    <!-- Eye sockets -->
+    <ellipse cx="13.5" cy="12" rx="2" ry="2.3"/>
+    <ellipse cx="18.5" cy="12" rx="2" ry="2.3"/>
+    <!-- Nose -->
+    <path d="M15 15.5 L16 17 L17 15.5 Z"/>
+    <!-- Teeth lines -->
+    <line x1="13" y1="19" x2="13" y2="22" stroke="#0a2a0a" stroke-width="0.5"/>
+    <line x1="15" y1="19" x2="15" y2="23" stroke="#0a2a0a" stroke-width="0.5"/>
+    <line x1="17" y1="19" x2="17" y2="23" stroke="#0a2a0a" stroke-width="0.5"/>
+    <line x1="19" y1="19" x2="19" y2="22" stroke="#0a2a0a" stroke-width="0.5"/>
+  </g>
+  <!-- Glowing green eyes -->
+  <ellipse cx="13.5" cy="12" rx="0.8" ry="1" fill="#50ff50" opacity="0.8"/>
+  <ellipse cx="18.5" cy="12" rx="0.8" ry="1" fill="#50ff50" opacity="0.8"/>
+  <!-- Dark wisps -->
+  <g stroke="#1a4a1a" stroke-width="0.8" fill="none" opacity="0.6">
+    <path d="M8 16 Q5 20 6 26 Q7 28 8 27"/>
+    <path d="M24 16 Q27 20 26 26 Q25 28 24 27"/>
+    <path d="M12 24 Q10 27 11 30"/>
+    <path d="M20 24 Q22 27 21 30"/>
+    <path d="M16 24 Q16 28 15 31"/>
+  </g>
+  <!-- Smoke wisps from top -->
+  <g stroke="#2acd2a" stroke-width="0.5" fill="none" opacity="0.3">
+    <path d="M13 5 Q11 2 12 1"/>
+    <path d="M16 4 Q16 1 15 0"/>
+    <path d="M19 5 Q21 2 20 1"/>
+  </g>
+</svg>

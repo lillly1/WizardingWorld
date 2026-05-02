@@ -1,0 +1,27 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Wizarding World Shop Mechanical Data",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": ["npc", "items"],
+    "properties": {
+      "npc": {"type": "string", "description": "Town NPC class name"},
+      "shop": {"type": "string"},
+      "items": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "required": ["item", "type", "condition"],
+          "properties": {
+            "item": {"type": "string"},
+            "type": {"type": "string", "enum": ["mod", "vanilla"]},
+            "condition": {"type": ["string", "null"]}
+          },
+          "additionalProperties": false
+        }
+      }
+    },
+    "additionalProperties": true
+  }
+}

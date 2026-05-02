@@ -1,0 +1,832 @@
+[
+  {
+    "Name": "ForbiddenForestBiome_Icon",
+    "Width": 32,
+    "Height": 32,
+    "FrameCount": 1,
+    "ProcessKind": "icon",
+    "OutputPath": "Content/Biomes/ForbiddenForestBiome_Icon.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Biomes/ForbiddenForestBiome_Icon.png",
+    "Prompt": "Terraria-style pixel art icon, centered emblem, a biome icon themed around Forbidden Forest Biome Icon, atmospheric but readable at small size. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "AmortentiaBuff",
+    "Width": 32,
+    "Height": 32,
+    "FrameCount": 1,
+    "ProcessKind": "icon",
+    "OutputPath": "Content/Buffs/AmortentiaBuff.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Buffs/AmortentiaBuff.png",
+    "Prompt": "Terraria-style pixel art icon, centered emblem, a buff icon emblem themed around Amortentia, clean magical status symbol, readable at small size. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "AquaFortisBuff",
+    "Width": 32,
+    "Height": 32,
+    "FrameCount": 1,
+    "ProcessKind": "icon",
+    "OutputPath": "Content/Buffs/AquaFortisBuff.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Buffs/AquaFortisBuff.png",
+    "Prompt": "Terraria-style pixel art icon, centered emblem, a buff icon emblem themed around Aqua Fortis, clean magical status symbol, readable at small size. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "BabyDragonBuff",
+    "Width": 32,
+    "Height": 32,
+    "FrameCount": 1,
+    "ProcessKind": "icon",
+    "OutputPath": "Content/Buffs/BabyDragonBuff.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Buffs/BabyDragonBuff.png",
+    "Prompt": "Terraria-style pixel art icon, centered emblem, a buff icon emblem themed around Baby Dragon, clean magical status symbol, readable at small size. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "ButterbeerBuff",
+    "Width": 32,
+    "Height": 32,
+    "FrameCount": 1,
+    "ProcessKind": "icon",
+    "OutputPath": "Content/Buffs/ButterbeerBuff.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Buffs/ButterbeerBuff.png",
+    "Prompt": "Terraria-style pixel art icon, centered emblem, a buff icon emblem themed around Butterbeer, clean magical status symbol, readable at small size. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "CastleVictoryBuff",
+    "Width": 32,
+    "Height": 32,
+    "FrameCount": 1,
+    "ProcessKind": "icon",
+    "OutputPath": "Content/Buffs/CastleVictoryBuff.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Buffs/CastleVictoryBuff.png",
+    "Prompt": "Terraria-style pixel art icon, centered emblem, a buff icon emblem themed around Castle Victory, clean magical status symbol, readable at small size. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "DAMeetingBuff",
+    "Width": 32,
+    "Height": 32,
+    "FrameCount": 1,
+    "ProcessKind": "icon",
+    "OutputPath": "Content/Buffs/DAMeetingBuff.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Buffs/DAMeetingBuff.png",
+    "Prompt": "Terraria-style pixel art icon, centered emblem, a buff icon emblem themed around DAMeeting, clean magical status symbol, readable at small size. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "DarkAppraiserBuff",
+    "Width": 32,
+    "Height": 32,
+    "FrameCount": 1,
+    "ProcessKind": "icon",
+    "OutputPath": "Content/Buffs/DarkAppraiserBuff.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Buffs/DarkAppraiserBuff.png",
+    "Prompt": "Terraria-style pixel art icon, centered emblem, a buff icon emblem themed around Dark Appraiser, clean magical status symbol, readable at small size. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "DarkCurseDebuff",
+    "Width": 32,
+    "Height": 32,
+    "FrameCount": 1,
+    "ProcessKind": "icon",
+    "OutputPath": "Content/Buffs/Debuffs/DarkCurseDebuff.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Buffs/Debuffs/DarkCurseDebuff.png",
+    "Prompt": "Terraria-style pixel art icon, centered emblem, a buff icon emblem themed around Dark Curse Debuff, clean magical status symbol, readable at small size. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "JinxedDebuff",
+    "Width": 32,
+    "Height": 32,
+    "FrameCount": 1,
+    "ProcessKind": "icon",
+    "OutputPath": "Content/Buffs/Debuffs/JinxedDebuff.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Buffs/Debuffs/JinxedDebuff.png",
+    "Prompt": "Terraria-style pixel art icon, centered emblem, a buff icon emblem themed around Jinxed Debuff, clean magical status symbol, readable at small size. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "PetrifiedDebuff",
+    "Width": 32,
+    "Height": 32,
+    "FrameCount": 1,
+    "ProcessKind": "icon",
+    "OutputPath": "Content/Buffs/Debuffs/PetrifiedDebuff.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Buffs/Debuffs/PetrifiedDebuff.png",
+    "Prompt": "Terraria-style pixel art icon, centered emblem, a buff icon emblem themed around Petrified Debuff, clean magical status symbol, readable at small size. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "FelixFelicisBuff",
+    "Width": 32,
+    "Height": 32,
+    "FrameCount": 1,
+    "ProcessKind": "icon",
+    "OutputPath": "Content/Buffs/FelixFelicisBuff.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Buffs/FelixFelicisBuff.png",
+    "Prompt": "Terraria-style pixel art icon, centered emblem, a buff icon emblem themed around Felix Felicis, clean magical status symbol, readable at small size. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "FenrirsWolfsbaneBuff",
+    "Width": 32,
+    "Height": 32,
+    "FrameCount": 1,
+    "ProcessKind": "icon",
+    "OutputPath": "Content/Buffs/FenrirsWolfsbaneBuff.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Buffs/FenrirsWolfsbaneBuff.png",
+    "Prompt": "Terraria-style pixel art icon, centered emblem, a buff icon emblem themed around Fenrirs Wolfsbane, clean magical status symbol, readable at small size. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "FireboltMountBuff",
+    "Width": 32,
+    "Height": 32,
+    "FrameCount": 1,
+    "ProcessKind": "icon",
+    "OutputPath": "Content/Buffs/FireboltMountBuff.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Buffs/FireboltMountBuff.png",
+    "Prompt": "Terraria-style pixel art icon, centered emblem, a buff icon emblem themed around Firebolt Mount, clean magical status symbol, readable at small size. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "FirewhiskeyBuff",
+    "Width": 32,
+    "Height": 32,
+    "FrameCount": 1,
+    "ProcessKind": "icon",
+    "OutputPath": "Content/Buffs/FirewhiskeyBuff.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Buffs/FirewhiskeyBuff.png",
+    "Prompt": "Terraria-style pixel art icon, centered emblem, a buff icon emblem themed around Firewhiskey, clean magical status symbol, readable at small size. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "ForestWisdomBuff",
+    "Width": 32,
+    "Height": 32,
+    "FrameCount": 1,
+    "ProcessKind": "icon",
+    "OutputPath": "Content/Buffs/ForestWisdomBuff.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Buffs/ForestWisdomBuff.png",
+    "Prompt": "Terraria-style pixel art icon, centered emblem, a buff icon emblem themed around Forest Wisdom, clean magical status symbol, readable at small size. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "GillyweedBuff",
+    "Width": 32,
+    "Height": 32,
+    "FrameCount": 1,
+    "ProcessKind": "icon",
+    "OutputPath": "Content/Buffs/GillyweedBuff.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Buffs/GillyweedBuff.png",
+    "Prompt": "Terraria-style pixel art icon, centered emblem, a buff icon emblem themed around Gillyweed, clean magical status symbol, readable at small size. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "GoldenSnitchBuff",
+    "Width": 32,
+    "Height": 32,
+    "FrameCount": 1,
+    "ProcessKind": "icon",
+    "OutputPath": "Content/Buffs/GoldenSnitchBuff.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Buffs/GoldenSnitchBuff.png",
+    "Prompt": "Terraria-style pixel art icon, centered emblem, a buff icon emblem themed around Golden Snitch, clean magical status symbol, readable at small size. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "GryffindorFeastBuff",
+    "Width": 32,
+    "Height": 32,
+    "FrameCount": 1,
+    "ProcessKind": "icon",
+    "OutputPath": "Content/Buffs/GryffindorFeastBuff.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Buffs/GryffindorFeastBuff.png",
+    "Prompt": "Terraria-style pixel art icon, centered emblem, a buff icon emblem themed around Gryffindor Feast, clean magical status symbol, readable at small size. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "HedwigBuff",
+    "Width": 32,
+    "Height": 32,
+    "FrameCount": 1,
+    "ProcessKind": "icon",
+    "OutputPath": "Content/Buffs/HedwigBuff.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Buffs/HedwigBuff.png",
+    "Prompt": "Terraria-style pixel art icon, centered emblem, a buff icon emblem themed around Hedwig, clean magical status symbol, readable at small size. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "HippogriffMountBuff",
+    "Width": 32,
+    "Height": 32,
+    "FrameCount": 1,
+    "ProcessKind": "icon",
+    "OutputPath": "Content/Buffs/HippogriffMountBuff.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Buffs/HippogriffMountBuff.png",
+    "Prompt": "Terraria-style pixel art icon, centered emblem, a buff icon emblem themed around Hippogriff Mount, clean magical status symbol, readable at small size. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "HouseElfMinionBuff",
+    "Width": 32,
+    "Height": 32,
+    "FrameCount": 1,
+    "ProcessKind": "icon",
+    "OutputPath": "Content/Buffs/HouseElfMinionBuff.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Buffs/HouseElfMinionBuff.png",
+    "Prompt": "Terraria-style pixel art icon, centered emblem, a buff icon emblem themed around House Elf Minion, clean magical status symbol, readable at small size. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "HufflepuffFeastBuff",
+    "Width": 32,
+    "Height": 32,
+    "FrameCount": 1,
+    "ProcessKind": "icon",
+    "OutputPath": "Content/Buffs/HufflepuffFeastBuff.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Buffs/HufflepuffFeastBuff.png",
+    "Prompt": "Terraria-style pixel art icon, centered emblem, a buff icon emblem themed around Hufflepuff Feast, clean magical status symbol, readable at small size. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "KneazleBuff",
+    "Width": 32,
+    "Height": 32,
+    "FrameCount": 1,
+    "ProcessKind": "icon",
+    "OutputPath": "Content/Buffs/KneazleBuff.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Buffs/KneazleBuff.png",
+    "Prompt": "Terraria-style pixel art icon, centered emblem, a buff icon emblem themed around Kneazle, clean magical status symbol, readable at small size. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "MoonwardBuff",
+    "Width": 32,
+    "Height": 32,
+    "FrameCount": 1,
+    "ProcessKind": "icon",
+    "OutputPath": "Content/Buffs/MoonwardBuff.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Buffs/MoonwardBuff.png",
+    "Prompt": "Terraria-style pixel art icon, centered emblem, a buff icon emblem themed around Moonward, clean magical status symbol, readable at small size. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "NifflerBuff",
+    "Width": 32,
+    "Height": 32,
+    "FrameCount": 1,
+    "ProcessKind": "icon",
+    "OutputPath": "Content/Buffs/NifflerBuff.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Buffs/NifflerBuff.png",
+    "Prompt": "Terraria-style pixel art icon, centered emblem, a buff icon emblem themed around Niffler, clean magical status symbol, readable at small size. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "Nimbus2001MountBuff",
+    "Width": 32,
+    "Height": 32,
+    "FrameCount": 1,
+    "ProcessKind": "icon",
+    "OutputPath": "Content/Buffs/Nimbus2001MountBuff.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Buffs/Nimbus2001MountBuff.png",
+    "Prompt": "Terraria-style pixel art icon, centered emblem, a buff icon emblem themed around Nimbus2001 Mount, clean magical status symbol, readable at small size. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "NimbusMountBuff",
+    "Width": 32,
+    "Height": 32,
+    "FrameCount": 1,
+    "ProcessKind": "icon",
+    "OutputPath": "Content/Buffs/NimbusMountBuff.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Buffs/NimbusMountBuff.png",
+    "Prompt": "Terraria-style pixel art icon, centered emblem, a buff icon emblem themed around Nimbus Mount, clean magical status symbol, readable at small size. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "OrderCommendationBuff",
+    "Width": 32,
+    "Height": 32,
+    "FrameCount": 1,
+    "ProcessKind": "icon",
+    "OutputPath": "Content/Buffs/OrderCommendationBuff.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Buffs/OrderCommendationBuff.png",
+    "Prompt": "Terraria-style pixel art icon, centered emblem, a buff icon emblem themed around Order Commendation, clean magical status symbol, readable at small size. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "PatronusCharmBuff",
+    "Width": 32,
+    "Height": 32,
+    "FrameCount": 1,
+    "ProcessKind": "icon",
+    "OutputPath": "Content/Buffs/PatronusCharmBuff.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Buffs/PatronusCharmBuff.png",
+    "Prompt": "Terraria-style pixel art icon, centered emblem, a buff icon emblem themed around Patronus Charm, clean magical status symbol, readable at small size. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "PepperupBuff",
+    "Width": 32,
+    "Height": 32,
+    "FrameCount": 1,
+    "ProcessKind": "icon",
+    "OutputPath": "Content/Buffs/PepperupBuff.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Buffs/PepperupBuff.png",
+    "Prompt": "Terraria-style pixel art icon, centered emblem, a buff icon emblem themed around Pepperup, clean magical status symbol, readable at small size. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "PhoenixMinionBuff",
+    "Width": 32,
+    "Height": 32,
+    "FrameCount": 1,
+    "ProcessKind": "icon",
+    "OutputPath": "Content/Buffs/PhoenixMinionBuff.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Buffs/PhoenixMinionBuff.png",
+    "Prompt": "Terraria-style pixel art icon, centered emblem, a buff icon emblem themed around Phoenix Minion, clean magical status symbol, readable at small size. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "PolyjuiceBuff",
+    "Width": 32,
+    "Height": 32,
+    "FrameCount": 1,
+    "ProcessKind": "icon",
+    "OutputPath": "Content/Buffs/PolyjuiceBuff.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Buffs/PolyjuiceBuff.png",
+    "Prompt": "Terraria-style pixel art icon, centered emblem, a buff icon emblem themed around Polyjuice, clean magical status symbol, readable at small size. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "PygmyPuffBuff",
+    "Width": 32,
+    "Height": 32,
+    "FrameCount": 1,
+    "ProcessKind": "icon",
+    "OutputPath": "Content/Buffs/PygmyPuffBuff.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Buffs/PygmyPuffBuff.png",
+    "Prompt": "Terraria-style pixel art icon, centered emblem, a buff icon emblem themed around Pygmy Puff, clean magical status symbol, readable at small size. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "QuidditchCupBuff",
+    "Width": 32,
+    "Height": 32,
+    "FrameCount": 1,
+    "ProcessKind": "icon",
+    "OutputPath": "Content/Buffs/QuidditchCupBuff.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Buffs/QuidditchCupBuff.png",
+    "Prompt": "Terraria-style pixel art icon, centered emblem, a buff icon emblem themed around Quidditch Cup, clean magical status symbol, readable at small size. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "RavenclawFeastBuff",
+    "Width": 32,
+    "Height": 32,
+    "FrameCount": 1,
+    "ProcessKind": "icon",
+    "OutputPath": "Content/Buffs/RavenclawFeastBuff.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Buffs/RavenclawFeastBuff.png",
+    "Prompt": "Terraria-style pixel art icon, centered emblem, a buff icon emblem themed around Ravenclaw Feast, clean magical status symbol, readable at small size. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "ResistanceResolveBuff",
+    "Width": 32,
+    "Height": 32,
+    "FrameCount": 1,
+    "ProcessKind": "icon",
+    "OutputPath": "Content/Buffs/ResistanceResolveBuff.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Buffs/ResistanceResolveBuff.png",
+    "Prompt": "Terraria-style pixel art icon, centered emblem, a buff icon emblem themed around Resistance Resolve, clean magical status symbol, readable at small size. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "ResurrectionBuff",
+    "Width": 32,
+    "Height": 32,
+    "FrameCount": 1,
+    "ProcessKind": "icon",
+    "OutputPath": "Content/Buffs/ResurrectionBuff.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Buffs/ResurrectionBuff.png",
+    "Prompt": "Terraria-style pixel art icon, centered emblem, a buff icon emblem themed around Resurrection, clean magical status symbol, readable at small size. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "RoomResistanceBuff",
+    "Width": 32,
+    "Height": 32,
+    "FrameCount": 1,
+    "ProcessKind": "icon",
+    "OutputPath": "Content/Buffs/RoomResistanceBuff.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Buffs/RoomResistanceBuff.png",
+    "Prompt": "Terraria-style pixel art icon, centered emblem, a buff icon emblem themed around Room Resistance, clean magical status symbol, readable at small size. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "RoomRestorationBuff",
+    "Width": 32,
+    "Height": 32,
+    "FrameCount": 1,
+    "ProcessKind": "icon",
+    "OutputPath": "Content/Buffs/RoomRestorationBuff.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Buffs/RoomRestorationBuff.png",
+    "Prompt": "Terraria-style pixel art icon, centered emblem, a buff icon emblem themed around Room Restoration, clean magical status symbol, readable at small size. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "SafehouseResolveBuff",
+    "Width": 32,
+    "Height": 32,
+    "FrameCount": 1,
+    "ProcessKind": "icon",
+    "OutputPath": "Content/Buffs/SafehouseResolveBuff.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Buffs/SafehouseResolveBuff.png",
+    "Prompt": "Terraria-style pixel art icon, centered emblem, a buff icon emblem themed around Safehouse Resolve, clean magical status symbol, readable at small size. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "SeekersReflexesBuff",
+    "Width": 32,
+    "Height": 32,
+    "FrameCount": 1,
+    "ProcessKind": "icon",
+    "OutputPath": "Content/Buffs/SeekersReflexesBuff.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Buffs/SeekersReflexesBuff.png",
+    "Prompt": "Terraria-style pixel art icon, centered emblem, a buff icon emblem themed around Seekers Reflexes, clean magical status symbol, readable at small size. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "ShieldCharmBuff",
+    "Width": 32,
+    "Height": 32,
+    "FrameCount": 1,
+    "ProcessKind": "icon",
+    "OutputPath": "Content/Buffs/ShieldCharmBuff.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Buffs/ShieldCharmBuff.png",
+    "Prompt": "Terraria-style pixel art icon, centered emblem, a buff icon emblem themed around Shield Charm, clean magical status symbol, readable at small size. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "ShoppingDayBuff",
+    "Width": 32,
+    "Height": 32,
+    "FrameCount": 1,
+    "ProcessKind": "icon",
+    "OutputPath": "Content/Buffs/ShoppingDayBuff.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Buffs/ShoppingDayBuff.png",
+    "Prompt": "Terraria-style pixel art icon, centered emblem, a buff icon emblem themed around Shopping Day, clean magical status symbol, readable at small size. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "SkeleGroBuff",
+    "Width": 32,
+    "Height": 32,
+    "FrameCount": 1,
+    "ProcessKind": "icon",
+    "OutputPath": "Content/Buffs/SkeleGroBuff.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Buffs/SkeleGroBuff.png",
+    "Prompt": "Terraria-style pixel art icon, centered emblem, a buff icon emblem themed around Skele Gro, clean magical status symbol, readable at small size. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "SlytherinFeastBuff",
+    "Width": 32,
+    "Height": 32,
+    "FrameCount": 1,
+    "ProcessKind": "icon",
+    "OutputPath": "Content/Buffs/SlytherinFeastBuff.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Buffs/SlytherinFeastBuff.png",
+    "Prompt": "Terraria-style pixel art icon, centered emblem, a buff icon emblem themed around Slytherin Feast, clean magical status symbol, readable at small size. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "StealthDraughtBuff",
+    "Width": 32,
+    "Height": 32,
+    "FrameCount": 1,
+    "ProcessKind": "icon",
+    "OutputPath": "Content/Buffs/StealthDraughtBuff.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Buffs/StealthDraughtBuff.png",
+    "Prompt": "Terraria-style pixel art icon, centered emblem, a buff icon emblem themed around Stealth Draught, clean magical status symbol, readable at small size. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "TemporalInsightBuff",
+    "Width": 32,
+    "Height": 32,
+    "FrameCount": 1,
+    "ProcessKind": "icon",
+    "OutputPath": "Content/Buffs/TemporalInsightBuff.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Buffs/TemporalInsightBuff.png",
+    "Prompt": "Terraria-style pixel art icon, centered emblem, a buff icon emblem themed around Temporal Insight, clean magical status symbol, readable at small size. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "ThestralMountBuff",
+    "Width": 32,
+    "Height": 32,
+    "FrameCount": 1,
+    "ProcessKind": "icon",
+    "OutputPath": "Content/Buffs/ThestralMountBuff.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Buffs/ThestralMountBuff.png",
+    "Prompt": "Terraria-style pixel art icon, centered emblem, a buff icon emblem themed around Thestral Mount, clean magical status symbol, readable at small size. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "TriageResolvedBuff",
+    "Width": 32,
+    "Height": 32,
+    "FrameCount": 1,
+    "ProcessKind": "icon",
+    "OutputPath": "Content/Buffs/TriageResolvedBuff.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Buffs/TriageResolvedBuff.png",
+    "Prompt": "Terraria-style pixel art icon, centered emblem, a buff icon emblem themed around Triage Resolved, clean magical status symbol, readable at small size. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "TriwizardChampionBuff",
+    "Width": 32,
+    "Height": 32,
+    "FrameCount": 1,
+    "ProcessKind": "icon",
+    "OutputPath": "Content/Buffs/TriwizardChampionBuff.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Buffs/TriwizardChampionBuff.png",
+    "Prompt": "Terraria-style pixel art icon, centered emblem, a buff icon emblem themed around Triwizard Champion, clean magical status symbol, readable at small size. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "VaultFortuneBuff",
+    "Width": 32,
+    "Height": 32,
+    "FrameCount": 1,
+    "ProcessKind": "icon",
+    "OutputPath": "Content/Buffs/VaultFortuneBuff.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Buffs/VaultFortuneBuff.png",
+    "Prompt": "Terraria-style pixel art icon, centered emblem, a buff icon emblem themed around Vault Fortune, clean magical status symbol, readable at small size. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "VeilWardBuff",
+    "Width": 32,
+    "Height": 32,
+    "FrameCount": 1,
+    "ProcessKind": "icon",
+    "OutputPath": "Content/Buffs/VeilWardBuff.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Buffs/VeilWardBuff.png",
+    "Prompt": "Terraria-style pixel art icon, centered emblem, a buff icon emblem themed around Veil Ward, clean magical status symbol, readable at small size. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "VeritaserumBuff",
+    "Width": 32,
+    "Height": 32,
+    "FrameCount": 1,
+    "ProcessKind": "icon",
+    "OutputPath": "Content/Buffs/VeritaserumBuff.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Buffs/VeritaserumBuff.png",
+    "Prompt": "Terraria-style pixel art icon, centered emblem, a buff icon emblem themed around Veritaserum, clean magical status symbol, readable at small size. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "WolfsbaneBuff",
+    "Width": 32,
+    "Height": 32,
+    "FrameCount": 1,
+    "ProcessKind": "icon",
+    "OutputPath": "Content/Buffs/WolfsbaneBuff.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Buffs/WolfsbaneBuff.png",
+    "Prompt": "Terraria-style pixel art icon, centered emblem, a buff icon emblem themed around Wolfsbane, clean magical status symbol, readable at small size. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "ApparitionCharm",
+    "Width": 24,
+    "Height": 24,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Items/Accessories/ApparitionCharm.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Items/Accessories/ApparitionCharm.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, a magical accessory themed around Apparition Charm, wizarding wearable trinket, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "BasiliskFang",
+    "Width": 24,
+    "Height": 24,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Items/Accessories/BasiliskFang.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Items/Accessories/BasiliskFang.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, a magical accessory themed around Basilisk Fang, wizarding wearable trinket, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "BeastHuntersCharm",
+    "Width": 24,
+    "Height": 24,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Items/Accessories/BeastHuntersCharm.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Items/Accessories/BeastHuntersCharm.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, a magical accessory themed around Beast Hunters Charm, wizarding wearable trinket, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "BossCompass",
+    "Width": 24,
+    "Height": 24,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Items/Accessories/BossCompass.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Items/Accessories/BossCompass.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, a magical accessory themed around Boss Compass, wizarding wearable trinket, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "CamouflageCloak",
+    "Width": 26,
+    "Height": 26,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Items/Accessories/CamouflageCloak.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Items/Accessories/CamouflageCloak.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, a magical accessory themed around Camouflage Cloak, wizarding wearable trinket, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "CerberusFangNecklace",
+    "Width": 24,
+    "Height": 24,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Items/Accessories/CerberusFangNecklace.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Items/Accessories/CerberusFangNecklace.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, a magical accessory themed around Cerberus Fang Necklace, wizarding wearable trinket, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "ChampionsMedallion",
+    "Width": 24,
+    "Height": 24,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Items/Accessories/ChampionsMedallion.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Items/Accessories/ChampionsMedallion.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, a magical accessory themed around Champions Medallion, wizarding wearable trinket, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "ChampionsTrophy",
+    "Width": 28,
+    "Height": 28,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Items/Accessories/ChampionsTrophy.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Items/Accessories/ChampionsTrophy.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, a magical accessory themed around Champions Trophy, wizarding wearable trinket, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "DarkLordsBane",
+    "Width": 28,
+    "Height": 28,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Items/Accessories/DarkLordsBane.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Items/Accessories/DarkLordsBane.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, a magical accessory themed around Dark Lords Bane, wizarding wearable trinket, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "DefendersSignet",
+    "Width": 22,
+    "Height": 22,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Items/Accessories/DefendersSignet.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Items/Accessories/DefendersSignet.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, a magical accessory themed around Defenders Signet, wizarding wearable trinket, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "Deluminator",
+    "Width": 20,
+    "Height": 20,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Items/Accessories/Deluminator.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Items/Accessories/Deluminator.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, a magical accessory themed around Deluminator, wizarding wearable trinket, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "DementorsEmbrace",
+    "Width": 26,
+    "Height": 26,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Items/Accessories/DementorsEmbrace.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Items/Accessories/DementorsEmbrace.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, a magical accessory themed around Dementors Embrace, wizarding wearable trinket, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "DiademOfRavenclaw",
+    "Width": 24,
+    "Height": 24,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Items/Accessories/DiademOfRavenclaw.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Items/Accessories/DiademOfRavenclaw.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, a magical accessory themed around Diadem Of Ravenclaw, wizarding wearable trinket, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "DirigiblePlumEarring",
+    "Width": 18,
+    "Height": 18,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Items/Accessories/DirigiblePlumEarring.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Items/Accessories/DirigiblePlumEarring.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, a magical accessory themed around Dirigible Plum Earring, wizarding wearable trinket, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "DragonScaleRing",
+    "Width": 18,
+    "Height": 18,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Items/Accessories/DragonScaleRing.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Items/Accessories/DragonScaleRing.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, a magical accessory themed around Dragon Scale Ring, wizarding wearable trinket, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "DragonToothNecklace",
+    "Width": 24,
+    "Height": 24,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Items/Accessories/DragonToothNecklace.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Items/Accessories/DragonToothNecklace.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, a magical accessory themed around Dragon Tooth Necklace, wizarding wearable trinket, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "EnchantedMirror",
+    "Width": 20,
+    "Height": 22,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Items/Accessories/EnchantedMirror.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Items/Accessories/EnchantedMirror.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, a magical accessory themed around Enchanted Mirror, wizarding wearable trinket, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "ExtendableEars",
+    "Width": 22,
+    "Height": 22,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Items/Accessories/ExtendableEars.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Items/Accessories/ExtendableEars.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, a magical accessory themed around Extendable Ears, wizarding wearable trinket, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "FairyWings",
+    "Width": 28,
+    "Height": 28,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Items/Accessories/FairyWings.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Items/Accessories/FairyWings.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, a magical accessory themed around Fairy Wings, wizarding wearable trinket, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "FoeGlass",
+    "Width": 22,
+    "Height": 26,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Items/Accessories/FoeGlass.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Items/Accessories/FoeGlass.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, a magical accessory themed around Foe Glass, wizarding wearable trinket, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "ForestWarden",
+    "Width": 22,
+    "Height": 22,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Items/Accessories/ForestWarden.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Items/Accessories/ForestWarden.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, a magical accessory themed around Forest Warden, wizarding wearable trinket, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "GoblinLedger",
+    "Width": 22,
+    "Height": 22,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Items/Accessories/GoblinLedger.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Items/Accessories/GoblinLedger.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, a magical accessory themed around Goblin Ledger, wizarding wearable trinket, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "HandOfGlory",
+    "Width": 22,
+    "Height": 28,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Items/Accessories/HandOfGlory.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Items/Accessories/HandOfGlory.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, a magical accessory themed around Hand Of Glory, wizarding wearable trinket, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "HealersSatchel",
+    "Width": 24,
+    "Height": 24,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Items/Accessories/HealersSatchel.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Items/Accessories/HealersSatchel.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, a magical accessory themed around Healers Satchel, wizarding wearable trinket, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "HufflepuffsCup",
+    "Width": 24,
+    "Height": 24,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Items/Accessories/HufflepuffsCup.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Items/Accessories/HufflepuffsCup.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, a magical accessory themed around Hufflepuffs Cup, wizarding wearable trinket, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "InvisibilityCloak",
+    "Width": 24,
+    "Height": 24,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Items/Accessories/InvisibilityCloak.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Items/Accessories/InvisibilityCloak.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, a magical accessory themed around Invisibility Cloak, wizarding wearable trinket, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "KeeperGloves",
+    "Width": 22,
+    "Height": 22,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Items/Accessories/KeeperGloves.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Items/Accessories/KeeperGloves.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, a magical accessory themed around Keeper Gloves, wizarding wearable trinket, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "LightningScar",
+    "Width": 16,
+    "Height": 16,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Items/Accessories/LightningScar.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Items/Accessories/LightningScar.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, a magical accessory themed around Lightning Scar, wizarding wearable trinket, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  }
+]

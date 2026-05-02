@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+  <defs>
+    <linearGradient id="scales" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2a2a2a"/>
+      <stop offset="100%" stop-color="#1a1a1a"/>
+    </linearGradient>
+    <linearGradient id="hornColor" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#c4943a"/>
+      <stop offset="100%" stop-color="#8a6a2a"/>
+    </linearGradient>
+    <linearGradient id="fire" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0%" stop-color="#ff4400"/>
+      <stop offset="40%" stop-color="#ff8800"/>
+      <stop offset="80%" stop-color="#ffcc00"/>
+      <stop offset="100%" stop-color="#ffff80"/>
+    </linearGradient>
+    <linearGradient id="dragonBelly" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#4a3a2a"/>
+      <stop offset="100%" stop-color="#3a2a1a"/>
+    </linearGradient>
+  </defs>
+  <!-- Dragon body -->
+  <path d="M6 30 Q8 24 16 22 L24 20 L32 22 Q40 24 42 30 L44 48 L4 48Z" fill="url(#scales)"/>
+  <!-- Belly plates -->
+  <path d="M18 28 L18 48" fill="none" stroke="#3a3020" stroke-width="0.3"/>
+  <path d="M30 28 L30 48" fill="none" stroke="#3a3020" stroke-width="0.3"/>
+  <path d="M18 32 L30 32" fill="none" stroke="#3a3020" stroke-width="0.3"/>
+  <path d="M18 36 L30 36" fill="none" stroke="#3a3020" stroke-width="0.3"/>
+  <!-- Thick scaled neck -->
+  <path d="M16 16 Q20 14 24 14 Q28 14 32 16 L32 22 L16 22Z" fill="url(#scales)"/>
+  <!-- Neck spines -->
+  <path d="M22 14 L21 11" fill="none" stroke="#1a1a1a" stroke-width="0.8" stroke-linecap="round"/>
+  <path d="M24 13 L24 10" fill="none" stroke="#1a1a1a" stroke-width="0.8" stroke-linecap="round"/>
+  <path d="M26 14 L27 11" fill="none" stroke="#1a1a1a" stroke-width="0.8" stroke-linecap="round"/>
+  <!-- Dragon head -->
+  <path d="M10 6 Q8 10 10 16 Q14 22 24 20 Q30 18 32 14 Q34 8 30 4 Q24 0 16 2 Q10 4 10 6Z" fill="url(#scales)"/>
+  <!-- Snout -->
+  <path d="M10 10 Q8 12 10 14 Q12 16 16 15" fill="url(#dragonBelly)"/>
+  <!-- Bronze horns - crown -->
+  <path d="M16 2 L12 -2 L14 2" fill="url(#hornColor)" stroke="#7a5a1a" stroke-width="0.3"/>
+  <path d="M20 1 L18 -3 L20 1" fill="url(#hornColor)" stroke="#7a5a1a" stroke-width="0.3"/>
+  <path d="M24 0 L24 -4 L26 1" fill="url(#hornColor)" stroke="#7a5a1a" stroke-width="0.3"/>
+  <path d="M28 1 L30 -3 L28 2" fill="url(#hornColor)" stroke="#7a5a1a" stroke-width="0.3"/>
+  <path d="M30 3 L34 -1 L31 3" fill="url(#hornColor)" stroke="#7a5a1a" stroke-width="0.3"/>
+  <!-- Yellow menacing eyes -->
+  <ellipse cx="16" cy="8" rx="2.5" ry="2" fill="#e0c020"/>
+  <ellipse cx="26" cy="6" rx="2.5" ry="2" fill="#e0c020"/>
+  <ellipse cx="16" cy="8" rx="0.8" ry="1.8" fill="#1a1a00"/>
+  <ellipse cx="26" cy="6" rx="0.8" ry="1.8" fill="#1a1a00"/>
+  <!-- Eye glow -->
+  <circle cx="17" cy="7.5" r="0.4" fill="white" opacity="0.4"/>
+  <circle cx="27" cy="5.5" r="0.4" fill="white" opacity="0.4"/>
+  <!-- Brow ridges -->
+  <path d="M13 6 Q16 5 19 6.5" fill="none" stroke="#1a1a1a" stroke-width="0.8"/>
+  <path d="M23 4 Q26 3 29 4.5" fill="none" stroke="#1a1a1a" stroke-width="0.8"/>
+  <!-- Nostrils -->
+  <circle cx="11" cy="11" r="0.8" fill="#0a0a0a"/>
+  <circle cx="13" cy="10.5" r="0.7" fill="#0a0a0a"/>
+  <!-- Fire breath! -->
+  <path d="M8 14 Q4 16 0 14 Q-2 18 2 20 Q-2 22 0 26 Q4 24 6 28 Q4 30 8 32" fill="url(#fire)" opacity="0.8"/>
+  <path d="M9 15 Q6 18 4 16 Q2 20 5 22 Q2 24 4 28 Q6 26 8 30" fill="url(#fire)" opacity="0.6"/>
+  <!-- Fire glow -->
+  <circle cx="4" cy="22" r="4" fill="#ff8800" opacity="0.2"/>
+  <!-- Spiked tail curling around -->
+  <path d="M38 30 Q42 28 44 24 Q46 20 44 16 Q42 14 40 16" fill="none" stroke="url(#scales)" stroke-width="2"/>
+  <!-- Tail spikes -->
+  <path d="M44 24 L47 23 L44 22" fill="url(#hornColor)"/>
+  <path d="M44 20 L48 19 L44 18" fill="url(#hornColor)"/>
+  <path d="M43 16 L46 14 L42 15" fill="url(#hornColor)"/>
+  <!-- Scale details -->
+  <path d="M18 8 Q20 7 22 8" fill="none" stroke="#2a2a2a" stroke-width="0.3"/>
+  <path d="M14 12 Q16 11 18 12" fill="none" stroke="#2a2a2a" stroke-width="0.3"/>
+</svg>

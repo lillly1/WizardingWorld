@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+  <defs>
+    <radialGradient id="spiderBody" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#3a3a3a"/>
+      <stop offset="100%" stop-color="#1a1a1a"/>
+    </radialGradient>
+    <linearGradient id="leg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2a2a2a"/>
+      <stop offset="100%" stop-color="#1a1a1a"/>
+    </linearGradient>
+  </defs>
+  <!-- Web strands in background -->
+  <line x1="0" y1="0" x2="24" y2="24" stroke="#d0d0d0" stroke-width="0.3" opacity="0.3"/>
+  <line x1="48" y1="0" x2="24" y2="24" stroke="#d0d0d0" stroke-width="0.3" opacity="0.3"/>
+  <line x1="0" y1="24" x2="48" y2="24" stroke="#d0d0d0" stroke-width="0.2" opacity="0.2"/>
+  <line x1="24" y1="0" x2="24" y2="48" stroke="#d0d0d0" stroke-width="0.2" opacity="0.2"/>
+  <path d="M12 6 Q18 12 24 12" fill="none" stroke="#d0d0d0" stroke-width="0.2" opacity="0.2"/>
+  <path d="M36 6 Q30 12 24 12" fill="none" stroke="#d0d0d0" stroke-width="0.2" opacity="0.2"/>
+  <!-- Spider legs - left side -->
+  <path d="M16 22 Q6 14 2 8" fill="none" stroke="url(#leg)" stroke-width="1.2"/>
+  <path d="M16 24 Q4 20 0 16" fill="none" stroke="url(#leg)" stroke-width="1.2"/>
+  <path d="M16 26 Q4 28 0 32" fill="none" stroke="url(#leg)" stroke-width="1.2"/>
+  <path d="M16 28 Q8 36 4 42" fill="none" stroke="url(#leg)" stroke-width="1.2"/>
+  <!-- Spider legs - right side -->
+  <path d="M32 22 Q42 14 46 8" fill="none" stroke="url(#leg)" stroke-width="1.2"/>
+  <path d="M32 24 Q44 20 48 16" fill="none" stroke="url(#leg)" stroke-width="1.2"/>
+  <path d="M32 26 Q44 28 48 32" fill="none" stroke="url(#leg)" stroke-width="1.2"/>
+  <path d="M32 28 Q40 36 44 42" fill="none" stroke="url(#leg)" stroke-width="1.2"/>
+  <!-- Leg joints -->
+  <circle cx="6" cy="14" r="0.5" fill="#2a2a2a"/>
+  <circle cx="4" cy="20" r="0.5" fill="#2a2a2a"/>
+  <circle cx="4" cy="28" r="0.5" fill="#2a2a2a"/>
+  <circle cx="8" cy="36" r="0.5" fill="#2a2a2a"/>
+  <circle cx="42" cy="14" r="0.5" fill="#2a2a2a"/>
+  <circle cx="44" cy="20" r="0.5" fill="#2a2a2a"/>
+  <circle cx="44" cy="28" r="0.5" fill="#2a2a2a"/>
+  <circle cx="40" cy="36" r="0.5" fill="#2a2a2a"/>
+  <!-- Leg hair tufts -->
+  <path d="M10 16 L9 14 L11 15" fill="none" stroke="#3a3a3a" stroke-width="0.3"/>
+  <path d="M38 16 L39 14 L37 15" fill="none" stroke="#3a3a3a" stroke-width="0.3"/>
+  <!-- Abdomen (back body) -->
+  <ellipse cx="24" cy="32" rx="10" ry="8" fill="url(#spiderBody)"/>
+  <!-- Abdomen hair texture -->
+  <path d="M18 30 L17 28" fill="none" stroke="#3a3a3a" stroke-width="0.4"/>
+  <path d="M22 28 L21 26" fill="none" stroke="#3a3a3a" stroke-width="0.4"/>
+  <path d="M26 28 L27 26" fill="none" stroke="#3a3a3a" stroke-width="0.4"/>
+  <path d="M30 30 L31 28" fill="none" stroke="#3a3a3a" stroke-width="0.4"/>
+  <!-- Cephalothorax (front body) -->
+  <ellipse cx="24" cy="20" rx="8" ry="7" fill="url(#spiderBody)"/>
+  <!-- Hairy body texture -->
+  <path d="M18 18 L16 16" fill="none" stroke="#2a2a2a" stroke-width="0.4"/>
+  <path d="M20 16 L19 14" fill="none" stroke="#2a2a2a" stroke-width="0.4"/>
+  <path d="M28 16 L29 14" fill="none" stroke="#2a2a2a" stroke-width="0.4"/>
+  <path d="M30 18 L32 16" fill="none" stroke="#2a2a2a" stroke-width="0.4"/>
+  <!-- Multiple eyes cluster -->
+  <!-- Main eyes -->
+  <circle cx="21" cy="16" r="2" fill="#8a8a6a"/>
+  <circle cx="27" cy="16" r="2" fill="#8a8a6a"/>
+  <circle cx="21" cy="16" r="1" fill="#2a2a1a"/>
+  <circle cx="27" cy="16" r="1" fill="#2a2a1a"/>
+  <!-- Secondary eyes -->
+  <circle cx="19" cy="14" r="1.2" fill="#7a7a5a"/>
+  <circle cx="29" cy="14" r="1.2" fill="#7a7a5a"/>
+  <circle cx="19" cy="14" r="0.6" fill="#2a2a1a"/>
+  <circle cx="29" cy="14" r="0.6" fill="#2a2a1a"/>
+  <!-- Tertiary eyes -->
+  <circle cx="22" cy="14" r="0.8" fill="#6a6a4a"/>
+  <circle cx="26" cy="14" r="0.8" fill="#6a6a4a"/>
+  <circle cx="22" cy="14" r="0.4" fill="#2a2a1a"/>
+  <circle cx="26" cy="14" r="0.4" fill="#2a2a1a"/>
+  <!-- Top eyes -->
+  <circle cx="23" cy="13" r="0.6" fill="#5a5a3a"/>
+  <circle cx="25" cy="13" r="0.6" fill="#5a5a3a"/>
+  <!-- Pincers/chelicerae -->
+  <path d="M22 20 Q20 22 19 24 Q20 24 22 22" fill="#3a2a1a" stroke="#2a1a0a" stroke-width="0.3"/>
+  <path d="M26 20 Q28 22 29 24 Q28 24 26 22" fill="#3a2a1a" stroke="#2a1a0a" stroke-width="0.3"/>
+  <!-- Pincer fangs -->
+  <path d="M19 24 L18 26" fill="none" stroke="#4a3a2a" stroke-width="0.6" stroke-linecap="round"/>
+  <path d="M29 24 L30 26" fill="none" stroke="#4a3a2a" stroke-width="0.6" stroke-linecap="round"/>
+  <!-- Web strand from spinnerets -->
+  <path d="M24 40 Q24 44 20 48" fill="none" stroke="#d0d0d0" stroke-width="0.4" opacity="0.4"/>
+  <path d="M24 40 Q26 44 28 48" fill="none" stroke="#d0d0d0" stroke-width="0.4" opacity="0.4"/>
+</svg>

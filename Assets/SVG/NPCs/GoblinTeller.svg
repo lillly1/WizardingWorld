@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36">
+  <defs>
+    <linearGradient id="suit" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2a2a30"/>
+      <stop offset="100%" stop-color="#1a1a20"/>
+    </linearGradient>
+    <linearGradient id="skin" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#d4c4a0"/>
+      <stop offset="100%" stop-color="#b8a880"/>
+    </linearGradient>
+  </defs>
+  <!-- Formal dark suit -->
+  <path d="M8 26 Q10 23 14 22 L18 21 L22 22 Q26 23 28 26 L28 36 L8 36Z" fill="url(#suit)"/>
+  <!-- Suit lapels -->
+  <path d="M14 22 L16 26 L18 22" fill="#1a1a20" stroke="#3a3a40" stroke-width="0.3"/>
+  <path d="M22 22 L20 26 L18 22" fill="#1a1a20" stroke="#3a3a40" stroke-width="0.3"/>
+  <!-- White shirt front -->
+  <path d="M16 22 L16 30 L20 30 L20 22" fill="#e8e4e0"/>
+  <!-- Shirt buttons -->
+  <circle cx="18" cy="24" r="0.3" fill="#c0c0c0"/>
+  <circle cx="18" cy="26" r="0.3" fill="#c0c0c0"/>
+  <circle cx="18" cy="28" r="0.3" fill="#c0c0c0"/>
+  <!-- Thin neck -->
+  <rect x="16.5" y="18.5" width="3" height="3" rx="1" fill="url(#skin)"/>
+  <!-- Small pointed goblin head -->
+  <ellipse cx="18" cy="13.5" rx="5.5" ry="6" fill="url(#skin)"/>
+  <!-- Pointed ears -->
+  <path d="M12.5 12 Q9 8 8 10 Q9 13 12 14" fill="#c8b490" stroke="#a89870" stroke-width="0.3"/>
+  <path d="M23.5 12 Q27 8 28 10 Q27 13 24 14" fill="#c8b490" stroke="#a89870" stroke-width="0.3"/>
+  <!-- Bald/sparse dark hair -->
+  <path d="M13 10 Q15 7 18 7 Q21 7 23 10" fill="#4a4a3a" opacity="0.5"/>
+  <!-- Shrewd narrow eyebrows -->
+  <path d="M14 11 L17 11.5" fill="none" stroke="#6a5a3a" stroke-width="0.5"/>
+  <path d="M19 11.5 L22 11" fill="none" stroke="#6a5a3a" stroke-width="0.5"/>
+  <!-- Small shrewd eyes -->
+  <ellipse cx="15.5" cy="12.5" rx="1.2" ry="0.8" fill="white"/>
+  <ellipse cx="20.5" cy="12.5" rx="1.2" ry="0.8" fill="white"/>
+  <circle cx="15.5" cy="12.5" r="0.5" fill="#2a2a1a"/>
+  <circle cx="20.5" cy="12.5" r="0.5" fill="#2a2a1a"/>
+  <circle cx="15.5" cy="12.5" r="0.2" fill="#1a1a1a"/>
+  <circle cx="20.5" cy="12.5" r="0.2" fill="#1a1a1a"/>
+  <!-- Long pointed nose -->
+  <path d="M18 13 L16.5 17 L17.5 17.5 L18.5 17.2" fill="#c4a880" stroke="#a89060" stroke-width="0.3"/>
+  <!-- Thin disapproving mouth -->
+  <path d="M16.5 18.5 Q18 18 19.5 18.5" fill="none" stroke="#8a6a4a" stroke-width="0.4"/>
+  <!-- Deep wrinkles -->
+  <path d="M14 14 Q13.5 15 14 16" fill="none" stroke="#b8a478" stroke-width="0.2" opacity="0.5"/>
+  <path d="M22 14 Q22.5 15 22 16" fill="none" stroke="#b8a478" stroke-width="0.2" opacity="0.5"/>
+  <!-- Pointed chin -->
+  <path d="M16 19 Q18 20.5 20 19" fill="none" stroke="#b8a478" stroke-width="0.2"/>
+  <!-- Gold Gringotts pin -->
+  <circle cx="15" cy="24" r="0.6" fill="#ffd700" stroke="#cc9900" stroke-width="0.2"/>
+  <!-- Quill behind ear -->
+  <path d="M24 10 Q26 6 27 4" fill="none" stroke="#8a6a3a" stroke-width="0.5"/>
+  <path d="M27 4 Q27.5 3 27 3.5" fill="#e8d8b8"/>
+</svg>

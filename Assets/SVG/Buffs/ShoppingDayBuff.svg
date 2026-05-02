@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <defs>
+    <linearGradient id="shopBg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#4a3a1a"/>
+      <stop offset="100%" stop-color="#2a1a0a"/>
+    </linearGradient>
+  </defs>
+  <rect width="32" height="32" rx="4" fill="url(#shopBg)"/>
+  <!-- Shopping bag -->
+  <g transform="translate(4,8)">
+    <!-- Bag body -->
+    <rect x="0" y="5" width="12" height="14" rx="1" fill="#8b6914"/>
+    <!-- Bag top fold -->
+    <path d="M0 5 L1 3 L11 3 L12 5 Z" fill="#a07818"/>
+    <!-- Handle -->
+    <path d="M3 3 Q3 -1 6 -1 Q9 -1 9 3" stroke="#6a4a0a" stroke-width="1.2" fill="none"/>
+    <!-- Star emblem on bag -->
+    <polygon points="6,9 7,12 10,12 7.5,14 8.5,17 6,15 3.5,17 4.5,14 2,12 5,12" fill="#ffd700" opacity="0.6" transform="scale(0.6) translate(4,6)"/>
+  </g>
+  <!-- Gold coins stack -->
+  <g transform="translate(18,12)">
+    <!-- Bottom coin -->
+    <ellipse cx="5" cy="14" rx="5" ry="2" fill="#b8860b"/>
+    <ellipse cx="5" cy="13.5" rx="5" ry="2" fill="#d4a017"/>
+    <!-- Middle coin -->
+    <ellipse cx="5" cy="11" rx="5" ry="2" fill="#b8860b"/>
+    <ellipse cx="5" cy="10.5" rx="5" ry="2" fill="#d4a017"/>
+    <!-- Top coin -->
+    <ellipse cx="5" cy="8" rx="5" ry="2" fill="#b8860b"/>
+    <ellipse cx="5" cy="7.5" rx="5" ry="2" fill="#ffd700"/>
+    <!-- Coin details -->
+    <text x="5" y="8.5" text-anchor="middle" font-family="serif" font-size="3" fill="#b8860b" font-weight="bold">G</text>
+  </g>
+  <!-- Floating coin -->
+  <g transform="translate(14,3)">
+    <ellipse cx="3" cy="3" rx="3" ry="1.2" fill="#b8860b"/>
+    <ellipse cx="3" cy="2.7" rx="3" ry="1.2" fill="#ffd700"/>
+    <text x="3" y="3.5" text-anchor="middle" font-family="serif" font-size="2" fill="#b8860b" font-weight="bold">G</text>
+  </g>
+  <!-- Sparkles for deals -->
+  <circle cx="3" cy="4" r="0.6" fill="#ffd700" opacity="0.8"/>
+  <circle cx="28" cy="6" r="0.5" fill="#ffd700" opacity="0.7"/>
+  <circle cx="2" cy="28" r="0.4" fill="#ffd700" opacity="0.5"/>
+</svg>

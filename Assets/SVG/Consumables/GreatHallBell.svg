@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 28">
+  <defs>
+    <linearGradient id="bell-gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FFD700"/>
+      <stop offset="30%" stop-color="#DAA520"/>
+      <stop offset="70%" stop-color="#B8860B"/>
+      <stop offset="100%" stop-color="#DAA520"/>
+    </linearGradient>
+    <linearGradient id="bell-highlight" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="rgba(255,255,255,0.4)"/>
+      <stop offset="50%" stop-color="rgba(255,255,255,0)"/>
+      <stop offset="100%" stop-color="rgba(255,255,255,0.15)"/>
+    </linearGradient>
+    <radialGradient id="warm-bell-glow" cx="0.5" cy="0.6" r="0.5">
+      <stop offset="0%" stop-color="#FFD700" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#FFD700" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <!-- Warm glow -->
+  <ellipse cx="14" cy="16" rx="11" ry="10" fill="url(#warm-bell-glow)"/>
+  <!-- Bell body -->
+  <path d="M8,8 Q7,10 6.5,13 Q6,16 6,18 Q6,21 7,22.5 L21,22.5 Q22,21 22,18 Q22,16 21.5,13 Q21,10 20,8 Z" fill="url(#bell-gold)" stroke="#8B6914" stroke-width="0.5"/>
+  <!-- Bell highlight -->
+  <path d="M9,9 Q8.5,12 8,15 Q7.5,18 8,21" stroke="white" stroke-width="0.8" fill="none" opacity="0.25"/>
+  <path d="M8,8 Q7,10 6.5,13 Q6,16 6,18 Q6,21 7,22.5 L21,22.5 Q22,21 22,18 Q22,16 21.5,13 Q21,10 20,8 Z" fill="url(#bell-highlight)" opacity="0.3"/>
+  <!-- Bell rim (wider) -->
+  <ellipse cx="14" cy="22.5" rx="8" ry="2" fill="#B8860B" stroke="#8B6914" stroke-width="0.4"/>
+  <ellipse cx="14" cy="22.5" rx="8" ry="2" fill="url(#bell-highlight)" opacity="0.2"/>
+  <!-- Bell rim line decoration -->
+  <ellipse cx="14" cy="21" rx="7" ry="1.2" fill="none" stroke="#DAA520" stroke-width="0.3" opacity="0.5"/>
+  <!-- Hogwarts crest (simplified - shield with H) -->
+  <path d="M11.5,12 L14,10.5 L16.5,12 L16.5,16 Q16.5,18 14,19 Q11.5,18 11.5,16 Z" fill="#8B6914" stroke="#FFD700" stroke-width="0.4"/>
+  <!-- Crest quadrants -->
+  <line x1="14" y1="10.5" x2="14" y2="19" stroke="#FFD700" stroke-width="0.3" opacity="0.5"/>
+  <line x1="11.5" y1="14.5" x2="16.5" y2="14.5" stroke="#FFD700" stroke-width="0.3" opacity="0.5"/>
+  <!-- H in crest -->
+  <text x="14" y="16.5" font-family="serif" font-size="3.5" font-weight="bold" fill="#FFD700" text-anchor="middle" opacity="0.7">H</text>
+  <!-- Bell top/dome -->
+  <path d="M11,8 Q11,6 14,5 Q17,6 17,8" fill="url(#bell-gold)" stroke="#8B6914" stroke-width="0.4"/>
+  <!-- Handle/ring at top -->
+  <circle cx="14" cy="4" r="2" fill="none" stroke="url(#bell-gold)" stroke-width="1.2"/>
+  <circle cx="14" cy="4" r="2" fill="none" stroke="white" stroke-width="0.3" opacity="0.2"/>
+  <!-- Clapper -->
+  <line x1="14" y1="14" x2="14" y2="23" stroke="#8B6914" stroke-width="0.6"/>
+  <circle cx="14" cy="23.5" r="1.2" fill="#B8860B" stroke="#8B6914" stroke-width="0.3"/>
+  <circle cx="13.5" cy="23" r="0.3" fill="#DAA520" opacity="0.4"/>
+  <!-- Sound wave lines -->
+  <path d="M4,14 Q3,16 4,18" stroke="#FFD700" stroke-width="0.4" fill="none" opacity="0.3"/>
+  <path d="M2.5,13 Q1.5,16 2.5,19" stroke="#FFD700" stroke-width="0.3" fill="none" opacity="0.2"/>
+  <path d="M24,14 Q25,16 24,18" stroke="#FFD700" stroke-width="0.4" fill="none" opacity="0.3"/>
+  <path d="M25.5,13 Q26.5,16 25.5,19" stroke="#FFD700" stroke-width="0.3" fill="none" opacity="0.2"/>
+</svg>

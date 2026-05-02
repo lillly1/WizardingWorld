@@ -1,0 +1,202 @@
+[
+  {
+    "Name": "Giant",
+    "Width": 50,
+    "Height": 492,
+    "FrameCount": 6,
+    "ProcessKind": "sheet",
+    "OutputPath": "Content/NPCs/Enemies/Giant.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/NPCs/Enemies/Giant.png",
+    "Prompt": "Terraria-style pixel art sprite frame, single isolated figure, a single full-body sprite frame of Giant, hostile magical creature or encounter object, animation-ready pose. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "GoblinRebel",
+    "Width": 20,
+    "Height": 144,
+    "FrameCount": 4,
+    "ProcessKind": "sheet",
+    "OutputPath": "Content/NPCs/Enemies/GoblinRebel.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/NPCs/Enemies/GoblinRebel.png",
+    "Prompt": "Terraria-style pixel art sprite frame, single isolated figure, a single full-body sprite frame of Goblin Rebel, hostile magical creature or encounter object, animation-ready pose. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "GoblinTeller",
+    "Width": 40,
+    "Height": 56,
+    "FrameCount": 25,
+    "ProcessKind": "sheet",
+    "OutputPath": "Content/NPCs/Enemies/GoblinTeller.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/NPCs/Enemies/GoblinTeller.png",
+    "Prompt": "Terraria-style pixel art sprite frame, single isolated figure, a single full-body sprite frame of Goblin Teller, hostile magical creature or encounter object, animation-ready pose. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "GoblinTeller_Head",
+    "Width": 36,
+    "Height": 38,
+    "FrameCount": 2,
+    "ProcessKind": "icon",
+    "OutputPath": "Content/NPCs/Enemies/GoblinTeller_Head.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/NPCs/Enemies/GoblinTeller_Head.png",
+    "Prompt": "Terraria-style pixel art icon, centered emblem, a single full-body sprite frame of Goblin Teller, hostile magical creature or encounter object, animation-ready pose. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "GrimmauldBoggart",
+    "Width": 28,
+    "Height": 36,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/NPCs/Enemies/GrimmauldBoggart.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/NPCs/Enemies/GrimmauldBoggart.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, a single full-body sprite frame of Grimmauld Boggart, hostile magical creature or encounter object, animation-ready pose. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "Grindylow",
+    "Width": 24,
+    "Height": 104,
+    "FrameCount": 4,
+    "ProcessKind": "sheet",
+    "OutputPath": "Content/NPCs/Enemies/Grindylow.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/NPCs/Enemies/Grindylow.png",
+    "Prompt": "Terraria-style pixel art sprite frame, single isolated figure, a single full-body sprite frame of Grindylow, hostile magical creature or encounter object, animation-ready pose. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "HexResidueNode",
+    "Width": 20,
+    "Height": 20,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/NPCs/Enemies/HexResidueNode.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/NPCs/Enemies/HexResidueNode.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, a single full-body sprite frame of Hex Residue Node, hostile magical creature or encounter object, animation-ready pose. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "Horklump",
+    "Width": 16,
+    "Height": 16,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/NPCs/Enemies/Horklump.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/NPCs/Enemies/Horklump.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, a single full-body sprite frame of Horklump, hostile magical creature or encounter object, animation-ready pose. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "Inferius",
+    "Width": 18,
+    "Height": 126,
+    "FrameCount": 15,
+    "ProcessKind": "sheet",
+    "OutputPath": "Content/NPCs/Enemies/Inferius.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/NPCs/Enemies/Inferius.png",
+    "Prompt": "Terraria-style pixel art sprite frame, single isolated figure, a single full-body sprite frame of Inferius, hostile magical creature or encounter object, animation-ready pose. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "Jarvey",
+    "Width": 22,
+    "Height": 64,
+    "FrameCount": 4,
+    "ProcessKind": "sheet",
+    "OutputPath": "Content/NPCs/Enemies/Jarvey.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/NPCs/Enemies/Jarvey.png",
+    "Prompt": "Terraria-style pixel art sprite frame, single isolated figure, a single full-body sprite frame of Jarvey, hostile magical creature or encounter object, animation-ready pose. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "Jobberknoll",
+    "Width": 14,
+    "Height": 56,
+    "FrameCount": 4,
+    "ProcessKind": "sheet",
+    "OutputPath": "Content/NPCs/Enemies/Jobberknoll.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/NPCs/Enemies/Jobberknoll.png",
+    "Prompt": "Terraria-style pixel art sprite frame, single isolated figure, a single full-body sprite frame of Jobberknoll, hostile magical creature or encounter object, animation-ready pose. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "Knarl",
+    "Width": 18,
+    "Height": 56,
+    "FrameCount": 4,
+    "ProcessKind": "sheet",
+    "OutputPath": "Content/NPCs/Enemies/Knarl.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/NPCs/Enemies/Knarl.png",
+    "Prompt": "Terraria-style pixel art sprite frame, single isolated figure, a single full-body sprite frame of Knarl, hostile magical creature or encounter object, animation-ready pose. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "Lethifold",
+    "Width": 36,
+    "Height": 88,
+    "FrameCount": 4,
+    "ProcessKind": "sheet",
+    "OutputPath": "Content/NPCs/Enemies/Lethifold.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/NPCs/Enemies/Lethifold.png",
+    "Prompt": "Terraria-style pixel art sprite frame, single isolated figure, a single full-body sprite frame of Lethifold, hostile magical creature or encounter object, animation-ready pose. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "MagicPixie",
+    "Width": 18,
+    "Height": 88,
+    "FrameCount": 4,
+    "ProcessKind": "sheet",
+    "OutputPath": "Content/NPCs/Enemies/MagicPixie.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/NPCs/Enemies/MagicPixie.png",
+    "Prompt": "Terraria-style pixel art sprite frame, single isolated figure, a single full-body sprite frame of Magic Pixie, hostile magical creature or encounter object, animation-ready pose. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "MagicalImp",
+    "Width": 16,
+    "Height": 88,
+    "FrameCount": 4,
+    "ProcessKind": "sheet",
+    "OutputPath": "Content/NPCs/Enemies/MagicalImp.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/NPCs/Enemies/MagicalImp.png",
+    "Prompt": "Terraria-style pixel art sprite frame, single isolated figure, a single full-body sprite frame of Magical Imp, hostile magical creature or encounter object, animation-ready pose. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "Mandrake",
+    "Width": 20,
+    "Height": 120,
+    "FrameCount": 4,
+    "ProcessKind": "sheet",
+    "OutputPath": "Content/NPCs/Enemies/Mandrake.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/NPCs/Enemies/Mandrake.png",
+    "Prompt": "Terraria-style pixel art sprite frame, single isolated figure, a single full-body sprite frame of Mandrake, hostile magical creature or encounter object, animation-ready pose. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "Merfolk",
+    "Width": 24,
+    "Height": 160,
+    "FrameCount": 4,
+    "ProcessKind": "sheet",
+    "OutputPath": "Content/NPCs/Enemies/Merfolk.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/NPCs/Enemies/Merfolk.png",
+    "Prompt": "Terraria-style pixel art sprite frame, single isolated figure, a single full-body sprite frame of Merfolk, hostile magical creature or encounter object, animation-ready pose. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "MoonWardFracture",
+    "Width": 22,
+    "Height": 24,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/NPCs/Enemies/MoonWardFracture.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/NPCs/Enemies/MoonWardFracture.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, a single full-body sprite frame of Moon Ward Fracture, hostile magical creature or encounter object, animation-ready pose. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "Mooncalf",
+    "Width": 20,
+    "Height": 104,
+    "FrameCount": 4,
+    "ProcessKind": "sheet",
+    "OutputPath": "Content/NPCs/Enemies/Mooncalf.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/NPCs/Enemies/Mooncalf.png",
+    "Prompt": "Terraria-style pixel art sprite frame, single isolated figure, a single full-body sprite frame of Mooncalf, hostile magical creature or encounter object, animation-ready pose. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "Nagini",
+    "Width": 40,
+    "Height": 192,
+    "FrameCount": 6,
+    "ProcessKind": "sheet",
+    "OutputPath": "Content/NPCs/Enemies/Nagini.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/NPCs/Enemies/Nagini.png",
+    "Prompt": "Terraria-style pixel art sprite frame, single isolated figure, a single full-body sprite frame of Nagini, hostile magical creature or encounter object, animation-ready pose. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  }
+]

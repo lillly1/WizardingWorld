@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <defs>
+    <linearGradient id="gryffRobe" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#8b0000"/>
+      <stop offset="100%" stop-color="#5a0000"/>
+    </linearGradient>
+  </defs>
+  <rect width="32" height="32" rx="4" fill="#2a1a1a"/>
+  <!-- Robe body -->
+  <g>
+    <!-- Main robe -->
+    <path d="M10 8 L8 28 Q8 30 10 30 L22 30 Q24 30 24 28 L22 8 Z" fill="url(#gryffRobe)"/>
+    <!-- Collar / neckline -->
+    <path d="M12 8 Q16 6 20 8 L20 10 Q16 9 12 10 Z" fill="#d4a017"/>
+    <!-- Shoulder seams -->
+    <path d="M10 8 L8 10 L10 10 Z" fill="#7a0000"/>
+    <path d="M22 8 L24 10 L22 10 Z" fill="#7a0000"/>
+    <!-- Sleeves -->
+    <path d="M8 10 L4 18 L5 19 L10 13 Z" fill="url(#gryffRobe)"/>
+    <path d="M24 10 L28 18 L27 19 L22 13 Z" fill="url(#gryffRobe)"/>
+    <!-- Sleeve cuffs -->
+    <rect x="4" y="17" width="2" height="2" rx="0.5" fill="#d4a017"/>
+    <rect x="26" y="17" width="2" height="2" rx="0.5" fill="#d4a017"/>
+    <!-- Center robe opening line -->
+    <line x1="16" y1="10" x2="16" y2="30" stroke="#4a0000" stroke-width="0.5"/>
+    <!-- Gold trim lines -->
+    <line x1="11" y1="10" x2="10" y2="30" stroke="#d4a017" stroke-width="0.4" opacity="0.5"/>
+    <line x1="21" y1="10" x2="22" y2="30" stroke="#d4a017" stroke-width="0.4" opacity="0.5"/>
+    <!-- Belt/sash -->
+    <rect x="10" y="18" width="12" height="1.5" rx="0.5" fill="#d4a017"/>
+    <!-- Lion crest on chest -->
+    <g transform="translate(13,11) scale(0.4)">
+      <circle cx="7" cy="7" r="6" fill="#d4a017" stroke="#ffd700" stroke-width="0.5"/>
+      <!-- Mini lion -->
+      <circle cx="7" cy="6" r="2.5" fill="#b8860b"/>
+      <circle cx="7" cy="6" r="3.5" fill="none" stroke="#8b6914" stroke-width="0.8"/>
+      <circle cx="6" cy="5.5" r="0.5" fill="#1a0a00"/>
+      <circle cx="8" cy="5.5" r="0.5" fill="#1a0a00"/>
+      <path d="M6 7.5 Q7 8.5 8 7.5" stroke="#1a0a00" stroke-width="0.4" fill="none"/>
+    </g>
+    <!-- Robe bottom hem -->
+    <path d="M8 28 Q12 29 16 28 Q20 29 24 28 L24 30 L8 30 Z" fill="#6a0000"/>
+  </g>
+  <!-- Gold buttons -->
+  <circle cx="15" cy="13" r="0.5" fill="#ffd700"/>
+  <circle cx="15" cy="15.5" r="0.5" fill="#ffd700"/>
+</svg>

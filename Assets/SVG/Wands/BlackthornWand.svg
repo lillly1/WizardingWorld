@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 42 42">
+  <!-- Blackthorn Wand - Dark near-black, warrior's wand with thorns -->
+  <defs>
+    <linearGradient id="blackthornWood" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#3A3030"/>
+      <stop offset="50%" stop-color="#2A2020"/>
+      <stop offset="100%" stop-color="#1A1010"/>
+    </linearGradient>
+    <linearGradient id="blackthornGlow" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#CC2222" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#880000" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="bthGlow">
+      <feGaussianBlur stdDeviation="1.4" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <!-- Tip glow (dark red, warrior) -->
+  <circle cx="8" cy="8" r="4.5" fill="url(#blackthornGlow)" filter="url(#bthGlow)" opacity="0.75"/>
+  <!-- Wand shaft -->
+  <line x1="8" y1="8" x2="34" y2="34" stroke="url(#blackthornWood)" stroke-width="2.8" stroke-linecap="round"/>
+  <!-- Wood grain - subtle on dark wood -->
+  <line x1="13" y1="12" x2="15" y2="14" stroke="#4A3A3A" stroke-width="0.4" opacity="0.4"/>
+  <line x1="20" y1="19" x2="22" y2="21" stroke="#4A3A3A" stroke-width="0.4" opacity="0.4"/>
+  <line x1="27" y1="26" x2="29" y2="28" stroke="#4A3A3A" stroke-width="0.4" opacity="0.4"/>
+  <!-- Thorns protruding from shaft (signature detail) -->
+  <line x1="14" y1="14" x2="12" y2="12" stroke="#2A1A1A" stroke-width="0.8" stroke-linecap="round"/>
+  <line x1="14" y1="14" x2="16" y2="12" stroke="#2A1A1A" stroke-width="0.7" stroke-linecap="round"/>
+  <line x1="20" y1="20" x2="18" y2="18" stroke="#2A1A1A" stroke-width="0.7" stroke-linecap="round"/>
+  <line x1="20" y1="20" x2="22" y2="18" stroke="#2A1A1A" stroke-width="0.7" stroke-linecap="round"/>
+  <line x1="26" y1="26" x2="24" y2="24" stroke="#2A1A1A" stroke-width="0.6" stroke-linecap="round"/>
+  <line x1="26" y1="26" x2="28" y2="24" stroke="#2A1A1A" stroke-width="0.6" stroke-linecap="round"/>
+  <!-- Handle end -->
+  <circle cx="35" cy="35" r="2.3" fill="#1A1010" stroke="#0A0505" stroke-width="0.5"/>
+  <!-- Dark red spark -->
+  <circle cx="7.5" cy="7.5" r="0.9" fill="#FF6666" opacity="0.8"/>
+</svg>

@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <defs>
+    <linearGradient id="shieldGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFE860"/>
+      <stop offset="25%" stop-color="#FFD700"/>
+      <stop offset="50%" stop-color="#D4A017"/>
+      <stop offset="75%" stop-color="#FFD700"/>
+      <stop offset="100%" stop-color="#B8860B"/>
+    </linearGradient>
+    <linearGradient id="crimson" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#DC143C"/>
+      <stop offset="50%" stop-color="#B01030"/>
+      <stop offset="100%" stop-color="#8B0020"/>
+    </linearGradient>
+    <radialGradient id="heroicGlow" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#FFE880" stop-opacity="0.4"/>
+      <stop offset="50%" stop-color="#FFD040" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#D4A017" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="innerGold" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFE040"/>
+      <stop offset="100%" stop-color="#C89010"/>
+    </linearGradient>
+    <filter id="badgeGlow">
+      <feGaussianBlur stdDeviation="1" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Heroic golden glow -->
+  <path d="M16,2 L26,8 L26,18 Q26,26 16,30 Q6,26 6,18 L6,8Z"
+        fill="url(#heroicGlow)" filter="url(#badgeGlow)"/>
+
+  <!-- Shield shadow -->
+  <path d="M16.5,4 L25,9 L25,18 Q25,25 16.5,29 Q8,25 8,18 L8,9Z"
+        fill="#000000" opacity="0.15"/>
+
+  <!-- Main shield shape -->
+  <path d="M16,3 L25,8 L25,17 Q25,25 16,29 Q7,25 7,17 L7,8Z"
+        fill="url(#shieldGold)" stroke="#8B6914" stroke-width="0.5"/>
+
+  <!-- Inner shield border -->
+  <path d="M16,5 L23,9 L23,17 Q23,23.5 16,27 Q9,23.5 9,17 L9,9Z"
+        fill="none" stroke="#FFE860" stroke-width="0.4" opacity="0.6"/>
+
+  <!-- Crimson inner field -->
+  <path d="M16,6 L22,9.5 L22,17 Q22,22.5 16,26 Q10,22.5 10,17 L10,9.5Z"
+        fill="url(#crimson)" stroke="#6A0018" stroke-width="0.3"/>
+
+  <!-- Hogwarts "H" crest feel -->
+  <g transform="translate(16,15.5)" fill="url(#innerGold)" stroke="#8B6914" stroke-width="0.2">
+    <!-- Central H letterform -->
+    <rect x="-4" y="-5" width="1.5" height="10" rx="0.3"/>
+    <rect x="2.5" y="-5" width="1.5" height="10" rx="0.3"/>
+    <rect x="-2.5" y="-1" width="5" height="1.5" rx="0.3"/>
+  </g>
+
+  <!-- Four quadrant dividers (Hogwarts crest style) -->
+  <line x1="16" y1="8" x2="16" y2="24" stroke="#FFD700" stroke-width="0.4" opacity="0.3"/>
+  <line x1="11" y1="15.5" x2="21" y2="15.5" stroke="#FFD700" stroke-width="0.4" opacity="0.3"/>
+
+  <!-- Corner house symbols (simplified) -->
+  <!-- Top-left: Lion suggestion (Gryffindor) -->
+  <g transform="translate(12.5,11.5)" stroke="#FFD700" stroke-width="0.3" fill="none" opacity="0.5">
+    <path d="M0,0 Q-1,-1 0,-1.5 Q1,-1 0,0"/>
+  </g>
+  <!-- Top-right: Eagle suggestion (Ravenclaw) -->
+  <g transform="translate(19.5,11.5)" stroke="#FFD700" stroke-width="0.3" fill="none" opacity="0.5">
+    <path d="M0,-1 L-0.5,0 L0.5,0Z"/>
+  </g>
+  <!-- Bottom-left: Badger suggestion (Hufflepuff) -->
+  <circle cx="12.5" cy="19.5" r="0.6" fill="none" stroke="#FFD700" stroke-width="0.3" opacity="0.5"/>
+  <!-- Bottom-right: Serpent suggestion (Slytherin) -->
+  <path d="M19,19 Q20,18.5 20,19.5 Q20,20.5 19,20" fill="none" stroke="#FFD700" stroke-width="0.3" opacity="0.5"/>
+
+  <!-- Shield top decoration -->
+  <path d="M14,3.5 Q16,2 18,3.5" fill="url(#shieldGold)" stroke="#8B6914" stroke-width="0.3"/>
+
+  <!-- Protector text banner -->
+  <path d="M10,23 Q16,24.5 22,23" fill="url(#innerGold)" stroke="#8B6914" stroke-width="0.2"/>
+  <text x="16" y="23.8" font-family="serif" font-size="1.5" font-weight="bold" fill="#6A0018" text-anchor="middle" opacity="0.8">PROTECTOR</text>
+
+  <!-- Gold rivets/studs -->
+  <circle cx="9" cy="10" r="0.5" fill="#FFE040" stroke="#B8860B" stroke-width="0.2"/>
+  <circle cx="23" cy="10" r="0.5" fill="#FFE040" stroke="#B8860B" stroke-width="0.2"/>
+  <circle cx="16" cy="6" r="0.5" fill="#FFE040" stroke="#B8860B" stroke-width="0.2"/>
+  <circle cx="9.5" cy="21" r="0.5" fill="#FFE040" stroke="#B8860B" stroke-width="0.2"/>
+  <circle cx="22.5" cy="21" r="0.5" fill="#FFE040" stroke="#B8860B" stroke-width="0.2"/>
+
+  <!-- Shield highlight -->
+  <path d="M10,8 Q12,7 14,8 Q12,10 10,12" fill="#FFFFFF" opacity="0.06"/>
+
+  <!-- Sparkle -->
+  <circle cx="22" cy="8" r="0.3" fill="#FFFFFF" opacity="0.7"/>
+  <line x1="21.5" y1="8" x2="22.5" y2="8" stroke="#FFFFFF" stroke-width="0.2" opacity="0.5"/>
+  <line x1="22" y1="7.5" x2="22" y2="8.5" stroke="#FFFFFF" stroke-width="0.2" opacity="0.5"/>
+</svg>

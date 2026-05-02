@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Wizarding World Enemy Mechanical Data",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": ["id", "lifeMax", "damage", "defense", "knockBackResist"],
+    "properties": {
+      "id": {"type": "string", "description": "Enemy class name (unique ID)"},
+      "_source": {"type": "string"},
+      "lifeMax": {"type": "integer", "minimum": 0},
+      "damage": {"type": "integer", "minimum": 0},
+      "defense": {"type": "integer", "minimum": 0},
+      "knockBackResist": {"type": "number", "minimum": 0, "maximum": 1},
+      "isBoss": {"type": "boolean"},
+      "noGravity": {"type": "boolean"},
+      "spawnContexts": {"type": "array", "items": {"type": "string"}}
+    },
+    "additionalProperties": true
+  }
+}

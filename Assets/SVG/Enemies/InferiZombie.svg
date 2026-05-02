@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36">
+  <rect width="36" height="36" fill="#0a1a2a"/>
+  <!-- Water/swamp bottom hint -->
+  <rect x="0" y="30" width="36" height="6" fill="#0a2a3a" opacity="0.5"/>
+  <path d="M0 30 Q6 28 12 30 Q18 32 24 30 Q30 28 36 30" fill="none" stroke="#1a3a4a" stroke-width="0.5" opacity="0.5"/>
+  <!-- Body - pale waterlogged corpse -->
+  <g>
+    <!-- Torso -->
+    <path d="M14 14 L13 28 L23 28 L22 14 Z" fill="#7a8a8a"/>
+    <!-- Tattered clothing remnants -->
+    <path d="M13 16 L12 18 L13 20" stroke="#4a5a5a" stroke-width="0.5" fill="none"/>
+    <path d="M23 16 L24 18 L23 20" stroke="#4a5a5a" stroke-width="0.5" fill="none"/>
+    <!-- Head -->
+    <ellipse cx="18" cy="10" rx="4.5" ry="5" fill="#7a8a8a"/>
+    <!-- Sunken dark patches -->
+    <g fill="#5a6a6a" opacity="0.4">
+      <ellipse cx="15" cy="9" rx="2" ry="1.5"/>
+      <ellipse cx="21" cy="9" rx="2" ry="1.5"/>
+      <ellipse cx="18" cy="14" rx="1.5" ry="1"/>
+    </g>
+    <!-- Hollow eyes -->
+    <ellipse cx="15.5" cy="9" rx="1.5" ry="1.8" fill="#1a2a3a"/>
+    <ellipse cx="20.5" cy="9" rx="1.5" ry="1.8" fill="#1a2a3a"/>
+    <!-- Faint ghostly eye glow -->
+    <circle cx="15.5" cy="9.2" r="0.5" fill="#6090a0" opacity="0.5"/>
+    <circle cx="20.5" cy="9.2" r="0.5" fill="#6090a0" opacity="0.5"/>
+    <!-- Nose - partially gone -->
+    <path d="M17.5 11 L18 12.5 L18.5 11" stroke="#5a6a6a" stroke-width="0.5" fill="none"/>
+    <!-- Mouth - gaping -->
+    <ellipse cx="18" cy="13.5" rx="2" ry="1" fill="#2a3a4a"/>
+    <!-- Sparse teeth -->
+    <g fill="#9aaa9a">
+      <rect x="16.5" y="12.8" width="0.6" height="0.8" rx="0.2"/>
+      <rect x="18" y="12.8" width="0.6" height="0.8" rx="0.2"/>
+      <rect x="19.2" y="12.8" width="0.6" height="0.8" rx="0.2"/>
+    </g>
+    <!-- Reaching arms -->
+    <!-- Left arm -->
+    <path d="M14 16 L6 12 L4 11" stroke="#7a8a8a" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+    <!-- Left hand reaching -->
+    <g fill="#7a8a8a">
+      <path d="M4 11 L2 9.5 L2.5 9 L4.5 10.5 Z"/>
+      <path d="M4 11 L1.5 10.5 L1.5 11 L4 11.5 Z"/>
+      <path d="M4 11 L2 12 L2.5 12.5 L4.5 11.5 Z"/>
+    </g>
+    <!-- Right arm -->
+    <path d="M22 16 L30 12 L32 11" stroke="#7a8a8a" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+    <!-- Right hand reaching -->
+    <g fill="#7a8a8a">
+      <path d="M32 11 L34 9.5 L33.5 9 L31.5 10.5 Z"/>
+      <path d="M32 11 L34.5 10.5 L34.5 11 L32 11.5 Z"/>
+      <path d="M32 11 L34 12 L33.5 12.5 L31.5 11.5 Z"/>
+    </g>
+    <!-- Legs - stiff -->
+    <rect x="14.5" y="28" width="3" height="5" rx="1" fill="#6a7a7a"/>
+    <rect x="19" y="28" width="3" height="5" rx="1" fill="#6a7a7a"/>
+    <!-- Waterlogged drip details -->
+    <g fill="#4a6a7a" opacity="0.4">
+      <path d="M13 22 L12.5 24 L13 24.5 Z"/>
+      <path d="M23 20 L23.5 22 L23 22.5 Z"/>
+      <path d="M16 28 L15.5 30 L16 30.5 Z"/>
+    </g>
+  </g>
+  <!-- Decay/wound marks -->
+  <g stroke="#5a7a7a" stroke-width="0.4" fill="none" opacity="0.5">
+    <path d="M15 18 L17 20"/>
+    <path d="M20 22 L22 24"/>
+    <path d="M7 9 L5 8"/>
+  </g>
+</svg>

@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <defs>
+    <linearGradient id="crystalVial" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#e8e8f8" stop-opacity="0.7"/>
+      <stop offset="50%" stop-color="#c8c8e8" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#a8a8d8" stop-opacity="0.6"/>
+    </linearGradient>
+    <radialGradient id="memorySwirl" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.8"/>
+      <stop offset="40%" stop-color="#c0c0e0" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#9090cc" stop-opacity="0.3"/>
+    </radialGradient>
+    <radialGradient id="etherealGlow" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#ccccff" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#8888cc" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="shimmer">
+      <feGaussianBlur stdDeviation="0.8" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <!-- Ethereal glow -->
+  <ellipse cx="16" cy="18" rx="10" ry="11" fill="url(#etherealGlow)"/>
+  <!-- Vial body -->
+  <path d="M12 10 L12 24 Q12 27 16 27 Q20 27 20 24 L20 10 Z" fill="url(#crystalVial)" stroke="#9999bb" stroke-width="0.5"/>
+  <!-- Vial neck -->
+  <rect x="13.5" y="6" width="5" height="4.5" rx="0.5" fill="url(#crystalVial)" stroke="#9999bb" stroke-width="0.5"/>
+  <!-- Cork stopper -->
+  <rect x="13" y="4" width="6" height="2.5" rx="1" fill="#c8a870" stroke="#a08050" stroke-width="0.5"/>
+  <!-- Silver memory liquid -->
+  <path d="M12.5 13 L19.5 13 L19.5 24 Q19.5 26.5 16 26.5 Q12.5 26.5 12.5 24 Z" fill="url(#memorySwirl)" opacity="0.7"/>
+  <!-- Swirling memory wisps -->
+  <path d="M14 16 Q16 14 18 16 Q16 18 14 16" fill="none" stroke="white" stroke-width="0.5" opacity="0.7" filter="url(#shimmer)"/>
+  <path d="M13.5 20 Q15 18 17 20 Q19 22 17 23" fill="none" stroke="white" stroke-width="0.4" opacity="0.6" filter="url(#shimmer)"/>
+  <path d="M15 22 Q17 21 18.5 23" fill="none" stroke="#ddddff" stroke-width="0.4" opacity="0.5" filter="url(#shimmer)"/>
+  <!-- Sparkle points in memory -->
+  <circle cx="15" cy="17" r="0.5" fill="white" opacity="0.8" filter="url(#shimmer)"/>
+  <circle cx="17.5" cy="21" r="0.4" fill="white" opacity="0.7" filter="url(#shimmer)"/>
+  <circle cx="14.5" cy="24" r="0.3" fill="white" opacity="0.6" filter="url(#shimmer)"/>
+  <!-- Glass highlight -->
+  <line x1="13" y1="10" x2="13" y2="25" stroke="white" stroke-width="0.6" opacity="0.3"/>
+  <line x1="19" y1="11" x2="19" y2="24" stroke="white" stroke-width="0.3" opacity="0.2"/>
+</svg>

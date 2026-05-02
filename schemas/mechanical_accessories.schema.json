@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Wizarding World Accessory Mechanical Data",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": ["id"],
+    "properties": {
+      "id": {"type": "string", "description": "Accessory class name (unique ID)"},
+      "_source": {"type": "string"},
+      "defense": {"type": "integer", "minimum": 0},
+      "tooltip": {"type": "string"},
+      "rarity": {"type": "string"},
+      "obsolete": {"type": "boolean"},
+      "hasRecipe": {"type": "boolean"},
+      "isAccessory": {"type": "boolean"}
+    },
+    "additionalProperties": true
+  }
+}

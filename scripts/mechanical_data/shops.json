@@ -1,0 +1,208 @@
+[
+  {
+    "npc": "Ollivander",
+    "shop": "Shop",
+    "items": [
+      {"item": "OakWand", "type": "mod", "condition": null},
+      {"item": "WillowWand", "type": "mod", "condition": null},
+      {"item": "AshWand", "type": "mod", "condition": "DownedEyeOfCthulhu"},
+      {"item": "EnchantingTableItem", "type": "mod", "condition": null},
+      {"item": "FallenStar", "type": "vanilla", "condition": null},
+      {"item": "ManaCrystal", "type": "vanilla", "condition": null},
+      {"item": "ManaPotion", "type": "vanilla", "condition": null},
+      {"item": "Book", "type": "vanilla", "condition": null}
+    ]
+  },
+  {
+    "npc": "Hagrid",
+    "shop": "Shop",
+    "items": [
+      {"item": "BasiliskSummonItem", "type": "mod", "condition": "DownedBasiliskCondition"},
+      {"item": "HorntailSummonItem", "type": "mod", "condition": "Hardmode"},
+      {"item": "GoldenSnitchItem", "type": "mod", "condition": null},
+      {"item": "Cobweb", "type": "vanilla", "condition": "InBelowSurface"},
+      {"item": "SpiderFang", "type": "vanilla", "condition": "Hardmode"},
+      {"item": "Feather", "type": "vanilla", "condition": null},
+      {"item": "UnicornHorn", "type": "vanilla", "condition": "Hardmode"},
+      {"item": "ForestLantern", "type": "mod", "condition": "DownedBasiliskCondition"},
+      {"item": "WillowPassageToken", "type": "mod", "condition": "DownedFenrir"}
+    ]
+  },
+  {
+    "npc": "Dobby",
+    "shop": "Shop",
+    "items": [
+      {"item": "Torch", "type": "vanilla", "condition": null},
+      {"item": "Rope", "type": "vanilla", "condition": null},
+      {"item": "HealingPotion", "type": "vanilla", "condition": null},
+      {"item": "ManaPotion", "type": "vanilla", "condition": null},
+      {"item": "RecallPotion", "type": "vanilla", "condition": null},
+      {"item": "WormholePotion", "type": "vanilla", "condition": null},
+      {"item": "SortingHat", "type": "mod", "condition": null},
+      {"item": "Butterbeer", "type": "mod", "condition": null}
+    ]
+  },
+  {
+    "npc": "PotionsMaster",
+    "shop": "Shop",
+    "items": [
+      {"item": "Butterbeer", "type": "mod", "condition": null},
+      {"item": "FelixFelicis", "type": "mod", "condition": "Hardmode"},
+      {"item": "PolyjuicePotion", "type": "mod", "condition": "Hardmode"},
+      {"item": "WolfsbanePotion", "type": "mod", "condition": "Hardmode"},
+      {"item": "Bottle", "type": "vanilla", "condition": null},
+      {"item": "Mushroom", "type": "vanilla", "condition": null},
+      {"item": "Daybloom", "type": "vanilla", "condition": null},
+      {"item": "Moonglow", "type": "vanilla", "condition": null},
+      {"item": "Deathweed", "type": "vanilla", "condition": "Hardmode"}
+    ]
+  },
+  {
+    "npc": "FredAndGeorge",
+    "shop": "Shop",
+    "items": [
+      {"item": "WeasleyFireworks", "type": "mod", "condition": null},
+      {"item": "WeasleyBlazeBox", "type": "mod", "condition": null},
+      {"item": "DecoyDetonator", "type": "mod", "condition": null},
+      {"item": "Howler", "type": "mod", "condition": null},
+      {"item": "PeruvianDarknessPowder", "type": "mod", "condition": null},
+      {"item": "ShieldHat", "type": "mod", "condition": null},
+      {"item": "ExtendableEars", "type": "mod", "condition": null},
+      {"item": "Spectrespecs", "type": "mod", "condition": null},
+      {"item": "KeeperGloves", "type": "mod", "condition": null},
+      {"item": "ScreechingHowler", "type": "mod", "condition": null},
+      {"item": "BertieBottsBeans", "type": "mod", "condition": null},
+      {"item": "ChocolateFrog", "type": "mod", "condition": null},
+      {"item": "PeppermintToad", "type": "mod", "condition": null},
+      {"item": "ChocolateCauldron", "type": "mod", "condition": null},
+      {"item": "SkivingSnackbox", "type": "mod", "condition": null},
+      {"item": "PukingPastille", "type": "mod", "condition": null},
+      {"item": "NosebleedNougat", "type": "mod", "condition": null},
+      {"item": "StealthDraught", "type": "mod", "condition": "Hardmode"},
+      {"item": "FlooPowder", "type": "mod", "condition": null},
+      {"item": "Portkey", "type": "mod", "condition": null},
+      {"item": "PadfootAmulet", "type": "mod", "condition": "Hardmode"},
+      {"item": "ProngsCharm", "type": "mod", "condition": "Hardmode"}
+    ]
+  },
+  {
+    "npc": "Dumbledore",
+    "shop": "Shop",
+    "items": [
+      {"item": "WizardsAlmanac", "type": "mod", "condition": null},
+      {"item": "PhoenixTear", "type": "mod", "condition": null},
+      {"item": "SuperManaPotion", "type": "vanilla", "condition": null},
+      {"item": "SuperHealingPotion", "type": "vanilla", "condition": null}
+    ]
+  },
+  {
+    "npc": "Centaur",
+    "shop": "Shop",
+    "items": [
+      {"item": "Remembrall", "type": "mod", "condition": null},
+      {"item": "Sneakoscope", "type": "mod", "condition": null},
+      {"item": "MaraudersMap", "type": "mod", "condition": null},
+      {"item": "Veritaserum", "type": "mod", "condition": "Hardmode"},
+      {"item": "Lens", "type": "vanilla", "condition": null},
+      {"item": "FallenStar", "type": "vanilla", "condition": null},
+      {"item": "CrystalBall", "type": "vanilla", "condition": "Hardmode"}
+    ]
+  },
+  {
+    "npc": "MadamHooch",
+    "shop": "Shop",
+    "items": [
+      {"item": "QuidditchWhistle", "type": "mod", "condition": null},
+      {"item": "Quaffle", "type": "mod", "condition": null},
+      {"item": "BeatersBat", "type": "mod", "condition": null},
+      {"item": "FlyingCarpet", "type": "vanilla", "condition": "Hardmode"}
+    ]
+  },
+  {
+    "npc": "KingsleyShacklebolt",
+    "shop": "Shop",
+    "items": [
+      {"item": "MinistryVisitorBadge", "type": "mod", "condition": null},
+      {"item": "AzkabanBreachStone", "type": "mod", "condition": null},
+      {"item": "AzkabanWardSigil", "type": "mod", "condition": null},
+      {"item": "SecretKeeperNote", "type": "mod", "condition": "PostDementorKing"},
+      {"item": "SoulofNight", "type": "vanilla", "condition": "Hardmode"}
+    ]
+  },
+  {
+    "npc": "MadamRosmerta",
+    "shop": "Shop",
+    "items": [
+      {"item": "Butterbeer", "type": "mod", "condition": null},
+      {"item": "FizzyWhizbee", "type": "mod", "condition": null},
+      {"item": "PepperImp", "type": "mod", "condition": null},
+      {"item": "SugarQuill", "type": "mod", "condition": null},
+      {"item": "AcidPop", "type": "mod", "condition": null},
+      {"item": "DrooblesBestBlowingGum", "type": "mod", "condition": null},
+      {"item": "ChocolateFrog", "type": "mod", "condition": null},
+      {"item": "PeppermintToad", "type": "mod", "condition": null}
+    ]
+  },
+  {
+    "npc": "GoblinTeller",
+    "shop": "Shop",
+    "items": [
+      {"item": "GringottsVaultKey", "type": "mod", "condition": null},
+      {"item": "GoldCoin", "type": "vanilla", "condition": "Hardmode"},
+      {"item": "PlatinumCoin", "type": "vanilla", "condition": "DownedMoonLord"}
+    ]
+  },
+  {
+    "npc": "MrBorgin",
+    "shop": "Shop",
+    "items": [
+      {"item": "KnockturnPass", "type": "mod", "condition": null},
+      {"item": "DarkArtsTome", "type": "mod", "condition": null},
+      {"item": "SoulofNight", "type": "vanilla", "condition": "Hardmode"}
+    ]
+  },
+  {
+    "npc": "Healer",
+    "shop": "Shop",
+    "items": [
+      {"item": "StMungosPass", "type": "mod", "condition": null},
+      {"item": "PepperupPotion", "type": "mod", "condition": null},
+      {"item": "SkeleGro", "type": "mod", "condition": null},
+      {"item": "MandrakeRestorative", "type": "mod", "condition": null},
+      {"item": "HealingPotion", "type": "vanilla", "condition": null},
+      {"item": "RestorationPotion", "type": "vanilla", "condition": null}
+    ]
+  },
+  {
+    "npc": "AberforthDumbledore",
+    "shop": "Shop",
+    "items": [
+      {"item": "DAGalleon", "type": "mod", "condition": null},
+      {"item": "AzkabanWardSigil", "type": "mod", "condition": null},
+      {"item": "WillowPassageToken", "type": "mod", "condition": null},
+      {"item": "Butterbeer", "type": "mod", "condition": null},
+      {"item": "HealingPotion", "type": "vanilla", "condition": null}
+    ]
+  },
+  {
+    "npc": "RemusLupin",
+    "shop": "Shop",
+    "items": [
+      {"item": "WillowPassageToken", "type": "mod", "condition": null},
+      {"item": "WolfsbanePotion", "type": "mod", "condition": null},
+      {"item": "MaraudersMap", "type": "mod", "condition": null},
+      {"item": "PepperupPotion", "type": "mod", "condition": null},
+      {"item": "SoulofLight", "type": "vanilla", "condition": "Hardmode"}
+    ]
+  },
+  {
+    "npc": "NevilleLongbottom",
+    "shop": "Shop",
+    "items": [
+      {"item": "HorcruxTracker", "type": "mod", "condition": null},
+      {"item": "SwordOfGryffindor", "type": "mod", "condition": null},
+      {"item": "MandrakeRestorative", "type": "mod", "condition": null},
+      {"item": "HealingPotion", "type": "vanilla", "condition": null}
+    ]
+  }
+]

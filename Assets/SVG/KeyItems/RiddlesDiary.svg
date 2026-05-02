@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <defs>
+    <linearGradient id="leatherCover" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3A2A1A"/>
+      <stop offset="30%" stop-color="#2A1A0A"/>
+      <stop offset="70%" stop-color="#1E1208"/>
+      <stop offset="100%" stop-color="#141008"/>
+    </linearGradient>
+    <linearGradient id="spine" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#1A1008"/>
+      <stop offset="50%" stop-color="#2A1A0A"/>
+      <stop offset="100%" stop-color="#1A1008"/>
+    </linearGradient>
+    <linearGradient id="pages" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#D8C8A0"/>
+      <stop offset="100%" stop-color="#C8B890"/>
+    </linearGradient>
+    <radialGradient id="darkAura" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#200020" stop-opacity="0"/>
+      <stop offset="60%" stop-color="#180018" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#300030" stop-opacity="0.35"/>
+    </radialGradient>
+    <radialGradient id="inkStain" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#000000" stop-opacity="0.8"/>
+      <stop offset="60%" stop-color="#0A0020" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#1A0030" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="darkGlow">
+      <feGaussianBlur stdDeviation="1.5"/>
+    </filter>
+  </defs>
+
+  <!-- Dark aura surrounding the diary -->
+  <rect x="2" y="2" width="28" height="28" rx="4" fill="url(#darkAura)" filter="url(#darkGlow)"/>
+
+  <!-- Dark wisps emanating -->
+  <path d="M6,8 Q3,5 5,3" stroke="#2A0030" stroke-width="0.5" fill="none" opacity="0.3" filter="url(#darkGlow)"/>
+  <path d="M26,8 Q29,5 27,3" stroke="#2A0030" stroke-width="0.5" fill="none" opacity="0.3" filter="url(#darkGlow)"/>
+  <path d="M8,26 Q5,28 6,30" stroke="#2A0030" stroke-width="0.4" fill="none" opacity="0.2" filter="url(#darkGlow)"/>
+
+  <!-- Book shadow -->
+  <rect x="8" y="7" width="18" height="22" rx="1" fill="#000000" opacity="0.3" transform="translate(1,1)"/>
+
+  <!-- Page edges visible -->
+  <rect x="10" y="7.5" width="16" height="20.5" rx="0.5" fill="url(#pages)" stroke="#A09070" stroke-width="0.2"/>
+  <!-- Page lines -->
+  <line x1="10" y1="9" x2="26" y2="9" stroke="#B0A080" stroke-width="0.15"/>
+  <line x1="10" y1="11" x2="26" y2="11" stroke="#B0A080" stroke-width="0.15"/>
+  <line x1="10" y1="13" x2="26" y2="13" stroke="#B0A080" stroke-width="0.15"/>
+
+  <!-- Back cover -->
+  <rect x="7" y="6" width="19" height="22" rx="1.5" fill="#1E1208" stroke="#0E0804" stroke-width="0.3"/>
+
+  <!-- Spine -->
+  <rect x="7" y="6" width="2.5" height="22" rx="0.5" fill="url(#spine)" stroke="#0E0804" stroke-width="0.3"/>
+  <!-- Spine ridges -->
+  <line x1="7" y1="9" x2="9.5" y2="9" stroke="#3A2A1A" stroke-width="0.3"/>
+  <line x1="7" y1="14" x2="9.5" y2="14" stroke="#3A2A1A" stroke-width="0.3"/>
+  <line x1="7" y1="19" x2="9.5" y2="19" stroke="#3A2A1A" stroke-width="0.3"/>
+  <line x1="7" y1="24" x2="9.5" y2="24" stroke="#3A2A1A" stroke-width="0.3"/>
+
+  <!-- Front cover -->
+  <rect x="8" y="5" width="18" height="22" rx="1.5" fill="url(#leatherCover)" stroke="#0E0804" stroke-width="0.4"/>
+
+  <!-- Leather texture lines -->
+  <path d="M10,7 Q14,8 12,12 Q10,16 14,20 Q12,24 10,26" stroke="#241408" stroke-width="0.2" fill="none" opacity="0.4"/>
+  <path d="M22,7 Q18,10 20,14 Q22,18 18,22 Q20,25 22,26" stroke="#241408" stroke-width="0.2" fill="none" opacity="0.4"/>
+
+  <!-- "T.M. Riddle" text area - embossed feel -->
+  <rect x="12" y="12" width="10" height="5" rx="0.5" fill="#1A1008" stroke="#302010" stroke-width="0.2" opacity="0.6"/>
+  <text x="17" y="15.8" font-family="serif" font-size="2.2" fill="#4A3A2A" text-anchor="middle" opacity="0.7">T.M. Riddle</text>
+
+  <!-- Year -->
+  <text x="17" y="22" font-family="serif" font-size="1.6" fill="#3A2A1A" text-anchor="middle" opacity="0.5">1943</text>
+
+  <!-- Ink stain on cover -->
+  <ellipse cx="21" cy="21" rx="3" ry="2.5" fill="url(#inkStain)"/>
+  <!-- Ink splatter drops -->
+  <circle cx="23" cy="19.5" r="0.5" fill="#000010" opacity="0.5"/>
+  <circle cx="19.5" cy="23" r="0.3" fill="#000010" opacity="0.4"/>
+  <circle cx="23.5" cy="22" r="0.2" fill="#000010" opacity="0.3"/>
+
+  <!-- Hole/damage hint from basilisk fang -->
+  <ellipse cx="17" cy="16" rx="0.5" ry="0.3" fill="#0A0000" opacity="0.2"/>
+
+  <!-- Corner wear -->
+  <path d="M25,5 L26,5 L26,6" fill="#3A2A1A" opacity="0.3"/>
+  <path d="M25,27 L26,27 L26,26" fill="#3A2A1A" opacity="0.3"/>
+</svg>

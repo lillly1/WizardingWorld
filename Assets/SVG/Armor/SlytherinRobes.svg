@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <defs>
+    <linearGradient id="slythRobe" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1a5c1a"/>
+      <stop offset="100%" stop-color="#0a3a0a"/>
+    </linearGradient>
+  </defs>
+  <rect width="32" height="32" rx="4" fill="#1a1a1a"/>
+  <!-- Robe body -->
+  <g>
+    <!-- Main robe -->
+    <path d="M10 8 L8 28 Q8 30 10 30 L22 30 Q24 30 24 28 L22 8 Z" fill="url(#slythRobe)"/>
+    <!-- Collar / neckline -->
+    <path d="M12 8 Q16 6 20 8 L20 10 Q16 9 12 10 Z" fill="#c0c0c0"/>
+    <!-- Shoulder seams -->
+    <path d="M10 8 L8 10 L10 10 Z" fill="#145014"/>
+    <path d="M22 8 L24 10 L22 10 Z" fill="#145014"/>
+    <!-- Sleeves -->
+    <path d="M8 10 L4 18 L5 19 L10 13 Z" fill="url(#slythRobe)"/>
+    <path d="M24 10 L28 18 L27 19 L22 13 Z" fill="url(#slythRobe)"/>
+    <!-- Sleeve cuffs -->
+    <rect x="4" y="17" width="2" height="2" rx="0.5" fill="#c0c0c0"/>
+    <rect x="26" y="17" width="2" height="2" rx="0.5" fill="#c0c0c0"/>
+    <!-- Center robe opening line -->
+    <line x1="16" y1="10" x2="16" y2="30" stroke="#082a08" stroke-width="0.5"/>
+    <!-- Silver trim lines -->
+    <line x1="11" y1="10" x2="10" y2="30" stroke="#c0c0c0" stroke-width="0.4" opacity="0.5"/>
+    <line x1="21" y1="10" x2="22" y2="30" stroke="#c0c0c0" stroke-width="0.4" opacity="0.5"/>
+    <!-- Belt/sash -->
+    <rect x="10" y="18" width="12" height="1.5" rx="0.5" fill="#c0c0c0"/>
+    <!-- Serpent crest on chest -->
+    <g transform="translate(13,11) scale(0.4)">
+      <circle cx="7" cy="7" r="6" fill="#c0c0c0" stroke="#e0e0e0" stroke-width="0.5"/>
+      <!-- Mini serpent S-shape -->
+      <path d="M5 4 Q9 3 9 6 Q9 8 5 8 Q3 8 3 10 Q3 12 7 11" stroke="#1a5c1a" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+      <!-- Eye -->
+      <circle cx="7.5" cy="11" r="0.4" fill="#cc0000"/>
+    </g>
+    <!-- Robe bottom hem -->
+    <path d="M8 28 Q12 29 16 28 Q20 29 24 28 L24 30 L8 30 Z" fill="#0a3a0a"/>
+  </g>
+  <!-- Silver buttons -->
+  <circle cx="15" cy="13" r="0.5" fill="#e0e0e0"/>
+  <circle cx="15" cy="15.5" r="0.5" fill="#e0e0e0"/>
+</svg>

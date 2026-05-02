@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+  <defs>
+    <linearGradient id="darkLordRobe" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1a1a1a"/>
+      <stop offset="100%" stop-color="#0a0a0a"/>
+    </linearGradient>
+    <radialGradient id="paleSkin" cx="0.5" cy="0.4" r="0.5">
+      <stop offset="0%" stop-color="#f0ece8"/>
+      <stop offset="100%" stop-color="#d0ccc4"/>
+    </radialGradient>
+    <radialGradient id="redEye" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#ff2020"/>
+      <stop offset="100%" stop-color="#aa0000"/>
+    </radialGradient>
+    <radialGradient id="darkAura" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#1a1a1a" stop-opacity="0"/>
+      <stop offset="70%" stop-color="#0a1a0a" stop-opacity="0.1"/>
+      <stop offset="100%" stop-color="#0a2a0a" stop-opacity="0.2"/>
+    </radialGradient>
+  </defs>
+  <!-- Dark aura -->
+  <ellipse cx="24" cy="24" rx="23" ry="23" fill="url(#darkAura)"/>
+  <!-- Flowing black robes -->
+  <path d="M6 30 Q8 24 16 22 L24 20 L32 22 Q40 24 42 30 L44 48 L4 48Z" fill="url(#darkLordRobe)"/>
+  <!-- Robe inner folds -->
+  <path d="M16 22 L20 30 L24 32 L28 30 L32 22" fill="none" stroke="#2a2a2a" stroke-width="0.4"/>
+  <path d="M20 26 L24 28 L28 26" fill="none" stroke="#2a2a2a" stroke-width="0.3"/>
+  <!-- Silver Slytherin clasp -->
+  <path d="M22 23 Q24 22 26 23 Q24 25 22 23Z" fill="#c0c0c0" stroke="#a0a0a0" stroke-width="0.2"/>
+  <!-- Snake on clasp -->
+  <path d="M23 23 Q24 22.5 25 23 Q24 23.5 23 23" fill="none" stroke="#4a8a4a" stroke-width="0.2"/>
+  <!-- Pale serpentine neck -->
+  <path d="M19 16 Q20 18 24 19 Q28 18 29 16 L29 22 L19 22Z" fill="url(#paleSkin)"/>
+  <!-- Veins visible on neck -->
+  <path d="M22 18 Q22 19 21 20" fill="none" stroke="#b0b8c0" stroke-width="0.2" opacity="0.3"/>
+  <path d="M26 18 Q26 19 27 20" fill="none" stroke="#b0b8c0" stroke-width="0.2" opacity="0.3"/>
+  <!-- Pale skull-like head -->
+  <ellipse cx="24" cy="10" rx="8" ry="9" fill="url(#paleSkin)"/>
+  <!-- Bald head - no hair, slightly veined -->
+  <path d="M18 5 Q20 3 24 2 Q28 3 30 5" fill="none" stroke="#c0c4c8" stroke-width="0.3" opacity="0.3"/>
+  <path d="M20 4 Q24 3 28 4" fill="none" stroke="#c0c4c8" stroke-width="0.2" opacity="0.2"/>
+  <!-- Visible veins on temple -->
+  <path d="M17 6 Q16 8 17 10" fill="none" stroke="#8a9aaa" stroke-width="0.3" opacity="0.3"/>
+  <path d="M31 6 Q32 8 31 10" fill="none" stroke="#8a9aaa" stroke-width="0.3" opacity="0.3"/>
+  <!-- Pronounced brow ridge -->
+  <path d="M18 7 Q21 5.5 24 6" fill="none" stroke="#c0b8b0" stroke-width="0.6"/>
+  <path d="M24 6 Q27 5.5 30 7" fill="none" stroke="#c0b8b0" stroke-width="0.6"/>
+  <!-- Red slit eyes -->
+  <ellipse cx="20.5" cy="9" rx="2.5" ry="1.5" fill="url(#redEye)"/>
+  <ellipse cx="27.5" cy="9" rx="2.5" ry="1.5" fill="url(#redEye)"/>
+  <!-- Vertical slit pupils -->
+  <ellipse cx="20.5" cy="9" rx="0.5" ry="1.3" fill="#1a0000"/>
+  <ellipse cx="27.5" cy="9" rx="0.5" ry="1.3" fill="#1a0000"/>
+  <!-- Eye glow -->
+  <ellipse cx="20.5" cy="9" rx="3" ry="2" fill="none" stroke="#ff2020" stroke-width="0.3" opacity="0.2"/>
+  <ellipse cx="27.5" cy="9" rx="3" ry="2" fill="none" stroke="#ff2020" stroke-width="0.3" opacity="0.2"/>
+  <circle cx="21" cy="8.5" r="0.3" fill="white" opacity="0.3"/>
+  <circle cx="28" cy="8.5" r="0.3" fill="white" opacity="0.3"/>
+  <!-- NO NOSE - flat serpentine slits -->
+  <path d="M23.5 11.5 L23 12.5" fill="none" stroke="#b0a8a0" stroke-width="0.4"/>
+  <path d="M24.5 11.5 L25 12.5" fill="none" stroke="#b0a8a0" stroke-width="0.4"/>
+  <!-- Slight nose bridge depression -->
+  <path d="M23 10.5 Q24 11 25 10.5" fill="none" stroke="#c0b8b0" stroke-width="0.3" opacity="0.4"/>
+  <!-- Thin cruel lipless mouth -->
+  <path d="M21 14.5 Q24 15 27 14.5" fill="none" stroke="#8a6a6a" stroke-width="0.5"/>
+  <path d="M22 14.8 Q24 15.2 26 14.8" fill="none" stroke="#6a4a4a" stroke-width="0.3"/>
+  <!-- Sunken cheeks -->
+  <path d="M17 12 Q18 14 19 12" fill="#c8c0b8" opacity="0.3"/>
+  <path d="M29 12 Q30 14 31 12" fill="#c8c0b8" opacity="0.3"/>
+  <!-- Elder Wand raised - the most powerful wand -->
+  <line x1="40" y1="18" x2="46" y2="4" stroke="#d0c8b0" stroke-width="1.2" stroke-linecap="round"/>
+  <!-- Elder Wand knobs/detail -->
+  <circle cx="44" cy="8" r="0.6" fill="#d0c8b0" stroke="#b0a890" stroke-width="0.2"/>
+  <circle cx="45" cy="6" r="0.5" fill="#d0c8b0" stroke="#b0a890" stroke-width="0.2"/>
+  <!-- Wand tip magic - green killing curse -->
+  <circle cx="46" cy="4" r="2.5" fill="#2aaa2a" opacity="0.3"/>
+  <circle cx="46" cy="4" r="1.5" fill="#4aff4a" opacity="0.4"/>
+  <circle cx="46" cy="4" r="0.8" fill="#80ff80" opacity="0.6"/>
+  <!-- Green spell sparks -->
+  <circle cx="44" cy="2" r="0.3" fill="#4aff4a" opacity="0.4"/>
+  <circle cx="47" cy="2" r="0.25" fill="#4aff4a" opacity="0.3"/>
+  <circle cx="48" cy="4" r="0.3" fill="#2aaa2a" opacity="0.3"/>
+  <circle cx="45" cy="6" r="0.2" fill="#4aff4a" opacity="0.3"/>
+  <!-- Hand holding wand - pale skeletal -->
+  <path d="M38 20 Q40 18 42 16" fill="none" stroke="url(#paleSkin)" stroke-width="1.5"/>
+  <path d="M42 16 L43 15" fill="none" stroke="#e0dcd4" stroke-width="0.5" stroke-linecap="round"/>
+  <path d="M42 16 L43.5 16" fill="none" stroke="#e0dcd4" stroke-width="0.5" stroke-linecap="round"/>
+  <!-- Dark Mark green tinge in sky -->
+  <path d="M2 4 Q4 2 6 4 Q4 6 2 4" fill="#2a6a2a" opacity="0.15"/>
+  <path d="M4 2 L4 0" fill="none" stroke="#2a6a2a" stroke-width="0.3" opacity="0.1"/>
+</svg>

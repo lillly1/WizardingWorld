@@ -1,0 +1,527 @@
+[
+  {
+    "id": "ApparitionCharm",
+    "_source": "ApparitionCharm.cs",
+    "rarity": "Yellow",
+    "obsolete": false,
+    "hasRecipe": true,
+    "isAccessory": true
+  },
+  {
+    "id": "AzkabanWardensKey",
+    "_source": "AzkabanWardensKey.cs",
+    "rarity": "Yellow",
+    "obsolete": false,
+    "hasRecipe": false,
+    "isAccessory": true
+  },
+  {
+    "id": "BasiliskFang",
+    "_source": "BasiliskFang.cs",
+    "rarity": "Orange",
+    "obsolete": false,
+    "hasRecipe": false,
+    "isAccessory": true
+  },
+  {
+    "id": "BeastHuntersCharm",
+    "_source": "BeastHuntersCharm.cs",
+    "rarity": "Yellow",
+    "obsolete": false,
+    "hasRecipe": true,
+    "isAccessory": true
+  },
+  {
+    "id": "BossCompass",
+    "_source": "BossCompass.cs",
+    "rarity": "Orange",
+    "obsolete": false,
+    "hasRecipe": true,
+    "isAccessory": true
+  },
+  {
+    "id": "CamouflageCloak",
+    "_source": "CamouflageCloak.cs",
+    "rarity": "Lt Red",
+    "obsolete": false,
+    "hasRecipe": true,
+    "isAccessory": true
+  },
+  {
+    "id": "CerberusFangNecklace",
+    "_source": "CerberusFangNecklace.cs",
+    "rarity": "Pink",
+    "obsolete": false,
+    "hasRecipe": true,
+    "isAccessory": true
+  },
+  {
+    "id": "ChampionsMedallion",
+    "_source": "ChampionsMedallion.cs",
+    "rarity": "Yellow",
+    "obsolete": false,
+    "hasRecipe": true,
+    "isAccessory": true
+  },
+  {
+    "id": "ChampionsTrophy",
+    "_source": "ChampionsTrophy.cs",
+    "rarity": "Yellow",
+    "obsolete": false,
+    "hasRecipe": false,
+    "isAccessory": true
+  },
+  {
+    "id": "DarkLordsBane",
+    "_source": "DarkLordsBane.cs",
+    "rarity": "Red",
+    "obsolete": false,
+    "hasRecipe": true,
+    "isAccessory": true
+  },
+  {
+    "id": "DefendersSignet",
+    "_source": "DefendersSignet.cs",
+    "rarity": "Lt Purple",
+    "obsolete": false,
+    "hasRecipe": true,
+    "isAccessory": true
+  },
+  {
+    "id": "Deluminator",
+    "_source": "Deluminator.cs",
+    "rarity": "Lt Purple",
+    "obsolete": false,
+    "hasRecipe": true,
+    "isAccessory": true
+  },
+  {
+    "id": "DementorsEmbrace",
+    "_source": "DementorsEmbrace.cs",
+    "rarity": "Red",
+    "obsolete": false,
+    "hasRecipe": true,
+    "isAccessory": true
+  },
+  {
+    "id": "DemiguiseCloak",
+    "_source": "DemiguiseCloak.cs",
+    "rarity": "Lt Purple",
+    "obsolete": false,
+    "hasRecipe": true,
+    "isAccessory": true
+  },
+  {
+    "id": "DiademOfRavenclaw",
+    "_source": "DiademOfRavenclaw.cs",
+    "rarity": "Lt Purple",
+    "obsolete": false,
+    "hasRecipe": true,
+    "isAccessory": true
+  },
+  {
+    "id": "DirigiblePlumEarring",
+    "_source": "DirigiblePlumEarring.cs",
+    "rarity": "Orange",
+    "obsolete": false,
+    "hasRecipe": true,
+    "isAccessory": true
+  },
+  {
+    "id": "DragonScaleRing",
+    "_source": "DragonScaleRing.cs",
+    "rarity": "Pink",
+    "obsolete": false,
+    "hasRecipe": true,
+    "isAccessory": true
+  },
+  {
+    "id": "DragonToothNecklace",
+    "_source": "DragonToothNecklace.cs",
+    "rarity": "Lt Purple",
+    "obsolete": false,
+    "hasRecipe": true,
+    "isAccessory": true
+  },
+  {
+    "id": "EnchantedMirror",
+    "_source": "EnchantedMirror.cs",
+    "rarity": "Orange",
+    "obsolete": false,
+    "hasRecipe": true,
+    "isAccessory": true
+  },
+  {
+    "id": "ExtendableEars",
+    "_source": "ExtendableEars.cs",
+    "rarity": "Green",
+    "obsolete": false,
+    "hasRecipe": true,
+    "isAccessory": true
+  },
+  {
+    "id": "FairyWings",
+    "_source": "FairyWings.cs",
+    "rarity": "Pink",
+    "obsolete": false,
+    "hasRecipe": true,
+    "isAccessory": true
+  },
+  {
+    "id": "FoeGlass",
+    "_source": "FoeGlass.cs",
+    "rarity": "Lt Red",
+    "obsolete": false,
+    "hasRecipe": true,
+    "isAccessory": true
+  },
+  {
+    "id": "ForestWarden",
+    "_source": "ForestWarden.cs",
+    "rarity": "Orange",
+    "obsolete": false,
+    "hasRecipe": true,
+    "isAccessory": true
+  },
+  {
+    "id": "GauntsRing",
+    "_source": "GauntsRing.cs",
+    "rarity": "Lt Purple",
+    "obsolete": false,
+    "hasRecipe": false,
+    "isAccessory": true
+  },
+  {
+    "id": "GoblinLedger",
+    "_source": "GoblinLedger.cs",
+    "rarity": "Orange",
+    "obsolete": false,
+    "hasRecipe": true,
+    "isAccessory": true
+  },
+  {
+    "id": "HandOfGlory",
+    "_source": "HandOfGlory.cs",
+    "rarity": "Lt Purple",
+    "obsolete": false,
+    "hasRecipe": true,
+    "isAccessory": true
+  },
+  {
+    "id": "HealersSatchel",
+    "_source": "HealersSatchel.cs",
+    "rarity": "Lt Red",
+    "obsolete": false,
+    "hasRecipe": true,
+    "isAccessory": true
+  },
+  {
+    "id": "HufflepuffsCup",
+    "_source": "HufflepuffsCup.cs",
+    "rarity": "Lt Purple",
+    "obsolete": false,
+    "hasRecipe": true,
+    "isAccessory": true
+  },
+  {
+    "id": "InvisibilityCloak",
+    "_source": "InvisibilityCloak.cs",
+    "rarity": "Red",
+    "obsolete": false,
+    "hasRecipe": false,
+    "isAccessory": true
+  },
+  {
+    "id": "KeeperGloves",
+    "_source": "KeeperGloves.cs",
+    "rarity": "Orange",
+    "obsolete": false,
+    "hasRecipe": true,
+    "isAccessory": true
+  },
+  {
+    "id": "LightningScar",
+    "_source": "LightningScar.cs",
+    "rarity": "Orange",
+    "obsolete": false,
+    "hasRecipe": true,
+    "isAccessory": true
+  },
+  {
+    "id": "MaraudersMap",
+    "_source": "MaraudersMap.cs",
+    "rarity": "Orange",
+    "obsolete": false,
+    "hasRecipe": true,
+    "isAccessory": true
+  },
+  {
+    "id": "MasterWizardBanner",
+    "_source": "MasterWizardBanner.cs",
+    "rarity": "Purple",
+    "obsolete": false,
+    "hasRecipe": true,
+    "isAccessory": true
+  },
+  {
+    "id": "MerfolkAmulet",
+    "_source": "MerfolkAmulet.cs",
+    "rarity": "Lt Red",
+    "obsolete": false,
+    "hasRecipe": true,
+    "isAccessory": true
+  },
+  {
+    "id": "MoodysEye",
+    "_source": "MoodysEye.cs",
+    "rarity": "Lt Purple",
+    "obsolete": false,
+    "hasRecipe": true,
+    "isAccessory": true
+  },
+  {
+    "id": "MoonwardPendant",
+    "_source": "MoonwardPendant.cs",
+    "rarity": "Lt Purple",
+    "obsolete": false,
+    "hasRecipe": true,
+    "isAccessory": true
+  },
+  {
+    "id": "OrderBadge",
+    "_source": "OrderBadge.cs",
+    "rarity": "Lt Purple",
+    "obsolete": false,
+    "hasRecipe": true,
+    "isAccessory": true
+  },
+  {
+    "id": "OrderSignet",
+    "_source": "OrderSignet.cs",
+    "rarity": "Lt Purple",
+    "obsolete": false,
+    "hasRecipe": true,
+    "isAccessory": true
+  },
+  {
+    "id": "PadfootAmulet",
+    "_source": "PadfootAmulet.cs",
+    "rarity": "Lt Purple",
+    "obsolete": false,
+    "hasRecipe": true,
+    "isAccessory": true
+  },
+  {
+    "id": "PatronusCharm",
+    "_source": "PatronusCharm.cs",
+    "damage": 65,
+    "useTime": 36,
+    "mana": 25,
+    "knockBack": 5.0,
+    "rarity": "Yellow",
+    "projectile": "PatronusGuardian",
+    "buffType": "PatronusCharmBuff",
+    "obsolete": false,
+    "hasRecipe": true,
+    "isAccessory": false
+  },
+  {
+    "id": "PatronusFocus",
+    "_source": "PatronusFocus.cs",
+    "rarity": "Yellow",
+    "obsolete": false,
+    "hasRecipe": true,
+    "isAccessory": true
+  },
+  {
+    "id": "Pensieve",
+    "_source": "Pensieve.cs",
+    "rarity": "Lt Purple",
+    "obsolete": false,
+    "hasRecipe": true,
+    "isAccessory": true
+  },
+  {
+    "id": "PhilosophersStone",
+    "_source": "PhilosophersStone.cs",
+    "rarity": "Red",
+    "obsolete": false,
+    "hasRecipe": true,
+    "isAccessory": true
+  },
+  {
+    "id": "PrefectBadge",
+    "_source": "PrefectBadge.cs",
+    "rarity": "Lt Red",
+    "obsolete": false,
+    "hasRecipe": true,
+    "isAccessory": true
+  },
+  {
+    "id": "ProngsCharm",
+    "_source": "ProngsCharm.cs",
+    "rarity": "Lt Purple",
+    "obsolete": false,
+    "hasRecipe": true,
+    "isAccessory": true
+  },
+  {
+    "id": "ProtectorsBadge",
+    "_source": "ProtectorsBadge.cs",
+    "rarity": "Lt Purple",
+    "obsolete": false,
+    "hasRecipe": true,
+    "isAccessory": true
+  },
+  {
+    "id": "QuillOfAcceptance",
+    "_source": "QuillOfAcceptance.cs",
+    "rarity": "Lt Purple",
+    "obsolete": false,
+    "hasRecipe": true,
+    "isAccessory": true
+  },
+  {
+    "id": "Remembrall",
+    "_source": "Remembrall.cs",
+    "rarity": "Blue",
+    "obsolete": false,
+    "hasRecipe": true,
+    "isAccessory": true
+  },
+  {
+    "id": "ResurrectionStone",
+    "_source": "ResurrectionStone.cs",
+    "rarity": "Red",
+    "obsolete": false,
+    "hasRecipe": false,
+    "isAccessory": true
+  },
+  {
+    "id": "RiddlesDiary",
+    "_source": "RiddlesDiary.cs",
+    "rarity": "Lt Purple",
+    "obsolete": false,
+    "hasRecipe": true,
+    "isAccessory": true
+  },
+  {
+    "id": "ShieldHat",
+    "_source": "ShieldHat.cs",
+    "rarity": "Lt Red",
+    "obsolete": false,
+    "hasRecipe": true,
+    "isAccessory": true
+  },
+  {
+    "id": "SlytherinsLocket",
+    "_source": "SlytherinsLocket.cs",
+    "rarity": "Lt Purple",
+    "obsolete": false,
+    "hasRecipe": true,
+    "isAccessory": true
+  },
+  {
+    "id": "Sneakoscope",
+    "_source": "Sneakoscope.cs",
+    "rarity": "Orange",
+    "obsolete": false,
+    "hasRecipe": true,
+    "isAccessory": true
+  },
+  {
+    "id": "SortingHat",
+    "_source": "SortingHat.cs",
+    "rarity": "Orange",
+    "obsolete": false,
+    "hasRecipe": true,
+    "isAccessory": true
+  },
+  {
+    "id": "Spectrespecs",
+    "_source": "Spectrespecs.cs",
+    "rarity": "Orange",
+    "obsolete": false,
+    "hasRecipe": true,
+    "isAccessory": true
+  },
+  {
+    "id": "SpiderSilkCloak",
+    "_source": "SpiderSilkCloak.cs",
+    "rarity": "Lt Red",
+    "obsolete": false,
+    "hasRecipe": true,
+    "isAccessory": true
+  },
+  {
+    "id": "TimeTurner",
+    "_source": "TimeTurner.cs",
+    "rarity": "Lt Purple",
+    "obsolete": false,
+    "hasRecipe": true,
+    "isAccessory": true
+  },
+  {
+    "id": "TriwizardCup",
+    "_source": "TriwizardCup.cs",
+    "obsolete": true,
+    "hasRecipe": false,
+    "isAccessory": false
+  },
+  {
+    "id": "UnbreakableVow",
+    "_source": "UnbreakableVow.cs",
+    "rarity": "Lt Purple",
+    "obsolete": false,
+    "hasRecipe": true,
+    "isAccessory": true
+  },
+  {
+    "id": "VenomSilkWraps",
+    "_source": "VenomSilkWraps.cs",
+    "rarity": "Lt Purple",
+    "obsolete": false,
+    "hasRecipe": true,
+    "isAccessory": true
+  },
+  {
+    "id": "WandHolster",
+    "_source": "WandHolster.cs",
+    "rarity": "Lt Red",
+    "obsolete": false,
+    "hasRecipe": true,
+    "isAccessory": true
+  },
+  {
+    "id": "WerewolfCloak",
+    "_source": "WerewolfCloak.cs",
+    "rarity": "Lt Purple",
+    "obsolete": false,
+    "hasRecipe": true,
+    "isAccessory": true
+  },
+  {
+    "id": "WizardBeard",
+    "_source": "WizardBeard.cs",
+    "rarity": "Blue",
+    "obsolete": false,
+    "hasRecipe": true,
+    "isAccessory": true
+  },
+  {
+    "id": "WizardPocketWatch",
+    "_source": "WizardPocketWatch.cs",
+    "rarity": "Blue",
+    "obsolete": false,
+    "hasRecipe": true,
+    "isAccessory": true
+  },
+  {
+    "id": "WizardSpectacles",
+    "_source": "WizardSpectacles.cs",
+    "rarity": "Blue",
+    "obsolete": false,
+    "hasRecipe": true,
+    "isAccessory": true
+  }
+]

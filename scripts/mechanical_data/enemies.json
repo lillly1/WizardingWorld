@@ -1,0 +1,874 @@
+[
+  {
+    "id": "Acromantula",
+    "_source": "Acromantula.cs",
+    "damage": 35,
+    "defense": 14,
+    "lifeMax": 250,
+    "knockBackResist": 0.4,
+    "isBoss": false,
+    "noGravity": false
+  },
+  {
+    "id": "Ashwinder",
+    "_source": "Ashwinder.cs",
+    "damage": 35,
+    "defense": 8,
+    "lifeMax": 120,
+    "knockBackResist": 0.5,
+    "isBoss": false,
+    "noGravity": false
+  },
+  {
+    "id": "AzkabanGuard",
+    "_source": "AzkabanGuard.cs",
+    "damage": 75,
+    "defense": 30,
+    "lifeMax": 800,
+    "knockBackResist": 0.1,
+    "isBoss": false,
+    "noGravity": true,
+    "spawnContexts": [
+      "death_eater_invasion",
+      "azkaban_event",
+      "hardmode"
+    ]
+  },
+  {
+    "id": "Billywig",
+    "_source": "Billywig.cs",
+    "damage": 15,
+    "defense": 2,
+    "lifeMax": 30,
+    "knockBackResist": 0.9,
+    "isBoss": false,
+    "noGravity": true
+  },
+  {
+    "id": "BlastEndedSkrewt",
+    "_source": "BlastEndedSkrewt.cs",
+    "damage": 55,
+    "defense": 28,
+    "lifeMax": 450,
+    "knockBackResist": 0.15,
+    "isBoss": false,
+    "noGravity": false,
+    "spawnContexts": [
+      "hardmode"
+    ]
+  },
+  {
+    "id": "Bludger",
+    "_source": "Bludger.cs",
+    "damage": 25,
+    "defense": 30,
+    "lifeMax": 500,
+    "knockBackResist": 0.0,
+    "isBoss": false,
+    "noGravity": true
+  },
+  {
+    "id": "Boggart",
+    "_source": "Boggart.cs",
+    "damage": 30,
+    "defense": 10,
+    "lifeMax": 200,
+    "knockBackResist": 0.4,
+    "isBoss": false,
+    "noGravity": false
+  },
+  {
+    "id": "Bowtruckle",
+    "_source": "Bowtruckle.cs",
+    "damage": 5,
+    "defense": 0,
+    "lifeMax": 20,
+    "knockBackResist": 0.8,
+    "isBoss": false,
+    "noGravity": false
+  },
+  {
+    "id": "BreachSeal",
+    "_source": "BreachSeal.cs",
+    "damage": 0,
+    "defense": 6,
+    "lifeMax": 250,
+    "knockBackResist": 0.0,
+    "isBoss": false,
+    "noGravity": true
+  },
+  {
+    "id": "BroodMarker",
+    "_source": "BroodMarker.cs",
+    "damage": 15,
+    "defense": 10,
+    "lifeMax": 300,
+    "knockBackResist": 0.0,
+    "isBoss": false,
+    "noGravity": true
+  },
+  {
+    "id": "CastleWardNode",
+    "_source": "CastleWardNode.cs",
+    "damage": 0,
+    "defense": 8,
+    "lifeMax": 300,
+    "knockBackResist": 0.0,
+    "isBoss": false,
+    "noGravity": true
+  },
+  {
+    "id": "CauldronSpillNode",
+    "_source": "CauldronSpillNode.cs",
+    "damage": 10,
+    "defense": 6,
+    "lifeMax": 220,
+    "knockBackResist": 0.0,
+    "isBoss": false,
+    "noGravity": true
+  },
+  {
+    "id": "CorruptedTrace",
+    "_source": "CorruptedTrace.cs",
+    "damage": 10,
+    "defense": 8,
+    "lifeMax": 200,
+    "knockBackResist": 0.0,
+    "isBoss": false,
+    "noGravity": true
+  },
+  {
+    "id": "CursedMummy",
+    "_source": "CursedMummy.cs",
+    "damage": 45,
+    "defense": 18,
+    "lifeMax": 300,
+    "knockBackResist": 0.2,
+    "isBoss": false,
+    "noGravity": false,
+    "spawnContexts": [
+      "hardmode"
+    ]
+  },
+  {
+    "id": "CursedOpalDisplay",
+    "_source": "CursedOpalDisplay.cs",
+    "damage": 20,
+    "defense": 8,
+    "lifeMax": 200,
+    "knockBackResist": 0.0,
+    "isBoss": false,
+    "noGravity": true
+  },
+  {
+    "id": "CursedSpecter",
+    "_source": "CursedSpecter.cs",
+    "damage": 60,
+    "defense": 18,
+    "lifeMax": 450,
+    "knockBackResist": 0.15,
+    "isBoss": false,
+    "noGravity": true,
+    "spawnContexts": [
+      "hardmode"
+    ]
+  },
+  {
+    "id": "CursedTreasure",
+    "_source": "CursedTreasure.cs",
+    "damage": 30,
+    "defense": 15,
+    "lifeMax": 200,
+    "knockBackResist": 0.0,
+    "isBoss": false,
+    "noGravity": true
+  },
+  {
+    "id": "DeathEater",
+    "_source": "DeathEater.cs",
+    "damage": 60,
+    "defense": 25,
+    "lifeMax": 500,
+    "knockBackResist": 0.2,
+    "isBoss": false,
+    "noGravity": true,
+    "spawnContexts": [
+      "hardmode"
+    ]
+  },
+  {
+    "id": "Dementor",
+    "_source": "Dementor.cs",
+    "damage": 55,
+    "defense": 20,
+    "lifeMax": 400,
+    "knockBackResist": 0.3,
+    "isBoss": false,
+    "noGravity": true,
+    "spawnContexts": [
+      "blood_moon",
+      "death_eater_invasion",
+      "azkaban_event",
+      "forbidden_forest",
+      "hardmode"
+    ]
+  },
+  {
+    "id": "Demiguise",
+    "_source": "Demiguise.cs",
+    "damage": 0,
+    "defense": 0,
+    "lifeMax": 60,
+    "knockBackResist": 0.8,
+    "isBoss": false,
+    "noGravity": false,
+    "spawnContexts": [
+      "forbidden_forest"
+    ]
+  },
+  {
+    "id": "DespairAnchor",
+    "_source": "DespairAnchor.cs",
+    "damage": 0,
+    "defense": 20,
+    "lifeMax": 500,
+    "knockBackResist": 0.0,
+    "isBoss": false,
+    "noGravity": true,
+    "spawnContexts": [
+      "azkaban_event"
+    ]
+  },
+  {
+    "id": "Diricawl",
+    "_source": "Diricawl.cs",
+    "damage": 0,
+    "defense": 0,
+    "lifeMax": 25,
+    "knockBackResist": 1.0,
+    "isBoss": false,
+    "noGravity": false
+  },
+  {
+    "id": "Doxy",
+    "_source": "Doxy.cs",
+    "damage": 22,
+    "defense": 2,
+    "lifeMax": 35,
+    "knockBackResist": 0.9,
+    "isBoss": false,
+    "noGravity": true
+  },
+  {
+    "id": "DoxyNest",
+    "_source": "DoxyNest.cs",
+    "damage": 10,
+    "defense": 5,
+    "lifeMax": 200,
+    "knockBackResist": 0.0,
+    "isBoss": false,
+    "noGravity": true
+  },
+  {
+    "id": "DuelingDummy",
+    "_source": "DuelingDummy.cs",
+    "damage": 0,
+    "defense": 0,
+    "lifeMax": 999999,
+    "knockBackResist": 0.0,
+    "isBoss": false,
+    "noGravity": false
+  },
+  {
+    "id": "Dugbog",
+    "_source": "Dugbog.cs",
+    "damage": 35,
+    "defense": 10,
+    "lifeMax": 150,
+    "knockBackResist": 0.3,
+    "isBoss": false,
+    "noGravity": false
+  },
+  {
+    "id": "Erumpent",
+    "_source": "Erumpent.cs",
+    "damage": 80,
+    "defense": 25,
+    "lifeMax": 700,
+    "knockBackResist": 0.0,
+    "isBoss": false,
+    "noGravity": false,
+    "spawnContexts": [
+      "hardmode"
+    ]
+  },
+  {
+    "id": "FireCrab",
+    "_source": "FireCrab.cs",
+    "damage": 45,
+    "defense": 22,
+    "lifeMax": 280,
+    "knockBackResist": 0.15,
+    "isBoss": false,
+    "noGravity": false,
+    "spawnContexts": [
+      "hardmode"
+    ]
+  },
+  {
+    "id": "Flobberworm",
+    "_source": "Flobberworm.cs",
+    "damage": 0,
+    "defense": 0,
+    "lifeMax": 5,
+    "knockBackResist": 1.0,
+    "isBoss": false,
+    "noGravity": false
+  },
+  {
+    "id": "Fwooper",
+    "_source": "Fwooper.cs",
+    "damage": 28,
+    "defense": 6,
+    "lifeMax": 100,
+    "knockBackResist": 0.6,
+    "isBoss": false,
+    "noGravity": true,
+    "spawnContexts": [
+      "forbidden_forest"
+    ]
+  },
+  {
+    "id": "Giant",
+    "_source": "Giant.cs",
+    "damage": 90,
+    "defense": 30,
+    "lifeMax": 2000,
+    "knockBackResist": 0.0,
+    "isBoss": false,
+    "noGravity": false,
+    "spawnContexts": [
+      "hardmode"
+    ]
+  },
+  {
+    "id": "GoblinRebel",
+    "_source": "GoblinRebel.cs",
+    "damage": 30,
+    "defense": 12,
+    "lifeMax": 150,
+    "knockBackResist": 0.4,
+    "isBoss": false,
+    "noGravity": false
+  },
+  {
+    "id": "GrimmauldBoggart",
+    "_source": "GrimmauldBoggart.cs",
+    "damage": 25,
+    "defense": 10,
+    "lifeMax": 350,
+    "knockBackResist": 0.3,
+    "isBoss": false,
+    "noGravity": true
+  },
+  {
+    "id": "Grindylow",
+    "_source": "Grindylow.cs",
+    "damage": 25,
+    "defense": 8,
+    "lifeMax": 120,
+    "knockBackResist": 0.5,
+    "isBoss": false,
+    "noGravity": true
+  },
+  {
+    "id": "HexResidueNode",
+    "_source": "HexResidueNode.cs",
+    "damage": 15,
+    "defense": 8,
+    "lifeMax": 250,
+    "knockBackResist": 0.0,
+    "isBoss": false,
+    "noGravity": true
+  },
+  {
+    "id": "Horklump",
+    "_source": "Horklump.cs",
+    "damage": 0,
+    "defense": 0,
+    "lifeMax": 10,
+    "knockBackResist": 1.0,
+    "isBoss": false,
+    "noGravity": false
+  },
+  {
+    "id": "Inferius",
+    "_source": "Inferius.cs",
+    "damage": 50,
+    "defense": 18,
+    "lifeMax": 350,
+    "knockBackResist": 0.3,
+    "isBoss": false,
+    "noGravity": false,
+    "spawnContexts": [
+      "dungeon",
+      "hardmode"
+    ]
+  },
+  {
+    "id": "Jarvey",
+    "_source": "Jarvey.cs",
+    "damage": 18,
+    "defense": 4,
+    "lifeMax": 60,
+    "knockBackResist": 0.7,
+    "isBoss": false,
+    "noGravity": false
+  },
+  {
+    "id": "Jobberknoll",
+    "_source": "Jobberknoll.cs",
+    "damage": 0,
+    "defense": 0,
+    "lifeMax": 20,
+    "knockBackResist": 1.0,
+    "isBoss": false,
+    "noGravity": true
+  },
+  {
+    "id": "Knarl",
+    "_source": "Knarl.cs",
+    "damage": 22,
+    "defense": 8,
+    "lifeMax": 45,
+    "knockBackResist": 0.6,
+    "isBoss": false,
+    "noGravity": false
+  },
+  {
+    "id": "Lethifold",
+    "_source": "Lethifold.cs",
+    "damage": 70,
+    "defense": 15,
+    "lifeMax": 600,
+    "knockBackResist": 0.1,
+    "isBoss": false,
+    "noGravity": true,
+    "spawnContexts": [
+      "hardmode"
+    ]
+  },
+  {
+    "id": "MagicPixie",
+    "_source": "MagicPixie.cs",
+    "damage": 18,
+    "defense": 4,
+    "lifeMax": 50,
+    "knockBackResist": 0.8,
+    "isBoss": false,
+    "noGravity": true
+  },
+  {
+    "id": "MagicalImp",
+    "_source": "MagicalImp.cs",
+    "damage": 25,
+    "defense": 6,
+    "lifeMax": 70,
+    "knockBackResist": 0.7,
+    "isBoss": false,
+    "noGravity": true
+  },
+  {
+    "id": "Mandrake",
+    "_source": "Mandrake.cs",
+    "damage": 20,
+    "defense": 6,
+    "lifeMax": 80,
+    "knockBackResist": 0.5,
+    "isBoss": false,
+    "noGravity": false
+  },
+  {
+    "id": "Merfolk",
+    "_source": "Merfolk.cs",
+    "damage": 35,
+    "defense": 12,
+    "lifeMax": 200,
+    "knockBackResist": 0.4,
+    "isBoss": false,
+    "noGravity": true
+  },
+  {
+    "id": "MoonWardFracture",
+    "_source": "MoonWardFracture.cs",
+    "damage": 15,
+    "defense": 14,
+    "lifeMax": 300,
+    "knockBackResist": 0.0,
+    "isBoss": false,
+    "noGravity": true
+  },
+  {
+    "id": "Mooncalf",
+    "_source": "Mooncalf.cs",
+    "damage": 0,
+    "defense": 0,
+    "lifeMax": 30,
+    "knockBackResist": 0.9,
+    "isBoss": false,
+    "noGravity": false
+  },
+  {
+    "id": "Nagini",
+    "_source": "Nagini.cs",
+    "damage": 55,
+    "defense": 20,
+    "lifeMax": 3000,
+    "knockBackResist": 0.1,
+    "isBoss": false,
+    "noGravity": true,
+    "spawnContexts": [
+      "hardmode"
+    ]
+  },
+  {
+    "id": "Nundu",
+    "_source": "Nundu.cs",
+    "damage": 90,
+    "defense": 30,
+    "lifeMax": 1500,
+    "knockBackResist": 0.02,
+    "isBoss": false,
+    "noGravity": false,
+    "spawnContexts": [
+      "hardmode"
+    ]
+  },
+  {
+    "id": "Obscurus",
+    "_source": "Obscurus.cs",
+    "damage": 70,
+    "defense": 25,
+    "lifeMax": 800,
+    "knockBackResist": 0.05,
+    "isBoss": false,
+    "noGravity": true,
+    "spawnContexts": [
+      "hardmode"
+    ]
+  },
+  {
+    "id": "Occamy",
+    "_source": "Occamy.cs",
+    "damage": 45,
+    "defense": 16,
+    "lifeMax": 350,
+    "knockBackResist": 0.3,
+    "isBoss": false,
+    "noGravity": true,
+    "_dynamicScaling": true,
+    "_curated": true,
+    "defense_base": 16,
+    "spawnContexts": [
+      "hardmode"
+    ]
+  },
+  {
+    "id": "OmenStone",
+    "_source": "OmenStone.cs",
+    "damage": 15,
+    "defense": 12,
+    "lifeMax": 280,
+    "knockBackResist": 0.0,
+    "isBoss": false,
+    "noGravity": true
+  },
+  {
+    "id": "Peeves",
+    "_source": "Peeves.cs",
+    "damage": 25,
+    "defense": 8,
+    "lifeMax": 180,
+    "knockBackResist": 0.1,
+    "isBoss": false,
+    "noGravity": true,
+    "spawnContexts": [
+      "dungeon"
+    ]
+  },
+  {
+    "id": "PeruvianVipertooth",
+    "_source": "PeruvianVipertooth.cs",
+    "damage": 55,
+    "defense": 18,
+    "lifeMax": 350,
+    "knockBackResist": 0.25,
+    "isBoss": false,
+    "noGravity": true,
+    "_dynamicScaling": true,
+    "_curated": true,
+    "spawnContexts": [
+      "hardmode"
+    ]
+  },
+  {
+    "id": "PhantomStag",
+    "_source": "PhantomStag.cs",
+    "damage": 55,
+    "defense": 20,
+    "lifeMax": 400,
+    "knockBackResist": 0.2,
+    "isBoss": false,
+    "noGravity": true,
+    "spawnContexts": [
+      "hardmode"
+    ]
+  },
+  {
+    "id": "PrisonWraith",
+    "_source": "PrisonWraith.cs",
+    "damage": 40,
+    "defense": 12,
+    "lifeMax": 250,
+    "knockBackResist": 0.5,
+    "isBoss": false,
+    "noGravity": true,
+    "spawnContexts": [
+      "azkaban_event",
+      "hardmode"
+    ]
+  },
+  {
+    "id": "ProphecyOrb",
+    "_source": "ProphecyOrb.cs",
+    "damage": 0,
+    "defense": 0,
+    "lifeMax": 1,
+    "knockBackResist": 0.0,
+    "isBoss": false,
+    "noGravity": true
+  },
+  {
+    "id": "Puffskein",
+    "_source": "Puffskein.cs",
+    "damage": 0,
+    "defense": 0,
+    "lifeMax": 15,
+    "knockBackResist": 1.0,
+    "isBoss": false,
+    "noGravity": false
+  },
+  {
+    "id": "QuidditchHoop",
+    "_source": "QuidditchHoop.cs",
+    "damage": 0,
+    "defense": 9999,
+    "lifeMax": 1,
+    "knockBackResist": 0.0,
+    "isBoss": false,
+    "noGravity": true
+  },
+  {
+    "id": "Runespoor",
+    "_source": "Runespoor.cs",
+    "damage": 40,
+    "defense": 14,
+    "lifeMax": 250,
+    "knockBackResist": 0.3,
+    "isBoss": false,
+    "noGravity": false
+  },
+  {
+    "id": "SnowWraith",
+    "_source": "SnowWraith.cs",
+    "damage": 40,
+    "defense": 14,
+    "lifeMax": 220,
+    "knockBackResist": 0.3,
+    "isBoss": false,
+    "noGravity": true
+  },
+  {
+    "id": "Sphinx",
+    "_source": "Sphinx.cs",
+    "damage": 60,
+    "defense": 35,
+    "lifeMax": 1200,
+    "knockBackResist": 0.05,
+    "isBoss": false,
+    "noGravity": false,
+    "spawnContexts": [
+      "hardmode"
+    ]
+  },
+  {
+    "id": "Streeler",
+    "_source": "Streeler.cs",
+    "damage": 25,
+    "defense": 16,
+    "lifeMax": 100,
+    "knockBackResist": 0.2,
+    "isBoss": false,
+    "noGravity": false
+  },
+  {
+    "id": "Thestral",
+    "_source": "Thestral.cs",
+    "damage": 40,
+    "defense": 16,
+    "lifeMax": 300,
+    "knockBackResist": 0.3,
+    "isBoss": false,
+    "noGravity": true
+  },
+  {
+    "id": "ThestralBeacon",
+    "_source": "ThestralBeacon.cs",
+    "damage": 0,
+    "defense": 0,
+    "lifeMax": 1,
+    "knockBackResist": 0.0,
+    "isBoss": false,
+    "noGravity": true
+  },
+  {
+    "id": "Thunderbird",
+    "_source": "Thunderbird.cs",
+    "damage": 65,
+    "defense": 22,
+    "lifeMax": 500,
+    "knockBackResist": 0.2,
+    "isBoss": false,
+    "noGravity": true,
+    "spawnContexts": [
+      "hardmode"
+    ]
+  },
+  {
+    "id": "Troll",
+    "_source": "Troll.cs",
+    "damage": 45,
+    "defense": 22,
+    "lifeMax": 600,
+    "knockBackResist": 0.1,
+    "isBoss": false,
+    "noGravity": false
+  },
+  {
+    "id": "TunnelWard",
+    "_source": "TunnelWard.cs",
+    "damage": 12,
+    "defense": 12,
+    "lifeMax": 250,
+    "knockBackResist": 0.0,
+    "isBoss": false,
+    "noGravity": true
+  },
+  {
+    "id": "UnstableHourglass",
+    "_source": "UnstableHourglass.cs",
+    "damage": 0,
+    "defense": 0,
+    "lifeMax": 1,
+    "knockBackResist": 0.0,
+    "isBoss": false,
+    "noGravity": true
+  },
+  {
+    "id": "VanishingCabinetEcho",
+    "_source": "VanishingCabinetEcho.cs",
+    "damage": 10,
+    "defense": 15,
+    "lifeMax": 350,
+    "knockBackResist": 0.0,
+    "isBoss": false,
+    "noGravity": true
+  },
+  {
+    "id": "VaultRelic",
+    "_source": "VaultRelic.cs",
+    "damage": 0,
+    "defense": 0,
+    "lifeMax": 1,
+    "knockBackResist": 0.0,
+    "isBoss": false,
+    "noGravity": true
+  },
+  {
+    "id": "VeilFracture",
+    "_source": "VeilFracture.cs",
+    "damage": 15,
+    "defense": 10,
+    "lifeMax": 300,
+    "knockBackResist": 0.0,
+    "isBoss": false,
+    "noGravity": true
+  },
+  {
+    "id": "VenomWoundNode",
+    "_source": "VenomWoundNode.cs",
+    "damage": 15,
+    "defense": 10,
+    "lifeMax": 280,
+    "knockBackResist": 0.0,
+    "isBoss": false,
+    "noGravity": true
+  },
+  {
+    "id": "WalburgaPortrait",
+    "_source": "WalburgaPortrait.cs",
+    "damage": 20,
+    "defense": 12,
+    "lifeMax": 300,
+    "knockBackResist": 0.0,
+    "isBoss": false,
+    "noGravity": true
+  },
+  {
+    "id": "WardAnchor",
+    "_source": "WardAnchor.cs",
+    "damage": 0,
+    "defense": 10,
+    "lifeMax": 250,
+    "knockBackResist": 0.0,
+    "isBoss": false,
+    "noGravity": true
+  },
+  {
+    "id": "Werewolf",
+    "_source": "Werewolf.cs",
+    "damage": 65,
+    "defense": 22,
+    "lifeMax": 500,
+    "knockBackResist": 0.2,
+    "isBoss": false,
+    "noGravity": false,
+    "spawnContexts": [
+      "blood_moon",
+      "hardmode"
+    ]
+  },
+  {
+    "id": "WillowKnot",
+    "_source": "WillowKnot.cs",
+    "damage": 15,
+    "defense": 10,
+    "lifeMax": 200,
+    "knockBackResist": 0.0,
+    "isBoss": false,
+    "noGravity": true
+  },
+  {
+    "id": "Zouwu",
+    "_source": "Zouwu.cs",
+    "damage": 70,
+    "defense": 24,
+    "lifeMax": 800,
+    "knockBackResist": 0.05,
+    "isBoss": false,
+    "noGravity": false,
+    "spawnContexts": [
+      "hardmode"
+    ]
+  }
+]

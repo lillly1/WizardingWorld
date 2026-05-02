@@ -1,0 +1,832 @@
+[
+  {
+    "Name": "LightningScar_Face",
+    "Width": 16,
+    "Height": 16,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Items/Accessories/LightningScar_Face.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Items/Accessories/LightningScar_Face.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, a magical accessory themed around Lightning Scar Face, wizarding wearable trinket, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "MaraudersMap",
+    "Width": 24,
+    "Height": 24,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Items/Accessories/MaraudersMap.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Items/Accessories/MaraudersMap.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, a magical accessory themed around Marauders Map, wizarding wearable trinket, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "MasterWizardBanner",
+    "Width": 30,
+    "Height": 30,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Items/Accessories/MasterWizardBanner.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Items/Accessories/MasterWizardBanner.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, a magical accessory themed around Master Wizard Banner, wizarding wearable trinket, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "MerfolkAmulet",
+    "Width": 24,
+    "Height": 24,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Items/Accessories/MerfolkAmulet.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Items/Accessories/MerfolkAmulet.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, a magical accessory themed around Merfolk Amulet, wizarding wearable trinket, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "MoodysEye",
+    "Width": 20,
+    "Height": 20,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Items/Accessories/MoodysEye.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Items/Accessories/MoodysEye.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, a magical accessory themed around Moodys Eye, wizarding wearable trinket, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "MoonwardPendant",
+    "Width": 22,
+    "Height": 22,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Items/Accessories/MoonwardPendant.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Items/Accessories/MoonwardPendant.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, a magical accessory themed around Moonward Pendant, wizarding wearable trinket, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "OrderBadge",
+    "Width": 22,
+    "Height": 22,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Items/Accessories/OrderBadge.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Items/Accessories/OrderBadge.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, a magical accessory themed around Order Badge, wizarding wearable trinket, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "OrderSignet",
+    "Width": 22,
+    "Height": 22,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Items/Accessories/OrderSignet.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Items/Accessories/OrderSignet.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, a magical accessory themed around Order Signet, wizarding wearable trinket, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "PadfootAmulet",
+    "Width": 24,
+    "Height": 24,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Items/Accessories/PadfootAmulet.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Items/Accessories/PadfootAmulet.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, a magical accessory themed around Padfoot Amulet, wizarding wearable trinket, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "PatronusCharm",
+    "Width": 28,
+    "Height": 28,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Items/Accessories/PatronusCharm.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Items/Accessories/PatronusCharm.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, a magical accessory themed around Patronus Charm, wizarding wearable trinket, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "PatronusFocus",
+    "Width": 24,
+    "Height": 24,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Items/Accessories/PatronusFocus.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Items/Accessories/PatronusFocus.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, a magical accessory themed around Patronus Focus, wizarding wearable trinket, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "Pensieve",
+    "Width": 28,
+    "Height": 28,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Items/Accessories/Pensieve.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Items/Accessories/Pensieve.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, a magical accessory themed around Pensieve, wizarding wearable trinket, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "PhilosophersStone",
+    "Width": 24,
+    "Height": 24,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Items/Accessories/PhilosophersStone.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Items/Accessories/PhilosophersStone.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, a magical accessory themed around Philosophers Stone, wizarding wearable trinket, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "PrefectBadge",
+    "Width": 20,
+    "Height": 20,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Items/Accessories/PrefectBadge.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Items/Accessories/PrefectBadge.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, a magical accessory themed around Prefect Badge, wizarding wearable trinket, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "ProngsCharm",
+    "Width": 24,
+    "Height": 24,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Items/Accessories/ProngsCharm.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Items/Accessories/ProngsCharm.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, a magical accessory themed around Prongs Charm, wizarding wearable trinket, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "ProtectorsBadge",
+    "Width": 24,
+    "Height": 24,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Items/Accessories/ProtectorsBadge.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Items/Accessories/ProtectorsBadge.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, a magical accessory themed around Protectors Badge, wizarding wearable trinket, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "QuillOfAcceptance",
+    "Width": 20,
+    "Height": 24,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Items/Accessories/QuillOfAcceptance.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Items/Accessories/QuillOfAcceptance.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, a magical accessory themed around Quill Of Acceptance, wizarding wearable trinket, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "Remembrall",
+    "Width": 20,
+    "Height": 20,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Items/Accessories/Remembrall.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Items/Accessories/Remembrall.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, a magical accessory themed around Remembrall, wizarding wearable trinket, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "ResurrectionStone",
+    "Width": 24,
+    "Height": 24,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Items/Accessories/ResurrectionStone.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Items/Accessories/ResurrectionStone.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, a magical accessory themed around Resurrection Stone, wizarding wearable trinket, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "RiddlesDiary",
+    "Width": 24,
+    "Height": 24,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Items/Accessories/RiddlesDiary.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Items/Accessories/RiddlesDiary.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, a magical accessory themed around Riddles Diary, wizarding wearable trinket, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "ShieldHat",
+    "Width": 22,
+    "Height": 22,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Items/Accessories/ShieldHat.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Items/Accessories/ShieldHat.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, a magical accessory themed around Shield Hat, wizarding wearable trinket, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "SlytherinsLocket",
+    "Width": 24,
+    "Height": 24,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Items/Accessories/SlytherinsLocket.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Items/Accessories/SlytherinsLocket.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, a magical accessory themed around Slytherins Locket, wizarding wearable trinket, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "Sneakoscope",
+    "Width": 20,
+    "Height": 20,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Items/Accessories/Sneakoscope.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Items/Accessories/Sneakoscope.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, a magical accessory themed around Sneakoscope, wizarding wearable trinket, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "SortingHat",
+    "Width": 26,
+    "Height": 26,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Items/Accessories/SortingHat.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Items/Accessories/SortingHat.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, a magical accessory themed around Sorting Hat, wizarding wearable trinket, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "Spectrespecs",
+    "Width": 22,
+    "Height": 14,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Items/Accessories/Spectrespecs.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Items/Accessories/Spectrespecs.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, a magical accessory themed around Spectrespecs, wizarding wearable trinket, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "Spectrespecs_Face",
+    "Width": 22,
+    "Height": 14,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Items/Accessories/Spectrespecs_Face.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Items/Accessories/Spectrespecs_Face.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, a magical accessory themed around Spectrespecs Face, wizarding wearable trinket, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "SpiderSilkCloak",
+    "Width": 26,
+    "Height": 26,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Items/Accessories/SpiderSilkCloak.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Items/Accessories/SpiderSilkCloak.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, a magical accessory themed around Spider Silk Cloak, wizarding wearable trinket, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "TimeTurner",
+    "Width": 24,
+    "Height": 24,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Items/Accessories/TimeTurner.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Items/Accessories/TimeTurner.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, a magical accessory themed around Time Turner, wizarding wearable trinket, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "TriwizardCup",
+    "Width": 28,
+    "Height": 28,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Items/Accessories/TriwizardCup.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Items/Accessories/TriwizardCup.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, a magical accessory themed around Triwizard Cup, wizarding wearable trinket, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "UnbreakableVow",
+    "Width": 24,
+    "Height": 24,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Items/Accessories/UnbreakableVow.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Items/Accessories/UnbreakableVow.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, a magical accessory themed around Unbreakable Vow, wizarding wearable trinket, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "VenomSilkWraps",
+    "Width": 24,
+    "Height": 24,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Items/Accessories/VenomSilkWraps.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Items/Accessories/VenomSilkWraps.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, a magical accessory themed around Venom Silk Wraps, wizarding wearable trinket, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "WandHolster",
+    "Width": 22,
+    "Height": 22,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Items/Accessories/WandHolster.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Items/Accessories/WandHolster.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, a magical accessory themed around Wand Holster, wizarding wearable trinket, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "WerewolfCloak",
+    "Width": 26,
+    "Height": 26,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Items/Accessories/WerewolfCloak.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Items/Accessories/WerewolfCloak.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, a magical accessory themed around Werewolf Cloak, wizarding wearable trinket, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "WizardBeard",
+    "Width": 18,
+    "Height": 24,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Items/Accessories/WizardBeard.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Items/Accessories/WizardBeard.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, a magical accessory themed around Wizard Beard, wizarding wearable trinket, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "WizardBeard_Face",
+    "Width": 18,
+    "Height": 24,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Items/Accessories/WizardBeard_Face.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Items/Accessories/WizardBeard_Face.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, a magical accessory themed around Wizard Beard Face, wizarding wearable trinket, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "WizardPocketWatch",
+    "Width": 20,
+    "Height": 20,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Items/Accessories/WizardPocketWatch.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Items/Accessories/WizardPocketWatch.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, a magical accessory themed around Wizard Pocket Watch, wizarding wearable trinket, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "WizardSpectacles",
+    "Width": 20,
+    "Height": 14,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Items/Accessories/WizardSpectacles.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Items/Accessories/WizardSpectacles.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, a magical accessory themed around Wizard Spectacles, wizarding wearable trinket, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "WizardSpectacles_Face",
+    "Width": 20,
+    "Height": 14,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Items/Accessories/WizardSpectacles_Face.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Items/Accessories/WizardSpectacles_Face.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, a magical accessory themed around Wizard Spectacles Face, wizarding wearable trinket, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "DarkWizardHood",
+    "Width": 18,
+    "Height": 18,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Items/Armor/DarkWizard/DarkWizardHood.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Items/Armor/DarkWizard/DarkWizardHood.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, an armor item icon for Dark Wizard Dark Wizard Hood, wizarding apparel, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "DarkWizardHood_Head",
+    "Width": 40,
+    "Height": 36,
+    "FrameCount": 1,
+    "ProcessKind": "icon",
+    "OutputPath": "Content/Items/Armor/DarkWizard/DarkWizardHood_Head.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Items/Armor/DarkWizard/DarkWizardHood_Head.png",
+    "Prompt": "Terraria-style pixel art icon, centered emblem, an armor head layer sprite for Dark Wizard Dark Wizard Hood, clean equipment silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "DarkWizardLeggings",
+    "Width": 18,
+    "Height": 18,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Items/Armor/DarkWizard/DarkWizardLeggings.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Items/Armor/DarkWizard/DarkWizardLeggings.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, an armor item icon for Dark Wizard Dark Wizard Leggings, wizarding apparel, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "DarkWizardLeggings_Legs",
+    "Width": 40,
+    "Height": 44,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Items/Armor/DarkWizard/DarkWizardLeggings_Legs.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Items/Armor/DarkWizard/DarkWizardLeggings_Legs.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, an armor leg layer sprite for Dark Wizard Dark Wizard Leggings, clean equipment silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "DarkWizardRobes",
+    "Width": 18,
+    "Height": 18,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Items/Armor/DarkWizard/DarkWizardRobes.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Items/Armor/DarkWizard/DarkWizardRobes.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, an armor item icon for Dark Wizard Dark Wizard Robes, wizarding apparel, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "DarkWizardRobes_Body",
+    "Width": 40,
+    "Height": 54,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Items/Armor/DarkWizard/DarkWizardRobes_Body.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Items/Armor/DarkWizard/DarkWizardRobes_Body.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, an armor body layer sprite for Dark Wizard Dark Wizard Robes, clean equipment silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "DragonScaleBreastplate",
+    "Width": 18,
+    "Height": 18,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Items/Armor/DragonScale/DragonScaleBreastplate.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Items/Armor/DragonScale/DragonScaleBreastplate.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, an armor item icon for Dragon Scale Dragon Scale Breastplate, wizarding apparel, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "DragonScaleBreastplate_Body",
+    "Width": 40,
+    "Height": 54,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Items/Armor/DragonScale/DragonScaleBreastplate_Body.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Items/Armor/DragonScale/DragonScaleBreastplate_Body.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, an armor body layer sprite for Dragon Scale Dragon Scale Breastplate, clean equipment silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "DragonScaleGreaves",
+    "Width": 18,
+    "Height": 18,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Items/Armor/DragonScale/DragonScaleGreaves.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Items/Armor/DragonScale/DragonScaleGreaves.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, an armor item icon for Dragon Scale Dragon Scale Greaves, wizarding apparel, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "DragonScaleGreaves_Legs",
+    "Width": 40,
+    "Height": 44,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Items/Armor/DragonScale/DragonScaleGreaves_Legs.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Items/Armor/DragonScale/DragonScaleGreaves_Legs.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, an armor leg layer sprite for Dragon Scale Dragon Scale Greaves, clean equipment silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "DragonScaleHelm",
+    "Width": 18,
+    "Height": 18,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Items/Armor/DragonScale/DragonScaleHelm.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Items/Armor/DragonScale/DragonScaleHelm.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, an armor item icon for Dragon Scale Dragon Scale Helm, wizarding apparel, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "DragonScaleHelm_Head",
+    "Width": 40,
+    "Height": 36,
+    "FrameCount": 1,
+    "ProcessKind": "icon",
+    "OutputPath": "Content/Items/Armor/DragonScale/DragonScaleHelm_Head.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Items/Armor/DragonScale/DragonScaleHelm_Head.png",
+    "Prompt": "Terraria-style pixel art icon, centered emblem, an armor head layer sprite for Dragon Scale Dragon Scale Helm, clean equipment silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "GryffindorHood",
+    "Width": 18,
+    "Height": 18,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Items/Armor/Gryffindor/GryffindorHood.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Items/Armor/Gryffindor/GryffindorHood.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, an armor item icon for Gryffindor Gryffindor Hood, wizarding apparel, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "GryffindorHood_Head",
+    "Width": 40,
+    "Height": 36,
+    "FrameCount": 1,
+    "ProcessKind": "icon",
+    "OutputPath": "Content/Items/Armor/Gryffindor/GryffindorHood_Head.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Items/Armor/Gryffindor/GryffindorHood_Head.png",
+    "Prompt": "Terraria-style pixel art icon, centered emblem, an armor head layer sprite for Gryffindor Gryffindor Hood, clean equipment silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "GryffindorLeggings",
+    "Width": 18,
+    "Height": 18,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Items/Armor/Gryffindor/GryffindorLeggings.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Items/Armor/Gryffindor/GryffindorLeggings.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, an armor item icon for Gryffindor Gryffindor Leggings, wizarding apparel, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "GryffindorLeggings_Legs",
+    "Width": 40,
+    "Height": 44,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Items/Armor/Gryffindor/GryffindorLeggings_Legs.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Items/Armor/Gryffindor/GryffindorLeggings_Legs.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, an armor leg layer sprite for Gryffindor Gryffindor Leggings, clean equipment silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "GryffindorRobes",
+    "Width": 18,
+    "Height": 18,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Items/Armor/Gryffindor/GryffindorRobes.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Items/Armor/Gryffindor/GryffindorRobes.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, an armor item icon for Gryffindor Gryffindor Robes, wizarding apparel, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "GryffindorRobes_Body",
+    "Width": 40,
+    "Height": 54,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Items/Armor/Gryffindor/GryffindorRobes_Body.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Items/Armor/Gryffindor/GryffindorRobes_Body.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, an armor body layer sprite for Gryffindor Gryffindor Robes, clean equipment silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "HufflepuffHood",
+    "Width": 18,
+    "Height": 18,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Items/Armor/Hufflepuff/HufflepuffHood.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Items/Armor/Hufflepuff/HufflepuffHood.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, an armor item icon for Hufflepuff Hufflepuff Hood, wizarding apparel, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "HufflepuffHood_Head",
+    "Width": 40,
+    "Height": 36,
+    "FrameCount": 1,
+    "ProcessKind": "icon",
+    "OutputPath": "Content/Items/Armor/Hufflepuff/HufflepuffHood_Head.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Items/Armor/Hufflepuff/HufflepuffHood_Head.png",
+    "Prompt": "Terraria-style pixel art icon, centered emblem, an armor head layer sprite for Hufflepuff Hufflepuff Hood, clean equipment silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "HufflepuffLeggings",
+    "Width": 18,
+    "Height": 18,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Items/Armor/Hufflepuff/HufflepuffLeggings.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Items/Armor/Hufflepuff/HufflepuffLeggings.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, an armor item icon for Hufflepuff Hufflepuff Leggings, wizarding apparel, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "HufflepuffLeggings_Legs",
+    "Width": 40,
+    "Height": 44,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Items/Armor/Hufflepuff/HufflepuffLeggings_Legs.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Items/Armor/Hufflepuff/HufflepuffLeggings_Legs.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, an armor leg layer sprite for Hufflepuff Hufflepuff Leggings, clean equipment silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "HufflepuffRobes",
+    "Width": 18,
+    "Height": 18,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Items/Armor/Hufflepuff/HufflepuffRobes.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Items/Armor/Hufflepuff/HufflepuffRobes.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, an armor item icon for Hufflepuff Hufflepuff Robes, wizarding apparel, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "HufflepuffRobes_Body",
+    "Width": 40,
+    "Height": 54,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Items/Armor/Hufflepuff/HufflepuffRobes_Body.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Items/Armor/Hufflepuff/HufflepuffRobes_Body.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, an armor body layer sprite for Hufflepuff Hufflepuff Robes, clean equipment silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "RavenclawHood",
+    "Width": 18,
+    "Height": 18,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Items/Armor/Ravenclaw/RavenclawHood.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Items/Armor/Ravenclaw/RavenclawHood.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, an armor item icon for Ravenclaw Ravenclaw Hood, wizarding apparel, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "RavenclawHood_Head",
+    "Width": 40,
+    "Height": 36,
+    "FrameCount": 1,
+    "ProcessKind": "icon",
+    "OutputPath": "Content/Items/Armor/Ravenclaw/RavenclawHood_Head.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Items/Armor/Ravenclaw/RavenclawHood_Head.png",
+    "Prompt": "Terraria-style pixel art icon, centered emblem, an armor head layer sprite for Ravenclaw Ravenclaw Hood, clean equipment silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "RavenclawLeggings",
+    "Width": 18,
+    "Height": 18,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Items/Armor/Ravenclaw/RavenclawLeggings.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Items/Armor/Ravenclaw/RavenclawLeggings.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, an armor item icon for Ravenclaw Ravenclaw Leggings, wizarding apparel, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "RavenclawLeggings_Legs",
+    "Width": 40,
+    "Height": 44,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Items/Armor/Ravenclaw/RavenclawLeggings_Legs.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Items/Armor/Ravenclaw/RavenclawLeggings_Legs.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, an armor leg layer sprite for Ravenclaw Ravenclaw Leggings, clean equipment silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "RavenclawRobes",
+    "Width": 18,
+    "Height": 18,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Items/Armor/Ravenclaw/RavenclawRobes.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Items/Armor/Ravenclaw/RavenclawRobes.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, an armor item icon for Ravenclaw Ravenclaw Robes, wizarding apparel, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "RavenclawRobes_Body",
+    "Width": 40,
+    "Height": 54,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Items/Armor/Ravenclaw/RavenclawRobes_Body.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Items/Armor/Ravenclaw/RavenclawRobes_Body.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, an armor body layer sprite for Ravenclaw Ravenclaw Robes, clean equipment silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "SlytherinHood",
+    "Width": 18,
+    "Height": 18,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Items/Armor/Slytherin/SlytherinHood.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Items/Armor/Slytherin/SlytherinHood.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, an armor item icon for Slytherin Slytherin Hood, wizarding apparel, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "SlytherinHood_Head",
+    "Width": 40,
+    "Height": 36,
+    "FrameCount": 1,
+    "ProcessKind": "icon",
+    "OutputPath": "Content/Items/Armor/Slytherin/SlytherinHood_Head.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Items/Armor/Slytherin/SlytherinHood_Head.png",
+    "Prompt": "Terraria-style pixel art icon, centered emblem, an armor head layer sprite for Slytherin Slytherin Hood, clean equipment silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "SlytherinLeggings",
+    "Width": 18,
+    "Height": 18,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Items/Armor/Slytherin/SlytherinLeggings.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Items/Armor/Slytherin/SlytherinLeggings.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, an armor item icon for Slytherin Slytherin Leggings, wizarding apparel, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "SlytherinLeggings_Legs",
+    "Width": 40,
+    "Height": 44,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Items/Armor/Slytherin/SlytherinLeggings_Legs.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Items/Armor/Slytherin/SlytherinLeggings_Legs.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, an armor leg layer sprite for Slytherin Slytherin Leggings, clean equipment silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "SlytherinRobes",
+    "Width": 18,
+    "Height": 18,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Items/Armor/Slytherin/SlytherinRobes.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Items/Armor/Slytherin/SlytherinRobes.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, an armor item icon for Slytherin Slytherin Robes, wizarding apparel, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "SlytherinRobes_Body",
+    "Width": 40,
+    "Height": 54,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Items/Armor/Slytherin/SlytherinRobes_Body.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Items/Armor/Slytherin/SlytherinRobes_Body.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, an armor body layer sprite for Slytherin Slytherin Robes, clean equipment silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "WizardBoots",
+    "Width": 18,
+    "Height": 18,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Items/Armor/WizardRobes/WizardBoots.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Items/Armor/WizardRobes/WizardBoots.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, an armor item icon for Wizard Robes Wizard Boots, wizarding apparel, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "WizardBoots_Legs",
+    "Width": 40,
+    "Height": 44,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Items/Armor/WizardRobes/WizardBoots_Legs.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Items/Armor/WizardRobes/WizardBoots_Legs.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, an armor leg layer sprite for Wizard Robes Wizard Boots, clean equipment silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "WizardHat",
+    "Width": 18,
+    "Height": 18,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Items/Armor/WizardRobes/WizardHat.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Items/Armor/WizardRobes/WizardHat.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, an armor item icon for Wizard Robes Wizard Hat, wizarding apparel, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "WizardHat_Head",
+    "Width": 40,
+    "Height": 36,
+    "FrameCount": 1,
+    "ProcessKind": "icon",
+    "OutputPath": "Content/Items/Armor/WizardRobes/WizardHat_Head.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Items/Armor/WizardRobes/WizardHat_Head.png",
+    "Prompt": "Terraria-style pixel art icon, centered emblem, an armor head layer sprite for Wizard Robes Wizard Hat, clean equipment silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "WizardRobe",
+    "Width": 18,
+    "Height": 18,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Items/Armor/WizardRobes/WizardRobe.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Items/Armor/WizardRobes/WizardRobe.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, an armor item icon for Wizard Robes Wizard Robe, wizarding apparel, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "WizardRobe_Body",
+    "Width": 40,
+    "Height": 54,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Items/Armor/WizardRobes/WizardRobe_Body.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Items/Armor/WizardRobes/WizardRobe_Body.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, an armor body layer sprite for Wizard Robes Wizard Robe, clean equipment silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "WizengamotBoots",
+    "Width": 18,
+    "Height": 18,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Items/Armor/Wizengamot/WizengamotBoots.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Items/Armor/Wizengamot/WizengamotBoots.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, an armor item icon for Wizengamot Wizengamot Boots, wizarding apparel, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "WizengamotBoots_Legs",
+    "Width": 40,
+    "Height": 44,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Items/Armor/Wizengamot/WizengamotBoots_Legs.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Items/Armor/Wizengamot/WizengamotBoots_Legs.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, an armor leg layer sprite for Wizengamot Wizengamot Boots, clean equipment silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "WizengamotHood",
+    "Width": 18,
+    "Height": 18,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Items/Armor/Wizengamot/WizengamotHood.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Items/Armor/Wizengamot/WizengamotHood.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, an armor item icon for Wizengamot Wizengamot Hood, wizarding apparel, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  }
+]

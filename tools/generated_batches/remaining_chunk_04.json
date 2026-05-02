@@ -1,0 +1,832 @@
+[
+  {
+    "Name": "BasiliskFangDagger",
+    "Width": 32,
+    "Height": 32,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Items/Weapons/BasiliskFangDagger.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Items/Weapons/BasiliskFangDagger.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, a wizarding weapon themed around Basilisk Fang Dagger, combat-ready magical gear, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "BeatersBat",
+    "Width": 40,
+    "Height": 40,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Items/Weapons/BeatersBat.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Items/Weapons/BeatersBat.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, a wizarding weapon themed around Beaters Bat, combat-ready magical gear, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "DarkArtsGrimoire",
+    "Width": 28,
+    "Height": 32,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Items/Weapons/DarkArtsGrimoire.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Items/Weapons/DarkArtsGrimoire.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, a wizarding weapon themed around Dark Arts Grimoire, combat-ready magical gear, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "DecoyDetonator",
+    "Width": 18,
+    "Height": 18,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Items/Weapons/DecoyDetonator.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Items/Weapons/DecoyDetonator.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, a wizarding weapon themed around Decoy Detonator, combat-ready magical gear, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "EnchantedTrollClub",
+    "Width": 44,
+    "Height": 44,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Items/Weapons/EnchantedTrollClub.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Items/Weapons/EnchantedTrollClub.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, a wizarding weapon themed around Enchanted Troll Club, combat-ready magical gear, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "FireboltBroomstick",
+    "Width": 40,
+    "Height": 20,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Items/Weapons/FireboltBroomstick.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Items/Weapons/FireboltBroomstick.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, a wizarding weapon themed around Firebolt Broomstick, combat-ready magical gear, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "GoblinSilverSword",
+    "Width": 44,
+    "Height": 44,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Items/Weapons/GoblinSilverSword.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Items/Weapons/GoblinSilverSword.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, a wizarding weapon themed around Goblin Silver Sword, combat-ready magical gear, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "HippogriffFeather",
+    "Width": 30,
+    "Height": 24,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Items/Weapons/HippogriffFeather.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Items/Weapons/HippogriffFeather.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, a wizarding weapon themed around Hippogriff Feather, combat-ready magical gear, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "HouseElfBell",
+    "Width": 24,
+    "Height": 24,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Items/Weapons/HouseElfBell.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Items/Weapons/HouseElfBell.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, a wizarding weapon themed around House Elf Bell, combat-ready magical gear, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "Howler",
+    "Width": 20,
+    "Height": 16,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Items/Weapons/Howler.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Items/Weapons/Howler.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, a wizarding weapon themed around Howler, combat-ready magical gear, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "HufflepuffsMace",
+    "Width": 44,
+    "Height": 44,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Items/Weapons/HufflepuffsMace.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Items/Weapons/HufflepuffsMace.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, a wizarding weapon themed around Hufflepuffs Mace, combat-ready magical gear, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "Nimbus2001Broomstick",
+    "Width": 40,
+    "Height": 20,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Items/Weapons/Nimbus2001Broomstick.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Items/Weapons/Nimbus2001Broomstick.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, a wizarding weapon themed around Nimbus2001 Broomstick, combat-ready magical gear, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "NimbusBroomstick",
+    "Width": 40,
+    "Height": 20,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Items/Weapons/NimbusBroomstick.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Items/Weapons/NimbusBroomstick.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, a wizarding weapon themed around Nimbus Broomstick, combat-ready magical gear, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "PeruvianDarknessPowder",
+    "Width": 18,
+    "Height": 18,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Items/Weapons/PeruvianDarknessPowder.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Items/Weapons/PeruvianDarknessPowder.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, a wizarding weapon themed around Peruvian Darkness Powder, combat-ready magical gear, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "PhoenixFeatherStaff",
+    "Width": 36,
+    "Height": 36,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Items/Weapons/PhoenixFeatherStaff.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Items/Weapons/PhoenixFeatherStaff.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, a wizarding weapon themed around Phoenix Feather Staff, combat-ready magical gear, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "Quaffle",
+    "Width": 20,
+    "Height": 20,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Items/Weapons/Quaffle.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Items/Weapons/Quaffle.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, a wizarding weapon themed around Quaffle, combat-ready magical gear, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "RavenclawsStaff",
+    "Width": 40,
+    "Height": 40,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Items/Weapons/RavenclawsStaff.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Items/Weapons/RavenclawsStaff.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, a wizarding weapon themed around Ravenclaws Staff, combat-ready magical gear, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "ScreechingHowler",
+    "Width": 22,
+    "Height": 18,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Items/Weapons/ScreechingHowler.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Items/Weapons/ScreechingHowler.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, a wizarding weapon themed around Screeching Howler, combat-ready magical gear, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "SlytherinsDagger",
+    "Width": 32,
+    "Height": 32,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Items/Weapons/SlytherinsDagger.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Items/Weapons/SlytherinsDagger.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, a wizarding weapon themed around Slytherins Dagger, combat-ready magical gear, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "SwordOfGryffindor",
+    "Width": 48,
+    "Height": 48,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Items/Weapons/SwordOfGryffindor.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Items/Weapons/SwordOfGryffindor.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, a wizarding weapon themed around Sword Of Gryffindor, combat-ready magical gear, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "ThestralReins",
+    "Width": 28,
+    "Height": 22,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Items/Weapons/ThestralReins.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Items/Weapons/ThestralReins.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, a wizarding weapon themed around Thestral Reins, combat-ready magical gear, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "TrollClub",
+    "Width": 36,
+    "Height": 36,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Items/Weapons/TrollClub.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Items/Weapons/TrollClub.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, a wizarding weapon themed around Troll Club, combat-ready magical gear, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "UmbridgesQuill",
+    "Width": 30,
+    "Height": 30,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Items/Weapons/UmbridgesQuill.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Items/Weapons/UmbridgesQuill.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, a wizarding weapon themed around Umbridges Quill, combat-ready magical gear, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "VenomousSwordOfGryffindor",
+    "Width": 52,
+    "Height": 52,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Items/Weapons/VenomousSwordOfGryffindor.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Items/Weapons/VenomousSwordOfGryffindor.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, a wizarding weapon themed around Venomous Sword Of Gryffindor, combat-ready magical gear, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "AlderWand",
+    "Width": 36,
+    "Height": 36,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Items/Weapons/Wands/AlderWand.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Items/Weapons/Wands/AlderWand.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, a wizarding weapon themed around Alder Wand, combat-ready magical gear, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "AlohomoraWand",
+    "Width": 18,
+    "Height": 18,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Items/Weapons/Wands/AlohomoraWand.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Items/Weapons/Wands/AlohomoraWand.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, a wizarding weapon themed around Alohomora Wand, combat-ready magical gear, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "AshWand",
+    "Width": 36,
+    "Height": 36,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Items/Weapons/Wands/AshWand.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Items/Weapons/Wands/AshWand.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, a wizarding weapon themed around Ash Wand, combat-ready magical gear, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "BirchWand",
+    "Width": 36,
+    "Height": 36,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Items/Weapons/Wands/BirchWand.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Items/Weapons/Wands/BirchWand.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, a wizarding weapon themed around Birch Wand, combat-ready magical gear, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "BlackthornWand",
+    "Width": 38,
+    "Height": 38,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Items/Weapons/Wands/BlackthornWand.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Items/Weapons/Wands/BlackthornWand.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, a wizarding weapon themed around Blackthorn Wand, combat-ready magical gear, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "CedarWand",
+    "Width": 36,
+    "Height": 36,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Items/Weapons/Wands/CedarWand.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Items/Weapons/Wands/CedarWand.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, a wizarding weapon themed around Cedar Wand, combat-ready magical gear, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "CypressWand",
+    "Width": 38,
+    "Height": 38,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Items/Weapons/Wands/CypressWand.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Items/Weapons/Wands/CypressWand.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, a wizarding weapon themed around Cypress Wand, combat-ready magical gear, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "DragonHeartstringWand",
+    "Width": 36,
+    "Height": 36,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Items/Weapons/Wands/DragonHeartstringWand.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Items/Weapons/Wands/DragonHeartstringWand.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, a wizarding weapon themed around Dragon Heartstring Wand, combat-ready magical gear, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "EbonyWand",
+    "Width": 38,
+    "Height": 38,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Items/Weapons/Wands/EbonyWand.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Items/Weapons/Wands/EbonyWand.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, a wizarding weapon themed around Ebony Wand, combat-ready magical gear, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "ElderWand",
+    "Width": 42,
+    "Height": 42,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Items/Weapons/Wands/ElderWand.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Items/Weapons/Wands/ElderWand.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, a wizarding weapon themed around Elder Wand, combat-ready magical gear, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "ElmWand",
+    "Width": 36,
+    "Height": 36,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Items/Weapons/Wands/ElmWand.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Items/Weapons/Wands/ElmWand.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, a wizarding weapon themed around Elm Wand, combat-ready magical gear, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "FiendfyreWand",
+    "Width": 42,
+    "Height": 42,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Items/Weapons/Wands/FiendfyreWand.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Items/Weapons/Wands/FiendfyreWand.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, a wizarding weapon themed around Fiendfyre Wand, combat-ready magical gear, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "HawthornWand",
+    "Width": 38,
+    "Height": 38,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Items/Weapons/Wands/HawthornWand.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Items/Weapons/Wands/HawthornWand.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, a wizarding weapon themed around Hawthorn Wand, combat-ready magical gear, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "HollyWand",
+    "Width": 38,
+    "Height": 38,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Items/Weapons/Wands/HollyWand.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Items/Weapons/Wands/HollyWand.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, a wizarding weapon themed around Holly Wand, combat-ready magical gear, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "InfernalPhoenixWand",
+    "Width": 40,
+    "Height": 40,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Items/Weapons/Wands/InfernalPhoenixWand.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Items/Weapons/Wands/InfernalPhoenixWand.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, a wizarding weapon themed around Infernal Phoenix Wand, combat-ready magical gear, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "LarchWand",
+    "Width": 36,
+    "Height": 36,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Items/Weapons/Wands/LarchWand.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Items/Weapons/Wands/LarchWand.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, a wizarding weapon themed around Larch Wand, combat-ready magical gear, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "OakWand",
+    "Width": 36,
+    "Height": 36,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Items/Weapons/Wands/OakWand.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Items/Weapons/Wands/OakWand.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, a wizarding weapon themed around Oak Wand, combat-ready magical gear, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "PhoenixFeatherWand",
+    "Width": 36,
+    "Height": 36,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Items/Weapons/Wands/PhoenixFeatherWand.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Items/Weapons/Wands/PhoenixFeatherWand.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, a wizarding weapon themed around Phoenix Feather Wand, combat-ready magical gear, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "RedOakWand",
+    "Width": 36,
+    "Height": 36,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Items/Weapons/Wands/RedOakWand.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Items/Weapons/Wands/RedOakWand.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, a wizarding weapon themed around Red Oak Wand, combat-ready magical gear, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "RowanWand",
+    "Width": 36,
+    "Height": 36,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Items/Weapons/Wands/RowanWand.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Items/Weapons/Wands/RowanWand.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, a wizarding weapon themed around Rowan Wand, combat-ready magical gear, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "ShadowElderWand",
+    "Width": 42,
+    "Height": 42,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Items/Weapons/Wands/ShadowElderWand.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Items/Weapons/Wands/ShadowElderWand.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, a wizarding weapon themed around Shadow Elder Wand, combat-ready magical gear, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "UnicornHairWand",
+    "Width": 36,
+    "Height": 36,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Items/Weapons/Wands/UnicornHairWand.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Items/Weapons/Wands/UnicornHairWand.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, a wizarding weapon themed around Unicorn Hair Wand, combat-ready magical gear, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "VineWand",
+    "Width": 38,
+    "Height": 38,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Items/Weapons/Wands/VineWand.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Items/Weapons/Wands/VineWand.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, a wizarding weapon themed around Vine Wand, combat-ready magical gear, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "WandOfDestiny",
+    "Width": 44,
+    "Height": 44,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Items/Weapons/Wands/WandOfDestiny.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Items/Weapons/Wands/WandOfDestiny.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, a wizarding weapon themed around Wand Of Destiny, combat-ready magical gear, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "WillowWand",
+    "Width": 36,
+    "Height": 36,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Items/Weapons/Wands/WillowWand.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Items/Weapons/Wands/WillowWand.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, a wizarding weapon themed around Willow Wand, combat-ready magical gear, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "YewWand",
+    "Width": 38,
+    "Height": 38,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Items/Weapons/Wands/YewWand.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Items/Weapons/Wands/YewWand.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, a wizarding weapon themed around Yew Wand, combat-ready magical gear, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "WeasleyBlazeBox",
+    "Width": 18,
+    "Height": 18,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Items/Weapons/WeasleyBlazeBox.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Items/Weapons/WeasleyBlazeBox.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, a wizarding weapon themed around Weasley Blaze Box, combat-ready magical gear, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "WeasleyFireworks",
+    "Width": 20,
+    "Height": 20,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Items/Weapons/WeasleyFireworks.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Items/Weapons/WeasleyFireworks.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, a wizarding weapon themed around Weasley Fireworks, combat-ready magical gear, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "WizardFishingRod",
+    "Width": 24,
+    "Height": 28,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Items/Weapons/WizardFishingRod.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Items/Weapons/WizardFishingRod.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, a wizarding weapon themed around Wizard Fishing Rod, combat-ready magical gear, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "FireboltMount",
+    "Width": 80,
+    "Height": 208,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Mounts/FireboltMount.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Mounts/FireboltMount.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, a wizarding game sprite themed around Firebolt Mount, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "HippogriffMount",
+    "Width": 80,
+    "Height": 208,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Mounts/HippogriffMount.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Mounts/HippogriffMount.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, a wizarding game sprite themed around Hippogriff Mount, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "Nimbus2001Mount",
+    "Width": 80,
+    "Height": 208,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Mounts/Nimbus2001Mount.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Mounts/Nimbus2001Mount.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, a wizarding game sprite themed around Nimbus2001 Mount, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "NimbusMount",
+    "Width": 80,
+    "Height": 208,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Mounts/NimbusMount.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Mounts/NimbusMount.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, a wizarding game sprite themed around Nimbus Mount, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "ThestralMount",
+    "Width": 80,
+    "Height": 208,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Mounts/ThestralMount.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Mounts/ThestralMount.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, a wizarding game sprite themed around Thestral Mount, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "AragogBoss",
+    "Width": 60,
+    "Height": 312,
+    "FrameCount": 6,
+    "ProcessKind": "sheet",
+    "OutputPath": "Content/NPCs/Bosses/Aragog/AragogBoss.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/NPCs/Bosses/Aragog/AragogBoss.png",
+    "Prompt": "Terraria-style pixel art sprite frame, single isolated figure, a single full-body sprite frame of Aragog, major wizarding boss, animation-ready pose. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "AragogBoss_Head_Boss",
+    "Width": 32,
+    "Height": 32,
+    "FrameCount": 1,
+    "ProcessKind": "icon",
+    "OutputPath": "Content/NPCs/Bosses/Aragog/AragogBoss_Head_Boss.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/NPCs/Bosses/Aragog/AragogBoss_Head_Boss.png",
+    "Prompt": "Terraria-style pixel art icon, centered emblem, a boss head icon of Aragog Boss, intimidating wizarding villain portrait. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "BartyCrouchBoss",
+    "Width": 40,
+    "Height": 348,
+    "FrameCount": 6,
+    "ProcessKind": "sheet",
+    "OutputPath": "Content/NPCs/Bosses/BartyCrouch/BartyCrouchBoss.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/NPCs/Bosses/BartyCrouch/BartyCrouchBoss.png",
+    "Prompt": "Terraria-style pixel art sprite frame, single isolated figure, a single full-body sprite frame of Barty Crouch, major wizarding boss, animation-ready pose. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "BartyCrouchBoss_Head_Boss",
+    "Width": 32,
+    "Height": 32,
+    "FrameCount": 1,
+    "ProcessKind": "icon",
+    "OutputPath": "Content/NPCs/Bosses/BartyCrouch/BartyCrouchBoss_Head_Boss.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/NPCs/Bosses/BartyCrouch/BartyCrouchBoss_Head_Boss.png",
+    "Prompt": "Terraria-style pixel art icon, centered emblem, a boss head icon of Barty Crouch Boss, intimidating wizarding villain portrait. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "BasiliskBoss",
+    "Width": 60,
+    "Height": 372,
+    "FrameCount": 6,
+    "ProcessKind": "sheet",
+    "OutputPath": "Content/NPCs/Bosses/Basilisk/BasiliskBoss.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/NPCs/Bosses/Basilisk/BasiliskBoss.png",
+    "Prompt": "Terraria-style pixel art sprite frame, single isolated figure, a single full-body sprite frame of Basilisk, major wizarding boss, animation-ready pose. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "BasiliskBoss_Head_Boss",
+    "Width": 32,
+    "Height": 32,
+    "FrameCount": 1,
+    "ProcessKind": "icon",
+    "OutputPath": "Content/NPCs/Bosses/Basilisk/BasiliskBoss_Head_Boss.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/NPCs/Bosses/Basilisk/BasiliskBoss_Head_Boss.png",
+    "Prompt": "Terraria-style pixel art icon, centered emblem, a boss head icon of Basilisk Boss, intimidating wizarding villain portrait. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "BellatrixBoss",
+    "Width": 40,
+    "Height": 372,
+    "FrameCount": 6,
+    "ProcessKind": "sheet",
+    "OutputPath": "Content/NPCs/Bosses/Bellatrix/BellatrixBoss.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/NPCs/Bosses/Bellatrix/BellatrixBoss.png",
+    "Prompt": "Terraria-style pixel art sprite frame, single isolated figure, a single full-body sprite frame of Bellatrix, major wizarding boss, animation-ready pose. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "BellatrixBoss_Head_Boss",
+    "Width": 32,
+    "Height": 32,
+    "FrameCount": 1,
+    "ProcessKind": "icon",
+    "OutputPath": "Content/NPCs/Bosses/Bellatrix/BellatrixBoss_Head_Boss.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/NPCs/Bosses/Bellatrix/BellatrixBoss_Head_Boss.png",
+    "Prompt": "Terraria-style pixel art icon, centered emblem, a boss head icon of Bellatrix Boss, intimidating wizarding villain portrait. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "DementorKingBoss",
+    "Width": 60,
+    "Height": 432,
+    "FrameCount": 6,
+    "ProcessKind": "sheet",
+    "OutputPath": "Content/NPCs/Bosses/DementorKing/DementorKingBoss.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/NPCs/Bosses/DementorKing/DementorKingBoss.png",
+    "Prompt": "Terraria-style pixel art sprite frame, single isolated figure, a single full-body sprite frame of Dementor King, major wizarding boss, animation-ready pose. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "DementorKingBoss_Head_Boss",
+    "Width": 32,
+    "Height": 32,
+    "FrameCount": 1,
+    "ProcessKind": "icon",
+    "OutputPath": "Content/NPCs/Bosses/DementorKing/DementorKingBoss_Head_Boss.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/NPCs/Bosses/DementorKing/DementorKingBoss_Head_Boss.png",
+    "Prompt": "Terraria-style pixel art icon, centered emblem, a boss head icon of Dementor King Boss, intimidating wizarding villain portrait. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "FenrirBoss",
+    "Width": 50,
+    "Height": 372,
+    "FrameCount": 6,
+    "ProcessKind": "sheet",
+    "OutputPath": "Content/NPCs/Bosses/Fenrir/FenrirBoss.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/NPCs/Bosses/Fenrir/FenrirBoss.png",
+    "Prompt": "Terraria-style pixel art sprite frame, single isolated figure, a single full-body sprite frame of Fenrir, major wizarding boss, animation-ready pose. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "FenrirBoss_Head_Boss",
+    "Width": 32,
+    "Height": 32,
+    "FrameCount": 1,
+    "ProcessKind": "icon",
+    "OutputPath": "Content/NPCs/Bosses/Fenrir/FenrirBoss_Head_Boss.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/NPCs/Bosses/Fenrir/FenrirBoss_Head_Boss.png",
+    "Prompt": "Terraria-style pixel art icon, centered emblem, a boss head icon of Fenrir Boss, intimidating wizarding villain portrait. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "FluffyBoss",
+    "Width": 70,
+    "Height": 372,
+    "FrameCount": 6,
+    "ProcessKind": "sheet",
+    "OutputPath": "Content/NPCs/Bosses/Fluffy/FluffyBoss.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/NPCs/Bosses/Fluffy/FluffyBoss.png",
+    "Prompt": "Terraria-style pixel art sprite frame, single isolated figure, a single full-body sprite frame of Fluffy, major wizarding boss, animation-ready pose. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "FluffyBoss_Head_Boss",
+    "Width": 32,
+    "Height": 32,
+    "FrameCount": 1,
+    "ProcessKind": "icon",
+    "OutputPath": "Content/NPCs/Bosses/Fluffy/FluffyBoss_Head_Boss.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/NPCs/Bosses/Fluffy/FluffyBoss_Head_Boss.png",
+    "Prompt": "Terraria-style pixel art icon, centered emblem, a boss head icon of Fluffy Boss, intimidating wizarding villain portrait. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "HorntailBoss",
+    "Width": 80,
+    "Height": 492,
+    "FrameCount": 6,
+    "ProcessKind": "sheet",
+    "OutputPath": "Content/NPCs/Bosses/Horntail/HorntailBoss.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/NPCs/Bosses/Horntail/HorntailBoss.png",
+    "Prompt": "Terraria-style pixel art sprite frame, single isolated figure, a single full-body sprite frame of Horntail, major wizarding boss, animation-ready pose. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "HorntailBoss_Head_Boss",
+    "Width": 32,
+    "Height": 32,
+    "FrameCount": 1,
+    "ProcessKind": "icon",
+    "OutputPath": "Content/NPCs/Bosses/Horntail/HorntailBoss_Head_Boss.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/NPCs/Bosses/Horntail/HorntailBoss_Head_Boss.png",
+    "Prompt": "Terraria-style pixel art icon, centered emblem, a boss head icon of Horntail Boss, intimidating wizarding villain portrait. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "QuirrellBoss",
+    "Width": 40,
+    "Height": 348,
+    "FrameCount": 6,
+    "ProcessKind": "sheet",
+    "OutputPath": "Content/NPCs/Bosses/Quirrell/QuirrellBoss.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/NPCs/Bosses/Quirrell/QuirrellBoss.png",
+    "Prompt": "Terraria-style pixel art sprite frame, single isolated figure, a single full-body sprite frame of Quirrell, major wizarding boss, animation-ready pose. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "QuirrellBoss_Head_Boss",
+    "Width": 32,
+    "Height": 32,
+    "FrameCount": 1,
+    "ProcessKind": "icon",
+    "OutputPath": "Content/NPCs/Bosses/Quirrell/QuirrellBoss_Head_Boss.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/NPCs/Bosses/Quirrell/QuirrellBoss_Head_Boss.png",
+    "Prompt": "Terraria-style pixel art icon, centered emblem, a boss head icon of Quirrell Boss, intimidating wizarding villain portrait. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "TrollBoss",
+    "Width": 50,
+    "Height": 372,
+    "FrameCount": 6,
+    "ProcessKind": "sheet",
+    "OutputPath": "Content/NPCs/Bosses/Troll/TrollBoss.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/NPCs/Bosses/Troll/TrollBoss.png",
+    "Prompt": "Terraria-style pixel art sprite frame, single isolated figure, a single full-body sprite frame of Troll, major wizarding boss, animation-ready pose. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "TrollBoss_Head_Boss",
+    "Width": 32,
+    "Height": 32,
+    "FrameCount": 1,
+    "ProcessKind": "icon",
+    "OutputPath": "Content/NPCs/Bosses/Troll/TrollBoss_Head_Boss.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/NPCs/Bosses/Troll/TrollBoss_Head_Boss.png",
+    "Prompt": "Terraria-style pixel art icon, centered emblem, a boss head icon of Troll Boss, intimidating wizarding villain portrait. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "UmbridgeBoss",
+    "Width": 36,
+    "Height": 312,
+    "FrameCount": 6,
+    "ProcessKind": "sheet",
+    "OutputPath": "Content/NPCs/Bosses/Umbridge/UmbridgeBoss.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/NPCs/Bosses/Umbridge/UmbridgeBoss.png",
+    "Prompt": "Terraria-style pixel art sprite frame, single isolated figure, a single full-body sprite frame of Umbridge, major wizarding boss, animation-ready pose. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "UmbridgeBoss_Head_Boss",
+    "Width": 32,
+    "Height": 32,
+    "FrameCount": 1,
+    "ProcessKind": "icon",
+    "OutputPath": "Content/NPCs/Bosses/Umbridge/UmbridgeBoss_Head_Boss.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/NPCs/Bosses/Umbridge/UmbridgeBoss_Head_Boss.png",
+    "Prompt": "Terraria-style pixel art icon, centered emblem, a boss head icon of Umbridge Boss, intimidating wizarding villain portrait. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "VoldemortBoss",
+    "Width": 40,
+    "Height": 372,
+    "FrameCount": 6,
+    "ProcessKind": "sheet",
+    "OutputPath": "Content/NPCs/Bosses/Voldemort/VoldemortBoss.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/NPCs/Bosses/Voldemort/VoldemortBoss.png",
+    "Prompt": "Terraria-style pixel art sprite frame, single isolated figure, a single full-body sprite frame of Voldemort, major wizarding boss, animation-ready pose. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "VoldemortBoss_Head_Boss",
+    "Width": 32,
+    "Height": 32,
+    "FrameCount": 1,
+    "ProcessKind": "icon",
+    "OutputPath": "Content/NPCs/Bosses/Voldemort/VoldemortBoss_Head_Boss.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/NPCs/Bosses/Voldemort/VoldemortBoss_Head_Boss.png",
+    "Prompt": "Terraria-style pixel art icon, centered emblem, a boss head icon of Voldemort Boss, intimidating wizarding villain portrait. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "Acromantula",
+    "Width": 40,
+    "Height": 128,
+    "FrameCount": 4,
+    "ProcessKind": "sheet",
+    "OutputPath": "Content/NPCs/Enemies/Acromantula.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/NPCs/Enemies/Acromantula.png",
+    "Prompt": "Terraria-style pixel art sprite frame, single isolated figure, a single full-body sprite frame of Acromantula, hostile magical creature or encounter object, animation-ready pose. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  }
+]

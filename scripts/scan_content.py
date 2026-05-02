@@ -1,0 +1,388 @@
+#!/usr/bin/env python3
+"""
+Wizarding World — Source-of-Truth Content Scanner
+
+Scans the actual repository and produces content_manifest.json
+with verified counts and item lists derived from the filesystem.
+
+This is the ONLY authoritative source for content counts.
+The PDF generator and verification script both consume this output.
+
+Usage:
+    python scripts/scan_content.py              # writes scripts/content_manifest.json
+    python scripts/scan_content.py --pretty     # human-readable output
+    python scripts/scan_content.py --check      # print summary to stdout
+"""
+
+import argparse
+import json
+import os
+import re
+import sys
+from pathlib import Path
+
+
+EXCLUDED_DIRS = {
+    ".git",
+    ".vs",
+    "bin",
+    "dist",
+    "obj",
+    "__pycache__",
+}
+
+
+def find_repo_root():
+    """Find the repo root by looking for WizardingWorld.csproj."""
+    here = Path(__file__).resolve().parent.parent
+    if (here / "WizardingWorld.csproj").exists():
+        return here
+    # fallback: walk up
+    for p in Path(__file__).resolve().parents:
+        if (p / "WizardingWorld.csproj").exists():
+            return p
+    sys.exit("ERROR: cannot find WizardingWorld.csproj from script location")
+
+
+def list_cs_basenames(directory: Path) -> list[str]:
+    """Return sorted list of .cs file basenames (without extension) in a directory."""
+    if not directory.exists():
+        return []
+    return sorted(p.stem for p in directory.glob("*.cs"))
+
+
+def list_cs_basenames_recursive(directory: Path) -> list[str]:
+    """Return sorted list of .cs file basenames (without extension) recursively."""
+    if not directory.exists():
+        return []
+    return sorted(p.stem for p in directory.rglob("*.cs"))
+
+
+def list_subdirs(directory: Path) -> list[str]:
+    """Return sorted list of immediate subdirectory names."""
+    if not directory.exists():
+        return []
+    return sorted(d.name for d in directory.iterdir() if d.is_dir())
+
+
+def iter_source_files(directory: Path):
+    """Yield repository files, excluding build and cache output directories."""
+    if not directory.exists():
+        return
+    for current, dirs, files in os.walk(directory):
+        dirs[:] = [d for d in dirs if d not in EXCLUDED_DIRS]
+        current_path = Path(current)
+        for name in files:
+            yield current_path / name
+
+
+def count_files(directory: Path, pattern: str) -> int:
+    """Count files matching a glob pattern recursively, excluding build output."""
+    if not directory.exists():
+        return 0
+    return sum(1 for p in iter_source_files(directory) if p.match(pattern))
+
+
+def detect_obsolete(wand_dir: Path) -> list[str]:
+    """Return list of wand basenames that contain [Obsolete] attribute."""
+    obsolete = []
+    if not wand_dir.exists():
+        return obsolete
+    for p in wand_dir.glob("*.cs"):
+        text = p.read_text(encoding="utf-8", errors="replace")
+        if "[Obsolete" in text:
+            obsolete.append(p.stem)
+    return sorted(obsolete)
+
+
+def detect_utility_wands(wand_dir: Path) -> list[str]:
+    """Return list of wand basenames that have damage=1 (utility, not combat)."""
+    utility = []
+    if not wand_dir.exists():
+        return utility
+    for p in wand_dir.glob("*.cs"):
+        text = p.read_text(encoding="utf-8", errors="replace")
+        if "[Obsolete" in text:
+            continue
+        # Match Item.damage = 1; patterns
+        if re.search(r"Item\.damage\s*=\s*1\s*;", text):
+            utility.append(p.stem)
+    return sorted(utility)
+
+
+def detect_upgrade_wands(wand_dir: Path, obsolete: list[str]) -> list[str]:
+    """Heuristic: wands referencing another wand type in recipe or marked upgrade."""
+    upgrades = []
+    if not wand_dir.exists():
+        return upgrades
+    for p in wand_dir.glob("*.cs"):
+        if p.stem in obsolete:
+            continue
+        text = p.read_text(encoding="utf-8", errors="replace")
+        # Look for "Upgrade" in comments or class name containing Infernal/Shadow
+        if "Upgrade" in text or "upgrade" in text:
+            if p.stem not in detect_utility_wands(wand_dir):
+                upgrades.append(p.stem)
+    return sorted(upgrades)
+
+
+def scan(root: Path) -> dict:
+    """Scan the repository and return the complete manifest."""
+    content = root / "Content"
+    common = root / "Common"
+
+    # --- High-level file counts ---
+    cs_count = count_files(root, "*.cs")
+    png_count = count_files(root, "*.png")
+    total_count = sum(1 for _ in iter_source_files(root))
+
+    # --- Wands ---
+    wand_dir = content / "Items" / "Weapons" / "Wands"
+    all_wands = list_cs_basenames(wand_dir)
+    obsolete_wands = detect_obsolete(wand_dir)
+    utility_wands = detect_utility_wands(wand_dir)
+    active_wands = [w for w in all_wands if w not in obsolete_wands]
+    combat_wands = [w for w in active_wands if w not in utility_wands]
+
+    # Upgrades: detect by comment/summary heuristic (before class declaration)
+    upgrade_wands = []
+    for w in combat_wands:
+        p = wand_dir / f"{w}.cs"
+        text = p.read_text(encoding="utf-8", errors="replace")
+        # Check text before class declaration for upgrade indicators
+        pre_class = text.split("class ")[0].lower() if "class " in text else text.lower()
+        if "upgrade" in pre_class or "(upgrade)" in text.lower():
+            upgrade_wands.append(w)
+    base_combat_wands = [w for w in combat_wands if w not in upgrade_wands]
+
+    # --- Other weapons ---
+    other_weapons = list_cs_basenames(content / "Items" / "Weapons")
+
+    # --- Bosses ---
+    boss_dir = content / "NPCs" / "Bosses"
+    bosses = []
+    if boss_dir.exists():
+        for d in sorted(boss_dir.iterdir()):
+            if d.is_dir():
+                boss_files = list(d.glob("*Boss.cs"))
+                if boss_files:
+                    bosses.append(boss_files[0].stem.replace("Boss", ""))
+
+    # --- Enemies ---
+    enemies = list_cs_basenames(content / "NPCs" / "Enemies")
+
+    # --- Town NPCs ---
+    town_npcs = list_cs_basenames(content / "NPCs" / "Town")
+
+    # --- Accessories ---
+    accessories = list_cs_basenames(content / "Items" / "Accessories")
+
+    # --- Armor sets ---
+    armor_sets = list_subdirs(content / "Items" / "Armor")
+    armor_pieces = list_cs_basenames_recursive(content / "Items" / "Armor")
+
+    # --- Pets ---
+    pet_folders = list_subdirs(content / "Pets")
+
+    # --- Mounts ---
+    mounts = list_cs_basenames(content / "Mounts")
+
+    # --- Potions ---
+    potions = list_cs_basenames(content / "Items" / "Consumables" / "Potions")
+
+    # --- Consumables (non-potion) ---
+    consumables = list_cs_basenames(content / "Items" / "Consumables")
+
+    # --- Buffs ---
+    all_buffs = list_cs_basenames(content / "Buffs")
+    debuffs = list_cs_basenames(content / "Buffs" / "Debuffs")
+    standard_buffs = [b for b in all_buffs if b not in debuffs]
+
+    # --- Projectiles ---
+    spell_projectiles = list_cs_basenames(content / "Projectiles" / "Spells")
+    other_projectiles = list_cs_basenames(content / "Projectiles")
+    # Remove spell projectiles from the flat list to avoid double-counting
+    # (Spells/ is a subdir so its files don't appear in maxdepth-1 listing)
+
+    # --- Boss loot ---
+    boss_loot = list_cs_basenames_recursive(content / "Items" / "BossLoot")
+
+    # --- Placeable ---
+    placeables = list_cs_basenames(content / "Items" / "Placeable")
+
+    # --- Systems ---
+    systems = list_cs_basenames(common / "Systems")
+
+    # --- Players ---
+    players = list_cs_basenames(common / "Players")
+
+    # --- Crafting materials (consumables that are materials, not potions/summons/food) ---
+    # Heuristic: items that are likely materials based on naming
+    material_names = [
+        "AshwinderEgg", "BowtruckleCatch", "CerberusFang", "DemiguiseHair",
+        "DementorsShroud", "DragonScale", "DugbogHide", "EnchantedTadpole",
+        "EssenceOfMagic", "GoldenEgg", "GrindylowTooth", "ImpFlame",
+        "JobberknollFeather", "MagicalKoi", "MerfolkScale", "PhoenixAsh",
+        "PhoenixTear", "SpiderSilkWeave", "UnicornBlood", "WerewolfPelt",
+    ]
+    crafting_materials = [m for m in material_names if m in consumables]
+
+    # --- Build manifest ---
+    manifest = {
+        "_meta": {
+            "generator": "scripts/scan_content.py",
+            "description": "Auto-derived content manifest. Do NOT edit manually.",
+            "note": "Curated narrative content (boss descriptions, spell flavor text, etc.) "
+                    "is maintained separately in scripts/guide_narrative.json.",
+        },
+        "file_counts": {
+            "cs_source_files": cs_count,
+            "png_sprites": png_count,
+            "total_files": total_count,
+        },
+        "wands": {
+            "all_files": all_wands,
+            "active": active_wands,
+            "base_combat": base_combat_wands,
+            "utility": utility_wands,
+            "upgrades": upgrade_wands,
+            "obsolete_stubs": obsolete_wands,
+            "count_active": len(active_wands),
+            "count_base_combat": len(base_combat_wands),
+            "count_utility": len(utility_wands),
+            "count_upgrades": len(upgrade_wands),
+            "count_obsolete": len(obsolete_wands),
+        },
+        "bosses": {
+            "list": bosses,
+            "count": len(bosses),
+        },
+        "enemies": {
+            "list": enemies,
+            "count": len(enemies),
+        },
+        "town_npcs": {
+            "list": town_npcs,
+            "count": len(town_npcs),
+        },
+        "accessories": {
+            "list": accessories,
+            "count": len(accessories),
+        },
+        "armor": {
+            "sets": armor_sets,
+            "pieces": armor_pieces,
+            "count_sets": len(armor_sets),
+            "count_pieces": len(armor_pieces),
+        },
+        "pets": {
+            "list": pet_folders,
+            "count": len(pet_folders),
+        },
+        "mounts": {
+            "list": mounts,
+            "count": len(mounts),
+        },
+        "potions": {
+            "list": potions,
+            "count": len(potions),
+        },
+        "consumables_non_potion": {
+            "list": consumables,
+            "count": len(consumables),
+        },
+        "buffs": {
+            "standard": standard_buffs,
+            "debuffs": debuffs,
+            "count_standard": len(standard_buffs),
+            "count_debuffs": len(debuffs),
+            "count_total": len(all_buffs) + len(debuffs),
+        },
+        "projectiles": {
+            "spells": spell_projectiles,
+            "other": other_projectiles,
+            "count_spells": len(spell_projectiles),
+            "count_other": len(other_projectiles),
+        },
+        "boss_loot": {
+            "list": boss_loot,
+            "count": len(boss_loot),
+        },
+        "other_weapons": {
+            "list": other_weapons,
+            "count": len(other_weapons),
+        },
+        "placeables": {
+            "list": placeables,
+            "count": len(placeables),
+        },
+        "systems": {
+            "list": systems,
+            "count": len(systems),
+        },
+        "crafting_materials": {
+            "list": crafting_materials,
+            "count": len(crafting_materials),
+        },
+        "summary": {},  # filled below
+    }
+
+    # Build the human-readable summary
+    manifest["summary"] = {
+        "cs_files": cs_count,
+        "png_sprites": png_count,
+        "total_files": total_count,
+        "wands_active": len(active_wands),
+        "wands_base_combat": len(base_combat_wands),
+        "wands_upgrades": len(upgrade_wands),
+        "wands_utility": len(utility_wands),
+        "wands_obsolete_stubs": len(obsolete_wands),
+        "bosses": len(bosses),
+        "enemies": len(enemies),
+        "town_npcs": len(town_npcs),
+        "accessories": len(accessories),
+        "armor_sets": len(armor_sets),
+        "armor_pieces": len(armor_pieces),
+        "pets": len(pet_folders),
+        "mounts": len(mounts),
+        "potions": len(potions),
+        "crafting_materials": len(crafting_materials),
+        "systems": len(systems),
+        "other_weapons": len(other_weapons),
+    }
+
+    return manifest
+
+
+def main():
+    parser = argparse.ArgumentParser(description="Scan WizardingWorld mod content")
+    parser.add_argument("--pretty", action="store_true", help="Pretty-print JSON")
+    parser.add_argument("--check", action="store_true", help="Print summary to stdout only")
+    parser.add_argument("--output", type=str, default=None, help="Output file path")
+    args = parser.parse_args()
+
+    root = find_repo_root()
+    manifest = scan(root)
+
+    if args.check:
+        print("=== Wizarding World Content Summary ===")
+        for k, v in manifest["summary"].items():
+            print(f"  {k}: {v}")
+        return
+
+    output_path = args.output or str(root / "scripts" / "content_manifest.json")
+    indent = 2 if args.pretty else None
+    with open(output_path, "w", encoding="utf-8") as f:
+        json.dump(manifest, f, indent=indent, ensure_ascii=False)
+
+    print(f"Manifest written to: {output_path}")
+    s = manifest["summary"]
+    print(f"  {s['cs_files']} C# files | {s['png_sprites']} PNGs | {s['total_files']} total")
+    print(f"  {s['wands_active']} active wands ({s['wands_base_combat']} combat + {s['wands_upgrades']} upgrade + {s['wands_utility']} utility) + {s['wands_obsolete_stubs']} legacy stubs")
+    print(f"  {s['bosses']} bosses | {s['enemies']} enemies | {s['town_npcs']} town NPCs")
+    print(f"  {s['accessories']} accessories | {s['armor_sets']} armor sets | {s['pets']} pets | {s['mounts']} mounts")
+    print(f"  {s['potions']} potions | {s['crafting_materials']} crafting materials | {s['systems']} systems")
+
+
+if __name__ == "__main__":
+    main()

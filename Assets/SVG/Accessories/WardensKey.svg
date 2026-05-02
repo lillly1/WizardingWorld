@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <defs>
+    <linearGradient id="ironKey" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#4a4a5a"/>
+      <stop offset="50%" stop-color="#2a2a35"/>
+      <stop offset="100%" stop-color="#1a1a22"/>
+    </linearGradient>
+    <radialGradient id="wardGlow" cx="50%" cy="30%" r="60%">
+      <stop offset="0%" stop-color="#4488ff" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#4488ff" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="blueGlow">
+      <feGaussianBlur stdDeviation="0.8" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <!-- Glow background -->
+  <ellipse cx="16" cy="12" rx="10" ry="8" fill="url(#wardGlow)"/>
+  <!-- Key bow (top ring) -->
+  <circle cx="16" cy="9" r="5" fill="none" stroke="url(#ironKey)" stroke-width="2.5"/>
+  <circle cx="16" cy="9" r="3" fill="none" stroke="#3a3a48" stroke-width="1"/>
+  <!-- Ward runes on bow -->
+  <text x="14" y="8" font-size="2.5" fill="#5599dd" opacity="0.8" filter="url(#blueGlow)">&#x16A0;</text>
+  <text x="17" y="11" font-size="2.5" fill="#5599dd" opacity="0.8" filter="url(#blueGlow)">&#x16B1;</text>
+  <!-- Key shaft -->
+  <rect x="15" y="14" width="2" height="12" rx="0.5" fill="url(#ironKey)"/>
+  <line x1="15.5" y1="17" x2="15.5" y2="25" stroke="#3a3a48" stroke-width="0.3"/>
+  <!-- Key teeth -->
+  <rect x="17" y="23" width="3" height="1.5" rx="0.3" fill="url(#ironKey)"/>
+  <rect x="17" y="20.5" width="2" height="1.5" rx="0.3" fill="url(#ironKey)"/>
+  <rect x="17" y="25" width="4" height="1.5" rx="0.3" fill="url(#ironKey)"/>
+  <!-- Rune glow on shaft -->
+  <text x="14.5" y="20" font-size="2" fill="#4488ff" opacity="0.5" filter="url(#blueGlow)">&#x16A2;</text>
+  <!-- Metal highlight -->
+  <line x1="15.3" y1="14" x2="15.3" y2="26" stroke="#6a6a7a" stroke-width="0.4" opacity="0.5"/>
+</svg>

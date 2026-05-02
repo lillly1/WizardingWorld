@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 42 42">
+  <!-- Unicorn Hair Wand - faithful, casts Expecto Patronum -->
+  <defs>
+    <linearGradient id="uhWood" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F5DEB3"/>
+      <stop offset="50%" stop-color="#DEB887"/>
+      <stop offset="100%" stop-color="#C4A882"/>
+    </linearGradient>
+    <linearGradient id="uhGlow" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#C0C0FF" stop-opacity="0.9"/>
+      <stop offset="50%" stop-color="#8888FF" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#4444CC" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <!-- Silver-blue Patronus glow at tip -->
+  <circle cx="8" cy="8" r="4.5" fill="url(#uhGlow)" opacity="0.7"/>
+  <!-- Clean pale shaft -->
+  <line x1="8" y1="8" x2="34" y2="34" stroke="url(#uhWood)" stroke-width="2.6" stroke-linecap="round"/>
+  <!-- Unicorn hair core (silver shimmer) -->
+  <line x1="10" y1="10" x2="31" y2="31" stroke="#FFFFFF" stroke-width="0.4" opacity="0.5" stroke-dasharray="3,2"/>
+  <!-- Soft grain -->
+  <line x1="15" y1="14" x2="17" y2="16" stroke="#B8A078" stroke-width="0.3" opacity="0.4"/>
+  <line x1="22" y1="21" x2="24" y2="23" stroke="#B8A078" stroke-width="0.3" opacity="0.4"/>
+  <!-- Elegant tapered handle with silver ring -->
+  <circle cx="33" cy="33" r="0.8" fill="none" stroke="#C0C0C0" stroke-width="0.5"/>
+  <ellipse cx="35" cy="35" rx="2" ry="2" fill="#B8A078" stroke="#A89068" stroke-width="0.4"/>
+  <!-- Patronus sparkle at tip -->
+  <circle cx="7" cy="7" r="0.8" fill="#FFFFFF" opacity="0.9"/>
+  <circle cx="9" cy="6" r="0.4" fill="#DDDDFF" opacity="0.6"/>
+</svg>

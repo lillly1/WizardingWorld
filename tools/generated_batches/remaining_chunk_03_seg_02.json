@@ -1,0 +1,202 @@
+[
+  {
+    "Name": "EnchantingTableItem",
+    "Width": 18,
+    "Height": 18,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Items/Consumables/EnchantingTableItem.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Items/Consumables/EnchantingTableItem.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, a consumable magical item themed around Enchanting Table, wizarding utility object, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "EssenceOfMagic",
+    "Width": 16,
+    "Height": 16,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Items/Consumables/EssenceOfMagic.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Items/Consumables/EssenceOfMagic.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, a consumable magical item themed around Essence Of Magic, wizarding utility object, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "FizzyWhizbee",
+    "Width": 16,
+    "Height": 16,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Items/Consumables/FizzyWhizbee.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Items/Consumables/FizzyWhizbee.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, a consumable magical item themed around Fizzy Whizbee, wizarding utility object, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "FlooPowder",
+    "Width": 16,
+    "Height": 16,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Items/Consumables/FlooPowder.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Items/Consumables/FlooPowder.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, a consumable magical item themed around Floo Powder, wizarding utility object, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "ForestLantern",
+    "Width": 20,
+    "Height": 24,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Items/Consumables/ForestLantern.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Items/Consumables/ForestLantern.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, a consumable magical item themed around Forest Lantern, wizarding utility object, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "GalleonDust",
+    "Width": 16,
+    "Height": 16,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Items/Consumables/GalleonDust.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Items/Consumables/GalleonDust.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, a consumable magical item themed around Galleon Dust, wizarding utility object, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "GladeDew",
+    "Width": 16,
+    "Height": 16,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Items/Consumables/GladeDew.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Items/Consumables/GladeDew.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, a consumable magical item themed around Glade Dew, wizarding utility object, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "GoldenEgg",
+    "Width": 20,
+    "Height": 20,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Items/Consumables/GoldenEgg.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Items/Consumables/GoldenEgg.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, a consumable magical item themed around Golden Egg, wizarding utility object, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "GreatHallBell",
+    "Width": 24,
+    "Height": 24,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Items/Consumables/GreatHallBell.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Items/Consumables/GreatHallBell.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, a consumable magical item themed around Great Hall Bell, wizarding utility object, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "GrindylowTooth",
+    "Width": 14,
+    "Height": 14,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Items/Consumables/GrindylowTooth.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Items/Consumables/GrindylowTooth.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, a consumable magical item themed around Grindylow Tooth, wizarding utility object, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "GringottsVaultKey",
+    "Width": 18,
+    "Height": 18,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Items/Consumables/GringottsVaultKey.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Items/Consumables/GringottsVaultKey.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, a consumable magical item themed around Gringotts Vault Key, wizarding utility object, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "HealersSalts",
+    "Width": 16,
+    "Height": 16,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Items/Consumables/HealersSalts.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Items/Consumables/HealersSalts.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, a consumable magical item themed around Healers Salts, wizarding utility object, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "HorcruxTracker",
+    "Width": 20,
+    "Height": 20,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Items/Consumables/HorcruxTracker.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Items/Consumables/HorcruxTracker.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, a consumable magical item themed around Horcrux Tracker, wizarding utility object, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "ImpFlame",
+    "Width": 14,
+    "Height": 14,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Items/Consumables/ImpFlame.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Items/Consumables/ImpFlame.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, a consumable magical item themed around Imp Flame, wizarding utility object, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "JobberknollFeather",
+    "Width": 14,
+    "Height": 18,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Items/Consumables/JobberknollFeather.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Items/Consumables/JobberknollFeather.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, a consumable magical item themed around Jobberknoll Feather, wizarding utility object, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "KnockturnPass",
+    "Width": 18,
+    "Height": 18,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Items/Consumables/KnockturnPass.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Items/Consumables/KnockturnPass.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, a consumable magical item themed around Knockturn Pass, wizarding utility object, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "LakeRescueToken",
+    "Width": 16,
+    "Height": 16,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Items/Consumables/LakeRescueToken.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Items/Consumables/LakeRescueToken.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, a consumable magical item themed around Lake Rescue Token, wizarding utility object, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "LeakyCauldronToken",
+    "Width": 20,
+    "Height": 20,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Items/Consumables/LeakyCauldronToken.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Items/Consumables/LeakyCauldronToken.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, a consumable magical item themed around Leaky Cauldron Token, wizarding utility object, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "MagicalKoi",
+    "Width": 20,
+    "Height": 16,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Items/Consumables/MagicalKoi.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Items/Consumables/MagicalKoi.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, a consumable magical item themed around Magical Koi, wizarding utility object, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "MerfolkScale",
+    "Width": 16,
+    "Height": 16,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Items/Consumables/MerfolkScale.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Items/Consumables/MerfolkScale.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, a consumable magical item themed around Merfolk Scale, wizarding utility object, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  }
+]

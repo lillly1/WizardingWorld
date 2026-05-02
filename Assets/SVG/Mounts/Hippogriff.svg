@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 32">
+  <rect width="40" height="32" fill="#c8dce8"/>
+  <!-- Sky clouds hint -->
+  <g fill="#e0e8f0" opacity="0.4">
+    <ellipse cx="8" cy="5" rx="6" ry="2"/>
+    <ellipse cx="34" cy="8" rx="5" ry="1.5"/>
+  </g>
+  <!-- Wings spread -->
+  <g fill="#8a7a6a">
+    <!-- Left wing (back) -->
+    <path d="M16 12 L4 6 L6 10 L2 5 L5 9 L1 7 L6 12 L3 11 L8 14 Z" opacity="0.7"/>
+    <!-- Right wing (front, overlapping) -->
+    <path d="M20 10 L30 3 L28 7 L34 2 L30 7 L36 4 L30 10 L33 8 L26 13 Z"/>
+  </g>
+  <!-- Wing feather details -->
+  <g stroke="#6a5a4a" stroke-width="0.3" fill="none" opacity="0.5">
+    <path d="M22 9 L28 5"/>
+    <path d="M21 10 L26 7"/>
+    <path d="M20 11 L24 9"/>
+  </g>
+  <!-- Horse body (back half) -->
+  <g fill="#8a7a6a">
+    <!-- Barrel/torso -->
+    <ellipse cx="18" cy="18" rx="8" ry="5"/>
+    <!-- Hindquarters -->
+    <ellipse cx="24" cy="19" rx="5" ry="4.5"/>
+    <!-- Back legs -->
+    <path d="M22 23 L21 28 L20 30 L22 30 L23 28 L24 23" fill="#7a6a5a"/>
+    <path d="M26 22 L27 28 L26 30 L28 30 L29 28 L28 22" fill="#7a6a5a"/>
+    <!-- Hooves -->
+    <rect x="20" y="29" width="2.5" height="1.5" rx="0.5" fill="#4a3a2a"/>
+    <rect x="26" y="29" width="2.5" height="1.5" rx="0.5" fill="#4a3a2a"/>
+    <!-- Horse tail -->
+    <path d="M28 17 Q32 18 33 22 Q32 24 30 23" stroke="#6a5a4a" stroke-width="1.5" fill="none"/>
+  </g>
+  <!-- Eagle front half -->
+  <g>
+    <!-- Feathered chest -->
+    <ellipse cx="13" cy="17" rx="4" ry="5" fill="#9a8a7a"/>
+    <!-- Neck -->
+    <path d="M12 12 Q10 10 9 8 Q9 6 11 5" fill="#8a7a6a" stroke="#8a7a6a" stroke-width="2"/>
+    <!-- Eagle head -->
+    <circle cx="10" cy="5.5" r="3" fill="#7a6a5a"/>
+    <!-- Head feather tuft -->
+    <path d="M9 3 L8 1 L10 2.5 L11 0.5 L11.5 3" fill="#6a5a4a"/>
+    <!-- Beak - hooked -->
+    <path d="M7.5 5 L5 6 L5.5 7 L7.5 6.5 Z" fill="#e0a020"/>
+    <path d="M5 6 L4 6.8 L5.5 7" fill="#c88a10"/>
+    <!-- Eye - proud, fierce -->
+    <circle cx="8.8" cy="4.8" r="1" fill="#ff8c00"/>
+    <circle cx="8.8" cy="4.8" r="0.4" fill="#1a1a1a"/>
+    <!-- Front talons/legs -->
+    <path d="M11 22 L10 26 L9 28" stroke="#e0a020" stroke-width="1.5" fill="none"/>
+    <path d="M14 22 L13 26 L12 28" stroke="#e0a020" stroke-width="1.5" fill="none"/>
+    <!-- Talon claws -->
+    <g stroke="#c88a10" stroke-width="0.6" stroke-linecap="round">
+      <path d="M9 28 L7.5 29 M9 28 L9 29.5 M9 28 L10 29"/>
+      <path d="M12 28 L10.5 29 M12 28 L12 29.5 M12 28 L13 29"/>
+    </g>
+  </g>
+  <!-- Feather pattern on body transition -->
+  <g stroke="#7a6a5a" stroke-width="0.3" fill="none" opacity="0.4">
+    <path d="M14 15 Q15 14 16 15"/>
+    <path d="M13 17 Q14 16 15 17"/>
+    <path d="M14 19 Q15 18 16 19"/>
+  </g>
+</svg>

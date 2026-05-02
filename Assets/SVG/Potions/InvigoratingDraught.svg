@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 32">
+  <defs>
+    <linearGradient id="teal-liquid" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#40E0D0"/>
+      <stop offset="50%" stop-color="#20C0B0"/>
+      <stop offset="100%" stop-color="#00A090"/>
+    </linearGradient>
+    <linearGradient id="teal-glass" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="rgba(150,255,240,0.3)"/>
+      <stop offset="50%" stop-color="rgba(255,255,255,0.05)"/>
+      <stop offset="100%" stop-color="rgba(150,255,240,0.2)"/>
+    </linearGradient>
+    <radialGradient id="teal-glow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#40E0D0" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#40E0D0" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <!-- Teal glow -->
+  <ellipse cx="12" cy="19" rx="8" ry="9" fill="url(#teal-glow)"/>
+  <!-- Bottle body - slim energetic shape -->
+  <path d="M8,10 Q7,13 7,17 L7,24 Q7,27.5 9,28.5 L15,28.5 Q17,27.5 17,24 L17,17 Q17,13 16,10 Z" fill="#0a1a18" stroke="#30a090" stroke-width="0.4"/>
+  <path d="M8,10 Q7,13 7,17 L7,24 Q7,27.5 9,28.5 L15,28.5 Q17,27.5 17,24 L17,17 Q17,13 16,10 Z" fill="url(#teal-glass)" opacity="0.4"/>
+  <!-- Bright teal liquid -->
+  <path d="M8.3,12 Q7.4,14 7.4,17.5 L7.4,24 Q7.4,27 9.2,28 L14.8,28 Q16.6,27 16.6,24 L16.6,17.5 Q16.6,14 15.7,12 Z" fill="url(#teal-liquid)"/>
+  <!-- Sparkling effects -->
+  <circle cx="9.5" cy="16" r="0.35" fill="white" opacity="0.8"/>
+  <circle cx="13" cy="18" r="0.3" fill="white" opacity="0.7"/>
+  <circle cx="10.5" cy="21" r="0.25" fill="white" opacity="0.6"/>
+  <circle cx="14.5" cy="23" r="0.3" fill="white" opacity="0.7"/>
+  <circle cx="11" cy="25" r="0.2" fill="white" opacity="0.5"/>
+  <circle cx="15" cy="19" r="0.2" fill="#B0FFF0" opacity="0.8"/>
+  <circle cx="8.5" cy="23" r="0.25" fill="#B0FFF0" opacity="0.6"/>
+  <circle cx="12" cy="15" r="0.2" fill="white" opacity="0.9"/>
+  <!-- Star sparkles (4-pointed) -->
+  <path d="M10,19 L10.2,18.5 L10.4,19 L10.2,19.5 Z" fill="white" opacity="0.7"/>
+  <path d="M14,21 L14.2,20.5 L14.4,21 L14.2,21.5 Z" fill="white" opacity="0.6"/>
+  <path d="M12,26 L12.15,25.6 L12.3,26 L12.15,26.4 Z" fill="white" opacity="0.5"/>
+  <!-- Energy ripple surface -->
+  <path d="M8.3,12 Q10,11 12,12 Q14,13 15.7,12" stroke="#80FFE0" stroke-width="0.3" fill="none" opacity="0.6"/>
+  <!-- Bottle neck -->
+  <rect x="10" y="5" width="4" height="5.5" rx="0.5" fill="#0a1a18" stroke="#30a090" stroke-width="0.4"/>
+  <rect x="10" y="5" width="4" height="5.5" rx="0.5" fill="url(#teal-glass)" opacity="0.3"/>
+  <!-- Liquid in neck -->
+  <rect x="10.5" y="7.5" width="3" height="2.7" fill="url(#teal-liquid)" opacity="0.7"/>
+  <!-- Cork -->
+  <rect x="9.8" y="3" width="4.4" height="2.5" rx="0.7" fill="#A0825A" stroke="#8B6A40" stroke-width="0.3"/>
+  <line x1="10.3" y1="3.8" x2="13.7" y2="3.8" stroke="#8B6A40" stroke-width="0.2" opacity="0.5"/>
+  <line x1="10.3" y1="4.5" x2="13.7" y2="4.5" stroke="#8B6A40" stroke-width="0.2" opacity="0.5"/>
+  <!-- Glass highlight -->
+  <path d="M8.5,12 Q8,17 8.5,25" stroke="white" stroke-width="0.4" fill="none" opacity="0.25"/>
+</svg>

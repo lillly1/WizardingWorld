@@ -1,0 +1,3280 @@
+{
+  "wands": [
+    {
+      "id": "AlderWand",
+      "_source": "AlderWand.cs",
+      "damage": 17,
+      "useTime": 24,
+      "mana": 6,
+      "knockBack": 4.0,
+      "rarity": "Blue",
+      "obsolete": false,
+      "hasRecipe": true,
+      "isAccessory": false
+    },
+    {
+      "id": "AlohomoraWand",
+      "_source": "AlohomoraWand.cs",
+      "damage": 1,
+      "useTime": 30,
+      "mana": 8,
+      "knockBack": 0.0,
+      "rarity": "Blue",
+      "obsolete": false,
+      "hasRecipe": true,
+      "isAccessory": false
+    },
+    {
+      "id": "AshWand",
+      "_source": "AshWand.cs",
+      "damage": 22,
+      "useTime": 20,
+      "mana": 8,
+      "knockBack": 4.0,
+      "rarity": "Blue",
+      "obsolete": false,
+      "hasRecipe": true,
+      "isAccessory": false
+    },
+    {
+      "id": "BirchWand",
+      "_source": "BirchWand.cs",
+      "damage": 28,
+      "useTime": 20,
+      "mana": 10,
+      "knockBack": 10.0,
+      "rarity": "Lt Red",
+      "obsolete": false,
+      "hasRecipe": true,
+      "isAccessory": false
+    },
+    {
+      "id": "BlackthornWand",
+      "_source": "BlackthornWand.cs",
+      "damage": 35,
+      "useTime": 28,
+      "mana": 14,
+      "knockBack": 3.0,
+      "rarity": "Lt Red",
+      "obsolete": false,
+      "hasRecipe": true,
+      "isAccessory": false
+    },
+    {
+      "id": "CedarWand",
+      "_source": "CedarWand.cs",
+      "damage": 15,
+      "useTime": 35,
+      "mana": 15,
+      "knockBack": 2.0,
+      "rarity": "Orange",
+      "obsolete": false,
+      "hasRecipe": true,
+      "isAccessory": false
+    },
+    {
+      "id": "CypressWand",
+      "_source": "CypressWand.cs",
+      "damage": 30,
+      "useTime": 35,
+      "mana": 15,
+      "knockBack": 2.0,
+      "rarity": "Lt Red",
+      "obsolete": false,
+      "hasRecipe": true,
+      "isAccessory": false
+    },
+    {
+      "id": "DragonHeartstringWand",
+      "_source": "DragonHeartstringWand.cs",
+      "damage": 42,
+      "useTime": 15,
+      "mana": 12,
+      "knockBack": 5.0,
+      "rarity": "Lt Red",
+      "obsolete": false,
+      "hasRecipe": true,
+      "isAccessory": false
+    },
+    {
+      "id": "EbonyWand",
+      "_source": "EbonyWand.cs",
+      "damage": 1,
+      "useTime": 25,
+      "mana": 30,
+      "knockBack": 0.0,
+      "rarity": "Lt Purple",
+      "obsolete": false,
+      "hasRecipe": true,
+      "isAccessory": false
+    },
+    {
+      "id": "ElderWand",
+      "_source": "ElderWand.cs",
+      "damage": 150,
+      "useTime": 18,
+      "mana": 40,
+      "knockBack": 6.0,
+      "crit": 15,
+      "rarity": "Red",
+      "obsolete": false,
+      "hasRecipe": false,
+      "isAccessory": false
+    },
+    {
+      "id": "ElmWand",
+      "_source": "ElmWand.cs",
+      "damage": 1,
+      "useTime": 40,
+      "mana": 25,
+      "knockBack": 0.0,
+      "rarity": "Lt Red",
+      "obsolete": false,
+      "hasRecipe": true,
+      "isAccessory": false
+    },
+    {
+      "id": "FiendfyreWand",
+      "_source": "FiendfyreWand.cs",
+      "damage": 95,
+      "useTime": 25,
+      "mana": 20,
+      "knockBack": 4.0,
+      "rarity": "Yellow",
+      "obsolete": false,
+      "hasRecipe": true,
+      "isAccessory": false
+    },
+    {
+      "id": "HawthornWand",
+      "_source": "HawthornWand.cs",
+      "damage": 38,
+      "useTime": 22,
+      "mana": 12,
+      "knockBack": 4.0,
+      "rarity": "Lt Red",
+      "obsolete": false,
+      "hasRecipe": true,
+      "isAccessory": false
+    },
+    {
+      "id": "HollyWand",
+      "_source": "HollyWand.cs",
+      "damage": 28,
+      "useTime": 25,
+      "mana": 10,
+      "knockBack": 5.0,
+      "rarity": "Orange",
+      "obsolete": false,
+      "hasRecipe": true,
+      "isAccessory": false
+    },
+    {
+      "id": "InfernalPhoenixWand",
+      "_source": "InfernalPhoenixWand.cs",
+      "damage": 52,
+      "useTime": 16,
+      "mana": 12,
+      "knockBack": 4.0,
+      "rarity": "Lt Purple",
+      "obsolete": false,
+      "hasRecipe": true,
+      "isAccessory": false
+    },
+    {
+      "id": "LarchWand",
+      "_source": "LarchWand.cs",
+      "damage": 1,
+      "useTime": 30,
+      "mana": 20,
+      "knockBack": 0.0,
+      "rarity": "Lt Red",
+      "obsolete": false,
+      "hasRecipe": true,
+      "isAccessory": false
+    },
+    {
+      "id": "OakWand",
+      "_source": "OakWand.cs",
+      "damage": 12,
+      "useTime": 30,
+      "mana": 6,
+      "knockBack": 3.0,
+      "rarity": "White",
+      "obsolete": false,
+      "hasRecipe": true,
+      "isAccessory": false
+    },
+    {
+      "id": "PhoenixFeatherWand",
+      "_source": "PhoenixFeatherWand.cs",
+      "damage": 30,
+      "useTime": 18,
+      "mana": 10,
+      "knockBack": 4.0,
+      "rarity": "Orange",
+      "obsolete": false,
+      "hasRecipe": true,
+      "isAccessory": false
+    },
+    {
+      "id": "RedOakWand",
+      "_source": "RedOakWand.cs",
+      "damage": 32,
+      "useTime": 22,
+      "mana": 10,
+      "knockBack": 4.0,
+      "rarity": "Orange",
+      "obsolete": false,
+      "hasRecipe": true,
+      "isAccessory": false
+    },
+    {
+      "id": "RowanWand",
+      "_source": "RowanWand.cs",
+      "damage": 30,
+      "useTime": 30,
+      "mana": 12,
+      "knockBack": 8.0,
+      "rarity": "Orange",
+      "obsolete": false,
+      "hasRecipe": true,
+      "isAccessory": false
+    },
+    {
+      "id": "ShadowElderWand",
+      "_source": "ShadowElderWand.cs",
+      "rarity": "Purple",
+      "obsolete": true,
+      "hasRecipe": false,
+      "isAccessory": false
+    },
+    {
+      "id": "UnicornHairWand",
+      "_source": "UnicornHairWand.cs",
+      "damage": 55,
+      "useTime": 35,
+      "mana": 20,
+      "knockBack": 3.0,
+      "rarity": "Pink",
+      "obsolete": false,
+      "hasRecipe": true,
+      "isAccessory": false
+    },
+    {
+      "id": "VineWand",
+      "_source": "VineWand.cs",
+      "damage": 25,
+      "useTime": 22,
+      "mana": 9,
+      "knockBack": 4.0,
+      "rarity": "Orange",
+      "obsolete": false,
+      "hasRecipe": true,
+      "isAccessory": false
+    },
+    {
+      "id": "WandOfDestiny",
+      "_source": "WandOfDestiny.cs",
+      "rarity": "Purple",
+      "obsolete": true,
+      "hasRecipe": false,
+      "isAccessory": false
+    },
+    {
+      "id": "WillowWand",
+      "_source": "WillowWand.cs",
+      "damage": 16,
+      "useTime": 25,
+      "mana": 7,
+      "knockBack": 7.0,
+      "rarity": "Blue",
+      "obsolete": false,
+      "hasRecipe": true,
+      "isAccessory": false
+    },
+    {
+      "id": "YewWand",
+      "_source": "YewWand.cs",
+      "damage": 48,
+      "useTime": 8,
+      "mana": 5,
+      "knockBack": 2.0,
+      "rarity": "Lt Purple",
+      "obsolete": false,
+      "hasRecipe": true,
+      "isAccessory": false
+    }
+  ],
+  "other_weapons": [
+    {
+      "id": "BasiliskFangDagger",
+      "_source": "BasiliskFangDagger.cs",
+      "damage": 40,
+      "useTime": 12,
+      "knockBack": 3.0,
+      "crit": 10,
+      "rarity": "Lt Red",
+      "obsolete": false,
+      "hasRecipe": true,
+      "isAccessory": false
+    },
+    {
+      "id": "BeatersBat",
+      "_source": "BeatersBat.cs",
+      "damage": 35,
+      "useTime": 30,
+      "knockBack": 15.0,
+      "crit": 4,
+      "rarity": "Orange",
+      "obsolete": false,
+      "hasRecipe": true,
+      "isAccessory": false
+    },
+    {
+      "id": "DarkArtsGrimoire",
+      "_source": "DarkArtsGrimoire.cs",
+      "damage": 72,
+      "useTime": 20,
+      "mana": 18,
+      "knockBack": 4.0,
+      "rarity": "Yellow",
+      "obsolete": false,
+      "hasRecipe": true,
+      "isAccessory": false
+    },
+    {
+      "id": "DecoyDetonator",
+      "_source": "DecoyDetonator.cs",
+      "damage": 45,
+      "useTime": 30,
+      "knockBack": 6.0,
+      "rarity": "Orange",
+      "projectile": "DecoyDetonatorProjectile",
+      "obsolete": false,
+      "hasRecipe": true,
+      "isAccessory": false
+    },
+    {
+      "id": "EnchantedTrollClub",
+      "_source": "EnchantedTrollClub.cs",
+      "damage": 48,
+      "useTime": 32,
+      "knockBack": 14.0,
+      "crit": 6,
+      "rarity": "Lt Red",
+      "obsolete": false,
+      "hasRecipe": true,
+      "isAccessory": false
+    },
+    {
+      "id": "FireboltBroomstick",
+      "_source": "FireboltBroomstick.cs",
+      "useTime": 20,
+      "rarity": "Lt Purple",
+      "obsolete": false,
+      "hasRecipe": true,
+      "isAccessory": false
+    },
+    {
+      "id": "GoblinSilverSword",
+      "_source": "GoblinSilverSword.cs",
+      "damage": 45,
+      "useTime": 20,
+      "knockBack": 5.0,
+      "crit": 8,
+      "rarity": "Lt Red",
+      "obsolete": false,
+      "hasRecipe": true,
+      "isAccessory": false
+    },
+    {
+      "id": "HippogriffFeather",
+      "_source": "HippogriffFeather.cs",
+      "useTime": 20,
+      "rarity": "Lt Purple",
+      "obsolete": false,
+      "hasRecipe": true,
+      "isAccessory": false
+    },
+    {
+      "id": "HouseElfBell",
+      "_source": "HouseElfBell.cs",
+      "damage": 25,
+      "useTime": 30,
+      "mana": 10,
+      "knockBack": 4.0,
+      "rarity": "Orange",
+      "projectile": "HouseElfMinion",
+      "buffType": "HouseElfMinionBuff",
+      "obsolete": false,
+      "hasRecipe": true,
+      "isAccessory": false
+    },
+    {
+      "id": "Howler",
+      "_source": "Howler.cs",
+      "damage": 32,
+      "useTime": 25,
+      "knockBack": 4.0,
+      "rarity": "Blue",
+      "projectile": "HowlerProjectile",
+      "obsolete": false,
+      "hasRecipe": true,
+      "isAccessory": false
+    },
+    {
+      "id": "HufflepuffsMace",
+      "_source": "HufflepuffsMace.cs",
+      "damage": 58,
+      "useTime": 28,
+      "knockBack": 10.0,
+      "crit": 4,
+      "rarity": "Lt Red",
+      "obsolete": false,
+      "hasRecipe": true,
+      "isAccessory": false
+    },
+    {
+      "id": "Nimbus2001Broomstick",
+      "_source": "Nimbus2001Broomstick.cs",
+      "useTime": 20,
+      "rarity": "Red",
+      "obsolete": false,
+      "hasRecipe": true,
+      "isAccessory": false
+    },
+    {
+      "id": "NimbusBroomstick",
+      "_source": "NimbusBroomstick.cs",
+      "useTime": 20,
+      "rarity": "Pink",
+      "obsolete": false,
+      "hasRecipe": true,
+      "isAccessory": false
+    },
+    {
+      "id": "PeruvianDarknessPowder",
+      "_source": "PeruvianDarknessPowder.cs",
+      "damage": 0,
+      "useTime": 30,
+      "knockBack": 0.0,
+      "rarity": "Green",
+      "projectile": "DarknessPowderProjectile",
+      "obsolete": false,
+      "hasRecipe": true,
+      "isAccessory": false
+    },
+    {
+      "id": "PhoenixFeatherStaff",
+      "_source": "PhoenixFeatherStaff.cs",
+      "damage": 45,
+      "useTime": 36,
+      "mana": 15,
+      "knockBack": 3.0,
+      "rarity": "Lt Purple",
+      "projectile": "PhoenixMinion",
+      "buffType": "PhoenixMinionBuff",
+      "obsolete": false,
+      "hasRecipe": true,
+      "isAccessory": false
+    },
+    {
+      "id": "Quaffle",
+      "_source": "Quaffle.cs",
+      "damage": 28,
+      "useTime": 20,
+      "knockBack": 5.0,
+      "rarity": "Orange",
+      "projectile": "QuaffleProjectile",
+      "obsolete": false,
+      "hasRecipe": true,
+      "isAccessory": false
+    },
+    {
+      "id": "RavenclawsStaff",
+      "_source": "RavenclawsStaff.cs",
+      "damage": 50,
+      "useTime": 18,
+      "mana": 5,
+      "knockBack": 3.0,
+      "rarity": "Lt Red",
+      "obsolete": false,
+      "hasRecipe": true,
+      "isAccessory": false
+    },
+    {
+      "id": "ScreechingHowler",
+      "_source": "ScreechingHowler.cs",
+      "damage": 55,
+      "useTime": 25,
+      "knockBack": 6.0,
+      "rarity": "Lt Red",
+      "projectile": "HowlerProjectile",
+      "obsolete": false,
+      "hasRecipe": true,
+      "isAccessory": false
+    },
+    {
+      "id": "SlytherinsDagger",
+      "_source": "SlytherinsDagger.cs",
+      "damage": 42,
+      "useTime": 10,
+      "knockBack": 2.0,
+      "crit": 20,
+      "rarity": "Lt Red",
+      "obsolete": false,
+      "hasRecipe": true,
+      "isAccessory": false
+    },
+    {
+      "id": "SwordOfGryffindor",
+      "_source": "SwordOfGryffindor.cs",
+      "damage": 55,
+      "useTime": 18,
+      "knockBack": 6.0,
+      "crit": 8,
+      "rarity": "Lt Red",
+      "obsolete": false,
+      "hasRecipe": false,
+      "isAccessory": false
+    },
+    {
+      "id": "ThestralReins",
+      "_source": "ThestralReins.cs",
+      "useTime": 20,
+      "rarity": "Lt Red",
+      "obsolete": false,
+      "hasRecipe": true,
+      "isAccessory": false
+    },
+    {
+      "id": "TrollClub",
+      "_source": "TrollClub.cs",
+      "damage": 28,
+      "useTime": 35,
+      "knockBack": 12.0,
+      "crit": 4,
+      "rarity": "Blue",
+      "obsolete": false,
+      "hasRecipe": false,
+      "isAccessory": false
+    },
+    {
+      "id": "UmbridgesQuill",
+      "_source": "UmbridgesQuill.cs",
+      "damage": 25,
+      "useTime": 15,
+      "mana": 6,
+      "knockBack": 2.0,
+      "rarity": "Pink",
+      "obsolete": false,
+      "hasRecipe": false,
+      "isAccessory": false
+    },
+    {
+      "id": "VenomousSwordOfGryffindor",
+      "_source": "VenomousSwordOfGryffindor.cs",
+      "damage": 78,
+      "useTime": 16,
+      "knockBack": 7.0,
+      "crit": 12,
+      "rarity": "Yellow",
+      "obsolete": false,
+      "hasRecipe": true,
+      "isAccessory": false
+    },
+    {
+      "id": "WeasleyBlazeBox",
+      "_source": "WeasleyBlazeBox.cs",
+      "damage": 35,
+      "useTime": 20,
+      "knockBack": 4.0,
+      "rarity": "Orange",
+      "projectile": "BlazeBoxProjectile",
+      "obsolete": false,
+      "hasRecipe": true,
+      "isAccessory": false
+    },
+    {
+      "id": "WeasleyFireworks",
+      "_source": "WeasleyFireworks.cs",
+      "damage": 40,
+      "useTime": 18,
+      "knockBack": 5.0,
+      "rarity": "Orange",
+      "projectile": "WeasleyFireworkProjectile",
+      "obsolete": false,
+      "hasRecipe": true,
+      "isAccessory": false
+    },
+    {
+      "id": "WizardFishingRod",
+      "_source": "WizardFishingRod.cs",
+      "useTime": 8,
+      "rarity": "Orange",
+      "obsolete": false,
+      "hasRecipe": true,
+      "isAccessory": false
+    }
+  ],
+  "accessories": [
+    {
+      "id": "ApparitionCharm",
+      "_source": "ApparitionCharm.cs",
+      "rarity": "Yellow",
+      "obsolete": false,
+      "hasRecipe": true,
+      "isAccessory": true
+    },
+    {
+      "id": "AzkabanWardensKey",
+      "_source": "AzkabanWardensKey.cs",
+      "rarity": "Yellow",
+      "obsolete": false,
+      "hasRecipe": false,
+      "isAccessory": true
+    },
+    {
+      "id": "BasiliskFang",
+      "_source": "BasiliskFang.cs",
+      "rarity": "Orange",
+      "obsolete": false,
+      "hasRecipe": false,
+      "isAccessory": true
+    },
+    {
+      "id": "BeastHuntersCharm",
+      "_source": "BeastHuntersCharm.cs",
+      "rarity": "Yellow",
+      "obsolete": false,
+      "hasRecipe": true,
+      "isAccessory": true
+    },
+    {
+      "id": "BossCompass",
+      "_source": "BossCompass.cs",
+      "rarity": "Orange",
+      "obsolete": false,
+      "hasRecipe": true,
+      "isAccessory": true
+    },
+    {
+      "id": "CamouflageCloak",
+      "_source": "CamouflageCloak.cs",
+      "rarity": "Lt Red",
+      "obsolete": false,
+      "hasRecipe": true,
+      "isAccessory": true
+    },
+    {
+      "id": "CerberusFangNecklace",
+      "_source": "CerberusFangNecklace.cs",
+      "rarity": "Pink",
+      "obsolete": false,
+      "hasRecipe": true,
+      "isAccessory": true
+    },
+    {
+      "id": "ChampionsMedallion",
+      "_source": "ChampionsMedallion.cs",
+      "rarity": "Yellow",
+      "obsolete": false,
+      "hasRecipe": true,
+      "isAccessory": true
+    },
+    {
+      "id": "ChampionsTrophy",
+      "_source": "ChampionsTrophy.cs",
+      "rarity": "Yellow",
+      "obsolete": false,
+      "hasRecipe": false,
+      "isAccessory": true
+    },
+    {
+      "id": "DarkLordsBane",
+      "_source": "DarkLordsBane.cs",
+      "rarity": "Red",
+      "obsolete": false,
+      "hasRecipe": true,
+      "isAccessory": true
+    },
+    {
+      "id": "DefendersSignet",
+      "_source": "DefendersSignet.cs",
+      "rarity": "Lt Purple",
+      "obsolete": false,
+      "hasRecipe": true,
+      "isAccessory": true
+    },
+    {
+      "id": "Deluminator",
+      "_source": "Deluminator.cs",
+      "rarity": "Lt Purple",
+      "obsolete": false,
+      "hasRecipe": true,
+      "isAccessory": true
+    },
+    {
+      "id": "DementorsEmbrace",
+      "_source": "DementorsEmbrace.cs",
+      "rarity": "Red",
+      "obsolete": false,
+      "hasRecipe": true,
+      "isAccessory": true
+    },
+    {
+      "id": "DemiguiseCloak",
+      "_source": "DemiguiseCloak.cs",
+      "rarity": "Lt Purple",
+      "obsolete": false,
+      "hasRecipe": true,
+      "isAccessory": true
+    },
+    {
+      "id": "DiademOfRavenclaw",
+      "_source": "DiademOfRavenclaw.cs",
+      "rarity": "Lt Purple",
+      "obsolete": false,
+      "hasRecipe": true,
+      "isAccessory": true
+    },
+    {
+      "id": "DirigiblePlumEarring",
+      "_source": "DirigiblePlumEarring.cs",
+      "rarity": "Orange",
+      "obsolete": false,
+      "hasRecipe": true,
+      "isAccessory": true
+    },
+    {
+      "id": "DragonScaleRing",
+      "_source": "DragonScaleRing.cs",
+      "rarity": "Pink",
+      "obsolete": false,
+      "hasRecipe": true,
+      "isAccessory": true
+    },
+    {
+      "id": "DragonToothNecklace",
+      "_source": "DragonToothNecklace.cs",
+      "rarity": "Lt Purple",
+      "obsolete": false,
+      "hasRecipe": true,
+      "isAccessory": true
+    },
+    {
+      "id": "EnchantedMirror",
+      "_source": "EnchantedMirror.cs",
+      "rarity": "Orange",
+      "obsolete": false,
+      "hasRecipe": true,
+      "isAccessory": true
+    },
+    {
+      "id": "ExtendableEars",
+      "_source": "ExtendableEars.cs",
+      "rarity": "Green",
+      "obsolete": false,
+      "hasRecipe": true,
+      "isAccessory": true
+    },
+    {
+      "id": "FairyWings",
+      "_source": "FairyWings.cs",
+      "rarity": "Pink",
+      "obsolete": false,
+      "hasRecipe": true,
+      "isAccessory": true
+    },
+    {
+      "id": "FoeGlass",
+      "_source": "FoeGlass.cs",
+      "rarity": "Lt Red",
+      "obsolete": false,
+      "hasRecipe": true,
+      "isAccessory": true
+    },
+    {
+      "id": "ForestWarden",
+      "_source": "ForestWarden.cs",
+      "rarity": "Orange",
+      "obsolete": false,
+      "hasRecipe": true,
+      "isAccessory": true
+    },
+    {
+      "id": "GauntsRing",
+      "_source": "GauntsRing.cs",
+      "rarity": "Lt Purple",
+      "obsolete": false,
+      "hasRecipe": false,
+      "isAccessory": true
+    },
+    {
+      "id": "GoblinLedger",
+      "_source": "GoblinLedger.cs",
+      "rarity": "Orange",
+      "obsolete": false,
+      "hasRecipe": true,
+      "isAccessory": true
+    },
+    {
+      "id": "HandOfGlory",
+      "_source": "HandOfGlory.cs",
+      "rarity": "Lt Purple",
+      "obsolete": false,
+      "hasRecipe": true,
+      "isAccessory": true
+    },
+    {
+      "id": "HealersSatchel",
+      "_source": "HealersSatchel.cs",
+      "rarity": "Lt Red",
+      "obsolete": false,
+      "hasRecipe": true,
+      "isAccessory": true
+    },
+    {
+      "id": "HufflepuffsCup",
+      "_source": "HufflepuffsCup.cs",
+      "rarity": "Lt Purple",
+      "obsolete": false,
+      "hasRecipe": true,
+      "isAccessory": true
+    },
+    {
+      "id": "InvisibilityCloak",
+      "_source": "InvisibilityCloak.cs",
+      "rarity": "Red",
+      "obsolete": false,
+      "hasRecipe": false,
+      "isAccessory": true
+    },
+    {
+      "id": "KeeperGloves",
+      "_source": "KeeperGloves.cs",
+      "rarity": "Orange",
+      "obsolete": false,
+      "hasRecipe": true,
+      "isAccessory": true
+    },
+    {
+      "id": "LightningScar",
+      "_source": "LightningScar.cs",
+      "rarity": "Orange",
+      "obsolete": false,
+      "hasRecipe": true,
+      "isAccessory": true
+    },
+    {
+      "id": "MaraudersMap",
+      "_source": "MaraudersMap.cs",
+      "rarity": "Orange",
+      "obsolete": false,
+      "hasRecipe": true,
+      "isAccessory": true
+    },
+    {
+      "id": "MasterWizardBanner",
+      "_source": "MasterWizardBanner.cs",
+      "rarity": "Purple",
+      "obsolete": false,
+      "hasRecipe": true,
+      "isAccessory": true
+    },
+    {
+      "id": "MerfolkAmulet",
+      "_source": "MerfolkAmulet.cs",
+      "rarity": "Lt Red",
+      "obsolete": false,
+      "hasRecipe": true,
+      "isAccessory": true
+    },
+    {
+      "id": "MoodysEye",
+      "_source": "MoodysEye.cs",
+      "rarity": "Lt Purple",
+      "obsolete": false,
+      "hasRecipe": true,
+      "isAccessory": true
+    },
+    {
+      "id": "MoonwardPendant",
+      "_source": "MoonwardPendant.cs",
+      "rarity": "Lt Purple",
+      "obsolete": false,
+      "hasRecipe": true,
+      "isAccessory": true
+    },
+    {
+      "id": "OrderBadge",
+      "_source": "OrderBadge.cs",
+      "rarity": "Lt Purple",
+      "obsolete": false,
+      "hasRecipe": true,
+      "isAccessory": true
+    },
+    {
+      "id": "OrderSignet",
+      "_source": "OrderSignet.cs",
+      "rarity": "Lt Purple",
+      "obsolete": false,
+      "hasRecipe": true,
+      "isAccessory": true
+    },
+    {
+      "id": "PadfootAmulet",
+      "_source": "PadfootAmulet.cs",
+      "rarity": "Lt Purple",
+      "obsolete": false,
+      "hasRecipe": true,
+      "isAccessory": true
+    },
+    {
+      "id": "PatronusCharm",
+      "_source": "PatronusCharm.cs",
+      "damage": 65,
+      "useTime": 36,
+      "mana": 25,
+      "knockBack": 5.0,
+      "rarity": "Yellow",
+      "projectile": "PatronusGuardian",
+      "buffType": "PatronusCharmBuff",
+      "obsolete": false,
+      "hasRecipe": true,
+      "isAccessory": false
+    },
+    {
+      "id": "PatronusFocus",
+      "_source": "PatronusFocus.cs",
+      "rarity": "Yellow",
+      "obsolete": false,
+      "hasRecipe": true,
+      "isAccessory": true
+    },
+    {
+      "id": "Pensieve",
+      "_source": "Pensieve.cs",
+      "rarity": "Lt Purple",
+      "obsolete": false,
+      "hasRecipe": true,
+      "isAccessory": true
+    },
+    {
+      "id": "PhilosophersStone",
+      "_source": "PhilosophersStone.cs",
+      "rarity": "Red",
+      "obsolete": false,
+      "hasRecipe": true,
+      "isAccessory": true
+    },
+    {
+      "id": "PrefectBadge",
+      "_source": "PrefectBadge.cs",
+      "rarity": "Lt Red",
+      "obsolete": false,
+      "hasRecipe": true,
+      "isAccessory": true
+    },
+    {
+      "id": "ProngsCharm",
+      "_source": "ProngsCharm.cs",
+      "rarity": "Lt Purple",
+      "obsolete": false,
+      "hasRecipe": true,
+      "isAccessory": true
+    },
+    {
+      "id": "ProtectorsBadge",
+      "_source": "ProtectorsBadge.cs",
+      "rarity": "Lt Purple",
+      "obsolete": false,
+      "hasRecipe": true,
+      "isAccessory": true
+    },
+    {
+      "id": "QuillOfAcceptance",
+      "_source": "QuillOfAcceptance.cs",
+      "rarity": "Lt Purple",
+      "obsolete": false,
+      "hasRecipe": true,
+      "isAccessory": true
+    },
+    {
+      "id": "Remembrall",
+      "_source": "Remembrall.cs",
+      "rarity": "Blue",
+      "obsolete": false,
+      "hasRecipe": true,
+      "isAccessory": true
+    },
+    {
+      "id": "ResurrectionStone",
+      "_source": "ResurrectionStone.cs",
+      "rarity": "Red",
+      "obsolete": false,
+      "hasRecipe": false,
+      "isAccessory": true
+    },
+    {
+      "id": "RiddlesDiary",
+      "_source": "RiddlesDiary.cs",
+      "rarity": "Lt Purple",
+      "obsolete": false,
+      "hasRecipe": true,
+      "isAccessory": true
+    },
+    {
+      "id": "ShieldHat",
+      "_source": "ShieldHat.cs",
+      "rarity": "Lt Red",
+      "obsolete": false,
+      "hasRecipe": true,
+      "isAccessory": true
+    },
+    {
+      "id": "SlytherinsLocket",
+      "_source": "SlytherinsLocket.cs",
+      "rarity": "Lt Purple",
+      "obsolete": false,
+      "hasRecipe": true,
+      "isAccessory": true
+    },
+    {
+      "id": "Sneakoscope",
+      "_source": "Sneakoscope.cs",
+      "rarity": "Orange",
+      "obsolete": false,
+      "hasRecipe": true,
+      "isAccessory": true
+    },
+    {
+      "id": "SortingHat",
+      "_source": "SortingHat.cs",
+      "rarity": "Orange",
+      "obsolete": false,
+      "hasRecipe": true,
+      "isAccessory": true
+    },
+    {
+      "id": "Spectrespecs",
+      "_source": "Spectrespecs.cs",
+      "rarity": "Orange",
+      "obsolete": false,
+      "hasRecipe": true,
+      "isAccessory": true
+    },
+    {
+      "id": "SpiderSilkCloak",
+      "_source": "SpiderSilkCloak.cs",
+      "rarity": "Lt Red",
+      "obsolete": false,
+      "hasRecipe": true,
+      "isAccessory": true
+    },
+    {
+      "id": "TimeTurner",
+      "_source": "TimeTurner.cs",
+      "rarity": "Lt Purple",
+      "obsolete": false,
+      "hasRecipe": true,
+      "isAccessory": true
+    },
+    {
+      "id": "TriwizardCup",
+      "_source": "TriwizardCup.cs",
+      "obsolete": true,
+      "hasRecipe": false,
+      "isAccessory": false
+    },
+    {
+      "id": "UnbreakableVow",
+      "_source": "UnbreakableVow.cs",
+      "rarity": "Lt Purple",
+      "obsolete": false,
+      "hasRecipe": true,
+      "isAccessory": true
+    },
+    {
+      "id": "VenomSilkWraps",
+      "_source": "VenomSilkWraps.cs",
+      "rarity": "Lt Purple",
+      "obsolete": false,
+      "hasRecipe": true,
+      "isAccessory": true
+    },
+    {
+      "id": "WandHolster",
+      "_source": "WandHolster.cs",
+      "rarity": "Lt Red",
+      "obsolete": false,
+      "hasRecipe": true,
+      "isAccessory": true
+    },
+    {
+      "id": "WerewolfCloak",
+      "_source": "WerewolfCloak.cs",
+      "rarity": "Lt Purple",
+      "obsolete": false,
+      "hasRecipe": true,
+      "isAccessory": true
+    },
+    {
+      "id": "WizardBeard",
+      "_source": "WizardBeard.cs",
+      "rarity": "Blue",
+      "obsolete": false,
+      "hasRecipe": true,
+      "isAccessory": true
+    },
+    {
+      "id": "WizardPocketWatch",
+      "_source": "WizardPocketWatch.cs",
+      "rarity": "Blue",
+      "obsolete": false,
+      "hasRecipe": true,
+      "isAccessory": true
+    },
+    {
+      "id": "WizardSpectacles",
+      "_source": "WizardSpectacles.cs",
+      "rarity": "Blue",
+      "obsolete": false,
+      "hasRecipe": true,
+      "isAccessory": true
+    }
+  ],
+  "potions": [
+    {
+      "id": "Amortentia",
+      "_source": "Amortentia.cs",
+      "useTime": 17,
+      "rarity": "Lt Red",
+      "buffType": "AmortentiaBuff",
+      "buffTime": 21600,
+      "obsolete": false,
+      "hasRecipe": true,
+      "isAccessory": false
+    },
+    {
+      "id": "AquaFortis",
+      "_source": "AquaFortis.cs",
+      "useTime": 17,
+      "rarity": "Lt Red",
+      "buffType": "AquaFortisBuff",
+      "buffTime": 14400,
+      "obsolete": false,
+      "hasRecipe": true,
+      "isAccessory": false
+    },
+    {
+      "id": "Butterbeer",
+      "_source": "Butterbeer.cs",
+      "useTime": 17,
+      "rarity": "Blue",
+      "buffType": "ButterbeerBuff",
+      "buffTime": 36000,
+      "obsolete": false,
+      "hasRecipe": true,
+      "isAccessory": false
+    },
+    {
+      "id": "DraconisElixir",
+      "_source": "DraconisElixir.cs",
+      "useTime": 17,
+      "rarity": "Yellow",
+      "buffTime": 14400,
+      "obsolete": false,
+      "hasRecipe": true,
+      "isAccessory": false
+    },
+    {
+      "id": "FelixFelicis",
+      "_source": "FelixFelicis.cs",
+      "useTime": 17,
+      "rarity": "Lt Red",
+      "buffType": "FelixFelicisBuff",
+      "buffTime": 14400,
+      "obsolete": false,
+      "hasRecipe": true,
+      "isAccessory": false
+    },
+    {
+      "id": "FenrirsWolfsbane",
+      "_source": "FenrirsWolfsbane.cs",
+      "useTime": 17,
+      "rarity": "Yellow",
+      "buffType": "FenrirsWolfsbaneBuff",
+      "buffTime": 21600,
+      "obsolete": false,
+      "hasRecipe": true,
+      "isAccessory": false
+    },
+    {
+      "id": "Firewhiskey",
+      "_source": "Firewhiskey.cs",
+      "useTime": 17,
+      "rarity": "Orange",
+      "buffType": "FirewhiskeyBuff",
+      "buffTime": 14400,
+      "obsolete": false,
+      "hasRecipe": true,
+      "isAccessory": false
+    },
+    {
+      "id": "Gillyweed",
+      "_source": "Gillyweed.cs",
+      "useTime": 17,
+      "rarity": "Orange",
+      "buffType": "GillyweedBuff",
+      "buffTime": 21600,
+      "obsolete": false,
+      "hasRecipe": true,
+      "isAccessory": false
+    },
+    {
+      "id": "MandrakeRestorative",
+      "_source": "MandrakeRestorative.cs",
+      "useTime": 10,
+      "rarity": "Orange",
+      "obsolete": false,
+      "hasRecipe": true,
+      "isAccessory": false
+    },
+    {
+      "id": "MemoryPotion",
+      "_source": "MemoryPotion.cs",
+      "useTime": 17,
+      "rarity": "Orange",
+      "obsolete": false,
+      "hasRecipe": true,
+      "isAccessory": false
+    },
+    {
+      "id": "PepperupPotion",
+      "_source": "PepperupPotion.cs",
+      "useTime": 17,
+      "rarity": "Orange",
+      "buffType": "PepperupBuff",
+      "buffTime": 14400,
+      "obsolete": false,
+      "hasRecipe": true,
+      "isAccessory": false
+    },
+    {
+      "id": "PolyjuicePotion",
+      "_source": "PolyjuicePotion.cs",
+      "useTime": 17,
+      "rarity": "Lt Red",
+      "buffType": "PolyjuiceBuff",
+      "buffTime": 18000,
+      "obsolete": false,
+      "hasRecipe": true,
+      "isAccessory": false
+    },
+    {
+      "id": "ResurrectionPotion",
+      "_source": "ResurrectionPotion.cs",
+      "useTime": 17,
+      "rarity": "Yellow",
+      "buffType": "ResurrectionBuff",
+      "buffTime": 36000,
+      "obsolete": false,
+      "hasRecipe": true,
+      "isAccessory": false
+    },
+    {
+      "id": "SeekersReflexes",
+      "_source": "SeekersReflexes.cs",
+      "useTime": 17,
+      "rarity": "Lt Purple",
+      "buffType": "SeekersReflexesBuff",
+      "buffTime": 14400,
+      "obsolete": false,
+      "hasRecipe": true,
+      "isAccessory": false
+    },
+    {
+      "id": "ShieldCharmPotion",
+      "_source": "ShieldCharmPotion.cs",
+      "useTime": 17,
+      "rarity": "Lt Red",
+      "buffType": "ShieldCharmBuff",
+      "buffTime": 18000,
+      "obsolete": false,
+      "hasRecipe": true,
+      "isAccessory": false
+    },
+    {
+      "id": "SkeleGro",
+      "_source": "SkeleGro.cs",
+      "useTime": 17,
+      "rarity": "Orange",
+      "buffType": "SkeleGroBuff",
+      "buffTime": 10800,
+      "obsolete": false,
+      "hasRecipe": true,
+      "isAccessory": false
+    },
+    {
+      "id": "StealthDraught",
+      "_source": "StealthDraught.cs",
+      "useTime": 17,
+      "rarity": "Lt Red",
+      "buffType": "StealthDraughtBuff",
+      "buffTime": 14400,
+      "obsolete": false,
+      "hasRecipe": true,
+      "isAccessory": false
+    },
+    {
+      "id": "Veritaserum",
+      "_source": "Veritaserum.cs",
+      "useTime": 17,
+      "rarity": "Lt Red",
+      "buffType": "VeritaserumBuff",
+      "buffTime": 18000,
+      "obsolete": false,
+      "hasRecipe": true,
+      "isAccessory": false
+    },
+    {
+      "id": "WolfsbanePotion",
+      "_source": "WolfsbanePotion.cs",
+      "useTime": 17,
+      "rarity": "Lt Red",
+      "buffType": "WolfsbaneBuff",
+      "buffTime": 28800,
+      "obsolete": false,
+      "hasRecipe": true,
+      "isAccessory": false
+    }
+  ],
+  "armor": [
+    {
+      "id": "DarkWizardHood",
+      "_source": "DarkWizardHood.cs",
+      "defense": 8,
+      "rarity": "Pink",
+      "obsolete": false,
+      "hasRecipe": true,
+      "isAccessory": false,
+      "set": "DarkWizard"
+    },
+    {
+      "id": "DarkWizardLeggings",
+      "_source": "DarkWizardLeggings.cs",
+      "defense": 8,
+      "rarity": "Pink",
+      "obsolete": false,
+      "hasRecipe": true,
+      "isAccessory": false,
+      "set": "DarkWizard"
+    },
+    {
+      "id": "DarkWizardRobes",
+      "_source": "DarkWizardRobes.cs",
+      "defense": 10,
+      "rarity": "Pink",
+      "obsolete": false,
+      "hasRecipe": true,
+      "isAccessory": false,
+      "set": "DarkWizard"
+    },
+    {
+      "id": "DragonScaleBreastplate",
+      "_source": "DragonScaleBreastplate.cs",
+      "defense": 16,
+      "rarity": "Pink",
+      "obsolete": false,
+      "hasRecipe": true,
+      "isAccessory": false,
+      "set": "DragonScale"
+    },
+    {
+      "id": "DragonScaleGreaves",
+      "_source": "DragonScaleGreaves.cs",
+      "defense": 12,
+      "rarity": "Pink",
+      "obsolete": false,
+      "hasRecipe": true,
+      "isAccessory": false,
+      "set": "DragonScale"
+    },
+    {
+      "id": "DragonScaleHelm",
+      "_source": "DragonScaleHelm.cs",
+      "defense": 12,
+      "rarity": "Pink",
+      "obsolete": false,
+      "hasRecipe": true,
+      "isAccessory": false,
+      "set": "DragonScale"
+    },
+    {
+      "id": "GryffindorHood",
+      "_source": "GryffindorHood.cs",
+      "defense": 5,
+      "rarity": "Orange",
+      "obsolete": false,
+      "hasRecipe": true,
+      "isAccessory": false,
+      "set": "Gryffindor"
+    },
+    {
+      "id": "GryffindorLeggings",
+      "_source": "GryffindorLeggings.cs",
+      "defense": 6,
+      "rarity": "Orange",
+      "obsolete": false,
+      "hasRecipe": true,
+      "isAccessory": false,
+      "set": "Gryffindor"
+    },
+    {
+      "id": "GryffindorRobes",
+      "_source": "GryffindorRobes.cs",
+      "defense": 7,
+      "rarity": "Orange",
+      "obsolete": false,
+      "hasRecipe": true,
+      "isAccessory": false,
+      "set": "Gryffindor"
+    },
+    {
+      "id": "HufflepuffHood",
+      "_source": "HufflepuffHood.cs",
+      "defense": 7,
+      "rarity": "Orange",
+      "obsolete": false,
+      "hasRecipe": true,
+      "isAccessory": false,
+      "set": "Hufflepuff"
+    },
+    {
+      "id": "HufflepuffLeggings",
+      "_source": "HufflepuffLeggings.cs",
+      "defense": 7,
+      "rarity": "Orange",
+      "obsolete": false,
+      "hasRecipe": true,
+      "isAccessory": false,
+      "set": "Hufflepuff"
+    },
+    {
+      "id": "HufflepuffRobes",
+      "_source": "HufflepuffRobes.cs",
+      "defense": 9,
+      "rarity": "Orange",
+      "obsolete": false,
+      "hasRecipe": true,
+      "isAccessory": false,
+      "set": "Hufflepuff"
+    },
+    {
+      "id": "RavenclawHood",
+      "_source": "RavenclawHood.cs",
+      "defense": 3,
+      "rarity": "Orange",
+      "obsolete": false,
+      "hasRecipe": true,
+      "isAccessory": false,
+      "set": "Ravenclaw"
+    },
+    {
+      "id": "RavenclawLeggings",
+      "_source": "RavenclawLeggings.cs",
+      "defense": 4,
+      "rarity": "Orange",
+      "obsolete": false,
+      "hasRecipe": true,
+      "isAccessory": false,
+      "set": "Ravenclaw"
+    },
+    {
+      "id": "RavenclawRobes",
+      "_source": "RavenclawRobes.cs",
+      "defense": 5,
+      "rarity": "Orange",
+      "obsolete": false,
+      "hasRecipe": true,
+      "isAccessory": false,
+      "set": "Ravenclaw"
+    },
+    {
+      "id": "SlytherinHood",
+      "_source": "SlytherinHood.cs",
+      "defense": 4,
+      "rarity": "Orange",
+      "obsolete": false,
+      "hasRecipe": true,
+      "isAccessory": false,
+      "set": "Slytherin"
+    },
+    {
+      "id": "SlytherinLeggings",
+      "_source": "SlytherinLeggings.cs",
+      "defense": 5,
+      "rarity": "Orange",
+      "obsolete": false,
+      "hasRecipe": true,
+      "isAccessory": false,
+      "set": "Slytherin"
+    },
+    {
+      "id": "SlytherinRobes",
+      "_source": "SlytherinRobes.cs",
+      "defense": 6,
+      "rarity": "Orange",
+      "obsolete": false,
+      "hasRecipe": true,
+      "isAccessory": false,
+      "set": "Slytherin"
+    },
+    {
+      "id": "WizardBoots",
+      "_source": "WizardBoots.cs",
+      "rarity": "Blue",
+      "obsolete": false,
+      "hasRecipe": true,
+      "isAccessory": false,
+      "set": "WizardRobes"
+    },
+    {
+      "id": "WizardHat",
+      "_source": "WizardHat.cs",
+      "rarity": "Blue",
+      "obsolete": false,
+      "hasRecipe": true,
+      "isAccessory": false,
+      "set": "WizardRobes"
+    },
+    {
+      "id": "WizardRobe",
+      "_source": "WizardRobe.cs",
+      "rarity": "Blue",
+      "obsolete": false,
+      "hasRecipe": true,
+      "isAccessory": false,
+      "set": "WizardRobes"
+    },
+    {
+      "id": "WizengamotBoots",
+      "_source": "WizengamotBoots.cs",
+      "defense": 16,
+      "rarity": "Red",
+      "obsolete": false,
+      "hasRecipe": true,
+      "isAccessory": false,
+      "set": "Wizengamot"
+    },
+    {
+      "id": "WizengamotHood",
+      "_source": "WizengamotHood.cs",
+      "defense": 16,
+      "rarity": "Red",
+      "obsolete": false,
+      "hasRecipe": true,
+      "isAccessory": false,
+      "set": "Wizengamot"
+    },
+    {
+      "id": "WizengamotRobes",
+      "_source": "WizengamotRobes.cs",
+      "defense": 20,
+      "rarity": "Red",
+      "obsolete": false,
+      "hasRecipe": true,
+      "isAccessory": false,
+      "set": "Wizengamot"
+    }
+  ],
+  "bosses": [
+    {
+      "id": "AragogBoss",
+      "_source": "AragogBoss.cs",
+      "damage": 45,
+      "defense": 18,
+      "lifeMax": 8000,
+      "knockBackResist": 0.0,
+      "isBoss": true,
+      "noGravity": false,
+      "_dynamicScaling": true,
+      "_curated": true,
+      "folder": "Aragog",
+      "bagDrops": [
+        {
+          "item": "SpiderSilkWeave",
+          "chance": "1/1",
+          "stack": "8-15"
+        },
+        {
+          "item": "Vanilla:SpiderFang",
+          "chance": "1/1",
+          "stack": "5-10"
+        },
+        {
+          "item": "Vanilla:GreaterHealingPotion",
+          "chance": "1/1",
+          "stack": "5-10"
+        },
+        {
+          "item": "Vanilla:GoldCoin",
+          "chance": "1/1",
+          "stack": "5-10"
+        }
+      ],
+      "directDrops": [
+        {
+          "item": "AragogTrophy",
+          "chance": "1/10"
+        },
+        {
+          "item": "SpiderSilkWeave",
+          "chance": "1/1",
+          "stack": "5-10"
+        },
+        {
+          "item": "Vanilla:SpiderFang",
+          "chance": "1/1",
+          "stack": "5-10"
+        },
+        {
+          "item": "Vanilla:GreaterHealingPotion",
+          "chance": "1/1",
+          "stack": "5-10"
+        }
+      ]
+    },
+    {
+      "id": "BartyCrouchBoss",
+      "_source": "BartyCrouchBoss.cs",
+      "damage": 65,
+      "defense": 28,
+      "lifeMax": 30000,
+      "knockBackResist": 0.0,
+      "isBoss": true,
+      "noGravity": true,
+      "_dynamicScaling": true,
+      "_curated": true,
+      "folder": "BartyCrouch",
+      "bagDrops": [
+        {
+          "item": "EssenceOfMagic",
+          "chance": "1/1",
+          "stack": "20-35"
+        },
+        {
+          "item": "Vanilla:GreaterHealingPotion",
+          "chance": "1/1",
+          "stack": "5-15"
+        },
+        {
+          "item": "Vanilla:GoldCoin",
+          "chance": "1/1",
+          "stack": "8-15"
+        }
+      ],
+      "directDrops": [
+        {
+          "item": "BartyCrouchTrophy",
+          "chance": "1/10"
+        },
+        {
+          "item": "PolyjuiceFlask",
+          "chance": "1/3"
+        },
+        {
+          "item": "EssenceOfMagic",
+          "chance": "1/1",
+          "stack": "20-35"
+        },
+        {
+          "item": "Vanilla:GreaterHealingPotion",
+          "chance": "1/1",
+          "stack": "5-15"
+        }
+      ]
+    },
+    {
+      "id": "BasiliskBoss",
+      "_source": "BasiliskBoss.cs",
+      "damage": 40,
+      "defense": 16,
+      "lifeMax": 4500,
+      "knockBackResist": 0.0,
+      "isBoss": true,
+      "noGravity": true,
+      "folder": "Basilisk",
+      "bagDrops": [
+        {
+          "item": "BasiliskFang",
+          "chance": "1/1",
+          "stack": "3-5"
+        },
+        {
+          "item": "SwordOfGryffindor",
+          "chance": "1/3"
+        },
+        {
+          "item": "EssenceOfMagic",
+          "chance": "1/1",
+          "stack": "15-25"
+        },
+        {
+          "item": "Vanilla:HealingPotion",
+          "chance": "1/1",
+          "stack": "5-10"
+        },
+        {
+          "item": "Vanilla:GoldCoin",
+          "chance": "1/1",
+          "stack": "3-7"
+        }
+      ],
+      "directDrops": [
+        {
+          "item": "BasiliskTrophy",
+          "chance": "1/10"
+        },
+        {
+          "item": "BasiliskFang",
+          "chance": "1/1",
+          "stack": "3-5"
+        },
+        {
+          "item": "SwordOfGryffindor",
+          "chance": "1/3"
+        },
+        {
+          "item": "Vanilla:HealingPotion",
+          "chance": "1/1",
+          "stack": "5-10"
+        }
+      ]
+    },
+    {
+      "id": "BellatrixBoss",
+      "_source": "BellatrixBoss.cs",
+      "damage": 70,
+      "defense": 30,
+      "lifeMax": 35000,
+      "knockBackResist": 0.0,
+      "isBoss": true,
+      "noGravity": true,
+      "_dynamicScaling": true,
+      "_curated": true,
+      "folder": "Bellatrix",
+      "bagDrops": [
+        {
+          "item": "DarkArtsTome",
+          "chance": "1/1",
+          "stack": "5-10"
+        },
+        {
+          "item": "EssenceOfMagic",
+          "chance": "1/1",
+          "stack": "25-40"
+        },
+        {
+          "item": "Vanilla:GreaterHealingPotion",
+          "chance": "1/1",
+          "stack": "5-15"
+        },
+        {
+          "item": "Vanilla:GoldCoin",
+          "chance": "1/1",
+          "stack": "8-15"
+        }
+      ],
+      "directDrops": [
+        {
+          "item": "BellatrixTrophy",
+          "chance": "1/10"
+        },
+        {
+          "item": "DarkArtsTome",
+          "chance": "1/1",
+          "stack": "3-7"
+        },
+        {
+          "item": "Vanilla:GreaterHealingPotion",
+          "chance": "1/1",
+          "stack": "5-15"
+        }
+      ]
+    },
+    {
+      "id": "DementorKingBoss",
+      "_source": "DementorKingBoss.cs",
+      "damage": 85,
+      "defense": 35,
+      "lifeMax": 45000,
+      "knockBackResist": 0.0,
+      "isBoss": true,
+      "noGravity": true,
+      "_dynamicScaling": true,
+      "_curated": true,
+      "folder": "DementorKing",
+      "bagDrops": [
+        {
+          "item": "DementorsShroud",
+          "chance": "1/1",
+          "stack": "8-15"
+        },
+        {
+          "item": "EssenceOfMagic",
+          "chance": "1/1",
+          "stack": "30-50"
+        },
+        {
+          "item": "Vanilla:SuperHealingPotion",
+          "chance": "1/1",
+          "stack": "5-15"
+        },
+        {
+          "item": "Vanilla:GoldCoin",
+          "chance": "1/1",
+          "stack": "10-20"
+        }
+      ],
+      "directDrops": [
+        {
+          "item": "DementorKingTrophy",
+          "chance": "1/10"
+        },
+        {
+          "item": "DementorsShroud",
+          "chance": "1/1",
+          "stack": "5-10"
+        },
+        {
+          "item": "EssenceOfMagic",
+          "chance": "1/1",
+          "stack": "30-50"
+        },
+        {
+          "item": "Vanilla:SuperHealingPotion",
+          "chance": "1/1",
+          "stack": "5-15"
+        }
+      ]
+    },
+    {
+      "id": "FenrirBoss",
+      "_source": "FenrirBoss.cs",
+      "damage": 75,
+      "defense": 22,
+      "lifeMax": 25000,
+      "knockBackResist": 0.0,
+      "isBoss": true,
+      "noGravity": false,
+      "_dynamicScaling": true,
+      "_curated": true,
+      "folder": "Fenrir",
+      "bagDrops": [
+        {
+          "item": "WerewolfPelt",
+          "chance": "1/1",
+          "stack": "8-15"
+        },
+        {
+          "item": "EssenceOfMagic",
+          "chance": "1/1",
+          "stack": "20-35"
+        },
+        {
+          "item": "Vanilla:GreaterHealingPotion",
+          "chance": "1/1",
+          "stack": "5-15"
+        },
+        {
+          "item": "Vanilla:GoldCoin",
+          "chance": "1/1",
+          "stack": "5-12"
+        }
+      ],
+      "directDrops": [
+        {
+          "item": "FenrirTrophy",
+          "chance": "1/10"
+        },
+        {
+          "item": "WerewolfPelt",
+          "chance": "1/1",
+          "stack": "5-10"
+        },
+        {
+          "item": "EssenceOfMagic",
+          "chance": "1/1",
+          "stack": "20-35"
+        },
+        {
+          "item": "Vanilla:GreaterHealingPotion",
+          "chance": "1/1",
+          "stack": "5-15"
+        }
+      ]
+    },
+    {
+      "id": "FluffyBoss",
+      "_source": "FluffyBoss.cs",
+      "damage": 60,
+      "defense": 25,
+      "lifeMax": 18000,
+      "knockBackResist": 0.0,
+      "isBoss": true,
+      "noGravity": false,
+      "_dynamicScaling": true,
+      "_curated": true,
+      "folder": "Fluffy",
+      "bagDrops": [
+        {
+          "item": "CerberusFang",
+          "chance": "1/1",
+          "stack": "5-10"
+        },
+        {
+          "item": "EssenceOfMagic",
+          "chance": "1/1",
+          "stack": "20-35"
+        },
+        {
+          "item": "Vanilla:GreaterHealingPotion",
+          "chance": "1/1",
+          "stack": "5-15"
+        },
+        {
+          "item": "Vanilla:GoldCoin",
+          "chance": "1/1",
+          "stack": "5-12"
+        }
+      ],
+      "directDrops": [
+        {
+          "item": "FluffyTrophy",
+          "chance": "1/10"
+        },
+        {
+          "item": "CerberusFang",
+          "chance": "1/1",
+          "stack": "3-7"
+        },
+        {
+          "item": "Vanilla:GreaterHealingPotion",
+          "chance": "1/1",
+          "stack": "5-15"
+        }
+      ]
+    },
+    {
+      "id": "HorntailBoss",
+      "_source": "HorntailBoss.cs",
+      "damage": 70,
+      "defense": 30,
+      "lifeMax": 28000,
+      "knockBackResist": 0.0,
+      "isBoss": true,
+      "noGravity": true,
+      "_dynamicScaling": true,
+      "_curated": true,
+      "folder": "Horntail",
+      "bagDrops": [
+        {
+          "item": "DragonScale",
+          "chance": "1/1",
+          "stack": "8-15"
+        },
+        {
+          "item": "GoldenEgg",
+          "chance": "1/3"
+        },
+        {
+          "item": "EssenceOfMagic",
+          "chance": "1/1",
+          "stack": "20-35"
+        },
+        {
+          "item": "Vanilla:GreaterHealingPotion",
+          "chance": "1/1",
+          "stack": "5-15"
+        },
+        {
+          "item": "Vanilla:GoldCoin",
+          "chance": "1/1",
+          "stack": "5-12"
+        }
+      ],
+      "directDrops": [
+        {
+          "item": "HorntailTrophy",
+          "chance": "1/10"
+        },
+        {
+          "item": "DragonScale",
+          "chance": "1/1",
+          "stack": "5-10"
+        },
+        {
+          "item": "GoldenEgg",
+          "chance": "1/3"
+        },
+        {
+          "item": "Vanilla:GreaterHealingPotion",
+          "chance": "1/1",
+          "stack": "5-15"
+        }
+      ]
+    },
+    {
+      "id": "QuirrellBoss",
+      "_source": "QuirrellBoss.cs",
+      "damage": 35,
+      "defense": 12,
+      "lifeMax": 3500,
+      "knockBackResist": 0.0,
+      "isBoss": true,
+      "noGravity": true,
+      "_dynamicScaling": true,
+      "_curated": true,
+      "folder": "Quirrell",
+      "bagDrops": [
+        {
+          "item": "EssenceOfMagic",
+          "chance": "1/1",
+          "stack": "10-20"
+        },
+        {
+          "item": "Vanilla:HealingPotion",
+          "chance": "1/1",
+          "stack": "5-10"
+        },
+        {
+          "item": "Vanilla:GoldCoin",
+          "chance": "1/1",
+          "stack": "2-5"
+        }
+      ],
+      "directDrops": [
+        {
+          "item": "QuirrellTrophy",
+          "chance": "1/10"
+        },
+        {
+          "item": "QuirrellsTurban",
+          "chance": "1/3"
+        },
+        {
+          "item": "Vanilla:HealingPotion",
+          "chance": "1/1",
+          "stack": "5-10"
+        }
+      ]
+    },
+    {
+      "id": "TrollBoss",
+      "_source": "TrollBoss.cs",
+      "damage": 30,
+      "defense": 8,
+      "lifeMax": 2000,
+      "knockBackResist": 0.0,
+      "isBoss": true,
+      "noGravity": true,
+      "_dynamicScaling": true,
+      "_curated": true,
+      "folder": "Troll",
+      "bagDrops": [
+        {
+          "item": "TrollClub",
+          "chance": "1/3"
+        },
+        {
+          "item": "Vanilla:HealingPotion",
+          "chance": "1/1",
+          "stack": "5-10"
+        },
+        {
+          "item": "Vanilla:GoldCoin",
+          "chance": "1/1",
+          "stack": "1-3"
+        }
+      ],
+      "directDrops": [
+        {
+          "item": "TrollTrophy",
+          "chance": "1/10"
+        },
+        {
+          "item": "TrollClub",
+          "chance": "1/3"
+        },
+        {
+          "item": "Vanilla:HealingPotion",
+          "chance": "1/1",
+          "stack": "5-10"
+        }
+      ]
+    },
+    {
+      "id": "UmbridgeBoss",
+      "_source": "UmbridgeBoss.cs",
+      "damage": 40,
+      "defense": 35,
+      "lifeMax": 20000,
+      "knockBackResist": 0.0,
+      "isBoss": true,
+      "noGravity": true,
+      "folder": "Umbridge",
+      "bagDrops": [
+        {
+          "item": "UmbridgesQuill",
+          "chance": "1/1"
+        },
+        {
+          "item": "EssenceOfMagic",
+          "chance": "1/1",
+          "stack": "20-35"
+        },
+        {
+          "item": "Vanilla:GreaterHealingPotion",
+          "chance": "1/1",
+          "stack": "5-15"
+        },
+        {
+          "item": "Vanilla:GoldCoin",
+          "chance": "1/1",
+          "stack": "6-12"
+        }
+      ],
+      "directDrops": [
+        {
+          "item": "UmbridgeTrophy",
+          "chance": "1/10"
+        },
+        {
+          "item": "UmbridgesQuill",
+          "chance": "1/3"
+        },
+        {
+          "item": "Vanilla:GreaterHealingPotion",
+          "chance": "1/1",
+          "stack": "5-15"
+        }
+      ]
+    },
+    {
+      "id": "VoldemortBoss",
+      "_source": "VoldemortBoss.cs",
+      "knockBackResist": 0.0,
+      "isBoss": true,
+      "noGravity": true,
+      "_dynamicScaling": true,
+      "_curated": true,
+      "lifeMax_base": 60000,
+      "damage_base": 80,
+      "defense_base": 40,
+      "folder": "Voldemort",
+      "bagDrops": [
+        {
+          "item": "ElderWand",
+          "chance": "1/1"
+        },
+        {
+          "item": "DarkArtsTome",
+          "chance": "1/1",
+          "stack": "5-10"
+        },
+        {
+          "item": "EssenceOfMagic",
+          "chance": "1/1",
+          "stack": "50-80"
+        },
+        {
+          "item": "GauntsRing",
+          "chance": "1/1"
+        },
+        {
+          "item": "Vanilla:SuperHealingPotion",
+          "chance": "1/1",
+          "stack": "5-15"
+        },
+        {
+          "item": "Vanilla:GoldCoin",
+          "chance": "1/1",
+          "stack": "10-20"
+        }
+      ],
+      "directDrops": [
+        {
+          "item": "VoldemortTrophy",
+          "chance": "1/10"
+        },
+        {
+          "item": "ElderWand",
+          "chance": "1/1"
+        },
+        {
+          "item": "DarkArtsTome",
+          "chance": "1/1",
+          "stack": "5-10"
+        },
+        {
+          "item": "EssenceOfMagic",
+          "chance": "1/1",
+          "stack": "30-50"
+        },
+        {
+          "item": "GauntsRing",
+          "chance": "1/1"
+        },
+        {
+          "item": "Vanilla:SuperHealingPotion",
+          "chance": "1/1",
+          "stack": "5-15"
+        }
+      ]
+    }
+  ],
+  "enemies": [
+    {
+      "id": "Acromantula",
+      "_source": "Acromantula.cs",
+      "damage": 35,
+      "defense": 14,
+      "lifeMax": 250,
+      "knockBackResist": 0.4,
+      "isBoss": false,
+      "noGravity": false
+    },
+    {
+      "id": "Ashwinder",
+      "_source": "Ashwinder.cs",
+      "damage": 35,
+      "defense": 8,
+      "lifeMax": 120,
+      "knockBackResist": 0.5,
+      "isBoss": false,
+      "noGravity": false
+    },
+    {
+      "id": "AzkabanGuard",
+      "_source": "AzkabanGuard.cs",
+      "damage": 75,
+      "defense": 30,
+      "lifeMax": 800,
+      "knockBackResist": 0.1,
+      "isBoss": false,
+      "noGravity": true,
+      "spawnContexts": [
+        "death_eater_invasion",
+        "azkaban_event",
+        "hardmode"
+      ]
+    },
+    {
+      "id": "Billywig",
+      "_source": "Billywig.cs",
+      "damage": 15,
+      "defense": 2,
+      "lifeMax": 30,
+      "knockBackResist": 0.9,
+      "isBoss": false,
+      "noGravity": true
+    },
+    {
+      "id": "BlastEndedSkrewt",
+      "_source": "BlastEndedSkrewt.cs",
+      "damage": 55,
+      "defense": 28,
+      "lifeMax": 450,
+      "knockBackResist": 0.15,
+      "isBoss": false,
+      "noGravity": false,
+      "spawnContexts": [
+        "hardmode"
+      ]
+    },
+    {
+      "id": "Bludger",
+      "_source": "Bludger.cs",
+      "damage": 25,
+      "defense": 30,
+      "lifeMax": 500,
+      "knockBackResist": 0.0,
+      "isBoss": false,
+      "noGravity": true
+    },
+    {
+      "id": "Boggart",
+      "_source": "Boggart.cs",
+      "damage": 30,
+      "defense": 10,
+      "lifeMax": 200,
+      "knockBackResist": 0.4,
+      "isBoss": false,
+      "noGravity": false
+    },
+    {
+      "id": "Bowtruckle",
+      "_source": "Bowtruckle.cs",
+      "damage": 5,
+      "defense": 0,
+      "lifeMax": 20,
+      "knockBackResist": 0.8,
+      "isBoss": false,
+      "noGravity": false
+    },
+    {
+      "id": "BreachSeal",
+      "_source": "BreachSeal.cs",
+      "damage": 0,
+      "defense": 6,
+      "lifeMax": 250,
+      "knockBackResist": 0.0,
+      "isBoss": false,
+      "noGravity": true
+    },
+    {
+      "id": "BroodMarker",
+      "_source": "BroodMarker.cs",
+      "damage": 15,
+      "defense": 10,
+      "lifeMax": 300,
+      "knockBackResist": 0.0,
+      "isBoss": false,
+      "noGravity": true
+    },
+    {
+      "id": "CastleWardNode",
+      "_source": "CastleWardNode.cs",
+      "damage": 0,
+      "defense": 8,
+      "lifeMax": 300,
+      "knockBackResist": 0.0,
+      "isBoss": false,
+      "noGravity": true
+    },
+    {
+      "id": "CauldronSpillNode",
+      "_source": "CauldronSpillNode.cs",
+      "damage": 10,
+      "defense": 6,
+      "lifeMax": 220,
+      "knockBackResist": 0.0,
+      "isBoss": false,
+      "noGravity": true
+    },
+    {
+      "id": "CorruptedTrace",
+      "_source": "CorruptedTrace.cs",
+      "damage": 10,
+      "defense": 8,
+      "lifeMax": 200,
+      "knockBackResist": 0.0,
+      "isBoss": false,
+      "noGravity": true
+    },
+    {
+      "id": "CursedMummy",
+      "_source": "CursedMummy.cs",
+      "damage": 45,
+      "defense": 18,
+      "lifeMax": 300,
+      "knockBackResist": 0.2,
+      "isBoss": false,
+      "noGravity": false,
+      "spawnContexts": [
+        "hardmode"
+      ]
+    },
+    {
+      "id": "CursedOpalDisplay",
+      "_source": "CursedOpalDisplay.cs",
+      "damage": 20,
+      "defense": 8,
+      "lifeMax": 200,
+      "knockBackResist": 0.0,
+      "isBoss": false,
+      "noGravity": true
+    },
+    {
+      "id": "CursedSpecter",
+      "_source": "CursedSpecter.cs",
+      "damage": 60,
+      "defense": 18,
+      "lifeMax": 450,
+      "knockBackResist": 0.15,
+      "isBoss": false,
+      "noGravity": true,
+      "spawnContexts": [
+        "hardmode"
+      ]
+    },
+    {
+      "id": "CursedTreasure",
+      "_source": "CursedTreasure.cs",
+      "damage": 30,
+      "defense": 15,
+      "lifeMax": 200,
+      "knockBackResist": 0.0,
+      "isBoss": false,
+      "noGravity": true
+    },
+    {
+      "id": "DeathEater",
+      "_source": "DeathEater.cs",
+      "damage": 60,
+      "defense": 25,
+      "lifeMax": 500,
+      "knockBackResist": 0.2,
+      "isBoss": false,
+      "noGravity": true,
+      "spawnContexts": [
+        "hardmode"
+      ]
+    },
+    {
+      "id": "Dementor",
+      "_source": "Dementor.cs",
+      "damage": 55,
+      "defense": 20,
+      "lifeMax": 400,
+      "knockBackResist": 0.3,
+      "isBoss": false,
+      "noGravity": true,
+      "spawnContexts": [
+        "blood_moon",
+        "death_eater_invasion",
+        "azkaban_event",
+        "forbidden_forest",
+        "hardmode"
+      ]
+    },
+    {
+      "id": "Demiguise",
+      "_source": "Demiguise.cs",
+      "damage": 0,
+      "defense": 0,
+      "lifeMax": 60,
+      "knockBackResist": 0.8,
+      "isBoss": false,
+      "noGravity": false,
+      "spawnContexts": [
+        "forbidden_forest"
+      ]
+    },
+    {
+      "id": "DespairAnchor",
+      "_source": "DespairAnchor.cs",
+      "damage": 0,
+      "defense": 20,
+      "lifeMax": 500,
+      "knockBackResist": 0.0,
+      "isBoss": false,
+      "noGravity": true,
+      "spawnContexts": [
+        "azkaban_event"
+      ]
+    },
+    {
+      "id": "Diricawl",
+      "_source": "Diricawl.cs",
+      "damage": 0,
+      "defense": 0,
+      "lifeMax": 25,
+      "knockBackResist": 1.0,
+      "isBoss": false,
+      "noGravity": false
+    },
+    {
+      "id": "Doxy",
+      "_source": "Doxy.cs",
+      "damage": 22,
+      "defense": 2,
+      "lifeMax": 35,
+      "knockBackResist": 0.9,
+      "isBoss": false,
+      "noGravity": true
+    },
+    {
+      "id": "DoxyNest",
+      "_source": "DoxyNest.cs",
+      "damage": 10,
+      "defense": 5,
+      "lifeMax": 200,
+      "knockBackResist": 0.0,
+      "isBoss": false,
+      "noGravity": true
+    },
+    {
+      "id": "DuelingDummy",
+      "_source": "DuelingDummy.cs",
+      "damage": 0,
+      "defense": 0,
+      "lifeMax": 999999,
+      "knockBackResist": 0.0,
+      "isBoss": false,
+      "noGravity": false
+    },
+    {
+      "id": "Dugbog",
+      "_source": "Dugbog.cs",
+      "damage": 35,
+      "defense": 10,
+      "lifeMax": 150,
+      "knockBackResist": 0.3,
+      "isBoss": false,
+      "noGravity": false
+    },
+    {
+      "id": "Erumpent",
+      "_source": "Erumpent.cs",
+      "damage": 80,
+      "defense": 25,
+      "lifeMax": 700,
+      "knockBackResist": 0.0,
+      "isBoss": false,
+      "noGravity": false,
+      "spawnContexts": [
+        "hardmode"
+      ]
+    },
+    {
+      "id": "FireCrab",
+      "_source": "FireCrab.cs",
+      "damage": 45,
+      "defense": 22,
+      "lifeMax": 280,
+      "knockBackResist": 0.15,
+      "isBoss": false,
+      "noGravity": false,
+      "spawnContexts": [
+        "hardmode"
+      ]
+    },
+    {
+      "id": "Flobberworm",
+      "_source": "Flobberworm.cs",
+      "damage": 0,
+      "defense": 0,
+      "lifeMax": 5,
+      "knockBackResist": 1.0,
+      "isBoss": false,
+      "noGravity": false
+    },
+    {
+      "id": "Fwooper",
+      "_source": "Fwooper.cs",
+      "damage": 28,
+      "defense": 6,
+      "lifeMax": 100,
+      "knockBackResist": 0.6,
+      "isBoss": false,
+      "noGravity": true,
+      "spawnContexts": [
+        "forbidden_forest"
+      ]
+    },
+    {
+      "id": "Giant",
+      "_source": "Giant.cs",
+      "damage": 90,
+      "defense": 30,
+      "lifeMax": 2000,
+      "knockBackResist": 0.0,
+      "isBoss": false,
+      "noGravity": false,
+      "spawnContexts": [
+        "hardmode"
+      ]
+    },
+    {
+      "id": "GoblinRebel",
+      "_source": "GoblinRebel.cs",
+      "damage": 30,
+      "defense": 12,
+      "lifeMax": 150,
+      "knockBackResist": 0.4,
+      "isBoss": false,
+      "noGravity": false
+    },
+    {
+      "id": "GrimmauldBoggart",
+      "_source": "GrimmauldBoggart.cs",
+      "damage": 25,
+      "defense": 10,
+      "lifeMax": 350,
+      "knockBackResist": 0.3,
+      "isBoss": false,
+      "noGravity": true
+    },
+    {
+      "id": "Grindylow",
+      "_source": "Grindylow.cs",
+      "damage": 25,
+      "defense": 8,
+      "lifeMax": 120,
+      "knockBackResist": 0.5,
+      "isBoss": false,
+      "noGravity": true
+    },
+    {
+      "id": "HexResidueNode",
+      "_source": "HexResidueNode.cs",
+      "damage": 15,
+      "defense": 8,
+      "lifeMax": 250,
+      "knockBackResist": 0.0,
+      "isBoss": false,
+      "noGravity": true
+    },
+    {
+      "id": "Horklump",
+      "_source": "Horklump.cs",
+      "damage": 0,
+      "defense": 0,
+      "lifeMax": 10,
+      "knockBackResist": 1.0,
+      "isBoss": false,
+      "noGravity": false
+    },
+    {
+      "id": "Inferius",
+      "_source": "Inferius.cs",
+      "damage": 50,
+      "defense": 18,
+      "lifeMax": 350,
+      "knockBackResist": 0.3,
+      "isBoss": false,
+      "noGravity": false,
+      "spawnContexts": [
+        "dungeon",
+        "hardmode"
+      ]
+    },
+    {
+      "id": "Jarvey",
+      "_source": "Jarvey.cs",
+      "damage": 18,
+      "defense": 4,
+      "lifeMax": 60,
+      "knockBackResist": 0.7,
+      "isBoss": false,
+      "noGravity": false
+    },
+    {
+      "id": "Jobberknoll",
+      "_source": "Jobberknoll.cs",
+      "damage": 0,
+      "defense": 0,
+      "lifeMax": 20,
+      "knockBackResist": 1.0,
+      "isBoss": false,
+      "noGravity": true
+    },
+    {
+      "id": "Knarl",
+      "_source": "Knarl.cs",
+      "damage": 22,
+      "defense": 8,
+      "lifeMax": 45,
+      "knockBackResist": 0.6,
+      "isBoss": false,
+      "noGravity": false
+    },
+    {
+      "id": "Lethifold",
+      "_source": "Lethifold.cs",
+      "damage": 70,
+      "defense": 15,
+      "lifeMax": 600,
+      "knockBackResist": 0.1,
+      "isBoss": false,
+      "noGravity": true,
+      "spawnContexts": [
+        "hardmode"
+      ]
+    },
+    {
+      "id": "MagicPixie",
+      "_source": "MagicPixie.cs",
+      "damage": 18,
+      "defense": 4,
+      "lifeMax": 50,
+      "knockBackResist": 0.8,
+      "isBoss": false,
+      "noGravity": true
+    },
+    {
+      "id": "MagicalImp",
+      "_source": "MagicalImp.cs",
+      "damage": 25,
+      "defense": 6,
+      "lifeMax": 70,
+      "knockBackResist": 0.7,
+      "isBoss": false,
+      "noGravity": true
+    },
+    {
+      "id": "Mandrake",
+      "_source": "Mandrake.cs",
+      "damage": 20,
+      "defense": 6,
+      "lifeMax": 80,
+      "knockBackResist": 0.5,
+      "isBoss": false,
+      "noGravity": false
+    },
+    {
+      "id": "Merfolk",
+      "_source": "Merfolk.cs",
+      "damage": 35,
+      "defense": 12,
+      "lifeMax": 200,
+      "knockBackResist": 0.4,
+      "isBoss": false,
+      "noGravity": true
+    },
+    {
+      "id": "MoonWardFracture",
+      "_source": "MoonWardFracture.cs",
+      "damage": 15,
+      "defense": 14,
+      "lifeMax": 300,
+      "knockBackResist": 0.0,
+      "isBoss": false,
+      "noGravity": true
+    },
+    {
+      "id": "Mooncalf",
+      "_source": "Mooncalf.cs",
+      "damage": 0,
+      "defense": 0,
+      "lifeMax": 30,
+      "knockBackResist": 0.9,
+      "isBoss": false,
+      "noGravity": false
+    },
+    {
+      "id": "Nagini",
+      "_source": "Nagini.cs",
+      "damage": 55,
+      "defense": 20,
+      "lifeMax": 3000,
+      "knockBackResist": 0.1,
+      "isBoss": false,
+      "noGravity": true,
+      "spawnContexts": [
+        "hardmode"
+      ]
+    },
+    {
+      "id": "Nundu",
+      "_source": "Nundu.cs",
+      "damage": 90,
+      "defense": 30,
+      "lifeMax": 1500,
+      "knockBackResist": 0.02,
+      "isBoss": false,
+      "noGravity": false,
+      "spawnContexts": [
+        "hardmode"
+      ]
+    },
+    {
+      "id": "Obscurus",
+      "_source": "Obscurus.cs",
+      "damage": 70,
+      "defense": 25,
+      "lifeMax": 800,
+      "knockBackResist": 0.05,
+      "isBoss": false,
+      "noGravity": true,
+      "spawnContexts": [
+        "hardmode"
+      ]
+    },
+    {
+      "id": "Occamy",
+      "_source": "Occamy.cs",
+      "damage": 45,
+      "defense": 16,
+      "lifeMax": 350,
+      "knockBackResist": 0.3,
+      "isBoss": false,
+      "noGravity": true,
+      "_dynamicScaling": true,
+      "_curated": true,
+      "defense_base": 16,
+      "spawnContexts": [
+        "hardmode"
+      ]
+    },
+    {
+      "id": "OmenStone",
+      "_source": "OmenStone.cs",
+      "damage": 15,
+      "defense": 12,
+      "lifeMax": 280,
+      "knockBackResist": 0.0,
+      "isBoss": false,
+      "noGravity": true
+    },
+    {
+      "id": "Peeves",
+      "_source": "Peeves.cs",
+      "damage": 25,
+      "defense": 8,
+      "lifeMax": 180,
+      "knockBackResist": 0.1,
+      "isBoss": false,
+      "noGravity": true,
+      "spawnContexts": [
+        "dungeon"
+      ]
+    },
+    {
+      "id": "PeruvianVipertooth",
+      "_source": "PeruvianVipertooth.cs",
+      "damage": 55,
+      "defense": 18,
+      "lifeMax": 350,
+      "knockBackResist": 0.25,
+      "isBoss": false,
+      "noGravity": true,
+      "_dynamicScaling": true,
+      "_curated": true,
+      "spawnContexts": [
+        "hardmode"
+      ]
+    },
+    {
+      "id": "PhantomStag",
+      "_source": "PhantomStag.cs",
+      "damage": 55,
+      "defense": 20,
+      "lifeMax": 400,
+      "knockBackResist": 0.2,
+      "isBoss": false,
+      "noGravity": true,
+      "spawnContexts": [
+        "hardmode"
+      ]
+    },
+    {
+      "id": "PrisonWraith",
+      "_source": "PrisonWraith.cs",
+      "damage": 40,
+      "defense": 12,
+      "lifeMax": 250,
+      "knockBackResist": 0.5,
+      "isBoss": false,
+      "noGravity": true,
+      "spawnContexts": [
+        "azkaban_event",
+        "hardmode"
+      ]
+    },
+    {
+      "id": "ProphecyOrb",
+      "_source": "ProphecyOrb.cs",
+      "damage": 0,
+      "defense": 0,
+      "lifeMax": 1,
+      "knockBackResist": 0.0,
+      "isBoss": false,
+      "noGravity": true
+    },
+    {
+      "id": "Puffskein",
+      "_source": "Puffskein.cs",
+      "damage": 0,
+      "defense": 0,
+      "lifeMax": 15,
+      "knockBackResist": 1.0,
+      "isBoss": false,
+      "noGravity": false
+    },
+    {
+      "id": "QuidditchHoop",
+      "_source": "QuidditchHoop.cs",
+      "damage": 0,
+      "defense": 9999,
+      "lifeMax": 1,
+      "knockBackResist": 0.0,
+      "isBoss": false,
+      "noGravity": true
+    },
+    {
+      "id": "Runespoor",
+      "_source": "Runespoor.cs",
+      "damage": 40,
+      "defense": 14,
+      "lifeMax": 250,
+      "knockBackResist": 0.3,
+      "isBoss": false,
+      "noGravity": false
+    },
+    {
+      "id": "SnowWraith",
+      "_source": "SnowWraith.cs",
+      "damage": 40,
+      "defense": 14,
+      "lifeMax": 220,
+      "knockBackResist": 0.3,
+      "isBoss": false,
+      "noGravity": true
+    },
+    {
+      "id": "Sphinx",
+      "_source": "Sphinx.cs",
+      "damage": 60,
+      "defense": 35,
+      "lifeMax": 1200,
+      "knockBackResist": 0.05,
+      "isBoss": false,
+      "noGravity": false,
+      "spawnContexts": [
+        "hardmode"
+      ]
+    },
+    {
+      "id": "Streeler",
+      "_source": "Streeler.cs",
+      "damage": 25,
+      "defense": 16,
+      "lifeMax": 100,
+      "knockBackResist": 0.2,
+      "isBoss": false,
+      "noGravity": false
+    },
+    {
+      "id": "Thestral",
+      "_source": "Thestral.cs",
+      "damage": 40,
+      "defense": 16,
+      "lifeMax": 300,
+      "knockBackResist": 0.3,
+      "isBoss": false,
+      "noGravity": true
+    },
+    {
+      "id": "ThestralBeacon",
+      "_source": "ThestralBeacon.cs",
+      "damage": 0,
+      "defense": 0,
+      "lifeMax": 1,
+      "knockBackResist": 0.0,
+      "isBoss": false,
+      "noGravity": true
+    },
+    {
+      "id": "Thunderbird",
+      "_source": "Thunderbird.cs",
+      "damage": 65,
+      "defense": 22,
+      "lifeMax": 500,
+      "knockBackResist": 0.2,
+      "isBoss": false,
+      "noGravity": true,
+      "spawnContexts": [
+        "hardmode"
+      ]
+    },
+    {
+      "id": "Troll",
+      "_source": "Troll.cs",
+      "damage": 45,
+      "defense": 22,
+      "lifeMax": 600,
+      "knockBackResist": 0.1,
+      "isBoss": false,
+      "noGravity": false
+    },
+    {
+      "id": "TunnelWard",
+      "_source": "TunnelWard.cs",
+      "damage": 12,
+      "defense": 12,
+      "lifeMax": 250,
+      "knockBackResist": 0.0,
+      "isBoss": false,
+      "noGravity": true
+    },
+    {
+      "id": "UnstableHourglass",
+      "_source": "UnstableHourglass.cs",
+      "damage": 0,
+      "defense": 0,
+      "lifeMax": 1,
+      "knockBackResist": 0.0,
+      "isBoss": false,
+      "noGravity": true
+    },
+    {
+      "id": "VanishingCabinetEcho",
+      "_source": "VanishingCabinetEcho.cs",
+      "damage": 10,
+      "defense": 15,
+      "lifeMax": 350,
+      "knockBackResist": 0.0,
+      "isBoss": false,
+      "noGravity": true
+    },
+    {
+      "id": "VaultRelic",
+      "_source": "VaultRelic.cs",
+      "damage": 0,
+      "defense": 0,
+      "lifeMax": 1,
+      "knockBackResist": 0.0,
+      "isBoss": false,
+      "noGravity": true
+    },
+    {
+      "id": "VeilFracture",
+      "_source": "VeilFracture.cs",
+      "damage": 15,
+      "defense": 10,
+      "lifeMax": 300,
+      "knockBackResist": 0.0,
+      "isBoss": false,
+      "noGravity": true
+    },
+    {
+      "id": "VenomWoundNode",
+      "_source": "VenomWoundNode.cs",
+      "damage": 15,
+      "defense": 10,
+      "lifeMax": 280,
+      "knockBackResist": 0.0,
+      "isBoss": false,
+      "noGravity": true
+    },
+    {
+      "id": "WalburgaPortrait",
+      "_source": "WalburgaPortrait.cs",
+      "damage": 20,
+      "defense": 12,
+      "lifeMax": 300,
+      "knockBackResist": 0.0,
+      "isBoss": false,
+      "noGravity": true
+    },
+    {
+      "id": "WardAnchor",
+      "_source": "WardAnchor.cs",
+      "damage": 0,
+      "defense": 10,
+      "lifeMax": 250,
+      "knockBackResist": 0.0,
+      "isBoss": false,
+      "noGravity": true
+    },
+    {
+      "id": "Werewolf",
+      "_source": "Werewolf.cs",
+      "damage": 65,
+      "defense": 22,
+      "lifeMax": 500,
+      "knockBackResist": 0.2,
+      "isBoss": false,
+      "noGravity": false,
+      "spawnContexts": [
+        "blood_moon",
+        "hardmode"
+      ]
+    },
+    {
+      "id": "WillowKnot",
+      "_source": "WillowKnot.cs",
+      "damage": 15,
+      "defense": 10,
+      "lifeMax": 200,
+      "knockBackResist": 0.0,
+      "isBoss": false,
+      "noGravity": true
+    },
+    {
+      "id": "Zouwu",
+      "_source": "Zouwu.cs",
+      "damage": 70,
+      "defense": 24,
+      "lifeMax": 800,
+      "knockBackResist": 0.05,
+      "isBoss": false,
+      "noGravity": false,
+      "spawnContexts": [
+        "hardmode"
+      ]
+    }
+  ],
+  "town_npcs": [
+    {
+      "id": "Aberforth",
+      "_source": "Aberforth.cs",
+      "damage": 16,
+      "defense": 16,
+      "lifeMax": 270,
+      "knockBackResist": 0.5,
+      "isBoss": false,
+      "noGravity": false
+    },
+    {
+      "id": "Centaur",
+      "_source": "Centaur.cs",
+      "damage": 20,
+      "defense": 20,
+      "lifeMax": 350,
+      "knockBackResist": 0.3,
+      "isBoss": false,
+      "noGravity": false
+    },
+    {
+      "id": "Dobby",
+      "_source": "Dobby.cs",
+      "damage": 8,
+      "defense": 5,
+      "lifeMax": 150,
+      "knockBackResist": 0.7,
+      "isBoss": false,
+      "noGravity": false
+    },
+    {
+      "id": "Dumbledore",
+      "_source": "Dumbledore.cs",
+      "damage": 50,
+      "defense": 30,
+      "lifeMax": 500,
+      "knockBackResist": 0.3,
+      "isBoss": false,
+      "noGravity": false
+    },
+    {
+      "id": "FredAndGeorge",
+      "_source": "FredAndGeorge.cs",
+      "damage": 15,
+      "defense": 15,
+      "lifeMax": 250,
+      "knockBackResist": 0.5,
+      "isBoss": false,
+      "noGravity": false
+    },
+    {
+      "id": "GoblinTeller",
+      "_source": "GoblinTeller.cs",
+      "damage": 15,
+      "defense": 18,
+      "lifeMax": 250,
+      "knockBackResist": 0.5,
+      "isBoss": false,
+      "noGravity": false
+    },
+    {
+      "id": "Hagrid",
+      "_source": "Hagrid.cs",
+      "damage": 25,
+      "defense": 20,
+      "lifeMax": 400,
+      "knockBackResist": 0.3,
+      "isBoss": false,
+      "noGravity": false
+    },
+    {
+      "id": "Healer",
+      "_source": "Healer.cs",
+      "damage": 10,
+      "defense": 15,
+      "lifeMax": 250,
+      "knockBackResist": 0.5,
+      "isBoss": false,
+      "noGravity": false
+    },
+    {
+      "id": "Kingsley",
+      "_source": "Kingsley.cs",
+      "damage": 20,
+      "defense": 20,
+      "lifeMax": 300,
+      "knockBackResist": 0.5,
+      "isBoss": false,
+      "noGravity": false
+    },
+    {
+      "id": "Lupin",
+      "_source": "Lupin.cs",
+      "damage": 18,
+      "defense": 18,
+      "lifeMax": 280,
+      "knockBackResist": 0.5,
+      "isBoss": false,
+      "noGravity": false
+    },
+    {
+      "id": "MadamHooch",
+      "_source": "MadamHooch.cs",
+      "damage": 12,
+      "defense": 15,
+      "lifeMax": 250,
+      "knockBackResist": 0.5,
+      "isBoss": false,
+      "noGravity": false
+    },
+    {
+      "id": "MadamRosmerta",
+      "_source": "MadamRosmerta.cs",
+      "damage": 10,
+      "defense": 15,
+      "lifeMax": 250,
+      "knockBackResist": 0.5,
+      "isBoss": false,
+      "noGravity": false
+    },
+    {
+      "id": "MrBorgin",
+      "_source": "MrBorgin.cs",
+      "damage": 14,
+      "defense": 12,
+      "lifeMax": 250,
+      "knockBackResist": 0.5,
+      "isBoss": false,
+      "noGravity": false
+    },
+    {
+      "id": "Neville",
+      "_source": "Neville.cs",
+      "damage": 20,
+      "defense": 15,
+      "lifeMax": 280,
+      "knockBackResist": 0.5,
+      "isBoss": false,
+      "noGravity": false
+    },
+    {
+      "id": "Ollivander",
+      "_source": "Ollivander.cs",
+      "damage": 10,
+      "defense": 15,
+      "lifeMax": 250,
+      "knockBackResist": 0.5,
+      "isBoss": false,
+      "noGravity": false
+    },
+    {
+      "id": "PotionsMaster",
+      "_source": "PotionsMaster.cs",
+      "damage": 10,
+      "defense": 15,
+      "lifeMax": 250,
+      "knockBackResist": 0.5,
+      "isBoss": false,
+      "noGravity": false
+    }
+  ],
+  "_meta": {
+    "generator": "scripts/export_mechanical_data.py",
+    "type": "auto-derived",
+    "description": "Mechanical data extracted from C# source via regex. Items marked _curated=true have dynamic values that require manual review. All other values are directly from SetDefaults() assignments."
+  }
+}

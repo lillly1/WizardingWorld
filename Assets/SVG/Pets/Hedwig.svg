@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+  <rect width="24" height="24" rx="3" fill="#2a3a5a"/>
+  <!-- Body -->
+  <ellipse cx="12" cy="15" rx="5" ry="5.5" fill="#f0f0f0"/>
+  <!-- Chest feather texture -->
+  <g stroke="#d8d8d8" stroke-width="0.3" fill="none" opacity="0.5">
+    <path d="M9 13 Q12 12 15 13"/>
+    <path d="M9 14.5 Q12 13.5 15 14.5"/>
+    <path d="M9 16 Q12 15 15 16"/>
+    <path d="M10 17.5 Q12 16.5 14 17.5"/>
+  </g>
+  <!-- Speckles on wings -->
+  <g fill="#c0c0c0" opacity="0.5">
+    <circle cx="8.5" cy="13" r="0.4"/>
+    <circle cx="9" cy="15" r="0.3"/>
+    <circle cx="15.5" cy="13" r="0.4"/>
+    <circle cx="15" cy="15" r="0.3"/>
+    <circle cx="8" cy="17" r="0.3"/>
+    <circle cx="16" cy="17" r="0.3"/>
+  </g>
+  <!-- Head -->
+  <circle cx="12" cy="8" r="4" fill="#f5f5f5"/>
+  <!-- Facial disc feathers -->
+  <circle cx="12" cy="8.5" r="3.5" fill="none" stroke="#e0e0e0" stroke-width="0.4"/>
+  <!-- Eyes - large amber -->
+  <circle cx="10.2" cy="7.5" r="1.5" fill="#ff8c00"/>
+  <circle cx="13.8" cy="7.5" r="1.5" fill="#ff8c00"/>
+  <!-- Pupils -->
+  <circle cx="10.2" cy="7.5" r="0.7" fill="#1a1a1a"/>
+  <circle cx="13.8" cy="7.5" r="0.7" fill="#1a1a1a"/>
+  <!-- Eye glints -->
+  <circle cx="10.6" cy="7.1" r="0.25" fill="#ffffff"/>
+  <circle cx="14.2" cy="7.1" r="0.25" fill="#ffffff"/>
+  <!-- Beak -->
+  <path d="M11.5 9.2 L12 10.5 L12.5 9.2 Z" fill="#2a2a2a"/>
+  <!-- Ear tufts (subtle) -->
+  <path d="M9 5 L8.5 3.5 L9.5 5" fill="#e8e8e8"/>
+  <path d="M15 5 L15.5 3.5 L14.5 5" fill="#e8e8e8"/>
+  <!-- Wing hints on sides -->
+  <path d="M7 12 Q6 15 7 18 Q8 19 8 18" fill="#e8e8e8"/>
+  <path d="M17 12 Q18 15 17 18 Q16 19 16 18" fill="#e8e8e8"/>
+  <!-- Feet -->
+  <g fill="#4a4a4a">
+    <path d="M10 20 L9 21.5 L8.5 22 M10 20 L10 22 M10 20 L10.5 21.5" stroke="#4a4a4a" stroke-width="0.5"/>
+    <path d="M14 20 L13.5 21.5 L13 22 M14 20 L14 22 M14 20 L14.5 21.5" stroke="#4a4a4a" stroke-width="0.5"/>
+  </g>
+  <!-- Tail feathers -->
+  <path d="M10 19.5 Q12 21 14 19.5" fill="#e0e0e0"/>
+</svg>

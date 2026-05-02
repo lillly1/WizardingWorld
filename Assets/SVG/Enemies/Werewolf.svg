@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36">
+  <rect width="36" height="36" fill="#1a1a2a"/>
+  <!-- Moon glow background -->
+  <circle cx="28" cy="6" r="4" fill="#d0d8e0" opacity="0.3"/>
+  <!-- Werewolf body - hunched stance -->
+  <g>
+    <!-- Torso hunched -->
+    <path d="M14 14 Q18 10 22 13 L23 20 Q22 24 18 24 L14 24 Q12 22 12 18 Z" fill="#6a6a6a"/>
+    <!-- Fur texture -->
+    <g stroke="#7a7a7a" stroke-width="0.4" fill="none" opacity="0.5">
+      <path d="M14 15 L13 14"/>
+      <path d="M16 12 L15 11"/>
+      <path d="M20 11 L21 10"/>
+      <path d="M22 14 L23 13"/>
+      <path d="M15 19 L14 18"/>
+      <path d="M21 19 L22 18"/>
+    </g>
+    <!-- Head / snout -->
+    <path d="M10 11 Q8 8 10 6 Q13 4 16 6 L17 8 Q16 12 13 13 Z" fill="#6a6a6a"/>
+    <!-- Snout -->
+    <path d="M8 8 Q6 7 5 8 Q5 9 7 10 L10 10 Z" fill="#5a5a5a"/>
+    <!-- Nose -->
+    <ellipse cx="5.5" cy="8.2" rx="0.8" ry="0.6" fill="#1a1a1a"/>
+    <!-- Eye - menacing -->
+    <ellipse cx="11" cy="7.5" rx="1.2" ry="0.8" fill="#cccc00"/>
+    <ellipse cx="11" cy="7.5" rx="0.4" ry="0.7" fill="#1a1a1a"/>
+    <!-- Teeth showing -->
+    <g fill="#f0f0f0">
+      <polygon points="6,9.5 6.5,10.8 7,9.5"/>
+      <polygon points="7.5,9.8 8,11 8.5,9.8"/>
+      <polygon points="9,9.5 9.3,10.5 9.8,9.5"/>
+    </g>
+    <!-- Ears pointy -->
+    <polygon points="11,6 9,2 12,5" fill="#5a5a5a"/>
+    <polygon points="14,5 14,1 16,4" fill="#5a5a5a"/>
+    <!-- Inner ears -->
+    <polygon points="11,5.5 9.5,3 11.5,5" fill="#8a5a5a"/>
+    <polygon points="14.2,4.5 14.2,2 15.2,4" fill="#8a5a5a"/>
+    <!-- Arms / claws -->
+    <!-- Right arm -->
+    <path d="M22 15 L27 18 L28 17" fill="none" stroke="#6a6a6a" stroke-width="2.5" stroke-linecap="round"/>
+    <!-- Right claws -->
+    <g stroke="#d0d0d0" stroke-width="0.6" stroke-linecap="round">
+      <line x1="28" y1="17" x2="29.5" y2="15.5"/>
+      <line x1="28" y1="17" x2="30" y2="16.5"/>
+      <line x1="28" y1="17" x2="30" y2="17.5"/>
+    </g>
+    <!-- Left arm -->
+    <path d="M13 16 L9 20 L8 19.5" fill="none" stroke="#6a6a6a" stroke-width="2.5" stroke-linecap="round"/>
+    <!-- Left claws -->
+    <g stroke="#d0d0d0" stroke-width="0.6" stroke-linecap="round">
+      <line x1="8" y1="19.5" x2="6.5" y2="18"/>
+      <line x1="8" y1="19.5" x2="6" y2="19"/>
+      <line x1="8" y1="19.5" x2="6.5" y2="20.5"/>
+    </g>
+    <!-- Legs -->
+    <path d="M15 24 L13 30 L11 32 L14 32 L15 29 L16 32" fill="#6a6a6a"/>
+    <path d="M20 24 L22 30 L24 32 L21 32 L20 29 L19 32" fill="#6a6a6a"/>
+    <!-- Feet claws -->
+    <g fill="#5a5a5a">
+      <path d="M11 32 L10 33.5 L12 33 L14 33.5 L14 32 Z"/>
+      <path d="M21 32 L20 33.5 L22 33 L24 33.5 L24 32 Z"/>
+    </g>
+    <!-- Tail -->
+    <path d="M18 24 Q22 28 20 30 Q18 31 17 30" stroke="#6a6a6a" stroke-width="2" fill="none" stroke-linecap="round"/>
+  </g>
+</svg>

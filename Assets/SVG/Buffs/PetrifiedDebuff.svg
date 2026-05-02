@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <defs>
+    <linearGradient id="stoneGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#8a8a8a"/>
+      <stop offset="50%" stop-color="#6a6a6a"/>
+      <stop offset="100%" stop-color="#5a5a5a"/>
+    </linearGradient>
+  </defs>
+  <rect width="32" height="32" rx="4" fill="#4a4a4a"/>
+  <!-- Stone body shape (frozen figure) -->
+  <g fill="url(#stoneGrad)">
+    <!-- Head -->
+    <circle cx="16" cy="9" r="4.5"/>
+    <!-- Body -->
+    <rect x="11" y="13" width="10" height="10" rx="2"/>
+    <!-- Arms frozen out -->
+    <rect x="6" y="14" width="6" height="2.5" rx="1"/>
+    <rect x="20" y="14" width="6" height="2.5" rx="1"/>
+    <!-- Legs -->
+    <rect x="12" y="22" width="3" height="5" rx="1"/>
+    <rect x="17" y="22" width="3" height="5" rx="1"/>
+  </g>
+  <!-- Stone texture / cracks -->
+  <g stroke="#3a3a3a" stroke-width="0.7" fill="none">
+    <path d="M13 8 L15 12 L12 16"/>
+    <path d="M19 7 L18 11 L21 15"/>
+    <path d="M14 18 L16 22 L18 19"/>
+    <path d="M11 20 L13 23"/>
+    <path d="M21 20 L19 24"/>
+    <!-- Face cracks -->
+    <path d="M14 8 L15 9.5 L14.5 11"/>
+    <path d="M18 7.5 L17.5 9 L18.5 10.5"/>
+  </g>
+  <!-- Frozen expression - hollow eyes -->
+  <ellipse cx="14.5" cy="8.5" rx="1" ry="1.2" fill="#3a3a3a"/>
+  <ellipse cx="17.5" cy="8.5" rx="1" ry="1.2" fill="#3a3a3a"/>
+  <!-- Open mouth -->
+  <ellipse cx="16" cy="11" rx="1.2" ry="0.7" fill="#3a3a3a"/>
+  <!-- Stone dust particles -->
+  <circle cx="7" cy="5" r="0.5" fill="#9a9a9a" opacity="0.5"/>
+  <circle cx="25" cy="7" r="0.4" fill="#9a9a9a" opacity="0.4"/>
+  <circle cx="5" cy="26" r="0.3" fill="#9a9a9a" opacity="0.4"/>
+  <circle cx="27" cy="25" r="0.5" fill="#9a9a9a" opacity="0.3"/>
+</svg>

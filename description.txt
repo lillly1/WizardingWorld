@@ -1,0 +1,17 @@
+Enter the Wizarding World! This mod adds a complete magical experience to Terraria inspired by the world of Harry Potter.
+
+Features:
+- 20+ unique wands across 9 spell schools with Wand Mastery progression
+- 12 boss fights from Mountain Troll to Lord Voldemort
+- 78 enemies including Dementors, Acromantulas, Death Eaters, and Fantastic Beasts
+- 8 armor sets (4 Hogwarts Houses, Dark Wizard, Dragon Scale, and more)
+- 65 accessories including Deathly Hallows, Horcruxes, and House relics
+- 16 town NPCs: Ollivander, Hagrid, Dumbledore, Dobby, and more
+- 5 mounts (Nimbus, Firebolt, Hippogriff, Thestral, Nimbus 2001) and 6 pets
+- 19 potions: Butterbeer, Felix Felicis, Polyjuice, Wolfsbane, and more
+- Horcrux Hunt, Deathly Hallows questline, and Dark Arts Corruption systems
+- Hogsmeade Village, Forbidden Forest biome, Quidditch, and Diagon Alley
+- Full progression system tied to Terraria's vanilla bosses
+- Three-language localization: English, Simplified Chinese, Traditional Chinese
+
+Version {ModVersion} | tModLoader {tMLVersion}

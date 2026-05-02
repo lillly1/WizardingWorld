@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <defs>
+    <linearGradient id="locketGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFE040"/>
+      <stop offset="25%" stop-color="#D4A017"/>
+      <stop offset="50%" stop-color="#FFD700"/>
+      <stop offset="75%" stop-color="#B8860B"/>
+      <stop offset="100%" stop-color="#8B6914"/>
+    </linearGradient>
+    <radialGradient id="locketFace" cx="45%" cy="40%" r="55%">
+      <stop offset="0%" stop-color="#FFE860"/>
+      <stop offset="50%" stop-color="#D4A017"/>
+      <stop offset="100%" stop-color="#8B6914"/>
+    </radialGradient>
+    <radialGradient id="emerald" cx="40%" cy="35%" r="55%">
+      <stop offset="0%" stop-color="#50FF80"/>
+      <stop offset="30%" stop-color="#00CC44"/>
+      <stop offset="70%" stop-color="#008830"/>
+      <stop offset="100%" stop-color="#005520"/>
+    </radialGradient>
+    <linearGradient id="chainGold" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFD700"/>
+      <stop offset="50%" stop-color="#B8860B"/>
+      <stop offset="100%" stop-color="#FFD700"/>
+    </linearGradient>
+    <filter id="goldGlow">
+      <feGaussianBlur stdDeviation="0.8" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="emeraldGlow">
+      <feGaussianBlur stdDeviation="0.5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Chain - heavy gold links going up -->
+  <g stroke="url(#chainGold)" stroke-width="1.2" fill="none">
+    <!-- Left chain arc -->
+    <path d="M12,13 Q8,8 10,4 Q12,1 16,1"/>
+    <!-- Right chain arc -->
+    <path d="M20,13 Q24,8 22,4 Q20,1 16,1"/>
+  </g>
+  <!-- Chain link details -->
+  <g stroke="#B8860B" stroke-width="0.3" fill="none" opacity="0.6">
+    <ellipse cx="10.5" cy="6" rx="0.8" ry="1.2" transform="rotate(-20 10.5 6)"/>
+    <ellipse cx="11" cy="9" rx="0.8" ry="1.2" transform="rotate(-10 11 9)"/>
+    <ellipse cx="21.5" cy="6" rx="0.8" ry="1.2" transform="rotate(20 21.5 6)"/>
+    <ellipse cx="21" cy="9" rx="0.8" ry="1.2" transform="rotate(10 21 9)"/>
+    <ellipse cx="12" cy="11.5" rx="0.8" ry="1.2"/>
+    <ellipse cx="20" cy="11.5" rx="0.8" ry="1.2"/>
+  </g>
+
+  <!-- Locket shadow -->
+  <ellipse cx="16.5" cy="28" rx="6" ry="1.5" fill="#000000" opacity="0.2"/>
+
+  <!-- Locket body - ornate oval -->
+  <ellipse cx="16" cy="20" rx="7.5" ry="8" fill="url(#locketGold)" stroke="#8B6914" stroke-width="0.5"/>
+
+  <!-- Locket face detail -->
+  <ellipse cx="16" cy="20" rx="6.5" ry="7" fill="url(#locketFace)" stroke="#A07818" stroke-width="0.3"/>
+
+  <!-- Ornate border ring -->
+  <ellipse cx="16" cy="20" rx="6" ry="6.5" fill="none" stroke="#FFE040" stroke-width="0.4" opacity="0.6"/>
+
+  <!-- Decorative filigree around edge -->
+  <g stroke="#B8860B" stroke-width="0.3" fill="none" opacity="0.5">
+    <path d="M11,15 Q10,14 11,13"/>
+    <path d="M21,15 Q22,14 21,13"/>
+    <path d="M11,25 Q10,26 11,27"/>
+    <path d="M21,25 Q22,26 21,27"/>
+    <path d="M10,20 Q9,19 10,18"/>
+    <path d="M22,20 Q23,19 22,18"/>
+  </g>
+
+  <!-- Serpent "S" shape -->
+  <g filter="url(#goldGlow)">
+    <path d="M18.5,14.5 Q20,14.5 20,16 Q20,17.5 17,18 Q13,18.5 12.5,20 Q12,21.5 14,22 Q16,22.5 18,21.5 Q19.5,20.5 19,19"
+          fill="none" stroke="#2A5A1A" stroke-width="1.2" stroke-linecap="round"/>
+    <!-- Serpent head at top -->
+    <circle cx="18.5" cy="14.5" r="0.8" fill="#2A5A1A"/>
+    <!-- Serpent eye -->
+    <circle cx="18.8" cy="14.3" r="0.25" fill="#00FF40"/>
+    <!-- Serpent tail -->
+    <path d="M19,19 Q19.5,17.5 18.5,17" stroke="#2A5A1A" stroke-width="0.8" fill="none" stroke-linecap="round"/>
+  </g>
+
+  <!-- Central emerald -->
+  <ellipse cx="16" cy="20" rx="2" ry="2.2" fill="url(#emerald)" stroke="#005520" stroke-width="0.3" filter="url(#emeraldGlow)"/>
+  <!-- Emerald facet highlights -->
+  <path d="M15,19 L16,18.5 L17,19 L16.5,20.5 L15.5,20.5Z" fill="#40FF80" opacity="0.25"/>
+  <ellipse cx="15.5" cy="19.2" rx="0.5" ry="0.3" fill="#FFFFFF" opacity="0.3"/>
+
+  <!-- Locket hinge at top -->
+  <rect x="14.5" y="12" width="3" height="1.5" rx="0.5" fill="#B8860B" stroke="#8B6914" stroke-width="0.2"/>
+
+  <!-- Ornate bump details -->
+  <circle cx="11" cy="17" r="0.5" fill="#FFE040" opacity="0.4"/>
+  <circle cx="21" cy="17" r="0.5" fill="#FFE040" opacity="0.4"/>
+  <circle cx="11" cy="23" r="0.5" fill="#FFE040" opacity="0.4"/>
+  <circle cx="21" cy="23" r="0.5" fill="#FFE040" opacity="0.4"/>
+
+  <!-- Gold gleam -->
+  <ellipse cx="14" cy="16" rx="2" ry="1" fill="#FFFFFF" opacity="0.1" transform="rotate(-20 14 16)"/>
+</svg>

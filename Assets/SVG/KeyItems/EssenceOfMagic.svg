@@ -1,0 +1,116 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <defs>
+    <radialGradient id="orbCore" cx="45%" cy="40%" r="50%">
+      <stop offset="0%" stop-color="#E0C0FF"/>
+      <stop offset="25%" stop-color="#A060DD"/>
+      <stop offset="50%" stop-color="#7030BB"/>
+      <stop offset="80%" stop-color="#4020AA"/>
+      <stop offset="100%" stop-color="#200880"/>
+    </radialGradient>
+    <radialGradient id="outerGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#8040CC" stop-opacity="0.6"/>
+      <stop offset="50%" stop-color="#6030AA" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#4020AA" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="innerLight" cx="40%" cy="35%" r="40%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.6"/>
+      <stop offset="50%" stop-color="#D0A0FF" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#8040CC" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="orbGlow">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="sparkleGlow">
+      <feGaussianBlur stdDeviation="0.5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="softGlow2">
+      <feGaussianBlur stdDeviation="2.5"/>
+    </filter>
+  </defs>
+
+  <!-- Outer ambient glow -->
+  <circle cx="16" cy="16" r="14" fill="url(#outerGlow)" filter="url(#softGlow2)"/>
+
+  <!-- Secondary glow ring -->
+  <circle cx="16" cy="16" r="10" fill="#6030AA" opacity="0.08" filter="url(#softGlow2)"/>
+
+  <!-- Main orb -->
+  <circle cx="16" cy="16" r="8" fill="url(#orbCore)" stroke="#3010660" stroke-width="0.3" filter="url(#orbGlow)"/>
+
+  <!-- Swirling energy lines inside orb -->
+  <g opacity="0.5" clip-path="url(#orbClip)">
+    <clipPath id="orbClip">
+      <circle cx="16" cy="16" r="7.8"/>
+    </clipPath>
+    <!-- Swirl 1 - purple -->
+    <path d="M10,16 Q12,10 16,12 Q20,14 18,18 Q16,22 12,20 Q8,18 10,14"
+          fill="none" stroke="#C080FF" stroke-width="0.6" opacity="0.6"/>
+    <!-- Swirl 2 - blue -->
+    <path d="M22,16 Q20,22 16,20 Q12,18 14,14 Q16,10 20,12 Q24,14 22,18"
+          fill="none" stroke="#6080FF" stroke-width="0.5" opacity="0.5"/>
+    <!-- Swirl 3 - light purple -->
+    <path d="M16,9 Q22,12 20,16 Q18,20 14,18 Q10,16 12,12 Q14,8 18,10"
+          fill="none" stroke="#D0A0FF" stroke-width="0.4" opacity="0.4"/>
+    <!-- Inner blue swirl -->
+    <path d="M14,14 Q16,12 18,14 Q20,16 18,18 Q16,20 14,18 Q12,16 14,14"
+          fill="none" stroke="#4060DD" stroke-width="0.5" opacity="0.5"/>
+  </g>
+
+  <!-- Inner light/shine -->
+  <circle cx="16" cy="16" r="7.5" fill="url(#innerLight)"/>
+
+  <!-- Bright core center -->
+  <circle cx="15" cy="14.5" r="2" fill="#FFFFFF" opacity="0.15"/>
+
+  <!-- Sparkle particles around the orb -->
+  <g filter="url(#sparkleGlow)">
+    <!-- Large sparkles -->
+    <g fill="#FFFFFF" opacity="0.8">
+      <circle cx="6" cy="10" r="0.4"/>
+      <line x1="5.3" y1="10" x2="6.7" y2="10" stroke="#FFFFFF" stroke-width="0.2"/>
+      <line x1="6" y1="9.3" x2="6" y2="10.7" stroke="#FFFFFF" stroke-width="0.2"/>
+    </g>
+    <g fill="#FFFFFF" opacity="0.7">
+      <circle cx="26" cy="8" r="0.35"/>
+      <line x1="25.4" y1="8" x2="26.6" y2="8" stroke="#FFFFFF" stroke-width="0.2"/>
+      <line x1="26" y1="7.4" x2="26" y2="8.6" stroke="#FFFFFF" stroke-width="0.2"/>
+    </g>
+    <g fill="#FFFFFF" opacity="0.6">
+      <circle cx="5" cy="22" r="0.3"/>
+      <line x1="4.5" y1="22" x2="5.5" y2="22" stroke="#FFFFFF" stroke-width="0.15"/>
+      <line x1="5" y1="21.5" x2="5" y2="22.5" stroke="#FFFFFF" stroke-width="0.15"/>
+    </g>
+    <g fill="#FFFFFF" opacity="0.75">
+      <circle cx="27" cy="20" r="0.35"/>
+      <line x1="26.4" y1="20" x2="27.6" y2="20" stroke="#FFFFFF" stroke-width="0.2"/>
+      <line x1="27" y1="19.4" x2="27" y2="20.6" stroke="#FFFFFF" stroke-width="0.2"/>
+    </g>
+
+    <!-- Small sparkle dots -->
+    <circle cx="9" cy="6" r="0.2" fill="#D0A0FF" opacity="0.6"/>
+    <circle cx="24" cy="14" r="0.25" fill="#C080FF" opacity="0.5"/>
+    <circle cx="22" cy="25" r="0.2" fill="#8060DD" opacity="0.5"/>
+    <circle cx="10" cy="26" r="0.2" fill="#A080EE" opacity="0.4"/>
+    <circle cx="4" cy="16" r="0.15" fill="#D0A0FF" opacity="0.5"/>
+    <circle cx="28" cy="13" r="0.15" fill="#C080FF" opacity="0.4"/>
+    <circle cx="16" cy="4" r="0.2" fill="#E0C0FF" opacity="0.5"/>
+    <circle cx="14" cy="28" r="0.2" fill="#A060DD" opacity="0.4"/>
+  </g>
+
+  <!-- Orbiting energy wisps -->
+  <path d="M8,12 Q6,10 8,8" stroke="#C080FF" stroke-width="0.4" fill="none" opacity="0.4"/>
+  <path d="M24,20 Q26,22 24,24" stroke="#8060DD" stroke-width="0.4" fill="none" opacity="0.4"/>
+  <path d="M18,6 Q20,5 22,6" stroke="#D0A0FF" stroke-width="0.3" fill="none" opacity="0.3"/>
+  <path d="M10,24 Q8,26 10,27" stroke="#A060DD" stroke-width="0.3" fill="none" opacity="0.3"/>
+
+  <!-- Surface reflection -->
+  <ellipse cx="14" cy="13" rx="3" ry="1.5" fill="#FFFFFF" opacity="0.08" transform="rotate(-20 14 13)"/>
+</svg>

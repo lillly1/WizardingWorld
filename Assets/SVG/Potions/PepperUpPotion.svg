@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 32">
+  <defs>
+    <linearGradient id="pepper-liquid" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FF6B35"/>
+      <stop offset="50%" stop-color="#E04020"/>
+      <stop offset="100%" stop-color="#C03020"/>
+    </linearGradient>
+    <linearGradient id="pepper-glass" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="rgba(255,200,180,0.3)"/>
+      <stop offset="50%" stop-color="rgba(255,255,255,0.05)"/>
+      <stop offset="100%" stop-color="rgba(255,200,180,0.2)"/>
+    </linearGradient>
+    <filter id="steam-f">
+      <feGaussianBlur stdDeviation="0.7"/>
+    </filter>
+    <radialGradient id="warm-glow" cx="0.5" cy="0.4" r="0.5">
+      <stop offset="0%" stop-color="#FF6B35" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#FF6B35" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <!-- Warm glow -->
+  <ellipse cx="12" cy="18" rx="8" ry="10" fill="url(#warm-glow)"/>
+  <!-- Bottle body - standard round -->
+  <path d="M7.5,12 Q6.5,15 6.5,19 Q6.5,24 8,27 Q9,28.5 12,29 Q15,28.5 16,27 Q17.5,24 17.5,19 Q17.5,15 16.5,12 Z" fill="#201510" stroke="#c05030" stroke-width="0.4"/>
+  <path d="M7.5,12 Q6.5,15 6.5,19 Q6.5,24 8,27 Q9,28.5 12,29 Q15,28.5 16,27 Q17.5,24 17.5,19 Q17.5,15 16.5,12 Z" fill="url(#pepper-glass)" opacity="0.4"/>
+  <!-- Red-orange liquid -->
+  <path d="M8,14 Q7,16 7,19.5 Q7,24 8.3,26.8 Q9.2,28.2 12,28.5 Q14.8,28.2 15.7,26.8 Q17,24 17,19.5 Q17,16 16,14 Z" fill="url(#pepper-liquid)"/>
+  <!-- Hot liquid shimmer -->
+  <path d="M9,17 Q11,16 13,17 Q15,18 16,17" stroke="#FF8C50" stroke-width="0.5" fill="none" opacity="0.5"/>
+  <path d="M8,21 Q10,20 12,21 Q14,22 16,21" stroke="#FF7040" stroke-width="0.4" fill="none" opacity="0.4"/>
+  <!-- Bottle neck -->
+  <rect x="10" y="6" width="4" height="6.5" rx="0.5" fill="#201510" stroke="#c05030" stroke-width="0.4"/>
+  <rect x="10" y="6" width="4" height="6.5" rx="0.5" fill="url(#pepper-glass)" opacity="0.3"/>
+  <!-- Liquid in neck -->
+  <rect x="10.5" y="9" width="3" height="3.2" fill="url(#pepper-liquid)" opacity="0.7"/>
+  <!-- Open top (no cork - steam comes out) -->
+  <ellipse cx="12" cy="6" rx="2.2" ry="0.6" fill="#301510" stroke="#c05030" stroke-width="0.3"/>
+  <!-- Steam coming from top -->
+  <path d="M10.5,5.5 Q9.5,3 10.5,1" stroke="#FFa060" stroke-width="0.8" fill="none" opacity="0.5" filter="url(#steam-f)"/>
+  <path d="M12,5 Q13,2.5 12,0.5" stroke="#FF8040" stroke-width="0.9" fill="none" opacity="0.45" filter="url(#steam-f)"/>
+  <path d="M13.5,5.5 Q14.5,3 13.5,1" stroke="#FFa060" stroke-width="0.7" fill="none" opacity="0.4" filter="url(#steam-f)"/>
+  <!-- Extra wispy steam -->
+  <path d="M11,3 Q9.5,1.5 10.5,0" stroke="#FF9050" stroke-width="0.5" fill="none" opacity="0.25" filter="url(#steam-f)"/>
+  <path d="M13,3 Q14.5,1 13.5,0" stroke="#FF9050" stroke-width="0.5" fill="none" opacity="0.25" filter="url(#steam-f)"/>
+  <!-- Glass highlight -->
+  <path d="M8.5,14 Q8,18 8.5,25" stroke="white" stroke-width="0.4" fill="none" opacity="0.2"/>
+  <!-- Hot spots -->
+  <circle cx="10" cy="18" r="0.3" fill="#FF8C50" opacity="0.6"/>
+  <circle cx="14" cy="22" r="0.25" fill="#FFa060" opacity="0.5"/>
+</svg>

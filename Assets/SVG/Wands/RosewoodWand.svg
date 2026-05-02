@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 42 42">
+  <!-- Rosewood Wand - Dark pinkish-brown, elegant -->
+  <defs>
+    <linearGradient id="rosewoodWood" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#9A5A6A"/>
+      <stop offset="50%" stop-color="#7A4252"/>
+      <stop offset="100%" stop-color="#5A3040"/>
+    </linearGradient>
+    <linearGradient id="rosewoodGlow" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FF88AA" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#CC4477" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="rosGlow">
+      <feGaussianBlur stdDeviation="1.3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <!-- Tip glow (rose pink) -->
+  <circle cx="8" cy="8" r="4.5" fill="url(#rosewoodGlow)" filter="url(#rosGlow)" opacity="0.7"/>
+  <!-- Wand shaft -->
+  <line x1="8" y1="8" x2="34" y2="34" stroke="url(#rosewoodWood)" stroke-width="2.6" stroke-linecap="round"/>
+  <!-- Wood grain lines -->
+  <line x1="13" y1="12" x2="16" y2="15" stroke="#6A3A4A" stroke-width="0.4" opacity="0.5"/>
+  <line x1="20" y1="19" x2="23" y2="22" stroke="#6A3A4A" stroke-width="0.4" opacity="0.5"/>
+  <line x1="27" y1="26" x2="29" y2="28" stroke="#6A3A4A" stroke-width="0.4" opacity="0.5"/>
+  <!-- Elegant rose motif near tip -->
+  <circle cx="9" cy="7" r="1.5" fill="none" stroke="#CC6688" stroke-width="0.5" opacity="0.5"/>
+  <path d="M8,7 Q9,5.5 10,7" fill="none" stroke="#CC6688" stroke-width="0.4" opacity="0.45"/>
+  <path d="M8.5,8 Q9,6.5 9.5,8" fill="none" stroke="#BB5577" stroke-width="0.4" opacity="0.4"/>
+  <!-- Elegant handle with flared end -->
+  <ellipse cx="35" cy="35" rx="2.5" ry="2" fill="#4A2030" stroke="#3A1020" stroke-width="0.5" transform="rotate(45,35,35)"/>
+  <!-- Rose pink spark -->
+  <circle cx="7.5" cy="7.5" r="0.9" fill="#FFBBCC" opacity="0.85"/>
+</svg>

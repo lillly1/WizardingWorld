@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 42 42">
+  <!-- Walnut Wand - Medium brown, adaptable -->
+  <defs>
+    <linearGradient id="walnutWood" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#8B7355"/>
+      <stop offset="50%" stop-color="#6B5A42"/>
+      <stop offset="100%" stop-color="#554430"/>
+    </linearGradient>
+    <linearGradient id="walnutGlow" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FFBB44" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#CC8800" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="walGlow">
+      <feGaussianBlur stdDeviation="1.3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <!-- Tip glow (amber) -->
+  <circle cx="8" cy="8" r="4.5" fill="url(#walnutGlow)" filter="url(#walGlow)" opacity="0.7"/>
+  <!-- Wand shaft -->
+  <line x1="8" y1="8" x2="34" y2="34" stroke="url(#walnutWood)" stroke-width="2.8" stroke-linecap="round"/>
+  <!-- Wood grain lines -->
+  <line x1="12" y1="11" x2="15" y2="14" stroke="#554430" stroke-width="0.4" opacity="0.6"/>
+  <line x1="19" y1="18" x2="22" y2="21" stroke="#554430" stroke-width="0.4" opacity="0.6"/>
+  <line x1="26" y1="25" x2="29" y2="28" stroke="#554430" stroke-width="0.4" opacity="0.6"/>
+  <!-- Walnut shell texture (wavy grain pattern - adaptable nature) -->
+  <path d="M14,15 Q16,13 18,15" fill="none" stroke="#4A3A28" stroke-width="0.5" opacity="0.45"/>
+  <path d="M22,23 Q24,21 26,23" fill="none" stroke="#4A3A28" stroke-width="0.5" opacity="0.4"/>
+  <!-- Handle end -->
+  <circle cx="35" cy="35" r="2.2" fill="#443420" stroke="#342414" stroke-width="0.5"/>
+  <!-- Amber spark -->
+  <circle cx="7.5" cy="7.5" r="0.9" fill="#FFDD88" opacity="0.85"/>
+</svg>

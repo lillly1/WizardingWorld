@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 42 42">
+  <!-- Alder Wand - Reddish-brown alder wood, Stupefy caster -->
+  <defs>
+    <linearGradient id="alderWood" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#A0522D"/>
+      <stop offset="50%" stop-color="#8B4226"/>
+      <stop offset="100%" stop-color="#6B3020"/>
+    </linearGradient>
+    <linearGradient id="alderGlow" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FF3333" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#CC0000" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="aldGlow">
+      <feGaussianBlur stdDeviation="1.3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <!-- Tip glow (Stupefy red) -->
+  <circle cx="8" cy="8" r="4.5" fill="url(#alderGlow)" filter="url(#aldGlow)" opacity="0.7"/>
+  <!-- Wand shaft -->
+  <line x1="8" y1="8" x2="34" y2="34" stroke="url(#alderWood)" stroke-width="2.8" stroke-linecap="round"/>
+  <!-- Wood grain lines -->
+  <line x1="12" y1="11" x2="15" y2="14" stroke="#7A3A1E" stroke-width="0.4" opacity="0.6"/>
+  <line x1="19" y1="18" x2="22" y2="21" stroke="#7A3A1E" stroke-width="0.4" opacity="0.6"/>
+  <line x1="26" y1="25" x2="29" y2="28" stroke="#7A3A1E" stroke-width="0.4" opacity="0.6"/>
+  <!-- Alder catkin detail (small oval buds along shaft) -->
+  <ellipse cx="14" cy="11" rx="1.2" ry="0.6" fill="#6B3020" transform="rotate(45,14,11)" opacity="0.7"/>
+  <ellipse cx="23" cy="20" rx="1.0" ry="0.5" fill="#6B3020" transform="rotate(45,23,20)" opacity="0.6"/>
+  <!-- Handle end -->
+  <circle cx="35" cy="35" r="2.2" fill="#5A2818" stroke="#4A1808" stroke-width="0.5"/>
+  <!-- Bright spark at tip -->
+  <circle cx="7.5" cy="7.5" r="1" fill="#FFAAAA" opacity="0.8"/>
+</svg>

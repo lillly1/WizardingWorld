@@ -1,0 +1,2423 @@
+Mods: {
+	WizardingWorld: {
+		DamageClasses: {
+			SpellDamage.DisplayName: 咒語
+		}
+
+		Conditions: {
+			DownedBasilisk: 擊敗蛇妖之後
+			DownedHorntail: 擊敗匈牙利角尾龍之後
+			DownedVoldemort: 擊敗黑魔王之後
+			DownedTroll: 擊敗山怪之後
+			DownedAragog: 擊敗乙蛛之後
+			DownedFluffy: 擊敗乖乖毛毛之後
+			DownedBellatrix: 擊敗乖乖貝乖乖拉乖乖雷斯乖乖壯之後
+			DownedFenrir: 擊敗乖乖乖芬乖乖沃·乖乖乖石背之後
+			DownedDementorKing: 擊敗乖乖催狂魔之王之後
+			DownedQuirrell: 擊敗乖乖奎乖乖若教授之後
+			DownedUmbridge: 擊敗桃樂絲·恩乖乖不利之後
+			DownedBartyCrouch: 擊敗乖乖巴提·乖乖柯羅乖乖乖奇二世之後
+		}
+
+		Items: {
+			// === WANDS ===
+			OakWand: {
+				DisplayName: 橡木魔杖
+				Tooltip: "'適合年輕巫師的第一根堅固魔杖'\n施放昏昏倒地——命中時使敵人昏迷"
+			}
+			WillowWand: {
+				DisplayName: 柳木魔杖
+				Tooltip: "'柔韌而優雅'\n施放去去，武器走——以強力擊退繳械敵人"
+			}
+			AshWand: {
+				DisplayName: 梣木魔杖
+				Tooltip: "'只忠於主人，絕不效忠他人'\n施放火焰熊熊——發射火焰彈點燃敵人"
+			}
+			PhoenixFeatherWand: {
+				DisplayName: 鳳凰羽毛魔杖
+				Tooltip:
+					'''
+					'鳳凰羽毛杖芯賦予強大的力量'
+					施放火焰熊熊，有25%機率雙重射擊
+					'''
+			}
+			DragonHeartstringWand: {
+				DisplayName: 龍心弦魔杖
+				Tooltip:
+					'''
+					'產生最強大的魔法，容易出意外'
+					施放乖乖切切——黑暗切割詛咒，使敵人流血
+					'''
+			}
+			UnicornHairWand: {
+				DisplayName: 獨角獸毛魔杖
+				Tooltip:
+					'''
+					'穩定而忠誠，難以轉向黑魔法'
+					施放乖呼乖神護衛——召喚追蹤銀色守護靈
+					'''
+			}
+			ElderWand: {
+				DisplayName: 接骨木魔杖
+				Tooltip:
+					'''
+					'死亡聖杖。命運之杖。'
+					施放阿乖瓦達索命——索命咒
+					立即殺死生命值低於15%的非Boss敵人
+					傷害隨魔力降低而增加
+					'''
+			}
+			AlderWand: {
+				DisplayName: 赤楊木魔杖
+				Tooltip: "'赤楊木堅硬不屈，但最適合樂於助人且體貼的主人'\n施放昏昏倒地——比橡木魔杖更快更強\n簡單的前期升級——不需要寶石"
+			}
+			SwordOfGryffindor: {
+				DisplayName: 葛來分多之劍
+				Tooltip:
+					'''
+					'妖精打造，能吸收使其更強大的物質'
+					已注入蛇妖毒液
+					'''
+			}
+			NimbusBroomstick: {
+				DisplayName: 乖光輪2000
+				Tooltip: "'世界上最快的飛天掃帚！'\n召喚飛天掃帚坐騎"
+			}
+
+			// === ARMOR ===
+			GryffindorHood: {
+				DisplayName: 葛來分多兜帽
+				Tooltip: "+8%咒語傷害"
+				SetBonus: "勇氣：+15%傷害，+10%近戰速度"
+			}
+			GryffindorRobes: {
+				DisplayName: 葛來分多長袍
+				Tooltip: "+5%咒語傷害，+20最大生命值"
+			}
+			GryffindorLeggings: {
+				DisplayName: 葛來分多護腿
+				Tooltip: "+10%移動速度"
+			}
+			SlytherinHood: {
+				DisplayName: 史萊哲林兜帽
+				Tooltip: "+8%咒語暴擊率"
+				SetBonus: "狡猾：+12%暴擊率"
+			}
+			SlytherinRobes: {
+				DisplayName: 史萊哲林長袍
+				Tooltip: "+8%咒語傷害，+4%暴擊率"
+			}
+			SlytherinLeggings: {
+				DisplayName: 史萊哲林護腿
+				Tooltip: "+8%移動速度，降低敵人仇恨值"
+			}
+			RavenclawHood: {
+				DisplayName: 乖雷文克勞兜帽
+				Tooltip: "+20最大魔力"
+				SetBonus: "智慧：+20%咒語傷害，+40最大魔力，魔力再生"
+			}
+			RavenclawRobes: {
+				DisplayName: 乖雷文克勞長袍
+				Tooltip: "+10%咒語傷害，+20最大魔力，-10%魔力消耗"
+			}
+			RavenclawLeggings: {
+				DisplayName: 乖雷文克勞護腿
+				Tooltip: "+6%移動速度，魔力再生+3"
+			}
+			HufflepuffHood: {
+				DisplayName: 赫夫帕夫兜帽
+				Tooltip: "+3防禦，+1生命再生"
+				SetBonus: "忠誠：+8防禦，+4生命再生，30%荊棘傷害"
+			}
+			HufflepuffRobes: {
+				DisplayName: 赫夫帕夫長袍
+				Tooltip: "+40最大生命值，+2生命再生"
+			}
+			HufflepuffLeggings: {
+				DisplayName: 赫夫帕夫護腿
+				Tooltip: "+5%移動速度，+2防禦"
+			}
+			DarkWizardHood: {
+				DisplayName: 黑巫師兜帽
+				Tooltip: "+12%咒語傷害，+30最大魔力"
+				SetBonus: "黑魔法：+25%咒語傷害，+15%咒語暴擊"
+			}
+			DarkWizardRobes: {
+				DisplayName: 黑巫師長袍
+				Tooltip: "+10%咒語傷害，+40最大魔力，-15%魔力消耗"
+			}
+			DarkWizardLeggings: {
+				DisplayName: 黑巫師護腿
+				Tooltip: "+12%移動速度，魔力再生+5"
+			}
+
+			// === ACCESSORIES ===
+			BasiliskFang: {
+				DisplayName: 蛇妖毒牙
+				Tooltip: "'致命的毒液，作為配件更加致命'\n免疫中毒和劇毒"
+			}
+			InvisibilityCloak: {
+				DisplayName: 隱形斗篷
+				Tooltip:
+					'''
+					'佩佛利爾家族傳下來的真正隱形斗篷'
+					獲得隱形並大幅降低敵人仇恨值
+					死神的聖物之一
+					[c/AAAAAA:經由鄧不利多的聖物指引重新取回]
+					[c/AAAAAA:不是普通材料可製作的斗篷]
+					'''
+			}
+			TimeTurner: {
+				DisplayName: 時光器
+				Tooltip:
+					'''
+					'時間的本質是神秘的'
+					每10秒閃避一次致命攻擊
+					+10%移動速度
+					'''
+			}
+			MaraudersMap: {
+				DisplayName: 劫盜地圖
+				Tooltip:
+					'''
+					'我莊嚴宣誓我絕對不懷好意'
+					在小地圖上顯示所有敵人
+					獲得危險感知
+					減少秘密通道冷卻時間
+					[c/AAAAAA:由月影、蟲尾、乖獸足、乖鹿角創造]
+					'''
+			}
+			ResurrectionStone: {
+				DisplayName: 重生石
+				Tooltip:
+					'''
+					'第二件聖物，能召回逝者的石頭'
+					+6生命再生，+40最大生命值
+					死神的聖物之一
+					[c/AAAAAA:由剛特戒指淨化後甦醒]
+					[c/AAAAAA:需要鄧不利多先剝離詛咒]
+					'''
+			}
+			GauntsRing: {
+				DisplayName: 剛特戒指
+				Tooltip:
+					'''
+					'藏著重生石的受詛咒分靈體戒指'
+					+8%全部傷害，但詛咒不斷啃噬你
+					[c/FFD700:摧毀全部4個核心分靈體後，把它帶給鄧不利多]
+					'''
+				Dynamic: {
+					GauntCurse: "受詛咒的分靈體——重生石就在其中"
+					HorcruxProgress: "已摧毀分靈體：{0}/4"
+					AwakenedStatus: "[c/FFD700:戒指中的石頭已被鄧不利多喚醒]"
+					PurifiableStatus: "[c/FFD700:把它帶給鄧不利多的畫像以喚醒重生石]"
+					LockedStatus: "[c/FF4444:摧毀全部分靈體後才能淨化這枚戒指]"
+				}
+			}
+			BossCompass: {
+				DisplayName: Boss進度羅盤
+				Tooltip:
+					'''
+					'它總是指向你的下一個重大挑戰'
+					在提示中顯示下一個該挑戰的巫師Boss
+					追蹤你的完整Boss進度（已擊敗X/12）
+					+3%傷害被動加成
+					'''
+				Dynamic: {
+					NextChallenge: "[c/FFD700:下一個挑戰：{0}]"
+					ProgressTooltip: "[c/AAAAAA:{0}]"
+					HorcruxTooltip: "[c/CC88FF:分靈體獵殺：已摧毀{0}/4{1}]"
+					NaginiSuffix: "，娜吉尼已隕落"
+					NextTroll: "山怪（使用臭襪子）"
+					NextQuirrell: "奎若教授（使用可疑頭巾）"
+					NextBasilisk: "蛇妖（使用蛇人日記）"
+					NextAragog: "阿辣哥（使用八眼巨蛛卵——困難模式）"
+					NextFluffy: "路威（使用附魔長笛——機械Boss後）"
+					NextHorntail: "匈牙利角尾龍（使用龍蛋）"
+					NextUmbridge: "桃樂絲·恩不里居（使用教育法令）"
+					NextFenrir: "焚銳·灰背（使用染血利爪——血月）"
+					NextBellatrix: "貝拉·雷斯壯（使用囚徒標記——世紀之花後）"
+					NextBartyCrouch: "小巴堤·柯羅奇（使用可疑燒瓶）"
+					NextDementorKing: "催狂魔之王（使用冰魂提燈——魔像後）"
+					NextVoldemortReady: "佛地魔（使用黑魔標記——邪教徒後，已被分靈體獵殺削弱）"
+					NextVoldemortBlocked: "在面對佛地魔之前先摧毀更多分靈體"
+					NextPurifyRing: "把剛特戒指帶給鄧不利多"
+					NextClaimCloak: "去向鄧不利多詢問真正的隱形斗篷"
+					NextUniteHallows: "集齊聖物以完成隱藏結局路線"
+					Completed: "所有巫師目標已完成。你已成為死亡之主。"
+					ProgressSummary: "巫師Boss：已擊敗{0}/12"
+				}
+			}
+
+			// === CONSUMABLES ===
+			EnchantingTableItem: {
+				DisplayName: 附魔台
+				Tooltip: "'魔法成形之處'\n用於製作魔杖、藥水和魔法裝備"
+			}
+			BasiliskSummonItem: {
+				DisplayName: 蛇人日記
+				Tooltip: "'打開請自負風險'\n召喚蛇妖"
+			}
+			HorntailSummonItem: {
+				DisplayName: 裂開的龍蛋
+				Tooltip: "'它要孵化了！'\n召喚匈牙利角尾龍"
+			}
+			VoldemortSummonItem: {
+				DisplayName: 黑魔標記
+				Tooltip: "'那個不能說名字的人回來了'\n召喚佛地魔"
+			}
+			DragonScale: {
+				DisplayName: 龍鱗
+				Tooltip: "'觸碰時仍然溫熱'\n製作材料"
+			}
+			GoldenEgg: {
+				DisplayName: 金蛋
+				Tooltip: "'包含一條線索……以及更多的東西'\n稀有製作材料"
+			}
+
+			// === POTIONS ===
+			Butterbeer: {
+				DisplayName: 奶油啤酒
+				Tooltip: "'來自三根掃帚的溫暖飲料'\n獲得吃飽喝足，+2再生，+2防禦"
+			}
+			FelixFelicis: {
+				DisplayName: 福來福喜
+				Tooltip: "'液體幸運'\n大幅提升幸運，+10%暴擊率，增加金幣掉落"
+			}
+			PolyjuicePotion: {
+				DisplayName: 變身水
+				Tooltip: "'嚐起來像妖精的尿——'\n獲得隱形並降低仇恨值"
+			}
+			WolfsbanePotion: {
+				DisplayName: 狼毒藥水
+				Tooltip: "'控制住體內的狼……大概吧'\n獲得狼人力量增強，夜間更強"
+			}
+
+			// === PET ===
+			GoldenSnitchItem: {
+				DisplayName: 金探子
+				Tooltip: "'吾在終結時開啟'\n召喚金探子寵物"
+			}
+
+			// === WEAPON UPGRADES ===
+			InfernalPhoenixWand: {
+				DisplayName: 煉獄鳳凰魔杖
+				Tooltip:
+					'''
+					'鳳凰羽毛，經龍火淬煉'
+					升級版鳳凰羽毛魔杖——發射5發火焰熊熊散射
+					由鳳凰羽毛魔杖+龍鱗製作
+					'''
+			}
+			VenomousSwordOfGryffindor: {
+				DisplayName: 劇毒葛來分多之劍
+				Tooltip:
+					'''
+					'能吸收使其更強大的物質——現在加入了蜘蛛毒液'
+					升級版葛來分多之劍——範圍毒霧+生命吸取
+					三重毒素：蛇妖+蜘蛛+詛咒，每次命中
+					由葛來分多之劍+蜘蛛絲+蛇妖毒牙製作
+					'''
+			}
+			ShadowElderWand: {
+				DisplayName: 舊版暗影接骨木魔杖
+				Tooltip:
+					'''
+					[舊版物品]
+					舊存檔中會自動轉換為接骨木魔杖
+					暗影升級路線已併入接骨木魔杖熟練度
+					'''
+			}
+			GladeDew: {
+				DisplayName: 林間露水
+				Tooltip: "'從獨角獸林地收集的淨化精華'\n森林遠征的製作材料"
+			}
+			StarTrace: {
+				DisplayName: 星辰殘跡
+				Tooltip: "'從穩定的預兆之石中收集的天象殘留'\n森林遠征的製作材料"
+			}
+			BroodVenom: {
+				DisplayName: 巢穴毒液
+				Tooltip: "'從摧毀的八眼巨蛛巢穴節點中提取的毒素'\n森林遠征的製作材料"
+			}
+			ForestLantern: {
+				DisplayName: 森林遠征燈籠
+				Tooltip: "'海格的魔法燈籠照亮前路'\n夜間在禁忌森林中使用以開始遠征\n需要擊敗蛇妖後"
+			}
+			WillowPassageToken: {
+				DisplayName: 柳樹通道令牌
+				Tooltip: "'樹節凍結了...通道打開了'\n通往乖乖打人柳隧道和乖乖尖叫棚屋的秘密通道\n需要：擊敗乖乖芬沃，僅限夜間"
+			}
+			MoonsilverThread: {
+				DisplayName: 月銀絲線
+				Tooltip: "'由月光浸潤的守護殘留編織'\n製作月光守護裝備的材料"
+			}
+			MoonwardPendant: {
+				DisplayName: 月光守護墜飾
+				Tooltip: "'月光觸不到它無法觸及之物'\n+5防禦 +4%耐力\n黑暗和詛咒免疫\n夜間移速加快"
+			}
+			ForestWarden: {
+				DisplayName: 森林守望者徽章
+				Tooltip:
+					'''
+					'通過守護森林而獲得'
+					+6防禦，+5%傷害減免
+					永久危險感知
+					在禁忌森林中獲得夜視和+8%移速
+					由三種遠征材料合成
+					'''
+			}
+
+			// === 鄧不利多軍 ===
+			DAGalleon: {
+				DisplayName: D.A.加隆
+				Tooltip: "'鄧不利多軍集合時硬幣會發燙'\n啟動D.A.會議協調增益（8分鐘）\n也作為萬應室的DA成員憑證"
+			}
+			CastleWardThread: {
+				DisplayName: 城堡守護絲線
+				Tooltip: "從穩定的城堡守護陣中殘留的附魔絲線\n製作材料"
+			}
+			DefendersSignet: {
+				DisplayName: 守護者徽章
+				Tooltip:
+					'''
+					'授予那些在守護陣崩塌時挺身而出的人'
+					+6防禦，+5%耐力
+					免疫詛咒和困惑
+					+5%移動速度
+					'''
+			}
+
+			// === 霍格華茲之戰 ===
+			HorcruxTracker: {
+				DisplayName: 分靈體追蹤器
+				Tooltip: "'鄧不利多的戰時情報筆記'\n顯示分靈體獵殺進度和戰鬥準備狀態\n使用以解鎖或開始霍格華茲之戰\n可重複使用"
+			}
+			CastleDefenseRune: {
+				DisplayName: 城堡防禦符文
+				Tooltip: "霍格華茲之戰中城堡守護陣的殘餘能量\n製作材料"
+			}
+			ProtectorsBadge: {
+				DisplayName: 保護者徽章
+				Tooltip:
+					'''
+					'授予那些在最需要時保衛霍格華茲的人'
+					+8防禦，+6%耐力
+					免疫詛咒和黑暗詛咒
+					+4生命恢復
+					被動緩解絕望
+					'''
+			}
+		}
+
+		NPCs: {
+			// === ENEMIES ===
+			Dementor.DisplayName: 催狂魔
+			Acromantula.DisplayName: 八眼巨蛛
+			MagicPixie.DisplayName: 康乖瓦爾郡小精靈
+			Troll.DisplayName: 山怪
+			Inferius.DisplayName: 陰屍
+			Thestral.DisplayName: 騎士墜鬼馬
+			DeathEater.DisplayName: 食死人
+			Dobby.DisplayName: 家庭小精靈
+			Lupin.DisplayName: 乖萊姆斯·乖路平
+			Mandrake.DisplayName: 乖魔蘋果
+			Boggart.DisplayName: 乖幻形怪
+			Werewolf.DisplayName: 狼人
+			Grindylow.DisplayName: 水精
+			Doxy.DisplayName: 毒仙子
+			Peeves.DisplayName: 皮乖皮鬼
+			Nagini.DisplayName: 娜乖吉尼
+			Obscurus.DisplayName: 闇黑怨靈
+			Dumbledore.DisplayName: 校長
+			Bowtruckle.DisplayName: 護乖樹羅鍋
+			Flobberworm.DisplayName: 肥蛆蟲
+			BlastEndedSkrewt.DisplayName: 爆尾釘蝦
+			AzkabanGuard.DisplayName: 阿茲乖卡班守衛
+			Merfolk.DisplayName: 人魚
+			Sphinx.DisplayName: 人面獅身獸
+			Giant.DisplayName: 巨人
+			Fwooper.DisplayName: 叫叫鳥
+			SnowWraith.DisplayName: 雪幽靈
+			CursedMummy.DisplayName: 詛咒木乃伊
+			PhantomStag.DisplayName: 墮落護法
+			CursedSpecter.DisplayName: 詛咒幽魂
+			Thunderbird.DisplayName: 雷鳥
+			GoblinRebel.DisplayName: 乖叛亂妖精
+			Lethifold.DisplayName: 幻影殺手
+			Erumpent.DisplayName: 爆角怪
+			Occamy.DisplayName: 隱形鳥
+			Zouwu.DisplayName: 騶吾
+			Demiguise.DisplayName: 隱形獸
+			Mooncalf.DisplayName: 月痴獸
+			Billywig.DisplayName: 彩翼螫蟲
+			Ashwinder.DisplayName: 灰蛇
+			Nundu.DisplayName: 毒豹
+			Runespoor.DisplayName: 三頭蛇
+			Jarvey.DisplayName: 乖吵鬧鼬
+			FireCrab.DisplayName: 火螃蟹
+			Puffskein.DisplayName: 蒲絨絨
+			Streeler.DisplayName: 毒蝸牛
+			PeruvianVipertooth.DisplayName: 秘魯毒牙龍
+			Diricawl.DisplayName: 隱形鳥
+			Knarl.DisplayName: 乖刺佬
+			Horklump.DisplayName: 乖肉菇
+			Jobberknoll.DisplayName: 嘰喳鳥
+			Dugbog.DisplayName: 水潛獸
+			CorruptedTrace.DisplayName: 腐化痕跡
+			OmenStone.DisplayName: 預兆之石
+			BroodMarker.DisplayName: 巢穴標記
+			MagicalImp.DisplayName: 魔法小惡魔
+			WillowKnot.DisplayName: 打人柳樹結
+			TunnelWard.DisplayName: 隧道守護
+			MoonWardFracture.DisplayName: 月光守護裂痕
+			WardAnchor.DisplayName: 守護錨點
+			CastleWardNode.DisplayName: 城堡守護節點
+			BreachSeal.DisplayName: 突破封印
+
+			// === BOSSES ===
+			BasiliskBoss.DisplayName: 蛇妖
+			HorntailBoss.DisplayName: 匈牙利角尾龍
+			VoldemortBoss.DisplayName: 佛地魔
+			TrollBoss.DisplayName: 山怪
+			AragogBoss.DisplayName: 乙蛛
+			FluffyBoss.DisplayName: 乖乖毛毛
+			BellatrixBoss.DisplayName: 乖乖貝乖乖拉乖乖雷斯乖乖壯
+			FenrirBoss.DisplayName: 乖乖乖芬乖乖沃·乖乖乖石背
+			DementorKingBoss.DisplayName: 催狂魔之王
+			QuirrellBoss.DisplayName: 乖乖奎乖乖若教授
+			UmbridgeBoss.DisplayName: 桃樂絲·恩乖乖不利乖吉
+			BartyCrouchBoss.DisplayName: 乖乖巴提·乖乖柯羅乖乖乖奇二世
+
+			// === TOWN NPCs ===
+			Ollivander.DisplayName: 魔杖製作師
+			Hagrid.DisplayName: 奇獸看守人
+			PotionsMaster.DisplayName: 魔藥學大師
+			Centaur.DisplayName: 觀星者
+			FredAndGeorge.DisplayName: 衛斯理雙胞胎
+			Aberforth.DisplayName: 乖阿不福思·乖鄧不利多
+			Neville.DisplayName: 乖奈威·乖乖隆巴頓
+		}
+
+		Buffs: {
+			ForestWisdomBuff: {
+				DisplayName: 森林智慧
+				Description: "森林分享了它的古老知識。+6%傷害，危險感知，夜視，+4生命恢復。"
+			}
+			GoldenSnitchBuff: {
+				DisplayName: 金探子
+				Description: "'吾在終結時開啟'"
+			}
+			NimbusMountBuff: {
+				DisplayName: 乖光輪2000
+				Description: 騎乘魔法飛天掃帚
+			}
+			ButterbeerBuff: {
+				DisplayName: 溫暖滿足
+				Description: "'太對味了！'\n吃飽喝足，+2再生，+2防禦"
+			}
+			FelixFelicisBuff: {
+				DisplayName: 液體幸運
+				Description: 一切似乎都順你的意
+			}
+			PolyjuiceBuff: {
+				DisplayName: 變身偽裝
+				Description: 你看起來完全像另一個人
+			}
+			WolfsbaneBuff: {
+				DisplayName: 狼毒
+				Description: 體內的野獸被控制住了……大概吧
+			}
+			HippogriffMountBuff: {
+				DisplayName: 鷹馬
+				Description: 騎乘威武的鷹馬
+			}
+			FireboltMountBuff: {
+				DisplayName: 火乖閃電
+				Description: 現存最優秀的競速飛天掃帚
+			}
+			PhoenixMinionBuff: {
+				DisplayName: 鳳凰夥伴
+				Description: 一隻鳳凰在你身旁戰鬥並治癒你的傷口
+			}
+			NifflerBuff: {
+				DisplayName: 玻璃獸
+				Description: 來自愛閃亮物品夥伴的金幣掉落增加
+			}
+			HedwigBuff: {
+				DisplayName: 嘿美
+				Description: 一隻忠誠的雪鴞為你照亮道路
+			}
+			HouseElfMinionBuff: {
+				DisplayName: 家庭小精靈
+				Description: 一個忠誠的家庭小精靈聽從你的命令戰鬥
+			}
+			VeritaserumBuff: {
+				DisplayName: 吐真劑
+				Description: 沒有什麼能夠隱藏
+			}
+			AmortentiaBuff: {
+				DisplayName: 愛情魔藥
+				Description: 敵人似乎對你失去興趣了
+			}
+			GillyweedBuff: {
+				DisplayName: 鰓囊草
+				Description: 你可以在水下呼吸並自由游泳
+			}
+			PetrifiedDebuff: {
+				DisplayName: 石化
+				Description: 被變成石頭了！無法移動或行動
+			}
+			JinxedDebuff: {
+				DisplayName: 被施咒
+				Description: "'一個小小的黑魔法詛咒'\n-20%傷害，-15%速度，-5防禦"
+			}
+			DarkCurseDebuff: {
+				DisplayName: 黑暗詛咒
+				Description: "'最黑暗的魔法'\n持續傷害，阻止治療，-10防禦"
+			}
+			PatronusCharmBuff: {
+				DisplayName: 護法守護靈
+				Description: 銀色守護靈保護著你（+10防禦，+2生命再生）
+			}
+			PepperupBuff: {
+				DisplayName: 活力充沛
+				Description: 精力旺盛！速度和攻擊速度提升，免疫火焰/寒冷，耳朵冒蒸氣
+			}
+			SkeleGroBuff: {
+				DisplayName: 骨骼再生中
+				Description: 大量生命再生但很痛苦——移動速度降低
+			}
+			KneazleBuff: {
+				DisplayName: 貓精靈
+				Description: 一隻魔法貓跟隨你並偵測敵人
+			}
+			Nimbus2001MountBuff: {
+				DisplayName: 乖光輪2001
+				Description: 最快的飛天掃帚——空中優勢賦予額外傷害
+			}
+			FirewhiskeyBuff: {
+				DisplayName: 火乖焰威士忌微醺
+				Description: 傷害和暴擊提升，但偶爾會頭暈。火焰吐息。
+			}
+			PygmyPuffBuff: {
+				DisplayName: 迷你蒲絨絨
+				Description: 一隻可愛的粉紅毛球跟隨著你
+			}
+			ThestralMountBuff: {
+				DisplayName: 騎士墜鬼馬
+				Description: 騎乘隱形骸骨馬——獲得夜視和偵測能力
+			}
+			AquaFortisBuff: {
+				DisplayName: 強水劑
+				Description: 水中戰士——鰓、水中免疫、大幅水下戰鬥加成
+			}
+			SeekersReflexesBuff: {
+				DisplayName: 搜捕手反射
+				Description: 閃電般的反射——速度、閃避和攻擊速度提升
+			}
+			BabyDragonBuff: {
+				DisplayName: 幼龍角尾
+				Description: 一隻匈牙利角尾幼龍用龍火為你照亮道路
+			}
+			ResurrectionBuff: {
+				DisplayName: 復活
+				Description: 阻止一次死亡——你將從灰燼中重生而非死亡
+			}
+			ShieldCharmBuff: {
+				DisplayName: 護盾咒
+				Description: 破心護——+10防禦，+8%傷害減免
+			}
+			FenrirsWolfsbaneBuff: {
+				DisplayName: 乖乖乖芬乖乖沃的狼毒
+				Description: 狼王之力——夜間大幅近戰和速度加成
+			}
+			StealthDraughtBuff: {
+				DisplayName: 隱匿魔藥
+				Description: 隱形、大幅降低仇恨值、速度提升——隱身於眾目之下
+			}
+			MoonwardBuff: {
+				DisplayName: 月光守護
+				Description: 棚屋的守護陣維持——+6防禦 +4生命再生 黑暗/詛咒免疫 +5%速度
+			}
+			RoomResistanceBuff: {
+				DisplayName: 抵抗軍總部
+				Description: 萬應室化為抵抗軍總部——+10防禦 +8%耐力 +6生命再生 免疫詛咒/黑暗詛咒
+			}
+			DAMeetingBuff: {
+				DisplayName: D.A.會議
+				Description: "鄧不利多軍集結。+5%傷害，+4防禦，危險感知，+3生命再生。"
+			}
+			ResistanceResolveBuff: {
+				DisplayName: 抵抗決心
+				Description: "守護陣因你而堅守。+8防禦，+6%耐力，免疫詛咒，+4生命再生，+5%運氣。"
+			}
+			CastleVictoryBuff: {
+				DisplayName: 城堡勝利
+				Description: "霍格華茲屹立不倒！+12%全傷害，+10防禦，+6生命恢復，+0.1運氣。"
+			}
+			CastleDefenseBuff: {
+				DisplayName: 城堡守衛者
+				Description: "石甲衛士與你並肩作戰。+8防禦。"
+			}
+		}
+
+		Projectiles: {
+			LumosProjectile.DisplayName: 路摸思
+			StupefyProjectile.DisplayName: 昏昏倒地
+			ExpelliarmusProjectile.DisplayName: 去去，武器走
+			IncendioProjectile.DisplayName: 火焰熊熊
+			PatronusProjectile.DisplayName: 護法
+			SectumsempraProjectile.DisplayName: 乖乖切切
+			AvadaKedavraProjectile.DisplayName: 阿瓦達索命
+			GoldenSnitchProjectile.DisplayName: 金探子
+			ProtegoProjectile.DisplayName: 破心護
+			WingardiumProjectile.DisplayName: 溫咖癲啦唯啊沙
+			CrucioProjectile.DisplayName: 乖乖酷刑咒
+			ReductoProjectile.DisplayName: 粉身碎骨
+			AguamentiProjectile.DisplayName: 水水噴
+			PhoenixMinion.DisplayName: 鳳凰
+			QuaffleProjectile.DisplayName: 快浮
+			NifflerProjectile.DisplayName: 玻璃獸
+			FiendfyreProjectile.DisplayName: 惡魔之火
+			HowlerProjectile.DisplayName: 吼叫信
+			HedwigProjectile.DisplayName: 嘿美
+			ReparoProjectile.DisplayName: 恢復如初
+			HouseElfMinion.DisplayName: 家庭小精靈
+			ChainStupefyProjectile.DisplayName: 連鎖昏昏倒地
+			ImpedimentaProjectile.DisplayName: 障礙重重
+			WeasleyFireworkProjectile.DisplayName: 衛斯理煙火
+			LumosMaximaProjectile.DisplayName: 螢光閃爍
+			DarknessPowderProjectile.DisplayName: 黑暗粉末
+			DecoyDetonatorProjectile.DisplayName: 誘餌引爆器
+			PatronusGuardian.DisplayName: 護法守護靈
+			ConjunctivitisProjectile.DisplayName: 眼疾咒
+			BombardaProjectile.DisplayName: 爆炸咒
+			LevicorpusProjectile.DisplayName: 倒吊金鐘
+			BlazeBoxProjectile.DisplayName: 火焰盒
+			FiniteIncantatemProjectile.DisplayName: 終了結束
+			AccioProjectile.DisplayName: 速速前來
+			RiddikulusProjectile.DisplayName: 乖叱叱，荒唐
+			KneazleProjectile.DisplayName: 貓精靈
+			ApparitionProjectile.DisplayName: 現影術
+			PygmyPuffProjectile.DisplayName: 迷你蒲絨絨
+			BabyDragonProjectile.DisplayName: 幼龍角尾
+		}
+
+		Tiles: {
+			EnchantingTable.MapEntry: 附魔台
+
+			// === 地標建築 ===
+			HousePointHourglass.MapEntry: 學院積分沙漏
+			QuidditchGoalpost.MapEntry: 魁地奇球門柱
+			CastleWardStone.MapEntry: 城堡守護石
+			WhompingWillowStump.MapEntry: 打人柳樹樁
+			ShriekingShackSign.MapEntry: 尖叫棚屋招牌
+			GrimmauldDoorway.MapEntry: 古里某街門廊
+			LeakyCauldronSign.MapEntry: 破釜酒吧招牌
+			GringottsFacade.MapEntry: 古靈閣外牆
+			BorginStorefront.MapEntry: 波金店面
+			StMungosMannequin.MapEntry: 聖蒙果假人
+			ProphecyShelf.MapEntry: 預言球架
+			VeilArch.MapEntry: 帷幕拱門
+		}
+
+		// === PHASE 2 ITEMS ===
+		Items: {
+			HollyWand: {
+				DisplayName: 冬青木魔杖
+				Tooltip: "'黑魔王魔杖的兄弟杖'\n施放去去，武器走並定期產生破心護護盾"
+			}
+			VineWand: {
+				DisplayName: 葡萄藤魔杖
+				Tooltip: "'十又四分之三英寸，龍心弦杖芯'\n交替施放溫咖癲啦唯啊沙和水水噴"
+			}
+			YewWand: {
+				DisplayName: 紫杉木魔杖
+				Tooltip: "'十三又二分之一英寸，鳳凰羽毛杖芯'\n施放酷刑咒（持續施法）並有機率引發粉身碎骨爆炸"
+			}
+			BeatersBat: {
+				DisplayName: 打擊手球棒
+				Tooltip: "'標準魁地奇裝備——用來打乖遊走球，不是人'\n巨大擊退力，將敵人擊飛上天"
+			}
+			Quaffle: {
+				DisplayName: 快浮
+				Tooltip: "'魁地奇中用來得分的球'\n碰到牆壁反彈並返回你身邊"
+			}
+			FireboltBroomstick: {
+				DisplayName: 火乖閃電
+				Tooltip: "'現存最優秀的競速飛天掃帚'\n升級版飛天掃帚坐騎——比乖光輪2000更快"
+			}
+			HippogriffFeather: {
+				DisplayName: 鷹馬羽毛
+				Tooltip: "'你必須鞠躬並等待。永遠讓鷹馬先行動。'\n召喚鷹馬坐騎"
+			}
+			PhoenixFeatherStaff: {
+				DisplayName: 鳳凰羽毛法杖
+				Tooltip: "'佛客斯賜予了你一個最忠誠的夥伴'\n召喚鳳凰召喚物進行攻擊和治療"
+			}
+			NifflerItem: {
+				DisplayName: 玻璃獸袋
+				Tooltip: "'牠們會追逐一切閃亮的東西'\n召喚尋找金幣的玻璃獸寵物"
+			}
+			RiddlesDiary: {
+				DisplayName: 瑞斗的日記
+				Tooltip: "'第一個分靈體'\n+18%咒語傷害，+8%咒語暴擊\n緩慢消耗生命值"
+			}
+			SlytherinsLocket: {
+				DisplayName: 史萊哲林的小金匣
+				Tooltip: "'除了爬說語者，無人能打開這個小金匣'\n+12防禦，+8%傷害減免，免疫中毒\n稍微降低速度"
+			}
+			HufflepuffsCup: {
+				DisplayName: 赫夫帕夫的金杯
+				Tooltip: "'一個帶有兩個精緻手柄的小金杯'\n+8生命再生，+60最大生命值，加速藥水恢復\n降低視野"
+			}
+			DiademOfRavenclaw: {
+				DisplayName: 乖雷文克勞的王冠
+				Tooltip: "'超乎常人的智慧是人類最大的寶藏'\n+80最大魔力，+15%咒語傷害，-15%魔力消耗\n降低最大生命值"
+			}
+			SortingHat: {
+				DisplayName: 分類帽
+				Tooltip: "'噢，你或許覺得我不漂亮，但別以貌取人'\n增強任何穿戴的霍格華茲學院套裝加成\n不穿學院裝甲時給予小幅通用加成"
+			}
+			FiendfyreWand: {
+				DisplayName: 惡魔之火魔杖
+				Tooltip: "'毀滅一切的詛咒之火'\n發射成長型追蹤詛咒火焰\n隨時間增強"
+			}
+			Howler: {
+				DisplayName: 吼叫信
+				Tooltip: "'你父親和我感到非常噁心！'\n追蹤尖叫信件，爆炸時附帶混亂效果"
+			}
+			ScreechingHowler: {
+				DisplayName: 尖嘯吼叫信
+				Tooltip: "'當吼叫信遇上乖魔蘋果，結果真的震耳欲聾'\n升級版吼叫信，大範圍傷害和更高傷害\n由吼叫信+乖魔蘋果材料製作"
+			}
+			ApparitionCharm: {
+				DisplayName: 現影術護符
+				Tooltip: "'目的地，決心，從容'\n+5%咒語傷害，+8%移動速度"
+			}
+			HedwigItem: {
+				DisplayName: 貓頭鷹點心
+				Tooltip: "'嘿美！'\n召喚雪鴞光源寵物"
+			}
+			ChocolateFrog: {
+				DisplayName: 巧克力蛙
+				Tooltip: "'吃吧，會好起來的。我剛拿到鄧不利多！'\n恢復100生命值，獲得迅捷和吃飽喝足"
+			}
+			BertieBottsBeans: {
+				DisplayName: 乖柏蒂全口味豆
+				Tooltip: "'他們說的每種口味是認真的'\n獲得隨機增益……或減益。試試運氣？"
+			}
+			ElmWand: {
+				DisplayName: 乖榆木魔杖
+				Tooltip: "'榆木偏愛體面、精確與精細魔法'\n施放恢復如初——修復護盾、房間增益與抗絕望結界\n實用支援，而非治療血肉"
+			}
+			HouseElfBell: {
+				DisplayName: 家庭小精靈鈴鐺
+				Tooltip: "'搖鈴呼喚服務'\n召喚家庭小精靈召喚物進行傳送和攻擊敵人"
+			}
+			Veritaserum: {
+				DisplayName: 吐真劑
+				Tooltip: "'三滴就能讓黑魔王自己吐露祕密'\n顯示所有敵人、陷阱和寶藏"
+			}
+			Amortentia: {
+				DisplayName: 愛情魔藥
+				Tooltip: "'現存最強大的愛情魔藥'\n大幅降低敵人仇恨值，獲得再生"
+			}
+			HawthornWand: {
+				DisplayName: 山楂木魔杖
+				Tooltip: "'彈性適中，獨角獸毛杖芯'\n施放連鎖昏昏倒地——昏迷彈在最多4個敵人之間彈射"
+			}
+			BasiliskFangDagger: {
+				DisplayName: 蛇妖毒牙匕首
+				Tooltip: "'能摧毀分靈體的少數物質之一'\n快速近戰匕首，施加劇毒"
+			}
+			Gillyweed: {
+				DisplayName: 鰓囊草
+				Tooltip: "'讓食用者長出鰓和蹼'\n完全水下呼吸，游泳速度提升，無水中懲罰"
+			}
+			Remembrall: {
+				DisplayName: 記憶球
+				Tooltip: "'唯一的問題是，我記不起我忘了什麼'\n獲得危險感知和寶藏偵測\n敵人靠近時發紅光"
+			}
+			BlackthornWand: {
+				DisplayName: 黑刺木魔杖
+				Tooltip: "'十二又四分之三英寸，龍心弦'\n施放障礙重重——範圍詛咒，減速所有附近敵人"
+			}
+			WeasleyFireworks: {
+				DisplayName: 衛斯理野火連珠炮
+				Tooltip: "'衛斯理巫師法寶驕傲呈獻……'\n色彩繽紛的煙火追蹤敵人並爆炸"
+			}
+			Pensieve: {
+				DisplayName: 儲思盆
+				Tooltip: "'我使用儲思盆。只需將多餘的思緒取出'\n獲得完整GPS資訊、敵人偵測、夜視和尋寶"
+			}
+			WizardHat: {
+				DisplayName: 巫師帽
+				Tooltip: 裝飾物品
+			}
+			WizardRobe: {
+				DisplayName: 巫師長袍
+				Tooltip: 裝飾物品
+			}
+			WizardBoots: {
+				DisplayName: 巫師靴
+				Tooltip: 裝飾物品
+			}
+			CedarWand: {
+				DisplayName: 雪松木魔杖
+				Tooltip: "'與雪松相合者有潛力成為可怕的對手'\n施放螢光閃爍——巨大光球傷害不死生物"
+			}
+			Portkey: {
+				DisplayName: 港口鑰
+				Tooltip: "'我用了港口鑰……'\n立即傳送你到重生點\n可以用舊鞋子製作！"
+			}
+			ExtendableEars: {
+				DisplayName: 伸縮耳
+				Tooltip: "'衛斯理巫師法寶——聽見一切'\n獲得敵人偵測、危險感知和電線視野"
+			}
+			PeruvianDarknessPowder: {
+				DisplayName: 秘魯即時黑暗粉末
+				Tooltip: "'需要快速逃跑時很方便'\n製造使敵人致盲和混亂的雲霧"
+			}
+			PhilosophersStone: {
+				DisplayName: 魔法石
+				Tooltip:
+					'''
+					'畢竟，對於組織有序的頭腦來說，死亡只是下一場偉大的冒險'
+					+10%全部傷害，+10%咒語傷害
+					+8生命再生，+40最大生命值
+					敵人掉落更多金幣
+					降低藥水冷卻時間
+					'''
+			}
+			Deluminator: {
+				DisplayName: 熄燈器
+				Tooltip:
+					'''
+					'熄燈器。我自己發明的。'
+					環繞你的光芒
+					獲得夜視和安撫光環
+					'''
+			}
+			Sneakoscope: {
+				DisplayName: 窺鏡
+				Tooltip:
+					'''
+					'黑魔法偵測器，非常有用'
+					永久獲得危險感知
+					敵人靠近時+5防禦和敵人偵測
+					Boss附近時額外防護
+					'''
+			}
+			FlooPowder: {
+				DisplayName: 乖乖呼嚕粉
+				Tooltip: "'斜角巷！'\n即時傳送到重生點——比回憶藥水更快\n綠色火焰特效"
+			}
+			TriwizardCup: {
+				DisplayName: 三巫鬥法大會獎盃
+				Tooltip:
+					'''
+					'永恆的榮耀等待著贏得比賽的學生'
+					+15%全部傷害，+10%暴擊率
+					+8防禦，+40最大魔力，+4生命再生
+					+10%移動速度
+					終極巫師冠軍的獎勵
+					'''
+			}
+			ShieldHat: {
+				DisplayName: 盾牌帽
+				Tooltip: "'衛斯理巫師法寶——防護系列'\n+3防禦，+3%咒語傷害\n附有保護咒語"
+			}
+			DecoyDetonator: {
+				DisplayName: 誘餌引爆器
+				Tooltip: "'衛斯理巫師法寶——防禦系列'\n吸引敵人仇恨然後爆炸造成傷害+被施咒減益\n出色的戰術轉移"
+			}
+			PrefectBadge: {
+				DisplayName: 級長徽章
+				Tooltip: "'當上級長了？全家人都當過了！'\n+5防禦，+5%咒語傷害\n每個附近的城鎮NPC+3%傷害（最高+15%）"
+			}
+			BowtruckleCatch: {
+				DisplayName: 護樹羅鍋
+				Tooltip: "'一個和平的小樹木守護者'\n可以釋放或作為釣魚誘餌使用"
+			}
+			EssenceOfMagic: {
+				DisplayName: 魔法精華
+				Tooltip: "'魔法能量的濃縮殘餘'\n從所有魔法生物掉落\n用於中後期巫師製作"
+			}
+			WandOfDestiny: {
+				DisplayName: 舊版命運之杖
+				Tooltip:
+					'''
+					[舊版物品]
+					舊存檔中會自動轉換為接骨木魔杖
+					「命運之杖」現僅作為接骨木魔杖的 lore 稱號
+					'''
+			}
+			PatronusCharm: {
+				DisplayName: 護法咒
+				Tooltip:
+					'''
+					'疾疾，護法現身！'
+					召喚強大的護法守護靈（消耗2個召喚欄位）
+					啟動時+10防禦和+2生命再生
+					對催狂魔與阿茲卡班系黑暗敵人造成高額額外傷害
+					施放時淨化黑魔法腐化
+					警告：黑魔法腐化越高，護法越弱
+					'''
+			}
+			DarkMarkSummon: {
+				DisplayName: 黑魔標記（乖乖嘸淂嘸煞）
+				Tooltip: "'乖乖嘸淂嘸煞！'\n將黑魔標記投射到天空中\n觸發食死人入侵\n僅在困難模式夜間可用"
+			}
+			CypressWand: {
+				DisplayName: 絲柏木魔杖
+				Tooltip: "'與高貴和願意英勇赴死有關'\n施放眼疾咒——致盲並詛咒敵人\n專為Boss戰設計：長時間的被施咒減益削弱強大的敵人"
+			}
+			UnbreakableVow: {
+				DisplayName: 牢不可破的誓言
+				Tooltip:
+					'''
+					'你必須明白，違反牢不可破誓言的人……會死'
+					+25%召喚傷害，+1最大召喚物
+					但你受到的傷害增加15%
+					高風險，高回報
+					'''
+			}
+			RowanWand: {
+				DisplayName: 花楸木魔杖
+				Tooltip: "'花楸木一直是最受青睞的防護魔法木材'\n施放爆炸咒——破壞區域內地形的爆裂詛咒\n巫師玩家的採礦魔杖"
+			}
+			BirchWand: {
+				DisplayName: 白樺木魔杖
+				Tooltip: "'適應性極強，最適合年輕人'\n施放倒吊金鐘——將敵人拋向空中並施加詛咒"
+			}
+			PeppermintToad: {
+				DisplayName: 薄荷蟾蜍
+				Tooltip: "'來自蜂蜜公爵——它真的會在你肚子裡跳！'\n獲得迅捷、腳蹼和吃飽喝足持續5分鐘"
+			}
+			ChocolateCauldron: {
+				DisplayName: 巧克力坩堝
+				Tooltip: "'裝滿火焰威士忌——蜂蜜公爵最好的'\n恢復100魔力，獲得魔力增強和魔力再生"
+			}
+			WeasleyBlazeBox: {
+				DisplayName: 衛斯理基本火焰盒
+				Tooltip: "'衛斯理巫師法寶——火焰系列'\n範圍火焰爆發，點燃大範圍內的敵人"
+			}
+			LarchWand: {
+				DisplayName: 落葉松魔杖
+				Tooltip:
+					'''
+					'落葉松一直是被嚴重低估的木材'
+					在兩個實用咒語之間交替：
+					終了結束——清除你和附近盟友的所有減益
+					速速前來——在大範圍內將所有掉落物品拉向你
+					'''
+			}
+			RedOakWand: {
+				DisplayName: 紅橡木魔杖
+				Tooltip: "'紅橡木非常適合反應敏捷的人'\n施放乖叱叱，荒唐——專剋幻形怪的抗恐懼咒語\n對乖幻形怪造成5倍傷害（其真正用途）\n施放時清除恐懼與黑暗類減益\n對付催狂魔請用護法"
+			}
+			PepperupPotion: {
+				DisplayName: 胡椒提神藥水
+				Tooltip: "'你的耳朵會冒蒸氣好幾個小時'\n+25%速度，+15%攻擊速度\n免疫火焰和寒冷"
+			}
+			SkeleGro: {
+				DisplayName: 骨骼速長靈
+				Tooltip: "'你今晚會很難受的'——龐芮夫人\n大量生命再生（+20再生）\n但很痛苦：骨骼再生時-10%移動速度"
+			}
+
+			// === BOSS LOOT ===
+			BasiliskBag: {
+				DisplayName: 寶藏袋（蛇妖）
+				Tooltip: "{$CommonItemTooltip.RightClickToOpen}"
+			}
+			BasiliskEye: {
+				DisplayName: 蛇妖之眼
+				Tooltip: "'不要直視牠的眼睛'\n免疫石化和石頭\n+8%咒語傷害\n[專家模式專屬]"
+			}
+			BasiliskTrophy: {
+				DisplayName: 蛇妖獎盃
+				Tooltip: ""
+			}
+			HorntailBag: {
+				DisplayName: 寶藏袋（匈牙利角尾龍）
+				Tooltip: "{$CommonItemTooltip.RightClickToOpen}"
+			}
+			DragonHeart: {
+				DisplayName: 龍心
+				Tooltip: "'龍心弦能製作出最強大的魔杖'\n免疫火焰、岩漿和灼傷\n+12%咒語傷害，高速移動時留下火焰軌跡\n[專家模式專屬]"
+			}
+			HorntailTrophy: {
+				DisplayName: 角尾龍獎盃
+				Tooltip: ""
+			}
+			VoldemortBag: {
+				DisplayName: 寶藏袋（佛地魔）
+				Tooltip: "{$CommonItemTooltip.RightClickToOpen}"
+			}
+			SoulFragment: {
+				DisplayName: 佛地魔的靈魂碎片
+				Tooltip:
+					'''
+					'他將靈魂分裂了七次……但這是最後一塊碎片'
+					+20%全部傷害，+15%咒語傷害，+10防禦
+					但會腐蝕：-20最大生命值，黑暗光環
+					[專家模式專屬]
+					'''
+			}
+			VoldemortTrophy: {
+				DisplayName: 佛地魔獎盃
+				Tooltip: ""
+			}
+
+			// === PHASE 17 ===
+			DuelingDummyItem: {
+				DisplayName: 決鬥假人
+				Tooltip: "'準備好！'\n放置一個顯示傷害數字的訓練目標\n測試你的咒語DPS——假人無法被摧毀"
+			}
+			WizardChessSet: {
+				DisplayName: 巫師棋
+				Tooltip: "'太野蠻了！''那就是巫師棋。'\n研究戰術以獲得戰鬥和狂暴增益持續5分鐘\n可重複使用"
+				UseMessage: "你研究棋盤……你的戰術意識變得更加敏銳！"
+			}
+
+			// === PHASE 18 ===
+			HogwartsLetter: {
+				DisplayName: 霍格華茲入學通知書
+				Tooltip:
+					'''
+					'親愛的同學，我們很高興通知您……'
+					打開信件了解巫師世界模組
+					獲得一份魔法精華新手包
+					'''
+			}
+			EbonyWand: {
+				DisplayName: 黑檀木魔杖
+				Tooltip:
+					'''
+					'非常適合各種戰鬥魔法'
+					施放現影術——傳送到你的游標位置！
+					最大範圍：37格。無法穿越牆壁。
+					傳送間隔3秒冷卻時間
+					'''
+			}
+
+			// === PHASE 15 ===
+			WizardSpectacles: {
+				DisplayName: 巫師眼鏡
+				Tooltip: "'圓框眼鏡，就像哈利的一樣'\n裝飾配件"
+			}
+			LightningScar: {
+				DisplayName: 閃電疤痕
+				Tooltip: "'十九年來，那道疤痕再也沒有疼過。一切都好。'\n獲得危險感知——邪惡靠近時疤痕會灼痛\n+3%咒語傷害"
+			}
+			WizardBeard: {
+				DisplayName: 長鬍子
+				Tooltip: "'長到可以塞進腰帶裡'\n裝飾配件——展現你內心的鄧不利多"
+			}
+			KneazleItem: {
+				DisplayName: 貓零食
+				Tooltip: "'貓精靈是非常聰明的貓科魔法生物'\n召喚貓精靈寵物偵測敵人"
+			}
+			DailyProphet: {
+				DisplayName: 預言家日報
+				Tooltip: "'最值得刊登的新聞'\n顯示當前世界狀態：Boss狀態、事件、月相\n可重複使用——使用時不會消耗"
+			}
+
+			// === PHASE 20 ===
+			SpellBook: {
+				DisplayName: 標準咒語書
+				Tooltip:
+					'''
+					'米蘭達·高夏克 著'
+					所有魔杖和咒語的遊戲內參考指南
+					多次使用可瀏覽5頁
+					顯示魔杖等級、傷害數值、咒語和製作提示
+					由奧利乖凡德出售。可重複使用
+					'''
+				Guide: {
+					OverviewTitle: "=== 標準咒語書 ==="
+					OverviewAuthor: "作者：米蘭達·高夏克"
+					OverviewBrowse: "再次使用以瀏覽頁面（共5頁）："
+					OverviewPage1: "  第1頁：前期魔杖（Boss前）"
+					OverviewPage2: "  第2頁：中期魔杖（Boss後 / 困難模式）"
+					OverviewPage3: "  第3頁：後期魔杖（機械Boss後 / 終局）"
+					OverviewPage4: "  第4頁：功能咒語"
+					Page1Title: "=== 第1頁：前期魔杖 ==="
+					Page1Line1: "橡木魔杖 [12傷害] — Stupefy（眩暈箭）"
+					Page1Line2: "  配方：木材 + 墜星 @ 工作台"
+					Page1Line3: "柳木魔杖 [16傷害] — Expelliarmus（擊退箭）"
+					Page1Line4: "  配方：木材 + 墜星 + 藍寶石 @ 工作台"
+					Page1Line5: "白蠟木魔杖 [22傷害] — Incendio（火焰箭）"
+					Page1Line6: "  配方：白蠟木 + 獄石 + 紅寶石 @ 附魔台"
+					Page1Line7: "冬青木魔杖 [28傷害] — Expelliarmus + Protego護盾"
+					Page1Line8: "紅橡木魔杖 [32傷害] — Riddikulus（克制幻形怪 / 恐懼）"
+					Page1Line9: "花楸木魔杖 [30傷害] — Bombarda（可破壞地形！）"
+					Page1Line10: "樺木魔杖 [28傷害] — Levicorpus（將敵人拋向空中）"
+					Page2Title: "=== 第2頁：中期魔杖 ==="
+					Page2Line1: "鳳凰羽毛 [30傷害] — Incendio（有機率雙發）"
+					Page2Line2: "  需求：獄石錠 + 羽毛"
+					Page2Line3: "龍心弦 [42傷害] — Sectumsempra（流血詛咒）"
+					Page2Line4: "山楂木 [38傷害] — 連鎖Stupefy（彈跳4個敵人）"
+					Page2Line5: "黑刺李木 [35傷害] — Impedimenta（範圍減速）"
+					Page2Line6: "柏木 [30傷害] — Conjunctivitis（Boss減益工具）"
+					Page2Line7: "獨角獸毛 [55傷害] — Expecto Patronum（追蹤守護者）"
+					Page2Line8: "  需求：珍珠木 + 獨角獸角 + 光明之魂"
+					Page2Line9: "紫杉木 [48傷害] — Crucio（持續傷害光束）"
+					Page3Title: "=== 第3頁：後期與終局魔杖 ==="
+					Page3Line1: "黑檀木魔杖 — Apparition（傳送到游標處！）"
+					Page3Line2: "  需求：烏木 + 光明/黑暗之魂 + 魔法精華"
+					Page3Line3: "接骨木魔杖 [120傷害] — Avada Kedavra（殺戮咒）"
+					Page3Line4: "  掉落：佛地魔"
+					Page3Line5: "厲火魔杖 [95傷害] — 不斷蔓延的詛咒火焰"
+					Page3Line6: "  需求：獄石 + 靈魂 + 日耀碎片 + 魔法精華"
+					Page3Line7: "接骨木魔杖精通已取代舊的命運魔杖路線"
+					Page3Line8: "  透過魔杖精通掌控接骨木魔杖，贏得其傳奇稱號"
+					Page3Line9: "  「命運魔杖」如今只是傳說文本，不再是獨立物品"
+					Page4Title: "=== 第4頁：功能咒語 ==="
+					Page4Line1: "落葉松魔杖 — 交替施放 Finite Incantatem（清除減益）與 Accio（拉取物品）"
+					Page4Line2: "雪松魔杖 — Lumos Maxima（巨型光球，可傷害不死生物）"
+					Page4Line3: "榆木魔杖 — Reparo（修復結界、Protego力場與房間增益）"
+					Page4Tip1: "提示：附魔台也算工作台！"
+					Page4Tip2: "提示：魔法精華會從所有魔法生物掉落！"
+					Page4Tip3: "提示：Patronus 才是對付催狂魔的真正答案。對付幻形怪請用 Riddikulus。"
+				}
+			}
+
+			// === PHASE 22 ===
+			SlytherinsDagger: {
+				DisplayName: 史萊哲林之匕首
+				Tooltip:
+					'''
+					'那些狡猾的人會不擇手段達成目的'
+					大幅+20%暴擊率
+					暴擊時施加被施咒，每次命中施加劇毒
+					蛇之咬——快速而致命
+					'''
+			}
+			RavenclawsStaff: {
+				DisplayName: 乖雷文克勞智慧之杖
+				Tooltip:
+					'''
+					'超乎常人的智慧是人類最大的寶藏'
+					極低魔力消耗（5）——智慧節省能量
+					發射穿透智慧光束
+					手持時所有咒語-10%魔力消耗
+					'''
+			}
+			HufflepuffsMace: {
+				DisplayName: 赫夫帕夫忠誠之鎚
+				Tooltip:
+					'''
+					'那些耐心的赫夫帕夫真誠且不畏辛勞'
+					重擊附帶巨大擊退力
+					治療你所造成傷害的10%
+					手持時+5防禦——獾保護自己人
+					'''
+			}
+			UnicornBlood: {
+				DisplayName: 獨角獸之血
+				Tooltip:
+					'''
+					'它能讓你活下來，即使你離死亡僅一步之遙，但代價是可怕的'
+					稀有掉落——僅在夜間的禁忌森林中出現
+					製作最強大巫師物品的材料
+					'''
+			}
+			MasterWizardBanner: {
+				DisplayName: 大巫師旗幟
+				Tooltip:
+					'''
+					'當代最偉大的女巫或巫師'
+					終極獎盃——需要全部3個Boss獎盃+三巫鬥法大會獎盃+獨角獸之血
+					+10%全部傷害，+5%咒語傷害，+8防禦，+20魔力，+2再生
+					金色大巫師光環
+					'''
+			}
+			FelixCauldron: {
+				DisplayName: 福來福喜坩堝
+				Tooltip:
+					'''
+					'一個永遠在釀造液體幸運的坩堝'
+					使用時為所有附近玩家提供10分鐘的幸運增益
+					終極勝利慶典
+					'''
+				UseMessage: "坩堝翻湧著液體黃金……你感到自己幸運非凡！"
+			}
+
+			// === PHASE 24 ===
+			DragonScaleHelm: {
+				DisplayName: 龍鱗頭盔
+				Tooltip: "+10%咒語傷害，+30最大魔力"
+				SetBonus: "龍火護盾：免疫火焰/岩漿，+18%咒語傷害，火焰光環"
+			}
+			DragonScaleBreastplate: {
+				DisplayName: 龍鱗胸甲
+				Tooltip: "+12%咒語傷害，+6%傷害減免，+40最大生命值"
+			}
+			DragonScaleGreaves: {
+				DisplayName: 龍鱗護脛
+				Tooltip: "+15%移動速度，+1最大奔跑速度，+5魔力再生"
+			}
+			Nimbus2001Broomstick: {
+				DisplayName: 乖光輪兩千零一
+				Tooltip:
+					'''
+					'馬份的父親替整個隊伍買了乖光輪兩千零一'
+					現存最快的飛天掃帚
+					高速飛行時+8%傷害
+					'''
+			}
+
+			// === PHASE 25 ===
+			PadfootAmulet: {
+				DisplayName: 乖腳印護身符
+				Tooltip:
+					'''
+					'惡作劇完畢'
+					天狼星·布萊克的化獸師護符
+					+20%移動速度，+2最大奔跑速度
+					-200敵人仇恨值——狗悄悄地溜過
+					'''
+			}
+			ProngsCharm: {
+				DisplayName: 尖頭叉子護符
+				Tooltip:
+					'''
+					'愛我們的人永遠不會真正離開我們'
+					詹姆·波特的雄鹿護法護符
+					+10%咒語傷害，+5%咒語暴擊
+					+10%召喚傷害——增強你的護法守護靈
+					'''
+			}
+
+			// === BOSS EXPANSION ===
+			TrollClub: {
+				DisplayName: 山怪棍棒
+				Tooltip: "'山怪的鼻屎。那更噁心了。'\n緩慢但毀滅性——巨大擊退力"
+			}
+			TrollSummonItem: {
+				DisplayName: 臭襪子
+				Tooltip: "'臭味能吸引牠'\n召喚山怪"
+			}
+			TrollBag: {
+				DisplayName: 寶藏袋（山怪）
+				Tooltip: "{$CommonItemTooltip.RightClickToOpen}"
+			}
+			TrollHide: {
+				DisplayName: 山怪皮
+				Tooltip: "'厚得像城牆一樣'\n+8防禦，+10%擊退抗性\n[專家模式專屬]"
+			}
+			TrollTrophy: {
+				DisplayName: 山怪獎盃
+				Tooltip: ""
+			}
+			AragogSummonItem: {
+				DisplayName: 八眼巨蛛卵
+				Tooltip: "'跟著蜘蛛走……'\n召喚乙蛛，八眼巨蛛的族長\n僅限困難模式"
+			}
+			SpiderSilkWeave: {
+				DisplayName: 蜘蛛絲織品
+				Tooltip: "'比鋼鐵堅固，比空氣輕盈'\n製作材料"
+			}
+			AragogBag: {
+				DisplayName: 寶藏袋（乙蛛）
+				Tooltip: "{$CommonItemTooltip.RightClickToOpen}"
+			}
+			AragogsFang: {
+				DisplayName: 乙蛛之牙
+				Tooltip: "'族長的贈禮'\n+15%暴擊率\n敵人有10%機率掉落額外戰利品\n[專家模式專屬]"
+			}
+			AragogTrophy: {
+				DisplayName: 乙蛛獎盃
+				Tooltip: ""
+			}
+			FluffySummonItem: {
+				DisplayName: 魔法笛子
+				Tooltip: "'音樂能安撫野獸'\n召喚乖乖毛毛，三頭犬\n需要擊敗機械Boss後"
+			}
+			CerberusFang: {
+				DisplayName: 乖乖三頭犬之牙
+				Tooltip: "'來自活板門守護者'\n製作材料"
+			}
+			FluffyBag: {
+				DisplayName: 寶藏袋（乖乖毛毛）
+				Tooltip: "{$CommonItemTooltip.RightClickToOpen}"
+			}
+			ThreeHeadedCollar: {
+				DisplayName: 三頭項圈
+				Tooltip: "'連乖乖毛毛也能被馴服……算是吧'\n+3最大召喚物\n-10%移動速度\n[專家模式專屬]"
+			}
+			FluffyTrophy: {
+				DisplayName: 乖乖毛毛獎盃
+				Tooltip: ""
+			}
+			BellatrixSummonItem: {
+				DisplayName: 阿茲卡班囚犯標籤
+				Tooltip: "'她是他最忠誠的僕人'\n召喚貝拉乖雷斯壯\n需要擊敗世紀花後"
+			}
+			DarkArtsTome: {
+				DisplayName: 黑魔法典籍
+				Tooltip: "'高級黑魔法知識'\n製作材料"
+			}
+			BellatrixBag: {
+				DisplayName: 寶藏袋（貝拉乖雷斯壯）
+				Tooltip: "{$CommonItemTooltip.RightClickToOpen}"
+			}
+			BellatrixWandHand: {
+				DisplayName: 貝拉的魔杖之手
+				Tooltip: "'她是真正的信徒'\n+20%咒語傷害，-15%魔力消耗\n但受到的傷害增加8%\n[專家模式專屬]"
+			}
+			BellatrixTrophy: {
+				DisplayName: 貝拉獎盃
+				Tooltip: ""
+			}
+			FenrirSummonItem: {
+				DisplayName: 血跡斑斑的爪子
+				Tooltip: "'改變一切的咬傷'\n召喚芬沃·石背\n僅在血月期間可用！"
+			}
+			WerewolfPelt: {
+				DisplayName: 狼人毛皮
+				Tooltip: "'還是溫的'\n製作材料"
+			}
+			FenrirBag: {
+				DisplayName: 寶藏袋（芬沃·石背）
+				Tooltip: "{$CommonItemTooltip.RightClickToOpen}"
+			}
+			LycansBiteMark: {
+				DisplayName: 狼化者的咬痕
+				Tooltip: "'改變一切的咬傷'\n+20%近戰傷害\n夜間+15%移動速度\n白天-5%傷害\n[專家模式專屬]"
+			}
+			FenrirTrophy: {
+				DisplayName: 芬沃獎盃
+				Tooltip: ""
+			}
+			DementorKingSummonItem: {
+				DisplayName: 凍魂燈籠
+				Tooltip: "'吸引最黑暗生物的光'\n召喚催狂魔之王\n需要擊敗拜月教徒後，僅限夜間"
+			}
+			DementorsShroud: {
+				DisplayName: 催狂魔斗篷
+				Tooltip: "'由純粹的絕望編織而成'\n終局製作材料"
+			}
+			DementorKingBag: {
+				DisplayName: 寶藏袋（催狂魔之王）
+				Tooltip: "{$CommonItemTooltip.RightClickToOpen}"
+			}
+			SoulSiphon: {
+				DisplayName: 靈魂虹吸
+				Tooltip: "'它以絕望為食'\n所有傷害治療你3%\n附近敵人-5防禦\n[專家模式專屬]"
+			}
+			DementorKingTrophy: {
+				DisplayName: 催狂魔之王獎盃
+				Tooltip: ""
+			}
+			QuirrellSummonItem: {
+				DisplayName: 可疑的頭巾
+				Tooltip: "'沒有善與惡之分，只有力量'\n召喚奎若教授"
+			}
+			QuirrellBag: {
+				DisplayName: 寶藏袋（奎若教授）
+				Tooltip: "{$CommonItemTooltip.RightClickToOpen}"
+			}
+			QuirrellsTurban: {
+				DisplayName: 奎若的頭巾
+				Tooltip: "'下面藏著什麼東西……'\n+5%咒語傷害，顯示附近敵人\n但你受到的傷害增加3%（佛地魔的影響）\n[專家模式專屬]"
+			}
+			QuirrellTrophy: {
+				DisplayName: 奎若獎盃
+				Tooltip: ""
+			}
+			UmbridgeSummonItem: {
+				DisplayName: 教育法令
+				Tooltip: "'我不可以說謊'\n召喚桃樂絲·恩不利乖吉\n需要擊敗機械Boss後"
+			}
+			UmbridgeBag: {
+				DisplayName: 寶藏袋（桃樂絲·恩不利乖吉）
+				Tooltip: "{$CommonItemTooltip.RightClickToOpen}"
+			}
+			MinistryBadge: {
+				DisplayName: 魔法部徽章
+				Tooltip: "'魔法部已經決定……'\n免疫被施咒和混亂\n+5防禦，但-5%傷害\n[專家模式專屬]"
+			}
+			UmbridgeTrophy: {
+				DisplayName: 恩不利乖吉獎盃
+				Tooltip: ""
+			}
+			UmbridgesQuill: {
+				DisplayName: 恩不利乖吉的血羽毛筆
+				Tooltip: "'我不可以說謊'\n快速咒語武器，施加流血+被施咒"
+			}
+			BartyCrouchSummonItem: {
+				DisplayName: 可疑的酒壺
+				Tooltip: "'時刻保持警覺！'\n召喚偽裝的巴提·柯羅奇二世\n需要擊敗世紀花後"
+			}
+			BartyCrouchBag: {
+				DisplayName: 寶藏袋（巴提·柯羅奇二世）
+				Tooltip: "{$CommonItemTooltip.RightClickToOpen}"
+			}
+			PolyjuiceFlask: {
+				DisplayName: 變身水酒壺
+				Tooltip: "'時刻保持警覺！'\n+12%全部傷害，+10%移動速度\n每30秒短暫隱形\n[專家模式專屬]"
+			}
+			BartyCrouchTrophy: {
+				DisplayName: 巴提·柯羅奇二世獎盃
+				Tooltip: ""
+			}
+			SpiderSilkCloak: {
+				DisplayName: 蜘蛛絲斗篷
+				Tooltip: "'由乙蛛最上等的蜘蛛絲編織'\n-300敵人仇恨值，+10%速度，+8%咒語傷害\n輕盈且幾乎隱形"
+			}
+			CerberusFangNecklace: {
+				DisplayName: 三頭犬牙項鍊
+				Tooltip: "'三個頭，三個僕人'\n+5防禦，+1最大召喚物，增加召喚擊退"
+			}
+			DarkArtsGrimoire: {
+				DisplayName: 黑魔法魔典
+				Tooltip: "'高級黑魔法，武器化'\n發射3道暗影光束散射\n由貝拉的禁忌知識製作"
+			}
+			WerewolfCloak: {
+				DisplayName: 狼人斗篷
+				Tooltip: "'月下的野獸之力賦予你力量'\n夜間：+20%近戰，+15%速度，+10防禦\n白天：+5%近戰，+5%速度"
+			}
+			DementorsEmbrace: {
+				DisplayName: 催狂魔之擁
+				Tooltip: "'擁抱催狂魔就是接受絕望作為力量'\n+15%全部傷害，+10%咒語傷害\n但-30最大生命值和黑暗光環\n終局黑暗配件"
+			}
+			MagicalKoi: {
+				DisplayName: 魔法錦鯉
+				Tooltip: "'一條散發內在魔力光芒的魚'\n食用獲得2分鐘幸運+魔力再生增益\n也可作為藥水材料使用"
+			}
+			MerfolkScale: {
+				DisplayName: 人魚鱗片
+				Tooltip: "'深海人魚脫落的鱗片'\n製作材料——在海洋釣魚時獲得"
+			}
+			EnchantedTadpole: {
+				DisplayName: 魔法蝌蚪
+				Tooltip: "'它在閃閃發光！'\n優秀魚餌（40力量）或食用獲得2-4魔法精華\n在禁忌森林中捕獲"
+			}
+			WizardCrate: {
+				DisplayName: 巫師寶箱
+				Tooltip: "'一箱巫師用品'\n右鍵開啟獲得隨機巫師藥水、配件和精華\n困難模式稀有釣魚收穫"
+			}
+			WizardCrateHardmode: {
+				DisplayName: 大法師寶箱
+				Tooltip: "'一箱注入困難模式魔力的貨物'\n右鍵獲得困難模式巫師藥水、稀有配件、Boss材料\n機械Boss後稀有釣魚收穫"
+			}
+			SkivingSnackbox: {
+				DisplayName: 翹課零食盒
+				Tooltip: "'衛斯理巫師法寶——逃脫一切的利器！'\n食用偽裝生病：5秒無敵+隱形\n敵人完全對你失去興趣\n觸發藥水冷卻"
+			}
+			PukingPastille: {
+				DisplayName: 嘔吐軟糖
+				Tooltip: "'不適合腸胃不好的人'\n立即清除所有減益\n但消耗30生命值——僅限緊急使用"
+			}
+			NosebleedNougat: {
+				DisplayName: 流鼻血乖牛乖軋糖
+				Tooltip: "'以血換力'\n失去50生命值，立即恢復200魔力\n+30秒魔力再生"
+			}
+			DemiguiseHair: {
+				DisplayName: 隱形獸毛髮
+				Tooltip: "'用來編織隱形斗篷'\n消耗獲得30秒隱形\n或作為製作材料使用"
+			}
+			MerfolkAmulet: {
+				DisplayName: 人魚護身符
+				Tooltip: "'佩戴它的人，海洋會回應'\n永久獲得鰓和腳蹼\n水下+10%傷害和+15%速度"
+			}
+			DragonToothNecklace: {
+				DisplayName: 龍牙項鍊
+				Tooltip:
+					'''
+					'以龍火和三頭之怒鍛造'
+					需要角尾龍+乖乖毛毛材料——跨Boss獎勵
+					+12%全部傷害，+8護甲穿透
+					移動時留下火焰軌跡
+					'''
+			}
+			VenomSilkWraps: {
+				DisplayName: 毒絲繃帶
+				Tooltip:
+					'''
+					'注入蛇妖毒液的蜘蛛絲'
+					需要乙蛛+蛇妖材料——跨Boss獎勵
+					+10%咒語傷害，+15%暴擊率
+					免疫中毒和劇毒
+					'''
+			}
+			DarkLordsBane: {
+				DisplayName: 黑魔王剋星
+				Tooltip:
+					'''
+					'克服每一項挑戰的合力'
+					需要所有巫師Boss的材料
+					+15%全部傷害，+10%咒語，+10防禦，+4再生
+					免疫中毒、劇毒和火焰
+					終極跨Boss配件
+					'''
+			}
+			WizardFishingRod: {
+				DisplayName: 魔法釣竿
+				Tooltip: "'魚幾乎會自己上鉤！'\n30%釣魚力量\n附魔吸引魔法魚類"
+			}
+			Firewhiskey: {
+				DisplayName: 乖乖歐登老牌火焰威士忌
+				Tooltip: "'從裡到外溫暖你……猛烈地'\n+12%全部傷害，+8%暴擊持續4分鐘\n副作用：偶爾短暫頭暈混亂+火焰吐息"
+			}
+			PygmyPuffItem: {
+				DisplayName: 迷你蒲絨絨
+				Tooltip: "'衛斯理巫師法寶——我們最可愛的產品！'\n召喚粉紅色迷你蒲絨絨寵物\n蒲絨絨的迷你版——可愛又無害"
+			}
+			DirigiblePlumEarring: {
+				DisplayName: 指路李子耳環
+				Tooltip: "'指路李子幫助你接受非凡的事物'\n緩降，+2跳躍速度，自動跳躍\n露娜·羅古德的招牌配件"
+			}
+			EnchantedTrollClub: {
+				DisplayName: 附魔山怪棍棒
+				Tooltip: "'不知為何，附魔山怪的棍棒讓它變得更加粗暴'\n升級版山怪棍棒——命中產生範圍衝擊波\n巨大擊退力"
+			}
+			WandHolster: {
+				DisplayName: 魔杖收納套
+				Tooltip: "'拔得快，施法快，贏得快'\n+10%施法速度\n+5%咒語傷害，-5%魔力消耗"
+			}
+			ThestralReins: {
+				DisplayName: 騎士墜鬼馬韁繩
+				Tooltip: "'只有目睹過死亡的人才能看見'\n召喚騎士墜鬼馬坐騎——黑暗飛行坐騎\n騎乘時獲得夜視+敵人偵測"
+			}
+			AshwinderEgg: {
+				DisplayName: 灰蛇卵
+				Tooltip: "'極度炙熱——在它燒毀你的房子前把它凍起來！'\n消耗獲得2分鐘火焰/岩漿免疫+煉獄光環\n愛情魔藥的關鍵材料"
+			}
+			WizengamotHood: {
+				DisplayName: 威森乖加摩兜帽
+				Tooltip: "+15%咒語傷害，+40最大魔力"
+				SetBonus: "奧術權威：+30%咒語傷害，-20%魔力消耗，+60魔力，+8魔力再生"
+			}
+			WizengamotRobes: {
+				DisplayName: 威森乖加摩長袍
+				Tooltip: "+15%咒語傷害，+15%咒語暴擊，+8%傷害減免，+60最大生命值"
+			}
+			WizengamotBoots: {
+				DisplayName: 威森乖加摩靴子
+				Tooltip: "+15%移動速度，+1.5奔跑速度，+6魔力再生"
+			}
+			PhoenixTear: {
+				DisplayName: 鳳凰之淚
+				Tooltip:
+					'''
+					'鳳凰之淚擁有無比強大的治療力量'
+					立即恢復全部生命值和魔力
+					清除所有減益
+					不會觸發藥水病
+					巫師世界中最稀有的治療物品
+					'''
+			}
+			GrindylowTooth: {
+				DisplayName: 水精之齒
+				Tooltip: "'鋒利且帶有微弱的魔力'\n製作材料——由水精掉落或釣魚時獲得"
+			}
+			AquaFortis: {
+				DisplayName: 強水劑
+				Tooltip: "'水中戰士的靈藥'\n鰓+水中免疫\n水下時：+20%傷害，+8防禦，+20%速度\n由釣魚收穫製作"
+			}
+			WizardPocketWatch: {
+				DisplayName: 巫師懷錶
+				Tooltip: "'時間是神秘的事物'\n顯示時間，+5%移動速度，+5%攻擊速度"
+			}
+			MandrakeRestorative: {
+				DisplayName: 乖魔蘋果復甦湯
+				Tooltip: "'成熟時，牠們的叫聲能喚醒任何被石化的人'\n恢復50生命值+治癒石化、被施咒、黑暗詛咒和所有虛弱減益\n治療蛇妖石化的標準方法"
+			}
+			KeeperGloves: {
+				DisplayName: 魁地奇守門員手套
+				Tooltip: "'快浮別想通過這些環'\n+8防禦，擊退免疫，20%荊棘傷害\n守門員的最佳夥伴"
+			}
+			SeekersReflexes: {
+				DisplayName: 搜捕手反射藥水
+				Tooltip: "'你得夠快才能抓到金探子'\n+15%速度，+10%閃避，+10%攻擊速度持續4分鐘\n由稀有金蛋製作"
+			}
+			Spectrespecs: {
+				DisplayName: 幻視眼鏡
+				Tooltip: "'它們能讓皺腦蟲現形，你知道的'\n顯示所有敵人+危險感知\n+5%咒語暴擊率\n露娜·羅古德的招牌彩虹眼鏡"
+			}
+			FoeGlass: {
+				DisplayName: 仇敵鏡
+				Tooltip: "'影子隨著敵人接近而越來越清晰'\n顯示所有敵人、危險感知、夜視\n+3%傷害。Boss活躍時在提示中顯示Boss血量百分比\n乖乖穆地最喜歡的黑魔法偵測器"
+			}
+			GobletOfFire: {
+				DisplayName: 乖火盃
+				Tooltip: "'火盃選擇勇士'\n使用時為所有附近玩家提供戰鬥+憤怒+狂暴增益\n可重複使用的傳奇家具"
+			}
+			BabyDragonItem: {
+				DisplayName: 龍蛋（已孵化）
+				Tooltip: "'是一條龍！海格一定會很驕傲的。'\n召喚匈牙利角尾幼龍光源寵物\n由角尾龍的金蛋製作"
+			}
+			FairyWings: {
+				DisplayName: 仙女翅膀
+				Tooltip: "'巫師世界的仙女遠比其他的美麗'\n獲得飛行+緩降\n飛行時閃爍軌跡"
+			}
+			QuillOfAcceptance: {
+				DisplayName: 錄取之筆
+				Tooltip: "'從霍格華茲建校以來，這支筆就放在那裡'\n+8%咒語傷害，+5%咒語暴擊，+5咒語護甲穿透"
+			}
+			GoblinSilverSword: {
+				DisplayName: 乖妖精銀劍
+				Tooltip: "'妖精是巫師世界中最優秀的金屬工匠'\n命中時施加點金術——乖妖精打造，吸收敵人財富\n由白銀和黃金在附魔台製作"
+			}
+			MoodysEye: {
+				DisplayName: 乖乖穆地的魔眼
+				Tooltip: "'時刻保持警覺！'\n顯示所有敵人、寶藏、陷阱、電線\n夜視+危險感知+5%傷害\n魔眼能看見一切"
+			}
+			DragonScaleRing: {
+				DisplayName: 龍鱗戒指
+				Tooltip: "'以龍火鍛造'\n火焰免疫+8%咒語傷害+5%全部傷害\n小巧的防火戒指"
+			}
+			PhoenixAsh: {
+				DisplayName: 鳳凰灰燼
+				Tooltip: "'燃燒日的遺骸'\n消耗獲得30秒火焰免疫+再生\n或作為製作復活物品的材料"
+			}
+			ResurrectionPotion: {
+				DisplayName: 復活藥水
+				Tooltip: "'從灰燼中重生'\n阻止一次死亡：如果你即將死亡，改為恢復到50%\n增益持續10分鐘，觸發一次"
+			}
+			ShieldCharmPotion: {
+				DisplayName: 護盾咒藥水
+				Tooltip: "'瓶裝破心護'\n+10防禦，+8%傷害減免持續5分鐘"
+			}
+			EnchantedMirror: {
+				DisplayName: 魔法手鏡
+				Tooltip: "'雖然不是乖意若思鏡，但能帶你回家'\n+3%咒語傷害被動加成\n由魔鏡+精華製作"
+			}
+			DraconisElixir: {
+				DisplayName: 龍血靈藥
+				Tooltip: "'龍血有十二種用途——這瓶藥水將它們全部發揮'\n獲得憤怒+狂暴+火焰免疫+煉獄光環持續4分鐘\n終極龍力戰鬥藥水"
+			}
+			JobberknollFeather: {
+				DisplayName: 嘰喳鳥羽毛
+				Tooltip: "'包含那隻鳥聽過的每一個聲音的回響'\n吐真劑的關鍵材料\n由嘰喳鳥掉落"
+			}
+			BeastHuntersCharm: {
+				DisplayName: 獵獸者護符
+				Tooltip:
+					'''
+					'紐特·乖斯卡曼德會驚恐不已。乖乖乖查理·衛斯理會表示認同。'
+					需要龍鱗+三頭犬牙+狼人毛皮——三種野獸的擊殺
+					+12%全部傷害，免疫流血+破損護甲
+					偵測附近所有生物
+					'''
+			}
+			ImpFlame: {
+				DisplayName: 小惡魔之焰
+				Tooltip: "'一顆活著的小小火焰'\n消耗獲得30秒煉獄光環\n火焰藥水的製作材料\n由魔法小惡魔掉落"
+			}
+			DugbogHide: {
+				DisplayName: 水潛獸皮
+				Tooltip: "'堅韌如樹皮，與環境融為一體'\n隱匿物品的製作材料\n由水潛獸掉落"
+			}
+			CamouflageCloak: {
+				DisplayName: 迷彩斗篷
+				Tooltip: "'幾乎和隱形斗篷一樣好。幾乎。'\n-400仇恨值，+10%速度\n靜止不動時變為隱形\n由水潛獸皮+隱形獸毛髮製作"
+			}
+			FenrirsWolfsbane: {
+				DisplayName: 芬沃的狼毒
+				Tooltip: "'由狼王本身的精華釀造'\n升級版狼毒——夜間加成大幅增強\n夜間：+25%近戰，+25%速度，+15防禦，+10%暴擊"
+			}
+			StealthDraught: {
+				DisplayName: 隱匿魔藥
+				Tooltip: "'像水潛獸融入枯木一樣融入陰影'\n隱形，-500仇恨值，+15%速度持續4分鐘\n由水潛獸皮+隱形獸毛髮釀造"
+			}
+			SpectralEssence: {
+				DisplayName: 幽靈精華
+				Tooltip:
+					'''
+					'從騎士墜信標中採集的月光殘留物'
+					製作材料
+					'''
+			}
+
+			// === 地標可放置物品 ===
+			HousePointHourglassItem: {
+				DisplayName: 學院積分沙漏
+				Tooltip: "'四個巨大的沙漏追蹤著各學院的積分'\n裝飾性餐廳地標"
+			}
+			QuidditchGoalpostItem: {
+				DisplayName: 魁地奇球門柱
+				Tooltip: "'球場兩端各有三個圓環'\n裝飾性魁地奇球場地標"
+			}
+			CastleWardStoneItem: {
+				DisplayName: 城堡守護石
+				Tooltip: "'古老的防護結界環繞著城堡'\n裝飾性霍格華茲防禦地標"
+			}
+			WhompingWillowStumpItem: {
+				DisplayName: 打人柳樹樁
+				Tooltip: "'樹根下隱藏著一條秘密通道'\n裝飾性通道入口地標"
+			}
+			ShriekingShackSignItem: {
+				DisplayName: 尖叫棚屋招牌
+				Tooltip: "'全英國最鬧鬼的建築'\n裝飾性活米村地標"
+			}
+			GrimmauldDoorwayItem: {
+				DisplayName: 古里某街門廊
+				Tooltip: "'鳳凰會總部所在地'\n裝飾性安全屋地標"
+			}
+			LeakyCauldronSignItem: {
+				DisplayName: 破釜酒吧招牌
+				Tooltip: "'麻瓜倫敦與斜角巷之間的通道'\n裝飾性酒館地標"
+			}
+			GringottsFacadeItem: {
+				DisplayName: 古靈閣外牆
+				Tooltip: "'巫師世界最安全的地方——僅次於霍格華茲'\n裝飾性古靈閣銀行地標"
+			}
+			BorginStorefrontItem: {
+				DisplayName: 波金店面
+				Tooltip: "'波金與伯克——黑魔法物品專賣'\n裝飾性夜行巷地標"
+			}
+			StMungosMannequinItem: {
+				DisplayName: 聖蒙果假人
+				Tooltip: "'普吉與道斯有限公司櫥窗裡的舊假人'\n裝飾性醫院入口地標"
+			}
+			ProphecyShelfItem: {
+				DisplayName: 預言球架
+				Tooltip: "'一排排佈滿塵埃的玻璃球，每一顆都封存著一則預言'\n裝飾性預言廳地標"
+			}
+			VeilArchItem: {
+				DisplayName: 帷幕拱門
+				Tooltip: "'古老的石拱門上飄動著神祕的帷幕'\n裝飾性死亡廳地標"
+			}
+		}
+
+		Bestiary: {
+			Dementor: 行走於世間最邪惡的生物之一。牠們吸取周圍一切的平靜、希望和快樂。只有護法才能驅退牠們。
+			Acromantula: 擁有極高智慧和恐怖體型的巨型蜘蛛。最初由巫師培育，可能是作為住所或寶庫的守衛生物。
+			MagicPixie: 以製造混亂為樂的電光藍色搗蛋鬼。體型小但力大得驚人，能夠舉起和搬運沉重物體。
+			Troll: 身高三公尺半，皮膚呈暗灰色的可怕生物。山怪是同類中最大、最兇殘的品種。
+			Inferius: 被黑魔法復活的屍體。牠們感覺不到痛苦，只懼怕火焰。被最黑暗的巫師用作傀儡士兵。
+			Basilisk: 蛇王。由蟾蜍孵化的雞蛋中誕生。牠的目光能致命，牠的毒液能摧毀一切，除了鳳凰的眼淚。
+			Horntail: 所有龍種中最危險的一種。牠有青銅色的角和佈滿尖刺的尾巴。牠的火焰噴射距離可達十二公尺。
+			Voldemort: 有史以來最令人恐懼的黑巫師。本名湯姆·瑞斗，他將靈魂分裂成碎片以欺騙死亡。只有團結的死神聖物才能真正終結他。
+			Thestral: 只有目睹過死亡的人才能看見的生物，這些骨骼般的有翼馬匹外表駭人卻性情溫順。牠們會被血的氣味吸引。
+			DeathEater: 黑魔王的追隨者，身上帶有黑魔標記。他們施行最黑暗的魔法，只聽從主人的召喚。
+			Ollivander: 大師級魔杖製作師，其家族自西元前382年起便製作優質魔杖。他相信魔杖選擇巫師。
+			Hagrid: 一個心地善良的混血巨人，對危險生物有著不幸的偏愛。現在擔任魔法奇獸的看守人。
+			PotionsMaster: 才華橫溢但脾氣暴躁的魔藥師。在釀造藝術上要求完美，對無能者毫無耐心。
+			Dobby: 一個自由的家庭小精靈，樂於幫助巫師。給他一隻襪子，他就會永遠成為你的朋友。以收集不成對的襪子和強烈的忠誠著稱。
+			Mandrake: 一種根部看起來像小泥人的魔法植物。成熟時的叫聲能致聽者於死，但年幼的乖魔蘋果只會讓你昏過去。
+			Boggart: 一種會變形的生物，會變成最靠近牠的人最恐懼的形態。沒人知道幻形怪獨處時是什麼樣子。乖叱叱，荒唐！
+			Dumbledore: 被許多人認為是現代最偉大的巫師。霍格華茲校長，梅林勳章一等勳位持有者，唯一令黑魔王畏懼的巫師。
+			Werewolf: 患有狼化症的巫師。在滿月之下他們會變成兇猛的野獸。狼毒藥水能讓他們在變身期間保持理智。
+			Grindylow: 一種有角的小型水中惡魔，手指細長易碎。牠們棲息在湖泊中，對進入其領地的人類特別具有攻擊性。
+			Doxy: 一種覆蓋著黑色粗毛的小型類仙靈生物，多了一對手臂和腿。牠的毒咬需要解毒劑。牠們會侵擾窗簾和老房子。
+			Peeves: 歷史上最臭名昭著的搗蛋鬼。他以混亂、惡作劇和讓人抓狂為樂。唯一能讓他聽話的只有鄧不利多和血乖腥男爵。
+			Nagini: 黑魔王最忠誠的夥伴和最後一個分靈體。一條品種不明的巨型魔法蛇，能夠化為人形。她的毒液維持著佛地魔肉身的存活。
+			Obscurus: 一種發展在壓抑自身魔力的女巫或巫師體內的黑暗寄生魔力。釋放時會成為一個無法控制的、具有巨大力量的破壞性實體。很少有闇黑怨靈宿主能活過童年。
+			Bowtruckle: 一種樹木守護生物，身高不超過二十公分，由樹皮和樹枝構成，有兩隻棕色小眼睛。除非其家園之樹受到威脅否則性情溫和，受威脅時會用尖銳的手指戳向來者的眼睛。
+			Flobberworm: 巫師世界中最無聊的生物。一種吃生菜的棕色粗蟲。牠的黏液偶爾用來增稠藥水，這是牠唯一已知的用途。
+			BlastEndedSkrewt: 由海格培育的螳螂蟹和火螃蟹的可怕雜交種。成年時長達三公尺，擁有裝甲外殼、強力毒刺和從後端噴射的火焰。
+			Centaur: 上半身為人、下半身為馬的驕傲而高貴的生物。牠們是天賦異稟的觀星者，認為大多數人類魔法不值一提。不要稱呼牠們為混血種。
+			AzkabanGuard: 被分配到看守巫師監獄阿茲卡班的精銳催狂魔。體型更大、力量遠超普通同類，僅僅是牠的存在就能熄滅一切光明和溫暖。牠的吻不僅是進食——而是完全吞噬靈魂。
+			Merfolk: 巫師世界中的人魚棲息在湖泊和海洋深處。他們說人魚語，在水面上聽起來像尖叫聲。作為水下領域的兇猛守護者，他們不歡迎入侵者。
+			Sphinx: 一種擁有獅身、鷹翼和人頭的古老生物。人面獅身獸非常聰明，喜愛謎語、難題和謎團。牠們是寶藏和祕密場所的絕佳守護者。
+			Giant: 身高六公尺以上的巨人是巫師世界中最令人恐懼的生物之一。雖然不是特別聰明，但其原始力量無與倫比。部分巨人曾被佛地魔招募參加霍格華茲之戰。
+			Fwooper: 一種色彩鮮豔的非洲魔法鳥類，其歌聲會讓聽者發瘋。叫叫鳥的飼主必須對其施加靜音咒。有鮮粉色、萊姆綠、橙色和芥末黃等品種。
+			SnowWraith: 一個很久以前死去的北方巫師的冰凍幽靈。在夜間的雪地生態域出現，帶來能凍結所觸碰一切的異常寒冷。據傳是在寒冷中喪生的德姆蘭學生的亡魂。
+			CursedMummy: 一位古埃及巫師，其肉體被詛咒永恆守護墓穴。保存他們的黑魔法在千年間只會越來越強。乖比爾·衛斯理會知道如何對付這些東西。
+			FredAndGeorge: 傳奇的衛斯理雙胞胎，衛斯理巫師法寶的創辦人。發明家、搗蛋鬼，以及令人驚訝地天賦異稟的巫師。他們在斜角巷的商店是最色彩繽紛——也是最危險的——購物之地。
+			TrollBoss: 完全長大的山怪，身高三公尺半，皮膚暗灰色，手持巨大木棍。不算聰明，但近距離戰鬥時毀滅性十足。任何年輕巫師的經典初遇。
+			AragogBoss: 禁忌森林中八眼巨蛛群落的族長。由海格從蛋中養大，乙蛛指揮著牠的子女大軍。當牠呼喚時，蜘蛛們便會蜂擁而至。
+			FluffyBoss: 鄧不利多放置來守護活板門的巨大三頭犬。每個頭獨立攻擊。唯一通過的方式是音樂——或蠻力。
+			BellatrixBoss: 佛地魔最危險、最忠誠的食死人。貝拉·乖雷斯壯是一位以殘忍為樂的決鬥天才。她殺死了天狼星·布萊克，折磨了乖乖隆巴頓一家，除了主人的不悅之外什麼都不怕。
+			FenrirBoss: 現存最凶殘的狼人。芬沃·石背在滿月時會靠近受害者，滿懷著盡可能咬傷和感染更多人的渴望。他尤其喜歡以兒童為目標。
+			DementorKingBoss: 所有催狂魔的主宰——一個純粹黑暗的遠古存在，指揮著噬魂幽靈的軍團。牠的存在會熄滅一切光明和希望。只有最強大的護法才能與之抗衡。
+			PhantomStag: 被神聖之地無盡的純淨魔力扭曲和腐化的護法靈魂。曾經是希望與守護的象徵，現在卻不分敵我地攻擊。悲哀地提醒人們，即使是光明魔法也可能走向歧途。
+			CursedSpecter: 一個過度鑽研黑魔法而被腐化吞噬的巫師亡魂。困在生死之間，向任何經過的生物發射詛咒火焰。
+			Thunderbird: 一種原產於亞利桑那的巨大魔法鳥類，與鳳凰有親緣關係。飛行時能製造風暴，並能在危險到來前感知到它。在暴風雲聚集之處出沒。
+			GoblinRebel: 來自巫師歷史上妖精叛亂的流亡妖精。裝備著他們從古靈閣武器化的附魔黃金作為投射物。他們攜帶大量財富——如果你能從他們手中奪取的話。
+			Lethifold: 又稱活屍布，是魔法世界中最危險的生物之一。外形像一件沿地面滑行的黑色斗篷，會悶死熟睡的受害者。只有護法咒才能驅退它。
+			QuirrellBoss: 一位口吃的黑魔法防禦術教授，隱藏著可怕的祕密。他的頭巾下潛伏著黑魔王的面孔，如寄生宿主般共用奎若的身體。一場簡單的決鬥在佛地魔現身時變成了一場生存之戰。
+			UmbridgeBoss: 魔法部長高級副部長，巫師世界中最令人憎恨的女人。她不靠原始力量戰鬥——她靠官僚主義、減益和教育法令來戰鬥。唯一一個讓你寧願面對佛地魔的Boss。
+			BartyCrouchBoss: 一個如此忠誠的食死人，他逃出阿茲卡班並用變身水偽裝成乖乖穆地·乖乖穆地長達一年。他的真面目和偽裝一樣危險——一位以狂熱忠誠服侍黑魔王的決鬥大師。
+			Erumpent: 一種原產於非洲、外形像犀牛的巨型生物。牠的角含有致命液體，注入任何東西都會導致爆炸。爆角怪的角、尾巴和爆炸液都是B級可交易材料。
+			Occamy: 一種原產於遠東和印度的有羽毛蛇形帶翼生物。牠具有適體性——能根據可用空間伸縮體型。牠的蛋由最純淨、最柔軟的白銀構成。
+			Zouwu: 一種體型如大象般巨大的魔法貓科野獸，擁有多彩的鬃毛和能隨意伸縮的身體。速度和力量驚人——一天能走一千英里。原產於中國。
+			Demiguise: 一種和平的、外形像猿猴的生物，有著大而深情的眼睛和長而柔滑的銀色毛髮。受威脅時能使自己隱形，因此極難捕捉。牠的毛皮用於製作隱形斗篷。
+			Mooncalf: 一種害羞的生物，只在滿月之夜出現。月痴獸在月光下用後腿表演複雜的舞蹈，在麥田中創造出精緻的幾何圖案。牠們的銀色糞便若在日出前收集，能讓魔法植物以驚人速度生長。
+			Billywig: 一種原產於澳洲的藍寶石色微型昆蟲。被螫後會先頭暈，接著飄浮起來。乾燥的彩翼螫蟲螫針是嗶嗶蜂蜜糖的材料。這種昆蟲速度極快，麻瓜幾乎看不見。
+			Ashwinder: 一種由失控燃燒的魔法火焰餘燼中誕生的灰白色細蛇，紅眼發光。牠只活一個小時，會尋找陰暗隱蔽的地方產卵後化為塵土。牠的卵極度炙熱，若不凍結，幾分鐘內就會點燃住宅。
+			Nundu: 一種原產於東非的巨大魔法豹，被認為是巫師世界中最危險的活體生物。牠的呼吸有毒，能摧毀整個村莊。從未有少於一百名巫師協作就能制服牠的記錄。
+			Runespoor: 一種通常長達約兩公尺的三頭蛇。左頭是謀劃者，中頭是夢想者，右頭是批評者。原產於布吉納法索。牠的蛋在魔藥學中極有價值。
+			Jarvey: 一種外形像超大貂鼠的魔法生物，但牠能說話。不幸的是，吵鬧鼬無法進行真正的對話，只會幾乎不間斷地說出簡短且通常粗魯的語句。分布於英國、愛爾蘭和北美。
+			FireCrab: 儘管名叫火螃蟹，牠的外形更像一隻殼上鑲滿寶石的大海龜。產於斐濟海岸，出口受到嚴格管控。火螃蟹的主要防禦手段是在被攻擊時從後端噴射火焰。
+			Puffskein: 一種圓形、蛋黃色、渾身覆蓋柔軟毛皮的生物。性格溫順甚至黏人，不介意被拋來拋去或擁抱。滿足時會發出哼唱聲。受歡迎的巫師寵物，也是迷你蒲絨絨的祖先。
+			Streeler: 一種每小時變換顏色的巨型蝸牛。牠留下的毒液軌跡毒性極強，能讓所有觸碰到的植被枯萎燃燒。毒蝸牛被那些喜歡牠萬花筒般變色的人當作寵物飼養。
+			PeruvianVipertooth: 所有已知龍種中體型最小的，只有約四公尺半長。鱗片光滑呈銅色，有獨特的黑色脊紋。牠有毒牙且速度特別快，儘管體型較小卻極其危險。
+			Diricawl: 一種圓胖、毛茸茸的不會飛的鳥類，有著受威脅時能在一簇羽毛中消失的驚人能力。麻瓜曾稱牠為渡渡鳥，相信他們已經讓牠滅絕——不知道牠只是傳送走了。
+			Knarl: 外形與刺蝟極為相似，只有一個已知區別：如果你給刺蝟留食物，牠會感激。乖刺佬會認為你在設陷阱引誘牠，然後蹂躪你的花園。
+			Horklump: 一種肉質、粉紅色、蘑菇狀的生物。很難與蘑菇區分，但也無所謂，因為牠除了繁殖擴散之外什麼都不做。乖肉菇唯一已知的用途是作為肥蛆蟲的食物。
+			Jobberknoll: 一種藍色帶斑點的微型鳥類，在死前絕對不會發出任何聲音，死亡那一刻會發出一聲長嘯，由牠聽過的所有聲音倒序回放構成。嘰喳鳥羽毛用於吐真劑和記憶藥水。
+			Dugbog: 一種棲息在沼澤中的生物，靜止時看起來像一塊枯木。當毫無戒心的生物或人走過時，水潛獸會用牠的利齒大口猛撲。牠主要以乖魔蘋果為食，也有咬人腳踝的記錄。
+			MagicalImp: 一種由活體火焰構成的微型調皮生物。小惡魔單獨並不特別危險，但牠們在炎熱環境中成群出沒。牠們喜歡放小火和向路人扔火球。
+		}
+
+		Dialogue: {
+			Ollivander: {
+				Standard1: "好奇……非常好奇。魔杖選擇巫師，你知道的。"
+				Standard2: "我記得我賣出的每一根魔杖。每一根。"
+				Standard3: "試試這根。獨角獸毛杖芯，十一英寸。揮一揮吧！"
+				Standard4: "紫杉木魔杖是較稀有的種類之一，與之匹配的主人同樣非比尋常。"
+				Standard5: "龍心弦魔杖比其他魔杖學得更快，但容易出意外。"
+				Standard6: "獨角獸毛杖芯最為忠誠，但很少產生最強大的魔法。"
+				Standard7: "你試過附魔台了嗎？如今最好的魔杖都在那裡製作。"
+				Rare: "那個不能說名字的人做了偉大的事……可怕，沒錯，但確實偉大。"
+				PostVoldemort: "接骨木魔杖選擇了你。我從沒想過能看到這一天……"
+				PostBasilisk: "你打敗了蛇妖？用那根魔杖？了不起。也許你已經準備好用更強的了。"
+				Hardmode: "世界變了。更黑暗的生物在遊蕩。你需要更強大的魔杖。來看看吧。"
+			}
+			Hagrid: {
+				Standard1: "我不該告訴你的。我真的不該告訴你那件事。"
+				Standard2: "我覺得沒有比這裡更安全的地方了。"
+				Standard3: "你是個巫師！嗯……差不多吧。"
+				Standard4: "被嚴重誤解的美麗生物，真的。我說的是龍。"
+				Standard5: "乖諾伯？乖諾貝乖塔？唉，別提了……"
+				Standard6: "禁忌森林不適合膽小的人，但裡面也有美麗的東西。"
+				Standard7: "我後面養了些可愛的肥蛆蟲，有興趣嗎？不要？隨便你。"
+				Rare: "我願意拿我的性命信任鄧不利多。"
+				PostBasilisk: "你做到了！蛇妖沒了。密室現在安全了，我想。"
+				PostAragog: "乙蛛……牠是個好朋友。但我理解你為什麼必須那樣做。"
+				PostHorntail: "匈牙利角尾龍！天哪，連乖查理都會佩服的！"
+				PostVoldemort: "他走了。這次是真的走了。鄧不利多會以你為榮的。"
+				Night: "晚上最好別去森林裡晃。裡面不是所有生物都很友善。"
+			}
+			PotionsMaster: {
+				Standard1: "我可以教你如何將名聲裝瓶，釀造榮耀，甚至封住死亡。"
+				Standard2: "顯然，名氣不代表一切。翻到第394頁。"
+				Standard3: "魔藥釀造的藝術需要……精微細膩。"
+				Standard4: "在我這家店裡不准愚蠢地揮舞魔杖。"
+				Standard5: "我看你上次的魔藥和池塘水沒什麼區別。"
+				Standard6: "福來福喜的釀造極其棘手。一個錯誤，後果將是災難性的。"
+				Standard7: "如果我發現你偷拿材料，我會讓你後悔莫及。"
+				Rare: "一直都是。"
+				SeeFelixBuff: "我看你在福來福喜的效果下。自己釀的嗎？……勉強合格。"
+				SeeFirewhiskeyBuff: "*嗅* ……那是火焰威士忌嗎？在我的店裡？我應該沒收它。……但我不會。"
+				PostVoldemort: "黑魔王走了。我履行了我的承諾。你只需要知道這些。"
+			}
+			Dobby: {
+				Standard1: "多比是自由的小精靈！多比可以按先生或女士的意願幫忙！"
+				Standard2: "多比聽說過您的偉大事蹟，但多比從不知道……"
+				Standard3: "先生想要一雙襪子嗎？襪子是多比最喜歡的衣物！"
+				Standard4: "多比沒有主人！多比是自由的小精靈，多比是來幫忙的！"
+				Standard5: "在霍格華茲，多比永遠會為需要幫助的人在場。"
+				Standard6: "多比曾經試過烤蛋糕。結果……對房子不太好。"
+				Standard7: "多比非常喜歡這個地方。在這裡沒有人向多比扔鞋子。"
+				Rare: "主人給了多比一隻襪子！多比自由了！"
+				PostVoldemort: "黑魔王走了！多比好高興！多比想用襪子為每個人慶祝！"
+				Night: "多比不喜歡黑暗。黑暗中會發生壞事。但多比很勇敢！"
+				PostBasilisk: "大蛇沒了？多比記得那個密室……多比很高興現在安全了。"
+			}
+			Dumbledore: {
+				Standard1: "沉溺於夢境而忘記生活是不行的。"
+				Standard2: "即使在最黑暗的時刻也能找到幸福，只要記得把燈打開。"
+				Standard3: "決定我們真正是什麼人的，是我們的選擇，而非我們的能力。"
+				Standard4: "言語，以我不太謙虛的看法，是我們取之不盡的魔法之源。"
+				Standard5: "當然，這一切都發生在你的腦海裡，但這為什麼就意味著它不是真的呢？"
+				Standard6: "對於組織有序的頭腦來說，死亡只是下一場偉大的冒險。"
+				Standard7: "笨瓜！乖眼淚！乖殘渣！乖扭扭！……我確實喜歡盛大的宴席。"
+				Rare: "這麼多年過去了？一直都是。"
+				PostDementorKing: "你征服了絕望本身。沒有比希望戰勝黑暗更偉大的勝利了。"
+				BloodMoon: "今夜連月亮都在流血。保持警惕——黑暗生物在血色之光下會變得大膽。"
+				HighMana: "我感覺到你體內蘊含著強大的魔力。明智地使用它——力量既非善也非惡，只有使用者來決定。"
+			}
+			Centaur: {
+				Standard1: "火星今晚很明亮。將會有衝突。"
+				Standard2: "我們觀察，我們不干涉。通常是這樣。"
+				Standard3: "星辰不會說謊。但它們常常被誤解。"
+				Standard4: "人類太急躁了。行星以世紀為單位運動，不是分鐘。"
+				Standard5: "金星在逆行。今天我不建議製作任何重要的東西。"
+				Standard6: "這片森林的半人馬見證了許多時代的更迭。我們記得別人遺忘的事。"
+				Standard7: "你步履堅定。星辰說你肩負偉大的命運……或是一個沉重的背包。"
+				Rare: "我在星辰中看到了令我深感不安的事情，人類。"
+				FullMoon: "滿月揭示一切真相。今夜，星辰清晰地訴說——有某種遠古的事物在蠢動。"
+				NewMoon: "新月隱藏了太多。今夜連星辰都不確定。小心行事。"
+				BloodMoon: "火星怒火中燒！血月降臨——最黑暗的生物今夜將展開獵殺。保持武裝。"
+			}
+			FredAndGeorge: {
+				Standard1: "快來快來！衛斯理巫師法寶——你的魔法惡作劇一站式商店！"
+				Standard2: "我們什麼都有，從翹課零食盒到秘魯即時黑暗粉末！"
+				Standard3: "媽媽還是不太認同，不過你看過我們的銷售數字嗎？"
+				Standard4: "給我們差評的話，下一封吼叫信就免費送到你家。真的。"
+				Standard5: "試試我們的新流鼻血乖牛乖軋糖！以血換魔力——絕對安全！大概吧。"
+				Standard6: "嘔吐軟糖是我們的暢銷產品。沒有什麼比它更快清除減益——或清空你的胃。"
+				Standard7: "翹課零食盒：當你絕對必須裝死來躲避Boss攻擊的時候。"
+				Standard8: "我們曾經把整條走廊變成了沼澤。我們這輩子最棒的一天。"
+				Rare: "我們莊嚴宣誓我們絕對不懷好意。"
+				DuringInvasion: "食死人？太棒了！是時候在真正的戰鬥中測試我們的新盾牌帽了！"
+				PostVoldemort: "那個人沒了？！這得慶祝！煙火免費——真的！"
+				PostUmbridge: "你把恩不利乖吉趕走了？！我們想做這件事好多年了。你是我們的英雄！"
+				BloodMoon: "紅月，紅色大特價！今晚全部半價！……好吧不是真的。但流鼻血乖牛乖軋糖倒是很應景。"
+			}
+			Lupin: {
+				Standard1: "黑魔法防禦術的訣竅在於——知道你害怕什麼，然後直面它。"
+				Standard2: "我認識你的父母，可以這麼說。他們是勇敢的人。"
+				Standard3: "劫盜地圖從不說謊。它顯示每個人、每條通道、每個秘密。"
+				Standard4: "遇到黑暗生物後吃點巧克力會有幫助。相信我。"
+				FullMoon: "我今晚……感覺不太像自己。也許保持距離比較好。"
+				Shack: "尖叫棚屋對我來說有很多回憶。不全是愉快的，但都很重要。"
+			}
+			Neville: {
+				Standard1: "我沒有別人說的那麼勇敢。我只是做了需要做的事。"
+				Standard2: "奶奶總說我會一事無成。我證明她錯了，不是嗎？"
+				Standard3: "D.A.教會我的比任何課都多。我們互相照顧。"
+				Standard4: "霍格華茲值得為之戰鬥。每一塊石頭，每一條走廊，每一個學生。"
+				NaginiDone: "娜吉尼倒下了。將黑魔王束縛在這個世界的紐帶又少了一條。"
+			}
+		}
+
+		Passages: {
+			PassageButton: 通道
+			NetworkUnlocked: "秘密通道網絡已被揭示！隱蔽傳送現已可用。"
+			Discovered: "發現秘密通道：{0}！"
+			Used: "你悄悄穿過了隱藏通道……"
+			NotUnlocked: "通道網絡尚未揭示。已發現 {0}/2 條通道。"
+			OnCooldown: "通道仍在穩定中。{0} 秒後可用。"
+			Ready: "通道網絡已就緒。已發現 {0} 條通道。與路平交談以旅行。"
+		}
+
+		Events: {
+			DeathEaterInvasion: {
+				Start: 黑魔標記升起……食死人正在進攻！
+				End: 食死人已被擊退。夜晚再次安全了。
+				Wave2: 更多黑暗生物從陰影中出現！
+				Wave3: 黑魔王最危險的僕人已經抵達！
+			}
+			QuidditchSnitch: {
+				Spawn: 金探子出現了！騎上飛天掃帚抓住它來獲得獎勵！
+				Escaped: 金探子逃走了！
+				Warning: 金探子正在逃跑！還剩10秒！
+				Caught: "{0}抓住了金探子！為他們的學院加150分！"
+			}
+			UmbridgeTaunts: {
+				Decree1: "教育法令第24號：所有學生必須接受質詢！"
+				Decree2: "教育法令第31號：魔杖一律沒收！"
+				Decree3: "教育法令第42號：禁止一切娛樂！"
+				Decree4: "我要維持秩序！"
+				Decree5: "魔法部最清楚了，親愛的。"
+			}
+		}
+
+		Biomes: {
+			ForbiddenForestBiome: {
+				DisplayName: 禁忌森林
+				TownNPCDialogueName: 禁忌森林
+			}
+		}
+
+		Forest: {
+			Unlocked: "禁忌森林深處的道路已開放。海格的遠征任務現已可用。"
+			HagridBriefing: "在禁忌森林中於夜間使用森林遠征燈籠開始任務。"
+			UnicornGladeStart: "獨角獸林地——黑暗的腐化痕跡已出現。清除它們以恢復林地的純淨。"
+			SkywatchStart: "半人馬星象台——不穩定的預兆之石正在干擾天象觀測。將它們穩定下來。"
+			NestStart: "八眼巨蛛巢穴——巢穴標記正在產生蜘蛛。摧毀它們以清除巢穴。"
+			CompleteObjectives: "在時間耗盡前摧毀{0}個目標。"
+			ObjectiveProgress: "已完成目標：{0}/{1}"
+			TimeWarning: "剩餘30秒！森林變得躁動不安！"
+			UnicornGladeComplete: "腐化痕跡已清除。獨角獸林地閃爍著恢復的純淨光芒。"
+			SkywatchComplete: "預兆之石已穩定。半人馬們又可以觀測星象了。"
+			NestComplete: "巢穴標記已摧毀。蜘蛛巢穴歸於沉寂。"
+			MissionFailed: "時間耗盡。森林收回了它的秘密。"
+			NotUnlocked: "森林深處的道路被封印。請先擊敗蛇妖。"
+			ActiveStatus: "遠征進行中：{0}/{1}個目標，剩餘{2}秒。"
+			ReadyStatus: "已完成遠征：{0}次。下一個任務：{1}。"
+			SourceExpedition: 森林遠征
+			ExpeditionButton: 遠征狀態
+			ThestralStart: "騎士墜空地——月光信標出現在空地上。激活它們以穩定光譜能量。"
+			ThestralComplete: "信標已穩定。騎士墜空地在月光寧靜中柔和地發光。"
+		}
+
+		Shack: {
+			Unlocked: "海格悄悄遞給你一枚小木牌。'知道怎麼讓柳樹定住？好。小心點。'"
+			WillowStart: "柳樹壓制——打人柳正在狂暴抽打！癱瘓3個枝幹節點！"
+			TunnelStart: "隧道穩定——通道正在坍塌！穩固4個隧道守護！"
+			ShackStart: "棚屋封鎖——月光守護陣正在碎裂！在屏障崩潰前封印3處裂縫！"
+			CompleteObjectives: "在時間耗盡前清除{0}個目標。"
+			ObjectiveProgress: "目標：{0}/{1}"
+			TimeWarning: "還剩30秒！通道正在失穩！"
+			WillowComplete: "柳樹平靜了。通道暫時安全了。"
+			TunnelComplete: "隧道穩住了。守護陣穩定。"
+			ShackComplete: "棚屋的封鎖守護陣已加固。月光無法觸及其中之物。"
+			MissionFailed: "通道已坍塌。改天晚上再試吧。"
+			NotUnlocked: "打人柳守護著它的秘密。先擊敗乖乖芬沃·乖乖石背。"
+			ActiveStatus: "任務進行中：{0}/{1}目標已清除，剩餘{2}秒。"
+			ReadyStatus: "已完成任務：{0}次。下一個：{1}。"
+			SourceMission: 尖叫棚屋任務
+			FullMoonWarning: "滿月升起！棚屋的守護陣在增強的月光下緊繃。危險會更強——但獎勵也會更豐厚。"
+		}
+
+		DA: {
+			RoomResistance: "萬應室：抵抗軍總部"
+			Unlocked: "鄧不利多軍已重組。D.A.加隆閃爍著使命的光芒。"
+			DefenseStart: "守護陣防禦——城堡守護陣正遭受攻擊！穩定守護錨點！"
+			DefenseComplete: "守護陣堅固如初。霍格華茲安然無恙。"
+			DefenseFailed: "守護陣已破裂。重整旗鼓再戰。"
+			MeetingCalled: "口袋裡的D.A.加隆發熱了。鄧不利多軍集結。"
+			MeetingComplete: "會議結束。每個人都更加堅強和堅定。"
+			Progress: "已穩定守護錨點：{0}。城堡防禦持續增強。"
+			WardHolds: "守護陣堅守住了！城堡的附魔以煥新之力跳動。"
+			WardFalling: "一個守護陣正在崩潰！在它倒塌前到達錨點！"
+			SourceDefense: 城堡守護陣防禦
+			AnchorStabilized: "守護錨點已穩定！附魔網路增強。"
+			AnchorSpawned: "一個守護錨點在城堡防禦動搖時具現化。"
+			ThreadWoven: "城堡守護絲線從穩定的守護陣殘留中具現化。"
+			RewardGiven: "城堡守護陣為你的付出留下了殘餘魔力。抵抗決心增強了你。"
+			AberfortthContact: "阿不福思從吧台後點了點頭。'通道開著。去吧。'"
+			DANotWeapon: "鄧不利多軍是一個防禦組織——學生們互相保護、守護學校。"
+			HogsHeadDescription: "霍格莫德邊緣一間簡陋但可靠的酒吧。不是豪華旅館。"
+			ResistanceNotTournament: "這不是錦標賽。守護陣是真實的，危險也是。"
+		}
+
+		Triwizard: {
+			Unlocked: "火焰杯選中了你作為霍格華茲冠軍！乖三巫鬥法大賽開始！"
+			Task1Intro: "第一項任務：從龍巢中取回金蛋。擊敗或智取匈牙利角尾龍！"
+			Task1Start: "第一項任務：匈牙利角尾龍守護著金蛋！在時間耗盡前取回它！"
+			Task1Complete: "金蛋到手了！第一項任務完成！"
+			Task2Start: "第二項任務：潛入黑湖！從人魚手中救出3個標記。已授予鰓囊草！"
+			Task2Complete: "所有人質已救出！第二項任務完成！"
+			Task3Start: "第三項任務：進入乖三巫迷宮！清除5個魔法障礙到達獎杯！"
+			Task3Complete: "乖三巫獎杯到手了！"
+			Champion: "你是乖三巫鬥法冠軍！永恆的榮耀屬於你！"
+			ChampionCeremony: "大禮堂爆發出歡慶！一位名副其實的傳奇冠軍！"
+			RescueProgress: "救援標記：{0}/{1}"
+			MazeProgress: "已清除障礙：{0}/{1}"
+			TimeWarning: "還剩30秒！快！"
+			TaskFailed: "時間到了！任務失敗。"
+			TryAgain: "使用火焰杯重新嘗試。"
+			NotUnlocked: "乖三巫鬥法大賽尚未開始。先擊敗匈牙利角尾龍。"
+			AlreadyChampion: "你已經被加冕為乖三巫冠軍！"
+			Status: "乖三巫鬥法大賽：任務1：{0} | 任務2：{1} | 任務3：{2}"
+			SourceTask: 乖三巫任務完成
+			GobletSelection: "火焰杯燃起藍色火焰！它選中了你作為霍格華茲冠軍！德姆蘭和乖布斯巴頓也選出了他們的冠軍。乖三巫鬥法大賽開始！"
+			FinalStandings: "最終排名：霍格華茲 {0} | 德姆蘭 {1} | 乖布斯巴頓 {2}"
+			SchoolStandings: "學校排名：霍格華茲 {0} | 德姆蘭 {1} | 乖布斯巴頓 {2}"
+		}
+
+		Ministry: {
+			Unlocked: "乖金斯萊的貓頭鷹送來訊息：'鳳凰社需要你。神秘事務司已被入侵。'"
+			OrderBriefing: "你的任務：在食死人奪取前搶回預言球。"
+			MissionStart: "神秘事務司——你進入了預言廳。取回標記的預言球！"
+			CollectOrbs: "在時間耗盡前收集{0}個預言球。"
+			OrbProgress: "預言球：{0}/{1}"
+			TimeWarning: "還剩30秒！食死人正在逼近！"
+			MissionComplete: "任務完成！{0}名食死人被消滅。預言已被保護。"
+			OrderReward: "鳳凰社致謝——預言塵和嘉獎已收到。"
+			MissionFailed: "任務失敗。食死人已奪取預言。"
+			TryAgain: "使用魔法部訪客徽章重新嘗試。"
+			NotUnlocked: "神秘事務司已被封鎖。先擊敗貝拉乖雷斯壯。"
+			ActiveStatus: "任務進行中：{0}/{1}預言球已收集，剩餘{2}秒。"
+			ReadyStatus: "已完成任務：{0}次。準備接受下次派遣。"
+			SourceMission: 神秘事務司任務完成
+			MissionButton: 任務狀態
+			TimeChamberUnlocked: "時間密室已被揭示。不穩定的時間神器需要穩定。"
+			TimeChamberStart: "時間密室——時間神器正在失穩！收集沙漏！"
+			CollectHourglasses: "在時間崩潰前穩定{0}個不穩定沙漏。"
+			HourglassProgress: "沙漏：{0}/{1}"
+			TimeChamberComplete: "時間危機已解除。沙漏已穩定。"
+			TimeChamberFailed: "時間崩潰了。時間神器已遺失。"
+			SourceTimeChamber: 時間密室穩定
+			DeathChamberUnlocked: "死亡密室已被打開。乖帷幕正在碎裂。"
+			VeilWarning: "警告：生死之間的乖帷幕不容輕忽。封印裂縫。不要逗留。"
+			DeathChamberStart: "死亡密室——乖帷幕正在碎裂！在邊界崩潰前封印裂隙！"
+			SealFractures: "封印{0}個乖帷幕裂縫。用力量摧毀它們。"
+			FractureProgress: "裂縫封印：{0}/{1}"
+			DeathChamberComplete: "乖帷幕裂縫已封印。生死之間的邊界得以維持。"
+			VeilSealed: "神秘事務司致謝。很少有人敢接近乖帷幕。"
+			DeathChamberFailed: "裂縫擴散失控。乖帷幕仍然不穩定。"
+			SourceDeathChamber: 死亡密室封印
+		}
+
+		Gringotts: {
+			Unlocked: "一個古靈閣妖精走來：'我們已授權合格巫師進行金庫回收合同。'"
+			MissionStart: "古靈閣金庫——進入金庫並回收標記的遺物。注意安全守護。"
+			CollectRelics: "回收{0}個金庫遺物。妖精們在注視著。"
+			RelicProgress: "遺物：{0}/{1}"
+			JinxWarning: "防盜咒觸發！金庫守護已啟動！"
+			TimeWarning: "還有30秒！金庫大門即將關閉！"
+			MissionComplete: "所有遺物已回收。妖精們對你的效率表示認可。"
+			GoblinThanks: "加隆塵和金幣——公平工作的公平報酬。"
+			MissionFailed: "時間到。金庫已自行封鎖。"
+			NotUnlocked: "古靈閣金庫需要先擊敗蛇妖。"
+			ActiveStatus: "金庫行動進行中：{0}/{1}遺物已收集，剩餘{2}秒。"
+			ReadyStatus: "已完成金庫行動：{0}次。準備接受下一個合同。"
+			SourceVault: 古靈閣金庫合同
+			VaultButton: 金庫狀態
+		}
+
+		DiagonAlley: {
+			Welcome: "你輕敲乖破釜酒吧後面的牆壁……磚塊自行重新排列，乖斜角巷在你面前展開！"
+			StreetDescription: "鵝卵石街道向前延伸，兩旁是魔法店面，熙來攘往的巫師們。"
+			Gringotts: "  古靈閣銀行——白色大理石建築高聳在前。與妖精櫃員交談獲取金庫合同。"
+			Ollivanders: "  奧利凡德魔杖店——自公元前382年以來的精品魔杖。最好的魔杖在這裡選擇它們的巫師。"
+			Wheezes: "  乖乖衛氏魔法把戲坊——乖弗雷和乖乖喬治的笑話商店閃爍著色彩和喧囂。"
+			SourceVisit: 乖斜角巷訪問
+			CartDescent1: "妖精帶你來到鐵軌上的推車。'金庫訪問已授權。抓緊了。'"
+			CartDescent2: "推車猛地向前衝，深入倫敦地下。火把在身旁飛掠。"
+			CartDescent3: "伴隨著刺耳的剎車聲，推車停了下來。'你的金庫。不要碰不屬於你的東西。'"
+		}
+
+		StMungos: {
+			Unlocked: "聖芒戈魔法傷病醫院現已開放。與治療師交談或使用訪客通行證。"
+			Entrance: "病房已開放。治療師需要分診協助。"
+			SpellWardStart: "咒術傷害病房——咒術殘留節點正在不穩定化。摧毀它們以穩定。"
+			CreatureWardStart: "生物傷害病房——毒傷節點正在擴散毒素。摧毀它們。"
+			PotionWardStart: "藥水事故病房——坩堝溢出節點正在洩漏煙霧。中和它們。"
+			StabilizeNodes: "在時間耗盡前穩定{0}個節點。"
+			NodeProgress: "已穩定節點：{0}/{1}"
+			TimeWarning: "還剩30秒！快！"
+			SpellWardComplete: "咒術傷害病房已穩定。咒術已被控制。"
+			CreatureWardComplete: "生物傷害病房已穩定。毒素已被中和。"
+			PotionWardComplete: "藥水事故病房已穩定。煙霧已消散。"
+			MissionFailed: "病房已被壓垮。分診失敗。"
+			NotUnlocked: "進入聖芒戈需要先擊敗匈牙利角尾龍。"
+			ActiveStatus: "分診進行中：{0}/{1}節點已穩定，剩餘{2}秒。"
+			ReadyStatus: "已完成任務：{0}次。下一個病房：{1}。"
+			SourceTriage: 聖芒戈分診
+			TriageButton: 分診狀態
+		}
+
+		Knockturn: {
+			Unlocked: "一條狹窄的小巷引起了你的注意……乖乖翻倒巷。這裡的陰影有重量。"
+			Warning: "乖博金與乖伯乖克斯有封鎖合同，給那些夠膽的人。處理詛咒物品後果自負。"
+			MissionStart: "乖乖翻倒巷——乖博金有需要封鎖的詛咒物品。小心摧毀它們。"
+			ContainObjects: "封鎖{0}件危險的黑魔法物品。在它們的詛咒擴散之前擊毀它們。"
+			ContainProgress: "已封鎖物品：{0}/{1}"
+			TimeWarning: "還剩30秒！詛咒正在增強！"
+			MissionComplete: "合同完成。黑魔法物品已被封鎖。"
+			BorginPays: "乖博金一言不發地把你的報酬推過櫃台。"
+			MissionFailed: "詛咒壓倒了封鎖。乖博金看起來不太高興。"
+			NotUnlocked: "乖乖翻倒巷已封鎖。先擊敗貝拉乖雷斯壯並訪問乖斜角巷。"
+			ActiveStatus: "合同進行中：{0}/{1}物品已封鎖，剩餘{2}秒。"
+			ReadyStatus: "已完成合同：{0}次。乖博金還有更多活要幹。"
+			SourceContract: 乖乖翻倒巷封鎖合同
+			ContractButton: 合同狀態
+			OpalContained: "詛咒蛋白石項鏈碎裂了！它的黑暗附魔被打破。"
+			CabinetSealed: "消失櫃顫抖著靜止了。裂隙已被封鎖。"
+		}
+
+		Grimmauld: {
+			Revealed: "乖赤膽忠心咒解除。乖乖古里某街十二號在你面前現形。"
+			Address: "鳳凰社總部可在乖乖古里某街十二號找到。"
+			Description: "安全屋需要持續維護以應對侵擾、詛咒畫像和黑暗生物。"
+			DoxySweepStart: "毒精清掃——房子裡嗡嗡作響。在它們失控繁殖前摧毀毒精巢穴！"
+			PortraitStart: "畫像壓制——乖沃布加的畫像又在尖叫了。壓制詛咒畫框！"
+			BoggartStart: "乖乖博格特防護——恐懼顯現已扎根。驅逐它們——笑笑咒最有效！"
+			ClearThreats: "在時間耗盡前清除{0}個威脅。"
+			ThreatProgress: "已清除威脅：{0}/{1}"
+			TimeWarning: "還剩30秒！侵擾正在蔓延！"
+			DoxySweepComplete: "毒精巢穴已被摧毀。嗡嗡聲停止了——十二號終於鬆了口氣。"
+			PortraitComplete: "乖沃布加的畫像終於沉默了。尖叫聲已停止。"
+			BoggartComplete: "乖乖博格特化為薄霧消散了！衣櫃已清空。"
+			MissionFailed: "安全屋已被壓垮。結界再次封鎖了它。"
+			NotRevealed: "乖赤膽忠心咒隱藏了這個地方。先擊敗阿茲卡班絕望並完成一次神秘事務司任務。"
+			ActiveStatus: "安全屋維護進行中：{0}/{1}威脅已清除，剩餘{2}秒。"
+			ReadyStatus: "已完成任務：{0}次。下一次維護：{1}。"
+			SourceMaintenance: 乖乖古里某街安全屋維護
+			MissionButton: 安全屋狀態
+			PortraitSilenced: "乖沃布加的畫像終於沉默了。尖叫聲已停止。"
+			RewardGiven: "鳳凰社為你的服務留下了補給。安全屋決心增強了你。"
+			NestSpawning: "嗡嗡聲充滿房間——一個毒精巢穴正在生成蟲群！"
+			PortraitShrieking: "污物！渣滓！血統叛徒！——乖沃布加的畫像向所有人尖聲咒罵。"
+			BoggartLurking: "衣櫃裡有什麼東西在移動……一隻乖乖博格特。使用笑笑咒！"
+			WardStable: "乖赤膽忠心結界堅固地守住了。十二號仍對敵人隱藏。"
+			OrderGratitude: "乖金斯萊讚許地點頭。鳳凰社感謝你守護總部。"
+			ConcealmentWoven: "隱匿絲線從穩定的結界殘留中具現化。"
+		}
+
+		InfoDisplays: {
+			WizardInfoDisplay.DisplayName: 巫師Boss進度
+		}
+
+		LoadingTips: {
+			Tip1: "巫師世界：製作一個附魔台來開始你的魔法旅程！"
+			Tip2: "巫師世界：魔杖選擇巫師——試試不同的魔杖來使用不同的咒語。"
+			Tip3: "巫師世界：夜間造訪禁忌森林可以遇到獨特的魔法生物。"
+			Tip4: "巫師世界：從魔法生物身上收集魔法精華來進行高級製作。"
+			Tip5: "巫師世界：擊敗蛇妖、匈牙利角尾龍和佛地魔！"
+			Tip6: "巫師世界：向奧利乖凡德購買標準咒語書來獲得完整指南。"
+			Tip7: "巫師世界：每套霍格華茲學院裝甲都有對應的標誌性武器。"
+			Tip8: "巫師世界：獨角獸之血只在禁忌森林中掉落——稀有的珍寶。"
+		}
+
+		Battle: {
+			Unlocked: "城堡守護陣在顫抖。霍格華茲之戰現在可以開始了。做好準備。"
+			Preparation: "摧毀所有核心分靈體、保衛守護陣並面對阿茲卡班絕望後方可解鎖城堡圍攻。"
+			Phase1Start: "第一階段：城堡防禦——食死人攻擊外圍守護陣！保護城堡守護節點！"
+			DefendCastle: "在守護陣崩潰前保衛{0}個城堡守護節點！"
+			Phase2Start: "第二階段：突破——外圍防禦已失守！在黑暗吞噬城堡前封住突破封印！"
+			TimeWarning: "還剩30秒！城堡防禦正在崩潰！"
+			ObjectiveProgress: "目標完成：{0}/{1}"
+			NaginiSlain: "娜吉尼倒下了——最後一個分靈體被摧毀。佛地魔與永生的最後紐帶被斬斷。"
+			Victory: "霍格華茲之戰勝利了。城堡屹立不倒。希望長存。"
+			VoldemortReady: "黑魔王的防禦已被粉碎。現在可以在他最脆弱時與之對決。"
+			Failed: "城堡陷落了。守護陣已被打破。重整旗鼓再試。"
+			NotUnlocked: "霍格華茲之戰尚不可用。需摧毀所有核心分靈體、保衛守護陣並擊敗阿茲卡班絕望。"
+			ActiveStatus: "戰鬥進行中：第{0}階段，目標{1}，剩餘{2}秒。"
+			ReadyStatus: "已贏得戰鬥：{0}次。城堡銘記你的功績。"
+			SourceBattle: 霍格華茲之戰
+			TrackerTitle: "=== 分靈體獵殺狀態 ==="
+			VoldemortPower: "佛地魔的力量：{0}%"
+		}
+
+		Houses: {
+			Gryffindor: 乖葛萊芬多
+			Slytherin: 史萊哲林
+			Ravenclaw: 乖雷乖文乖克勞
+			Hufflepuff: 赫夫帕夫
+			Unknown: 未知
+		}
+
+		DarkArts: {
+			Tier2Warning: "你感覺到黑魔法在侵蝕……你的乖護法正在減弱。"
+			Tier3Warning: "偏執感襲來。魔法部開始懷疑了。"
+			Tier4Warning: "黑魔法吞噬了你。治療魔法開始衰退。"
+			Tier5Warning: "你已完全擁抱了黑魔法。也許已經無法回頭了。"
+			Cleansed: "黑暗正在消退……"
+		}
+
+		RoomOfRequirement: {
+			Restoration: "修復之室"
+			Recovery: "恢復之室"
+			HiddenThings: "隱密之室"
+			ComeAndGo: "來去自如之室"
+			Sanctuary: "庇護之室"
+			Manifests: "{0}在你周圍顯現……"
+			TooltipInfo: "召喚一間根據你當前需求變化的魔法房間"
+			TooltipResistance: "[c/C8B48C:D.A.加隆 + 已守護城堡：抵抗軍總部]"
+			TooltipModes1: "[c/B4C8FF:絕望 > 15%：修復之室] | [c/66FF66:低生命：恢復之室]"
+			TooltipModes2: "[c/6666FF:手持魔杖：訓練之室]"
+			TooltipModes3: "[c/FFD700:攜帶金幣：金庫之室] | [c/C8B4FF:預設：庇護之室]"
+		}
+
+		OwlPost: {
+			DescMushroom: "10個蘑菇用於藥水訂單"
+			DescDaybloom: "5株日光花給藥劑大師"
+			DescFallenStar: "3個墜落之星給奧利凡德"
+			DescCobweb: "20個蜘蛛網給海格的生物"
+			DescLens: "5個透鏡給半人馬的星象觀測"
+			DescBook: "3本書給霍格華茲圖書館"
+			DescBottle: "10個瓶子給藥劑學課堂"
+			DescGoldBar: "2根金錠給古靈閣"
+			DescFeather: "5根羽毛給貓頭鷹梳理"
+			DescSilk: "5匹絲綢給新校服"
+			DeliveryComplete: "貓頭鷹郵遞完成！收到{0}個魔法精華。"
+			CompletedToday: "今天的快遞已完成。明天再來查看！"
+			NoDeliveries: "尚未發布快遞。"
+			RequestFormat: "貓頭鷹郵遞請求：送達{0}個{1}。獎勵：魔法精華 + 增益。"
+		}
+
+		HorcruxHunt: {
+			DiaryName: "乖瑞斗的日記"
+			LocketName: "史萊哲林的小金匣"
+			CupName: "赫夫帕夫的金杯"
+			DiademName: "乖雷乖文乖克勞的王冠"
+			NaginiName: "娜吉尼"
+			DiaryFlavor: "日記尖叫著，墨水如血般從書頁中湧出！"
+			LocketFlavor: "小金匣猛然彈開——一個陰影般的身影尖叫著消散了！"
+			CupFlavor: "金杯融化變形，黑魔法從中大量流出！"
+			DiademFlavor: "王冠碎裂——一聲幽靈般的哀號迴蕩在空氣中！"
+			DefaultFlavor: "分靈體被摧毀了！"
+			SoulDestroyed: "佛地魔的一片靈魂碎片被摧毀了！（{0}/4）"
+			DarkLordWeakens: "黑魔王正在變弱……（{0}%力量剩餘）"
+			AllDestroyed: "所有核心分靈體已被摧毀！佛地魔的靈魂再也無法躲藏。"
+			SeekCloak: "去找鄧不利多的畫像。真正的隱形斗篷現在可以取回了。"
+			EndureAzkaban: "希望必須經受住阿茲卡班的絕望，死神聖物之路才能繼續。"
+			NaginiFalls: "娜吉尼倒下了。又一條將佛地魔束縛在人世的紐帶被斬斷。"
+			NeedTool: "你需要蛇妖獠牙或乖葛萊芬多之劍才能摧毀這個分靈體！"
+		}
+
+		Azkaban: {
+			EventStart1: "一陣寒意席捲大地……阿茲卡班的守護陣正在崩潰！"
+			EventStart2: "保持乖護法或守護之光在身邊。絕望本身正與催狂魔一同狩獵。"
+			EventEnd: "催狂魔撤退回阿茲卡班……{0}個絕望錨點被封印。"
+		}
+
+		SceneEffects: {
+			AzkabanOppression: "空氣變得寒冷。絕望從牆壁中滲出。"
+			MysteryProphecy: "命運的低語迴蕩在預言廳中。"
+			MysteryTime: "時間在這裡扭曲。空氣閃爍著時間的扭曲。"
+			MysteryDeath: "乖帷幕在召喚。遠離拱門。"
+			GrimmauldHostile: "黑暗物品蠢蠢欲動。乖布萊克家族的遺產猶存。"
+			StMungosWard: "魔法疾病瀰漫在空氣中。請謹慎行事。"
+			BattleSiege: "城堡在攻擊下顫抖。堅守陣線。"
+			DiagonBustle: "乖斜角巷的魔法喧囂環繞著你。"
+			KnockturnShadow: "乖乖翻倒巷中的陰影加深了。小心腳下。"
+			GringottsDepth: "在倫敦地底深處，古靈閣的金庫等待著。"
+			ShriekingMoonlit: "月光穿透破碎的百葉窗。有什麼東西在蠢動。"
+			WillowDanger: "乖渾拼柳在頭頂狂抽。壓低身體。"
+		}
+
+		QuidditchMatch: {
+			PitchEntry: "你進入了魁地奇球場！邊界標記閃耀起來。"
+			ScoreUpdate: "比分：{0} - {1}"
+			GoalScored: "進球！得{0}分！"
+			HoopHit: "穿過球門環！10分！"
+			Commentary1: "鬼飛球釋放了！"
+			Commentary2: "精彩的飛行！"
+			Commentary3: "觀眾沸騰了！"
+			MatchStart: "比賽開始！球員們，騎上你們的飛天掃帚！"
+			MatchEnd: "比賽結束！最終比分：{0}比{1}"
+			SeasonEvent: "魁地奇賽季到了！多個金探子出現了！"
+			SeasonEvent2: "騎上飛天掃帚盡可能多地抓住它們！"
+			RankUp: "魁地奇晉級：{0}！"
+			BoundaryMarker: "魁地奇球場邊界"
+			StandsBanner: "魁地奇看台"
+		}
+
+		Transit: {
+			PassageFade: "牆壁閃爍，一條隱藏通道出現了……"
+			PassageTravel: "你悄悄穿過秘密通道，腳步聲在黑暗中迴蕩……"
+			PassageArrive: "你從通道中走出，拍掉身上的灰塵。"
+			HogsHeadEntry: "乖阿不福思點了點頭。畫像後面的通道打開了。"
+			HogsHeadTravel: "蜿蜒的隧道向前延伸，遠處的魔杖光照亮了道路。"
+			WillowEntry: "結點凍住了。乖渾拼柳靜止了。快走……"
+			WillowTunnel: "低矮的天花板，潮濕的泥土。通道向棚屋方向變窄。"
+			GringottsDescend: "礦車猛然下降。火把在身旁飛掠。你的胃翻了一下。"
+			GringottsDeep: "越來越深地潛入倫敦地下。空氣變得更冷了。"
+			GringottsArrive: "礦車嘎吱一聲停了下來。面前是：一扇金庫大門。"
+		}
+
+		LoadingTips: {
+			Tip9: "巫師世界：查看《預言家日報》了解今天的巫師挑戰——賺取額外精華！"
+			Tip10: "巫師世界：《巫師年鑑》（鄧不利多出售）是一本關於整個模組的10頁百科全書。"
+		}
+
+		BattleEndgame: {
+			NaginiPhase: "娜吉尼蜷縮著保護性地盤踞！趁現在出手——摧毀最後一個分靈體！"
+			NaginiStrike: "奈威舉起乖葛萊芬多之劍！娜吉尼必須倒下！"
+			CastleDefenders: "城堡守衛者集結！石甲衛士向前線進發。"
+			McGonagallRally: "乖麥教授舉起魔杖：'石墩出擊！'城堡的雕像列隊出征。"
+			DefenderFlavor: "石質守衛者在走廊巡邏，保護學生免受傷害。"
+			SiegeIntensity: "城堡在顫抖。明暗魔法的爆炸照亮了天空。"
+		}
+
+		// === PHASE 30 ===
+		DailyChallenge: {
+			Complete: "每日巫師挑戰完成！獲得了魔法精華獎勵！"
+		}
+
+		HogwartsLetterEvent: {
+			OwlArrives: "一隻貓頭鷹俯衝而下，在你腳邊投下了一封信！"
+			Accepted: "你已被巫師世界錄取！"
+		}
+
+		Renown: {
+			Champion: "學院冠軍！聲望達到頂點！"
+			MajorBuff: "150 學院聲望！高級學院加成已啟動！"
+			MinorBuff: "50 學院聲望！初級學院加成已啟動！"
+		}
+
+		Resurrection: {
+			RiseFromAshes: "你從灰燼中重生！"
+		}
+
+		Bestiary: {
+			Neville: "奈威·隆巴頓——乖葛萊芬多學生、D.A.成員、霍格華茲之戰的英雄。出售戰鬥補給和分靈體追蹤器。在贏得霍格華茲之戰後出現。"
+		}
+	}
+}

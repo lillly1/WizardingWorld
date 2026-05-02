@@ -1,0 +1,67 @@
+[
+  {
+    "Name": "RoomRecoveryBuff",
+    "Mode": "Icon",
+    "Width": 32,
+    "Height": 32,
+    "TrimPixels": 24,
+    "RawOutputPath": "raw/RoomRecoveryBuff.png",
+    "OutputPath": "../../Content/Buffs/RoomRecoveryBuff.png",
+    "Prompt": "Square fantasy game buff icon, centered, a glowing silver-white heart above a small restorative potion vial with gentle sparkles, magical healing room effect, rich navy and plum background, clean readable symbol, no text, no UI, no checkerboard, no border.",
+    "_source_manifest": "phase3_icon_assets.json",
+    "_rank": 1,
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Buffs/RoomRecoveryBuff.png"
+  },
+  {
+    "Name": "RoomSanctuaryBuff",
+    "Mode": "Icon",
+    "Width": 32,
+    "Height": 32,
+    "TrimPixels": 24,
+    "RawOutputPath": "raw/RoomSanctuaryBuff.png",
+    "OutputPath": "../../Content/Buffs/RoomSanctuaryBuff.png",
+    "Prompt": "Square fantasy game buff icon, centered, a luminous protective dome around a silver shield and wand, sanctuary ward magic, blue-silver glow, deep midnight background, clean readable symbol, no text, no UI, no checkerboard, no border.",
+    "_source_manifest": "phase3_icon_assets.json",
+    "_rank": 1,
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Buffs/RoomSanctuaryBuff.png"
+  },
+  {
+    "Name": "RoomTrainingBuff",
+    "Mode": "Icon",
+    "Width": 32,
+    "Height": 32,
+    "TrimPixels": 24,
+    "RawOutputPath": "raw/RoomTrainingBuff.png",
+    "OutputPath": "../../Content/Buffs/RoomTrainingBuff.png",
+    "Prompt": "Square fantasy game buff icon, centered, crossed wand and target sigil with bright orange-gold sparks, focused practice and mastery theme, deep crimson background, clean readable symbol, no text, no UI, no checkerboard, no border.",
+    "_source_manifest": "phase3_icon_assets.json",
+    "_rank": 1,
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Buffs/RoomTrainingBuff.png"
+  },
+  {
+    "Name": "RoomVaultBuff",
+    "Mode": "Icon",
+    "Width": 32,
+    "Height": 32,
+    "TrimPixels": 24,
+    "RawOutputPath": "raw/RoomVaultBuff.png",
+    "OutputPath": "../../Content/Buffs/RoomVaultBuff.png",
+    "Prompt": "Square fantasy game buff icon, centered, a golden vault chest with a protective rune and a few glowing coins, magical storage and treasure theme, warm gold-brown background, clean readable symbol, no text, no UI, no checkerboard, no border.",
+    "_source_manifest": "phase3_icon_assets_remaining.json",
+    "_rank": 0,
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Buffs/RoomVaultBuff.png"
+  },
+  {
+    "Name": "WardOfHopeBuff",
+    "Mode": "Icon",
+    "Width": 32,
+    "Height": 32,
+    "TrimPixels": 24,
+    "RawOutputPath": "raw/WardOfHopeBuff.png",
+    "OutputPath": "../../Content/Buffs/WardOfHopeBuff.png",
+    "Prompt": "Square fantasy game buff icon, centered, a radiant silver ward-circle with a small lantern-like blue flame at its center, hope pushing back prison darkness, protective anti-despair magic, cool blue-silver glow, deep midnight background, clean readable symbol, no text, no UI, no checkerboard, no border.",
+    "_source_manifest": "phase3_remaining_assets.json",
+    "_rank": 6,
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Buffs/WardOfHopeBuff.png"
+  }
+]

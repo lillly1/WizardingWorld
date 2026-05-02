@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36">
+  <defs>
+    <linearGradient id="scarf" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#8b1a1a"/>
+      <stop offset="50%" stop-color="#c4a44a"/>
+      <stop offset="100%" stop-color="#8b1a1a"/>
+    </linearGradient>
+    <linearGradient id="robe" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2a2a2a"/>
+      <stop offset="100%" stop-color="#1a1a1a"/>
+    </linearGradient>
+  </defs>
+  <!-- Dark robes -->
+  <path d="M6 28 Q8 24 13 23 L18 22 L23 23 Q28 24 30 28 L30 36 L6 36Z" fill="url(#robe)"/>
+  <!-- Gryffindor scarf -->
+  <path d="M12 23 Q14 25 18 25 Q22 25 24 23 L24 22 Q22 24 18 24 Q14 24 12 22Z" fill="#8b1a1a"/>
+  <!-- Scarf stripes -->
+  <rect x="13" y="22.5" width="10" height="0.6" rx="0.2" fill="#c4a44a"/>
+  <rect x="13" y="23.6" width="10" height="0.6" rx="0.2" fill="#c4a44a"/>
+  <!-- Scarf hanging end -->
+  <path d="M22 24 L24 28 L22 28 L20 24" fill="url(#scarf)"/>
+  <line x1="21" y1="25" x2="23" y2="25" stroke="#c4a44a" stroke-width="0.4"/>
+  <line x1="21" y1="26.5" x2="23" y2="26.5" stroke="#c4a44a" stroke-width="0.4"/>
+  <!-- Neck -->
+  <rect x="16" y="19" width="4" height="3.5" rx="1" fill="#f0d0b0"/>
+  <!-- Round face -->
+  <ellipse cx="18" cy="14" rx="6.5" ry="6.5" fill="#f0d0b0"/>
+  <!-- Dark hair - slightly messy but determined -->
+  <path d="M11.5 12 Q13 6 18 5 Q23 6 24.5 12" fill="#2a1a0a"/>
+  <path d="M11.5 12 Q11 13 11.5 14" fill="#2a1a0a"/>
+  <path d="M24.5 12 Q25 13 24.5 14" fill="#2a1a0a"/>
+  <!-- Hair detail -->
+  <path d="M14 6 Q15 5 17 5.5" fill="none" stroke="#3a2a1a" stroke-width="0.4"/>
+  <path d="M19 5.5 Q21 5 22 6" fill="none" stroke="#3a2a1a" stroke-width="0.4"/>
+  <!-- Determined eyebrows -->
+  <path d="M14 12 Q15.5 11 17 12" fill="none" stroke="#3a2a1a" stroke-width="0.5"/>
+  <path d="M19 12 Q20.5 11 22 12" fill="none" stroke="#3a2a1a" stroke-width="0.5"/>
+  <!-- Brave determined eyes -->
+  <ellipse cx="15.5" cy="13.5" rx="1.4" ry="1.2" fill="white"/>
+  <ellipse cx="20.5" cy="13.5" rx="1.4" ry="1.2" fill="white"/>
+  <circle cx="15.5" cy="13.5" r="0.8" fill="#5a4a2a"/>
+  <circle cx="20.5" cy="13.5" r="0.8" fill="#5a4a2a"/>
+  <circle cx="15.5" cy="13.5" r="0.35" fill="#1a1a2e"/>
+  <circle cx="20.5" cy="13.5" r="0.35" fill="#1a1a2e"/>
+  <!-- Eye gleam -->
+  <circle cx="15.8" cy="13.2" r="0.2" fill="white" opacity="0.7"/>
+  <circle cx="20.8" cy="13.2" r="0.2" fill="white" opacity="0.7"/>
+  <!-- Round nose -->
+  <ellipse cx="18" cy="16" rx="1" ry="0.8" fill="#e4b898" opacity="0.6"/>
+  <!-- Determined set mouth -->
+  <path d="M16 18 Q18 18.5 20 18" fill="none" stroke="#b07060" stroke-width="0.5"/>
+  <!-- Slight rosy cheeks - round face -->
+  <circle cx="13" cy="15.5" r="1.5" fill="#e0a0a0" opacity="0.2"/>
+  <circle cx="23" cy="15.5" r="1.5" fill="#e0a0a0" opacity="0.2"/>
+  <!-- Small scar on chin - battle of Hogwarts -->
+  <path d="M17 19.5 L18 20" fill="none" stroke="#d4b090" stroke-width="0.3" opacity="0.5"/>
+</svg>

@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+  <defs>
+    <linearGradient id="cloak" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1a1a2a"/>
+      <stop offset="100%" stop-color="#0a0a10"/>
+    </linearGradient>
+    <radialGradient id="coldAura" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#4a6a8a" stop-opacity="0"/>
+      <stop offset="70%" stop-color="#2a4a6a" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#1a3a5a" stop-opacity="0.3"/>
+    </radialGradient>
+    <radialGradient id="voidMouth" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#000000"/>
+      <stop offset="100%" stop-color="#1a1a2a"/>
+    </radialGradient>
+    <linearGradient id="rottingHand" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#6a6a5a"/>
+      <stop offset="100%" stop-color="#4a4a3a"/>
+    </linearGradient>
+  </defs>
+  <!-- Cold aura background -->
+  <ellipse cx="24" cy="24" rx="23" ry="23" fill="url(#coldAura)"/>
+  <!-- Ice crystal effects in aura -->
+  <path d="M4 8 L6 10 L4 12" fill="none" stroke="#8aaabe" stroke-width="0.3" opacity="0.3"/>
+  <path d="M42 12 L44 14 L42 16" fill="none" stroke="#8aaabe" stroke-width="0.3" opacity="0.3"/>
+  <path d="M8 38 L10 40 L8 42" fill="none" stroke="#8aaabe" stroke-width="0.3" opacity="0.2"/>
+  <path d="M38 36 L40 38 L38 40" fill="none" stroke="#8aaabe" stroke-width="0.3" opacity="0.2"/>
+  <!-- Tattered dark robes - flowing -->
+  <path d="M6 20 Q8 16 16 14 L24 12 L32 14 Q40 16 42 20 L44 48 L4 48Z" fill="url(#cloak)"/>
+  <!-- Tattered edges -->
+  <path d="M4 44 Q6 42 5 40 Q4 38 6 36 Q5 34 4 32" fill="url(#cloak)"/>
+  <path d="M44 44 Q42 42 43 40 Q44 38 42 36 Q43 34 44 32" fill="url(#cloak)"/>
+  <!-- Robe tatters at bottom -->
+  <path d="M8 48 Q10 44 8 42" fill="none" stroke="#0a0a10" stroke-width="0.5"/>
+  <path d="M14 48 Q16 44 14 42" fill="none" stroke="#0a0a10" stroke-width="0.5"/>
+  <path d="M34 48 Q32 44 34 42" fill="none" stroke="#0a0a10" stroke-width="0.5"/>
+  <path d="M40 48 Q38 44 40 42" fill="none" stroke="#0a0a10" stroke-width="0.5"/>
+  <!-- Floating tatter wisps -->
+  <path d="M10 46 Q8 44 10 42 Q8 40 10 38" fill="none" stroke="#1a1a2a" stroke-width="0.4" opacity="0.6"/>
+  <path d="M38 46 Q40 44 38 42 Q40 40 38 38" fill="none" stroke="#1a1a2a" stroke-width="0.4" opacity="0.6"/>
+  <!-- Hood -->
+  <path d="M14 6 Q16 0 24 -1 Q32 0 34 6 Q36 12 34 16 L14 16 Q12 12 14 6Z" fill="url(#cloak)"/>
+  <!-- Hood shadow depth -->
+  <path d="M16 6 Q18 2 24 1 Q30 2 32 6 Q34 10 32 14 L16 14 Q14 10 16 6Z" fill="#0a0a10"/>
+  <!-- Skeletal face barely visible in hood -->
+  <ellipse cx="24" cy="10" rx="5" ry="5" fill="#3a3a3a" opacity="0.3"/>
+  <!-- Void mouth - the kiss -->
+  <ellipse cx="24" cy="12" rx="3" ry="2.5" fill="url(#voidMouth)"/>
+  <ellipse cx="24" cy="12" rx="2" ry="1.5" fill="#000000"/>
+  <!-- Mouth void glow -->
+  <ellipse cx="24" cy="12" rx="3.5" ry="3" fill="none" stroke="#2a2a4a" stroke-width="0.3" opacity="0.4"/>
+  <!-- Wispy soul-sucking tendrils from mouth -->
+  <path d="M22 14 Q20 16 18 18" fill="none" stroke="#6a8aaa" stroke-width="0.3" opacity="0.3"/>
+  <path d="M24 14 Q24 17 22 20" fill="none" stroke="#6a8aaa" stroke-width="0.3" opacity="0.3"/>
+  <path d="M26 14 Q28 16 30 18" fill="none" stroke="#6a8aaa" stroke-width="0.3" opacity="0.3"/>
+  <!-- Eye sockets - empty dark -->
+  <ellipse cx="21" cy="8" rx="1.5" ry="1" fill="#0a0a0a"/>
+  <ellipse cx="27" cy="8" rx="1.5" ry="1" fill="#0a0a0a"/>
+  <!-- Faint ghostly glow in eye sockets -->
+  <circle cx="21" cy="8" r="0.3" fill="#4a6a8a" opacity="0.3"/>
+  <circle cx="27" cy="8" r="0.3" fill="#4a6a8a" opacity="0.3"/>
+  <!-- Left reaching rotting hand -->
+  <path d="M10 18 Q6 16 4 14" fill="none" stroke="url(#rottingHand)" stroke-width="1.5"/>
+  <!-- Skeletal fingers reaching -->
+  <path d="M4 14 L2 12" fill="none" stroke="#5a5a4a" stroke-width="0.6" stroke-linecap="round"/>
+  <path d="M4 14 L1 13" fill="none" stroke="#5a5a4a" stroke-width="0.6" stroke-linecap="round"/>
+  <path d="M4 14 L1 14.5" fill="none" stroke="#5a5a4a" stroke-width="0.6" stroke-linecap="round"/>
+  <path d="M4 14 L2 15.5" fill="none" stroke="#5a5a4a" stroke-width="0.5" stroke-linecap="round"/>
+  <!-- Right reaching rotting hand -->
+  <path d="M38 18 Q42 16 44 14" fill="none" stroke="url(#rottingHand)" stroke-width="1.5"/>
+  <path d="M44 14 L46 12" fill="none" stroke="#5a5a4a" stroke-width="0.6" stroke-linecap="round"/>
+  <path d="M44 14 L47 13" fill="none" stroke="#5a5a4a" stroke-width="0.6" stroke-linecap="round"/>
+  <path d="M44 14 L47 14.5" fill="none" stroke="#5a5a4a" stroke-width="0.6" stroke-linecap="round"/>
+  <path d="M44 14 L46 15.5" fill="none" stroke="#5a5a4a" stroke-width="0.5" stroke-linecap="round"/>
+  <!-- Rotting skin texture on hands -->
+  <circle cx="6" cy="16" r="0.3" fill="#4a4a3a" opacity="0.5"/>
+  <circle cx="42" cy="16" r="0.3" fill="#4a4a3a" opacity="0.5"/>
+  <!-- Crown/larger hood than regular dementors -->
+  <path d="M18 2 L17 -1 L20 2" fill="#1a1a2a" stroke="#0a0a10" stroke-width="0.2"/>
+  <path d="M24 0 L24 -3 L26 1" fill="#1a1a2a" stroke="#0a0a10" stroke-width="0.2"/>
+  <path d="M30 2 L31 -1 L28 2" fill="#1a1a2a" stroke="#0a0a10" stroke-width="0.2"/>
+  <!-- Frost particles -->
+  <circle cx="6" cy="10" r="0.4" fill="#a0c0d0" opacity="0.3"/>
+  <circle cx="42" cy="8" r="0.3" fill="#a0c0d0" opacity="0.25"/>
+  <circle cx="10" cy="30" r="0.35" fill="#a0c0d0" opacity="0.2"/>
+  <circle cx="38" cy="32" r="0.3" fill="#a0c0d0" opacity="0.2"/>
+</svg>

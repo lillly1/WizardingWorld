@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+  <defs>
+    <linearGradient id="fur" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#8a6a40"/>
+      <stop offset="100%" stop-color="#5a4a2a"/>
+    </linearGradient>
+    <linearGradient id="darkFur" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#6a5a30"/>
+      <stop offset="100%" stop-color="#4a3a1a"/>
+    </linearGradient>
+  </defs>
+  <!-- Massive body -->
+  <path d="M4 32 Q6 26 14 24 L24 22 L34 24 Q42 26 44 32 L44 48 L4 48Z" fill="url(#fur)"/>
+  <!-- Fur texture on body -->
+  <path d="M10 30 L9 28" fill="none" stroke="#7a5a30" stroke-width="0.4"/>
+  <path d="M20 28 L19 26" fill="none" stroke="#7a5a30" stroke-width="0.4"/>
+  <path d="M30 28 L29 26" fill="none" stroke="#7a5a30" stroke-width="0.4"/>
+  <path d="M38 30 L39 28" fill="none" stroke="#7a5a30" stroke-width="0.4"/>
+  <!-- Thick neck -->
+  <rect x="14" y="18" width="20" height="6" rx="4" fill="url(#fur)"/>
+  <!-- LEFT HEAD -->
+  <ellipse cx="10" cy="12" rx="7" ry="7" fill="url(#fur)"/>
+  <!-- Left head muzzle -->
+  <ellipse cx="8" cy="15" rx="4" ry="3" fill="url(#darkFur)"/>
+  <!-- Left snarling mouth -->
+  <path d="M5 15 Q8 18 11 15" fill="#4a1a1a"/>
+  <path d="M6 15 L6 17" fill="none" stroke="#e0e0d0" stroke-width="0.5" stroke-linecap="round"/>
+  <path d="M10 15 L10 17" fill="none" stroke="#e0e0d0" stroke-width="0.5" stroke-linecap="round"/>
+  <!-- Left nose -->
+  <ellipse cx="8" cy="13" rx="1.5" ry="1" fill="#3a2a1a"/>
+  <!-- Left eyes - angry -->
+  <ellipse cx="8" cy="10" rx="1.5" ry="1.2" fill="#e0c040"/>
+  <ellipse cx="12" cy="10" rx="1.5" ry="1.2" fill="#e0c040"/>
+  <circle cx="8" cy="10" r="0.7" fill="#2a1a0a"/>
+  <circle cx="12" cy="10" r="0.7" fill="#2a1a0a"/>
+  <!-- Left ears -->
+  <path d="M5 6 L4 2 L8 5" fill="url(#darkFur)"/>
+  <path d="M13 6 L15 2 L12 5" fill="url(#darkFur)"/>
+  <!-- Left brow - angry -->
+  <path d="M6 8.5 L10 8" fill="none" stroke="#4a3a1a" stroke-width="0.6"/>
+  <path d="M10 8 L14 8.5" fill="none" stroke="#4a3a1a" stroke-width="0.6"/>
+  <!-- CENTER HEAD -->
+  <ellipse cx="24" cy="10" rx="8" ry="8" fill="url(#fur)"/>
+  <!-- Center muzzle -->
+  <ellipse cx="24" cy="14" rx="4.5" ry="3.5" fill="url(#darkFur)"/>
+  <!-- Center snarling mouth - biggest -->
+  <path d="M20 14 Q24 18 28 14" fill="#4a1a1a"/>
+  <line x1="21" y1="14" x2="21" y2="17" stroke="#e0e0d0" stroke-width="0.6" stroke-linecap="round"/>
+  <path d="M27 14 L27 17" fill="none" stroke="#e0e0d0" stroke-width="0.6" stroke-linecap="round"/>
+  <!-- Center nose -->
+  <ellipse cx="24" cy="12" rx="1.8" ry="1.2" fill="#3a2a1a"/>
+  <!-- Center eyes -->
+  <ellipse cx="21" cy="8" rx="1.8" ry="1.4" fill="#e0c040"/>
+  <ellipse cx="27" cy="8" rx="1.8" ry="1.4" fill="#e0c040"/>
+  <circle cx="21" cy="8" r="0.8" fill="#2a1a0a"/>
+  <circle cx="27" cy="8" r="0.8" fill="#2a1a0a"/>
+  <!-- Center ears -->
+  <path d="M19 4 L18 0 L22 3" fill="url(#darkFur)"/>
+  <path d="M29 4 L30 0 L26 3" fill="url(#darkFur)"/>
+  <!-- Center brow -->
+  <path d="M19 6.5 L23 5.5" fill="none" stroke="#4a3a1a" stroke-width="0.7"/>
+  <path d="M25 5.5 L29 6.5" fill="none" stroke="#4a3a1a" stroke-width="0.7"/>
+  <!-- RIGHT HEAD -->
+  <ellipse cx="38" cy="12" rx="7" ry="7" fill="url(#fur)"/>
+  <!-- Right muzzle -->
+  <ellipse cx="40" cy="15" rx="4" ry="3" fill="url(#darkFur)"/>
+  <!-- Right snarling mouth -->
+  <path d="M37 15 Q40 18 43 15" fill="#4a1a1a"/>
+  <path d="M38 15 L38 17" fill="none" stroke="#e0e0d0" stroke-width="0.5" stroke-linecap="round"/>
+  <path d="M42 15 L42 17" fill="none" stroke="#e0e0d0" stroke-width="0.5" stroke-linecap="round"/>
+  <!-- Right nose -->
+  <ellipse cx="40" cy="13" rx="1.5" ry="1" fill="#3a2a1a"/>
+  <!-- Right eyes -->
+  <ellipse cx="36" cy="10" rx="1.5" ry="1.2" fill="#e0c040"/>
+  <ellipse cx="40" cy="10" rx="1.5" ry="1.2" fill="#e0c040"/>
+  <circle cx="36" cy="10" r="0.7" fill="#2a1a0a"/>
+  <circle cx="40" cy="10" r="0.7" fill="#2a1a0a"/>
+  <!-- Right ears -->
+  <path d="M35 6 L33 2 L36 5" fill="url(#darkFur)"/>
+  <path d="M43 6 L44 2 L41 5" fill="url(#darkFur)"/>
+  <!-- Right brow -->
+  <path d="M34 8.5 L38 8" fill="none" stroke="#4a3a1a" stroke-width="0.6"/>
+  <path d="M38 8 L42 8.5" fill="none" stroke="#4a3a1a" stroke-width="0.6"/>
+  <!-- Drool from all mouths -->
+  <path d="M8 18 Q8 20 7 22" fill="none" stroke="#c0b8a0" stroke-width="0.3" opacity="0.4"/>
+  <path d="M24 18 Q24 20 23 22" fill="none" stroke="#c0b8a0" stroke-width="0.3" opacity="0.4"/>
+  <path d="M40 18 Q40 20 41 22" fill="none" stroke="#c0b8a0" stroke-width="0.3" opacity="0.4"/>
+</svg>

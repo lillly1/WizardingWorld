@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <defs>
+    <radialGradient id="bombBody" cx="40%" cy="35%" r="50%">
+      <stop offset="0%" stop-color="#8a6a3a"/>
+      <stop offset="50%" stop-color="#6a4a28"/>
+      <stop offset="100%" stop-color="#4a3018"/>
+    </radialGradient>
+    <radialGradient id="stinkCloud" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#66cc44" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#44aa22" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="fumeBlur">
+      <feGaussianBlur stdDeviation="1" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <!-- Green fume clouds -->
+  <ellipse cx="10" cy="6" rx="5" ry="4" fill="url(#stinkCloud)" filter="url(#fumeBlur)"/>
+  <ellipse cx="20" cy="4" rx="6" ry="3.5" fill="url(#stinkCloud)" filter="url(#fumeBlur)"/>
+  <ellipse cx="16" cy="3" rx="4" ry="3" fill="url(#stinkCloud)" filter="url(#fumeBlur)"/>
+  <ellipse cx="24" cy="8" rx="4" ry="3" fill="url(#stinkCloud)" filter="url(#fumeBlur)"/>
+  <ellipse cx="7" cy="10" rx="3" ry="2.5" fill="url(#stinkCloud)" filter="url(#fumeBlur)"/>
+  <!-- Fume wisp lines -->
+  <path d="M14 12 Q12 8 10 5" fill="none" stroke="#66aa33" stroke-width="0.6" opacity="0.5"/>
+  <path d="M18 12 Q20 7 22 4" fill="none" stroke="#66aa33" stroke-width="0.6" opacity="0.5"/>
+  <path d="M16 11 Q15 7 16 3" fill="none" stroke="#55aa22" stroke-width="0.5" opacity="0.4"/>
+  <!-- Bomb body (round) -->
+  <circle cx="16" cy="19" r="8" fill="url(#bombBody)" stroke="#3a2010" stroke-width="0.5"/>
+  <!-- Surface texture -->
+  <circle cx="16" cy="19" r="6.5" fill="none" stroke="#5a3a18" stroke-width="0.3" opacity="0.4"/>
+  <!-- Highlight -->
+  <ellipse cx="13" cy="16" rx="2.5" ry="2" fill="white" opacity="0.1" transform="rotate(-20 13 16)"/>
+  <!-- Top nub/fuse area -->
+  <rect x="14.5" y="11" width="3" height="2" rx="0.5" fill="#5a3a20" stroke="#3a2010" stroke-width="0.3"/>
+  <!-- Fuse -->
+  <path d="M16 11 Q15 9 16 8 Q17 7 16 6" fill="none" stroke="#4a3018" stroke-width="0.8" stroke-linecap="round"/>
+  <!-- Stink lines (wavy) -->
+  <path d="M8 13 Q7 11 8 9" fill="none" stroke="#77bb44" stroke-width="0.5" opacity="0.6"/>
+  <path d="M24 11 Q25 9 24 7" fill="none" stroke="#77bb44" stroke-width="0.5" opacity="0.6"/>
+  <!-- Small "x" marks on surface for texture -->
+  <path d="M13 18 L14 19 M14 18 L13 19" stroke="#4a3018" stroke-width="0.3" opacity="0.5"/>
+  <path d="M18 21 L19 22 M19 21 L18 22" stroke="#4a3018" stroke-width="0.3" opacity="0.5"/>
+  <!-- Green specks/dots on bomb -->
+  <circle cx="12" cy="20" r="0.4" fill="#77aa44" opacity="0.4"/>
+  <circle cx="19" cy="17" r="0.3" fill="#77aa44" opacity="0.4"/>
+  <circle cx="17" cy="24" r="0.4" fill="#77aa44" opacity="0.3"/>
+  <!-- Shadow -->
+  <ellipse cx="16" cy="28" rx="7" ry="1.5" fill="#2a1508" opacity="0.2"/>
+</svg>

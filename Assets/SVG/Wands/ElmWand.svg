@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 42 42">
+  <!-- Elm Wand - Warm brown, sophisticated magic -->
+  <defs>
+    <linearGradient id="elmWood" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#B08050"/>
+      <stop offset="50%" stop-color="#8B6540"/>
+      <stop offset="100%" stop-color="#6B4C30"/>
+    </linearGradient>
+    <linearGradient id="elmGlow" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FFD700" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#BB9900" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="elmGlw">
+      <feGaussianBlur stdDeviation="1.3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <!-- Tip glow (golden) -->
+  <circle cx="8" cy="8" r="4.5" fill="url(#elmGlow)" filter="url(#elmGlw)" opacity="0.7"/>
+  <!-- Wand shaft -->
+  <line x1="8" y1="8" x2="34" y2="34" stroke="url(#elmWood)" stroke-width="2.7" stroke-linecap="round"/>
+  <!-- Wood grain lines -->
+  <line x1="13" y1="12" x2="16" y2="15" stroke="#6B4C30" stroke-width="0.4" opacity="0.5"/>
+  <line x1="20" y1="19" x2="23" y2="22" stroke="#6B4C30" stroke-width="0.4" opacity="0.5"/>
+  <line x1="27" y1="26" x2="29" y2="28" stroke="#6B4C30" stroke-width="0.4" opacity="0.5"/>
+  <!-- Elm leaf silhouette (sophisticated, serrated) -->
+  <g transform="translate(5,6) scale(0.4)" opacity="0.45">
+    <ellipse cx="4" cy="5" rx="3" ry="5" fill="none" stroke="#997744" stroke-width="1"/>
+    <line x1="4" y1="0" x2="4" y2="10" stroke="#997744" stroke-width="0.6"/>
+  </g>
+  <!-- Sophisticated handle with ring detail -->
+  <circle cx="35" cy="35" r="2.2" fill="#5A3C22" stroke="#4A2C12" stroke-width="0.5"/>
+  <circle cx="32" cy="32" r="0.5" fill="none" stroke="#9A7A55" stroke-width="0.4" opacity="0.5"/>
+  <!-- Golden spark -->
+  <circle cx="7.5" cy="7.5" r="0.9" fill="#FFEE88" opacity="0.85"/>
+</svg>

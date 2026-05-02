@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+  <rect width="24" height="24" rx="3" fill="#3a2a1a"/>
+  <!-- Fat body -->
+  <ellipse cx="12" cy="14" rx="5.5" ry="4.5" fill="#8a8a8a"/>
+  <!-- Fur texture - mangy patches -->
+  <g stroke="#7a7a7a" stroke-width="0.3" fill="none" opacity="0.4">
+    <path d="M8 12 L9 11"/>
+    <path d="M10 13 L11 12"/>
+    <path d="M14 13 L15 12"/>
+    <path d="M13 15 L14 14"/>
+    <path d="M9 15 L10 14"/>
+  </g>
+  <!-- Bald patches (mangy) -->
+  <g fill="#9a8a8a" opacity="0.3">
+    <ellipse cx="10" cy="13" rx="1" ry="0.7"/>
+    <ellipse cx="14" cy="15" rx="0.8" ry="0.6"/>
+  </g>
+  <!-- Head -->
+  <ellipse cx="17" cy="11.5" rx="3" ry="2.8" fill="#8a8a8a"/>
+  <!-- Ears - rounded -->
+  <circle cx="15.5" cy="9" r="1.2" fill="#9a8a8a"/>
+  <circle cx="18.5" cy="9" r="1.2" fill="#9a8a8a"/>
+  <!-- Inner ears -->
+  <circle cx="15.5" cy="9" r="0.6" fill="#b09090"/>
+  <circle cx="18.5" cy="9" r="0.6" fill="#b09090"/>
+  <!-- Snout -->
+  <ellipse cx="19.5" cy="12" rx="1.5" ry="1" fill="#7a7a7a"/>
+  <!-- Nose -->
+  <ellipse cx="20.5" cy="11.8" rx="0.5" ry="0.4" fill="#cc8888"/>
+  <!-- Eyes - beady -->
+  <circle cx="16.5" cy="11" r="0.7" fill="#1a1a1a"/>
+  <circle cx="18.5" cy="10.8" r="0.7" fill="#1a1a1a"/>
+  <!-- Eye glints -->
+  <circle cx="16.7" cy="10.8" r="0.2" fill="#4a4a4a"/>
+  <circle cx="18.7" cy="10.6" r="0.2" fill="#4a4a4a"/>
+  <!-- Whiskers -->
+  <g stroke="#b0b0b0" stroke-width="0.3" fill="none">
+    <line x1="19.5" y1="11.5" x2="22" y2="10.5"/>
+    <line x1="19.5" y1="12" x2="22.5" y2="12"/>
+    <line x1="19.5" y1="12.5" x2="22" y2="13.5"/>
+  </g>
+  <!-- Front paws -->
+  <g fill="#7a7a7a">
+    <ellipse cx="15" cy="18" rx="1" ry="0.6"/>
+    <ellipse cx="17" cy="18" rx="1" ry="0.6"/>
+  </g>
+  <!-- Back paws -->
+  <g fill="#7a7a7a">
+    <ellipse cx="8.5" cy="17.5" rx="1.2" ry="0.7"/>
+    <ellipse cx="10" cy="18" rx="1" ry="0.6"/>
+  </g>
+  <!-- Front paw - missing toe on one -->
+  <g fill="#8a8a8a">
+    <!-- Normal paw toes -->
+    <circle cx="14.5" cy="18.3" r="0.25"/>
+    <circle cx="15" cy="18.5" r="0.25"/>
+    <circle cx="15.5" cy="18.3" r="0.25"/>
+    <!-- Missing toe paw - only 3 instead of 4 -->
+    <circle cx="16.5" cy="18.3" r="0.25"/>
+    <circle cx="17" cy="18.5" r="0.25"/>
+    <circle cx="17.5" cy="18.3" r="0.25"/>
+  </g>
+  <!-- Tail - thin and pink -->
+  <path d="M7 14 Q4 13 3 15 Q2 17 3 18" stroke="#cc9999" stroke-width="0.8" fill="none" stroke-linecap="round"/>
+  <!-- Belly sag (fat) -->
+  <path d="M9 17 Q12 19 15 17" fill="#7a7a7a" opacity="0.5"/>
+</svg>

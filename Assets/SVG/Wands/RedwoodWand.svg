@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 42 42">
+  <!-- Redwood Wand - Deep red-brown, lucky owners -->
+  <defs>
+    <linearGradient id="redwoodWood" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#A83C2A"/>
+      <stop offset="50%" stop-color="#8B2E20"/>
+      <stop offset="100%" stop-color="#6B2218"/>
+    </linearGradient>
+    <linearGradient id="redwoodGlow" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FF8833" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#CC5500" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="redGlow">
+      <feGaussianBlur stdDeviation="1.3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <!-- Tip glow (lucky orange) -->
+  <circle cx="8" cy="8" r="4.5" fill="url(#redwoodGlow)" filter="url(#redGlow)" opacity="0.7"/>
+  <!-- Wand shaft -->
+  <line x1="8" y1="8" x2="34" y2="34" stroke="url(#redwoodWood)" stroke-width="3" stroke-linecap="round"/>
+  <!-- Wood grain lines -->
+  <line x1="12" y1="11" x2="15" y2="14" stroke="#6B2218" stroke-width="0.5" opacity="0.5"/>
+  <line x1="19" y1="18" x2="22" y2="21" stroke="#6B2218" stroke-width="0.5" opacity="0.5"/>
+  <line x1="26" y1="25" x2="29" y2="28" stroke="#6B2218" stroke-width="0.5" opacity="0.5"/>
+  <!-- Lucky star sparkle near tip -->
+  <g transform="translate(6,5) scale(0.35)" opacity="0.55">
+    <polygon points="4,0 5,3 8,3 5.5,5 6.5,8 4,6 1.5,8 2.5,5 0,3 3,3" fill="#FFAA44"/>
+  </g>
+  <!-- Redwood bark texture (thick ridges) -->
+  <line x1="16" y1="14" x2="17" y2="16" stroke="#5A1A10" stroke-width="0.7" opacity="0.4"/>
+  <line x1="24" y1="22" x2="25" y2="24" stroke="#5A1A10" stroke-width="0.7" opacity="0.4"/>
+  <!-- Handle end -->
+  <circle cx="35" cy="35" r="2.3" fill="#5A1A10" stroke="#4A0A08" stroke-width="0.5"/>
+  <!-- Orange spark -->
+  <circle cx="7.5" cy="7.5" r="0.9" fill="#FFCC88" opacity="0.8"/>
+</svg>

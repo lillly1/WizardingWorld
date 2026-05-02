@@ -1,0 +1,37 @@
+{
+  "phase": "asset-ready",
+  "timestamp": "2026-04-26T13:21:55.065089Z",
+  "commit": "local-asset-ready",
+  "counts": {
+    "cs_files": 590,
+    "png_sprites": 682,
+    "total_files": 1576,
+    "wands_active": 24,
+    "wands_base_combat": 19,
+    "wands_upgrades": 1,
+    "wands_utility": 4,
+    "wands_obsolete_stubs": 2,
+    "bosses": 12,
+    "enemies": 78,
+    "town_npcs": 16,
+    "accessories": 65,
+    "armor_sets": 8,
+    "armor_pieces": 24,
+    "pets": 6,
+    "mounts": 5,
+    "potions": 19,
+    "crafting_materials": 20,
+    "systems": 55,
+    "other_weapons": 27
+  },
+  "verification": "run verify_guide.py --strict to confirm",
+  "artifacts": [
+    "WizardingWorld_Guide_EN.pdf",
+    "WizardingWorld_Guide_ZH.pdf",
+    "scripts/content_manifest.json",
+    "scripts/guide_content.json",
+    "scripts/mechanical_data/",
+    "scripts/zh_translations.json"
+  ],
+  "source": "local (scripts/generate_release_manifest.py)"
+}

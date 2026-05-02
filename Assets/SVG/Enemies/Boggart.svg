@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36">
+  <defs>
+    <radialGradient id="boggartCore" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#2a2a3a"/>
+      <stop offset="40%" stop-color="#1a1a2a"/>
+      <stop offset="100%" stop-color="#0a0a15"/>
+    </radialGradient>
+    <filter id="boggartBlur">
+      <feGaussianBlur stdDeviation="1"/>
+    </filter>
+  </defs>
+  <rect width="36" height="36" fill="#0a0a15"/>
+  <!-- Shapeless shifting mass - layered blobs -->
+  <g filter="url(#boggartBlur)">
+    <ellipse cx="18" cy="18" rx="12" ry="10" fill="#1a1a2a" opacity="0.6"/>
+  </g>
+  <!-- Main dark mass body - irregular shape -->
+  <path d="M8 14 Q6 10 10 8 Q14 5 18 7 Q22 4 26 8 Q30 12 28 18 Q30 22 26 26 Q22 30 18 28 Q14 31 10 26 Q5 22 8 18 Z"
+        fill="url(#boggartCore)" opacity="0.9"/>
+  <!-- Shifting tendrils -->
+  <g fill="#1a1a2a" opacity="0.7">
+    <path d="M10 8 Q8 4 6 3 Q5 4 7 7 L10 10 Z"/>
+    <path d="M26 8 Q28 4 30 3 Q31 4 29 7 L26 10 Z"/>
+    <path d="M8 22 Q4 24 3 27 Q4 28 7 25 L9 22 Z"/>
+    <path d="M28 22 Q32 24 33 27 Q32 28 29 25 L27 22 Z"/>
+    <path d="M16 28 Q14 32 13 34 Q14 34 16 31 Z"/>
+    <path d="M20 28 Q22 32 23 34 Q22 34 20 31 Z"/>
+  </g>
+  <!-- Eerie eyes - multiple shifting pairs -->
+  <!-- Main eyes -->
+  <ellipse cx="14" cy="16" rx="2" ry="2.5" fill="#cccc00" opacity="0.8"/>
+  <ellipse cx="22" cy="16" rx="2" ry="2.5" fill="#cccc00" opacity="0.8"/>
+  <ellipse cx="14" cy="16" rx="0.8" ry="2" fill="#0a0a0a"/>
+  <ellipse cx="22" cy="16" rx="0.8" ry="2" fill="#0a0a0a"/>
+  <!-- Ghost secondary eyes (shifting) -->
+  <ellipse cx="11" cy="12" rx="1" ry="1.2" fill="#cccc00" opacity="0.3"/>
+  <ellipse cx="25" cy="12" rx="1" ry="1.2" fill="#cccc00" opacity="0.3"/>
+  <ellipse cx="16" cy="22" rx="0.8" ry="1" fill="#cc0000" opacity="0.25"/>
+  <ellipse cx="20" cy="22" rx="0.8" ry="1" fill="#cc0000" opacity="0.25"/>
+  <!-- Dark mouth void -->
+  <ellipse cx="18" cy="21" rx="3" ry="1.5" fill="#000000" opacity="0.6"/>
+  <!-- Shifting particles -->
+  <g fill="#2a2a3a" opacity="0.4">
+    <circle cx="7" cy="15" r="1"/>
+    <circle cx="29" cy="14" r="0.8"/>
+    <circle cx="12" cy="26" r="0.7"/>
+    <circle cx="24" cy="26" r="0.9"/>
+    <circle cx="18" cy="6" r="0.6"/>
+  </g>
+</svg>

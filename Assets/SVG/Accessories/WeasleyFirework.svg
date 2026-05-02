@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <defs>
+    <linearGradient id="rocketBody" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#dd2222"/>
+      <stop offset="50%" stop-color="#cc1111"/>
+      <stop offset="100%" stop-color="#aa0000"/>
+    </linearGradient>
+    <linearGradient id="goldWrap" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffd700"/>
+      <stop offset="100%" stop-color="#daa520"/>
+    </linearGradient>
+    <filter id="sparkleGlow">
+      <feGaussianBlur stdDeviation="0.6" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <radialGradient id="sparkBurst" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffee44" stop-opacity="0.7"/>
+      <stop offset="100%" stop-color="#ff8800" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <!-- Spark burst at top -->
+  <circle cx="16" cy="5" r="5" fill="url(#sparkBurst)"/>
+  <!-- Rocket body (angled slightly for dynamism) -->
+  <rect x="14" y="10" width="4" height="16" rx="1.5" fill="url(#rocketBody)" stroke="#880000" stroke-width="0.3" transform="rotate(-5 16 18)"/>
+  <!-- Gold bands/wraps -->
+  <rect x="13.8" y="12" width="4.4" height="1.5" rx="0.3" fill="url(#goldWrap)" transform="rotate(-5 16 12.75)"/>
+  <rect x="13.8" y="17" width="4.4" height="1.5" rx="0.3" fill="url(#goldWrap)" transform="rotate(-5 16 17.75)"/>
+  <rect x="13.8" y="22" width="4.4" height="1.5" rx="0.3" fill="url(#goldWrap)" transform="rotate(-5 16 22.75)"/>
+  <!-- Cone top -->
+  <path d="M14.3 10.5 L16 7 L17.8 10.5 Z" fill="#dd3333" stroke="#aa0000" stroke-width="0.3" transform="rotate(-5 16 9)"/>
+  <!-- Fuse/trail at bottom -->
+  <path d="M15.5 26 Q14 28 15 29 Q16 30 15.5 31" fill="none" stroke="#886630" stroke-width="0.8" stroke-linecap="round"/>
+  <!-- Fins at bottom -->
+  <path d="M14 25 L11 28 L14 26 Z" fill="#cc2222" stroke="#880000" stroke-width="0.2"/>
+  <path d="M18 24.5 L21 27.5 L18 25.5 Z" fill="#cc2222" stroke="#880000" stroke-width="0.2"/>
+  <!-- Sparkles flying off top -->
+  <circle cx="16" cy="5" r="0.8" fill="#ffee44" filter="url(#sparkleGlow)"/>
+  <circle cx="12" cy="3" r="0.6" fill="#ffcc22" filter="url(#sparkleGlow)"/>
+  <circle cx="20" cy="2" r="0.5" fill="#ff8844" filter="url(#sparkleGlow)"/>
+  <circle cx="10" cy="6" r="0.4" fill="#ffdd33" filter="url(#sparkleGlow)"/>
+  <circle cx="22" cy="5" r="0.5" fill="#ffaa33" filter="url(#sparkleGlow)"/>
+  <circle cx="14" cy="1" r="0.4" fill="#ff6644" filter="url(#sparkleGlow)"/>
+  <circle cx="19" cy="7" r="0.4" fill="#ffcc44" filter="url(#sparkleGlow)"/>
+  <!-- Spark lines -->
+  <line x1="16" y1="6" x2="14" y2="2" stroke="#ffdd44" stroke-width="0.4" opacity="0.7"/>
+  <line x1="16" y1="6" x2="20" y2="3" stroke="#ffaa33" stroke-width="0.4" opacity="0.6"/>
+  <line x1="16" y1="6" x2="11" y2="5" stroke="#ffcc22" stroke-width="0.3" opacity="0.6"/>
+  <line x1="16" y1="6" x2="22" y2="7" stroke="#ff8844" stroke-width="0.3" opacity="0.5"/>
+  <line x1="16" y1="6" x2="13" y2="7" stroke="#ffee44" stroke-width="0.3" opacity="0.5"/>
+  <!-- Small "W" on body for Weasley -->
+  <text x="14.5" y="21" font-size="3" font-weight="bold" fill="url(#goldWrap)" font-family="sans-serif" transform="rotate(-5 15.5 20)">W</text>
+  <!-- Color sparkle dots around (multi-color) -->
+  <circle cx="8" cy="8" r="0.4" fill="#44aaff" filter="url(#sparkleGlow)" opacity="0.6"/>
+  <circle cx="24" cy="3" r="0.3" fill="#ff44aa" filter="url(#sparkleGlow)" opacity="0.6"/>
+  <circle cx="9" cy="2" r="0.3" fill="#44ff88" filter="url(#sparkleGlow)" opacity="0.5"/>
+</svg>

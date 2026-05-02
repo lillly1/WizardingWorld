@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 28">
+  <defs>
+    <linearGradient id="brass-body" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#C8A050"/>
+      <stop offset="30%" stop-color="#A88030"/>
+      <stop offset="70%" stop-color="#8B6914"/>
+      <stop offset="100%" stop-color="#A88030"/>
+    </linearGradient>
+    <linearGradient id="lantern-glass" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="rgba(200,255,200,0.2)"/>
+      <stop offset="50%" stop-color="rgba(255,255,255,0.05)"/>
+      <stop offset="100%" stop-color="rgba(200,255,200,0.15)"/>
+    </linearGradient>
+    <radialGradient id="green-flame-glow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#40FF60" stop-opacity="0.6"/>
+      <stop offset="40%" stop-color="#30CC40" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#20AA30" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="flame-glow-f">
+      <feGaussianBlur stdDeviation="1.0" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <!-- Green magical flame glow -->
+  <ellipse cx="14" cy="15" rx="10" ry="10" fill="url(#green-flame-glow)"/>
+  <!-- Handle at top -->
+  <path d="M10,4 Q10,2 12,1.5 L16,1.5 Q18,2 18,4" fill="none" stroke="url(#brass-body)" stroke-width="1.2" stroke-linecap="round"/>
+  <!-- Handle attachment rings -->
+  <circle cx="10" cy="5" r="0.8" fill="url(#brass-body)" stroke="#6B5010" stroke-width="0.3"/>
+  <circle cx="18" cy="5" r="0.8" fill="url(#brass-body)" stroke="#6B5010" stroke-width="0.3"/>
+  <!-- Top cap -->
+  <path d="M9,5 L19,5 L18,7 L10,7 Z" fill="url(#brass-body)" stroke="#6B5010" stroke-width="0.4"/>
+  <!-- Chimney vent -->
+  <rect x="12" y="3" width="4" height="2.5" rx="0.5" fill="url(#brass-body)" stroke="#6B5010" stroke-width="0.3"/>
+  <!-- Vent slits -->
+  <line x1="13" y1="3.5" x2="13" y2="5" stroke="#6B5010" stroke-width="0.2" opacity="0.5"/>
+  <line x1="14" y1="3.5" x2="14" y2="5" stroke="#6B5010" stroke-width="0.2" opacity="0.5"/>
+  <line x1="15" y1="3.5" x2="15" y2="5" stroke="#6B5010" stroke-width="0.2" opacity="0.5"/>
+  <!-- Glass panels (four-sided lantern body) -->
+  <rect x="9" y="7" width="10" height="14" rx="0.5" fill="#0a1a0a" stroke="#6B5010" stroke-width="0.5" opacity="0.7"/>
+  <rect x="9" y="7" width="10" height="14" rx="0.5" fill="url(#lantern-glass)" opacity="0.4"/>
+  <!-- Glass panel dividers (brass strips) -->
+  <line x1="14" y1="7" x2="14" y2="21" stroke="url(#brass-body)" stroke-width="0.5" opacity="0.6"/>
+  <!-- Horizontal band -->
+  <line x1="9" y1="14" x2="19" y2="14" stroke="url(#brass-body)" stroke-width="0.4" opacity="0.5"/>
+  <!-- Green magical flame inside -->
+  <path d="M14,9 Q11.5,12 12,14 Q12.5,16 14,15 Q13,17 13.5,18.5 Q14.5,17 14.5,15.5 Q15.5,16.5 15,14 Q15.5,12 14,9 Z" fill="#40FF60" opacity="0.7" filter="url(#flame-glow-f)"/>
+  <!-- Inner flame -->
+  <path d="M14,11 Q12.8,13 13.2,14.5 Q14,16 14,14.5 Q14,16 14.8,14.5 Q15.2,13 14,11 Z" fill="#80FF90" opacity="0.6"/>
+  <!-- Flame core -->
+  <path d="M14,12.5 Q13.5,13.5 13.8,14 Q14,14.5 14.2,14 Q14.5,13.5 14,12.5 Z" fill="#C0FFD0" opacity="0.5"/>
+  <!-- Flame flicker particles -->
+  <circle cx="12.5" cy="10" r="0.3" fill="#40FF60" opacity="0.3"/>
+  <circle cx="15.5" cy="11" r="0.25" fill="#60FF80" opacity="0.25"/>
+  <circle cx="13" cy="8.5" r="0.2" fill="#80FF90" opacity="0.2"/>
+  <!-- Bottom base -->
+  <path d="M8,21 L20,21 L19,24 Q19,25 18,25 L10,25 Q9,25 9,24 Z" fill="url(#brass-body)" stroke="#6B5010" stroke-width="0.4"/>
+  <!-- Base detail ring -->
+  <line x1="9" y1="22" x2="19" y2="22" stroke="#C8A050" stroke-width="0.3" opacity="0.4"/>
+  <!-- Rustic rivets -->
+  <circle cx="9.5" cy="9" r="0.4" fill="#A88030" stroke="#6B5010" stroke-width="0.2"/>
+  <circle cx="18.5" cy="9" r="0.4" fill="#A88030" stroke="#6B5010" stroke-width="0.2"/>
+  <circle cx="9.5" cy="19" r="0.4" fill="#A88030" stroke="#6B5010" stroke-width="0.2"/>
+  <circle cx="18.5" cy="19" r="0.4" fill="#A88030" stroke="#6B5010" stroke-width="0.2"/>
+  <!-- Glass highlight -->
+  <path d="M10,8 L10,20" stroke="white" stroke-width="0.3" fill="none" opacity="0.15"/>
+  <!-- Adventure worn patina spots -->
+  <circle cx="11" cy="17" r="0.5" fill="#706040" opacity="0.2"/>
+  <circle cx="17" cy="10" r="0.4" fill="#706040" opacity="0.15"/>
+</svg>

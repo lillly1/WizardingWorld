@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <defs>
+    <linearGradient id="slythBg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1a5c1a"/>
+      <stop offset="100%" stop-color="#0a3a0a"/>
+    </linearGradient>
+  </defs>
+  <rect width="32" height="32" rx="4" fill="url(#slythBg)"/>
+  <!-- Silver border accent -->
+  <rect x="1" y="1" width="30" height="30" rx="3" fill="none" stroke="#c0c0c0" stroke-width="0.8"/>
+  <!-- Serpent emblem -->
+  <g transform="translate(7,2) scale(0.85)">
+    <!-- Snake body coiled -->
+    <path d="M10 4 Q16 2 17 6 Q18 10 14 12 Q10 14 9 11 Q8 8 11 7 Q14 6 14 9"
+          stroke="#c0c0c0" stroke-width="2" fill="none" stroke-linecap="round"/>
+    <!-- Snake head -->
+    <ellipse cx="14" cy="9.5" rx="1.8" ry="1.2" fill="#c0c0c0"/>
+    <!-- Eye -->
+    <circle cx="14.8" cy="9.2" r="0.4" fill="#2acd2a"/>
+    <!-- Tongue -->
+    <path d="M15.5 10 L17 10.5 M15.5 10 L17 9.5" stroke="#cc0000" stroke-width="0.4" fill="none"/>
+  </g>
+  <!-- Silver goblet -->
+  <g transform="translate(3,17)">
+    <!-- Cup -->
+    <path d="M2 0 L0 7 Q0 9 3 9 L9 9 Q12 9 12 7 L10 0 Z" fill="#c0c0c0"/>
+    <!-- Cup rim highlight -->
+    <rect x="1.5" y="0" width="9" height="1" rx="0.5" fill="#e0e0e0"/>
+    <!-- Stem -->
+    <rect x="4.5" y="9" width="3" height="2" fill="#a0a0a0"/>
+    <!-- Base -->
+    <ellipse cx="6" cy="12" rx="4" ry="1" fill="#c0c0c0"/>
+    <!-- Liquid -->
+    <path d="M3 2 L1.5 7 Q2 8 6 8 Q10 8 10.5 7 L9 2 Z" fill="#2acd2a" opacity="0.4"/>
+  </g>
+  <!-- Sparkle -->
+  <circle cx="26" cy="6" r="0.6" fill="#c0c0c0" opacity="0.8"/>
+  <circle cx="28" cy="20" r="0.5" fill="#c0c0c0" opacity="0.6"/>
+</svg>

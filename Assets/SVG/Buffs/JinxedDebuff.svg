@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <defs>
+    <radialGradient id="hexGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#9b30ff" stop-opacity="0.8"/>
+      <stop offset="60%" stop-color="#6a0dad" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#1a0a2e" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="32" height="32" rx="4" fill="#1a0a2e"/>
+  <!-- Background glow -->
+  <circle cx="16" cy="16" r="12" fill="url(#hexGlow)"/>
+  <!-- Lightning/hex bolt shape -->
+  <g fill="#c860ff" stroke="#e090ff" stroke-width="0.3">
+    <!-- Main bolt -->
+    <polygon points="14,3 18,3 16,11 21,11 12,29 15,17 10,17"/>
+  </g>
+  <!-- Inner bright core of bolt -->
+  <polygon points="15,5 17,5 15.5,12 19,12 13,26 15,18 11.5,18" fill="#dda0ff" opacity="0.6"/>
+  <!-- Zap sparks around -->
+  <g stroke="#c860ff" stroke-width="0.8" fill="none" opacity="0.7">
+    <path d="M6 8 L8 9 L6 10"/>
+    <path d="M24 7 L26 8 L24 9"/>
+    <path d="M5 20 L7 21 L5 22"/>
+    <path d="M25 21 L27 22 L25 23"/>
+  </g>
+  <!-- Small spark dots -->
+  <circle cx="8" cy="6" r="0.6" fill="#c860ff" opacity="0.6"/>
+  <circle cx="24" cy="5" r="0.5" fill="#c860ff" opacity="0.5"/>
+  <circle cx="6" cy="15" r="0.4" fill="#9b30ff" opacity="0.5"/>
+  <circle cx="26" cy="16" r="0.5" fill="#9b30ff" opacity="0.6"/>
+  <circle cx="9" cy="26" r="0.4" fill="#c860ff" opacity="0.4"/>
+  <circle cx="23" cy="27" r="0.5" fill="#c860ff" opacity="0.5"/>
+</svg>

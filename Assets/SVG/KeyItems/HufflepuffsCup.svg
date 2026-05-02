@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <defs>
+    <linearGradient id="cupGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFE860"/>
+      <stop offset="30%" stop-color="#FFD700"/>
+      <stop offset="60%" stop-color="#D4A017"/>
+      <stop offset="100%" stop-color="#B8860B"/>
+    </linearGradient>
+    <linearGradient id="cupInner" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#8B6914"/>
+      <stop offset="100%" stop-color="#5A4010"/>
+    </linearGradient>
+    <radialGradient id="warmGlow" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#FFE880" stop-opacity="0.4"/>
+      <stop offset="50%" stop-color="#FFD040" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#D4A017" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="handleGold" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#B8860B"/>
+      <stop offset="50%" stop-color="#FFD700"/>
+      <stop offset="100%" stop-color="#B8860B"/>
+    </linearGradient>
+    <filter id="cupGlow">
+      <feGaussianBlur stdDeviation="1.2" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Warm golden glow -->
+  <ellipse cx="16" cy="18" rx="14" ry="12" fill="url(#warmGlow)" filter="url(#cupGlow)"/>
+
+  <!-- Cup shadow -->
+  <ellipse cx="16" cy="28" rx="7" ry="1.5" fill="#000000" opacity="0.2"/>
+
+  <!-- Left handle -->
+  <path d="M8,13 Q3,13 3,17 Q3,21 7,21" fill="none" stroke="url(#handleGold)" stroke-width="1.5" stroke-linecap="round"/>
+  <path d="M8,13 Q3,13 3,17 Q3,21 7,21" fill="none" stroke="#FFE860" stroke-width="0.4" opacity="0.4"/>
+
+  <!-- Right handle -->
+  <path d="M24,13 Q29,13 29,17 Q29,21 25,21" fill="none" stroke="url(#handleGold)" stroke-width="1.5" stroke-linecap="round"/>
+  <path d="M24,13 Q29,13 29,17 Q29,21 25,21" fill="none" stroke="#FFE860" stroke-width="0.4" opacity="0.4"/>
+
+  <!-- Cup body -->
+  <path d="M7,10 L7,20 Q7,26 12,27 L20,27 Q25,26 25,20 L25,10Z"
+        fill="url(#cupGold)" stroke="#8B6914" stroke-width="0.4"/>
+
+  <!-- Cup interior (dark) -->
+  <ellipse cx="16" cy="10" rx="9" ry="2.5" fill="url(#cupInner)" stroke="#8B6914" stroke-width="0.3"/>
+
+  <!-- Cup rim -->
+  <ellipse cx="16" cy="10" rx="9" ry="2.5" fill="none" stroke="#FFE860" stroke-width="0.6"/>
+  <ellipse cx="16" cy="10" rx="8.5" ry="2.2" fill="none" stroke="#FFD700" stroke-width="0.3" opacity="0.5"/>
+
+  <!-- Decorative band near rim -->
+  <path d="M7.5,12.5 L24.5,12.5" stroke="#FFE860" stroke-width="0.5" opacity="0.6"/>
+  <path d="M7.5,13.2 L24.5,13.2" stroke="#B8860B" stroke-width="0.3" opacity="0.4"/>
+
+  <!-- Badger engraving -->
+  <g transform="translate(16,19)" opacity="0.7">
+    <!-- Badger body - simplified -->
+    <ellipse cx="0" cy="1" rx="3.5" ry="2" fill="none" stroke="#8B6914" stroke-width="0.5"/>
+    <!-- Badger head -->
+    <circle cx="-2.5" cy="0" r="1.5" fill="none" stroke="#8B6914" stroke-width="0.5"/>
+    <!-- Badger stripe -->
+    <path d="M-3.5,-0.5 L-1.5,0.5" stroke="#5A4010" stroke-width="0.4"/>
+    <path d="M-3.5,0.5 L-1.5,-0.5" stroke="#5A4010" stroke-width="0.4"/>
+    <!-- Badger legs -->
+    <line x1="-1" y1="2.5" x2="-1" y2="4" stroke="#8B6914" stroke-width="0.4"/>
+    <line x1="1" y1="2.5" x2="1" y2="4" stroke="#8B6914" stroke-width="0.4"/>
+    <!-- Badger tail -->
+    <path d="M3.5,1 Q4.5,0 4,1.5" stroke="#8B6914" stroke-width="0.4" fill="none"/>
+  </g>
+
+  <!-- Decorative band near bottom -->
+  <path d="M9,24 Q16,25.5 23,24" stroke="#FFE860" stroke-width="0.4" fill="none" opacity="0.5"/>
+
+  <!-- Base/foot of cup -->
+  <path d="M12,27 Q12,28.5 10,29 L22,29 Q20,28.5 20,27" fill="url(#cupGold)" stroke="#8B6914" stroke-width="0.3"/>
+  <ellipse cx="16" cy="29" rx="6" ry="1" fill="#D4A017" stroke="#8B6914" stroke-width="0.3"/>
+
+  <!-- Highlights/gleam -->
+  <path d="M10,12 Q10,16 11,20" stroke="#FFFFFF" stroke-width="0.4" opacity="0.2" fill="none"/>
+  <ellipse cx="12" cy="14" rx="1.5" ry="3" fill="#FFFFFF" opacity="0.08" transform="rotate(-5 12 14)"/>
+
+  <!-- Sparkle -->
+  <circle cx="22" cy="12" r="0.3" fill="#FFFFFF" opacity="0.7"/>
+  <line x1="21.5" y1="12" x2="22.5" y2="12" stroke="#FFFFFF" stroke-width="0.2" opacity="0.5"/>
+  <line x1="22" y1="11.5" x2="22" y2="12.5" stroke="#FFFFFF" stroke-width="0.2" opacity="0.5"/>
+</svg>

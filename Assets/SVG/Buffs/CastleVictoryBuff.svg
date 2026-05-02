@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <defs>
+    <radialGradient id="victoryGlow" cx="50%" cy="60%" r="55%">
+      <stop offset="0%" stop-color="#ffd700" stop-opacity="0.6"/>
+      <stop offset="60%" stop-color="#b8860b" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#4a3a00" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="towerGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#d4a017"/>
+      <stop offset="100%" stop-color="#a07010"/>
+    </linearGradient>
+  </defs>
+  <rect width="32" height="32" rx="4" fill="#1a1a3a"/>
+  <rect width="32" height="32" rx="4" fill="url(#victoryGlow)"/>
+  <!-- Castle towers -->
+  <g fill="url(#towerGrad)">
+    <!-- Left tower -->
+    <rect x="4" y="10" width="5" height="16"/>
+    <!-- Left turret -->
+    <rect x="3" y="8" width="2" height="3"/>
+    <rect x="6" y="8" width="2" height="3"/>
+    <polygon points="3,8 4,5 5,8" fill="#d4a017"/>
+    <polygon points="6,8 7,5 8,8" fill="#d4a017"/>
+    <!-- Center tower (tallest) -->
+    <rect x="11" y="7" width="10" height="19"/>
+    <!-- Center turrets -->
+    <rect x="10" y="5" width="3" height="3"/>
+    <rect x="14" y="4" width="4" height="4"/>
+    <rect x="19" y="5" width="3" height="3"/>
+    <polygon points="14,4 16,1 18,4" fill="#ffd700"/>
+    <!-- Right tower -->
+    <rect x="23" y="10" width="5" height="16"/>
+    <rect x="22" y="8" width="2" height="3"/>
+    <rect x="26" y="8" width="2" height="3"/>
+    <polygon points="22,8 23,5 24,8" fill="#d4a017"/>
+    <polygon points="26,8 27,5 28,8" fill="#d4a017"/>
+  </g>
+  <!-- Castle wall connecting -->
+  <rect x="9" y="18" width="2" height="8" fill="#a07010"/>
+  <rect x="21" y="18" width="2" height="8" fill="#a07010"/>
+  <!-- Windows (dark) -->
+  <g fill="#1a1a3a">
+    <rect x="5.5" y="14" width="1.5" height="2" rx="0.5"/>
+    <rect x="5.5" y="19" width="1.5" height="2" rx="0.5"/>
+    <rect x="24.5" y="14" width="1.5" height="2" rx="0.5"/>
+    <rect x="24.5" y="19" width="1.5" height="2" rx="0.5"/>
+    <!-- Center gate -->
+    <path d="M14 22 Q16 18 18 22 L18 26 L14 26 Z"/>
+    <!-- Center windows -->
+    <rect x="13" y="10" width="1.5" height="2" rx="0.5"/>
+    <rect x="17.5" y="10" width="1.5" height="2" rx="0.5"/>
+  </g>
+  <!-- Triumph glow rays -->
+  <g stroke="#ffd700" stroke-width="0.5" opacity="0.5">
+    <line x1="16" y1="1" x2="16" y2="-1"/>
+    <line x1="12" y1="2" x2="10" y2="0"/>
+    <line x1="20" y1="2" x2="22" y2="0"/>
+    <line x1="8" y1="5" x2="5" y2="3"/>
+    <line x1="24" y1="5" x2="27" y2="3"/>
+  </g>
+  <!-- Star sparkles -->
+  <circle cx="3" cy="3" r="0.6" fill="#ffd700" opacity="0.8"/>
+  <circle cx="29" cy="4" r="0.5" fill="#ffd700" opacity="0.7"/>
+  <circle cx="16" cy="0.5" r="0.8" fill="#fff8dc" opacity="0.9"/>
+</svg>

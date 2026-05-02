@@ -1,0 +1,29 @@
+[
+  {
+    "Name": "EnchantingTableItem",
+    "Mode": "Chroma",
+    "Width": 32,
+    "Height": 24,
+    "Padding": 8,
+    "RawOutputPath": "raw/EnchantingTableItem.png",
+    "OutputPath": "../../Content/Items/Placeable/EnchantingTableItem.png",
+    "Prompt": "Terraria-style pixel art furniture item icon, centered single object, an Enchanting Table: a small ornate dark wooden table, deep purple cloth draped over it, an open glowing spellbook resting on top, tiny floating candles, magical crafting station, clearly a table and not a key. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects.",
+    "_source_manifest": "phase3_chroma_assets.json",
+    "_rank": 7,
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Items/Placeable/EnchantingTableItem.png"
+  },
+  {
+    "Name": "PhantomStag",
+    "Mode": "ChromaSheet",
+    "Width": 34,
+    "Height": 34,
+    "Padding": 6,
+    "FrameCount": 4,
+    "RawOutputPath": "raw/PhantomStag.png",
+    "OutputPath": "../../Content/NPCs/Enemies/PhantomStag.png",
+    "Prompt": "Terraria-style pixel art vertical sprite sheet, one image containing exactly 4 vertically stacked animation frames of the same spectral stag enemy, side view facing right, elegant ghostly deer with luminous antlers, pale white-cyan body, faint prismatic magical glow, floating hooves, corrupted patronus aesthetic, subtle running or drifting cycle, each frame centered in its own row cell with clear spacing, all four frames consistent with each other. Put the entire sheet on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects.",
+    "_source_manifest": "phase3_remaining_assets.json",
+    "_rank": 6,
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/NPCs/Enemies/PhantomStag.png"
+  }
+]

@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+  <defs>
+    <linearGradient id="pinkCardigan" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f0a0b0"/>
+      <stop offset="100%" stop-color="#d080a0"/>
+    </linearGradient>
+    <linearGradient id="bow" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#e888a8"/>
+      <stop offset="100%" stop-color="#d060a0"/>
+    </linearGradient>
+  </defs>
+  <!-- Pink cardigan -->
+  <path d="M8 32 Q10 26 18 24 L24 23 L30 24 Q38 26 40 32 L40 48 L8 48Z" fill="url(#pinkCardigan)"/>
+  <!-- Cardigan buttons -->
+  <circle cx="24" cy="30" r="0.6" fill="#e0708a"/>
+  <circle cx="24" cy="33" r="0.6" fill="#e0708a"/>
+  <circle cx="24" cy="36" r="0.6" fill="#e0708a"/>
+  <!-- Frilly collar -->
+  <path d="M18 24 Q20 26 24 26.5 Q28 26 30 24" fill="#f8c0d0" stroke="#e0a0b8" stroke-width="0.3"/>
+  <path d="M19 24.5 Q22 25.5 24 26 Q26 25.5 29 24.5" fill="none" stroke="#e0a0b8" stroke-width="0.3"/>
+  <!-- Ministry decree scroll in hand -->
+  <rect x="36" y="28" width="8" height="12" rx="1" fill="#f0e8d0" stroke="#c0b090" stroke-width="0.3"/>
+  <text x="38" y="33" font-family="serif" font-size="1.5" fill="#4a2a2a">DECREE</text>
+  <line x1="37" y1="35" x2="43" y2="35" stroke="#8a8070" stroke-width="0.2"/>
+  <line x1="37" y1="36" x2="42" y2="36" stroke="#8a8070" stroke-width="0.2"/>
+  <line x1="37" y1="37" x2="43" y2="37" stroke="#8a8070" stroke-width="0.2"/>
+  <!-- Ministry seal -->
+  <circle cx="40" cy="38.5" r="1" fill="#8b1a1a" opacity="0.5"/>
+  <!-- Short thick neck -->
+  <rect x="20" y="20.5" width="8" height="4" rx="2" fill="#f0d0c0"/>
+  <!-- Round toad-like face -->
+  <ellipse cx="24" cy="15" rx="8" ry="8" fill="#f0d0c0"/>
+  <!-- Hair - mousy brown with pink bow -->
+  <path d="M16 12 Q18 6 24 5 Q30 6 32 12" fill="#7a5a3a"/>
+  <path d="M16 12 Q15 14 16 16" fill="#7a5a3a"/>
+  <path d="M32 12 Q33 14 32 16" fill="#7a5a3a"/>
+  <!-- Pink bow on top -->
+  <path d="M22 6 Q20 4 21 3 Q23 4 24 5" fill="url(#bow)"/>
+  <path d="M26 6 Q28 4 27 3 Q25 4 24 5" fill="url(#bow)"/>
+  <circle cx="24" cy="5.5" r="0.6" fill="#d060a0"/>
+  <!-- Toad-like puffy eyes -->
+  <ellipse cx="20.5" cy="13.5" rx="2.5" ry="1.8" fill="white"/>
+  <ellipse cx="27.5" cy="13.5" rx="2.5" ry="1.8" fill="white"/>
+  <circle cx="20.5" cy="13.5" r="1" fill="#5a7a4a"/>
+  <circle cx="27.5" cy="13.5" r="1" fill="#5a7a4a"/>
+  <circle cx="20.5" cy="13.5" r="0.4" fill="#1a1a2e"/>
+  <circle cx="27.5" cy="13.5" r="0.4" fill="#1a1a2e"/>
+  <!-- Puffy eyelids - toad-like -->
+  <path d="M18 12.5 Q20.5 11.5 23 12.5" fill="none" stroke="#d0b0a0" stroke-width="0.6"/>
+  <path d="M25 12.5 Q27.5 11.5 30 12.5" fill="none" stroke="#d0b0a0" stroke-width="0.6"/>
+  <!-- Fleshy wide face wrinkles -->
+  <path d="M17 16 Q18 17 19 16" fill="none" stroke="#e0c0b0" stroke-width="0.3" opacity="0.5"/>
+  <path d="M29 16 Q30 17 31 16" fill="none" stroke="#e0c0b0" stroke-width="0.3" opacity="0.5"/>
+  <!-- Wide flat toad nose -->
+  <ellipse cx="24" cy="16.5" rx="1.5" ry="0.8" fill="#e0b8a8"/>
+  <circle cx="23" cy="16.8" r="0.3" fill="#c0a090"/>
+  <circle cx="25" cy="16.8" r="0.3" fill="#c0a090"/>
+  <!-- Fake sweet smile - sinister -->
+  <path d="M20 19 Q24 21 28 19" fill="none" stroke="#c07080" stroke-width="0.6"/>
+  <path d="M21 19.3 Q24 20.5 27 19.3" fill="#e8a0a0" opacity="0.3"/>
+  <!-- Rosy toad cheeks -->
+  <circle cx="18" cy="17" r="2" fill="#e0a0a0" opacity="0.25"/>
+  <circle cx="30" cy="17" r="2" fill="#e0a0a0" opacity="0.25"/>
+  <!-- Cat plate brooch -->
+  <circle cx="20" cy="26" r="1.2" fill="#f8d0e0" stroke="#d0a0b0" stroke-width="0.2"/>
+  <!-- Tiny cat face on brooch -->
+  <circle cx="19.7" cy="25.8" r="0.15" fill="#5a3a2a"/>
+  <circle cx="20.3" cy="25.8" r="0.15" fill="#5a3a2a"/>
+  <path d="M19.8 26.1 Q20 26.3 20.2 26.1" fill="none" stroke="#5a3a2a" stroke-width="0.1"/>
+</svg>

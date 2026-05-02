@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <defs>
+    <linearGradient id="silverBand" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E0E0EE"/>
+      <stop offset="30%" stop-color="#C0C0D4"/>
+      <stop offset="50%" stop-color="#E8E8F4"/>
+      <stop offset="70%" stop-color="#B0B0C8"/>
+      <stop offset="100%" stop-color="#9090A8"/>
+    </linearGradient>
+    <radialGradient id="sapphire" cx="40%" cy="35%" r="55%">
+      <stop offset="0%" stop-color="#60A0FF"/>
+      <stop offset="30%" stop-color="#2060DD"/>
+      <stop offset="70%" stop-color="#1040AA"/>
+      <stop offset="100%" stop-color="#082080"/>
+    </radialGradient>
+    <radialGradient id="sapphireGlow" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="#4080FF" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#2040AA" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="silverHighlight" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#F0F0FF"/>
+      <stop offset="100%" stop-color="#C0C0D8"/>
+    </linearGradient>
+    <filter id="blueGlow">
+      <feGaussianBlur stdDeviation="0.8" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="softBlue">
+      <feGaussianBlur stdDeviation="1.5"/>
+    </filter>
+  </defs>
+
+  <!-- Subtle blue glow behind diadem -->
+  <ellipse cx="16" cy="16" rx="14" ry="8" fill="url(#sapphireGlow)" filter="url(#softBlue)"/>
+
+  <!-- Main band - arched tiara shape -->
+  <path d="M3,20 Q5,16 8,14 Q12,11 16,10 Q20,11 24,14 Q27,16 29,20"
+        fill="none" stroke="url(#silverBand)" stroke-width="2.5" stroke-linecap="round"/>
+
+  <!-- Inner band detail -->
+  <path d="M4,19.5 Q6,16 9,14 Q12.5,11.5 16,10.8 Q19.5,11.5 23,14 Q26,16 28,19.5"
+        fill="none" stroke="#D0D0E4" stroke-width="0.5" opacity="0.6"/>
+
+  <!-- Filigree/scrollwork on band -->
+  <g stroke="#A0A0C0" stroke-width="0.4" fill="none" opacity="0.6">
+    <!-- Left side scrolls -->
+    <path d="M6,18 Q7,17 8,17.5 Q9,18 8,18.5"/>
+    <path d="M9,16 Q10,15 11,15.5 Q12,16 11,16.5"/>
+    <!-- Right side scrolls -->
+    <path d="M26,18 Q25,17 24,17.5 Q23,18 24,18.5"/>
+    <path d="M23,16 Q22,15 21,15.5 Q20,16 21,16.5"/>
+  </g>
+
+  <!-- Eagle wing motif - left -->
+  <g transform="translate(10,13)" opacity="0.5">
+    <path d="M0,0 Q-2,-2 -3,-1 Q-2,-0.5 0,0" fill="#C0C0D8" stroke="#9090A8" stroke-width="0.2"/>
+    <path d="M0,0.5 Q-2.5,-1 -3.5,0 Q-2,0 0,0.5" fill="#B0B0C8" stroke="#9090A8" stroke-width="0.2"/>
+  </g>
+
+  <!-- Eagle wing motif - right -->
+  <g transform="translate(22,13)" opacity="0.5">
+    <path d="M0,0 Q2,-2 3,-1 Q2,-0.5 0,0" fill="#C0C0D8" stroke="#9090A8" stroke-width="0.2"/>
+    <path d="M0,0.5 Q2.5,-1 3.5,0 Q2,0 0,0.5" fill="#B0B0C8" stroke="#9090A8" stroke-width="0.2"/>
+  </g>
+
+  <!-- Central peak/point -->
+  <path d="M14,11 L16,7 L18,11" fill="url(#silverHighlight)" stroke="#9090A8" stroke-width="0.4"/>
+  <!-- Peak detail -->
+  <line x1="16" y1="7.5" x2="16" y2="10" stroke="#D0D0E8" stroke-width="0.3" opacity="0.6"/>
+
+  <!-- Central sapphire -->
+  <ellipse cx="16" cy="12.5" rx="2.2" ry="2" fill="url(#sapphire)" stroke="#082080" stroke-width="0.3" filter="url(#blueGlow)"/>
+  <!-- Sapphire facet -->
+  <path d="M15,12 L16,11.2 L17,12 L16.5,13.2 L15.5,13.2Z" fill="#60A0FF" opacity="0.3"/>
+  <!-- Sapphire highlight -->
+  <ellipse cx="15.3" cy="11.8" rx="0.6" ry="0.35" fill="#FFFFFF" opacity="0.35" transform="rotate(-15 15.3 11.8)"/>
+
+  <!-- Small accent gems -->
+  <circle cx="10" cy="15" r="0.7" fill="#4070CC" stroke="#203880" stroke-width="0.2" filter="url(#blueGlow)"/>
+  <circle cx="22" cy="15" r="0.7" fill="#4070CC" stroke="#203880" stroke-width="0.2" filter="url(#blueGlow)"/>
+
+  <!-- "Wit beyond measure" inscription suggestion -->
+  <path d="M8,18.5 Q16,17 24,18.5" fill="none" stroke="#A0A0C0" stroke-width="0.2" opacity="0.4"/>
+  <g font-family="serif" font-size="1.2" fill="#9898B8" text-anchor="middle" opacity="0.35">
+    <text x="16" y="19.8">Wit beyond measure</text>
+  </g>
+
+  <!-- Lower decorative points -->
+  <path d="M3,20 L4,22 L5,20" fill="url(#silverBand)" stroke="#9090A8" stroke-width="0.2"/>
+  <path d="M29,20 L28,22 L27,20" fill="url(#silverBand)" stroke="#9090A8" stroke-width="0.2"/>
+
+  <!-- Silver gleam highlights -->
+  <path d="M8,15 Q10,13 12,12" stroke="#FFFFFF" stroke-width="0.3" opacity="0.3" fill="none"/>
+  <circle cx="7" cy="17" r="0.25" fill="#FFFFFF" opacity="0.6"/>
+  <circle cx="25" cy="17" r="0.25" fill="#FFFFFF" opacity="0.5"/>
+
+  <!-- Eagle head tiny motif at peak -->
+  <g transform="translate(16,8)" opacity="0.5">
+    <path d="M-0.5,-0.5 Q0,-1.5 0.5,-0.5 Q0,0 -0.5,-0.5" fill="#D0D0E4" stroke="#9090A8" stroke-width="0.2"/>
+    <path d="M0,-0.3 L0.3,0.3" stroke="#8080A0" stroke-width="0.2"/>
+  </g>
+</svg>

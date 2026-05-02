@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <defs>
+    <linearGradient id="ravBg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1a3a8b"/>
+      <stop offset="100%" stop-color="#0a1a5a"/>
+    </linearGradient>
+  </defs>
+  <rect width="32" height="32" rx="4" fill="url(#ravBg)"/>
+  <!-- Bronze border accent -->
+  <rect x="1" y="1" width="30" height="30" rx="3" fill="none" stroke="#cd7f32" stroke-width="0.8"/>
+  <!-- Eagle emblem -->
+  <g transform="translate(7,2) scale(0.85)">
+    <!-- Wings spread -->
+    <path d="M9 10 L3 5 L5 8 L1 4 L4 7 L2 6 L6 9 Z" fill="#cd7f32"/>
+    <path d="M11 10 L17 5 L15 8 L19 4 L16 7 L18 6 L14 9 Z" fill="#cd7f32"/>
+    <!-- Body -->
+    <ellipse cx="10" cy="11" rx="3" ry="3.5" fill="#cd7f32"/>
+    <!-- Head -->
+    <circle cx="10" cy="7" r="2.2" fill="#cd7f32"/>
+    <!-- Beak -->
+    <path d="M10 8 L11.5 9.5 L10 9 L8.5 9.5 Z" fill="#daa520"/>
+    <!-- Eye -->
+    <circle cx="9.2" cy="6.8" r="0.5" fill="#0a1a5a"/>
+    <circle cx="10.8" cy="6.8" r="0.5" fill="#0a1a5a"/>
+    <!-- Tail feathers -->
+    <path d="M8 14 L7 17 L10 15 L13 17 L12 14 Z" fill="#b56e28"/>
+  </g>
+  <!-- Bronze goblet -->
+  <g transform="translate(3,17)">
+    <path d="M2 0 L0 7 Q0 9 3 9 L9 9 Q12 9 12 7 L10 0 Z" fill="#cd7f32"/>
+    <rect x="1.5" y="0" width="9" height="1" rx="0.5" fill="#daa520"/>
+    <rect x="4.5" y="9" width="3" height="2" fill="#b56e28"/>
+    <ellipse cx="6" cy="12" rx="4" ry="1" fill="#cd7f32"/>
+    <path d="M3 2 L1.5 7 Q2 8 6 8 Q10 8 10.5 7 L9 2 Z" fill="#4a7adf" opacity="0.4"/>
+  </g>
+  <!-- Sparkle -->
+  <circle cx="26" cy="6" r="0.6" fill="#cd7f32" opacity="0.8"/>
+  <circle cx="28" cy="20" r="0.5" fill="#cd7f32" opacity="0.6"/>
+</svg>

@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 28">
+  <defs>
+    <linearGradient id="parchment" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#F5E6C8"/>
+      <stop offset="50%" stop-color="#EEDBB0"/>
+      <stop offset="100%" stop-color="#E0CDA0"/>
+    </linearGradient>
+    <linearGradient id="wax-seal" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#CC2020"/>
+      <stop offset="50%" stop-color="#AA1515"/>
+      <stop offset="100%" stop-color="#881010"/>
+    </linearGradient>
+    <linearGradient id="feather-grad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#8B7355"/>
+      <stop offset="50%" stop-color="#6B5335"/>
+      <stop offset="100%" stop-color="#4B3320"/>
+    </linearGradient>
+  </defs>
+  <!-- Envelope body (parchment) -->
+  <rect x="3" y="6" width="22" height="16" rx="1" fill="url(#parchment)" stroke="#C0A878" stroke-width="0.5"/>
+  <!-- Parchment texture lines -->
+  <line x1="5" y1="9" x2="23" y2="9" stroke="#D8C498" stroke-width="0.2" opacity="0.4"/>
+  <line x1="5" y1="12" x2="23" y2="12" stroke="#D8C498" stroke-width="0.2" opacity="0.3"/>
+  <line x1="5" y1="15" x2="23" y2="15" stroke="#D8C498" stroke-width="0.2" opacity="0.3"/>
+  <line x1="5" y1="18" x2="23" y2="18" stroke="#D8C498" stroke-width="0.2" opacity="0.4"/>
+  <!-- Envelope flap (top triangle) -->
+  <path d="M3,6 L14,15 L25,6 Z" fill="#E8D4A8" stroke="#C0A878" stroke-width="0.5"/>
+  <!-- Flap inner shadow -->
+  <path d="M5,7 L14,14 L23,7" stroke="#C8B490" stroke-width="0.3" fill="none" opacity="0.5"/>
+  <!-- Address text lines (in emerald green ink) -->
+  <line x1="9" y1="17" x2="19" y2="17" stroke="#2E8B57" stroke-width="0.5" opacity="0.3"/>
+  <line x1="10" y1="19" x2="18" y2="19" stroke="#2E8B57" stroke-width="0.4" opacity="0.25"/>
+  <!-- Red wax seal (Hogwarts) -->
+  <circle cx="14" cy="14" r="3" fill="url(#wax-seal)" stroke="#771010" stroke-width="0.3"/>
+  <!-- Wax drip details -->
+  <ellipse cx="14" cy="14" rx="3.2" ry="3" fill="url(#wax-seal)" opacity="0.5"/>
+  <path d="M12,11.5 Q11.5,11 11.8,11.2" stroke="#CC2020" stroke-width="0.5" fill="none" opacity="0.3"/>
+  <!-- Hogwarts H on seal -->
+  <text x="14" y="15.5" font-family="serif" font-size="4" font-weight="bold" fill="#DD6060" text-anchor="middle" opacity="0.7">H</text>
+  <!-- Seal rim -->
+  <circle cx="14" cy="14" r="2.5" fill="none" stroke="#DD4040" stroke-width="0.3" opacity="0.5"/>
+  <!-- Seal shine -->
+  <ellipse cx="13" cy="13" rx="1" ry="0.6" fill="white" opacity="0.15"/>
+  <!-- Owl feather (tucked behind/beside the letter) -->
+  <path d="M22,3 Q23,5 23,8 Q23,11 22,13" stroke="url(#feather-grad)" stroke-width="1.2" fill="none" stroke-linecap="round"/>
+  <!-- Feather barbs -->
+  <path d="M22.5,4 L24,3.5" stroke="#8B7355" stroke-width="0.3" opacity="0.6"/>
+  <path d="M23,5.5 L24.5,5" stroke="#8B7355" stroke-width="0.3" opacity="0.5"/>
+  <path d="M23,7 L24.5,6.8" stroke="#7B6345" stroke-width="0.3" opacity="0.5"/>
+  <path d="M23,8.5 L24.5,8.5" stroke="#7B6345" stroke-width="0.3" opacity="0.4"/>
+  <path d="M22.8,10 L24,10.2" stroke="#6B5335" stroke-width="0.3" opacity="0.4"/>
+  <path d="M22.2,4 L20.5,3.5" stroke="#8B7355" stroke-width="0.3" opacity="0.6"/>
+  <path d="M22.5,5.5 L21,5" stroke="#8B7355" stroke-width="0.3" opacity="0.5"/>
+  <path d="M22.5,7 L21,6.8" stroke="#7B6345" stroke-width="0.3" opacity="0.5"/>
+  <path d="M22.5,8.5 L21,8.5" stroke="#7B6345" stroke-width="0.3" opacity="0.4"/>
+  <!-- Feather quill tip -->
+  <path d="M22,13 Q21.8,14 22,14.5" stroke="#4B3320" stroke-width="0.5" fill="none"/>
+  <!-- Subtle parchment edge wear -->
+  <path d="M3.5,22 Q4,21.5 5,22" stroke="#C0A878" stroke-width="0.2" fill="none" opacity="0.3"/>
+  <path d="M23,22 Q24,21.5 24.5,22" stroke="#C0A878" stroke-width="0.2" fill="none" opacity="0.3"/>
+</svg>

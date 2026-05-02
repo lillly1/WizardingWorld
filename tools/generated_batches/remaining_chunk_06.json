@@ -1,0 +1,822 @@
+[
+  {
+    "Name": "Dobby",
+    "Width": 40,
+    "Height": 1450,
+    "FrameCount": 25,
+    "ProcessKind": "sheet",
+    "OutputPath": "Content/NPCs/Town/Dobby.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/NPCs/Town/Dobby.png",
+    "Prompt": "Terraria-style pixel art sprite frame, single isolated figure, a single full-body sprite frame of Dobby, friendly wizarding town NPC, animation-ready pose. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "Dobby_Head",
+    "Width": 36,
+    "Height": 36,
+    "FrameCount": 1,
+    "ProcessKind": "icon",
+    "OutputPath": "Content/NPCs/Town/Dobby_Head.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/NPCs/Town/Dobby_Head.png",
+    "Prompt": "Terraria-style pixel art icon, centered emblem, a portrait head icon of Dobby, friendly wizarding town NPC. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "Dumbledore",
+    "Width": 40,
+    "Height": 1450,
+    "FrameCount": 25,
+    "ProcessKind": "sheet",
+    "OutputPath": "Content/NPCs/Town/Dumbledore.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/NPCs/Town/Dumbledore.png",
+    "Prompt": "Terraria-style pixel art sprite frame, single isolated figure, a single full-body sprite frame of Dumbledore, friendly wizarding town NPC, animation-ready pose. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "Dumbledore_Head",
+    "Width": 36,
+    "Height": 36,
+    "FrameCount": 1,
+    "ProcessKind": "icon",
+    "OutputPath": "Content/NPCs/Town/Dumbledore_Head.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/NPCs/Town/Dumbledore_Head.png",
+    "Prompt": "Terraria-style pixel art icon, centered emblem, a portrait head icon of Dumbledore, friendly wizarding town NPC. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "FredAndGeorge",
+    "Width": 40,
+    "Height": 1450,
+    "FrameCount": 25,
+    "ProcessKind": "sheet",
+    "OutputPath": "Content/NPCs/Town/FredAndGeorge.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/NPCs/Town/FredAndGeorge.png",
+    "Prompt": "Terraria-style pixel art sprite frame, single isolated figure, a single full-body sprite frame of Fred And George, friendly wizarding town NPC, animation-ready pose. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "FredAndGeorge_Head",
+    "Width": 36,
+    "Height": 36,
+    "FrameCount": 1,
+    "ProcessKind": "icon",
+    "OutputPath": "Content/NPCs/Town/FredAndGeorge_Head.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/NPCs/Town/FredAndGeorge_Head.png",
+    "Prompt": "Terraria-style pixel art icon, centered emblem, a portrait head icon of Fred And George, friendly wizarding town NPC. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "GoblinTeller",
+    "Width": 40,
+    "Height": 1450,
+    "FrameCount": 25,
+    "ProcessKind": "sheet",
+    "OutputPath": "Content/NPCs/Town/GoblinTeller.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/NPCs/Town/GoblinTeller.png",
+    "Prompt": "Terraria-style pixel art sprite frame, single isolated figure, a single full-body sprite frame of Goblin Teller, friendly wizarding town NPC, animation-ready pose. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "GoblinTeller_Head",
+    "Width": 36,
+    "Height": 36,
+    "FrameCount": 1,
+    "ProcessKind": "icon",
+    "OutputPath": "Content/NPCs/Town/GoblinTeller_Head.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/NPCs/Town/GoblinTeller_Head.png",
+    "Prompt": "Terraria-style pixel art icon, centered emblem, a portrait head icon of Goblin Teller, friendly wizarding town NPC. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "Hagrid",
+    "Width": 40,
+    "Height": 1450,
+    "FrameCount": 25,
+    "ProcessKind": "sheet",
+    "OutputPath": "Content/NPCs/Town/Hagrid.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/NPCs/Town/Hagrid.png",
+    "Prompt": "Terraria-style pixel art sprite frame, single isolated figure, a single full-body sprite frame of Hagrid, friendly wizarding town NPC, animation-ready pose. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "Hagrid_Head",
+    "Width": 36,
+    "Height": 36,
+    "FrameCount": 1,
+    "ProcessKind": "icon",
+    "OutputPath": "Content/NPCs/Town/Hagrid_Head.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/NPCs/Town/Hagrid_Head.png",
+    "Prompt": "Terraria-style pixel art icon, centered emblem, a portrait head icon of Hagrid, friendly wizarding town NPC. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "Healer",
+    "Width": 40,
+    "Height": 1450,
+    "FrameCount": 25,
+    "ProcessKind": "sheet",
+    "OutputPath": "Content/NPCs/Town/Healer.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/NPCs/Town/Healer.png",
+    "Prompt": "Terraria-style pixel art sprite frame, single isolated figure, a single full-body sprite frame of Healer, friendly wizarding town NPC, animation-ready pose. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "Healer_Head",
+    "Width": 36,
+    "Height": 36,
+    "FrameCount": 1,
+    "ProcessKind": "icon",
+    "OutputPath": "Content/NPCs/Town/Healer_Head.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/NPCs/Town/Healer_Head.png",
+    "Prompt": "Terraria-style pixel art icon, centered emblem, a portrait head icon of Healer, friendly wizarding town NPC. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "Kingsley",
+    "Width": 40,
+    "Height": 1450,
+    "FrameCount": 25,
+    "ProcessKind": "sheet",
+    "OutputPath": "Content/NPCs/Town/Kingsley.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/NPCs/Town/Kingsley.png",
+    "Prompt": "Terraria-style pixel art sprite frame, single isolated figure, a single full-body sprite frame of Kingsley, friendly wizarding town NPC, animation-ready pose. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "Kingsley_Head",
+    "Width": 36,
+    "Height": 36,
+    "FrameCount": 1,
+    "ProcessKind": "icon",
+    "OutputPath": "Content/NPCs/Town/Kingsley_Head.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/NPCs/Town/Kingsley_Head.png",
+    "Prompt": "Terraria-style pixel art icon, centered emblem, a portrait head icon of Kingsley, friendly wizarding town NPC. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "Lupin",
+    "Width": 40,
+    "Height": 1450,
+    "FrameCount": 25,
+    "ProcessKind": "sheet",
+    "OutputPath": "Content/NPCs/Town/Lupin.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/NPCs/Town/Lupin.png",
+    "Prompt": "Terraria-style pixel art sprite frame, single isolated figure, a single full-body sprite frame of Lupin, friendly wizarding town NPC, animation-ready pose. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "Lupin_Head",
+    "Width": 36,
+    "Height": 36,
+    "FrameCount": 1,
+    "ProcessKind": "icon",
+    "OutputPath": "Content/NPCs/Town/Lupin_Head.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/NPCs/Town/Lupin_Head.png",
+    "Prompt": "Terraria-style pixel art icon, centered emblem, a portrait head icon of Lupin, friendly wizarding town NPC. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "MadamHooch",
+    "Width": 40,
+    "Height": 1450,
+    "FrameCount": 25,
+    "ProcessKind": "sheet",
+    "OutputPath": "Content/NPCs/Town/MadamHooch.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/NPCs/Town/MadamHooch.png",
+    "Prompt": "Terraria-style pixel art sprite frame, single isolated figure, a single full-body sprite frame of Madam Hooch, friendly wizarding town NPC, animation-ready pose. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "MadamHooch_Head",
+    "Width": 36,
+    "Height": 36,
+    "FrameCount": 1,
+    "ProcessKind": "icon",
+    "OutputPath": "Content/NPCs/Town/MadamHooch_Head.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/NPCs/Town/MadamHooch_Head.png",
+    "Prompt": "Terraria-style pixel art icon, centered emblem, a portrait head icon of Madam Hooch, friendly wizarding town NPC. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "MadamRosmerta",
+    "Width": 40,
+    "Height": 1450,
+    "FrameCount": 25,
+    "ProcessKind": "sheet",
+    "OutputPath": "Content/NPCs/Town/MadamRosmerta.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/NPCs/Town/MadamRosmerta.png",
+    "Prompt": "Terraria-style pixel art sprite frame, single isolated figure, a single full-body sprite frame of Madam Rosmerta, friendly wizarding town NPC, animation-ready pose. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "MadamRosmerta_Head",
+    "Width": 36,
+    "Height": 36,
+    "FrameCount": 1,
+    "ProcessKind": "icon",
+    "OutputPath": "Content/NPCs/Town/MadamRosmerta_Head.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/NPCs/Town/MadamRosmerta_Head.png",
+    "Prompt": "Terraria-style pixel art icon, centered emblem, a portrait head icon of Madam Rosmerta, friendly wizarding town NPC. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "MrBorgin",
+    "Width": 40,
+    "Height": 1450,
+    "FrameCount": 25,
+    "ProcessKind": "sheet",
+    "OutputPath": "Content/NPCs/Town/MrBorgin.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/NPCs/Town/MrBorgin.png",
+    "Prompt": "Terraria-style pixel art sprite frame, single isolated figure, a single full-body sprite frame of Mr Borgin, friendly wizarding town NPC, animation-ready pose. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "MrBorgin_Head",
+    "Width": 36,
+    "Height": 36,
+    "FrameCount": 1,
+    "ProcessKind": "icon",
+    "OutputPath": "Content/NPCs/Town/MrBorgin_Head.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/NPCs/Town/MrBorgin_Head.png",
+    "Prompt": "Terraria-style pixel art icon, centered emblem, a portrait head icon of Mr Borgin, friendly wizarding town NPC. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "Neville",
+    "Width": 40,
+    "Height": 1450,
+    "FrameCount": 25,
+    "ProcessKind": "sheet",
+    "OutputPath": "Content/NPCs/Town/Neville.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/NPCs/Town/Neville.png",
+    "Prompt": "Terraria-style pixel art sprite frame, single isolated figure, a single full-body sprite frame of Neville, friendly wizarding town NPC, animation-ready pose. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "Neville_Head",
+    "Width": 36,
+    "Height": 36,
+    "FrameCount": 1,
+    "ProcessKind": "icon",
+    "OutputPath": "Content/NPCs/Town/Neville_Head.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/NPCs/Town/Neville_Head.png",
+    "Prompt": "Terraria-style pixel art icon, centered emblem, a portrait head icon of Neville, friendly wizarding town NPC. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "Ollivander",
+    "Width": 40,
+    "Height": 1450,
+    "FrameCount": 25,
+    "ProcessKind": "sheet",
+    "OutputPath": "Content/NPCs/Town/Ollivander.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/NPCs/Town/Ollivander.png",
+    "Prompt": "Terraria-style pixel art sprite frame, single isolated figure, a single full-body sprite frame of Ollivander, friendly wizarding town NPC, animation-ready pose. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "Ollivander_Head",
+    "Width": 36,
+    "Height": 36,
+    "FrameCount": 1,
+    "ProcessKind": "icon",
+    "OutputPath": "Content/NPCs/Town/Ollivander_Head.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/NPCs/Town/Ollivander_Head.png",
+    "Prompt": "Terraria-style pixel art icon, centered emblem, a portrait head icon of Ollivander, friendly wizarding town NPC. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "PotionsMaster",
+    "Width": 40,
+    "Height": 1450,
+    "FrameCount": 25,
+    "ProcessKind": "sheet",
+    "OutputPath": "Content/NPCs/Town/PotionsMaster.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/NPCs/Town/PotionsMaster.png",
+    "Prompt": "Terraria-style pixel art sprite frame, single isolated figure, a single full-body sprite frame of Potions Master, friendly wizarding town NPC, animation-ready pose. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "PotionsMaster_Head",
+    "Width": 36,
+    "Height": 36,
+    "FrameCount": 1,
+    "ProcessKind": "icon",
+    "OutputPath": "Content/NPCs/Town/PotionsMaster_Head.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/NPCs/Town/PotionsMaster_Head.png",
+    "Prompt": "Terraria-style pixel art icon, centered emblem, a portrait head icon of Potions Master, friendly wizarding town NPC. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "BabyDragonProjectile",
+    "Width": 20,
+    "Height": 88,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Pets/BabyDragon/BabyDragonProjectile.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Pets/BabyDragon/BabyDragonProjectile.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, a wizarding game sprite themed around Baby Dragon, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "GoldenSnitchProjectile",
+    "Width": 20,
+    "Height": 88,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Pets/GoldenSnitch/GoldenSnitchProjectile.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Pets/GoldenSnitch/GoldenSnitchProjectile.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, a wizarding game sprite themed around Golden Snitch, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "HedwigProjectile",
+    "Width": 20,
+    "Height": 88,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Pets/Hedwig/HedwigProjectile.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Pets/Hedwig/HedwigProjectile.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, a wizarding game sprite themed around Hedwig, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "KneazleProjectile",
+    "Width": 20,
+    "Height": 88,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Pets/Kneazle/KneazleProjectile.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Pets/Kneazle/KneazleProjectile.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, a wizarding game sprite themed around Kneazle, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "NifflerProjectile",
+    "Width": 20,
+    "Height": 88,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Pets/Niffler/NifflerProjectile.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Pets/Niffler/NifflerProjectile.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, a wizarding game sprite themed around Niffler, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "PygmyPuffProjectile",
+    "Width": 16,
+    "Height": 72,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Pets/PygmyPuff/PygmyPuffProjectile.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Pets/PygmyPuff/PygmyPuffProjectile.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, a wizarding game sprite themed around Pygmy Puff, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "BlazeBoxProjectile",
+    "Width": 14,
+    "Height": 14,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Projectiles/BlazeBoxProjectile.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Projectiles/BlazeBoxProjectile.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, a wizarding game sprite themed around Blaze Box, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "DarknessPowderProjectile",
+    "Width": 16,
+    "Height": 16,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Projectiles/DarknessPowderProjectile.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Projectiles/DarknessPowderProjectile.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, a wizarding game sprite themed around Darkness Powder, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "DecoyDetonatorProjectile",
+    "Width": 14,
+    "Height": 14,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Projectiles/DecoyDetonatorProjectile.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Projectiles/DecoyDetonatorProjectile.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, a wizarding game sprite themed around Decoy Detonator, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "HouseElfMinion",
+    "Width": 20,
+    "Height": 128,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Projectiles/HouseElfMinion.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Projectiles/HouseElfMinion.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, a wizarding game sprite themed around House Elf Minion, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "HowlerProjectile",
+    "Width": 16,
+    "Height": 16,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Projectiles/HowlerProjectile.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Projectiles/HowlerProjectile.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, a wizarding game sprite themed around Howler, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "PatronusGuardian",
+    "Width": 36,
+    "Height": 152,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Projectiles/PatronusGuardian.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Projectiles/PatronusGuardian.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, a wizarding game sprite themed around Patronus Guardian, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "PhoenixMinion",
+    "Width": 30,
+    "Height": 128,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Projectiles/PhoenixMinion.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Projectiles/PhoenixMinion.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, a wizarding game sprite themed around Phoenix Minion, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "QuaffleProjectile",
+    "Width": 16,
+    "Height": 16,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Projectiles/QuaffleProjectile.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Projectiles/QuaffleProjectile.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, a wizarding game sprite themed around Quaffle, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "AccioProjectile",
+    "Width": 40,
+    "Height": 40,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Projectiles/Spells/AccioProjectile.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Projectiles/Spells/AccioProjectile.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, a magical spell projectile for Accio, focused energy bolt or effect, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "AguamentiProjectile",
+    "Width": 10,
+    "Height": 10,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Projectiles/Spells/AguamentiProjectile.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Projectiles/Spells/AguamentiProjectile.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, a magical spell projectile for Aguamenti, focused energy bolt or effect, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "AlohomoraProjectile",
+    "Width": 12,
+    "Height": 12,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Projectiles/Spells/AlohomoraProjectile.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Projectiles/Spells/AlohomoraProjectile.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, a magical spell projectile for Alohomora, focused energy bolt or effect, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "ApparitionProjectile",
+    "Width": 16,
+    "Height": 16,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Projectiles/Spells/ApparitionProjectile.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Projectiles/Spells/ApparitionProjectile.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, a magical spell projectile for Apparition, focused energy bolt or effect, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "AvadaKedavraProjectile",
+    "Width": 16,
+    "Height": 16,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Projectiles/Spells/AvadaKedavraProjectile.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Projectiles/Spells/AvadaKedavraProjectile.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, a magical spell projectile for Avada Kedavra, focused energy bolt or effect, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "BombardaProjectile",
+    "Width": 16,
+    "Height": 16,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Projectiles/Spells/BombardaProjectile.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Projectiles/Spells/BombardaProjectile.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, a magical spell projectile for Bombarda, focused energy bolt or effect, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "ChainStupefyProjectile",
+    "Width": 14,
+    "Height": 14,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Projectiles/Spells/ChainStupefyProjectile.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Projectiles/Spells/ChainStupefyProjectile.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, a magical spell projectile for Chain Stupefy, focused energy bolt or effect, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "ConjunctivitisProjectile",
+    "Width": 12,
+    "Height": 12,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Projectiles/Spells/ConjunctivitisProjectile.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Projectiles/Spells/ConjunctivitisProjectile.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, a magical spell projectile for Conjunctivitis, focused energy bolt or effect, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "CrucioProjectile",
+    "Width": 10,
+    "Height": 10,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Projectiles/Spells/CrucioProjectile.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Projectiles/Spells/CrucioProjectile.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, a magical spell projectile for Crucio, focused energy bolt or effect, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "EpiskeyProjectile",
+    "Width": 16,
+    "Height": 16,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Projectiles/Spells/EpiskeyProjectile.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Projectiles/Spells/EpiskeyProjectile.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, a magical spell projectile for Episkey, focused energy bolt or effect, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "ExpelliarmusProjectile",
+    "Width": 12,
+    "Height": 12,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Projectiles/Spells/ExpelliarmusProjectile.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Projectiles/Spells/ExpelliarmusProjectile.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, a magical spell projectile for Expelliarmus, focused energy bolt or effect, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "FiendfyreProjectile",
+    "Width": 20,
+    "Height": 20,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Projectiles/Spells/FiendfyreProjectile.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Projectiles/Spells/FiendfyreProjectile.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, a magical spell projectile for Fiendfyre, focused energy bolt or effect, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "FiniteIncantatemProjectile",
+    "Width": 80,
+    "Height": 80,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Projectiles/Spells/FiniteIncantatemProjectile.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Projectiles/Spells/FiniteIncantatemProjectile.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, a magical spell projectile for Finite Incantatem, focused energy bolt or effect, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "ImpedimentaProjectile",
+    "Width": 14,
+    "Height": 14,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Projectiles/Spells/ImpedimentaProjectile.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Projectiles/Spells/ImpedimentaProjectile.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, a magical spell projectile for Impedimenta, focused energy bolt or effect, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "IncendioProjectile",
+    "Width": 12,
+    "Height": 12,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Projectiles/Spells/IncendioProjectile.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Projectiles/Spells/IncendioProjectile.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, a magical spell projectile for Incendio, focused energy bolt or effect, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "LevicorpusProjectile",
+    "Width": 14,
+    "Height": 14,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Projectiles/Spells/LevicorpusProjectile.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Projectiles/Spells/LevicorpusProjectile.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, a magical spell projectile for Levicorpus, focused energy bolt or effect, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "LumosMaximaProjectile",
+    "Width": 24,
+    "Height": 24,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Projectiles/Spells/LumosMaximaProjectile.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Projectiles/Spells/LumosMaximaProjectile.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, a magical spell projectile for Lumos Maxima, focused energy bolt or effect, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "LumosProjectile",
+    "Width": 12,
+    "Height": 12,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Projectiles/Spells/LumosProjectile.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Projectiles/Spells/LumosProjectile.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, a magical spell projectile for Lumos, focused energy bolt or effect, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "PatronusProjectile",
+    "Width": 30,
+    "Height": 30,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Projectiles/Spells/PatronusProjectile.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Projectiles/Spells/PatronusProjectile.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, a magical spell projectile for Patronus, focused energy bolt or effect, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "ProtegoProjectile",
+    "Width": 60,
+    "Height": 60,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Projectiles/Spells/ProtegoProjectile.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Projectiles/Spells/ProtegoProjectile.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, a magical spell projectile for Protego, focused energy bolt or effect, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "ReductoProjectile",
+    "Width": 14,
+    "Height": 14,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Projectiles/Spells/ReductoProjectile.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Projectiles/Spells/ReductoProjectile.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, a magical spell projectile for Reducto, focused energy bolt or effect, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "ReparoProjectile",
+    "Width": 16,
+    "Height": 16,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Projectiles/Spells/ReparoProjectile.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Projectiles/Spells/ReparoProjectile.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, a magical spell projectile for Reparo, focused energy bolt or effect, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "RiddikulusProjectile",
+    "Width": 16,
+    "Height": 16,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Projectiles/Spells/RiddikulusProjectile.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Projectiles/Spells/RiddikulusProjectile.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, a magical spell projectile for Riddikulus, focused energy bolt or effect, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "SectumsempraProjectile",
+    "Width": 12,
+    "Height": 12,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Projectiles/Spells/SectumsempraProjectile.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Projectiles/Spells/SectumsempraProjectile.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, a magical spell projectile for Sectumsempra, focused energy bolt or effect, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "StupefyProjectile",
+    "Width": 12,
+    "Height": 12,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Projectiles/Spells/StupefyProjectile.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Projectiles/Spells/StupefyProjectile.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, a magical spell projectile for Stupefy, focused energy bolt or effect, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "WingardiumProjectile",
+    "Width": 14,
+    "Height": 14,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Projectiles/Spells/WingardiumProjectile.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Projectiles/Spells/WingardiumProjectile.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, a magical spell projectile for Wingardium, focused energy bolt or effect, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "WeasleyFireworkProjectile",
+    "Width": 10,
+    "Height": 10,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Projectiles/WeasleyFireworkProjectile.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Projectiles/WeasleyFireworkProjectile.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, a wizarding game sprite themed around Weasley Firework, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "EnchantingTable",
+    "Width": 54,
+    "Height": 36,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Tiles/EnchantingTable.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Tiles/EnchantingTable.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, a wizarding game sprite themed around Enchanting Table, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "BorginStorefront",
+    "Width": 36,
+    "Height": 36,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Tiles/Landmarks/BorginStorefront.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Tiles/Landmarks/BorginStorefront.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, a wizarding landmark or magical structure sprite themed around Borgin Storefront, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "CastleWardStone",
+    "Width": 36,
+    "Height": 36,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Tiles/Landmarks/CastleWardStone.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Tiles/Landmarks/CastleWardStone.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, a wizarding landmark or magical structure sprite themed around Castle Ward Stone, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "GrimmauldDoorway",
+    "Width": 36,
+    "Height": 54,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Tiles/Landmarks/GrimmauldDoorway.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Tiles/Landmarks/GrimmauldDoorway.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, a wizarding landmark or magical structure sprite themed around Grimmauld Doorway, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "GringottsFacade",
+    "Width": 54,
+    "Height": 54,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Tiles/Landmarks/GringottsFacade.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Tiles/Landmarks/GringottsFacade.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, a wizarding landmark or magical structure sprite themed around Gringotts Facade, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "HousePointHourglass",
+    "Width": 36,
+    "Height": 54,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Tiles/Landmarks/HousePointHourglass.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Tiles/Landmarks/HousePointHourglass.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, a wizarding landmark or magical structure sprite themed around House Point Hourglass, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "LeakyCauldronSign",
+    "Width": 36,
+    "Height": 36,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Tiles/Landmarks/LeakyCauldronSign.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Tiles/Landmarks/LeakyCauldronSign.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, a wizarding landmark or magical structure sprite themed around Leaky Cauldron Sign, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "ProphecyShelf",
+    "Width": 36,
+    "Height": 54,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Tiles/Landmarks/ProphecyShelf.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Tiles/Landmarks/ProphecyShelf.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, a wizarding landmark or magical structure sprite themed around Prophecy Shelf, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "QuidditchGoalpost",
+    "Width": 18,
+    "Height": 72,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Tiles/Landmarks/QuidditchGoalpost.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Tiles/Landmarks/QuidditchGoalpost.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, a wizarding landmark or magical structure sprite themed around Quidditch Goalpost, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "ShriekingShackSign",
+    "Width": 36,
+    "Height": 36,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Tiles/Landmarks/ShriekingShackSign.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Tiles/Landmarks/ShriekingShackSign.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, a wizarding landmark or magical structure sprite themed around Shrieking Shack Sign, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "StMungosMannequin",
+    "Width": 36,
+    "Height": 36,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Tiles/Landmarks/StMungosMannequin.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Tiles/Landmarks/StMungosMannequin.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, a wizarding landmark or magical structure sprite themed around St Mungos Mannequin, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "VeilArch",
+    "Width": 54,
+    "Height": 72,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Tiles/Landmarks/VeilArch.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Tiles/Landmarks/VeilArch.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, a wizarding landmark or magical structure sprite themed around Veil Arch, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "WhompingWillowStump",
+    "Width": 54,
+    "Height": 36,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Tiles/Landmarks/WhompingWillowStump.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Tiles/Landmarks/WhompingWillowStump.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, a wizarding landmark or magical structure sprite themed around Whomping Willow Stump, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  }
+]

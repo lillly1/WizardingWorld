@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 28">
+  <defs>
+    <linearGradient id="book-cover" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#5B2C8A"/>
+      <stop offset="50%" stop-color="#4A1A7A"/>
+      <stop offset="100%" stop-color="#3A1060"/>
+    </linearGradient>
+    <linearGradient id="gold-trim" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FFD700"/>
+      <stop offset="50%" stop-color="#DAA520"/>
+      <stop offset="100%" stop-color="#B8860B"/>
+    </linearGradient>
+    <radialGradient id="magic-glow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#9B59B6" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#9B59B6" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="pages" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#F5F0E0"/>
+      <stop offset="100%" stop-color="#E8DCC8"/>
+    </linearGradient>
+  </defs>
+  <!-- Magical glow -->
+  <ellipse cx="14" cy="14" rx="12" ry="12" fill="url(#magic-glow)"/>
+  <!-- Book shadow -->
+  <rect x="4.5" y="4.5" width="19" height="21" rx="1.5" fill="#1a0a30" opacity="0.3"/>
+  <!-- Book back cover -->
+  <rect x="4" y="3" width="19" height="21" rx="1.5" fill="url(#book-cover)" stroke="#DAA520" stroke-width="0.5"/>
+  <!-- Pages (visible from side) -->
+  <rect x="5" y="4.5" width="17" height="18" rx="0.5" fill="url(#pages)"/>
+  <line x1="5.5" y1="7" x2="21.5" y2="7" stroke="#D4C8B0" stroke-width="0.2" opacity="0.5"/>
+  <line x1="5.5" y1="9.5" x2="21.5" y2="9.5" stroke="#D4C8B0" stroke-width="0.2" opacity="0.5"/>
+  <line x1="5.5" y1="12" x2="21.5" y2="12" stroke="#D4C8B0" stroke-width="0.2" opacity="0.5"/>
+  <line x1="5.5" y1="14.5" x2="21.5" y2="14.5" stroke="#D4C8B0" stroke-width="0.2" opacity="0.5"/>
+  <line x1="5.5" y1="17" x2="21.5" y2="17" stroke="#D4C8B0" stroke-width="0.2" opacity="0.5"/>
+  <line x1="5.5" y1="19.5" x2="21.5" y2="19.5" stroke="#D4C8B0" stroke-width="0.2" opacity="0.5"/>
+  <!-- Front cover -->
+  <rect x="3" y="3" width="19" height="21" rx="1.5" fill="url(#book-cover)" stroke="#DAA520" stroke-width="0.6"/>
+  <!-- Gold border decorations -->
+  <rect x="4.5" y="4.5" width="16" height="18" rx="1" fill="none" stroke="url(#gold-trim)" stroke-width="0.5"/>
+  <rect x="5.5" y="5.5" width="14" height="16" rx="0.5" fill="none" stroke="url(#gold-trim)" stroke-width="0.3" opacity="0.6"/>
+  <!-- Wand symbol on cover -->
+  <line x1="12.5" y1="8" x2="12.5" y2="18" stroke="url(#gold-trim)" stroke-width="0.8" stroke-linecap="round"/>
+  <!-- Wand tip spark -->
+  <circle cx="12.5" cy="7.5" r="1.2" fill="#FFD700" opacity="0.4"/>
+  <circle cx="12.5" cy="7.5" r="0.5" fill="#FFE860" opacity="0.7"/>
+  <!-- Small stars from wand tip -->
+  <path d="M10.5,8 L10.7,7.5 L11.2,7.3 L10.7,7.1 L10.5,6.6 L10.3,7.1 L9.8,7.3 L10.3,7.5 Z" fill="#FFD700" opacity="0.5"/>
+  <path d="M14.5,7 L14.65,6.6 L15.05,6.5 L14.65,6.4 L14.5,6 L14.35,6.4 L13.95,6.5 L14.35,6.6 Z" fill="#FFD700" opacity="0.4"/>
+  <!-- Wand handle detail -->
+  <circle cx="12.5" cy="17" r="0.6" fill="none" stroke="url(#gold-trim)" stroke-width="0.4"/>
+  <!-- Corner ornaments -->
+  <path d="M5.5,5.5 Q6.5,5.5 6.5,6.5" stroke="#DAA520" stroke-width="0.4" fill="none"/>
+  <path d="M19.5,5.5 Q18.5,5.5 18.5,6.5" stroke="#DAA520" stroke-width="0.4" fill="none"/>
+  <path d="M5.5,21.5 Q6.5,21.5 6.5,20.5" stroke="#DAA520" stroke-width="0.4" fill="none"/>
+  <path d="M19.5,21.5 Q18.5,21.5 18.5,20.5" stroke="#DAA520" stroke-width="0.4" fill="none"/>
+  <!-- Spine -->
+  <rect x="3" y="3" width="2" height="21" rx="1" fill="#3A1060" stroke="#DAA520" stroke-width="0.4"/>
+  <line x1="4" y1="5" x2="4" y2="22" stroke="#DAA520" stroke-width="0.3" opacity="0.4"/>
+  <!-- Spine decorations -->
+  <circle cx="4" cy="8" r="0.4" fill="#DAA520" opacity="0.5"/>
+  <circle cx="4" cy="13.5" r="0.4" fill="#DAA520" opacity="0.5"/>
+  <circle cx="4" cy="19" r="0.4" fill="#DAA520" opacity="0.5"/>
+</svg>

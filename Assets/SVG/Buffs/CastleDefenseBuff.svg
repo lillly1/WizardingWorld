@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <defs>
+    <linearGradient id="wallGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#8a8a7a"/>
+      <stop offset="100%" stop-color="#5a5a4a"/>
+    </linearGradient>
+    <radialGradient id="wardGlow" cx="50%" cy="30%" r="60%">
+      <stop offset="0%" stop-color="#ffd700" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#ffd700" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="32" height="32" rx="4" fill="#2a2a20"/>
+  <!-- Golden ward glow behind wall -->
+  <circle cx="16" cy="12" r="14" fill="url(#wardGlow)"/>
+  <!-- Stone wall -->
+  <g fill="url(#wallGrad)" stroke="#4a4a3a" stroke-width="0.4">
+    <!-- Bottom row of bricks -->
+    <rect x="2" y="24" width="8" height="4"/>
+    <rect x="10" y="24" width="6" height="4"/>
+    <rect x="16" y="24" width="8" height="4"/>
+    <rect x="24" y="24" width="6" height="4"/>
+    <!-- Second row -->
+    <rect x="4" y="20" width="6" height="4"/>
+    <rect x="10" y="20" width="8" height="4"/>
+    <rect x="18" y="20" width="6" height="4"/>
+    <rect x="24" y="20" width="4" height="4"/>
+    <!-- Third row -->
+    <rect x="2" y="16" width="7" height="4"/>
+    <rect x="9" y="16" width="6" height="4"/>
+    <rect x="15" y="16" width="7" height="4"/>
+    <rect x="22" y="16" width="8" height="4"/>
+    <!-- Top row with battlements -->
+    <rect x="2" y="12" width="5" height="4"/>
+    <rect x="9" y="12" width="5" height="4"/>
+    <rect x="16" y="12" width="5" height="4"/>
+    <rect x="23" y="12" width="5" height="4"/>
+    <!-- Battlement tops -->
+    <rect x="2" y="9" width="3" height="4"/>
+    <rect x="9" y="9" width="3" height="4"/>
+    <rect x="16" y="9" width="3" height="4"/>
+    <rect x="23" y="9" width="3" height="4"/>
+  </g>
+  <!-- Golden ward energy arcs -->
+  <g stroke="#ffd700" stroke-width="0.8" fill="none" opacity="0.6">
+    <path d="M4 9 Q16 0 28 9"/>
+    <path d="M6 8 Q16 1 26 8"/>
+  </g>
+  <g stroke="#ffea00" stroke-width="0.4" fill="none" opacity="0.4">
+    <path d="M2 10 Q16 -2 30 10"/>
+  </g>
+  <!-- +8 defense text -->
+  <text x="16" y="7" text-anchor="middle" font-family="sans-serif" font-size="4" font-weight="bold" fill="#ffd700" opacity="0.8">+8</text>
+  <!-- Ward sparkles -->
+  <circle cx="8" cy="5" r="0.5" fill="#ffd700" opacity="0.7"/>
+  <circle cx="16" cy="2" r="0.6" fill="#ffea00" opacity="0.8"/>
+  <circle cx="24" cy="5" r="0.5" fill="#ffd700" opacity="0.7"/>
+</svg>

@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <defs>
+    <linearGradient id="gryffBg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#8b0000"/>
+      <stop offset="100%" stop-color="#5a0000"/>
+    </linearGradient>
+  </defs>
+  <rect width="32" height="32" rx="4" fill="url(#gryffBg)"/>
+  <!-- Gold border accent -->
+  <rect x="1" y="1" width="30" height="30" rx="3" fill="none" stroke="#d4a017" stroke-width="0.8"/>
+  <!-- Simplified lion emblem -->
+  <g transform="translate(8,3) scale(0.9)">
+    <!-- Mane -->
+    <circle cx="9" cy="8" r="6" fill="#d4a017" opacity="0.7"/>
+    <!-- Head -->
+    <circle cx="9" cy="8.5" r="3.5" fill="#c4901a"/>
+    <!-- Ears -->
+    <circle cx="6.5" cy="5.5" r="1.2" fill="#d4a017"/>
+    <circle cx="11.5" cy="5.5" r="1.2" fill="#d4a017"/>
+    <!-- Eyes -->
+    <circle cx="7.8" cy="7.5" r="0.6" fill="#1a0a00"/>
+    <circle cx="10.2" cy="7.5" r="0.6" fill="#1a0a00"/>
+    <!-- Nose -->
+    <ellipse cx="9" cy="9.5" rx="0.8" ry="0.5" fill="#8a5a0a"/>
+    <!-- Mouth -->
+    <path d="M8 10.5 Q9 11.5 10 10.5" stroke="#8a5a0a" stroke-width="0.5" fill="none"/>
+  </g>
+  <!-- Golden goblet -->
+  <g transform="translate(3,17)">
+    <!-- Cup -->
+    <path d="M2 0 L0 7 Q0 9 3 9 L9 9 Q12 9 12 7 L10 0 Z" fill="#d4a017"/>
+    <!-- Cup rim highlight -->
+    <rect x="1.5" y="0" width="9" height="1" rx="0.5" fill="#f0c040"/>
+    <!-- Stem -->
+    <rect x="4.5" y="9" width="3" height="2" fill="#b8900a"/>
+    <!-- Base -->
+    <ellipse cx="6" cy="12" rx="4" ry="1" fill="#d4a017"/>
+    <!-- Liquid inside -->
+    <path d="M3 2 L1.5 7 Q2 8 6 8 Q10 8 10.5 7 L9 2 Z" fill="#ff6a00" opacity="0.5"/>
+  </g>
+  <!-- Sparkle -->
+  <circle cx="26" cy="6" r="0.6" fill="#ffd700" opacity="0.8"/>
+  <circle cx="28" cy="20" r="0.5" fill="#ffd700" opacity="0.6"/>
+</svg>

@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36">
+  <defs>
+    <radialGradient id="dementorAura" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#0a0a1a" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#1a1a2a" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="robeGrad" x1="0" y1="0" x2="0.3" y2="1">
+      <stop offset="0%" stop-color="#1a1a2a"/>
+      <stop offset="50%" stop-color="#0a0a15"/>
+      <stop offset="100%" stop-color="#050510"/>
+    </linearGradient>
+  </defs>
+  <rect width="36" height="36" fill="#1a1a2a"/>
+  <circle cx="18" cy="18" r="16" fill="url(#dementorAura)"/>
+  <!-- Tattered robes / floating body -->
+  <g fill="url(#robeGrad)">
+    <!-- Hood -->
+    <path d="M13 6 Q18 2 23 6 Q25 8 25 12 L24 14 L12 14 L11 12 Q11 8 13 6 Z"/>
+    <!-- Body robes -->
+    <path d="M12 14 L10 28 Q9 32 8 35 L14 34 L15 30 L16 34 L18 35 L20 34 L21 30 L22 34 L28 35 Q27 32 26 28 L24 14 Z"/>
+    <!-- Hood shadow (void face) -->
+    <ellipse cx="18" cy="10" rx="4" ry="3.5" fill="#000000"/>
+  </g>
+  <!-- Tattered robe edges -->
+  <g stroke="#0a0a15" stroke-width="0.5" fill="none" opacity="0.7">
+    <path d="M8 35 Q9 33 8 31"/>
+    <path d="M14 34 Q13 32 14 30"/>
+    <path d="M22 34 Q23 32 22 30"/>
+    <path d="M28 35 Q27 33 28 31"/>
+  </g>
+  <!-- Skeletal hand reaching out -->
+  <g fill="#4a4a5a" stroke="#3a3a4a" stroke-width="0.3">
+    <!-- Arm -->
+    <path d="M10 16 L5 20 L4 19.5 L3.5 20.5 L4 21"/>
+    <!-- Hand -->
+    <path d="M5 20 L3 18.5 L2.5 19 L4.5 20.5" fill="#4a4a5a"/>
+    <path d="M5 20 L2.5 20 L2.5 20.5 L5 20.8" fill="#4a4a5a"/>
+    <path d="M4.5 20.5 L2 21.5 L2.2 22 L4.8 21" fill="#4a4a5a"/>
+    <!-- Bony fingers -->
+    <line x1="3" y1="18.5" x2="1.5" y2="17.5" stroke="#4a4a5a" stroke-width="0.6"/>
+    <line x1="2.5" y1="20" x2="1" y2="19.5" stroke="#4a4a5a" stroke-width="0.6"/>
+    <line x1="2" y1="21.5" x2="0.5" y2="21.5" stroke="#4a4a5a" stroke-width="0.6"/>
+  </g>
+  <!-- Cold mist -->
+  <g fill="#3a4a6a" opacity="0.2">
+    <ellipse cx="10" cy="30" rx="6" ry="1.5"/>
+    <ellipse cx="26" cy="32" rx="5" ry="1"/>
+    <ellipse cx="18" cy="34" rx="8" ry="1.5"/>
+  </g>
+  <!-- Void mouth hint -->
+  <ellipse cx="18" cy="11.5" rx="1.5" ry="1" fill="#000000" stroke="#1a1a2a" stroke-width="0.3"/>
+</svg>

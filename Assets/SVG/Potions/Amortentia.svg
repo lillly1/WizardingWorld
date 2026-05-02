@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 32">
+  <defs>
+    <linearGradient id="love-liquid" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FF69B4"/>
+      <stop offset="30%" stop-color="#FF1493"/>
+      <stop offset="60%" stop-color="#DB7093"/>
+      <stop offset="100%" stop-color="#FF69B4"/>
+    </linearGradient>
+    <linearGradient id="pearl-sheen" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="rgba(255,255,255,0.5)"/>
+      <stop offset="25%" stop-color="rgba(255,200,220,0.2)"/>
+      <stop offset="50%" stop-color="rgba(255,255,255,0.4)"/>
+      <stop offset="75%" stop-color="rgba(255,200,220,0.2)"/>
+      <stop offset="100%" stop-color="rgba(255,255,255,0.3)"/>
+    </linearGradient>
+    <radialGradient id="pink-glow" cx="0.5" cy="0.4" r="0.6">
+      <stop offset="0%" stop-color="#FF69B4" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#FF69B4" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="steam-blur">
+      <feGaussianBlur stdDeviation="0.8"/>
+    </filter>
+  </defs>
+  <!-- Pink glow -->
+  <ellipse cx="12" cy="18" rx="9" ry="10" fill="url(#pink-glow)"/>
+  <!-- Bottle body - rounded elegant -->
+  <path d="M7,12 Q5.5,16 6,20 Q6.5,25 8,27 Q9,28.5 12,29 Q15,28.5 16,27 Q17.5,25 18,20 Q18.5,16 17,12 Z" fill="#2a1520" stroke="#cc6699" stroke-width="0.4"/>
+  <!-- Pearl/glass sheen -->
+  <path d="M7,12 Q5.5,16 6,20 Q6.5,25 8,27 Q9,28.5 12,29 Q15,28.5 16,27 Q17.5,25 18,20 Q18.5,16 17,12 Z" fill="url(#pearl-sheen)" opacity="0.4"/>
+  <!-- Liquid -->
+  <path d="M7.5,14 Q6,17 6.5,20.5 Q7,25 8.2,27 Q9.2,28.2 12,28.5 Q14.8,28.2 15.8,27 Q17,25 17.5,20.5 Q18,17 16.5,14 Z" fill="url(#love-liquid)"/>
+  <!-- Mother of pearl shimmer -->
+  <path d="M8,16 Q10,18 12,16 Q14,14 16,16" stroke="white" stroke-width="0.4" fill="none" opacity="0.35"/>
+  <path d="M7.5,20 Q9.5,22 12,20 Q14.5,18 16.5,20" stroke="rgba(255,255,255,0.3)" stroke-width="0.3" fill="none"/>
+  <path d="M8,24 Q10,26 12,24 Q14,22 16,24" stroke="rgba(255,255,255,0.25)" stroke-width="0.3" fill="none"/>
+  <!-- Swirl pattern in liquid -->
+  <path d="M10,18 Q12,15 14,18 Q12,21 10,18 Z" fill="none" stroke="#FF1493" stroke-width="0.5" opacity="0.5"/>
+  <path d="M9,22 Q12,19 15,22 Q12,25 9,22 Z" fill="none" stroke="#DB7093" stroke-width="0.4" opacity="0.4"/>
+  <!-- Bottle neck -->
+  <rect x="10.2" y="7" width="3.6" height="5.5" rx="0.5" fill="#2a1520" stroke="#cc6699" stroke-width="0.4"/>
+  <rect x="10.2" y="7" width="3.6" height="5.5" rx="0.5" fill="url(#pearl-sheen)" opacity="0.3"/>
+  <!-- Liquid in neck -->
+  <rect x="10.7" y="9" width="2.6" height="3.2" rx="0.3" fill="url(#love-liquid)" opacity="0.7"/>
+  <!-- Cork -->
+  <path d="M10,5 Q10,4 10.8,3.5 L13.2,3.5 Q14,4 14,5 L14,7.2 L10,7.2 Z" fill="#c0607a" stroke="#a04060" stroke-width="0.3"/>
+  <!-- Heart-shaped steam spirals -->
+  <path d="M10,3 Q9,1 10.5,0.5 Q12,0 12,1.5 Q12,0 13.5,0.5 Q15,1 14,3" stroke="#FF69B4" stroke-width="0.5" fill="none" opacity="0.4" filter="url(#steam-blur)"/>
+  <path d="M8.5,4 Q7.5,2 9,1.5 Q10,1 10.5,2.5" stroke="#FF69B4" stroke-width="0.4" fill="none" opacity="0.3" filter="url(#steam-blur)"/>
+  <path d="M15.5,4 Q16.5,2 15,1.5 Q14,1 13.5,2.5" stroke="#FF69B4" stroke-width="0.4" fill="none" opacity="0.3" filter="url(#steam-blur)"/>
+  <!-- Glass highlight -->
+  <path d="M8,13 Q7.5,18 8,24" stroke="white" stroke-width="0.5" fill="none" opacity="0.2"/>
+  <!-- Sparkles -->
+  <circle cx="9" cy="17" r="0.3" fill="white" opacity="0.6"/>
+  <circle cx="14" cy="21" r="0.25" fill="white" opacity="0.5"/>
+  <circle cx="11" cy="25" r="0.2" fill="white" opacity="0.4"/>
+</svg>

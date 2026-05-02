@@ -1,0 +1,239 @@
+[
+  {
+    "id": "DarkWizardHood",
+    "_source": "DarkWizardHood.cs",
+    "defense": 8,
+    "rarity": "Pink",
+    "obsolete": false,
+    "hasRecipe": true,
+    "isAccessory": false,
+    "set": "DarkWizard"
+  },
+  {
+    "id": "DarkWizardLeggings",
+    "_source": "DarkWizardLeggings.cs",
+    "defense": 8,
+    "rarity": "Pink",
+    "obsolete": false,
+    "hasRecipe": true,
+    "isAccessory": false,
+    "set": "DarkWizard"
+  },
+  {
+    "id": "DarkWizardRobes",
+    "_source": "DarkWizardRobes.cs",
+    "defense": 10,
+    "rarity": "Pink",
+    "obsolete": false,
+    "hasRecipe": true,
+    "isAccessory": false,
+    "set": "DarkWizard"
+  },
+  {
+    "id": "DragonScaleBreastplate",
+    "_source": "DragonScaleBreastplate.cs",
+    "defense": 16,
+    "rarity": "Pink",
+    "obsolete": false,
+    "hasRecipe": true,
+    "isAccessory": false,
+    "set": "DragonScale"
+  },
+  {
+    "id": "DragonScaleGreaves",
+    "_source": "DragonScaleGreaves.cs",
+    "defense": 12,
+    "rarity": "Pink",
+    "obsolete": false,
+    "hasRecipe": true,
+    "isAccessory": false,
+    "set": "DragonScale"
+  },
+  {
+    "id": "DragonScaleHelm",
+    "_source": "DragonScaleHelm.cs",
+    "defense": 12,
+    "rarity": "Pink",
+    "obsolete": false,
+    "hasRecipe": true,
+    "isAccessory": false,
+    "set": "DragonScale"
+  },
+  {
+    "id": "GryffindorHood",
+    "_source": "GryffindorHood.cs",
+    "defense": 5,
+    "rarity": "Orange",
+    "obsolete": false,
+    "hasRecipe": true,
+    "isAccessory": false,
+    "set": "Gryffindor"
+  },
+  {
+    "id": "GryffindorLeggings",
+    "_source": "GryffindorLeggings.cs",
+    "defense": 6,
+    "rarity": "Orange",
+    "obsolete": false,
+    "hasRecipe": true,
+    "isAccessory": false,
+    "set": "Gryffindor"
+  },
+  {
+    "id": "GryffindorRobes",
+    "_source": "GryffindorRobes.cs",
+    "defense": 7,
+    "rarity": "Orange",
+    "obsolete": false,
+    "hasRecipe": true,
+    "isAccessory": false,
+    "set": "Gryffindor"
+  },
+  {
+    "id": "HufflepuffHood",
+    "_source": "HufflepuffHood.cs",
+    "defense": 7,
+    "rarity": "Orange",
+    "obsolete": false,
+    "hasRecipe": true,
+    "isAccessory": false,
+    "set": "Hufflepuff"
+  },
+  {
+    "id": "HufflepuffLeggings",
+    "_source": "HufflepuffLeggings.cs",
+    "defense": 7,
+    "rarity": "Orange",
+    "obsolete": false,
+    "hasRecipe": true,
+    "isAccessory": false,
+    "set": "Hufflepuff"
+  },
+  {
+    "id": "HufflepuffRobes",
+    "_source": "HufflepuffRobes.cs",
+    "defense": 9,
+    "rarity": "Orange",
+    "obsolete": false,
+    "hasRecipe": true,
+    "isAccessory": false,
+    "set": "Hufflepuff"
+  },
+  {
+    "id": "RavenclawHood",
+    "_source": "RavenclawHood.cs",
+    "defense": 3,
+    "rarity": "Orange",
+    "obsolete": false,
+    "hasRecipe": true,
+    "isAccessory": false,
+    "set": "Ravenclaw"
+  },
+  {
+    "id": "RavenclawLeggings",
+    "_source": "RavenclawLeggings.cs",
+    "defense": 4,
+    "rarity": "Orange",
+    "obsolete": false,
+    "hasRecipe": true,
+    "isAccessory": false,
+    "set": "Ravenclaw"
+  },
+  {
+    "id": "RavenclawRobes",
+    "_source": "RavenclawRobes.cs",
+    "defense": 5,
+    "rarity": "Orange",
+    "obsolete": false,
+    "hasRecipe": true,
+    "isAccessory": false,
+    "set": "Ravenclaw"
+  },
+  {
+    "id": "SlytherinHood",
+    "_source": "SlytherinHood.cs",
+    "defense": 4,
+    "rarity": "Orange",
+    "obsolete": false,
+    "hasRecipe": true,
+    "isAccessory": false,
+    "set": "Slytherin"
+  },
+  {
+    "id": "SlytherinLeggings",
+    "_source": "SlytherinLeggings.cs",
+    "defense": 5,
+    "rarity": "Orange",
+    "obsolete": false,
+    "hasRecipe": true,
+    "isAccessory": false,
+    "set": "Slytherin"
+  },
+  {
+    "id": "SlytherinRobes",
+    "_source": "SlytherinRobes.cs",
+    "defense": 6,
+    "rarity": "Orange",
+    "obsolete": false,
+    "hasRecipe": true,
+    "isAccessory": false,
+    "set": "Slytherin"
+  },
+  {
+    "id": "WizardBoots",
+    "_source": "WizardBoots.cs",
+    "rarity": "Blue",
+    "obsolete": false,
+    "hasRecipe": true,
+    "isAccessory": false,
+    "set": "WizardRobes"
+  },
+  {
+    "id": "WizardHat",
+    "_source": "WizardHat.cs",
+    "rarity": "Blue",
+    "obsolete": false,
+    "hasRecipe": true,
+    "isAccessory": false,
+    "set": "WizardRobes"
+  },
+  {
+    "id": "WizardRobe",
+    "_source": "WizardRobe.cs",
+    "rarity": "Blue",
+    "obsolete": false,
+    "hasRecipe": true,
+    "isAccessory": false,
+    "set": "WizardRobes"
+  },
+  {
+    "id": "WizengamotBoots",
+    "_source": "WizengamotBoots.cs",
+    "defense": 16,
+    "rarity": "Red",
+    "obsolete": false,
+    "hasRecipe": true,
+    "isAccessory": false,
+    "set": "Wizengamot"
+  },
+  {
+    "id": "WizengamotHood",
+    "_source": "WizengamotHood.cs",
+    "defense": 16,
+    "rarity": "Red",
+    "obsolete": false,
+    "hasRecipe": true,
+    "isAccessory": false,
+    "set": "Wizengamot"
+  },
+  {
+    "id": "WizengamotRobes",
+    "_source": "WizengamotRobes.cs",
+    "defense": 20,
+    "rarity": "Red",
+    "obsolete": false,
+    "hasRecipe": true,
+    "isAccessory": false,
+    "set": "Wizengamot"
+  }
+]

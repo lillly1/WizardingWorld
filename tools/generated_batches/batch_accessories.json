@@ -1,0 +1,41 @@
+[
+  {
+    "Name": "AzkabanWardensKey",
+    "Mode": "Chroma",
+    "Width": 24,
+    "Height": 24,
+    "Padding": 8,
+    "RawOutputPath": "raw/AzkabanWardensKey.png",
+    "OutputPath": "../../Content/Items/Accessories/AzkabanWardensKey.png",
+    "Prompt": "Terraria-style pixel art item icon, centered single object, an Azkaban Warden's Key: a heavy wrought-iron prison key with cold steel, faint blue ward runes etched along the shaft, grim wizard prison aesthetic, clean readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects.",
+    "_source_manifest": "phase3_chroma_assets.json",
+    "_rank": 7,
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Items/Accessories/AzkabanWardensKey.png"
+  },
+  {
+    "Name": "DemiguiseCloak",
+    "Mode": "Chroma",
+    "Width": 30,
+    "Height": 30,
+    "Padding": 10,
+    "RawOutputPath": "raw/DemiguiseCloak.png",
+    "OutputPath": "../../Content/Items/Accessories/DemiguiseCloak.png",
+    "Prompt": "Terraria-style pixel art item icon, centered single object, an ordinary wizard stealth cloak woven from silvery Demiguise hair, soft hooded travel cloak, smoky silver-gray fabric with a subtle magical shimmer, ordinary gear not legendary, clean readable folded silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects.",
+    "_source_manifest": "phase3_chroma_assets.json",
+    "_rank": 7,
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Items/Accessories/DemiguiseCloak.png"
+  },
+  {
+    "Name": "GauntsRing",
+    "Mode": "Chroma",
+    "Width": 22,
+    "Height": 22,
+    "Padding": 8,
+    "RawOutputPath": "raw/GauntsRing.png",
+    "OutputPath": "../../Content/Items/Accessories/GauntsRing.png",
+    "Prompt": "Terraria-style pixel art item icon, centered single object, Gaunt's Ring: an ancient cracked gold ring set with a dark black stone, cursed family heirloom, ominous but readable silhouette, faint ghostly gray aura, dark wizard artifact. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects.",
+    "_source_manifest": "phase3_chroma_assets.json",
+    "_rank": 7,
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Items/Accessories/GauntsRing.png"
+  }
+]

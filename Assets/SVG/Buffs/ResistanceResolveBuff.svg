@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <defs>
+    <linearGradient id="shieldGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#4a6aaf"/>
+      <stop offset="100%" stop-color="#2a3a6f"/>
+    </linearGradient>
+  </defs>
+  <rect width="32" height="32" rx="4" fill="#1a1a2a"/>
+  <!-- Shield shape -->
+  <path d="M16 3 L27 8 L27 16 Q27 25 16 30 Q5 25 5 16 L5 8 Z" fill="url(#shieldGrad)" stroke="#6a8adf" stroke-width="0.8"/>
+  <!-- Inner shield highlight -->
+  <path d="M16 5 L25 9 L25 16 Q25 23 16 28 Q7 23 7 16 L7 9 Z" fill="none" stroke="#8aaaff" stroke-width="0.4" opacity="0.5"/>
+  <!-- DA Lightning bolt -->
+  <g fill="#ffd700" stroke="#ffea00" stroke-width="0.3">
+    <polygon points="14,7 18,7 15.5,14 20,14 11,27 14,17 9,17"/>
+  </g>
+  <!-- Inner bright bolt core -->
+  <polygon points="15,9 17,9 15.5,14.5 18.5,14.5 12.5,24 14,18 10.5,18" fill="#fff8dc" opacity="0.5"/>
+  <!-- Determination sparks -->
+  <g fill="#ffd700" opacity="0.7">
+    <circle cx="8" cy="10" r="0.5"/>
+    <circle cx="24" cy="10" r="0.5"/>
+    <circle cx="7" cy="18" r="0.4"/>
+    <circle cx="25" cy="18" r="0.4"/>
+  </g>
+  <!-- Shield edge glow -->
+  <path d="M16 3 L27 8 L27 16 Q27 25 16 30 Q5 25 5 16 L5 8 Z" fill="none" stroke="#aaccff" stroke-width="0.3" opacity="0.4"/>
+</svg>

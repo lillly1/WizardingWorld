@@ -1,0 +1,162 @@
+[
+  {
+    "id": "Aberforth",
+    "_source": "Aberforth.cs",
+    "damage": 16,
+    "defense": 16,
+    "lifeMax": 270,
+    "knockBackResist": 0.5,
+    "isBoss": false,
+    "noGravity": false
+  },
+  {
+    "id": "Centaur",
+    "_source": "Centaur.cs",
+    "damage": 20,
+    "defense": 20,
+    "lifeMax": 350,
+    "knockBackResist": 0.3,
+    "isBoss": false,
+    "noGravity": false
+  },
+  {
+    "id": "Dobby",
+    "_source": "Dobby.cs",
+    "damage": 8,
+    "defense": 5,
+    "lifeMax": 150,
+    "knockBackResist": 0.7,
+    "isBoss": false,
+    "noGravity": false
+  },
+  {
+    "id": "Dumbledore",
+    "_source": "Dumbledore.cs",
+    "damage": 50,
+    "defense": 30,
+    "lifeMax": 500,
+    "knockBackResist": 0.3,
+    "isBoss": false,
+    "noGravity": false
+  },
+  {
+    "id": "FredAndGeorge",
+    "_source": "FredAndGeorge.cs",
+    "damage": 15,
+    "defense": 15,
+    "lifeMax": 250,
+    "knockBackResist": 0.5,
+    "isBoss": false,
+    "noGravity": false
+  },
+  {
+    "id": "GoblinTeller",
+    "_source": "GoblinTeller.cs",
+    "damage": 15,
+    "defense": 18,
+    "lifeMax": 250,
+    "knockBackResist": 0.5,
+    "isBoss": false,
+    "noGravity": false
+  },
+  {
+    "id": "Hagrid",
+    "_source": "Hagrid.cs",
+    "damage": 25,
+    "defense": 20,
+    "lifeMax": 400,
+    "knockBackResist": 0.3,
+    "isBoss": false,
+    "noGravity": false
+  },
+  {
+    "id": "Healer",
+    "_source": "Healer.cs",
+    "damage": 10,
+    "defense": 15,
+    "lifeMax": 250,
+    "knockBackResist": 0.5,
+    "isBoss": false,
+    "noGravity": false
+  },
+  {
+    "id": "Kingsley",
+    "_source": "Kingsley.cs",
+    "damage": 20,
+    "defense": 20,
+    "lifeMax": 300,
+    "knockBackResist": 0.5,
+    "isBoss": false,
+    "noGravity": false
+  },
+  {
+    "id": "Lupin",
+    "_source": "Lupin.cs",
+    "damage": 18,
+    "defense": 18,
+    "lifeMax": 280,
+    "knockBackResist": 0.5,
+    "isBoss": false,
+    "noGravity": false
+  },
+  {
+    "id": "MadamHooch",
+    "_source": "MadamHooch.cs",
+    "damage": 12,
+    "defense": 15,
+    "lifeMax": 250,
+    "knockBackResist": 0.5,
+    "isBoss": false,
+    "noGravity": false
+  },
+  {
+    "id": "MadamRosmerta",
+    "_source": "MadamRosmerta.cs",
+    "damage": 10,
+    "defense": 15,
+    "lifeMax": 250,
+    "knockBackResist": 0.5,
+    "isBoss": false,
+    "noGravity": false
+  },
+  {
+    "id": "MrBorgin",
+    "_source": "MrBorgin.cs",
+    "damage": 14,
+    "defense": 12,
+    "lifeMax": 250,
+    "knockBackResist": 0.5,
+    "isBoss": false,
+    "noGravity": false
+  },
+  {
+    "id": "Neville",
+    "_source": "Neville.cs",
+    "damage": 20,
+    "defense": 15,
+    "lifeMax": 280,
+    "knockBackResist": 0.5,
+    "isBoss": false,
+    "noGravity": false
+  },
+  {
+    "id": "Ollivander",
+    "_source": "Ollivander.cs",
+    "damage": 10,
+    "defense": 15,
+    "lifeMax": 250,
+    "knockBackResist": 0.5,
+    "isBoss": false,
+    "noGravity": false
+  },
+  {
+    "id": "PotionsMaster",
+    "_source": "PotionsMaster.cs",
+    "damage": 10,
+    "defense": 15,
+    "lifeMax": 250,
+    "knockBackResist": 0.5,
+    "isBoss": false,
+    "noGravity": false
+  }
+]

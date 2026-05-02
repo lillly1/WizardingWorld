@@ -1,0 +1,202 @@
+[
+  {
+    "Name": "ChampionsMedallion",
+    "Width": 24,
+    "Height": 24,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Items/Accessories/ChampionsMedallion.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Items/Accessories/ChampionsMedallion.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, a magical accessory themed around Champions Medallion, wizarding wearable trinket, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "ChampionsTrophy",
+    "Width": 28,
+    "Height": 28,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Items/Accessories/ChampionsTrophy.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Items/Accessories/ChampionsTrophy.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, a magical accessory themed around Champions Trophy, wizarding wearable trinket, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "DarkLordsBane",
+    "Width": 28,
+    "Height": 28,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Items/Accessories/DarkLordsBane.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Items/Accessories/DarkLordsBane.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, a magical accessory themed around Dark Lords Bane, wizarding wearable trinket, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "DefendersSignet",
+    "Width": 22,
+    "Height": 22,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Items/Accessories/DefendersSignet.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Items/Accessories/DefendersSignet.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, a magical accessory themed around Defenders Signet, wizarding wearable trinket, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "Deluminator",
+    "Width": 20,
+    "Height": 20,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Items/Accessories/Deluminator.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Items/Accessories/Deluminator.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, a magical accessory themed around Deluminator, wizarding wearable trinket, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "DementorsEmbrace",
+    "Width": 26,
+    "Height": 26,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Items/Accessories/DementorsEmbrace.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Items/Accessories/DementorsEmbrace.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, a magical accessory themed around Dementors Embrace, wizarding wearable trinket, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "DiademOfRavenclaw",
+    "Width": 24,
+    "Height": 24,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Items/Accessories/DiademOfRavenclaw.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Items/Accessories/DiademOfRavenclaw.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, a magical accessory themed around Diadem Of Ravenclaw, wizarding wearable trinket, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "DirigiblePlumEarring",
+    "Width": 18,
+    "Height": 18,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Items/Accessories/DirigiblePlumEarring.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Items/Accessories/DirigiblePlumEarring.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, a magical accessory themed around Dirigible Plum Earring, wizarding wearable trinket, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "DragonScaleRing",
+    "Width": 18,
+    "Height": 18,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Items/Accessories/DragonScaleRing.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Items/Accessories/DragonScaleRing.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, a magical accessory themed around Dragon Scale Ring, wizarding wearable trinket, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "DragonToothNecklace",
+    "Width": 24,
+    "Height": 24,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Items/Accessories/DragonToothNecklace.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Items/Accessories/DragonToothNecklace.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, a magical accessory themed around Dragon Tooth Necklace, wizarding wearable trinket, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "EnchantedMirror",
+    "Width": 20,
+    "Height": 22,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Items/Accessories/EnchantedMirror.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Items/Accessories/EnchantedMirror.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, a magical accessory themed around Enchanted Mirror, wizarding wearable trinket, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "ExtendableEars",
+    "Width": 22,
+    "Height": 22,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Items/Accessories/ExtendableEars.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Items/Accessories/ExtendableEars.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, a magical accessory themed around Extendable Ears, wizarding wearable trinket, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "FairyWings",
+    "Width": 28,
+    "Height": 28,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Items/Accessories/FairyWings.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Items/Accessories/FairyWings.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, a magical accessory themed around Fairy Wings, wizarding wearable trinket, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "FoeGlass",
+    "Width": 22,
+    "Height": 26,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Items/Accessories/FoeGlass.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Items/Accessories/FoeGlass.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, a magical accessory themed around Foe Glass, wizarding wearable trinket, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "ForestWarden",
+    "Width": 22,
+    "Height": 22,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Items/Accessories/ForestWarden.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Items/Accessories/ForestWarden.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, a magical accessory themed around Forest Warden, wizarding wearable trinket, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "GoblinLedger",
+    "Width": 22,
+    "Height": 22,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Items/Accessories/GoblinLedger.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Items/Accessories/GoblinLedger.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, a magical accessory themed around Goblin Ledger, wizarding wearable trinket, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "HandOfGlory",
+    "Width": 22,
+    "Height": 28,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Items/Accessories/HandOfGlory.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Items/Accessories/HandOfGlory.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, a magical accessory themed around Hand Of Glory, wizarding wearable trinket, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "HealersSatchel",
+    "Width": 24,
+    "Height": 24,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Items/Accessories/HealersSatchel.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Items/Accessories/HealersSatchel.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, a magical accessory themed around Healers Satchel, wizarding wearable trinket, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "HufflepuffsCup",
+    "Width": 24,
+    "Height": 24,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Items/Accessories/HufflepuffsCup.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Items/Accessories/HufflepuffsCup.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, a magical accessory themed around Hufflepuffs Cup, wizarding wearable trinket, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  },
+  {
+    "Name": "InvisibilityCloak",
+    "Width": 24,
+    "Height": 24,
+    "FrameCount": 1,
+    "ProcessKind": "fit",
+    "OutputPath": "Content/Items/Accessories/InvisibilityCloak.png",
+    "_abs_output": "/mnt/c/users/sam/Desktop/Terraria/WizardingWorld/Content/Items/Accessories/InvisibilityCloak.png",
+    "Prompt": "Terraria-style pixel art sprite, centered isolated object, a magical accessory themed around Invisibility Cloak, wizarding wearable trinket, readable silhouette. Put it on a completely flat pure bright green background (#00FF00), no transparency, no checkerboard, no texture, no shadow, no border, no text, no extra objects."
+  }
+]

@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <defs>
+    <linearGradient id="fangIvory" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFF8F0"/>
+      <stop offset="20%" stop-color="#F0E8D8"/>
+      <stop offset="50%" stop-color="#E8DCC8"/>
+      <stop offset="80%" stop-color="#D8CCB0"/>
+      <stop offset="100%" stop-color="#C8BC98"/>
+    </linearGradient>
+    <linearGradient id="fangEdge" x1="100%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.6"/>
+      <stop offset="50%" stop-color="#FFFFFF" stop-opacity="0.1"/>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="venomDrip" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#40CC40"/>
+      <stop offset="40%" stop-color="#20AA30"/>
+      <stop offset="100%" stop-color="#108820" stop-opacity="0.6"/>
+    </linearGradient>
+    <radialGradient id="venomGlow" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#40FF40" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#20AA20" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="greenGlow">
+      <feGaussianBlur stdDeviation="0.8" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="dropShadow">
+      <feGaussianBlur stdDeviation="0.5"/>
+    </filter>
+  </defs>
+
+  <!-- Fang shadow -->
+  <path d="M18,28 Q22,29 20,30 Q14,31 12,29" fill="#000000" opacity="0.15"/>
+
+  <!-- Main fang shape - large curved tooth -->
+  <path d="M10,4 Q9,3 11,2.5 Q14,2 16,3 Q17,4 17,6 L18,10 Q19,16 18,22 Q17,26 15,29 Q14.5,30 14,29 Q13,26 13,22 Q12,16 11,10 L10,6Z"
+        fill="url(#fangIvory)" stroke="#B0A480" stroke-width="0.4"/>
+
+  <!-- Fang curvature highlight -->
+  <path d="M12,4 Q13,3.5 14.5,4 Q15.5,5 16,8 Q17,14 16.5,22 Q16,26 15,29"
+        fill="none" stroke="url(#fangEdge)" stroke-width="1.5"/>
+
+  <!-- Root/base of fang - rough broken end -->
+  <path d="M10,4 Q9.5,2.5 11,2 Q13,1.5 15.5,2.5 Q17,3.5 17,5"
+        fill="#D8CCB0" stroke="#B0A480" stroke-width="0.3"/>
+  <!-- Root texture -->
+  <path d="M10.5,3 L11.5,4.5" stroke="#C0B498" stroke-width="0.3"/>
+  <path d="M12,2.5 L12.5,4" stroke="#C0B498" stroke-width="0.3"/>
+  <path d="M14,2.5 L14,4" stroke="#C0B498" stroke-width="0.3"/>
+  <path d="M15.5,3 L15.5,4.5" stroke="#C0B498" stroke-width="0.3"/>
+
+  <!-- Fang surface ridges -->
+  <path d="M11.5,8 Q14,7.5 16.5,9" stroke="#C8BC98" stroke-width="0.25" fill="none" opacity="0.5"/>
+  <path d="M12,12 Q14,11.5 17,13" stroke="#C8BC98" stroke-width="0.25" fill="none" opacity="0.5"/>
+  <path d="M12.5,16 Q14.5,15.5 17,17" stroke="#C8BC98" stroke-width="0.25" fill="none" opacity="0.4"/>
+  <path d="M13,20 Q14.5,19.5 16.5,21" stroke="#C8BC98" stroke-width="0.25" fill="none" opacity="0.3"/>
+
+  <!-- Green venom coating near tip -->
+  <path d="M14,22 Q15.5,21.5 16.5,23 Q16,26 15,29 Q14.5,28 14,26 Q13.5,24 14,22Z"
+        fill="#30AA30" opacity="0.35"/>
+
+  <!-- Venom dripping from tip -->
+  <g filter="url(#greenGlow)">
+    <!-- Main drip -->
+    <path d="M15,29 Q15.2,30 15,30.5 Q14.8,31 15,31.5"
+          fill="none" stroke="url(#venomDrip)" stroke-width="0.8" stroke-linecap="round"/>
+    <!-- Drip drop -->
+    <ellipse cx="15" cy="31.5" rx="0.6" ry="0.8" fill="url(#venomDrip)" opacity="0.8"/>
+    <!-- Venom glow around drop -->
+    <ellipse cx="15" cy="31.5" rx="1.2" ry="1.5" fill="url(#venomGlow)" opacity="0.4"/>
+  </g>
+
+  <!-- Secondary smaller drip -->
+  <path d="M14.5,28.5 Q14,29.5 14.2,30" fill="none" stroke="#30AA30" stroke-width="0.5" opacity="0.5" stroke-linecap="round"/>
+  <circle cx="14.2" cy="30" r="0.35" fill="#30AA30" opacity="0.5"/>
+
+  <!-- Venom residue on fang surface -->
+  <path d="M15,24 Q16,25 15.5,27" stroke="#40BB40" stroke-width="0.4" fill="none" opacity="0.3"/>
+  <path d="M13.5,25 Q14,26.5 14,28" stroke="#40BB40" stroke-width="0.3" fill="none" opacity="0.25"/>
+
+  <!-- Sharp edge highlight -->
+  <path d="M13,6 Q13,16 14,24 Q14.5,27 15,29" stroke="#FFFFFF" stroke-width="0.2" fill="none" opacity="0.3"/>
+
+  <!-- Danger gleam at tip -->
+  <circle cx="15" cy="28.5" r="0.3" fill="#FFFFFF" opacity="0.5"/>
+</svg>

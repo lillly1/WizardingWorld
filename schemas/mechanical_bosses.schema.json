@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Wizarding World Boss Mechanical Data",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": ["id", "_source", "isBoss", "folder"],
+    "properties": {
+      "id": {"type": "string"},
+      "_source": {"type": "string"},
+      "damage": {"type": "integer", "minimum": 0},
+      "damage_base": {"type": "integer", "minimum": 0},
+      "defense": {"type": "integer", "minimum": 0},
+      "defense_base": {"type": "integer", "minimum": 0},
+      "lifeMax": {"type": "integer", "minimum": 0},
+      "lifeMax_base": {"type": "integer", "minimum": 0},
+      "knockBackResist": {"type": "number"},
+      "isBoss": {"type": "boolean", "const": true},
+      "noGravity": {"type": "boolean"},
+      "_dynamicScaling": {"type": "boolean"},
+      "_curated": {"type": "boolean"},
+      "folder": {"type": "string"},
+      "bagDrops": {"type": "array", "items": {"type": "object"}},
+      "directDrops": {"type": "array", "items": {"type": "object"}}
+    },
+    "additionalProperties": true
+  }
+}

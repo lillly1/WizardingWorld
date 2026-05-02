@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+  <defs>
+    <linearGradient id="turban" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#8a5aaa"/>
+      <stop offset="100%" stop-color="#5a2a7a"/>
+    </linearGradient>
+    <linearGradient id="robe" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#3a3a4a"/>
+      <stop offset="100%" stop-color="#2a2a3a"/>
+    </linearGradient>
+    <radialGradient id="voldFace" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#e0dcd0"/>
+      <stop offset="100%" stop-color="#c0b8a0" stop-opacity="0.6"/>
+    </radialGradient>
+  </defs>
+  <!-- Dark robes -->
+  <path d="M8 34 Q10 28 18 26 L24 25 L30 26 Q38 28 40 34 L40 48 L8 48Z" fill="url(#robe)"/>
+  <!-- Collar -->
+  <path d="M18 26 Q22 28 24 28 Q26 28 30 26" fill="#4a4a5a" stroke="#3a3a4a" stroke-width="0.3"/>
+  <!-- Nervous thin neck -->
+  <rect x="21" y="23" width="6" height="4" rx="2" fill="#e8ccaa"/>
+  <!-- Quirrell's face - nervous -->
+  <ellipse cx="24" cy="18" rx="7" ry="7.5" fill="#e8ccaa"/>
+  <!-- Purple turban - large and wrapped -->
+  <ellipse cx="24" cy="10" rx="9" ry="8" fill="url(#turban)"/>
+  <path d="M15 10 Q16 5 24 3 Q32 5 33 10" fill="url(#turban)"/>
+  <!-- Turban wrapping lines -->
+  <path d="M16 8 Q20 6 24 6 Q28 6 32 8" fill="none" stroke="#7a4a9a" stroke-width="0.5"/>
+  <path d="M15 11 Q20 9 24 9 Q28 9 33 11" fill="none" stroke="#7a4a9a" stroke-width="0.5"/>
+  <path d="M16 13 Q20 12 24 12 Q28 12 32 13" fill="none" stroke="#7a4a9a" stroke-width="0.5"/>
+  <!-- Nervous eyebrows raised -->
+  <path d="M20 15 Q21.5 14 23 15" fill="none" stroke="#6a5a3a" stroke-width="0.5"/>
+  <path d="M25 15 Q26.5 14 28 15" fill="none" stroke="#6a5a3a" stroke-width="0.5"/>
+  <!-- Wide nervous eyes -->
+  <ellipse cx="22" cy="17" rx="1.8" ry="1.6" fill="white"/>
+  <ellipse cx="26" cy="17" rx="1.8" ry="1.6" fill="white"/>
+  <circle cx="22" cy="17" r="0.9" fill="#6a5a3a"/>
+  <circle cx="26" cy="17" r="0.9" fill="#6a5a3a"/>
+  <circle cx="22" cy="17" r="0.4" fill="#1a1a1a"/>
+  <circle cx="26" cy="17" r="0.4" fill="#1a1a1a"/>
+  <!-- Nervous sweat -->
+  <ellipse cx="18" cy="16" rx="0.4" ry="0.6" fill="#a0c0e0" opacity="0.4"/>
+  <!-- Nose -->
+  <path d="M24 18 Q23.5 19.5 24 20.5" fill="none" stroke="#d4a882" stroke-width="0.4"/>
+  <!-- Nervous quivering mouth -->
+  <path d="M22 22 Q24 21.5 26 22" fill="none" stroke="#b08060" stroke-width="0.4"/>
+  <path d="M22.5 22 Q24 22.5 25.5 22" fill="none" stroke="#a07050" stroke-width="0.3"/>
+  <!-- ==== VOLDEMORT FACE on back of turban ==== -->
+  <!-- Ghostly face emerging from turban back -->
+  <ellipse cx="24" cy="8" rx="5" ry="4.5" fill="url(#voldFace)" opacity="0.7"/>
+  <!-- Red slit eyes -->
+  <path d="M21 7 L23 7.5 L21 8" fill="#cc2020" opacity="0.8"/>
+  <path d="M27 7 L25 7.5 L27 8" fill="#cc2020" opacity="0.8"/>
+  <!-- Slit pupils -->
+  <line x1="22" y1="7.3" x2="22" y2="7.7" stroke="#1a0000" stroke-width="0.3"/>
+  <line x1="26" y1="7.3" x2="26" y2="7.7" stroke="#1a0000" stroke-width="0.3"/>
+  <!-- Nose slits -->
+  <line x1="23.5" y1="9" x2="24" y2="9.5" stroke="#a09080" stroke-width="0.3"/>
+  <line x1="24.5" y1="9" x2="24" y2="9.5" stroke="#a09080" stroke-width="0.3"/>
+  <!-- Sinister mouth -->
+  <path d="M22 10.5 Q24 11 26 10.5" fill="none" stroke="#6a4a4a" stroke-width="0.4" opacity="0.7"/>
+  <!-- Dark aura around Voldemort face -->
+  <ellipse cx="24" cy="8" rx="6" ry="5.5" fill="none" stroke="#4a1a4a" stroke-width="0.4" opacity="0.3"/>
+</svg>
