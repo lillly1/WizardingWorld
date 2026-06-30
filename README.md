@@ -33,6 +33,35 @@ A comprehensive Harry Potter Hogwarts experience mod for Terraria via tModLoader
 - 3-language support (English, Chinese Simplified, Chinese Traditional)
 - Canon-audited: true Invisibility Cloak is unique, Gaunt's Ring awakens the Resurrection Stone, Demiguise gear is ordinary stealth gear
 
+## Release QA Summary
+
+As of July 1, 2026, Wizarding World is treated as a **1.0.0 release candidate**. The focus is no longer adding new systems; the current scope is packaging, publishing, and wider community validation.
+
+Completed content and packaging:
+
+- Core content is in place: 12 Wizarding World bosses, 24 active wands, 78 enemies, 65 accessories, 16 town NPCs, 8 armor sets, 5 mounts, 6 pets, 19 potions, and three-language localization.
+- In-game PNG asset coverage is complete and tracked by `scripts/verify_assets.py`.
+- Custom spell, boss, enemy, and ambient audio has been generated, wired, and smoke-tested.
+- Release packaging is ready: public Release builds omit `/wwdebug`, `WizardDebugCommand`, and the QA-only test wand.
+- Workshop / Mod Browser copy, release checklist, and release manifest are maintained in `description.txt`, `docs/WORKSHOP_PAGE.md`, `docs/RELEASE_CHECKLIST.md`, and `release_manifest.json`.
+
+Completed smoke-test coverage:
+
+- Early route: Hogwarts Letter, first wand, Enchanting Table, Ollivander/Hagrid unlocks, Mountain Troll, Quirrell, and Basilisk.
+- Mid route: Aragog, Fluffy, Horntail, mechanical boss gate, and post-Horntail entry systems.
+- Late-hardmode route: Umbridge, Fenrir, Bellatrix, Barty Crouch Jr, Dementor King, and Voldemort readiness.
+- Final route: Horcrux Hunt, Nagini / Battle of Hogwarts gates, Lord Voldemort summon and defeat, Deathly Hallows claim / purification / Master of Death attunement.
+- Persistence checks: key boss defeat flags and final-route flags were verified after Save & Exit / reload.
+- Release smoke: `dotnet build -c Release --no-restore` succeeds with 0 warnings / 0 errors, the generated `.tmod` loads in tModLoader, and `Mod Load Completed` appears in `client.log`.
+
+Current verification snapshot:
+
+- `python scripts/verify_assets.py` passes.
+- `python scripts/verify_guide.py --strict` passes with `665 passed, 0 failed, 0 warnings`.
+- `python scripts/scan_content.py --pretty` reports `593 C# files`, `606 PNGs`, and `1509 total` project files.
+
+Remaining pre-public-release confidence work is limited to fresh-machine installs, longer balance runs, multiplayer sync checks, and native-speaker proofreading.
+
 ## Installation
 
 1. Install **tModLoader** from Steam (free DLC for Terraria)
