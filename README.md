@@ -173,22 +173,33 @@ The included in-game sprites are complete and release-checked. Asset coverage is
 
 ## Looking for help
 
-This mod is in release-candidate shape after a primary single-player route QA pass. Before a wider Steam Workshop release, it still benefits from fresh machines, longer balance runs, and co-op verification. If any of these match what you'd like to work on, browse [open issues](https://github.com/SamSi0322/WizardingWorld/issues) or open a new one — see [CONTRIBUTING.md](CONTRIBUTING.md) for build setup.
+This mod is in release-candidate shape. The core content pass is complete: in-game assets are present, release packaging is ready, debug-only QA tools are excluded from public Release builds, and the primary single-player route has been tested from early game through all 12 bosses, Voldemort, and the Deathly Hallows ending.
+
+The remaining help wanted is focused on wider release confidence rather than adding more content. If any of these match what you'd like to work on, browse [open issues](https://github.com/lillly1/WizardingWorld/issues) or open a new one. See [CONTRIBUTING.md](CONTRIBUTING.md) for build setup.
+
+Already completed:
+
+- Primary single-player route QA from Hogwarts Letter through Voldemort and Deathly Hallows.
+- Early, mid, post-Horntail, Umbridge, Fenrir, Bellatrix, Barty, Dementor King, Voldemort, and Hallows QA slices.
+- Sprite coverage and asset verification.
+- Custom spell, boss, enemy, and ambient audio pass.
+- Release packaging, Workshop copy, and upload checklist.
 
 | Need | What it looks like | Label |
 |------|--------------------|-------|
-| **Playtesters** | Run a fresh play-through, boss arc, biome, or questline. File issues for crashes, missing assets, broken progression, or balance problems. | `playtest needed` |
+| **Fresh-machine testers** | Install from a clean clone or Workshop-style package and confirm the mod builds, loads, and starts correctly outside the maintainer machine. | `fresh-install` |
 | **Multiplayer-sync verifiers** | Specifically test `Common/Players/` and `Common/Systems/` paths in 2+ player co-op (save/load, host-vs-client desyncs). | `multiplayer-sync` |
-| **Balance reviewers** | Review the 23 wands × 5 cores DPS / mana spread, 12 boss HP curves, drop rates. Flag obvious outliers. | `balance` |
-| **Sprite artists** | Polish or replace existing generated sprites while preserving the current content coverage. | `sprite-polish` |
-| **Localizers** | Native-speaker review or new-language translation of the three HJSON files in `Localization/`. Currently English / Simplified Chinese / Traditional Chinese. | `localization` |
-| **Canon-audit reviewers** | Cross-check content against `HarryPotterModCatalog.txt` for canon consistency or design suggestions. | `audit` |
+| **Balance reviewers** | Run longer normal play sessions and flag obvious outliers in wand DPS, mana cost, boss HP curves, shop timing, drops, and summon costs. | `balance` |
+| **Localization proofreaders** | Native-speaker proofreading for English, Simplified Chinese, and Traditional Chinese text in `Localization/`, especially quest guidance and boss route text. | `localization` |
+| **Multiplayer playtesters** | Play the boss route or major systems in co-op and report progression, NPC shop, event, or world-save issues. | `co-op-test` |
+| **Sprite polish artists** | Optional polish pass on existing generated sprites while preserving current content coverage and item readability. | `sprite-polish` |
+| **Canon-audit reviewers** | Optional review for tone, naming, and lore consistency. Avoid large new content proposals unless they come with a clear scope. | `audit` |
 
 Issues are tagged with the labels above. The maintainer has limited bandwidth, so:
 
 - **Take ownership** — comment "I'll take this" on an issue, work on a fork, open a PR.
 - **Small first PR** — a single sprite polish, a typo fix, a balance tweak with rationale. Big rewrites need an issue first.
-- **Discussions** — design questions / ideas / "should we do X?" go in [GitHub Discussions](https://github.com/SamSi0322/WizardingWorld/discussions), not issues.
+- **Discussions** — design questions / ideas / "should we do X?" go in [GitHub Discussions](https://github.com/lillly1/WizardingWorld/discussions), not issues.
 
 ## License & IP disclaimer
 
