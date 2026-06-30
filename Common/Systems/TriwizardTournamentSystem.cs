@@ -55,6 +55,9 @@ namespace WizardingWorld.Common.Systems
         public static int mazeObstaclesCleared;
         private const int MAZE_OBSTACLES_NEEDED = 5;
 
+        private static string Text(string suffix, string fallback, params object[] args) =>
+            WizardLocalization.Text($"Mods.WizardingWorld.Triwizard.{suffix}", fallback, args);
+
         public override void ClearWorld()
         {
             tournamentUnlocked = false;
@@ -77,10 +80,16 @@ namespace WizardingWorld.Common.Systems
         public static bool CanStartNextTask()
         {
             if (!tournamentUnlocked || taskActive || championCrowned) return false;
-            if (currentTask == 0 || (currentTask == 1 && task1Complete) ||
-                (currentTask == 2 && task2Complete) || (currentTask == 3 && task3Complete))
-                return true;
-            return false;
+            int nextTask = NextTaskToStart();
+            return nextTask >= 1 && nextTask <= 3;
+        }
+
+        private static int NextTaskToStart()
+        {
+            if (!task1Complete) return 1;
+            if (!task2Complete) return 2;
+            if (!task3Complete) return 3;
+            return 4;
         }
 
         public static void UnlockTournament()
@@ -91,9 +100,9 @@ namespace WizardingWorld.Common.Systems
 
             if (Main.netMode != NetmodeID.Server)
             {
-                Main.NewText(Language.GetTextValue("Mods.WizardingWorld.Triwizard.Unlocked"), new Color(100, 150, 255));
-                Main.NewText(Language.GetTextValue("Mods.WizardingWorld.Triwizard.Task1Intro"), new Color(255, 200, 100));
-                Main.NewText(Language.GetTextValue("Mods.WizardingWorld.Triwizard.GobletSelection"), new Color(100, 150, 255));
+                Main.NewText(Text("Unlocked", "The Goblet of Fire selects you as Hogwarts champion! The Triwizard Tournament begins!"), new Color(100, 150, 255));
+                Main.NewText(Text("Task1Intro", "First Task: Retrieve the Golden Egg from the dragon's nest. Defeat or outsmart the Horntail!"), new Color(255, 200, 100));
+                Main.NewText(Text("GobletSelection", "The Goblet of Fire blazes blue! It selects you as the Hogwarts champion! Durmstrang and Beauxbatons have also chosen their champions. The Triwizard Tournament begins!"), new Color(100, 150, 255));
             }
         }
 
@@ -101,10 +110,8 @@ namespace WizardingWorld.Common.Systems
         {
             if (!CanStartNextTask()) return;
 
-            // Advance to next incomplete task
-            if (currentTask == 0) currentTask = 1;
-            else if (currentTask == 1 && task1Complete) currentTask = 2;
-            else if (currentTask == 2 && task2Complete) currentTask = 3;
+            currentTask = NextTaskToStart();
+            if (currentTask > 3) return;
 
             taskActive = true;
             taskScore = 0;
@@ -115,7 +122,7 @@ namespace WizardingWorld.Common.Systems
                     taskTimer = DRAGON_TRIAL_DURATION;
                     goldenEggRetrieved = false;
                     if (Main.netMode != NetmodeID.Server)
-                        Main.NewText(Language.GetTextValue("Mods.WizardingWorld.Triwizard.Task1Start"), new Color(255, 100, 50));
+                        Main.NewText(Text("Task1Start", "FIRST TASK: The Hungarian Horntail guards the Golden Egg! Retrieve it before time runs out!"), new Color(255, 100, 50));
                     break;
 
                 case 2:
@@ -123,14 +130,14 @@ namespace WizardingWorld.Common.Systems
                     rescueTokensCollected = 0;
                     player.AddBuff(ModContent.BuffType<Content.Buffs.GillyweedBuff>(), LAKE_TRIAL_DURATION);
                     if (Main.netMode != NetmodeID.Server)
-                        Main.NewText(Language.GetTextValue("Mods.WizardingWorld.Triwizard.Task2Start"), new Color(50, 150, 255));
+                        Main.NewText(Text("Task2Start", "SECOND TASK: Dive into the Great Lake! Rescue 3 tokens from the merpeople. Gillyweed granted!"), new Color(50, 150, 255));
                     break;
 
                 case 3:
                     taskTimer = MAZE_TRIAL_DURATION;
                     mazeObstaclesCleared = 0;
                     if (Main.netMode != NetmodeID.Server)
-                        Main.NewText(Language.GetTextValue("Mods.WizardingWorld.Triwizard.Task3Start"), new Color(100, 200, 100));
+                        Main.NewText(Text("Task3Start", "THIRD TASK: Enter the Triwizard Maze! Clear 5 magical obstacles to reach the Cup!"), new Color(100, 200, 100));
                     break;
             }
         }
@@ -151,7 +158,7 @@ namespace WizardingWorld.Common.Systems
             // 30 second warning
             if (taskTimer == 60 * 30 && Main.netMode != NetmodeID.Server)
             {
-                Main.NewText(Language.GetTextValue("Mods.WizardingWorld.Triwizard.TimeWarning"), new Color(255, 100, 100));
+                Main.NewText(Text("TimeWarning", "30 seconds remaining! Hurry!"), new Color(255, 100, 100));
             }
         }
 
@@ -171,7 +178,7 @@ namespace WizardingWorld.Common.Systems
 
             if (Main.netMode != NetmodeID.Server)
             {
-                Main.NewText(Language.GetTextValue("Mods.WizardingWorld.Triwizard.RescueProgress",
+                Main.NewText(Text("RescueProgress", "Rescue tokens: {0}/{1}",
                     rescueTokensCollected, RESCUE_TOKENS_NEEDED), new Color(50, 200, 255));
             }
 
@@ -187,7 +194,7 @@ namespace WizardingWorld.Common.Systems
 
             if (Main.netMode != NetmodeID.Server)
             {
-                Main.NewText(Language.GetTextValue("Mods.WizardingWorld.Triwizard.MazeProgress",
+                Main.NewText(Text("MazeProgress", "Obstacles cleared: {0}/{1}",
                     mazeObstaclesCleared, MAZE_OBSTACLES_NEEDED), new Color(100, 255, 100));
             }
 
@@ -203,13 +210,15 @@ namespace WizardingWorld.Common.Systems
             {
                 case 1:
                     task1Complete = true;
+                    currentTask = 2;
                     if (Main.netMode != NetmodeID.Server)
-                        Main.NewText(Language.GetTextValue("Mods.WizardingWorld.Triwizard.Task1Complete"), new Color(255, 215, 0));
+                        Main.NewText(Text("Task1Complete", "The Golden Egg is yours! First Task complete!"), new Color(255, 215, 0));
                     break;
                 case 2:
                     task2Complete = true;
+                    currentTask = 3;
                     if (Main.netMode != NetmodeID.Server)
-                        Main.NewText(Language.GetTextValue("Mods.WizardingWorld.Triwizard.Task2Complete"), new Color(255, 215, 0));
+                        Main.NewText(Text("Task2Complete", "All hostages rescued! Second Task complete!"), new Color(255, 215, 0));
                     break;
                 case 3:
                     task3Complete = true;
@@ -226,7 +235,7 @@ namespace WizardingWorld.Common.Systems
             var wp = player.GetModPlayer<Players.WizardPlayer>();
             if (wp.houseSet > 0 && wp.houseSet <= 4)
                 GreatHallSystem.AwardHousePoints(wp.houseSet, 40,
-                    Language.GetTextValue("Mods.WizardingWorld.Triwizard.SourceTask"));
+                    Text("SourceTask", "Triwizard Task completed"));
         }
 
         private static void CrownChampion(Player player)
@@ -241,9 +250,9 @@ namespace WizardingWorld.Common.Systems
 
             if (Main.netMode != NetmodeID.Server)
             {
-                Main.NewText(Language.GetTextValue("Mods.WizardingWorld.Triwizard.Champion"), new Color(255, 215, 0));
-                Main.NewText(Language.GetTextValue("Mods.WizardingWorld.Triwizard.ChampionCeremony"), new Color(255, 255, 200));
-                Main.NewText(Language.GetTextValue("Mods.WizardingWorld.Triwizard.FinalStandings",
+                Main.NewText(Text("Champion", "You are the Triwizard Champion! Eternal glory is yours!"), new Color(255, 215, 0));
+                Main.NewText(Text("ChampionCeremony", "The Great Hall erupts in celebration! A champion worthy of legend!"), new Color(255, 255, 200));
+                Main.NewText(Text("FinalStandings", "Final Standings: Hogwarts {0} | Durmstrang {1} | Beauxbatons {2}",
                     hogwartsScore, durmstrangScore, beauxbatonsScore), new Color(255, 215, 100));
             }
 
@@ -265,19 +274,19 @@ namespace WizardingWorld.Common.Systems
             taskActive = false;
             if (Main.netMode != NetmodeID.Server)
             {
-                Main.NewText(Language.GetTextValue("Mods.WizardingWorld.Triwizard.TaskFailed"), new Color(255, 80, 80));
-                Main.NewText(Language.GetTextValue("Mods.WizardingWorld.Triwizard.TryAgain"), new Color(200, 200, 200));
+                Main.NewText(Text("TaskFailed", "Time's up! The task has failed."), new Color(255, 80, 80));
+                Main.NewText(Text("TryAgain", "Use the Goblet of Fire to try again."), new Color(200, 200, 200));
             }
         }
 
         public static string GetStatusText()
         {
             if (!tournamentUnlocked)
-                return Language.GetTextValue("Mods.WizardingWorld.Triwizard.NotUnlocked");
+                return Text("NotUnlocked", "The Triwizard Tournament has not yet begun. Defeat the Hungarian Horntail first.");
             if (championCrowned)
-                return Language.GetTextValue("Mods.WizardingWorld.Triwizard.AlreadyChampion") +
+                return Text("AlreadyChampion", "You have already been crowned Triwizard Champion!") +
                     $"\nStandings -- Hogwarts: {hogwartsScore} | Durmstrang: {durmstrangScore} | Beauxbatons: {beauxbatonsScore}";
-            return Language.GetTextValue("Mods.WizardingWorld.Triwizard.Status",
+            return Text("Status", "Triwizard Tournament: Task 1: {0} | Task 2: {1} | Task 3: {2}",
                 task1Complete ? "Done" : (currentTask == 1 ? "Current" : "Locked"),
                 task2Complete ? "Done" : (currentTask == 2 ? "Current" : "Locked"),
                 task3Complete ? "Done" : (currentTask == 3 ? "Current" : "Locked")) +

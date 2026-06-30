@@ -19,6 +19,8 @@ namespace WizardingWorld.Common.Systems
 	/// </summary>
 	public class HallowsSystem : ModSystem
 	{
+		private const string HallowsTextRoot = "Mods.WizardingWorld.Hallows.";
+
 		public static bool invisibilityCloakClaimed;
 		public static bool resurrectionStoneAwakened;
 		public static bool hallowsAttuned;
@@ -93,27 +95,27 @@ namespace WizardingWorld.Common.Systems
 		public static string GetDumbledoreGuidance(Player player)
 		{
 			if (!HorcruxHuntSystem.AllCoreHorcruxesDestroyed)
-				return Language.GetTextValue("Mods.WizardingWorld.Hallows.GuidanceHorcruxes");
+				return HallowsText("GuidanceHorcruxes", "Destroy the core Horcruxes before seeking the Hallows.");
 
 			if (!DownedBossSystem.downedDementorKing)
-				return Language.GetTextValue("Mods.WizardingWorld.Hallows.GuidanceAzkaban");
+				return HallowsText("GuidanceAzkaban", "Azkaban's Despair must fall before the cloak can be entrusted.");
 
 			if (!invisibilityCloakClaimed)
-				return Language.GetTextValue("Mods.WizardingWorld.Hallows.GuidanceCloak");
+				return HallowsText("GuidanceCloak", "Ask Dumbledore about the true Invisibility Cloak.");
 
 			if (!DownedBossSystem.downedVoldemort)
-				return Language.GetTextValue("Mods.WizardingWorld.Hallows.GuidanceVoldemort");
+				return HallowsText("GuidanceVoldemort", "Voldemort still stands between you and the Stone.");
 
 			if (!PlayerHasGauntsRing(player) && !resurrectionStoneAwakened)
-				return Language.GetTextValue("Mods.WizardingWorld.Hallows.GuidanceRing");
+				return HallowsText("GuidanceRing", "Bring Gaunt's Ring to Dumbledore when the war is won.");
 
 			if (CanPurifyGauntsRing(player))
-				return Language.GetTextValue("Mods.WizardingWorld.Hallows.GuidancePurify");
+				return HallowsText("GuidancePurify", "The ring can be purified now. Do not wait.");
 
 			if (!hallowsAttuned)
-				return Language.GetTextValue("Mods.WizardingWorld.Hallows.GuidanceUnite");
+				return HallowsText("GuidanceUnite", "Equip the Elder Wand, true Cloak, and Stone together.");
 
-			return Language.GetTextValue("Mods.WizardingWorld.Hallows.GuidanceComplete");
+			return HallowsText("GuidanceComplete", "The Hallows are united. Death has no master here.");
 		}
 
 		public static bool TryClaimInvisibilityCloak(Player player)
@@ -127,8 +129,8 @@ namespace WizardingWorld.Common.Systems
 
 			if (Main.netMode != NetmodeID.Server)
 			{
-				Main.NewText(Language.GetTextValue("Mods.WizardingWorld.Hallows.CloakReveal1"), new Color(210, 210, 255));
-				Main.NewText(Language.GetTextValue("Mods.WizardingWorld.Hallows.CloakReveal2"), new Color(255, 215, 140));
+				Main.NewText(HallowsText("CloakReveal1", "Dumbledore reveals the true Invisibility Cloak."), new Color(210, 210, 255));
+				Main.NewText(HallowsText("CloakReveal2", "It settles around you like a quiet promise."), new Color(255, 215, 140));
 			}
 
 			if (Main.netMode == NetmodeID.Server)
@@ -176,8 +178,8 @@ namespace WizardingWorld.Common.Systems
 
 			if (Main.netMode != NetmodeID.Server)
 			{
-				Main.NewText(Language.GetTextValue("Mods.WizardingWorld.Hallows.StoneReveal1"), new Color(210, 210, 210));
-				Main.NewText(Language.GetTextValue("Mods.WizardingWorld.Hallows.StoneReveal2"), new Color(255, 215, 140));
+				Main.NewText(HallowsText("StoneReveal1", "Gaunt's Ring cracks. The Resurrection Stone awakens."), new Color(210, 210, 210));
+				Main.NewText(HallowsText("StoneReveal2", "The dead do not return, but their courage remains."), new Color(255, 215, 140));
 			}
 
 			if (Main.netMode == NetmodeID.Server)
@@ -215,9 +217,9 @@ namespace WizardingWorld.Common.Systems
 					dust.noGravity = true;
 				}
 
-				Main.NewText(Language.GetTextValue("Mods.WizardingWorld.Hallows.MasterOfDeath1"), new Color(255, 215, 0));
-				Main.NewText(Language.GetTextValue("Mods.WizardingWorld.Hallows.MasterOfDeath2"), new Color(255, 255, 200));
-				Main.NewText(Language.GetTextValue("Mods.WizardingWorld.Hallows.MasterOfDeath3"), new Color(200, 200, 255));
+				Main.NewText(HallowsText("MasterOfDeath1", "The Deathly Hallows answer as one."), new Color(255, 215, 0));
+				Main.NewText(HallowsText("MasterOfDeath2", "You are the Master of Death."), new Color(255, 255, 200));
+				Main.NewText(HallowsText("MasterOfDeath3", "Fate bends, but it does not break."), new Color(200, 200, 255));
 			}
 
 			var darkPlayer = player.GetModPlayer<Players.DarkArtsCorruptionPlayer>();
@@ -225,6 +227,11 @@ namespace WizardingWorld.Common.Systems
 
 			if (Main.netMode == NetmodeID.Server)
 				NetMessage.SendData(MessageID.WorldData);
+		}
+
+		public static string HallowsText(string key, string fallback, params object[] args)
+		{
+			return WizardLocalization.Text(HallowsTextRoot + key, fallback, args);
 		}
 	}
 }

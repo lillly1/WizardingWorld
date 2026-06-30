@@ -86,7 +86,7 @@ namespace WizardingWorld.Content.NPCs.Bosses.Aragog
 				NPC.netUpdate = true;
 
 				// Screech effect
-				SoundEngine.PlaySound(SoundID.Roar, NPC.Center);
+				SoundEngine.PlaySound(WizardSoundStyles.SpiderHiss, NPC.Center);
 
 				// Burst of dark dust
 				for (int i = 0; i < 40; i++)
@@ -237,7 +237,7 @@ namespace WizardingWorld.Content.NPCs.Bosses.Aragog
 				}
 			}
 
-			SoundEngine.PlaySound(SoundID.NPCDeath32, NPC.Center);
+			SoundEngine.PlaySound(WizardSoundStyles.SpiderHiss, NPC.Center);
 		}
 
 		public override void ModifyNPCLoot(NPCLoot npcLoot)

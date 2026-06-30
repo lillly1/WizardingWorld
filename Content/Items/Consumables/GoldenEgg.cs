@@ -12,17 +12,29 @@ namespace WizardingWorld.Content.Items.Consumables
 			Item.width = 20;
 			Item.height = 20;
 			Item.maxStack = 99;
+			Item.useStyle = ItemUseStyleID.HoldUp;
+			Item.useTime = 20;
+			Item.useAnimation = 20;
 			Item.rare = ItemRarityID.LightPurple;
 			Item.value = Item.sellPrice(gold: 10);
+			Item.UseSound = SoundID.Item4;
 		}
 
 		public override bool OnPickup(Player player)
 		{
-			if (Common.Systems.TriwizardTournamentSystem.taskActive &&
-				Common.Systems.TriwizardTournamentSystem.currentTask == 1)
-			{
-				Common.Systems.TriwizardTournamentSystem.OnGoldenEggRetrieved(player);
-			}
+			TryCompleteDragonTrial(player);
+			return true;
+		}
+
+		public override bool? UseItem(Player player) => TryCompleteDragonTrial(player);
+
+		private static bool TryCompleteDragonTrial(Player player)
+		{
+			if (!Common.Systems.TriwizardTournamentSystem.taskActive ||
+				Common.Systems.TriwizardTournamentSystem.currentTask != 1)
+				return false;
+
+			Common.Systems.TriwizardTournamentSystem.OnGoldenEggRetrieved(player);
 			return true;
 		}
 	}

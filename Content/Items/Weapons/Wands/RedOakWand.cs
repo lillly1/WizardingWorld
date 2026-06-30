@@ -1,6 +1,7 @@
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
+using WizardingWorld.Common.Systems;
 using WizardingWorld.Content.DamageClasses;
 using WizardingWorld.Content.Projectiles.Spells;
 
@@ -30,7 +31,7 @@ namespace WizardingWorld.Content.Items.Weapons.Wands
 			Item.shootSpeed = 13f;
 			Item.value = Item.buyPrice(gold: 4);
 			Item.rare = ItemRarityID.Orange;
-			Item.UseSound = SoundID.Item8;
+			Item.UseSound = WizardSoundStyles.Riddikulus;
 		}
 
 		public override void AddRecipes()

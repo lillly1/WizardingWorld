@@ -32,6 +32,9 @@ namespace WizardingWorld.Common.Systems
         private const int MISSION_DURATION = 60 * 60 * 3;
         private const int OBJECTIVES_NEEDED = 4;
 
+        private static string Text(string suffix, string fallback, params object[] args) =>
+            WizardLocalization.Text($"Mods.WizardingWorld.Forest.{suffix}", fallback, args);
+
         public override void ClearWorld()
         {
             expeditionUnlocked = false;
@@ -53,9 +56,9 @@ namespace WizardingWorld.Common.Systems
             expeditionUnlocked = true;
             if (Main.netMode != NetmodeID.Server)
             {
-                Main.NewText(Language.GetTextValue("Mods.WizardingWorld.Forest.Unlocked"),
+                Main.NewText(Text("Unlocked", "The Forbidden Forest opens its deeper paths. Hagrid's expeditions are now available."),
                     new Color(80, 120, 80));
-                Main.NewText(Language.GetTextValue("Mods.WizardingWorld.Forest.HagridBriefing"),
+                Main.NewText(Text("HagridBriefing", "Hagrid briefs you on safe routes through the deeper forest."),
                     new Color(100, 140, 100));
             }
         }
@@ -70,19 +73,19 @@ namespace WizardingWorld.Common.Systems
 
             SpawnObjectives(player);
 
-            string startKey = currentLoop switch
+            string startText = currentLoop switch
             {
-                0 => "Mods.WizardingWorld.Forest.UnicornGladeStart",
-                1 => "Mods.WizardingWorld.Forest.SkywatchStart",
-                2 => "Mods.WizardingWorld.Forest.NestStart",
-                3 => "Mods.WizardingWorld.Forest.ThestralStart",
-                _ => "Mods.WizardingWorld.Forest.UnicornGladeStart",
+                0 => Text("UnicornGladeStart", "Unicorn Glade -- cleanse corrupted traces before the dark spreads."),
+                1 => Text("SkywatchStart", "Centaur Skywatch -- stabilize omen stones under the night sky."),
+                2 => Text("NestStart", "Acromantula Nest -- destroy brood markers before the colony gathers."),
+                3 => Text("ThestralStart", "Thestral Clearing -- activate moonlit beacons in the quiet dark."),
+                _ => Text("UnicornGladeStart", "Unicorn Glade -- cleanse corrupted traces before the dark spreads."),
             };
 
             if (Main.netMode != NetmodeID.Server)
             {
-                Main.NewText(Language.GetTextValue(startKey), new Color(80, 140, 80));
-                Main.NewText(Language.GetTextValue("Mods.WizardingWorld.Forest.CompleteObjectives",
+                Main.NewText(startText, new Color(80, 140, 80));
+                Main.NewText(Text("CompleteObjectives", "Complete {0} objectives before time runs out.",
                     OBJECTIVES_NEEDED), new Color(100, 130, 100));
             }
         }
@@ -110,7 +113,7 @@ namespace WizardingWorld.Common.Systems
 
             if (missionTimer <= 0) { FailMission(); return; }
             if (missionTimer == 60 * 30 && Main.netMode != NetmodeID.Server)
-                Main.NewText(Language.GetTextValue("Mods.WizardingWorld.Forest.TimeWarning"),
+                Main.NewText(Text("TimeWarning", "30 seconds remaining! Hurry!"),
                     new Color(255, 100, 100));
         }
 
@@ -119,7 +122,7 @@ namespace WizardingWorld.Common.Systems
             if (!missionActive) return;
             objectivesCompleted++;
             if (Main.netMode != NetmodeID.Server)
-                Main.NewText(Language.GetTextValue("Mods.WizardingWorld.Forest.ObjectiveProgress",
+                Main.NewText(Text("ObjectiveProgress", "Objectives complete: {0}/{1}",
                     objectivesCompleted, OBJECTIVES_NEEDED), new Color(100, 160, 100));
             if (objectivesCompleted >= OBJECTIVES_NEEDED)
                 CompleteMission(player);
@@ -146,21 +149,21 @@ namespace WizardingWorld.Common.Systems
             player.AddBuff(ModContent.BuffType<Content.Buffs.ForestWisdomBuff>(), 60 * 60 * 10);
             player.QuickSpawnItem(player.GetSource_GiftOrReward(), ItemID.GoldCoin, 2 + expeditionsCompleted);
 
-            string completeKey = currentLoop switch
+            string completeText = currentLoop switch
             {
-                0 => "Mods.WizardingWorld.Forest.UnicornGladeComplete",
-                1 => "Mods.WizardingWorld.Forest.SkywatchComplete",
-                2 => "Mods.WizardingWorld.Forest.NestComplete",
-                3 => "Mods.WizardingWorld.Forest.ThestralComplete",
-                _ => "Mods.WizardingWorld.Forest.UnicornGladeComplete",
+                0 => Text("UnicornGladeComplete", "The glade is quiet again. The corruption recedes."),
+                1 => Text("SkywatchComplete", "The omen stones are stable. The centaurs' warnings fade."),
+                2 => Text("NestComplete", "The brood markers are destroyed. The colony scatters."),
+                3 => Text("ThestralComplete", "The moonlit beacons hold. The clearing feels calm."),
+                _ => Text("UnicornGladeComplete", "The glade is quiet again. The corruption recedes."),
             };
             if (Main.netMode != NetmodeID.Server)
-                Main.NewText(Language.GetTextValue(completeKey), new Color(100, 180, 100));
+                Main.NewText(completeText, new Color(100, 180, 100));
 
             var wp = player.GetModPlayer<Players.WizardPlayer>();
             if (wp.houseSet > 0 && wp.houseSet <= 4)
                 GreatHallSystem.AwardHousePoints(wp.houseSet, 15,
-                    Language.GetTextValue("Mods.WizardingWorld.Forest.SourceExpedition"));
+                    Text("SourceExpedition", "Forbidden Forest expedition"));
         }
 
         private static void FailMission()
@@ -168,7 +171,7 @@ namespace WizardingWorld.Common.Systems
             missionActive = false;
             CleanupEntities();
             if (Main.netMode != NetmodeID.Server)
-                Main.NewText(Language.GetTextValue("Mods.WizardingWorld.Forest.MissionFailed"),
+                Main.NewText(Text("MissionFailed", "The forest overwhelms the expedition. Fall back."),
                     new Color(255, 80, 80));
         }
 
@@ -207,15 +210,15 @@ namespace WizardingWorld.Common.Systems
         public static string GetStatusText()
         {
             if (!expeditionUnlocked)
-                return Language.GetTextValue("Mods.WizardingWorld.Forest.NotUnlocked");
+                return Text("NotUnlocked", "The deeper forest paths are sealed. Defeat the Basilisk first.");
             if (missionActive)
-                return Language.GetTextValue("Mods.WizardingWorld.Forest.ActiveStatus",
+                return Text("ActiveStatus", "Expedition active: {0}/{1} objectives complete, {2} seconds remaining.",
                     objectivesCompleted, OBJECTIVES_NEEDED, missionTimer / 60);
             string nextLoop = (expeditionsCompleted % 4) switch
             {
                 0 => "Unicorn Glade", 1 => "Centaur Skywatch", 2 => "Acromantula Nest", 3 => "Thestral Clearing", _ => "Unicorn Glade"
             };
-            return Language.GetTextValue("Mods.WizardingWorld.Forest.ReadyStatus",
+            return Text("ReadyStatus", "Expeditions completed: {0}. Next loop: {1}.",
                 expeditionsCompleted, nextLoop);
         }
 

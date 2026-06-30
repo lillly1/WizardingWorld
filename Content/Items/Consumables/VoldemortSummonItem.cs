@@ -23,8 +23,10 @@ namespace WizardingWorld.Content.Items.Consumables
 
 		public override bool CanUseItem(Player player)
 		{
-			// Post-Cultist — Voldemort is the TRUE final boss of the mod
-			return NPC.downedAncientCultist && !NPC.AnyNPCs(ModContent.NPCType<NPCs.Bosses.Voldemort.VoldemortBoss>());
+			// Post-Cultist, night only — Voldemort is the TRUE final boss of the mod.
+			return NPC.downedAncientCultist
+				&& !Main.dayTime
+				&& !NPC.AnyNPCs(ModContent.NPCType<NPCs.Bosses.Voldemort.VoldemortBoss>());
 		}
 
 		public override bool? UseItem(Player player)

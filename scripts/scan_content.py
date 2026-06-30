@@ -31,6 +31,11 @@ EXCLUDED_DIRS = {
     "__pycache__",
 }
 
+DEBUG_ONLY_BASENAMES = {
+    "QATestWand",
+    "WizardDebugCommand",
+}
+
 
 def find_repo_root():
     """Find the repo root by looking for WizardingWorld.csproj."""
@@ -48,14 +53,14 @@ def list_cs_basenames(directory: Path) -> list[str]:
     """Return sorted list of .cs file basenames (without extension) in a directory."""
     if not directory.exists():
         return []
-    return sorted(p.stem for p in directory.glob("*.cs"))
+    return sorted(p.stem for p in directory.glob("*.cs") if p.stem not in DEBUG_ONLY_BASENAMES)
 
 
 def list_cs_basenames_recursive(directory: Path) -> list[str]:
     """Return sorted list of .cs file basenames (without extension) recursively."""
     if not directory.exists():
         return []
-    return sorted(p.stem for p in directory.rglob("*.cs"))
+    return sorted(p.stem for p in directory.rglob("*.cs") if p.stem not in DEBUG_ONLY_BASENAMES)
 
 
 def list_subdirs(directory: Path) -> list[str]:

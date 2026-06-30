@@ -4,6 +4,7 @@ using Terraria.GameContent.Bestiary;
 using Terraria.GameContent.ItemDropRules;
 using Terraria.ID;
 using Terraria.ModLoader;
+using WizardingWorld.Common.Systems;
 
 namespace WizardingWorld.Content.NPCs.Enemies
 {
@@ -23,7 +24,7 @@ namespace WizardingWorld.Content.NPCs.Enemies
 			NPC.defense = 14;
 			NPC.lifeMax = 250;
 			NPC.HitSound = SoundID.NPCHit29;
-			NPC.DeathSound = SoundID.NPCDeath32;
+			NPC.DeathSound = WizardSoundStyles.SpiderHiss;
 			NPC.value = Item.buyPrice(silver: 30);
 			NPC.knockBackResist = 0.4f;
 			NPC.aiStyle = NPCAIStyleID.Spider;

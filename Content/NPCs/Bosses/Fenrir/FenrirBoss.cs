@@ -88,7 +88,7 @@ namespace WizardingWorld.Content.NPCs.Bosses.Fenrir
 			if (hpPercent < 0.20f && Phase < 2)
 			{
 				Phase = 2;
-				SoundEngine.PlaySound(SoundID.Roar, NPC.Center);
+				SoundEngine.PlaySound(WizardSoundStyles.WerewolfHowl, NPC.Center);
 
 				// Berserk dust burst
 				for (int i = 0; i < 50; i++)
@@ -101,7 +101,7 @@ namespace WizardingWorld.Content.NPCs.Bosses.Fenrir
 			else if (hpPercent < 0.50f && Phase < 1)
 			{
 				Phase = 1;
-				SoundEngine.PlaySound(SoundID.Roar, NPC.Center);
+				SoundEngine.PlaySound(WizardSoundStyles.WerewolfHowl, NPC.Center);
 
 				for (int i = 0; i < 30; i++)
 				{
@@ -227,7 +227,7 @@ namespace WizardingWorld.Content.NPCs.Bosses.Fenrir
 			if (SpecialTimer >= 360 && Main.netMode != NetmodeID.MultiplayerClient)
 			{
 				SpecialTimer = 0;
-				SoundEngine.PlaySound(SoundID.Roar, NPC.Center);
+				SoundEngine.PlaySound(WizardSoundStyles.WerewolfHowl, NPC.Center);
 
 				int wolfCount = Main.rand.Next(3, 5); // 3-4 werewolves
 				for (int i = 0; i < wolfCount; i++)
@@ -302,7 +302,7 @@ namespace WizardingWorld.Content.NPCs.Bosses.Fenrir
 			if (SpecialTimer >= 240 && Main.netMode != NetmodeID.MultiplayerClient)
 			{
 				SpecialTimer = 0;
-				SoundEngine.PlaySound(SoundID.Roar, NPC.Center);
+				SoundEngine.PlaySound(WizardSoundStyles.WerewolfHowl, NPC.Center);
 
 				int wolfCount = Main.rand.Next(3, 5);
 				for (int i = 0; i < wolfCount; i++)

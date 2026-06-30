@@ -1,5 +1,6 @@
 using Microsoft.Xna.Framework;
 using Terraria;
+using Terraria.Audio;
 using Terraria.ID;
 using Terraria.Localization;
 using Terraria.ModLoader;
@@ -9,9 +10,9 @@ namespace WizardingWorld.Common.Systems
 {
 	/// <summary>
 	/// Hogwarts Letter System — the mod's intro moment.
-	/// When a new player first reaches 100 max HP (after using a Life Crystal)
+	/// When a new player first reaches 120 max HP (after using a Life Crystal)
 	/// or defeats their first boss, an owl delivers a Hogwarts Acceptance Letter.
-	/// The letter grants a free Oak Wand and Enchanting Table recipe knowledge.
+	/// The letter grants a free Oak Wand and points the player toward early crafting.
 	/// This solves the "how does a new player discover the mod?" problem.
 	/// </summary>
 	public class HogwartsLetterSystem : ModPlayer
@@ -33,18 +34,10 @@ namespace WizardingWorld.Common.Systems
 			if (receivedLetter)
 				return;
 
-			// Trigger conditions: used a Life Crystal OR defeated any boss
-			bool ready = Player.statLifeMax >= 120 || NPC.downedBoss1 || NPC.downedBoss2 || NPC.downedSlimeKing;
+			// Trigger conditions: used a Life Crystal OR defeated an early boss.
+			bool ready = Player.statLifeMax >= 120 || NPC.downedBoss1 || NPC.downedBoss2 || NPC.downedBoss3 || NPC.downedSlimeKing;
 
 			if (!ready)
-				return;
-
-			// Only deliver at dawn (4:30 AM game time) for thematic effect
-			// OR immediately if a boss was just killed (checked every frame is fine)
-			bool isDawn = Main.dayTime && Main.time < 3600; // First minute of day
-			bool bossJustDied = NPC.downedBoss1 || NPC.downedSlimeKing;
-
-			if (!isDawn && !bossJustDied)
 				return;
 
 			if (Player.whoAmI != Main.myPlayer)
@@ -52,6 +45,7 @@ namespace WizardingWorld.Common.Systems
 
 			// Deliver the letter!
 			receivedLetter = true;
+			SoundEngine.PlaySound(WizardSoundStyles.OwlHoot, Player.Center);
 
 			// Owl delivery visual — feather dust from above
 			for (int i = 0; i < 30; i++)

@@ -12,7 +12,7 @@ using WizardingWorld.Content.Buffs.Debuffs;
 namespace WizardingWorld.Content.NPCs.Bosses.BartyCrouch
 {
 	/// <summary>
-	/// Barty Crouch Jr — Post-Plantera shapeshifter boss.
+	/// Barty Crouch Jr — post-Bellatrix + post-Plantera shapeshifter boss.
 	/// Phase 1 (Disguise — "Moody"): Walks on ground, fires accurate single-target bolts. Drinks from flask to heal.
 	/// Phase 2 (below 70% HP — true form): Flies, fires rapid dark curse projectiles, more aggressive.
 	/// Phase 3 (below 30% HP): Teleports erratically, summons Death Eater minions, spread of killing curse bolts.

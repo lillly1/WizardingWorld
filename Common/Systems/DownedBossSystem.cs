@@ -111,16 +111,52 @@ namespace WizardingWorld.Common.Systems
 
 	public static class WizardConditions
 	{
+		public static bool AnyMechBossDowned =>
+			NPC.downedMechBossAny || NPC.downedMechBoss1 || NPC.downedMechBoss2 || NPC.downedMechBoss3;
+
+		public static bool UmbridgeGateOpen =>
+			Main.hardMode && AnyMechBossDowned && DownedBossSystem.downedHorntail;
+
+		public static bool FenrirGateOpen =>
+			Main.hardMode && DownedBossSystem.downedUmbridge;
+
+		public static bool BellatrixGateOpen =>
+			Main.hardMode && DownedBossSystem.downedFenrir && NPC.downedPlantBoss;
+
+		public static bool BartyGateOpen =>
+			Main.hardMode && DownedBossSystem.downedBellatrix && NPC.downedPlantBoss;
+
+		public static bool DementorGateOpen =>
+			Main.hardMode && DownedBossSystem.downedBartyCrouch && NPC.downedGolemBoss;
+
 		public static readonly Condition DownedBasilisk =
 			new Condition("Mods.WizardingWorld.Conditions.DownedBasilisk", () => DownedBossSystem.downedBasilisk);
 
+		public static readonly Condition DownedAnyMechBoss =
+			new Condition("Mods.WizardingWorld.Conditions.DownedAnyMechBoss", () => AnyMechBossDowned);
+
 		public static readonly Condition DownedHorntail =
 			new Condition("Mods.WizardingWorld.Conditions.DownedHorntail", () => DownedBossSystem.downedHorntail);
+
+		public static readonly Condition DownedHorntailAndAnyMechBoss =
+			new Condition("Mods.WizardingWorld.Conditions.DownedHorntailAndAnyMechBoss", () => UmbridgeGateOpen);
+
+		public static readonly Condition DownedUmbridge =
+			new Condition("Mods.WizardingWorld.Conditions.DownedUmbridge", () => DownedBossSystem.downedUmbridge);
 
 		public static readonly Condition DownedVoldemort =
 			new Condition("Mods.WizardingWorld.Conditions.DownedVoldemort", () => DownedBossSystem.downedVoldemort);
 
 		public static readonly Condition DownedFenrir =
 			new Condition("Mods.WizardingWorld.Conditions.DownedFenrir", () => DownedBossSystem.downedFenrir);
+
+		public static readonly Condition PostFenrirAndPlantera =
+			new Condition("Mods.WizardingWorld.Conditions.PostFenrirAndPlantera", () => BellatrixGateOpen);
+
+		public static readonly Condition PostBellatrixAndPlantera =
+			new Condition("Mods.WizardingWorld.Conditions.PostBellatrixAndPlantera", () => BartyGateOpen);
+
+		public static readonly Condition PostBartyAndGolem =
+			new Condition("Mods.WizardingWorld.Conditions.PostBartyAndGolem", () => DementorGateOpen);
 	}
 }

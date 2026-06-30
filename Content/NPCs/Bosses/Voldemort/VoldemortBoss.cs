@@ -87,12 +87,12 @@ namespace WizardingWorld.Content.NPCs.Bosses.Voldemort
 			if (hpPercent < 0.20f && Phase < 2)
 			{
 				Phase = 2;
-				SoundEngine.PlaySound(SoundID.Roar, NPC.Center);
+				SoundEngine.PlaySound(WizardSoundStyles.AvadaKedavra, NPC.Center);
 			}
 			else if (hpPercent < 0.55f && Phase < 1)
 			{
 				Phase = 1;
-				SoundEngine.PlaySound(SoundID.Roar, NPC.Center);
+				SoundEngine.PlaySound(WizardSoundStyles.Crucio, NPC.Center);
 			}
 
 			switch (Phase)
@@ -133,6 +133,7 @@ namespace WizardingWorld.Content.NPCs.Bosses.Voldemort
 				// Green bolt (Avada Kedavra style)
 				Projectile.NewProjectile(NPC.GetSource_FromAI(), NPC.Center, fireDir,
 					ProjectileID.CursedFlameHostile, NPC.damage / 3, 0f, Main.myPlayer);
+				SoundEngine.PlaySound(WizardSoundStyles.AvadaKedavra, NPC.Center);
 			}
 
 			// Teleport every 5 seconds
@@ -166,6 +167,9 @@ namespace WizardingWorld.Content.NPCs.Bosses.Voldemort
 				int projType = Main.rand.NextBool() ? ProjectileID.CursedFlameHostile : ProjectileID.ShadowBeamHostile;
 				Projectile.NewProjectile(NPC.GetSource_FromAI(), NPC.Center, fireDir,
 					projType, NPC.damage / 3, 0f, Main.myPlayer);
+				SoundEngine.PlaySound(projType == ProjectileID.CursedFlameHostile
+					? WizardSoundStyles.AvadaKedavra
+					: WizardSoundStyles.Crucio, NPC.Center);
 			}
 
 			// Teleport more frequently
@@ -211,6 +215,7 @@ namespace WizardingWorld.Content.NPCs.Bosses.Voldemort
 				fireDir = fireDir.RotatedByRandom(MathHelper.ToRadians(10));
 				Projectile.NewProjectile(NPC.GetSource_FromAI(), NPC.Center, fireDir,
 					ProjectileID.CursedFlameHostile, NPC.damage / 3, 0f, Main.myPlayer);
+				SoundEngine.PlaySound(WizardSoundStyles.AvadaKedavra, NPC.Center);
 			}
 
 			// Rapid teleport
@@ -278,7 +283,7 @@ namespace WizardingWorld.Content.NPCs.Bosses.Voldemort
 				dust.velocity *= 3f;
 			}
 
-			SoundEngine.PlaySound(SoundID.Item8, NPC.Center);
+			SoundEngine.PlaySound(WizardSoundStyles.Apparition, NPC.Center);
 		}
 
 		public override void ModifyNPCLoot(NPCLoot npcLoot)

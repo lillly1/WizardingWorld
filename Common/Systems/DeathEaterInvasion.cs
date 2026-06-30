@@ -21,13 +21,25 @@ namespace WizardingWorld.Common.Systems
 		public static int invasionProgressMax = 100;
 		public static int invasionProgressWave;
 
+		private static string Text(string suffix, string fallback, params object[] args) =>
+			WizardLocalization.Text($"Mods.WizardingWorld.Events.DeathEaterInvasion.{suffix}", fallback, args);
+
+		private static bool CanRandomStart()
+		{
+			return Main.hardMode
+				&& !Main.dayTime
+				&& DownedBossSystem.downedBasilisk
+				&& !TriwizardTournamentSystem.taskActive
+				&& !StMungosTriageSystem.missionActive
+				&& !ForestExpeditionSystem.missionActive;
+		}
+
 		public override void PreUpdateWorld()
 		{
 			if (!invasionActive)
 			{
 				// Random chance to start at night in Hardmode after Basilisk
-				if (Main.hardMode && !Main.dayTime && DownedBossSystem.downedBasilisk
-					&& Main.rand.NextBool(18000)) // ~1 in 5 minutes average
+				if (CanRandomStart() && Main.rand.NextBool(18000)) // ~1 in 5 minutes average
 				{
 					StartInvasion();
 				}
@@ -63,7 +75,7 @@ namespace WizardingWorld.Common.Systems
 			if (Main.netMode != NetmodeID.Server)
 			{
 				// Dark sky message
-				Main.NewText(Language.GetTextValue("Mods.WizardingWorld.Events.DeathEaterInvasion.Start"), 175, 50, 200);
+				Main.NewText(Text("Start", "The Dark Mark rises... Death Eaters are attacking!"), 175, 50, 200);
 			}
 
 			if (Main.netMode == NetmodeID.Server)
@@ -80,7 +92,7 @@ namespace WizardingWorld.Common.Systems
 
 			if (Main.netMode != NetmodeID.Server)
 			{
-				Main.NewText(Language.GetTextValue("Mods.WizardingWorld.Events.DeathEaterInvasion.End"), 50, 200, 50);
+				Main.NewText(Text("End", "The Death Eaters have been driven back. The night is safe once more."), 50, 200, 50);
 			}
 
 			if (Main.netMode == NetmodeID.Server)
@@ -99,13 +111,13 @@ namespace WizardingWorld.Common.Systems
 			{
 				invasionProgressWave = 2;
 				if (Main.netMode != NetmodeID.Server)
-					Main.NewText(Language.GetTextValue("Mods.WizardingWorld.Events.DeathEaterInvasion.Wave2"), 175, 50, 200);
+					Main.NewText(Text("Wave2", "More Dark creatures emerge from the shadows!"), 175, 50, 200);
 			}
 			else if (invasionProgress == invasionProgressMax * 2 / 3 && invasionProgressWave == 2)
 			{
 				invasionProgressWave = 3;
 				if (Main.netMode != NetmodeID.Server)
-					Main.NewText(Language.GetTextValue("Mods.WizardingWorld.Events.DeathEaterInvasion.Wave3"), 200, 30, 30);
+					Main.NewText(Text("Wave3", "The Dark Lord's most dangerous servants have arrived!"), 200, 30, 30);
 			}
 		}
 	}

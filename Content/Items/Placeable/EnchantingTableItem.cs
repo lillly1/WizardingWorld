@@ -17,27 +17,27 @@ namespace WizardingWorld.Content.Items.Placeable
 			Item.useTime = 10;
 			Item.useStyle = ItemUseStyleID.Swing;
 			Item.consumable = true;
-			Item.value = Item.buyPrice(gold: 5);
+			Item.value = Item.buyPrice(gold: 1, silver: 50);
 			Item.rare = ItemRarityID.Orange;
 			Item.createTile = ModContent.TileType<Tiles.EnchantingTable>();
 		}
 
 		public override void AddRecipes()
 		{
-			// Main recipe
+			// Main recipe: reachable before dungeon books or town NPC shopping.
 			CreateRecipe()
-				.AddIngredient(ItemID.Wood, 20)
-				.AddIngredient(ItemID.Book, 5)
-				.AddIngredient(ItemID.FallenStar, 10)
-				.AddIngredient(ItemID.Amethyst, 5)
+				.AddRecipeGroup("WizardingWorld:AnyWood", 20)
+				.AddIngredient(ItemID.FallenStar, 5)
+				.AddIngredient(ItemID.Amethyst, 2)
+				.AddIngredient(ItemID.Torch, 5)
 				.AddTile(TileID.WorkBenches)
 				.Register();
 
-			// Easier alternative recipe — no gems required, just more common materials
+			// Gem-free fallback for worlds where early amethyst is slow to find.
 			CreateRecipe()
-				.AddIngredient(ItemID.Wood, 30)
-				.AddIngredient(ItemID.Book, 3)
-				.AddIngredient(ItemID.FallenStar, 15)
+				.AddRecipeGroup("WizardingWorld:AnyWood", 30)
+				.AddIngredient(ItemID.FallenStar, 8)
+				.AddIngredient(ItemID.StoneBlock, 25)
 				.AddIngredient(ItemID.Torch, 10)
 				.AddTile(TileID.WorkBenches)
 				.Register();

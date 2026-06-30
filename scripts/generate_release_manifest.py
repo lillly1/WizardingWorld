@@ -60,6 +60,11 @@ def main() -> int:
         "counts": manifest["summary"],
         "verification": "run verify_guide.py --strict to confirm",
         "artifacts": [
+            "C:/Users/Lily/Documents/My Games/Terraria/tModLoader/Mods/WizardingWorld.tmod",
+            "description.txt",
+            "docs/WORKSHOP_PAGE.md",
+            "docs/RELEASE_CHECKLIST.md",
+            "dist/WizardingWorld_release-candidate_source.zip",
             "WizardingWorld_Guide_EN.pdf",
             "WizardingWorld_Guide_ZH.pdf",
             "scripts/content_manifest.json",

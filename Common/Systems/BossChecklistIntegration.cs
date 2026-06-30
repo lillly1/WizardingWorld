@@ -36,7 +36,7 @@ namespace WizardingWorld.Common.Systems
 				{
 					["spawnItems"] = ModContent.ItemType<Content.Items.Consumables.BasiliskSummonItem>(),
 					["displayName"] = "Basilisk",
-					["spawnInfo"] = "Use a Serpent's Diary. Crafted at the Enchanting Table.",
+					["spawnInfo"] = "Use a Serpent's Diary. Requires Professor Quirrell and Skeletron defeated.",
 				}
 			);
 
@@ -52,7 +52,7 @@ namespace WizardingWorld.Common.Systems
 				{
 					["spawnItems"] = ModContent.ItemType<Content.Items.Consumables.HorntailSummonItem>(),
 					["displayName"] = "Hungarian Horntail",
-					["spawnInfo"] = "Use a Cracked Dragon Egg. Available from Hagrid or crafted.",
+					["spawnInfo"] = "Use a Cracked Dragon Egg. Requires a mechanical boss defeated.",
 				}
 			);
 
@@ -72,7 +72,7 @@ namespace WizardingWorld.Common.Systems
 				}
 			);
 
-			// Professor Quirrell — Pre-Hardmode, after Eye of Cthulhu (difficulty ~3.5)
+			// Professor Quirrell — Pre-Hardmode, after Mountain Troll and Eye of Cthulhu (difficulty ~3.5)
 			bossChecklist.Call(
 				"LogBoss",
 				Mod,
@@ -84,7 +84,7 @@ namespace WizardingWorld.Common.Systems
 				{
 					["spawnItems"] = ModContent.ItemType<Content.Items.Consumables.QuirrellSummonItem>(),
 					["displayName"] = "Professor Quirrell",
-					["spawnInfo"] = "Use a Suspicious Turban. Crafted at the Enchanting Table. Requires Eye of Cthulhu defeated.",
+					["spawnInfo"] = "Use a Suspicious Turban. Requires Mountain Troll and Eye of Cthulhu defeated.",
 				}
 			);
 
@@ -100,7 +100,7 @@ namespace WizardingWorld.Common.Systems
 				{
 					["spawnItems"] = ModContent.ItemType<Content.Items.Consumables.UmbridgeSummonItem>(),
 					["displayName"] = "Dolores Umbridge",
-					["spawnInfo"] = "Use an Educational Decree. Crafted at the Enchanting Table. Requires a mechanical boss defeated.",
+					["spawnInfo"] = "Use an Educational Decree. Crafted at the Enchanting Table. Requires Horntail and a mechanical boss defeated.",
 				}
 			);
 
@@ -125,31 +125,31 @@ namespace WizardingWorld.Common.Systems
 				() => DownedBossSystem.downedFenrir, ModContent.NPCType<Content.NPCs.Bosses.Fenrir.FenrirBoss>(),
 				new System.Collections.Generic.Dictionary<string, object> {
 					["spawnItems"] = ModContent.ItemType<Content.Items.Consumables.FenrirSummonItem>(),
-					["displayName"] = "Fenrir Greyback", ["spawnInfo"] = "Use a Bloodied Claw during Blood Moon only.",
+					["displayName"] = "Fenrir Greyback", ["spawnInfo"] = "Use a Bloodied Claw during a Blood Moon. Requires Umbridge defeated.",
 				});
 
-			// Bellatrix Lestrange — Post-Plantera (difficulty ~11)
+			// Bellatrix Lestrange — Post-Fenrir + Plantera (difficulty ~11)
 			bossChecklist.Call("LogBoss", Mod, nameof(Content.NPCs.Bosses.Bellatrix.BellatrixBoss), 11f,
 				() => DownedBossSystem.downedBellatrix, ModContent.NPCType<Content.NPCs.Bosses.Bellatrix.BellatrixBoss>(),
 				new System.Collections.Generic.Dictionary<string, object> {
 					["spawnItems"] = ModContent.ItemType<Content.Items.Consumables.BellatrixSummonItem>(),
-					["displayName"] = "Bellatrix Lestrange", ["spawnInfo"] = "Use an Azkaban Prisoner Tag. Requires Plantera defeated.",
+					["displayName"] = "Bellatrix Lestrange", ["spawnInfo"] = "Use an Azkaban Prisoner Tag. Requires Fenrir and Plantera defeated.",
 				});
 
-			// Barty Crouch Jr — Post-Plantera (difficulty ~12)
+			// Barty Crouch Jr — Post-Bellatrix + Plantera (difficulty ~12)
 			bossChecklist.Call("LogBoss", Mod, nameof(Content.NPCs.Bosses.BartyCrouch.BartyCrouchBoss), 12f,
 				() => DownedBossSystem.downedBartyCrouch, ModContent.NPCType<Content.NPCs.Bosses.BartyCrouch.BartyCrouchBoss>(),
 				new System.Collections.Generic.Dictionary<string, object> {
 					["spawnItems"] = ModContent.ItemType<Content.Items.Consumables.BartyCrouchSummonItem>(),
-					["displayName"] = "Barty Crouch Jr", ["spawnInfo"] = "Use a Suspicious Flask. Requires Plantera defeated.",
+					["displayName"] = "Barty Crouch Jr", ["spawnInfo"] = "Use a Suspicious Flask. Requires Bellatrix and Plantera defeated.",
 				});
 
-			// Azkaban's Despair — Post-Golem (difficulty ~13, MOVED from post-Cultist)
+			// Azkaban's Despair — Post-Barty + Golem (difficulty ~13, MOVED from post-Cultist)
 			bossChecklist.Call("LogBoss", Mod, nameof(Content.NPCs.Bosses.DementorKing.DementorKingBoss), 13f,
 				() => DownedBossSystem.downedDementorKing, ModContent.NPCType<Content.NPCs.Bosses.DementorKing.DementorKingBoss>(),
 				new System.Collections.Generic.Dictionary<string, object> {
 					["spawnItems"] = ModContent.ItemType<Content.Items.Consumables.DementorKingSummonItem>(),
-					["displayName"] = "Azkaban's Despair", ["spawnInfo"] = "Use a Frozen Soul Lantern. Post-Golem, night only. The penultimate wizard boss.",
+					["displayName"] = "Azkaban's Despair", ["spawnInfo"] = "Use a Frozen Soul Lantern at night. Requires Barty and Golem defeated.",
 				});
 
 			// Nagini — Mini-boss, registered as miniboss

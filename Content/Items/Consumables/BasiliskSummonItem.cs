@@ -2,6 +2,7 @@ using Terraria;
 using Terraria.Audio;
 using Terraria.ID;
 using Terraria.ModLoader;
+using WizardingWorld.Common.Systems;
 
 namespace WizardingWorld.Content.Items.Consumables
 {
@@ -23,7 +24,9 @@ namespace WizardingWorld.Content.Items.Consumables
 
 		public override bool CanUseItem(Player player)
 		{
-			return !NPC.AnyNPCs(ModContent.NPCType<NPCs.Bosses.Basilisk.BasiliskBoss>());
+			return DownedBossSystem.downedQuirrell
+				&& NPC.downedBoss3
+				&& !NPC.AnyNPCs(ModContent.NPCType<NPCs.Bosses.Basilisk.BasiliskBoss>());
 		}
 
 		public override bool? UseItem(Player player)

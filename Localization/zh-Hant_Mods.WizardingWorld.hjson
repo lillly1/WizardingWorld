@@ -6,6 +6,7 @@ Mods: {
 
 		Conditions: {
 			DownedBasilisk: 擊敗蛇妖之後
+			DownedAnyMechBoss: 擊敗任意機械 Boss 之後
 			DownedHorntail: 擊敗匈牙利角尾龍之後
 			DownedVoldemort: 擊敗黑魔王之後
 			DownedTroll: 擊敗山怪之後
@@ -17,6 +18,30 @@ Mods: {
 			DownedQuirrell: 擊敗乖乖奎乖乖若教授之後
 			DownedUmbridge: 擊敗桃樂絲·恩乖乖不利之後
 			DownedBartyCrouch: 擊敗乖乖巴提·乖乖柯羅乖乖乖奇二世之後
+			PostFenrirAndPlantera: 擊敗芬里爾·格雷伯克與世紀之花之後
+			PostBellatrixAndPlantera: 擊敗貝拉·雷斯壯與世紀之花之後
+			PostBartyAndGolem: 擊敗小巴堤·柯羅奇與魔像之後
+		}
+
+		ItemMessages: {
+			LetterHeader: "=== 霍格華茲入學通知書 ==="
+			LetterDear: "親愛的 {0}："
+			LetterWelcome: "我們很高興通知你，你已被巫師世界接納。"
+			LetterStartHeader: "你的第一步："
+			LetterStart1: "1. 橡木魔杖可以立即使用，會施放昏昏倒地。"
+			LetterStart2: "2. 在工作台製作附魔台；也可以等奧利凡德入住後直接購買。"
+			LetterStart3: "3. 為奧利凡德準備房屋；他出售入門魔杖和《標準咒語書》。"
+			LetterStart4: "4. 使用附魔台製作更好的魔杖、藥水、裝備和 Boss 召喚物。"
+			LetterStart5: "5. 在附魔台製作臭襪子，挑戰山怪。"
+			LetterWorldHeader: "世界中的線索："
+			LetterWorld1: "巫師塔可能藏著年輕巫師需要的起步戰利品。"
+			LetterWorld2: "活米村位於遠離出生點的一側，值得探索。"
+			LetterWorld3: "禁忌森林會隨著故事推進變得更加危險。"
+			LetterWorld4: "黑魔法很強大，但腐化會付出代價。"
+			LetterWorld5: "面對佛地魔前先摧毀分靈體；每摧毀一個都會削弱他。"
+			LetterClosing: "歡迎來到霍格華茲。惡作劇終會完成。"
+			DAGalleonUse: "D.A. 加隆在你掌心發熱。"
+			SkivingSnackboxUse: "你咬了一口逃課糖盒。惡作劇也需要補充營養。"
 		}
 
 		Items: {
@@ -40,6 +65,10 @@ Mods: {
 					'鳳凰羽毛杖芯賦予強大的力量'
 					施放火焰熊熊，有25%機率雙重射擊
 					'''
+			}
+			QATestWand: {
+				DisplayName: QA測試魔杖
+				Tooltip: "僅用於調試流程測試\n600咒語傷害，無魔力消耗\n不屬於正常流程"
 			}
 			DragonHeartstringWand: {
 				DisplayName: 龍心弦魔杖
@@ -229,17 +258,17 @@ Mods: {
 					HorcruxTooltip: "[c/CC88FF:分靈體獵殺：已摧毀{0}/4{1}]"
 					NaginiSuffix: "，娜吉尼已隕落"
 					NextTroll: "山怪（使用臭襪子）"
-					NextQuirrell: "奎若教授（使用可疑頭巾）"
-					NextBasilisk: "蛇妖（使用蛇人日記）"
+					NextQuirrell: "奎若教授（山怪 + 克蘇魯之眼後使用可疑頭巾）"
+					NextBasilisk: "蛇妖（奎若 + 骷髏王後使用蛇妖日記）"
 					NextAragog: "阿辣哥（使用八眼巨蛛卵——困難模式）"
 					NextFluffy: "路威（使用附魔長笛——機械Boss後）"
 					NextHorntail: "匈牙利角尾龍（使用龍蛋）"
 					NextUmbridge: "桃樂絲·恩不里居（使用教育法令）"
 					NextFenrir: "焚銳·灰背（使用染血利爪——血月）"
-					NextBellatrix: "貝拉·雷斯壯（使用囚徒標記——世紀之花後）"
-					NextBartyCrouch: "小巴堤·柯羅奇（使用可疑燒瓶）"
-					NextDementorKing: "催狂魔之王（使用冰魂提燈——魔像後）"
-					NextVoldemortReady: "佛地魔（使用黑魔標記——邪教徒後，已被分靈體獵殺削弱）"
+					NextBellatrix: "貝拉·雷斯壯（芬里爾和世紀之花後使用囚徒標記）"
+					NextBartyCrouch: "小巴堤·柯羅奇（貝拉和世紀之花後使用可疑燒瓶）"
+					NextDementorKing: "催狂魔之王（小巴堤和魔像後，夜間使用冰魂提燈）"
+					NextVoldemortReady: "佛地魔（邪教徒後夜晚使用黑魔標記，已被分靈體獵殺削弱）"
 					NextVoldemortBlocked: "在面對佛地魔之前先摧毀更多分靈體"
 					NextPurifyRing: "把剛特戒指帶給鄧不利多"
 					NextClaimCloak: "去向鄧不利多詢問真正的隱形斗篷"
@@ -252,15 +281,18 @@ Mods: {
 			// === CONSUMABLES ===
 			EnchantingTableItem: {
 				DisplayName: 附魔台
-				Tooltip: "'魔法成形之處'\n用於製作魔杖、藥水和魔法裝備"
+				Tooltip: "'魔法成形之處'\n製作魔杖、藥水、裝備和 Boss 召喚物的核心工作站\n可在工作台製作，也可從奧利凡德處購買"
 			}
 			BasiliskSummonItem: {
-				DisplayName: 蛇人日記
-				Tooltip: "'打開請自負風險'\n召喚蛇妖"
+				DisplayName: 蛇妖日記
+				Tooltip: "'打開請自負風險'\n召喚蛇妖\n需要擊敗奎若教授和骷髏王"
 			}
 			HorntailSummonItem: {
 				DisplayName: 裂開的龍蛋
-				Tooltip: "'它要孵化了！'\n召喚匈牙利角尾龍"
+				Tooltip: "'它要孵化了！'\n召喚匈牙利角尾龍\n需要擊敗任意機械 Boss"
+				NeedMech: 裂開的龍蛋需要先擊敗任意機械 Boss。
+				NeedMechDebug: QA 可使用 /wwdebug vanilla mech。
+				AlreadyActive: 匈牙利角尾龍已經存在。
 			}
 			VoldemortSummonItem: {
 				DisplayName: 黑魔標記
@@ -1140,8 +1172,8 @@ Mods: {
 					OverviewTitle: "=== 標準咒語書 ==="
 					OverviewAuthor: "作者：米蘭達·高夏克"
 					OverviewBrowse: "再次使用以瀏覽頁面（共5頁）："
-					OverviewPage1: "  第1頁：前期魔杖（Boss前）"
-					OverviewPage2: "  第2頁：中期魔杖（Boss後 / 困難模式）"
+					OverviewPage1: "  第1頁：前期魔杖與商店解鎖"
+					OverviewPage2: "  第2頁：中期魔杖（地牢 / 困難模式）"
 					OverviewPage3: "  第3頁：後期魔杖（機械Boss後 / 終局）"
 					OverviewPage4: "  第4頁：功能咒語"
 					Page1Title: "=== 第1頁：前期魔杖 ==="
@@ -1149,12 +1181,12 @@ Mods: {
 					Page1Line2: "  配方：木材 + 墜星 @ 工作台"
 					Page1Line3: "柳木魔杖 [16傷害] — Expelliarmus（擊退箭）"
 					Page1Line4: "  配方：木材 + 墜星 + 藍寶石 @ 工作台"
-					Page1Line5: "白蠟木魔杖 [22傷害] — Incendio（火焰箭）"
-					Page1Line6: "  配方：白蠟木 + 獄石 + 紅寶石 @ 附魔台"
-					Page1Line7: "冬青木魔杖 [28傷害] — Expelliarmus + Protego護盾"
-					Page1Line8: "紅橡木魔杖 [32傷害] — Riddikulus（克制幻形怪 / 恐懼）"
-					Page1Line9: "花楸木魔杖 [30傷害] — Bombarda（可破壞地形！）"
-					Page1Line10: "樺木魔杖 [28傷害] — Levicorpus（將敵人拋向空中）"
+					Page1Line5: "赤楊木魔杖 [17傷害] — 更快的 Stupefy；奧利凡德出售"
+					Page1Line6: "白蠟木魔杖 [22傷害] — Incendio；克蘇魯之眼後出售"
+					Page1Line7: "花楸木魔杖 [30傷害] — Bombarda；擊敗山怪後出售"
+					Page1Line8: "冬青木魔杖 [28傷害] — Expelliarmus + Protego；克蘇魯之眼後出售"
+					Page1Line9: "樺木魔杖 [28傷害] — Levicorpus；蛇妖後/困難模式出售"
+					Page1Line10: "紅橡木魔杖 [32傷害] — Riddikulus；蛇妖後的反幻形怪魔杖"
 					Page2Title: "=== 第2頁：中期魔杖 ==="
 					Page2Line1: "鳳凰羽毛 [30傷害] — Incendio（有機率雙發）"
 					Page2Line2: "  需求：獄石錠 + 羽毛"
@@ -1299,7 +1331,7 @@ Mods: {
 			}
 			TrollSummonItem: {
 				DisplayName: 臭襪子
-				Tooltip: "'臭味能吸引牠'\n召喚山怪"
+				Tooltip: "'臭味能吸引牠'\n召喚山怪\n第一個巫師 Boss"
 			}
 			TrollBag: {
 				DisplayName: 寶藏袋（山怪）
@@ -1355,7 +1387,7 @@ Mods: {
 			}
 			BellatrixSummonItem: {
 				DisplayName: 阿茲卡班囚犯標籤
-				Tooltip: "'她是他最忠誠的僕人'\n召喚貝拉乖雷斯壯\n需要擊敗世紀花後"
+				Tooltip: "'她是他最忠誠的僕人'\n召喚貝拉乖雷斯壯\n需要擊敗芬里爾和世紀之花後"
 			}
 			DarkArtsTome: {
 				DisplayName: 黑魔法典籍
@@ -1375,7 +1407,7 @@ Mods: {
 			}
 			FenrirSummonItem: {
 				DisplayName: 血跡斑斑的爪子
-				Tooltip: "'改變一切的咬傷'\n召喚芬沃·石背\n僅在血月期間可用！"
+				Tooltip: "'改變一切的咬傷'\n召喚芬沃·石背\n需要擊敗恩不利居後\n僅在血月期間可用！"
 			}
 			WerewolfPelt: {
 				DisplayName: 狼人毛皮
@@ -1395,7 +1427,7 @@ Mods: {
 			}
 			DementorKingSummonItem: {
 				DisplayName: 凍魂燈籠
-				Tooltip: "'吸引最黑暗生物的光'\n召喚催狂魔之王\n需要擊敗拜月教徒後，僅限夜間"
+				Tooltip: "'吸引最黑暗生物的光'\n召喚催狂魔之王\n需要擊敗小巴堤和魔像後，僅限夜間"
 			}
 			DementorsShroud: {
 				DisplayName: 催狂魔斗篷
@@ -1415,7 +1447,7 @@ Mods: {
 			}
 			QuirrellSummonItem: {
 				DisplayName: 可疑的頭巾
-				Tooltip: "'沒有善與惡之分，只有力量'\n召喚奎若教授"
+				Tooltip: "'沒有善與惡之分，只有力量'\n召喚奎若教授\n需要擊敗山怪和克蘇魯之眼"
 			}
 			QuirrellBag: {
 				DisplayName: 寶藏袋（奎若教授）
@@ -1431,7 +1463,7 @@ Mods: {
 			}
 			UmbridgeSummonItem: {
 				DisplayName: 教育法令
-				Tooltip: "'我不可以說謊'\n召喚桃樂絲·恩不利乖吉\n需要擊敗機械Boss後"
+				Tooltip: "'我不可以說謊'\n召喚桃樂絲·恩不利乖吉\n需要擊敗角尾龍與任意機械Boss後"
 			}
 			UmbridgeBag: {
 				DisplayName: 寶藏袋（桃樂絲·恩不利乖吉）
@@ -1451,7 +1483,7 @@ Mods: {
 			}
 			BartyCrouchSummonItem: {
 				DisplayName: 可疑的酒壺
-				Tooltip: "'時刻保持警覺！'\n召喚偽裝的巴提·柯羅奇二世\n需要擊敗世紀花後"
+				Tooltip: "'時刻保持警覺！'\n召喚偽裝的巴提·柯羅奇二世\n需要擊敗貝拉和世紀之花後"
 			}
 			BartyCrouchBag: {
 				DisplayName: 寶藏袋（巴提·柯羅奇二世）
@@ -1969,6 +2001,9 @@ Mods: {
 				Standard4: "霍格華茲值得為之戰鬥。每一塊石頭，每一條走廊，每一個學生。"
 				NaginiDone: "娜吉尼倒下了。將黑魔王束縛在這個世界的紐帶又少了一條。"
 			}
+			Kingsley: {
+				Kreacher: "怪角不好相處，但他以自己的方式忠於這座房子。"
+			}
 		}
 
 		Passages: {
@@ -2011,6 +2046,10 @@ Mods: {
 		}
 
 		Forest: {
+			Entered: "你踏入禁忌森林陰影覆蓋的枝葉之下。"
+			Exited: "你離開了禁忌森林。"
+			EnteredPostHorntail: "焦黑的痕跡穿過灌木叢。更龐大的野獸已經甦醒。"
+			EnteredPostVoldemort: "森林記得那場戰爭。空氣仍在注視你。"
 			Unlocked: "禁忌森林深處的道路已開放。海格的遠征任務現已可用。"
 			HagridBriefing: "在禁忌森林中於夜間使用森林遠征燈籠開始任務。"
 			UnicornGladeStart: "獨角獸林地——黑暗的腐化痕跡已出現。清除它們以恢復林地的純淨。"
@@ -2048,6 +2087,7 @@ Mods: {
 			ActiveStatus: "任務進行中：{0}/{1}目標已清除，剩餘{2}秒。"
 			ReadyStatus: "已完成任務：{0}次。下一個：{1}。"
 			SourceMission: 尖叫棚屋任務
+			SourceShack: 尖叫棚屋封鎖
 			FullMoonWarning: "滿月升起！棚屋的守護陣在增強的月光下緊繃。危險會更強——但獎勵也會更豐厚。"
 		}
 
@@ -2398,6 +2438,13 @@ Mods: {
 
 		// === PHASE 30 ===
 		DailyChallenge: {
+			DefeatCreatures: "擊敗 20 個魔法生物"
+			DefeatForest: "在禁忌森林中擊敗 10 個敵人"
+			DefeatDarkForces: "擊敗 5 個催狂魔或食死人"
+			DefeatUnderground: "擊敗 15 個地下魔法生物"
+			DefeatAny: "擊敗 30 個任意巫師敵人"
+			Status: "每日挑戰：{0}（{1}/{2}）"
+			CompleteToday: "今日挑戰已完成。明天再來吧。"
 			Complete: "每日巫師挑戰完成！獲得了魔法精華獎勵！"
 		}
 
@@ -2414,6 +2461,52 @@ Mods: {
 
 		Resurrection: {
 			RiseFromAshes: "你從灰燼中重生！"
+		}
+
+		BossDialogue: {
+			QuirrellPhase2: "頭巾下的面孔動了。更可怕的東西正在醒來。"
+			QuirrellPhase3: "佛地魔的陰影接管了身體。撐過最後的詛咒風暴！"
+			UmbridgePhase2: "咳咳。現在，禁閉將變成永久措施。"
+			UmbridgePhase3: "秩序！我要的是秩序！"
+			UmbridgeSummon: "調查行動組響應了恩不里居的召喚！"
+			UmbridgeDecree: "教育法令第 {0} 號：{1} 現已被禁止！"
+			BellatrixPhase2: "貝拉·雷斯壯尖笑著消失在詛咒風暴中！"
+			BellatrixPhase3: "她拋棄了克制。決鬥變成了純粹的瘋狂。"
+			BellatrixTaunt1: "我殺了天狼星·布萊克！"
+			BellatrixTaunt2: "你敢和我決鬥？"
+			BellatrixTaunt3: "酷刑咒！"
+			BellatrixTaunt4: "黑魔王會為此獎賞我！"
+			BellatrixSummon: "貝拉·雷斯壯從陰影中召來黑暗盟友！"
+		}
+
+		ClassQuest: {
+			TaskComplete: "課堂任務完成：{0}"
+			DADAMastery: "黑魔法防禦術精通提升至 {0}。"
+			PotionsMastery: "魔藥學精通提升至 {0}。"
+			CreaturesMastery: "奇獸飼育學精通提升至 {0}。"
+			CharmsMastery: "符咒學精通提升至 {0}。"
+		}
+
+		Hallows: {
+			GuidanceHorcruxes: "尋找聖器前，先摧毀核心分靈體。"
+			GuidanceAzkaban: "催狂魔之王倒下後，斗篷才會被託付給你。"
+			GuidanceCloak: "去問鄧不利多真正的隱形斗篷。"
+			GuidanceVoldemort: "佛地魔仍擋在你和重生石之間。"
+			GuidanceRing: "戰爭結束後，把剛特戒指帶給鄧不利多。"
+			GuidancePurify: "現在可以淨化戒指。不要等待。"
+			GuidanceUnite: "同時裝備接骨木魔杖、真正的隱形斗篷和重生石。"
+			GuidanceComplete: "聖器已經合一。死亡在此沒有主人。"
+			CloakReveal1: "鄧不利多揭示了真正的隱形斗篷。"
+			CloakReveal2: "它像安靜的承諾一樣落在你肩上。"
+			StoneReveal1: "剛特戒指裂開。重生石甦醒了。"
+			StoneReveal2: "逝者不會歸來，但他們的勇氣仍在。"
+			MasterOfDeath1: "死亡聖器一同回應了你。"
+			MasterOfDeath2: "你已成為死亡之主。"
+			MasterOfDeath3: "命運會彎曲，但不會折斷。"
+			DeathRespite: "聖器把你從死亡邊緣拉了回來。"
+			DespairMedium: "{0} 正壓迫你的思緒。"
+			DespairHigh: "絕望逼近。抓緊你的護法。"
+			DespairCritical: "黑暗幾乎完全吞沒了一切。"
 		}
 
 		Bestiary: {

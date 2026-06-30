@@ -12,7 +12,7 @@ using WizardingWorld.Content.Buffs.Debuffs;
 namespace WizardingWorld.Content.NPCs.Bosses.DementorKing
 {
 	/// <summary>
-	/// Azkaban's Despair — Post-Golem flying boss.
+	/// Azkaban's Despair — post-Barty + post-Golem flying boss.
 	/// Phase 1: Hovers above player, dark energy waves, spawns Dementor minions. Extinguishes light.
 	/// Phase 2 (below 60%): "The Kiss" — channels a beam draining HP. Faster, more Dementor spawns.
 	/// Phase 3 (below 25%): "Soul Harvest" — dark vortex that pulls player in, Dementor rings, DarkCurse on all hits.
@@ -95,7 +95,7 @@ namespace WizardingWorld.Content.NPCs.Bosses.DementorKing
 				Phase = 2;
 				isChannelingKiss = false;
 				kissTimer = 0;
-				SoundEngine.PlaySound(SoundID.Roar, NPC.Center);
+				SoundEngine.PlaySound(WizardSoundStyles.DementorScream, NPC.Center);
 
 				// Soul Harvest entry burst
 				for (int i = 0; i < 60; i++)
@@ -108,7 +108,7 @@ namespace WizardingWorld.Content.NPCs.Bosses.DementorKing
 			else if (hpPercent < 0.60f && Phase < 1)
 			{
 				Phase = 1;
-				SoundEngine.PlaySound(SoundID.Roar, NPC.Center);
+				SoundEngine.PlaySound(WizardSoundStyles.DementorScream, NPC.Center);
 
 				for (int i = 0; i < 40; i++)
 				{
@@ -225,7 +225,7 @@ namespace WizardingWorld.Content.NPCs.Bosses.DementorKing
 					kissTimer = 0;
 					NPC.velocity *= 0.2f;
 					NPC.netUpdate = true;
-					SoundEngine.PlaySound(SoundID.NPCDeath52, NPC.Center);
+					SoundEngine.PlaySound(WizardSoundStyles.DementorScream, NPC.Center);
 				}
 			}
 			else
@@ -338,7 +338,7 @@ namespace WizardingWorld.Content.NPCs.Bosses.DementorKing
 						ModContent.NPCType<NPCs.Enemies.Dementor>());
 				}
 
-				SoundEngine.PlaySound(SoundID.NPCDeath52, NPC.Center);
+				SoundEngine.PlaySound(WizardSoundStyles.DementorScream, NPC.Center);
 			}
 
 			// Screen darkens — heavy shadow dust everywhere

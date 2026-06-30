@@ -3,6 +3,7 @@ using Terraria.GameContent.Bestiary;
 using Terraria.GameContent.ItemDropRules;
 using Terraria.ID;
 using Terraria.ModLoader;
+using WizardingWorld.Common.Systems;
 
 namespace WizardingWorld.Content.NPCs.Enemies
 {
@@ -22,7 +23,7 @@ namespace WizardingWorld.Content.NPCs.Enemies
 			NPC.defense = 22;
 			NPC.lifeMax = 600;
 			NPC.HitSound = SoundID.NPCHit1;
-			NPC.DeathSound = SoundID.NPCDeath2;
+			NPC.DeathSound = WizardSoundStyles.TrollRoar;
 			NPC.value = Item.buyPrice(silver: 80);
 			NPC.knockBackResist = 0.1f;
 			NPC.aiStyle = NPCAIStyleID.Fighter;

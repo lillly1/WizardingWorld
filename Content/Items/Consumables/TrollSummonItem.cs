@@ -50,7 +50,7 @@ namespace WizardingWorld.Content.Items.Consumables
 		{
 			CreateRecipe()
 				.AddIngredient(ItemID.Silk, 1)
-				.AddIngredient(ItemID.RottenChunk, 1)
+				.AddRecipeGroup("WizardingWorld:EvilChunks", 1)
 				.AddIngredient(ItemID.FallenStar, 1)
 				.AddTile<Tiles.EnchantingTable>()
 				.Register();

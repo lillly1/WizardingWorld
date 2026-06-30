@@ -20,6 +20,17 @@ namespace WizardingWorld.Common.Systems
 		public static Vector2 snitchPosition;
 		public static Vector2 snitchVelocity;
 		public static float snitchTimer;
+
+		private static string Text(string suffix, string fallback, params object[] args)
+		{
+			string key = $"Mods.WizardingWorld.Events.QuidditchSnitch.{suffix}";
+			string value = args.Length == 0
+				? Language.GetTextValue(key)
+				: Language.GetTextValue(key, args);
+
+			return value == key ? WizardLocalization.Text(key, fallback, args) : value;
+		}
+
 		public override void PreUpdateWorld()
 		{
 			if (snitchActive)
@@ -52,7 +63,7 @@ namespace WizardingWorld.Common.Systems
 
 			if (Main.netMode != NetmodeID.Server)
 			{
-				Main.NewText(Language.GetTextValue("Mods.WizardingWorld.Events.QuidditchSnitch.Spawn"), 255, 215, 0);
+				Main.NewText(Text("Spawn", "A Golden Snitch has appeared! Catch it on a broomstick for a reward!"), 255, 215, 0);
 			}
 		}
 
@@ -65,7 +76,7 @@ namespace WizardingWorld.Common.Systems
 				// Snitch escaped
 				snitchActive = false;
 				if (Main.netMode != NetmodeID.Server)
-					Main.NewText(Language.GetTextValue("Mods.WizardingWorld.Events.QuidditchSnitch.Escaped"), 200, 200, 200);
+					Main.NewText(Text("Escaped", "The Golden Snitch has escaped!"), 200, 200, 200);
 				return;
 			}
 
@@ -108,7 +119,7 @@ namespace WizardingWorld.Common.Systems
 			// Warning at 10 seconds left
 			if (snitchTimer == 600 && Main.netMode != NetmodeID.Server)
 			{
-				Main.NewText(Language.GetTextValue("Mods.WizardingWorld.Events.QuidditchSnitch.Warning"), 255, 200, 50);
+				Main.NewText(Text("Warning", "The Golden Snitch is getting away! 10 seconds left!"), 255, 200, 50);
 			}
 		}
 
@@ -127,7 +138,7 @@ namespace WizardingWorld.Common.Systems
 			// Reward!
 			if (Main.netMode != NetmodeID.Server)
 			{
-				Main.NewText(Language.GetTextValue("Mods.WizardingWorld.Events.QuidditchSnitch.Caught", player.name), 255, 215, 0);
+				Main.NewText(Text("Caught", "{0} caught the Golden Snitch! 150 points to their house!", player.name), 255, 215, 0);
 			}
 
 			// Gold reward

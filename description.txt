@@ -1,17 +1,18 @@
-Enter the Wizarding World! This mod adds a complete magical experience to Terraria inspired by the world of Harry Potter.
+Wizarding World is a full progression adventure mod for Terraria, inspired by the Harry Potter stories and built for tModLoader 1.4.4+.
 
-Features:
-- 20+ unique wands across 9 spell schools with Wand Mastery progression
+Start as a Hogwarts student, earn your first wand, follow a guided boss route, explore magical locations, and carry the fight through Horcruxes, Deathly Hallows, and Lord Voldemort as the true final boss.
+
+Release highlights:
 - 12 boss fights from Mountain Troll to Lord Voldemort
-- 78 enemies including Dementors, Acromantulas, Death Eaters, and Fantastic Beasts
-- 8 armor sets (4 Hogwarts Houses, Dark Wizard, Dragon Scale, and more)
-- 65 accessories including Deathly Hallows, Horcruxes, and House relics
-- 16 town NPCs: Ollivander, Hagrid, Dumbledore, Dobby, and more
-- 5 mounts (Nimbus, Firebolt, Hippogriff, Thestral, Nimbus 2001) and 6 pets
-- 19 potions: Butterbeer, Felix Felicis, Polyjuice, Wolfsbane, and more
-- Horcrux Hunt, Deathly Hallows questline, and Dark Arts Corruption systems
-- Hogsmeade Village, Forbidden Forest biome, Quidditch, and Diagon Alley
-- Full progression system tied to Terraria's vanilla bosses
-- Three-language localization: English, Simplified Chinese, Traditional Chinese
+- 24 active wands, 9 spell schools, and Wand Mastery progression
+- 78 enemies, 65 accessories, 8 armor sets, 5 mounts, 6 pets, and 19 potions
+- 16 town NPCs with progression shops and quest handoffs
+- Horcrux Hunt, Deathly Hallows, Dark Arts Corruption, Azkaban Despair, Quidditch, Hogsmeade, Diagon Alley, and Forbidden Forest systems
+- Boss Compass and Wizard's Almanac guidance for the main route
+- English, Simplified Chinese, and Traditional Chinese localization
+
+Public Release build: debug commands and QA-only test items are omitted.
+
+Unofficial fan project. Not affiliated with, endorsed by, or sponsored by Warner Bros., J.K. Rowling, Re-Logic, or tModLoader.
 
 Version {ModVersion} | tModLoader {tMLVersion}

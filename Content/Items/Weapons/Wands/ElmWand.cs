@@ -3,6 +3,7 @@ using Terraria;
 using Terraria.DataStructures;
 using Terraria.ID;
 using Terraria.ModLoader;
+using WizardingWorld.Common.Systems;
 using WizardingWorld.Content.DamageClasses;
 using WizardingWorld.Content.Projectiles.Spells;
 
@@ -28,7 +29,7 @@ namespace WizardingWorld.Content.Items.Weapons.Wands
 			Item.shootSpeed = 0f;
 			Item.value = Item.buyPrice(gold: 8);
 			Item.rare = ItemRarityID.LightRed;
-			Item.UseSound = SoundID.Item8;
+			Item.UseSound = WizardSoundStyles.Reparo;
 		}
 
 		public override bool Shoot(Player player, EntitySource_ItemUse_WithAmmo source, Vector2 position, Vector2 velocity, int type, int damage, float knockback)

@@ -23,9 +23,8 @@ namespace WizardingWorld.Content.Items.Consumables
 
 		public override bool CanUseItem(Player player)
 		{
-			// Requires at least one mechanical boss defeated and hardmode
-			return Main.hardMode
-				&& (NPC.downedMechBoss1 || NPC.downedMechBoss2 || NPC.downedMechBoss3)
+			// Requires the post-Horntail route plus at least one mechanical boss defeated.
+			return Common.Systems.WizardConditions.UmbridgeGateOpen
 				&& !NPC.AnyNPCs(ModContent.NPCType<NPCs.Bosses.Umbridge.UmbridgeBoss>());
 		}
 

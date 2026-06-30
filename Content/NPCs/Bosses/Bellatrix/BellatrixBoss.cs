@@ -13,7 +13,7 @@ using WizardingWorld.Content.Buffs.Debuffs;
 namespace WizardingWorld.Content.NPCs.Bosses.Bellatrix
 {
 	/// <summary>
-	/// Bellatrix Lestrange — Post-Plantera wizard duel boss.
+	/// Bellatrix Lestrange — post-Fenrir + post-Plantera wizard duel boss.
 	/// Phase 1: Hovers, fires Crucio/Stupefy/dark curse bolts, teleports every 5 seconds.
 	/// Phase 2 (below 60%): Adds Fiendfyre, faster teleporting, screen text taunts.
 	/// Phase 3 (below 25%): Rapid-fire spells, summons 2 Death Eater minions, Dark Curse on contact.

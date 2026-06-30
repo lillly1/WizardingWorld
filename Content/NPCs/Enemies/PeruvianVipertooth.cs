@@ -1,10 +1,12 @@
 using System;
 using Microsoft.Xna.Framework;
 using Terraria;
+using Terraria.Audio;
 using Terraria.GameContent.Bestiary;
 using Terraria.GameContent.ItemDropRules;
 using Terraria.ID;
 using Terraria.ModLoader;
+using WizardingWorld.Common.Systems;
 
 namespace WizardingWorld.Content.NPCs.Enemies
 {
@@ -60,6 +62,7 @@ namespace WizardingWorld.Content.NPCs.Enemies
 				NPC.velocity = diveDir;
 				NPC.damage = (int)(NPC.defDamage * 1.5f);
 				NPC.netUpdate = true;
+				SoundEngine.PlaySound(WizardSoundStyles.DragonRoar, NPC.Center);
 			}
 			else if (NPC.ai[0] > 120)
 			{

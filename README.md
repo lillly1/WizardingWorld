@@ -11,9 +11,9 @@
 
 > **Disclaimer.** This is an **unofficial fan project**. Harry Potter, Hogwarts, the wizarding-world setting, and all related names, characters, places, and indicia are trademarks of Warner Bros. Entertainment Inc., J.K. Rowling, and other rights holders. This mod is **not affiliated with, endorsed by, or sponsored by** any rights holder. Non-commercial fan use only — see [License & IP disclaimer](#license--ip-disclaimer) at the bottom.
 
-> **Project status — design-complete, not yet playtested.** All systems and content are designed and implemented in code, but the maintainer has **not yet run a full in-game play-through inside tModLoader**. The mod is **not on Steam Workshop**. The repository is open for **collaborators** — see [Looking for help](#looking-for-help) below — and is not currently a player-facing release.
+> **Project status — release candidate.** The primary single-player progression route has been smoke-tested in tModLoader from early game through Voldemort and the Deathly Hallows ending. The mod is **not yet on Steam Workshop**; remaining release work is focused on wider balance, multiplayer sync, and packaging checks.
 
-A comprehensive Harry Potter Hogwarts experience mod for Terraria via tModLoader. **590 C# source files, 682 sprites, 1,576 project files.** Canon-audited and redesigned with cleaner Hallows/Horcrux progression and stronger late-game consistency.
+A comprehensive Harry Potter Hogwarts experience mod for Terraria via tModLoader. **593 C# source files, 606 PNG sprites, 1,509 project files.** Canon-audited and redesigned with cleaner Hallows/Horcrux progression and stronger late-game consistency.
 
 **Core Identity:** You are a Hogwarts student experiencing memories from across wizarding history through a Pensieve, learning spells, mastering your wand, and facing the rising darkness.
 
@@ -52,7 +52,7 @@ When you first use a Life Crystal or defeat a boss, an owl will deliver your **H
 3. **Ollivander** the wandmaker will move in once you have a wand
 4. Explore the world — a **Wizard Tower** has spawned with starter loot
 5. Defeat magical creatures to collect **Essence of Magic** (universal crafting material)
-6. Challenge the three wizard bosses: **Basilisk**, **Hungarian Horntail**, and **Lord Voldemort**
+6. Follow the **Boss Compass** and **Wizard's Almanac** through the 12-boss route, ending with **Lord Voldemort** and the Deathly Hallows finale
 
 ## Content Overview
 
@@ -74,13 +74,21 @@ When you first use a Life Crystal or defeat a boss, an owl will deliver your **H
 | Ravenclaw | Ravenclaw's Staff | Low-mana spell + mana reduction |
 | Hufflepuff | Hufflepuff's Mace | Life steal + defense |
 
-### Bosses
-| Boss | Tier | Drops |
-|------|------|-------|
-| **Basilisk** | Pre-Hardmode | Basilisk Fang, Sword of Gryffindor, Basilisk Eye (Expert) |
-| **Hungarian Horntail** | Hardmode | Dragon Scale, Golden Egg, Dragon Heart (Expert) |
-| **Dementor King** | Post-Golem | Dementor's Shroud, Azkaban progression rewards |
-| **Lord Voldemort** | Post-Lunatic Cultist | Elder Wand, Gaunt's Ring, Soul Fragment (Expert) |
+### Boss Route
+| # | Boss | Main Gate |
+|---|------|-----------|
+| 1 | **Mountain Troll** | Early-game summon chain |
+| 2 | **Quirrell** | Troll defeated + early vanilla progression |
+| 3 | **Basilisk** | Quirrell defeated + Skeletron gate |
+| 4 | **Aragog** | Hardmode entry |
+| 5 | **Fluffy** | Mechanical boss gate |
+| 6 | **Hungarian Horntail** | Mechanical boss gate |
+| 7 | **Umbridge** | Post-Horntail |
+| 8 | **Fenrir Greyback** | Post-Umbridge + Blood Moon |
+| 9 | **Bellatrix Lestrange** | Post-Fenrir + Plantera |
+| 10 | **Barty Crouch Jr** | Post-Bellatrix + Plantera |
+| 11 | **Dementor King** | Post-Barty + Golem + night |
+| 12 | **Lord Voldemort** | Post-Dementor King + Horcrux/Battle/Cultist readiness |
 
 ### Enemies (78)
 Dementor, Acromantula, Cornish Pixie, Mountain Troll, Inferius, Thestral, Death Eater, Mandrake, Boggart, Doxy, Werewolf, Grindylow, Peeves, Nagini (mini-boss), Obscurus, Blast-Ended Skrewt, Sphinx, Giant, Snow Wraith, Cursed Mummy, Fwooper, Merfolk, Azkaban Guard, Bowtruckle (critter), Flobberworm (critter)
@@ -165,14 +173,14 @@ The included in-game sprites are complete and release-checked. Asset coverage is
 
 ## Looking for help
 
-This mod is **design-complete in code but not yet gameplay-verified**. Before any player-facing release (Steam Workshop), it needs collaborators in the following areas. If any of these match what you'd like to work on, browse [open issues](https://github.com/SamSi0322/WizardingWorld/issues) or open a new one — see [CONTRIBUTING.md](CONTRIBUTING.md) for build setup.
+This mod is in release-candidate shape after a primary single-player route QA pass. Before a wider Steam Workshop release, it still benefits from fresh machines, longer balance runs, and co-op verification. If any of these match what you'd like to work on, browse [open issues](https://github.com/SamSi0322/WizardingWorld/issues) or open a new one — see [CONTRIBUTING.md](CONTRIBUTING.md) for build setup.
 
 | Need | What it looks like | Label |
 |------|--------------------|-------|
-| **Playtesters** | Run a full play-through (or one boss fight, one biome, one questline). File issues for crashes, missing assets, broken progression, or balance problems. | `playtest needed` |
+| **Playtesters** | Run a fresh play-through, boss arc, biome, or questline. File issues for crashes, missing assets, broken progression, or balance problems. | `playtest needed` |
 | **Multiplayer-sync verifiers** | Specifically test `Common/Players/` and `Common/Systems/` paths in 2+ player co-op (save/load, host-vs-client desyncs). | `multiplayer-sync` |
 | **Balance reviewers** | Review the 23 wands × 5 cores DPS / mana spread, 12 boss HP curves, drop rates. Flag obvious outliers. | `balance` |
-| **Sprite artists** | Replace or polish placeholder SVG sprites in `Assets/SVG/`. Style is line-art monoline indigo. | `sprite-polish` |
+| **Sprite artists** | Polish or replace existing generated sprites while preserving the current content coverage. | `sprite-polish` |
 | **Localizers** | Native-speaker review or new-language translation of the three HJSON files in `Localization/`. Currently English / Simplified Chinese / Traditional Chinese. | `localization` |
 | **Canon-audit reviewers** | Cross-check content against `HarryPotterModCatalog.txt` for canon consistency or design suggestions. | `audit` |
 

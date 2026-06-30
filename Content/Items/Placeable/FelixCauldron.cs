@@ -3,6 +3,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.Localization;
 using Terraria.ModLoader;
+using WizardingWorld.Common.Systems;
 
 namespace WizardingWorld.Content.Items.Placeable
 {
@@ -27,7 +28,7 @@ namespace WizardingWorld.Content.Items.Placeable
 			Item.consumable = false; // Reusable — buff item
 			Item.rare = ItemRarityID.Yellow;
 			Item.value = Item.buyPrice(gold: 50);
-			Item.UseSound = SoundID.Item4;
+			Item.UseSound = WizardSoundStyles.CauldronBubble;
 		}
 
 		public override bool? UseItem(Player player)

@@ -35,6 +35,9 @@ namespace WizardingWorld.Common.Systems
         private const int MISSION_DURATION = 60 * 60 * 3;
         private const int NODES_NEEDED = 3;
 
+        private static string Text(string suffix, string fallback, params object[] args) =>
+            WizardLocalization.Text($"Mods.WizardingWorld.StMungos.{suffix}", fallback, args);
+
         public override void ClearWorld()
         {
             hospitalUnlocked = false;
@@ -55,9 +58,9 @@ namespace WizardingWorld.Common.Systems
             hospitalUnlocked = true;
             if (Main.netMode != NetmodeID.Server)
             {
-                Main.NewText(Language.GetTextValue("Mods.WizardingWorld.StMungos.Unlocked"),
+                Main.NewText(Text("Unlocked", "St Mungo's Hospital for Magical Maladies and Injuries is now accessible. Speak to a Healer or use the Visitor Pass."),
                     new Color(200, 220, 200));
-                Main.NewText(Language.GetTextValue("Mods.WizardingWorld.StMungos.Entrance"),
+                Main.NewText(Text("Entrance", "The wards are open. Healers need triage assistance."),
                     new Color(180, 200, 180));
             }
         }
@@ -74,18 +77,18 @@ namespace WizardingWorld.Common.Systems
 
             SpawnWardNodes(player);
 
-            string wardKey = currentWardType switch
+            string wardText = currentWardType switch
             {
-                0 => "Mods.WizardingWorld.StMungos.SpellWardStart",
-                1 => "Mods.WizardingWorld.StMungos.CreatureWardStart",
-                2 => "Mods.WizardingWorld.StMungos.PotionWardStart",
-                _ => "Mods.WizardingWorld.StMungos.SpellWardStart",
+                0 => Text("SpellWardStart", "Spell Damage Ward -- hex residue nodes are destabilizing. Stabilize them."),
+                1 => Text("CreatureWardStart", "Creature Injuries Ward -- venom wound nodes are spreading toxins. Stabilize them."),
+                2 => Text("PotionWardStart", "Potion Accidents Ward -- cauldron spill nodes are leaking fumes. Neutralize them."),
+                _ => Text("SpellWardStart", "Spell Damage Ward -- hex residue nodes are destabilizing. Stabilize them."),
             };
 
             if (Main.netMode != NetmodeID.Server)
             {
-                Main.NewText(Language.GetTextValue(wardKey), new Color(200, 220, 200));
-                Main.NewText(Language.GetTextValue("Mods.WizardingWorld.StMungos.StabilizeNodes",
+                Main.NewText(wardText, new Color(200, 220, 200));
+                Main.NewText(Text("StabilizeNodes", "Stabilize {0} nodes before time runs out.",
                     NODES_NEEDED), new Color(180, 200, 180));
             }
         }
@@ -121,7 +124,7 @@ namespace WizardingWorld.Common.Systems
 
             if (missionTimer <= 0) { FailMission(); return; }
             if (missionTimer == 60 * 30 && Main.netMode != NetmodeID.Server)
-                Main.NewText(Language.GetTextValue("Mods.WizardingWorld.StMungos.TimeWarning"),
+                Main.NewText(Text("TimeWarning", "30 seconds remaining! Hurry!"),
                     new Color(255, 100, 100));
         }
 
@@ -130,7 +133,7 @@ namespace WizardingWorld.Common.Systems
             if (!missionActive) return;
             nodesStabilized++;
             if (Main.netMode != NetmodeID.Server)
-                Main.NewText(Language.GetTextValue("Mods.WizardingWorld.StMungos.NodeProgress",
+                Main.NewText(Text("NodeProgress", "Nodes stabilized: {0}/{1}",
                     nodesStabilized, NODES_NEEDED), new Color(180, 220, 180));
             if (nodesStabilized >= NODES_NEEDED)
                 CompleteMission(player);
@@ -150,21 +153,21 @@ namespace WizardingWorld.Common.Systems
             player.AddBuff(ModContent.BuffType<Content.Buffs.TriageResolvedBuff>(), 60 * 60 * 10);
             player.QuickSpawnItem(player.GetSource_GiftOrReward(), ItemID.GoldCoin, 2 + missionsCompleted);
 
-            string completeKey = currentWardType switch
+            string completeText = currentWardType switch
             {
-                0 => "Mods.WizardingWorld.StMungos.SpellWardComplete",
-                1 => "Mods.WizardingWorld.StMungos.CreatureWardComplete",
-                2 => "Mods.WizardingWorld.StMungos.PotionWardComplete",
-                _ => "Mods.WizardingWorld.StMungos.SpellWardComplete",
+                0 => Text("SpellWardComplete", "Spell Damage Ward stabilized. The hex residue is contained."),
+                1 => Text("CreatureWardComplete", "Creature Injuries Ward stabilized. The venom is neutralized."),
+                2 => Text("PotionWardComplete", "Potion Accidents Ward stabilized. The fumes have cleared."),
+                _ => Text("SpellWardComplete", "Spell Damage Ward stabilized. The hex residue is contained."),
             };
 
             if (Main.netMode != NetmodeID.Server)
-                Main.NewText(Language.GetTextValue(completeKey), new Color(100, 200, 100));
+                Main.NewText(completeText, new Color(100, 200, 100));
 
             var wp = player.GetModPlayer<Players.WizardPlayer>();
             if (wp.houseSet > 0 && wp.houseSet <= 4)
                 GreatHallSystem.AwardHousePoints(wp.houseSet, 15,
-                    Language.GetTextValue("Mods.WizardingWorld.StMungos.SourceTriage"));
+                    Text("SourceTriage", "St Mungo's triage"));
         }
 
         private static void FailMission()
@@ -172,7 +175,7 @@ namespace WizardingWorld.Common.Systems
             missionActive = false;
             CleanupEntities();
             if (Main.netMode != NetmodeID.Server)
-                Main.NewText(Language.GetTextValue("Mods.WizardingWorld.StMungos.MissionFailed"),
+                Main.NewText(Text("MissionFailed", "The ward is overwhelmed. Triage failed."),
                     new Color(255, 80, 80));
         }
 
@@ -209,15 +212,15 @@ namespace WizardingWorld.Common.Systems
         public static string GetStatusText()
         {
             if (!hospitalUnlocked)
-                return Language.GetTextValue("Mods.WizardingWorld.StMungos.NotUnlocked");
+                return Text("NotUnlocked", "St Mungo's access requires defeating the Hungarian Horntail first.");
             if (missionActive)
-                return Language.GetTextValue("Mods.WizardingWorld.StMungos.ActiveStatus",
+                return Text("ActiveStatus", "Triage active: {0}/{1} nodes stabilized, {2} seconds remaining.",
                     nodesStabilized, NODES_NEEDED, missionTimer / 60);
             string nextWard = (missionsCompleted % 3) switch
             {
                 0 => "Spell Damage", 1 => "Creature Injuries", 2 => "Potion Accidents", _ => "Spell Damage"
             };
-            return Language.GetTextValue("Mods.WizardingWorld.StMungos.ReadyStatus",
+            return Text("ReadyStatus", "Missions completed: {0}. Next ward: {1}.",
                 missionsCompleted, nextWard);
         }
 

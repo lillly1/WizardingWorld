@@ -5,7 +5,7 @@ using Terraria.ModLoader;
 
 namespace WizardingWorld.Content.Items.Consumables
 {
-	/// <summary>Suspicious Flask — summons Barty Crouch Jr in disguise.</summary>
+	/// <summary>Suspicious Flask — summons Barty Crouch Jr in disguise. Requires Bellatrix and Plantera defeated.</summary>
 	public class BartyCrouchSummonItem : ModItem
 	{
 		public override void SetDefaults()
@@ -23,7 +23,8 @@ namespace WizardingWorld.Content.Items.Consumables
 
 		public override bool CanUseItem(Player player)
 		{
-			return NPC.downedPlantBoss && !NPC.AnyNPCs(ModContent.NPCType<NPCs.Bosses.BartyCrouch.BartyCrouchBoss>());
+			return Common.Systems.WizardConditions.BartyGateOpen
+				&& !NPC.AnyNPCs(ModContent.NPCType<NPCs.Bosses.BartyCrouch.BartyCrouchBoss>());
 		}
 
 		public override bool? UseItem(Player player)
@@ -49,6 +50,7 @@ namespace WizardingWorld.Content.Items.Consumables
 				.AddIngredient(ItemID.Deathweed, 5)
 				.AddIngredient(ItemID.SoulofNight, 5)
 				.AddIngredient(ModContent.ItemType<EssenceOfMagic>(), 12)
+				.AddCondition(Common.Systems.WizardConditions.PostBellatrixAndPlantera)
 				.AddTile<Tiles.EnchantingTable>()
 				.Register();
 		}

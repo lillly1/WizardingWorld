@@ -51,12 +51,12 @@ def main() -> int:
     parser.add_argument(
         "--output",
         default=None,
-        help="Output ZIP path (default: dist/WizardingWorld_asset-ready_source.zip)",
+        help="Output ZIP path (default: dist/WizardingWorld_release-candidate_source.zip)",
     )
     args = parser.parse_args()
 
     root = find_repo_root()
-    output = Path(args.output) if args.output else root / "dist" / "WizardingWorld_asset-ready_source.zip"
+    output = Path(args.output) if args.output else root / "dist" / "WizardingWorld_release-candidate_source.zip"
     if not output.is_absolute():
         output = root / output
     output.parent.mkdir(parents=True, exist_ok=True)

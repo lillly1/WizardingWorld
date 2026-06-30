@@ -5,9 +5,9 @@
     "description": "Manually maintained guide content. Update this file when game content changes. Verification checks for common stale patterns."
   },
   "getting_started": {
-    "hogwarts_letter": "When you first reach 100 max HP (after using a Life Crystal) or defeat your first boss, an owl delivers a Hogwarts Acceptance Letter. This grants a free Oak Wand and unlocks Enchanting Table recipe knowledge.",
-    "enchanting_table": "The Enchanting Table is the mod's core crafting station. Nearly every wand, armor piece, potion, and accessory requires it. Craft it early from basic materials at a Work Bench.",
-    "wizard_tower": "A small Wizard Tower generates on the surface during world creation. It contains a chest with starter wizard loot: a wand, potions, and Essence of Magic. Only one spawns per world.",
+    "hogwarts_letter": "When you first reach 120 max HP (after using a Life Crystal) or defeat an early boss, an owl immediately delivers a Hogwarts Acceptance Letter. This grants a free Oak Wand and a short starter path for the mod.",
+    "enchanting_table": "The Enchanting Table is the mod's core crafting station. Nearly every wand, armor piece, potion, accessory, and boss summon uses it. Craft it early at a Work Bench from wood, Fallen Stars, torches, and either amethyst or stone; dungeon books are no longer required.",
+    "wizard_tower": "A small Wizard Tower generates on the surface during world creation. It contains a chest with starter wizard loot: a wand, potions, Essence of Magic, Fallen Stars, and an Enchanting Table. Only one spawns per world.",
     "spell_damage": "The mod adds a custom damage class: Spell Damage. All wands deal Spell Damage. Armor, accessories, and buffs that boost spell damage are clearly labeled. Spell Damage benefits from generic damage bonuses but has its own modifiers.",
     "forbidden_forest": "A custom biome that replaces normal forest spawns with magical creatures. Spawn diversity increases as more wizard bosses are defeated. The biome has increased spawn rates and drops exclusive materials like Unicorn Blood."
   },
@@ -361,7 +361,7 @@
       },
       {
         "name": "Professor Quirrell",
-        "tier": "Post-Eye of Cthulhu",
+        "tier": "Post-Troll + Post-Eye of Cthulhu",
         "hp": "3,500",
         "dmg": "35",
         "def": "12",
@@ -371,7 +371,7 @@
       },
       {
         "name": "Basilisk",
-        "tier": "Pre-Hardmode (Post-Skeletron)",
+        "tier": "Pre-Hardmode (Post-Quirrell + Post-Skeletron)",
         "hp": "4,500",
         "dmg": "40",
         "def": "16",
@@ -487,12 +487,12 @@
       [
         "Ollivander",
         "Wand Shop",
-        "Sells basic wands and spell components. Check daily challenges here."
+        "Sells starter wands, spell components, the Standard Book of Spells, and staged wand upgrades as bosses fall."
       ],
       [
         "Hagrid",
         "Creature Shop",
-        "Sells creature-related items, eggs, beast materials, and pet items."
+        "Moves in after the Mountain Troll or a larger town forms. Sells creature items, pets, and staged boss summons without skipping the intended order."
       ],
       [
         "Dobby",
@@ -686,14 +686,14 @@
         "2",
         "Professor Quirrell",
         "3,500 HP",
-        "Post-Eye of Cthulhu",
+        "Post-Troll + Post-Eye",
         "Second boss. Gear: Holly/Vine/Phoenix Feather Wand."
       ],
       [
         "3",
         "Basilisk",
         "4,500 HP",
-        "Post-Skeletron",
+        "Post-Quirrell + Post-Skeletron",
         "Unlocks Sword of Gryffindor. Final Pre-HM boss."
       ],
       [

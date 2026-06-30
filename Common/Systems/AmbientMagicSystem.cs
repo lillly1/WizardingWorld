@@ -1,5 +1,6 @@
 using Microsoft.Xna.Framework;
 using Terraria;
+using Terraria.Audio;
 using Terraria.ID;
 using Terraria.ModLoader;
 
@@ -16,6 +17,9 @@ namespace WizardingWorld.Common.Systems
 	/// </summary>
 	public class AmbientMagicSystem : ModSystem
 	{
+		private int enchantingTableHumCooldown;
+		private int forestWindCooldown;
+
 		public override void PostUpdateWorld()
 		{
 			if (Main.dedServ || Main.gameMenu)
@@ -49,13 +53,24 @@ namespace WizardingWorld.Common.Systems
 					Tile tile = Main.tile[x, y];
 					if (tile.HasTile && tile.TileType == tableType)
 					{
+						Vector2 tablePos = new Vector2(x * 16 + 8, y * 16 - 8);
+
 						// Subtle sparkle above the table (very rare to avoid spam)
 						if (Main.rand.NextBool(120))
 						{
-							Vector2 pos = new Vector2(x * 16 + 8, y * 16 - 8);
-							Dust dust = Dust.NewDustDirect(pos, 8, 8, DustID.PurpleTorch, 0f, -0.5f, 100, default, 0.5f);
+							Dust dust = Dust.NewDustDirect(tablePos, 8, 8, DustID.PurpleTorch, 0f, -0.5f, 100, default, 0.5f);
 							dust.noGravity = true;
 							dust.velocity *= 0.3f;
+						}
+
+						if (enchantingTableHumCooldown > 0)
+						{
+							enchantingTableHumCooldown--;
+						}
+						else
+						{
+							SoundEngine.PlaySound(WizardSoundStyles.MagicHum, tablePos);
+							enchantingTableHumCooldown = Main.rand.Next(480, 900);
 						}
 
 						return; // Only process one table
@@ -68,6 +83,17 @@ namespace WizardingWorld.Common.Systems
 		{
 			if (!player.InModBiome<Content.Biomes.ForbiddenForestBiome>())
 				return;
+
+			if (forestWindCooldown > 0)
+			{
+				forestWindCooldown--;
+			}
+			else
+			{
+				Vector2 windPos = player.Center + new Vector2(Main.rand.NextFloat(-500f, 500f), Main.rand.NextFloat(-120f, 80f));
+				SoundEngine.PlaySound(WizardSoundStyles.ForestWind, windPos);
+				forestWindCooldown = Main.rand.Next(600, 1200);
+			}
 
 			// Eerie green mist particles in the Forbidden Forest
 			if (Main.rand.NextBool(15))

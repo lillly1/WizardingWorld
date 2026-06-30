@@ -19,7 +19,7 @@ namespace WizardingWorld.Content.Biomes
 	{
 		public override SceneEffectPriority Priority => SceneEffectPriority.BiomeLow;
 
-		public override int Music => MusicID.Eerie;
+		public override int Music => MusicLoader.GetMusicSlot(Mod, "Assets/Music/ForbiddenForest");
 
 		public override string BestiaryIcon => "WizardingWorld/Content/Biomes/ForbiddenForestBiome_Icon";
 

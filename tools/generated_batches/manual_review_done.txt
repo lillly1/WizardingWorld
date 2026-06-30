@@ -46,6 +46,7 @@ Content/Items/Accessories/DragonScaleRing.png
 Content/Items/Accessories/DragonToothNecklace.png
 Content/Items/Accessories/ExtendableEars.png
 Content/Items/Accessories/FairyWings.png
+Content/Items/Accessories/FairyWings_Wings.png
 Content/Items/Accessories/ForestWarden.png
 Content/Items/Accessories/KeeperGloves.png
 Content/Items/Accessories/LightningScar.png
@@ -594,3 +595,5 @@ Content/Items/Placeable/ShriekingShackSignItem.png
 Content/Items/Placeable/StMungosMannequinItem.png
 Content/Items/Placeable/VeilArchItem.png
 Content/Items/Placeable/WhompingWillowStumpItem.png
+Content/Buffs/CastleDefenseBuff.png
+Content/Items/Weapons/Wands/AlohomoraKey.png

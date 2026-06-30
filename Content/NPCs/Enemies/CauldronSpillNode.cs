@@ -1,5 +1,10 @@
 using Microsoft.Xna.Framework;
-using Terraria; using Terraria.ID; using Terraria.ModLoader;
+using Terraria;
+using Terraria.Audio;
+using Terraria.ID;
+using Terraria.ModLoader;
+using WizardingWorld.Common.Systems;
+
 namespace WizardingWorld.Content.NPCs.Enemies
 {
     /// <summary>Cauldron Spill Node -- potion accidents ward objective. Mod-original.</summary>
@@ -19,6 +24,24 @@ namespace WizardingWorld.Content.NPCs.Enemies
             NPC.velocity = Vector2.Zero;
             if (!Common.Systems.StMungosTriageSystem.missionActive) { NPC.active = false; return; }
             Lighting.AddLight(NPC.Center, 0.2f, 0.3f, 0.1f);
+            if (!Main.dedServ && Main.netMode != NetmodeID.Server)
+            {
+                if (NPC.localAI[1] == 0f)
+                {
+                    NPC.localAI[0] = Main.rand.Next(60, 240);
+                    NPC.localAI[1] = 1f;
+                }
+
+                if (NPC.localAI[0] > 0f)
+                {
+                    NPC.localAI[0]--;
+                }
+                else if (Main.LocalPlayer.active && !Main.LocalPlayer.dead && Vector2.DistanceSquared(Main.LocalPlayer.Center, NPC.Center) < 600f * 600f)
+                {
+                    SoundEngine.PlaySound(WizardSoundStyles.CauldronBubble, NPC.Center);
+                    NPC.localAI[0] = Main.rand.Next(180, 420);
+                }
+            }
             if (Main.rand.NextBool(2)) { Dust d = Dust.NewDustDirect(NPC.position - new Vector2(4, 4), NPC.width + 8, NPC.height + 8, DustID.Torch, 0f, -1f, 80, default, 0.9f); d.noGravity = true; d.velocity *= 0.3f; }
             if (Main.GameUpdateCount % 120 == 0)
                 foreach (Player p in Main.player)

@@ -5,9 +5,9 @@
     "note": "Curated narrative content (boss descriptions, spell flavor text, etc.) is maintained separately in scripts/guide_narrative.json."
   },
   "file_counts": {
-    "cs_source_files": 590,
-    "png_sprites": 682,
-    "total_files": 1576
+    "cs_source_files": 593,
+    "png_sprites": 606,
+    "total_files": 1509
   },
   "wands": {
     "all_files": [
@@ -719,17 +719,18 @@
       "WandMasteryGlobalProjectile",
       "WandloreSystem",
       "WizardConfig",
-      "WizardDebugCommand",
       "WizardFishing",
       "WizardGlobalNPC",
       "WizardInfoDisplay",
       "WizardItemTooltips",
+      "WizardLocalization",
       "WizardRecipes",
+      "WizardSoundStyles",
       "WizardTowerGen",
       "WizardingFilterSystem",
       "WizardingSceneEffects"
     ],
-    "count": 55
+    "count": 56
   },
   "crafting_materials": {
     "list": [
@@ -757,9 +758,9 @@
     "count": 20
   },
   "summary": {
-    "cs_files": 590,
-    "png_sprites": 682,
-    "total_files": 1576,
+    "cs_files": 593,
+    "png_sprites": 606,
+    "total_files": 1509,
     "wands_active": 24,
     "wands_base_combat": 19,
     "wands_upgrades": 1,
@@ -775,7 +776,7 @@
     "mounts": 5,
     "potions": 19,
     "crafting_materials": 20,
-    "systems": 55,
+    "systems": 56,
     "other_weapons": 27
   }
 }

@@ -59,6 +59,9 @@ namespace WizardingWorld.Content.NPCs.Bosses.Umbridge
 			"proper mana usage",
 		};
 
+		private static string Text(string suffix, string fallback, params object[] args) =>
+			WizardLocalization.Text($"Mods.WizardingWorld.BossDialogue.{suffix}", fallback, args);
+
 		public override void SetStaticDefaults()
 		{
 			Main.npcFrameCount[Type] = 6;
@@ -115,7 +118,7 @@ namespace WizardingWorld.Content.NPCs.Bosses.Umbridge
 				TransitionDust(DustID.PinkTorch);
 
 				if (Main.netMode != NetmodeID.Server)
-					Main.NewText(Language.GetTextValue("Mods.WizardingWorld.BossDialogue.UmbridgePhase3"), Color.HotPink);
+					Main.NewText(Text("UmbridgePhase3", "Order! I will have order!"), Color.HotPink);
 			}
 			else if (hpPercent < 0.50f && Phase < 1)
 			{
@@ -124,7 +127,7 @@ namespace WizardingWorld.Content.NPCs.Bosses.Umbridge
 				TransitionDust(DustID.PinkTorch);
 
 				if (Main.netMode != NetmodeID.Server)
-					Main.NewText(Language.GetTextValue("Mods.WizardingWorld.BossDialogue.UmbridgePhase2"), Color.HotPink);
+					Main.NewText(Text("UmbridgePhase2", "Hem hem. Detention will now become permanent."), Color.HotPink);
 			}
 
 			switch (Phase)
@@ -231,7 +234,7 @@ namespace WizardingWorld.Content.NPCs.Bosses.Umbridge
 				}
 
 				if (Main.netMode != NetmodeID.Server)
-					Main.NewText(Language.GetTextValue("Mods.WizardingWorld.BossDialogue.UmbridgeSummon"), Color.HotPink);
+					Main.NewText(Text("UmbridgeSummon", "The Inquisitorial Squad answers Umbridge's call!"), Color.HotPink);
 			}
 		}
 
@@ -291,7 +294,7 @@ namespace WizardingWorld.Content.NPCs.Bosses.Umbridge
 
 			if (Main.netMode != NetmodeID.Server)
 			{
-				Main.NewText(Language.GetTextValue("Mods.WizardingWorld.BossDialogue.UmbridgeDecree", decreeNumber, bannedThing), Color.HotPink);
+				Main.NewText(Text("UmbridgeDecree", "Educational Decree #{0}: {1} is now forbidden!", decreeNumber, bannedThing), Color.HotPink);
 			}
 
 			// Apply the debuff to all nearby players

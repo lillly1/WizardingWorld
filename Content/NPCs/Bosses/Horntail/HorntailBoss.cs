@@ -158,7 +158,7 @@ namespace WizardingWorld.Content.NPCs.Bosses.Horntail
 					}
 				}
 
-				SoundEngine.PlaySound(SoundID.Roar, NPC.Center);
+				SoundEngine.PlaySound(WizardSoundStyles.DragonRoar, NPC.Center);
 			}
 			else if (AttackTimer > 120)
 			{

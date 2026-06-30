@@ -58,7 +58,7 @@ namespace WizardingWorld.Content.NPCs.Town
 			{
 				foreach (var item in player.inventory)
 				{
-					if (item.active && item.DamageType == ModContent.GetInstance<DamageClasses.SpellDamage>())
+					if (!item.IsAir && item.DamageType == ModContent.GetInstance<DamageClasses.SpellDamage>())
 						return true;
 				}
 			}

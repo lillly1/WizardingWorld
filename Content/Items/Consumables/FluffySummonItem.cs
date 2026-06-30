@@ -24,8 +24,7 @@ namespace WizardingWorld.Content.Items.Consumables
 		public override bool CanUseItem(Player player)
 		{
 			// Requires Hardmode + at least one mechanical boss killed
-			return Main.hardMode
-				&& (NPC.downedMechBoss1 || NPC.downedMechBoss2 || NPC.downedMechBoss3)
+			return Common.Systems.WizardConditions.AnyMechBossDowned
 				&& !NPC.AnyNPCs(ModContent.NPCType<NPCs.Bosses.Fluffy.FluffyBoss>());
 		}
 

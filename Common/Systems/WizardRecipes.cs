@@ -33,6 +33,11 @@ namespace WizardingWorld.Common.Systems
 				ItemID.CopperBar, ItemID.TinBar);
 			RecipeGroup.RegisterGroup("WizardingWorld:CopperBars", copperGroup);
 
+			// Corruption or Crimson creature remains for early boss summons
+			RecipeGroup evilChunkGroup = new(() => "Rotten Chunk/Vertebra",
+				ItemID.RottenChunk, ItemID.Vertebrae);
+			RecipeGroup.RegisterGroup("WizardingWorld:EvilChunks", evilChunkGroup);
+
 			// Any wood type
 			RecipeGroup woodGroup = new(() => "Any Wood",
 				ItemID.Wood, ItemID.BorealWood, ItemID.RichMahogany, ItemID.Ebonwood,

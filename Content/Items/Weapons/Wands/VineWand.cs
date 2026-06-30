@@ -1,8 +1,10 @@
 using Microsoft.Xna.Framework;
 using Terraria;
+using Terraria.Audio;
 using Terraria.DataStructures;
 using Terraria.ID;
 using Terraria.ModLoader;
+using WizardingWorld.Common.Systems;
 using WizardingWorld.Content.DamageClasses;
 using WizardingWorld.Content.Projectiles.Spells;
 
@@ -30,7 +32,7 @@ namespace WizardingWorld.Content.Items.Weapons.Wands
 			Item.shootSpeed = 11f;
 			Item.value = Item.buyPrice(gold: 3);
 			Item.rare = ItemRarityID.Orange;
-			Item.UseSound = SoundID.Item8;
+			Item.UseSound = null;
 		}
 
 		public override bool Shoot(Player player, EntitySource_ItemUse_WithAmmo source, Vector2 position, Vector2 velocity, int type, int damage, float knockback)
@@ -41,9 +43,11 @@ namespace WizardingWorld.Content.Items.Weapons.Wands
 			{
 				Projectile.NewProjectile(source, position, velocity,
 					ModContent.ProjectileType<AguamentiProjectile>(), damage, knockback, player.whoAmI);
+				SoundEngine.PlaySound(WizardSoundStyles.Aguamenti, player.Center);
 				return false;
 			}
 
+			SoundEngine.PlaySound(WizardSoundStyles.Wingardium, player.Center);
 			return true;
 		}
 

@@ -5,7 +5,7 @@ using Terraria.ModLoader;
 
 namespace WizardingWorld.Content.Items.Consumables
 {
-	/// <summary>Bloodied Claw — summons Fenrir Greyback. Only usable during a Blood Moon.</summary>
+	/// <summary>Bloodied Claw — summons Fenrir Greyback after Umbridge, during a Blood Moon.</summary>
 	public class FenrirSummonItem : ModItem
 	{
 		public override void SetDefaults()
@@ -23,7 +23,9 @@ namespace WizardingWorld.Content.Items.Consumables
 
 		public override bool CanUseItem(Player player)
 		{
-			return Main.bloodMoon && !NPC.AnyNPCs(ModContent.NPCType<NPCs.Bosses.Fenrir.FenrirBoss>());
+			return Common.Systems.WizardConditions.FenrirGateOpen
+				&& Main.bloodMoon
+				&& !NPC.AnyNPCs(ModContent.NPCType<NPCs.Bosses.Fenrir.FenrirBoss>());
 		}
 
 		public override bool? UseItem(Player player)
@@ -49,6 +51,7 @@ namespace WizardingWorld.Content.Items.Consumables
 				.AddIngredient(ItemID.SoulofNight, 10)
 				.AddIngredient(ModContent.ItemType<EssenceOfMagic>(), 10)
 				.AddTile<Tiles.EnchantingTable>()
+				.AddCondition(Common.Systems.WizardConditions.DownedUmbridge)
 				.Register();
 		}
 	}

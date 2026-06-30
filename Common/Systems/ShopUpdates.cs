@@ -16,9 +16,13 @@ namespace WizardingWorld.Common.Systems
 			// Ollivander — add newer wands
 			if (npc.type == ModContent.NPCType<Content.NPCs.Town.Ollivander>())
 			{
-				AddToShop(items, ModContent.ItemType<Content.Items.Weapons.Wands.HollyWand>());
-				AddToShop(items, ModContent.ItemType<Content.Items.Weapons.Wands.RowanWand>());
-				AddToShop(items, ModContent.ItemType<Content.Items.Weapons.Wands.BirchWand>());
+				AddToShop(items, ModContent.ItemType<Content.Items.Weapons.Wands.AlderWand>());
+				AddToShop(items, ModContent.ItemType<Content.Items.Weapons.Wands.RowanWand>(),
+					DownedBossSystem.downedTroll);
+				AddToShop(items, ModContent.ItemType<Content.Items.Weapons.Wands.HollyWand>(),
+					NPC.downedBoss1 || DownedBossSystem.downedQuirrell);
+				AddToShop(items, ModContent.ItemType<Content.Items.Weapons.Wands.BirchWand>(),
+					DownedBossSystem.downedBasilisk || Main.hardMode);
 
 				if (DownedBossSystem.downedBasilisk)
 					AddToShop(items, ModContent.ItemType<Content.Items.Weapons.Wands.RedOakWand>());
@@ -73,25 +77,25 @@ namespace WizardingWorld.Common.Systems
 				// Boss summons — gated by previous boss kills
 				AddToShop(items, ModContent.ItemType<Content.Items.Consumables.TrollSummonItem>());
 				AddToShop(items, ModContent.ItemType<Content.Items.Consumables.QuirrellSummonItem>(),
-					NPC.downedBoss1);
+					DownedBossSystem.downedTroll && NPC.downedBoss1);
 				AddToShop(items, ModContent.ItemType<Content.Items.Consumables.BasiliskSummonItem>(),
-					DownedBossSystem.downedTroll || DownedBossSystem.downedQuirrell);
+					DownedBossSystem.downedQuirrell && NPC.downedBoss3);
 				AddToShop(items, ModContent.ItemType<Content.Items.Consumables.AragogSummonItem>(),
 					Main.hardMode);
 				AddToShop(items, ModContent.ItemType<Content.Items.Consumables.FluffySummonItem>(),
-					Main.hardMode && DownedBossSystem.downedAragog);
+					WizardConditions.AnyMechBossDowned);
 				AddToShop(items, ModContent.ItemType<Content.Items.Consumables.HorntailSummonItem>(),
-					Main.hardMode);
+					WizardConditions.AnyMechBossDowned);
 				AddToShop(items, ModContent.ItemType<Content.Items.Consumables.FenrirSummonItem>(),
-					Main.hardMode);
+					WizardConditions.FenrirGateOpen);
 				AddToShop(items, ModContent.ItemType<Content.Items.Consumables.UmbridgeSummonItem>(),
-					Main.hardMode);
+					WizardConditions.UmbridgeGateOpen);
 				AddToShop(items, ModContent.ItemType<Content.Items.Consumables.BellatrixSummonItem>(),
-					NPC.downedPlantBoss);
+					WizardConditions.BellatrixGateOpen);
 				AddToShop(items, ModContent.ItemType<Content.Items.Consumables.BartyCrouchSummonItem>(),
-					NPC.downedPlantBoss);
+					WizardConditions.BartyGateOpen);
 				AddToShop(items, ModContent.ItemType<Content.Items.Consumables.DementorKingSummonItem>(),
-					NPC.downedGolemBoss); // Azkaban's Despair: post-Golem (moved)
+					WizardConditions.DementorGateOpen);
 				AddToShop(items, ModContent.ItemType<Content.Items.Consumables.VoldemortSummonItem>(),
 					NPC.downedAncientCultist); // Voldemort: post-Cultist (TRUE FINAL)
 				AddToShop(items, ModContent.ItemType<Content.Items.Consumables.DarkMarkSummon>(),

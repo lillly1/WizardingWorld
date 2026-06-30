@@ -3,4 +3,4 @@ author = Sam
 version = 1.0.0
 homepage =
 side = Both
-buildIgnore = *.csproj, *.user, obj\*, bin\*, .vs\*, *.sln, sprites\*
+buildIgnore = *.csproj, *.user, obj\*, bin\*, .vs\*, *.sln, sprites\*, .github\*, docs\*, scripts\*, schemas\*, tools\*, release_assets\*, dist\*, Assets\SVG\*, *.md, *.pdf, *.py, release_manifest.json

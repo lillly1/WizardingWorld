@@ -47,9 +47,9 @@ namespace WizardingWorld.Content.NPCs.Bosses.Troll
 		{
 			NPC.width = 50;
 			NPC.height = 60;
-			NPC.damage = 30;
-			NPC.defense = 8;
-			NPC.lifeMax = 2000;
+			NPC.damage = 22;
+			NPC.defense = 6;
+			NPC.lifeMax = 1500;
 			NPC.knockBackResist = 0f;
 			NPC.noGravity = true;
 			NPC.noTileCollide = true;
@@ -85,7 +85,7 @@ namespace WizardingWorld.Content.NPCs.Bosses.Troll
 				NPC.netUpdate = true;
 
 				// Roar effect
-				SoundEngine.PlaySound(SoundID.Roar, NPC.Center);
+				SoundEngine.PlaySound(WizardSoundStyles.TrollRoar, NPC.Center);
 
 				// Burst of brown/stone dust to show rage
 				for (int i = 0; i < 30; i++)
@@ -112,7 +112,7 @@ namespace WizardingWorld.Content.NPCs.Bosses.Troll
 			StompTimer++;
 
 			// Slow walk toward player
-			float speed = 3f;
+			float speed = 2.4f;
 			float inertia = 30f;
 			Vector2 direction = (player.Center - NPC.Center).SafeNormalize(Vector2.UnitY) * speed;
 			NPC.velocity = (NPC.velocity * (inertia - 1) + direction) / inertia;
@@ -125,8 +125,8 @@ namespace WizardingWorld.Content.NPCs.Bosses.Troll
 
 				// Lunge toward player for club swing
 				Vector2 lungeDir = (player.Center - NPC.Center).SafeNormalize(Vector2.UnitY);
-				NPC.velocity = lungeDir * 8f;
-				NPC.damage = (int)(NPC.defDamage * 1.5f); // Club hits harder
+				NPC.velocity = lungeDir * 6.5f;
+				NPC.damage = (int)(NPC.defDamage * 1.35f); // Club hits harder
 
 				SoundEngine.PlaySound(SoundID.Item1, NPC.Center);
 			}
@@ -150,7 +150,7 @@ namespace WizardingWorld.Content.NPCs.Bosses.Troll
 			RockCooldown++;
 
 			// Faster movement
-			float speed = 6f;
+			float speed = 4.5f;
 			float inertia = 20f;
 			Vector2 direction = (player.Center - NPC.Center).SafeNormalize(Vector2.UnitY) * speed;
 			NPC.velocity = (NPC.velocity * (inertia - 1) + direction) / inertia;
@@ -162,8 +162,8 @@ namespace WizardingWorld.Content.NPCs.Bosses.Troll
 				NPC.netUpdate = true;
 
 				Vector2 lungeDir = (player.Center - NPC.Center).SafeNormalize(Vector2.UnitY);
-				NPC.velocity = lungeDir * 12f;
-				NPC.damage = (int)(NPC.defDamage * 2f);
+				NPC.velocity = lungeDir * 8.5f;
+				NPC.damage = (int)(NPC.defDamage * 1.6f);
 
 				SoundEngine.PlaySound(SoundID.Item1, NPC.Center);
 			}
@@ -181,7 +181,7 @@ namespace WizardingWorld.Content.NPCs.Bosses.Troll
 				{
 					Vector2 rockDir = (player.Center - NPC.Center).SafeNormalize(Vector2.UnitY) * 8f;
 					Projectile.NewProjectile(NPC.GetSource_FromAI(), NPC.Center, rockDir,
-						ProjectileID.BoulderStaffOfEarth, NPC.damage / 2, 4f, Main.myPlayer);
+						ProjectileID.BoulderStaffOfEarth, NPC.damage / 3, 3f, Main.myPlayer);
 				}
 
 				SoundEngine.PlaySound(SoundID.Item69, NPC.Center);
@@ -232,6 +232,8 @@ namespace WizardingWorld.Content.NPCs.Bosses.Troll
 		public override void OnKill()
 		{
 			NPC.SetEventFlagCleared(ref DownedBossSystem.downedTroll, -1);
+			if (Main.netMode == NetmodeID.Server)
+				NetMessage.SendData(MessageID.WorldData);
 		}
 
 		public override bool CanHitPlayer(Player target, ref int cooldownSlot)

@@ -1,6 +1,7 @@
 using Terraria;
 using Terraria.Audio;
 using Terraria.ID;
+using Terraria.Localization;
 using Terraria.ModLoader;
 
 namespace WizardingWorld.Content.Items.Consumables
@@ -23,7 +24,29 @@ namespace WizardingWorld.Content.Items.Consumables
 
 		public override bool CanUseItem(Player player)
 		{
-			return Main.hardMode && !NPC.AnyNPCs(ModContent.NPCType<NPCs.Bosses.Horntail.HorntailBoss>());
+			if (!Common.Systems.WizardConditions.AnyMechBossDowned)
+			{
+				if (player.whoAmI == Main.myPlayer)
+				{
+					string message = Language.GetTextValue("Mods.WizardingWorld.Items.HorntailSummonItem.NeedMech");
+#if DEBUG
+					message += " " + Language.GetTextValue("Mods.WizardingWorld.Items.HorntailSummonItem.NeedMechDebug");
+#endif
+					Main.NewText(message, 255, 220, 80);
+				}
+
+				return false;
+			}
+
+			if (NPC.AnyNPCs(ModContent.NPCType<NPCs.Bosses.Horntail.HorntailBoss>()))
+			{
+				if (player.whoAmI == Main.myPlayer)
+					Main.NewText(Language.GetTextValue("Mods.WizardingWorld.Items.HorntailSummonItem.AlreadyActive"), 255, 220, 80);
+
+				return false;
+			}
+
+			return true;
 		}
 
 		public override bool? UseItem(Player player)

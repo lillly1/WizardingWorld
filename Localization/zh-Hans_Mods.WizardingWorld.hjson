@@ -1,11 +1,10 @@
 Mods: {
 	WizardingWorld: {
-		DamageClasses: {
-			SpellDamage.DisplayName: 咒术
-		}
+		DamageClasses.SpellDamage.DisplayName: 咒术
 
 		Conditions: {
 			DownedBasilisk: 击败蛇怪之后
+			DownedAnyMechBoss: 击败任意机械 Boss 之后
 			DownedHorntail: 击败匈牙利树蜂龙之后
 			DownedVoldemort: 击败黑魔王之后
 			DownedTroll: 击败山怪之后
@@ -17,391 +16,2364 @@ Mods: {
 			DownedQuirrell: 击败奇洛教授之后
 			DownedUmbridge: 击败多洛雷斯·乌姆里奇之后
 			DownedBartyCrouch: 击败小巴蒂·克劳奇之后
+			PostFenrirAndPlantera: 击败芬里尔·格雷伯克与世纪之花之后
+			PostBellatrixAndPlantera: 击败贝拉特里克斯·莱斯特兰奇与世纪之花之后
+			PostBartyAndGolem: 击败小巴蒂·克劳奇与魔像之后
+		}
+
+		ItemMessages: {
+			LetterHeader: === 霍格沃茨录取通知书 ===
+			LetterDear: 亲爱的 {0}：
+			LetterWelcome: 我们很高兴通知你，你已被巫师世界接纳。
+			LetterStartHeader: 你的第一步：
+			LetterStart1: 1. 橡木魔杖可以立即使用，会施放昏昏倒地。
+			LetterStart2: 2. 在工作台制作附魔台；也可以等奥利凡德入住后直接购买。
+			LetterStart3: 3. 为奥利凡德准备房屋；他出售入门魔杖和《标准咒语书》。
+			LetterStart4: 4. 使用附魔台制作更好的魔杖、药水、装备和 Boss 召唤物。
+			LetterStart5: 5. 在附魔台制作臭袜子，挑战山怪。
+			LetterWorldHeader: 世界中的线索：
+			LetterWorld1: 巫师塔可能藏着年轻巫师需要的起步战利品。
+			LetterWorld2: 霍格莫德位于远离出生点的一侧，值得探索。
+			LetterWorld3: 禁林会随着故事推进变得更加危险。
+			LetterWorld4: 黑魔法很强大，但腐化会付出代价。
+			LetterWorld5: 面对伏地魔前先摧毁魂器；每摧毁一个都会削弱他。
+			LetterClosing: 欢迎来到霍格沃茨。恶作剧终会完成。
+			DAGalleonUse: D.A. 加隆在你掌心发热。
+			SkivingSnackboxUse: 你咬了一口逃课糖盒。恶作剧也需要补充营养。
 		}
 
 		Items: {
-			// === WANDS ===
-			OakWand: {
-				DisplayName: 橡木魔杖
-				Tooltip: "'一根适合年轻巫师的坚实入门魔杖'\n施放昏昏倒地（昏迷咒）——命中时使敌人昏迷"
-			}
-			WillowWand: {
-				DisplayName: 柳木魔杖
-				Tooltip: "'柔韧而优雅'\n施放除你武器（缴械咒）——以强力击退缴械敌人"
-			}
-			AshWand: {
-				DisplayName: 梣木魔杖
-				Tooltip: "'忠于主人，绝不认他人'\n施放火焰熊熊（火焰咒）——点燃敌人的火焰弹"
-			}
-			PhoenixFeatherWand: {
-				DisplayName: 凤凰羽毛魔杖
+			HollyWand: {
+				DisplayName: 冬青木魔杖
 				Tooltip:
 					'''
-					'凤凰羽毛杖芯蕴含强大力量'
-					施放火焰熊熊（火焰咒），25%几率发射双重火焰弹
-					'''
-			}
-			DragonHeartstringWand: {
-				DisplayName: 龙心弦魔杖
-				Tooltip:
-					'''
-					'产生最强大的魔法，但容易出事故'
-					施放神锋无影（神锋无影咒）——使敌人流血的黑魔法斩击诅咒
-					'''
-			}
-			UnicornHairWand: {
-				DisplayName: 独角兽毛发魔杖
-				Tooltip:
-					'''
-					'稳定而忠诚，难以转向黑魔法'
-					施放呼神护卫（守护神咒）——召唤一个追踪银色守护者
-					'''
-			}
-			ElderWand: {
-				DisplayName: 接骨木魔杖
-				Tooltip:
-					'''
-					'死亡之杖。命运之杖。'
-					施放阿瓦达索命（杀戮咒）——不可饶恕咒
-					瞬间击杀生命值低于15%的非Boss敌人
-					法力越低，伤害越高
-					'''
-			}
-			AlderWand: {
-				DisplayName: 赤杨木魔杖
-				Tooltip: "'赤杨木虽不屈不挠，但它的理想主人是乐于助人且体贴的'\n施放昏昏倒地（昏迷咒）——比橡木魔杖更快更强\n简单的前期升级——无需宝石"
-			}
-			SwordOfGryffindor: {
-				DisplayName: 格兰芬多之剑
-				Tooltip:
-					'''
-					'妖精打造，能吸收使其更强大之物'
-					注入了蛇怪毒液
-					'''
-			}
-			NimbusBroomstick: {
-				DisplayName: 光轮2000
-				Tooltip: "'世界上最快的飞天扫帚！'\n召唤一把飞天扫帚坐骑"
-			}
-
-			// === ARMOR ===
-			GryffindorHood: {
-				DisplayName: 格兰芬多兜帽
-				Tooltip: "+8%咒术伤害"
-				SetBonus: "勇气：+15%伤害，+10%近战速度"
-			}
-			GryffindorRobes: {
-				DisplayName: 格兰芬多长袍
-				Tooltip: "+5%咒术伤害，+20最大生命值"
-			}
-			GryffindorLeggings: {
-				DisplayName: 格兰芬多护腿
-				Tooltip: "+10%移动速度"
-			}
-			SlytherinHood: {
-				DisplayName: 斯莱特林兜帽
-				Tooltip: "+8%咒术暴击率"
-				SetBonus: "狡诈：+12%暴击率"
-			}
-			SlytherinRobes: {
-				DisplayName: 斯莱特林长袍
-				Tooltip: "+8%咒术伤害，+4%暴击率"
-			}
-			SlytherinLeggings: {
-				DisplayName: 斯莱特林护腿
-				Tooltip: "+8%移动速度，降低敌人仇恨"
-			}
-			RavenclawHood: {
-				DisplayName: 拉文克劳兜帽
-				Tooltip: "+20最大法力"
-				SetBonus: "智慧：+20%咒术伤害，+40最大法力，法力回复"
-			}
-			RavenclawRobes: {
-				DisplayName: 拉文克劳长袍
-				Tooltip: "+10%咒术伤害，+20最大法力，-10%法力消耗"
-			}
-			RavenclawLeggings: {
-				DisplayName: 拉文克劳护腿
-				Tooltip: "+6%移动速度，法力回复+3"
-			}
-			HufflepuffHood: {
-				DisplayName: 赫奇帕奇兜帽
-				Tooltip: "+3防御，+1生命回复"
-				SetBonus: "忠诚：+8防御，+4生命回复，30%荆棘伤害"
-			}
-			HufflepuffRobes: {
-				DisplayName: 赫奇帕奇长袍
-				Tooltip: "+40最大生命值，+2生命回复"
-			}
-			HufflepuffLeggings: {
-				DisplayName: 赫奇帕奇护腿
-				Tooltip: "+5%移动速度，+2防御"
-			}
-			DarkWizardHood: {
-				DisplayName: 黑巫师兜帽
-				Tooltip: "+12%咒术伤害，+30最大法力"
-				SetBonus: "黑魔法：+25%咒术伤害，+15%咒术暴击"
-			}
-			DarkWizardRobes: {
-				DisplayName: 黑巫师长袍
-				Tooltip: "+10%咒术伤害，+40最大法力，-15%法力消耗"
-			}
-			DarkWizardLeggings: {
-				DisplayName: 黑巫师护腿
-				Tooltip: "+12%移动速度，法力回复+5"
-			}
-
-			// === ACCESSORIES ===
-			BasiliskFang: {
-				DisplayName: 蛇怪毒牙
-				Tooltip: "'致命的毒液，作为饰品更加致命'\n免疫中毒和剧毒"
-			}
-			InvisibilityCloak: {
-				DisplayName: 隐形衣
-				Tooltip:
-					'''
-					'佩弗利尔家族传下来的真正隐形衣'
-					获得隐身效果并大幅降低敌人仇恨
-					死亡圣器之一
-					[c/AAAAAA:经由邓布利多的圣器指引重新取回]
-					[c/AAAAAA:不是普通材料可制作的斗篷]
-					'''
-			}
-			TimeTurner: {
-				DisplayName: 时间转换器
-				Tooltip:
-					'''
-					'时间的本质充满神秘'
-					每10秒闪避一次致命攻击
-					+10%移动速度
-					'''
-			}
-			MaraudersMap: {
-				DisplayName: 活点地图
-				Tooltip:
-					'''
-					'我庄严宣誓我没干好事'
-					在小地图上显示所有敌人
-					获得危险感知
-					减少秘密通道冷却时间
-					[c/AAAAAA:由月亮脸、虫尾巴、大脚板和尖头叉子创造]
-					'''
-			}
-			ResurrectionStone: {
-				DisplayName: 复活石
-				Tooltip:
-					'''
-					'第二件圣器，能召回逝者的石头'
-					+6生命回复，+40最大生命值
-					死亡圣器之一
-					[c/AAAAAA:由冈特戒指净化后苏醒]
-					[c/AAAAAA:需要邓布利多先剥离诅咒]
-					'''
-			}
-			GauntsRing: {
-				DisplayName: 冈特戒指
-				Tooltip:
-					'''
-					'藏着复活石的受诅咒魂器戒指'
-					+8%全部伤害，但诅咒不断啃噬你
-					[c/FFD700:摧毁全部4个核心魂器后，把它带给邓布利多]
-					'''
-				Dynamic: {
-					GauntCurse: "受诅咒的魂器——复活石就在其中"
-					HorcruxProgress: "已摧毁魂器：{0}/4"
-					AwakenedStatus: "[c/FFD700:戒指中的石头已被邓布利多唤醒]"
-					PurifiableStatus: "[c/FFD700:把它带给邓布利多的画像以唤醒复活石]"
-					LockedStatus: "[c/FF4444:摧毁全部魂器后才能净化这枚戒指]"
-				}
-			}
-			BossCompass: {
-				DisplayName: Boss进度指南针
-				Tooltip:
-					'''
-					'它总是指向你的下一个伟大挑战'
-					在提示中显示下一个要挑战的巫师Boss
-					追踪你的完整Boss进度（已击败X/12）
-					+3%伤害被动加成
-					'''
-				Dynamic: {
-					NextChallenge: "[c/FFD700:下一个挑战：{0}]"
-					ProgressTooltip: "[c/AAAAAA:{0}]"
-					HorcruxTooltip: "[c/CC88FF:魂器狩猎：已摧毁{0}/4{1}]"
-					NaginiSuffix: "，纳吉尼已陨落"
-					NextTroll: "巨怪（使用臭袜子）"
-					NextQuirrell: "奇洛教授（使用可疑头巾）"
-					NextBasilisk: "蛇怪（使用蛇人日记）"
-					NextAragog: "阿拉戈克（使用八眼巨蛛卵——困难模式）"
-					NextFluffy: "路威（使用附魔长笛——机械Boss后）"
-					NextHorntail: "匈牙利树蜂龙（使用龙蛋）"
-					NextUmbridge: "多洛雷斯·乌姆里奇（使用教育令）"
-					NextFenrir: "芬里尔·格雷伯克（使用染血利爪——血月）"
-					NextBellatrix: "贝拉特里克斯·莱斯特兰奇（使用囚徒标签——世纪之花后）"
-					NextBartyCrouch: "小巴蒂·克劳奇（使用可疑烧瓶）"
-					NextDementorKing: "摄魂怪之王（使用冰魂提灯——石巨人后）"
-					NextVoldemortReady: "伏地魔（使用黑魔标记——邪教徒后，已被魂器狩猎削弱）"
-					NextVoldemortBlocked: "在面对伏地魔之前先摧毁更多魂器"
-					NextPurifyRing: "把冈特戒指带给邓布利多"
-					NextClaimCloak: "去向邓布利多询问真正的隐形衣"
-					NextUniteHallows: "集齐圣器以完成隐藏结局路线"
-					Completed: "所有巫师目标已完成。你已成为死亡之主。"
-					ProgressSummary: "巫师Boss：已击败{0}/12"
-				}
-			}
-
-			// === CONSUMABLES ===
-			EnchantingTableItem: {
-				DisplayName: 附魔台
-				Tooltip: "'魔法成形之地'\n用于制作魔杖、药水和魔法装备"
-			}
-			BasiliskSummonItem: {
-				DisplayName: 蛇人日记
-				Tooltip: "'打开需自担风险'\n召唤蛇怪"
-			}
-			HorntailSummonItem: {
-				DisplayName: 龙蛋碎片
-				Tooltip: "'它要孵化了！'\n召唤匈牙利树蜂龙"
-			}
-			VoldemortSummonItem: {
-				DisplayName: 黑魔标记
-				Tooltip: "'那个不能说名字的人回来了'\n召唤伏地魔"
-			}
-			DragonScale: {
-				DisplayName: 龙鳞
-				Tooltip: "'摸起来还是温热的'\n制作材料"
-			}
-			GoldenEgg: {
-				DisplayName: 金蛋
-				Tooltip: "'包含一条线索……以及更多东西'\n稀有制作材料"
-			}
-			LakeRescueToken: {
-				DisplayName: 湖底救援令牌
-				Tooltip: "'来自湖底的发光令牌'\n在黑湖试炼中收集3个"
-			}
-			ChampionsTrophy: {
-				DisplayName: 三强杯
-				Tooltip:
-					'''
-					'永恒的荣耀等待着冠军！'
-					三强争霸赛的真正大奖
-					完成所有三项任务后颁发
-					+12%所有伤害 +8%暴击 +6防御 +4生命再生
+					'黑魔王魔杖的兄弟杖'
+					施放除你武器（缴械咒），附带周期性的盔甲护身（铁甲咒）护盾
 					'''
 			}
 
-			// === POTIONS ===
-			Butterbeer: {
-				DisplayName: 黄油啤酒
-				Tooltip: "'来自三把扫帚酒吧的温暖饮品'\n获得饱食效果，+2回复，+2防御"
-			}
-			FelixFelicis: {
-				DisplayName: 福灵剂
-				Tooltip: "'液体幸运'\n大幅提升幸运值，+10%暴击率，增加金币掉落"
-			}
-			PolyjuicePotion: {
-				DisplayName: 复方汤剂
-				Tooltip: "'尝起来像妖精的尿——'\n获得隐身效果并降低仇恨"
-			}
-			WolfsbanePotion: {
-				DisplayName: 狼毒药剂
-				Tooltip: "'勉强能控制住内心的狼……'\n获得狼人力量增强，夜间更强"
-			}
-
-			// === PET ===
-			GoldenSnitchItem: {
-				DisplayName: 金色飞贼
-				Tooltip: "'我在结束时打开'\n召唤一个金色飞贼宠物"
-			}
-
-			// === WEAPON UPGRADES ===
-			InfernalPhoenixWand: {
-				DisplayName: 炼狱凤凰魔杖
+			VineWand: {
+				DisplayName: 葡萄藤魔杖
 				Tooltip:
 					'''
-					'凤凰羽毛，经龙火淬炼'
-					升级版凤凰羽毛魔杖——发射5道火焰熊熊散射
-					由凤凰羽毛魔杖+龙鳞制作
+					'十又四分之三英寸，龙心弦杖芯'
+					交替施放羽加迪姆·勒维奥萨和清水如泉
 					'''
 			}
-			VenomousSwordOfGryffindor: {
-				DisplayName: 剧毒格兰芬多之剑
+
+			YewWand: {
+				DisplayName: 紫杉木魔杖
 				Tooltip:
 					'''
-					'能吸收使其更强大之物——现在加入了蜘蛛毒液'
-					升级版格兰芬多之剑——范围毒云+生命偷取
-					三重毒素：蛇怪+蜘蛛+被施咒，每次命中
-					由格兰芬多之剑+蛛丝+蛇怪毒牙制作
+					'十三又二分之一英寸，凤凰羽毛杖芯'
+					施放钻心剜骨（钻心咒，持续引导），有几率触发粉身碎骨（粉碎咒）爆炸
 					'''
 			}
-			ShadowElderWand: {
-				DisplayName: 旧版暗影接骨木魔杖
+
+			BeatersBat: {
+				DisplayName: 击球手球棒
+				Tooltip:
+					'''
+					'标准魁地奇装备——是打游走球用的，不是打人的'
+					巨大击退力，将敌人弹射上天
+					'''
+			}
+
+			Quaffle: {
+				DisplayName: 鬼飞球
+				Tooltip:
+					'''
+					'魁地奇中用来得分的球'
+					碰到墙壁会反弹并飞回你手中
+					'''
+			}
+
+			FireboltBroomstick: {
+				DisplayName: 火弩箭
+				Tooltip:
+					'''
+					'现存最出色的竞速飞天扫帚'
+					升级版飞天扫帚坐骑——比光轮2000更快
+					'''
+			}
+
+			HippogriffFeather: {
+				DisplayName: 鹰头马身有翼兽之羽
+				Tooltip:
+					'''
+					'你必须鞠躬然后等待。一定要让鹰头马身有翼兽先行动。'
+					召唤一只鹰头马身有翼兽坐骑
+					'''
+			}
+
+			PhoenixFeatherStaff: {
+				DisplayName: 凤凰羽毛法杖
+				Tooltip:
+					'''
+					'福克斯赐予了你一位最忠实的伙伴'
+					召唤一只凤凰仆从，能攻击并治疗
+					'''
+			}
+
+			NifflerItem: {
+				DisplayName: 嗅嗅袋
+				Tooltip:
+					'''
+					'它们会追逐一切闪亮的东西'
+					召唤一只寻找金币的嗅嗅宠物
+					'''
+			}
+
+			RiddlesDiary: {
+				DisplayName: 里德尔的日记
+				Tooltip:
+					'''
+					'第一个魂器'
+					+18%咒术伤害，+8%咒术暴击
+					缓慢消耗生命值
+					'''
+			}
+
+			SlytherinsLocket: {
+				DisplayName: 斯莱特林的挂坠盒
+				Tooltip:
+					'''
+					'只有蛇佬腔的人才能打开这个挂坠盒'
+					+12防御，+8%伤害减免，毒素免疫
+					略微降低速度
+					'''
+			}
+
+			HufflepuffsCup: {
+				DisplayName: 赫奇帕奇的金杯
+				Tooltip:
+					'''
+					'一个有两个精美手柄的小金杯'
+					+8生命回复，+60最大生命值，更快的药水恢复
+					降低视野
+					'''
+			}
+
+			DiademOfRavenclaw: {
+				DisplayName: 拉文克劳的冕冠
+				Tooltip:
+					'''
+					'超凡的智慧是人类最大的财富'
+					+80最大法力，+15%咒术伤害，-15%法力消耗
+					降低最大生命值
+					'''
+			}
+
+			SortingHat: {
+				DisplayName: 分院帽
+				Tooltip:
+					'''
+					'哦，也许你觉得我不够漂亮，但不要以貌取人'
+					增强任何穿戴的霍格沃茨学院套装效果
+					不穿学院套装时提供少量通用加成
+					'''
+			}
+
+			FiendfyreWand: {
+				DisplayName: 厉火魔杖
+				Tooltip:
+					'''
+					'吞噬一切的诅咒之火'
+					发射不断增长的追踪诅咒火焰
+					随时间推移变得更强
+					'''
+			}
+
+			Howler: {
+				DisplayName: 吼叫信
+				Tooltip:
+					'''
+					'你爸爸和我都绝对恶心透了！'
+					追踪尖叫信件，爆炸时附带混乱效果
+					'''
+			}
+
+			ScreechingHowler: {
+				DisplayName: 尖啸吼叫信
+				Tooltip:
+					'''
+					'当吼叫信遇上曼德拉草，结果真的是震耳欲聋'
+					升级版吼叫信，巨大范围伤害和更高伤害
+					由吼叫信+曼德拉草材料制作
+					'''
+			}
+
+			ApparitionCharm: {
+				DisplayName: 幻影移形符咒
+				Tooltip:
+					'''
+					'目的地、决心、从容'
+					+5%咒术伤害，+8%移动速度
+					'''
+			}
+
+			HedwigItem: {
+				DisplayName: 猫头鹰零食
+				Tooltip:
+					'''
+					'海德薇！'
+					召唤一只雪鸮发光宠物
+					'''
+			}
+
+			ChocolateFrog: {
+				DisplayName: 巧克力蛙
+				Tooltip:
+					'''
+					'吃吧，会好受些的。我刚得到邓布利多！'
+					恢复100生命值，获得迅捷和饱食效果
+					'''
+			}
+
+			BertieBottsBeans: {
+				DisplayName: 比比多味豆
+				Tooltip:
+					'''
+					'他们说的每一种口味是认真的'
+					获得一个随机增益……或减益。感觉幸运吗？
+					'''
+			}
+
+			FizzyWhizbee: {
+				DisplayName: 嘶嘶蜂
+				Tooltip:
+					'''
+					蜂蜜公爵悬浮果冻球
+					'让你飘起来！'
+					获得羽落效果
+					'''
+			}
+
+			PepperImp: {
+				DisplayName: 辣椒小鬼
+				Tooltip:
+					'''
+					蜂蜜公爵辣椒味糖果
+					'为朋友们喷火吧！'
+					攻击时获得喷火效果
+					'''
+			}
+
+			SugarQuill: {
+				DisplayName: 糖羽毛笔
+				Tooltip:
+					'''
+					蜂蜜公爵糖制羽毛笔
+					'在课上含着它，看起来若有所思！'
+					获得魔力回复效果
+					'''
+			}
+
+			AcidPop: {
+				DisplayName: 酸味棒棒糖
+				Tooltip:
+					'''
+					蜂蜜公爵酸味棒棒糖
+					'把我舌头烧了个洞！'
+					获得酸液远程攻击
+					'''
+			}
+
+			DrooblesBestBlowingGum: {
+				DisplayName: 吹宝超级泡泡糖
+				Tooltip:
+					'''
+					蜂蜜公爵蓝铃色泡泡糖
+					'吹出来的泡泡好几天都不会破！'
+					获得保护泡泡护盾
+					'''
+			}
+
+			ElmWand: {
+				DisplayName: 榆木魔杖
+				Tooltip:
+					'''
+					'榆木偏爱体面、精确与精细魔法'
+					施放恢复如初（修复咒）——修复护盾、房间增益与抗绝望结界
+					实用支援，而非治疗血肉
+					'''
+			}
+
+			AlohomoraKey: {
+				// DisplayName: Alohomora Key
+				/* Tooltip:
+					'''
+					'Standard Book of Spells, Chapter Seven'
+					Casts Alohomora — the Unlocking Charm
+					Opens doors and locks. Does not deal damage.
+					The mod's first true utility spell — Canon Tier A
+					''' */
+			}
+
+			RoomOfRequirementKey: {
+				DisplayName: 有求必应屋钥匙
+				Tooltip:
+					'''
+					'我需要一个地方...'
+					召唤一个适应你当前需求的魔法房间
+					房间会检测你的状态并给予相应的增益效果，持续3分钟
+					房间增益生效期间无法再次使用
+					'''
+			}
+
+			HouseElfBell: {
+				DisplayName: 家养小精灵铃铛
+				Tooltip:
+					'''
+					'摇铃召唤服务'
+					召唤一个家养小精灵仆从，能传送并攻击敌人
+					'''
+			}
+
+			Veritaserum: {
+				DisplayName: 吐真剂
+				Tooltip:
+					'''
+					'三滴就能让黑魔王自己吐露秘密'
+					显示所有敌人、陷阱和宝藏
+					'''
+			}
+
+			Amortentia: {
+				DisplayName: 迷情剂
+				Tooltip:
+					'''
+					'现存最强大的爱情魔药'
+					大幅降低敌人仇恨，获得生命回复
+					'''
+			}
+
+			HawthornWand: {
+				DisplayName: 山楂木魔杖
+				Tooltip:
+					'''
+					'弹性适中，独角兽毛杖芯'
+					施放连锁昏昏倒地（昏迷咒）——在最多4个敌人之间弹跳的眩晕弹
+					'''
+			}
+
+			BasiliskFangDagger: {
+				DisplayName: 蛇怪毒牙匕首
+				Tooltip:
+					'''
+					'能摧毁魂器的少数物质之一'
+					快速近战匕首，施加剧毒
+					'''
+			}
+
+			Gillyweed: {
+				DisplayName: 鳃囊草
+				Tooltip:
+					'''
+					'让食用者长出鳃和蹼'
+					完全水下呼吸，游泳速度提升，无水中减速
+					'''
+			}
+
+			Remembrall: {
+				DisplayName: 记忆球
+				Tooltip:
+					'''
+					'唯一的问题是，我想不起来我忘了什么'
+					获得危险感知和宝藏探测
+					敌人靠近时发红光
+					'''
+			}
+
+			BlackthornWand: {
+				DisplayName: 黑刺木魔杖
+				Tooltip:
+					'''
+					'十二又四分之三英寸，龙心弦'
+					施放障碍重重（障碍咒）——减速附近所有敌人的范围诅咒
+					'''
+			}
+
+			WeasleyFireworks: {
+				DisplayName: 韦斯莱旋风烟花
+				Tooltip:
+					'''
+					'韦斯莱魔法把戏坊隆重推出……'
+					追踪敌人并爆炸的彩色烟花
+					'''
+			}
+
+			Pensieve: {
+				DisplayName: 冥想盆
+				Tooltip:
+					'''
+					'我使用冥想盆。只需把多余的思绪抽取出来'
+					获得完整GPS信息、敌人探测、夜视和宝藏探测
+					'''
+			}
+
+			WizardHat: {
+				DisplayName: 巫师帽
+				Tooltip: 时装物品
+			}
+
+			WizardRobe: {
+				DisplayName: 巫师长袍
+				Tooltip: 时装物品
+			}
+
+			WizardBoots: {
+				DisplayName: 巫师靴
+				Tooltip: 时装物品
+			}
+
+			CedarWand: {
+				DisplayName: 雪松木魔杖
+				Tooltip:
+					'''
+					'与雪松木相配的人有成为可怕对手的潜力'
+					施放荧光闪烁·极强（荧光咒强化版）——对亡灵造成伤害的巨大光球
+					'''
+			}
+
+			Portkey: {
+				DisplayName: 门钥匙
+				Tooltip:
+					'''
+					'我用了一个门钥匙……'
+					瞬间传送至你的重生点
+					可以用旧鞋制作！
+					'''
+			}
+
+			ExtendableEars: {
+				DisplayName: 伸缩耳
+				Tooltip:
+					'''
+					'韦斯莱魔法把戏坊——听到一切'
+					获得敌人探测、危险感知和电线视觉
+					'''
+			}
+
+			PeruvianDarknessPowder: {
+				DisplayName: 秘鲁即时黑暗粉
+				Tooltip:
+					'''
+					'需要快速逃跑时非常好用'
+					制造一团致盲和混乱敌人的烟雾
+					'''
+			}
+
+			PhilosophersStone: {
+				DisplayName: 魔法石
+				Tooltip:
+					'''
+					'毕竟，对于一个组织良好的头脑来说，死亡不过是下一场伟大的冒险'
+					+10%全伤害，+10%咒术伤害
+					+8生命回复，+40最大生命值
+					敌人掉落更多金币
+					缩短药水冷却时间
+					'''
+			}
+
+			Deluminator: {
+				DisplayName: 熄灯器
+				Tooltip:
+					'''
+					'灭灯器。我自己发明的。'
+					用光芒环绕你
+					获得夜视和安抚光环
+					'''
+			}
+
+			Sneakoscope: {
+				DisplayName: 窥镜
+				Tooltip:
+					'''
+					'一种黑暗探测器，非常有用'
+					永久获得危险感知
+					敌人靠近时+5防御和敌人探测
+					Boss在附近时获得额外保护
+					'''
+			}
+
+			FlooPowder: {
+				DisplayName: 飞路粉
+				Tooltip:
+					'''
+					'对角巷！'
+					瞬间传送到重生点——比回忆药水更快
+					绿色火焰效果
+					'''
+			}
+
+			TriwizardCup: {
+				DisplayName: "[旧版] 三强杯"
+				Tooltip:
+					'''
+					'此物品已更名为冠军勋章'
+					在背包中自动转换
+					'''
+			}
+
+			ChampionsMedallion: {
+				DisplayName: 冠军勋章
+				Tooltip:
+					'''
+					'由击败的魔法生物战利品锻造'
+					+15%所有伤害 +10%暴击 +8防御 +40魔力 +4生命再生
+					在附魔台用Boss材料制作
+					'''
+			}
+
+			ShieldHat: {
+				DisplayName: 盾帽
+				Tooltip:
+					'''
+					'韦斯莱魔法把戏坊——护盾系列'
+					+3防御，+3%咒术伤害
+					附有保护咒语
+					'''
+			}
+
+			DecoyDetonator: {
+				DisplayName: 诱饵炸弹
+				Tooltip:
+					'''
+					'韦斯莱魔法把戏坊——防御系列'
+					吸引敌人仇恨，然后爆炸造成伤害+被施咒减益
+					出色的战术转移
+					'''
+			}
+
+			PrefectBadge: {
+				DisplayName: 级长徽章
+				Tooltip:
+					'''
+					'当了级长？我们家每个人都是！'
+					+5防御，+5%咒术伤害
+					附近每个城镇NPC+3%伤害（最多+15%）
+					'''
+			}
+
+			BowtruckleCatch: {
+				DisplayName: 护树罗锅
+				Tooltip:
+					'''
+					'一个和平的小树木守护者'
+					可以放生或用作钓鱼鱼饵
+					'''
+			}
+
+			EssenceOfMagic: {
+				DisplayName: 魔法精华
+				Tooltip:
+					'''
+					'浓缩的魔法能量残留物'
+					所有魔法生物掉落
+					用于中后期巫师制作
+					'''
+			}
+
+			SecretKeeperNote: {
+				DisplayName: 保密人的纸条
+				Tooltip:
+					'''
+					'凤凰社总部可在格里莫广场十二号找到'
+					揭示安全屋并启动维护任务
+					击败阿兹卡班绝望后由金斯莱出售
+					'''
+			}
+
+			ConcealmentThread: {
+				DisplayName: 隐匿丝线
+				Tooltip:
+					'''
+					'由残余结界魔法编织而成'
+					格里莫广场任务的制作材料
+					'''
+			}
+
+			GladeDew: {
+				DisplayName: 林间露水
+				Tooltip:
+					'''
+					'从独角兽林地收集的净化精华'
+					森林远征的制作材料
+					'''
+			}
+
+			StarTrace: {
+				DisplayName: 星辰残迹
+				Tooltip:
+					'''
+					'从稳定的预兆之石中收集的天象残留'
+					森林远征的制作材料
+					'''
+			}
+
+			BroodVenom: {
+				DisplayName: 巢穴毒液
+				Tooltip:
+					'''
+					'从摧毁的八眼巨蛛巢穴节点中提取的毒素'
+					森林远征的制作材料
+					'''
+			}
+
+			ForestLantern: {
+				DisplayName: 森林远征灯笼
+				Tooltip:
+					'''
+					'海格的魔法灯笼照亮前路'
+					夜间在禁忌森林中使用以开始远征
+					需要击败蛇妖后
+					'''
+			}
+
+			WillowPassageToken: {
+				DisplayName: 柳树通道令牌
+				Tooltip:
+					'''
+					'树节冻结了...通道打开了'
+					通往打人柳隧道和尖叫棚屋的秘密通道
+					需要：击败芬里尔，仅限夜间
+					'''
+			}
+
+			MoonsilverThread: {
+				DisplayName: 月银丝线
+				Tooltip:
+					'''
+					'由月光浸润的守护残留编织'
+					制作月光守护装备的材料
+					'''
+			}
+
+			MoonwardPendant: {
+				DisplayName: 月光守护坠饰
+				Tooltip:
+					'''
+					'月光触不到它无法触及之物'
+					+5防御 +4%耐力
+					黑暗和诅咒免疫
+					夜间移速加快
+					'''
+			}
+
+			ForestWarden: {
+				DisplayName: 森林守望者徽章
+				Tooltip:
+					'''
+					'通过守护森林而获得'
+					+6防御，+5%伤害减免
+					永久危险感知
+					在禁忌森林中获得夜视和+8%移速
+					由三种远征材料合成
+					'''
+			}
+
+			OrderSignet: {
+				DisplayName: 凤凰社印记
+				Tooltip:
+					'''
+					'成员有其特权'
+					+5防御，-200仇恨值
+					+4%伤害减免
+					免疫诅咒和混乱
+					缓慢缓解绝望
+					'''
+			}
+
+			WandOfDestiny: {
+				DisplayName: 旧版命运之杖
 				Tooltip:
 					'''
 					[旧版物品]
 					旧存档中会自动转换为接骨木魔杖
-					暗影升级路线已并入接骨木魔杖熟练度
+					“命运之杖”现仅作为接骨木魔杖的 lore 称号
 					'''
 			}
 
-			// === 邓布利多军 ===
-			DAGalleon: {
-				DisplayName: D.A.加隆
-				Tooltip: "'邓布利多军集合时硬币会发热'\n激活D.A.会议协调增益（8分钟）\n也作为有求必应屋的DA成员凭证"
-			}
-			CastleWardThread: {
-				DisplayName: 城堡守护丝线
-				Tooltip: "从稳定的城堡守护阵中残留的附魔丝线\n制作材料"
-			}
-			DefendersSignet: {
-				DisplayName: 守护者徽章
+			PatronusCharm: {
+				DisplayName: 守护神咒
 				Tooltip:
 					'''
-					'授予那些在守护阵崩塌时挺身而出的人'
-					+6防御，+5%耐力
-					免疫诅咒和困惑
-					+5%移动速度
+					'呼神护卫！'
+					召唤一个强大的守护神守卫（占用2个仆从栏位）
+					激活时+10防御和+2生命回复
+					对摄魂怪与阿兹卡班系黑暗敌人造成高额额外伤害
+					施放时净化黑魔法腐化
+					警告：黑魔法腐化越高，守护神越弱
 					'''
 			}
 
-			// === 圣芒戈 ===
-			StMungosPass: {
-				DisplayName: 圣芒戈访客通行证
-				Tooltip: "'珀奇与道斯有限公司——请说明来意'\n击败树蜂龙后解锁圣芒戈医院\n再次使用开始分诊任务"
-			}
-			HealersSalts: {
-				DisplayName: 治疗师之盐
-				Tooltip: "从圣芒戈分诊病房中提纯的药剂残留\n制作材料"
-			}
-			HealersSatchel: {
-				DisplayName: 治疗师药箱
+			DarkMarkSummon: {
+				DisplayName: 黑魔标记（尸骨再现）
 				Tooltip:
 					'''
-					'病房轮值治疗师的标准装备'
-					+6生命恢复，+5%耐力
-					免疫毒液和困惑
-					缩短药水冷却时间
-					被动缓解绝望
+					'尸骨再现！'
+					在天空中施放黑魔标记
+					触发食死徒入侵
+					仅在困难模式夜间可用
 					'''
 			}
 
-			// === 霍格沃茨之战 ===
-			HorcruxTracker: {
-				DisplayName: 魂器追踪器
-				Tooltip: "'邓布利多的战时情报笔记'\n显示魂器猎杀进度和战斗准备状态\n使用以解锁或开始霍格沃茨之战\n可重复使用"
-			}
-			CastleDefenseRune: {
-				DisplayName: 城堡防御符文
-				Tooltip: "霍格沃茨之战中城堡守护阵的残余能量\n制作材料"
-			}
-			ProtectorsBadge: {
-				DisplayName: 保护者徽章
+			CypressWand: {
+				DisplayName: 柏木魔杖
 				Tooltip:
 					'''
-					'授予那些在最需要时保卫霍格沃茨的人'
-					+8防御，+6%耐力
-					免疫诅咒和黑暗诅咒
-					+4生命恢复
-					被动缓解绝望
+					'与高贵和英勇赴死的意愿相关'
+					施放结膜炎恶咒——致盲并诅咒敌人
+					专为Boss战设计：长持续时间的被施咒效果削弱强大敌人
+					'''
+			}
+
+			UnbreakableVow: {
+				DisplayName: 牢不可破誓言
+				Tooltip:
+					'''
+					'你必须明白，违背牢不可破誓言的人……会死'
+					+25%召唤伤害，+1最大仆从数
+					但你受到15%更多伤害
+					高风险，高回报
+					'''
+			}
+
+			RowanWand: {
+				DisplayName: 花楸木魔杖
+				Tooltip:
+					'''
+					'花楸木一直深受保护魔法的青睐'
+					施放爆炸（爆炸咒）——在区域内摧毁地形的爆炸诅咒
+					巫师玩家的挖掘魔杖
+					'''
+			}
+
+			BirchWand: {
+				DisplayName: 桦木魔杖
+				Tooltip:
+					'''
+					'适应性极强，最适合年轻人'
+					施放倒挂金钟（倒挂金钟咒）——将敌人弹射上天并施加诅咒
+					'''
+			}
+
+			PeppermintToad: {
+				DisplayName: 薄荷蟾蜍
+				Tooltip:
+					'''
+					'来自蜂蜜公爵——它真的会在你肚子里跳！'
+					获得迅捷、脚蹼和饱食效果，持续5分钟
+					'''
+			}
+
+			ChocolateCauldron: {
+				DisplayName: 巧克力坩埚
+				Tooltip:
+					'''
+					'装满火焰威士忌——蜂蜜公爵的精品'
+					恢复100法力，获得魔力增强和法力回复
+					'''
+			}
+
+			WeasleyBlazeBox: {
+				DisplayName: 韦斯莱基础烈焰盒
+				Tooltip:
+					'''
+					'韦斯莱魔法把戏坊——烈焰系列'
+					范围火焰爆发，在大范围内点燃敌人
+					'''
+			}
+
+			LarchWand: {
+				DisplayName: 落叶松魔杖
+				Tooltip:
+					'''
+					'落叶松一直是一种被严重低估的木材'
+					在两个实用咒语之间交替：
+					终了结束（终结咒）——清除你和附近队友的所有减益
+					飞来飞去（飞来咒）——在巨大范围内将所有掉落物品拉向你
+					'''
+			}
+
+			RedOakWand: {
+				DisplayName: 红橡木魔杖
+				Tooltip:
+					'''
+					'红橡木是反应迅速者的理想搭配'
+					施放滑稽滑稽——专克博格特的反恐惧咒
+					对博格特造成5倍伤害（其真正用途）
+					施放时清除恐惧与黑暗类减益
+					对付摄魂怪请用守护神
+					'''
+			}
+
+			PepperupPotion: {
+				DisplayName: 胡椒提神汤
+				Tooltip:
+					'''
+					'你的耳朵会冒好几个小时的蒸汽'
+					+25%速度，+15%攻击速度
+					火焰和寒冷免疫
+					'''
+			}
+
+			SkeleGro: {
+				DisplayName: 生骨灵
+				Tooltip:
+					'''
+					'你今晚有的受了'——庞弗雷夫人
+					大量生命回复（+20回复）
+					但十分痛苦：骨骼再生时-10%移动速度
+					'''
+			}
+
+			// === BOSS LOOT ===
+			BasiliskBag: {
+				DisplayName: 宝藏袋（蛇怪）
+				Tooltip: "{$CommonItemTooltip.RightClickToOpen}"
+			}
+
+			BasiliskEye: {
+				DisplayName: 蛇怪之眼
+				Tooltip:
+					'''
+					'不要直视它的眼睛'
+					免疫石化和石头
+					+8%咒术伤害
+					[专家模式专属]
+					'''
+			}
+
+			BasiliskTrophy: {
+				DisplayName: 蛇怪奖杯
+				Tooltip: ""
+			}
+
+			HorntailBag: {
+				DisplayName: 宝藏袋（匈牙利树蜂龙）
+				Tooltip: "{$CommonItemTooltip.RightClickToOpen}"
+			}
+
+			DragonHeart: {
+				DisplayName: 龙心
+				Tooltip:
+					'''
+					'龙心弦能制作最强大的魔杖'
+					火焰、熔岩和灼烧免疫
+					+12%咒术伤害，高速移动时留下火焰轨迹
+					[专家模式专属]
+					'''
+			}
+
+			HorntailTrophy: {
+				DisplayName: 树蜂龙奖杯
+				Tooltip: ""
+			}
+
+			VoldemortBag: {
+				DisplayName: 宝藏袋（伏地魔）
+				Tooltip: "{$CommonItemTooltip.RightClickToOpen}"
+			}
+
+			SoulFragment: {
+				DisplayName: 伏地魔灵魂碎片
+				Tooltip:
+					'''
+					'他将灵魂分裂了七次……但这是最后一块碎片'
+					+20%全伤害，+15%咒术伤害，+10防御
+					但会腐蚀：-20最大生命值，黑暗光环
+					[专家模式专属]
+					'''
+			}
+
+			VoldemortTrophy: {
+				DisplayName: 伏地魔奖杯
+				Tooltip: ""
+			}
+
+			// === PHASE 17 ===
+			DuelingDummyItem: {
+				DisplayName: 决斗假人
+				Tooltip:
+					'''
+					'做好防备！'
+					放置一个显示伤害数字的训练靶
+					测试你的咒术DPS——假人无法被摧毁
+					'''
+			}
+
+			WizardChessSet: {
+				DisplayName: 巫师棋套装
+				Tooltip:
+					'''
+					'太野蛮了！''这就是巫师棋。'
+					研究战术获得战斗和狂怒增益，持续5分钟
+					可重复使用
+					'''
+				UseMessage: 你研究棋盘……你的战术意识变得更加敏锐！
+			}
+
+			// === PHASE 18 ===
+			HogwartsLetter: {
+				DisplayName: 霍格沃茨录取通知书
+				Tooltip:
+					'''
+					'亲爱的学生，我们很高兴通知您……'
+					打开信件了解巫师世界模组
+					获赠一份魔法精华入门包
+					'''
+			}
+
+			EbonyWand: {
+				DisplayName: 乌木魔杖
+				Tooltip:
+					'''
+					'非常适合各种战斗魔法'
+					施放幻影移形——传送到光标位置！
+					最大范围：37格。无法穿墙。
+					传送间隔3秒冷却
+					'''
+			}
+
+			// === PHASE 15 ===
+			WizardSpectacles: {
+				DisplayName: 巫师眼镜
+				Tooltip:
+					'''
+					'圆框眼镜，就像哈利的一样'
+					时装饰品
+					'''
+			}
+
+			LightningScar: {
+				DisplayName: 闪电伤疤
+				Tooltip:
+					'''
+					'那道伤疤已经十九年没有痛过了。一切安好。'
+					获得危险感知——邪恶靠近时伤疤会灼痛
+					+3%咒术伤害
+					'''
+			}
+
+			WizardBeard: {
+				DisplayName: 巫师长胡须
+				Tooltip:
+					'''
+					'长到可以塞进腰带里'
+					时装饰品——释放你内心的邓布利多
+					'''
+			}
+
+			KneazleItem: {
+				DisplayName: 猫粮
+				Tooltip:
+					'''
+					'狸猫是非常聪明的类猫生物'
+					召唤一只能探测敌人的狸猫宠物
+					'''
+			}
+
+			DailyProphet: {
+				DisplayName: 预言家日报
+				Tooltip:
+					'''
+					'所有值得刊登的新闻'
+					显示当前世界状态：Boss状况、事件、月相
+					可重复使用——使用时不消耗
+					'''
+			}
+
+			// === PHASE 20 ===
+			SpellBook: {
+				DisplayName: 标准咒语书
+				Tooltip:
+					'''
+					'米兰达·戈沙克 著'
+					游戏内所有魔杖和咒语的参考指南
+					多次使用可浏览5页
+					展示魔杖等级、伤害数值、咒语和制作提示
+					由奥利凡德出售。可重复使用
+					'''
+
+				Guide: {
+					OverviewTitle: === 标准咒语书 ===
+					OverviewAuthor: 作者：米兰达·戈沙克
+					OverviewBrowse: 再次使用以浏览页面（共5页）：
+					OverviewPage1: "  第1页：早期魔杖与商店解锁"
+					OverviewPage2: "  第2页：中期魔杖（地牢 / 困难模式）"
+					OverviewPage3: "  第3页：后期魔杖（机械Boss后 / 终局）"
+					OverviewPage4: "  第4页：功能咒语"
+					Page1Title: === 第1页：早期魔杖 ===
+					Page1Line1: 橡木魔杖 [12伤害] — Stupefy（眩晕箭）
+					Page1Line2: "  配方：木材 + 坠星 @ 工作台"
+					Page1Line3: 柳木魔杖 [16伤害] — Expelliarmus（击退箭）
+					Page1Line4: "  配方：木材 + 坠星 + 蓝宝石 @ 工作台"
+					Page1Line5: 赤杨木魔杖 [17伤害] — 更快的 Stupefy；奥利凡德出售
+					Page1Line6: 白蜡木魔杖 [22伤害] — Incendio；克苏鲁之眼后出售
+					Page1Line7: 花楸木魔杖 [30伤害] — Bombarda；击败山怪后出售
+					Page1Line8: 冬青木魔杖 [28伤害] — Expelliarmus + Protego；克苏鲁之眼后出售
+					Page1Line9: 桦木魔杖 [28伤害] — Levicorpus；蛇怪后/困难模式出售
+					Page1Line10: 红橡木魔杖 [32伤害] — Riddikulus；蛇怪后的反博格特魔杖
+					Page2Title: === 第2页：中期魔杖 ===
+					Page2Line1: 凤凰羽毛 [30伤害] — Incendio（有几率双发）
+					Page2Line2: "  需求：狱石锭 + 羽毛"
+					Page2Line3: 龙心弦 [42伤害] — Sectumsempra（流血诅咒）
+					Page2Line4: 山楂木 [38伤害] — 连锁Stupefy（弹跳4个敌人）
+					Page2Line5: 黑刺李木 [35伤害] — Impedimenta（范围减速）
+					Page2Line6: 柏木 [30伤害] — Conjunctivitis（Boss减益工具）
+					Page2Line7: 独角兽毛 [55伤害] — Expecto Patronum（追踪守护者）
+					Page2Line8: "  需求：珍珠木 + 独角兽角 + 光明之魂"
+					Page2Line9: 紫杉木 [48伤害] — Crucio（持续伤害光束）
+					Page3Title: === 第3页：后期与终局魔杖 ===
+					Page3Line1: 乌木魔杖 — Apparition（传送到光标处！）
+					Page3Line2: "  需求：乌木 + 光明/黑暗之魂 + 魔法精华"
+					Page3Line3: 老魔杖 [120伤害] — Avada Kedavra（杀戮咒）
+					Page3Line4: "  掉落：伏地魔"
+					Page3Line5: 厉火魔杖 [95伤害] — 不断蔓延的诅咒火焰
+					Page3Line6: "  需求：狱石 + 灵魂 + 日耀碎片 + 魔法精华"
+					Page3Line7: 老魔杖精通已取代旧的命运魔杖路线
+					Page3Line8: "  通过魔杖精通掌控老魔杖，赢得其传奇称号"
+					Page3Line9: "  “命运魔杖”如今只是传说文本，不再是独立物品"
+					Page4Title: === 第4页：功能咒语 ===
+					Page4Line1: 落叶松魔杖 — 交替施放 Finite Incantatem（清除减益）与 Accio（拉取物品）
+					Page4Line2: 雪松魔杖 — Lumos Maxima（巨型光球，可伤害不死生物）
+					Page4Line3: 榆木魔杖 — Reparo（修复结界、Protego力场与房间增益）
+					Page4Tip1: 提示：附魔台也算工作台！
+					Page4Tip2: 提示：魔法精华会从所有魔法生物掉落！
+					Page4Tip3: 提示：Patronus 才是对付摄魂怪的真正答案。对付博格特请用 Riddikulus。
+				}
+			}
+
+			// === PHASE 22 ===
+			SlytherinsDagger: {
+				DisplayName: 斯莱特林之匕
+				Tooltip:
+					'''
+					'那些狡猾的人会不择手段达到目的'
+					大幅+20%暴击率
+					暴击时施加被施咒，每次命中施加剧毒
+					蛇之一击——快速而致命
+					'''
+			}
+
+			RavenclawsStaff: {
+				DisplayName: 拉文克劳的智慧法杖
+				Tooltip:
+					'''
+					'超凡的智慧是人类最大的财富'
+					极低法力消耗（5）——智慧节约能量
+					发射穿透性智慧光束
+					手持时所有咒语-10%法力消耗
+					'''
+			}
+
+			HufflepuffsMace: {
+				DisplayName: 赫奇帕奇的忠诚之锤
+				Tooltip:
+					'''
+					'那些耐心的赫奇帕奇忠诚无畏，不惧辛劳'
+					沉重一击，巨大击退力
+					造成伤害的10%转化为治疗
+					手持时+5防御——獾保护自己人
+					'''
+			}
+
+			UnicornBlood: {
+				DisplayName: 独角兽血
+				Tooltip:
+					'''
+					'它能让你活着，即使你濒临死亡，但代价是可怕的'
+					稀有掉落——仅在夜间的禁林中出现
+					用于制作最强大的巫师物品
+					'''
+			}
+
+			MasterWizardBanner: {
+				DisplayName: 大巫师旗帜
+				Tooltip:
+					'''
+					'同时代最伟大的巫师'
+					终极奖杯——需要全部3个Boss奖杯+三强杯+独角兽血
+					+10%全伤害，+5%咒术伤害，+8防御，+20法力，+2回复
+					金色大巫师光环
+					'''
+			}
+
+			FelixCauldron: {
+				DisplayName: 福灵剂坩埚
+				Tooltip:
+					'''
+					'一个永远在酿制液体幸运的坩埚'
+					使用时给予附近所有玩家10分钟幸运增益
+					胜利的终极庆典
+					'''
+				UseMessage: 坩埚翻涌着液体黄金……你感到自己幸运非凡！
+			}
+
+			// === PHASE 24 ===
+			DragonScaleHelm: {
+				DisplayName: 龙鳞头盔
+				Tooltip: +10%咒术伤害，+30最大法力
+				SetBonus: 龙火护盾：火焰/熔岩免疫，+18%咒术伤害，火焰光环
+			}
+
+			DragonScaleBreastplate: {
+				DisplayName: 龙鳞胸甲
+				Tooltip: +12%咒术伤害，+6%伤害减免，+40最大生命值
+			}
+
+			DragonScaleGreaves: {
+				DisplayName: 龙鳞护胫
+				Tooltip: +15%移动速度，+1最大奔跑速度，+5法力回复
+			}
+
+			Nimbus2001Broomstick: {
+				DisplayName: 光轮2001
+				Tooltip:
+					'''
+					'马尔福的父亲给整支队伍买了光轮2001'
+					现存最快的飞天扫帚
+					高速飞行时+8%伤害
+					'''
+			}
+
+			// === PHASE 25 ===
+			PadfootAmulet: {
+				DisplayName: 大脚板护身符
+				Tooltip:
+					'''
+					'恶作剧完毕'
+					小天狼星·布莱克的阿尼马格斯护身符
+					+20%移动速度，+2最大奔跑速度
+					-200敌人仇恨——犬形悄然穿过
+					'''
+			}
+
+			ProngsCharm: {
+				DisplayName: 尖头叉子护符
+				Tooltip:
+					'''
+					'爱我们的人永远不会真正离开我们'
+					詹姆·波特的牡鹿守护神护符
+					+10%咒术伤害，+5%咒术暴击
+					+10%召唤伤害——增强你的守护神守卫
+					'''
+			}
+
+			// === BOSS EXPANSION ===
+			TrollClub: {
+				DisplayName: 山怪棒
+				Tooltip:
+					'''
+					'山怪鼻涕。那更恶心了。'
+					缓慢但毁灭性——巨大击退力
+					'''
+			}
+
+			TrollSummonItem: {
+				DisplayName: 臭袜子
+				Tooltip:
+					'''
+					'这股味道能引来它'
+					召唤山怪
+					第一个巫师 Boss
+					'''
+			}
+
+			TrollBag: {
+				DisplayName: 宝藏袋（山怪）
+				Tooltip: "{$CommonItemTooltip.RightClickToOpen}"
+			}
+
+			TrollHide: {
+				DisplayName: 山怪兽皮
+				Tooltip:
+					'''
+					'像城墙一样厚实'
+					+8防御，+10%击退抗性
+					[专家模式专属]
+					'''
+			}
+
+			TrollTrophy: {
+				DisplayName: 山怪奖杯
+				Tooltip: ""
+			}
+
+			AragogSummonItem: {
+				DisplayName: 八眼巨蛛卵
+				Tooltip:
+					'''
+					'跟着蜘蛛走……'
+					召唤八眼巨蛛之祖阿拉戈克
+					仅困难模式
+					'''
+			}
+
+			SpiderSilkWeave: {
+				DisplayName: 蛛丝编织物
+				Tooltip:
+					'''
+					'比钢铁坚韧，比空气轻盈'
+					制作材料
+					'''
+			}
+
+			AragogBag: {
+				DisplayName: 宝藏袋（阿拉戈克）
+				Tooltip: "{$CommonItemTooltip.RightClickToOpen}"
+			}
+
+			AragogsFang: {
+				DisplayName: 阿拉戈克之牙
+				Tooltip:
+					'''
+					'族长的馈赠'
+					+15%暴击率
+					敌人有10%几率掉落额外战利品
+					[专家模式专属]
+					'''
+			}
+
+			AragogTrophy: {
+				DisplayName: 阿拉戈克奖杯
+				Tooltip: ""
+			}
+
+			FluffySummonItem: {
+				DisplayName: 魔法笛子
+				Tooltip:
+					'''
+					'音乐能安抚凶猛的野兽'
+					召唤三头犬路威
+					需要击败机械Boss后
+					'''
+			}
+
+			CerberusFang: {
+				DisplayName: 三头犬之牙
+				Tooltip:
+					'''
+					'来自活板门的守卫者'
+					制作材料
+					'''
+			}
+
+			FluffyBag: {
+				DisplayName: 宝藏袋（路威）
+				Tooltip: "{$CommonItemTooltip.RightClickToOpen}"
+			}
+
+			ThreeHeadedCollar: {
+				DisplayName: 三头项圈
+				Tooltip:
+					'''
+					'即使路威也能被驯服……算是吧'
+					+3最大仆从数
+					-10%移动速度
+					[专家模式专属]
+					'''
+			}
+
+			FluffyTrophy: {
+				DisplayName: 路威奖杯
+				Tooltip: ""
+			}
+
+			BellatrixSummonItem: {
+				DisplayName: 阿兹卡班囚犯标签
+				Tooltip:
+					'''
+					'她是他最忠实的仆人'
+					召唤贝拉特里克斯·莱斯特兰奇
+					需要击败芬里尔和世纪之花后
+					'''
+			}
+
+			DarkArtsTome: {
+				DisplayName: 黑魔法典籍
+				Tooltip:
+					'''
+					'高级黑魔法知识'
+					制作材料
+					'''
+			}
+
+			BellatrixBag: {
+				DisplayName: 宝藏袋（贝拉特里克斯·莱斯特兰奇）
+				Tooltip: "{$CommonItemTooltip.RightClickToOpen}"
+			}
+
+			BellatrixWandHand: {
+				DisplayName: 贝拉特里克斯的持杖手
+				Tooltip:
+					'''
+					'她是一个真正的信徒'
+					+20%咒术伤害，-15%法力消耗
+					但受到的伤害增加8%
+					[专家模式专属]
+					'''
+			}
+
+			BellatrixTrophy: {
+				DisplayName: 贝拉特里克斯奖杯
+				Tooltip: ""
+			}
+
+			FenrirSummonItem: {
+				DisplayName: 染血之爪
+				Tooltip:
+					'''
+					'改变一切的咬噬'
+					召唤芬里尔·格雷伯克
+					需要击败乌姆里奇后
+					仅在血月期间可用！
+					'''
+			}
+
+			WerewolfPelt: {
+				DisplayName: 狼人皮毛
+				Tooltip:
+					'''
+					'还有余温'
+					制作材料
+					'''
+			}
+
+			FenrirBag: {
+				DisplayName: 宝藏袋（芬里尔·格雷伯克）
+				Tooltip: "{$CommonItemTooltip.RightClickToOpen}"
+			}
+
+			LycansBiteMark: {
+				DisplayName: 狼人咬痕
+				Tooltip:
+					'''
+					'改变一切的咬噬'
+					+20%近战伤害
+					夜间+15%移动速度
+					白天-5%伤害
+					[专家模式专属]
+					'''
+			}
+
+			FenrirTrophy: {
+				DisplayName: 芬里尔奖杯
+				Tooltip: ""
+			}
+
+			DementorKingSummonItem: {
+				DisplayName: 冰封灵魂灯笼
+				Tooltip:
+					'''
+					'吸引最黑暗生物的光芒'
+					召唤摄魂怪之王
+					需要击败小巴蒂和魔像后，仅限夜间
+					'''
+			}
+
+			DementorsShroud: {
+				DisplayName: 摄魂怪之帷
+				Tooltip:
+					'''
+					'由纯粹的绝望编织而成'
+					终局制作材料
+					'''
+			}
+
+			DementorKingBag: {
+				DisplayName: 宝藏袋（摄魂怪之王）
+				Tooltip: "{$CommonItemTooltip.RightClickToOpen}"
+			}
+
+			SoulSiphon: {
+				DisplayName: 灵魂虹吸
+				Tooltip:
+					'''
+					'以绝望为食'
+					所有伤害为你治疗3%
+					附近敌人-5防御
+					[专家模式专属]
+					'''
+			}
+
+			DementorKingTrophy: {
+				DisplayName: 摄魂怪之王奖杯
+				Tooltip: ""
+			}
+
+			QuirrellSummonItem: {
+				DisplayName: 可疑的头巾
+				Tooltip:
+					'''
+					'世上没有善恶之分，只有权力'
+					召唤奇洛教授
+					需要击败山怪和克苏鲁之眼
+					'''
+			}
+
+			QuirrellBag: {
+				DisplayName: 宝藏袋（奇洛教授）
+				Tooltip: "{$CommonItemTooltip.RightClickToOpen}"
+			}
+
+			QuirrellsTurban: {
+				DisplayName: 奇洛的头巾
+				Tooltip:
+					'''
+					'那下面藏着什么东西……'
+					+5%咒术伤害，显示附近敌人
+					但你受到3%更多伤害（伏地魔的影响）
+					[专家模式专属]
+					'''
+			}
+
+			QuirrellTrophy: {
+				DisplayName: 奇洛奖杯
+				Tooltip: ""
+			}
+
+			UmbridgeSummonItem: {
+				DisplayName: 教育法令
+				Tooltip:
+					'''
+					'我不可以说谎'
+					召唤多洛雷斯·乌姆里奇
+					需要击败角尾龙与任意机械Boss后
+					'''
+			}
+
+			UmbridgeBag: {
+				DisplayName: 宝藏袋（多洛雷斯·乌姆里奇）
+				Tooltip: "{$CommonItemTooltip.RightClickToOpen}"
+			}
+
+			MinistryBadge: {
+				DisplayName: 魔法部徽章
+				Tooltip:
+					'''
+					'魔法部已经决定……'
+					免疫被施咒和混乱
+					+5防御，但-5%伤害
+					[专家模式专属]
+					'''
+			}
+
+			UmbridgeTrophy: {
+				DisplayName: 乌姆里奇奖杯
+				Tooltip: ""
+			}
+
+			UmbridgesQuill: {
+				DisplayName: 乌姆里奇的血羽毛笔
+				Tooltip:
+					'''
+					'我不可以说谎'
+					快速咒术武器，施加流血+被施咒
+					'''
+			}
+
+			BartyCrouchSummonItem: {
+				DisplayName: 可疑的酒壶
+				Tooltip:
+					'''
+					'时刻保持警惕！'
+					召唤伪装中的小巴蒂·克劳奇
+					需要击败贝拉特里克斯和世纪之花后
+					'''
+			}
+
+			BartyCrouchBag: {
+				DisplayName: 宝藏袋（小巴蒂·克劳奇）
+				Tooltip: "{$CommonItemTooltip.RightClickToOpen}"
+			}
+
+			PolyjuiceFlask: {
+				DisplayName: 复方汤剂酒壶
+				Tooltip:
+					'''
+					'时刻保持警惕！'
+					+12%全伤害，+10%移动速度
+					每30秒短暂隐身
+					[专家模式专属]
+					'''
+			}
+
+			BartyCrouchTrophy: {
+				DisplayName: 小巴蒂·克劳奇奖杯
+				Tooltip: ""
+			}
+
+			SpiderSilkCloak: {
+				DisplayName: 蛛丝斗篷
+				Tooltip:
+					'''
+					'由阿拉戈克最精美的蛛丝编织而成'
+					-300敌人仇恨，+10%速度，+8%咒术伤害
+					轻盈且几乎隐形
+					'''
+			}
+
+			CerberusFangNecklace: {
+				DisplayName: 三头犬牙项链
+				Tooltip:
+					'''
+					'三个头，三个仆从'
+					+5防御，+1最大仆从数，增加召唤物击退力
+					'''
+			}
+
+			DarkArtsGrimoire: {
+				DisplayName: 黑魔法魔典
+				Tooltip:
+					'''
+					'高级黑魔法，武器化'
+					发射3道暗影光束散射
+					由贝拉特里克斯的禁忌知识制作
+					'''
+			}
+
+			WerewolfCloak: {
+				DisplayName: 狼人斗篷
+				Tooltip:
+					'''
+					'月光下，内心的野兽赋予你力量'
+					夜间：+20%近战，+15%速度，+10防御
+					白天：+5%近战，+5%速度
+					'''
+			}
+
+			DementorsEmbrace: {
+				DisplayName: 摄魂怪之拥
+				Tooltip:
+					'''
+					'拥抱摄魂怪就是将绝望化为力量'
+					+15%全伤害，+10%咒术伤害
+					但-30最大生命值和黑暗光环
+					终局黑暗饰品
+					'''
+			}
+
+			MagicalKoi: {
+				DisplayName: 魔法锦鲤
+				Tooltip:
+					'''
+					'一条散发内在魔力光芒的鱼'
+					食用获得2分钟幸运+法力回复增益
+					也可用作药水原料
+					'''
+			}
+
+			MerfolkScale: {
+				DisplayName: 人鱼鳞片
+				Tooltip:
+					'''
+					'由深海人鱼脱落'
+					制作材料——海洋钓鱼获得
+					'''
+			}
+
+			EnchantedTadpole: {
+				DisplayName: 魔法蝌蚪
+				Tooltip:
+					'''
+					'它在闪闪发光！'
+					优质鱼饵（40力量）或食用获得2-4个魔法精华
+					在禁林中钓获
+					'''
+			}
+
+			WizardCrate: {
+				DisplayName: 巫师宝箱
+				Tooltip:
+					'''
+					'一箱巫师用品'
+					右键打开获得随机巫师药水、饰品和精华
+					稀有困难模式钓鱼获取
+					'''
+			}
+
+			WizardCrateHardmode: {
+				DisplayName: 大法师宝箱
+				Tooltip:
+					'''
+					'一箱注入困难模式魔力的宝箱'
+					右键获得困难模式巫师药水、稀有饰品、Boss材料
+					稀有机械Boss后钓鱼获取
+					'''
+			}
+
+			SkivingSnackbox: {
+				DisplayName: 逃课零食盒
+				Tooltip:
+					'''
+					'韦斯莱魔法把戏坊——逃脱一切！'
+					食用装病：5秒无敌+隐身
+					敌人完全对你失去兴趣
+					触发药水冷却
+					'''
+			}
+
+			PukingPastille: {
+				DisplayName: 呕吐软糖
+				Tooltip:
+					'''
+					'不适合胃弱的人'
+					立即清除所有减益
+					但消耗30生命值——仅供紧急使用
+					'''
+			}
+
+			NosebleedNougat: {
+				DisplayName: 流鼻血牛轧糖
+				Tooltip:
+					'''
+					'以血换力'
+					失去50生命值，立即恢复200法力
+					+30秒法力回复
+					'''
+			}
+
+			DemiguiseHair: {
+				DisplayName: 隐形兽毛发
+				Tooltip:
+					'''
+					'用于编织隐形衣'
+					消耗获得30秒隐身
+					或用作制作材料
+					'''
+			}
+
+			MinistryVisitorBadge: {
+				DisplayName: 魔法部访客徽章
+				Tooltip:
+					'''
+					'魔法部欢迎你'
+					激活神秘事务司检索任务
+					需要：击败贝拉特里克斯
+					可重复使用——任务间显示状态
+					'''
+			}
+
+			ProphecyDust: {
+				DisplayName: 预言尘
+				Tooltip:
+					'''
+					'处理过的预言球的空灵残留'
+					制作凤凰社装备的材料
+					'''
+			}
+
+			ChronalSand: {
+				DisplayName: 时间之沙
+				Tooltip:
+					'''
+					'稳定沙漏中的时间灌注残留'
+					制作时间装备的材料
+					'''
+			}
+
+			VeilThread: {
+				DisplayName: 帷幕丝线
+				Tooltip:
+					'''
+					'封印帷幕裂缝的暗黑薄纱'
+					制作死亡守护装备的材料
+					'''
+			}
+
+			OrderBadge: {
+				DisplayName: 凤凰社徽章
+				Tooltip:
+					'''
+					'邓布利多的军队——凤凰社屹立'
+					+8%咒语伤害 +5防御 +4%耐力
+					免疫黑暗诅咒 被动绝望抵抗
+					'''
+			}
+
+			AzkabanBreachStone: {
+				DisplayName: 阿兹卡班裂隙石
+				Tooltip:
+					'''
+					'监狱反幻影移形结界的碎片'
+					召唤阿兹卡班绝望事件
+					需要击败石巨人，仅限夜间
+					'''
+			}
+
+			AzkabanWardSigil: {
+				DisplayName: 阿兹卡班守护符印
+				Tooltip:
+					'''
+					'以银色和希望描绘的小型守护阵'
+					施加希望守护3分钟
+					帮助抵抗绝望积累
+					'''
+			}
+
+			GringottsVaultKey: {
+				DisplayName: 古灵阁金库钥匙
+				Tooltip:
+					'''
+					'妖精锻造，妖精授权'
+					激活授权的古灵阁金库回收任务
+					可重复使用——任务间显示状态
+					'''
+			}
+
+			KnockturnPass: {
+				DisplayName: 翻倒巷通行证
+				Tooltip:
+					'''
+					'沿着黑暗的小巷走去...'
+					激活翻倒巷诅咒物品封锁合同
+					需要：已访问对角巷 + 击败贝拉特里克斯
+					'''
+			}
+
+			CursedResidue: {
+				DisplayName: 诅咒残留
+				Tooltip:
+					'''
+					'封锁诅咒物品后的暗黑污渍'
+					制作暗黑处理装备的材料
+					'''
+			}
+
+			HandOfGlory: {
+				DisplayName: 光荣之手
+				Tooltip:
+					'''
+					'只为持有者照亮'
+					夜视 矿物感应 减少仇恨
+					黑暗中：+6%伤害 +4防御
+					'''
+			}
+
+			LeakyCauldronToken: {
+				DisplayName: 破釜酒吧令牌
+				Tooltip:
+					'''
+					'通往对角巷的大门'
+					使用进入巫师购物街
+					获得购物日增益：更好的价格、运气、宝藏感应
+					需要：击败蛇怪
+					'''
+			}
+
+			GalleonDust: {
+				DisplayName: 加隆尘
+				Tooltip:
+					'''
+					'来自古老金库的魔法金粉'
+					制作寻宝装备的材料
+					'''
+			}
+
+			GoblinLedger: {
+				DisplayName: 妖精账本
+				Tooltip:
+					'''
+					'妖精们保持着一丝不苟的记录'
+					+幸运 金币吸引 宝藏感应 +5%所有伤害
+					'''
+			}
+
+			SoulAsh: {
+				DisplayName: 灵魂灰烬
+				Tooltip:
+					'''
+					'阿兹卡班破碎结界的绝望残留'
+					制作反绝望装备的材料
+					'''
+			}
+
+			PatronusFocus: {
+				DisplayName: 守护神聚焦器
+				Tooltip:
+					'''
+					'将希望凝聚为抵御绝望的实体结界'
+					持续减轻绝望 +4防御
+					守护神激活时: +8防御 +3生命再生 +8%伤害
+					'''
+			}
+
+			MerfolkAmulet: {
+				DisplayName: 人鱼护身符
+				Tooltip:
+					'''
+					'大海回应佩戴它的人'
+					永久获得鳃和脚蹼
+					水下时+10%伤害和+15%速度
+					'''
+			}
+
+			DragonToothNecklace: {
+				DisplayName: 龙牙项链
+				Tooltip:
+					'''
+					'由龙火和三头之怒锻造'
+					需要树蜂龙+路威材料——跨Boss奖励
+					+12%全伤害，+8护甲穿透
+					移动时留下火焰轨迹
+					'''
+			}
+
+			VenomSilkWraps: {
+				DisplayName: 毒丝裹布
+				Tooltip:
+					'''
+					'注入蛇怪毒液的蛛丝'
+					需要阿拉戈克+蛇怪材料——跨Boss奖励
+					+10%咒术伤害，+15%暴击率
+					免疫中毒和剧毒
+					'''
+			}
+
+			DarkLordsBane: {
+				DisplayName: 黑魔王克星
+				Tooltip:
+					'''
+					'克服每一个挑战的联合力量'
+					需要所有巫师Boss的材料
+					+15%全伤害，+10%咒术，+10防御，+4回复
+					免疫中毒、剧毒和火焰
+					终极跨Boss饰品
+					'''
+			}
+
+			WizardFishingRod: {
+				DisplayName: 附魔钓竿
+				Tooltip:
+					'''
+					'鱼几乎会自己上钩！'
+					30%钓鱼力量
+					附魔吸引魔法鱼类
+					'''
+			}
+
+			Firewhiskey: {
+				DisplayName: 奥格登陈年火焰威士忌
+				Tooltip:
+					'''
+					'从内到外温暖你……猛烈地'
+					+12%全伤害，+8%暴击，持续4分钟
+					副作用：偶尔短暂微醉混乱+火焰吐息
+					'''
+			}
+
+			PygmyPuffItem: {
+				DisplayName: 侏儒蒲绒绒
+				Tooltip:
+					'''
+					'韦斯莱魔法把戏坊——我们最可爱的产品！'
+					召唤一只粉色侏儒蒲绒绒宠物
+					迷你蒲绒绒——可爱又无害
+					'''
+			}
+
+			DirigiblePlumEarring: {
+				DisplayName: 飞天李子耳环
+				Tooltip:
+					'''
+					'飞天李子帮助你接受非凡之事'
+					缓降，+2跳跃速度，自动跳跃
+					卢娜·洛夫古德的标志性饰品
+					'''
+			}
+
+			EnchantedTrollClub: {
+				DisplayName: 附魔山怪棒
+				Tooltip:
+					'''
+					'不知怎的，给山怪棒附魔后它变得更加野蛮了'
+					升级版山怪棒——攻击产生范围冲击波
+					巨大击退力
+					'''
+			}
+
+			WandHolster: {
+				DisplayName: 魔杖套
+				Tooltip:
+					'''
+					'拔得更快，施法更快，赢得更快'
+					+10%施法速度
+					+5%咒术伤害，-5%法力消耗
+					'''
+			}
+
+			ThestralReins: {
+				DisplayName: 夜骐缰绳
+				Tooltip:
+					'''
+					'只有目睹过死亡的人才能看到'
+					召唤一匹夜骐坐骑——暗黑飞行坐骑
+					骑乘时获得夜视+敌人探测
+					'''
+			}
+
+			AshwinderEgg: {
+				DisplayName: 灰蛇蛋
+				Tooltip:
+					'''
+					'极度灼热——在它烧毁你的房子之前冻住它！'
+					消耗获得2分钟火焰/熔岩免疫+炼狱光环
+					爱情魔药的关键原料
+					'''
+			}
+
+			WizengamotHood: {
+				DisplayName: 威森加摩兜帽
+				Tooltip: +15%咒术伤害，+40最大法力
+				SetBonus: 奥术权威：+30%咒术伤害，-20%法力消耗，+60法力，+8法力回复
+			}
+
+			WizengamotRobes: {
+				DisplayName: 威森加摩长袍
+				Tooltip: +15%咒术伤害，+15%咒术暴击，+8%伤害减免，+60最大生命值
+			}
+
+			WizengamotBoots: {
+				DisplayName: 威森加摩长靴
+				Tooltip: +15%移动速度，+1.5奔跑速度，+6法力回复
+			}
+
+			PhoenixTear: {
+				DisplayName: 凤凰之泪
+				Tooltip:
+					'''
+					'凤凰之泪拥有巨大的治疗力量'
+					立即恢复全部生命值和法力
+					清除所有减益
+					不会触发药水疾病
+					巫师世界中最稀有的治疗物品
+					'''
+			}
+
+			GrindylowTooth: {
+				DisplayName: 格林迪洛之牙
+				Tooltip:
+					'''
+					'锋利且带有微弱魔力'
+					制作材料——由格林迪洛掉落或钓鱼获得
+					'''
+			}
+
+			AquaFortis: {
+				DisplayName: 强水药剂
+				Tooltip:
+					'''
+					'水中战士的灵药'
+					鳃+水免疫
+					水下时：+20%伤害，+8防御，+20%速度
+					由钓鱼获取物制作
+					'''
+			}
+
+			WizardPocketWatch: {
+				DisplayName: 巫师怀表
+				Tooltip:
+					'''
+					'时间是神秘之物'
+					显示时间，+5%移动速度，+5%攻击速度
+					'''
+			}
+
+			MandrakeRestorative: {
+				DisplayName: 曼德拉草恢复药水
+				Tooltip:
+					'''
+					'成熟后，它们的叫声能使任何石化者复苏'
+					恢复50生命值+治愈石化、被施咒、黑魔法诅咒和所有衰弱减益
+					经典蛇怪石化解药
+					'''
+			}
+
+			KeeperGloves: {
+				DisplayName: 魁地奇守门员手套
+				Tooltip:
+					'''
+					'你休想让鬼飞球穿过这些球门'
+					+8防御，击退免疫，20%荆棘伤害
+					守门员的最佳伙伴
+					'''
+			}
+
+			SeekersReflexes: {
+				DisplayName: 找球手反应药水
+				Tooltip:
+					'''
+					'抓金色飞贼必须手快'
+					+15%速度，+10%闪避，+10%攻击速度，持续4分钟
+					由稀有金蛋制作
+					'''
+			}
+
+			Spectrespecs: {
+				DisplayName: 分光眼镜
+				Tooltip:
+					'''
+					'它们能让疣巴灵可见，你知道的'
+					显示所有敌人+危险感知
+					+5%咒术暴击率
+					卢娜·洛夫古德的标志性彩虹眼镜
+					'''
+			}
+
+			FoeGlass: {
+				DisplayName: 敌镜
+				Tooltip:
+					'''
+					'当你的敌人靠近时，影子会变得更清晰'
+					显示所有敌人、危险感知、夜视
+					+3%伤害。Boss激活时在提示中显示Boss生命值%
+					穆迪最爱的黑暗探测器
+					'''
+			}
+
+			GobletOfFire: {
+				DisplayName: 火焰杯
+				Tooltip:
+					'''
+					'火焰杯选出勇士'
+					使用时给予附近所有玩家战斗+愤怒+狂怒增益
+					可重复使用的传奇家具
+					'''
+				UseMessage: 火焰杯熊熊燃烧！附近所有勇士获得力量！
+			}
+
+			BabyDragonItem: {
+				DisplayName: 龙蛋（已孵化）
+				Tooltip:
+					'''
+					'是一条龙！海格一定会很自豪的。'
+					召唤一只匈牙利树蜂龙幼崽发光宠物
+					由树蜂龙的金蛋制作
+					'''
+			}
+
+			FairyWings: {
+				DisplayName: 仙子翅膀
+				Tooltip:
+					'''
+					'巫师世界的仙子远比想象的美丽'
+					获得飞行+缓降
+					飞行时留下闪光轨迹
+					'''
+			}
+
+			QuillOfAcceptance: {
+				DisplayName: 录取之笔
+				Tooltip:
+					'''
+					'这支笔自霍格沃茨建校以来就存放于此'
+					+8%咒术伤害，+5%咒术暴击，+5咒术护甲穿透
+					'''
+			}
+
+			GoblinSilverSword: {
+				DisplayName: 妖精打造银剑
+				Tooltip:
+					'''
+					'妖精是巫师世界最出色的金属工匠'
+					命中施加点金——妖精打造，吸收敌人财富
+					由银和金在附魔台制作
+					'''
+			}
+
+			MoodysEye: {
+				DisplayName: 穆迪的魔眼
+				Tooltip:
+					'''
+					'时刻保持警惕！'
+					显示所有敌人、宝藏、陷阱、电线
+					夜视+危险感知+5%伤害
+					魔眼看穿一切
+					'''
+			}
+
+			DragonScaleRing: {
+				DisplayName: 龙鳞戒指
+				Tooltip:
+					'''
+					'在龙火中锻造'
+					火焰免疫+8%咒术伤害+5%全伤害
+					紧凑的防火戒指
+					'''
+			}
+
+			PhoenixAsh: {
+				DisplayName: 凤凰灰烬
+				Tooltip:
+					'''
+					'焚烧日的遗留物'
+					消耗获得30秒火焰免疫+回复
+					或用作复活物品的制作材料
+					'''
+			}
+
+			ResurrectionPotion: {
+				DisplayName: 复活药水
+				Tooltip:
+					'''
+					'浴火重生'
+					阻止一次死亡：如果你即将死亡，改为恢复至50%生命值
+					增益持续10分钟，触发一次
+					'''
+			}
+
+			ShieldCharmPotion: {
+				DisplayName: 盾牌咒药水
+				Tooltip:
+					'''
+					'瓶装盔甲护身'
+					+10防御，+8%伤害减免，持续5分钟
+					'''
+			}
+
+			EnchantedMirror: {
+				DisplayName: 附魔手镜
+				Tooltip:
+					'''
+					'虽然不是厄里斯魔镜，但它能带你回家'
+					+3%咒术伤害被动
+					由魔镜+精华制作
+					'''
+			}
+
+			DraconisElixir: {
+				DisplayName: 龙血灵药
+				Tooltip:
+					'''
+					'龙血有十二种用途——这瓶药水将它们全部利用'
+					获得愤怒+狂怒+火焰免疫+炼狱光环，持续4分钟
+					终极龙力战斗药水
+					'''
+			}
+
+			JobberknollFeather: {
+				DisplayName: 叽喳鸟羽毛
+				Tooltip:
+					'''
+					'包含这只鸟曾听到的每一个声音的回响'
+					吐真剂的关键原料
+					由叽喳鸟掉落
+					'''
+			}
+
+			BeastHuntersCharm: {
+				DisplayName: 神奇动物猎人护符
+				Tooltip:
+					'''
+					'纽特·斯卡曼德会惊恐的。查理·韦斯莱会赞同的。'
+					需要龙鳞+三头犬之牙+狼人皮毛——三只野兽的击杀
+					+12%全伤害，免疫流血+破甲
+					探测附近所有生物
+					'''
+			}
+
+			ImpFlame: {
+				DisplayName: 小鬼火焰
+				Tooltip:
+					'''
+					'一个微小的活火焰'
+					消耗获得30秒炼狱光环
+					火焰药水制作材料
+					由魔法小鬼掉落
+					'''
+			}
+
+			DugbogHide: {
+				DisplayName: 泥怪兽皮
+				Tooltip:
+					'''
+					'像树皮一样坚韧，与环境融为一体'
+					隐匿物品制作材料
+					由泥怪掉落
+					'''
+			}
+
+			CamouflageCloak: {
+				DisplayName: 迷彩斗篷
+				Tooltip:
+					'''
+					'几乎和隐形衣一样好。几乎。'
+					-400仇恨，+10%速度
+					静止不动时变为隐身
+					由泥怪兽皮+隐形兽毛发制作
+					'''
+			}
+
+			FenrirsWolfsbane: {
+				DisplayName: 芬里尔的狼毒药剂
+				Tooltip:
+					'''
+					'由头狼本身的精华酿造'
+					升级版狼毒药剂——更强的夜间加成
+					夜间：+25%近战，+25%速度，+15防御，+10%暴击
+					'''
+			}
+
+			StealthDraught: {
+				DisplayName: 隐匿药水
+				Tooltip:
+					'''
+					'像泥怪融入木头一样融入阴影'
+					隐身，-500仇恨，+15%速度，持续4分钟
+					由泥怪兽皮+隐形兽毛发酿造
+					'''
+			}
+
+			MemoryPotion: {
+				// DisplayName: Memory Potion
+				/* Tooltip:
+					'''
+					'The Jobberknoll's feather unlocks every memory the land holds'
+					Grants Spelunker + Hunter + Night Owl + Danger Sense for 4 minutes
+					Brewed from Jobberknoll Feather — reveals everything hidden
+					''' */
+			}
+
+			GreatHallBell: {
+				DisplayName: 大礼堂钟
+				Tooltip:
+					'''
+					'魔法天花板映出漫天星光...'
+					敲响参加大礼堂盛宴（每7天一次）
+					盛宴间歇时显示学院杯排名
+					需要穿戴学院盔甲才能参加
+					'''
+			}
+
+			QuidditchWhistle: {
+				DisplayName: 魁地奇哨
+				Tooltip:
+					'''
+					'霍琦夫人的银哨——比赛开始！'
+					开始学院间魁地奇比赛
+					需要：白天、骑扫帚、穿戴学院盔甲
+					比赛间隔时显示排名
+					'''
+			}
+
+			SpectralEssence: {
+				DisplayName: 幽灵精华
+				Tooltip:
+					'''
+					'从夜骐信标中采集的月光残留物'
+					制作材料
+					'''
+			}
+
+			// === LANDMARK PLACEABLE ITEMS ===
+			HousePointHourglassItem: {
+				DisplayName: 学院积分沙漏
+				Tooltip:
+					'''
+					'四个巨大的沙漏追踪着各学院的积分'
+					装饰性礼堂地标
+					'''
+			}
+
+			QuidditchGoalpostItem: {
+				DisplayName: 魁地奇球门柱
+				Tooltip:
+					'''
+					'球场两端各有三个圆环'
+					装饰性魁地奇球场地标
+					'''
+			}
+
+			CastleWardStoneItem: {
+				DisplayName: 城堡守护石
+				Tooltip:
+					'''
+					'古老的保护结界环绕着城堡'
+					装饰性霍格沃茨防御地标
+					'''
+			}
+
+			WhompingWillowStumpItem: {
+				DisplayName: 打人柳树桩
+				Tooltip:
+					'''
+					'树根下隐藏着一条秘密通道'
+					装饰性通道入口地标
+					'''
+			}
+
+			ShriekingShackSignItem: {
+				DisplayName: 尖叫棚屋招牌
+				Tooltip:
+					'''
+					'全英国最闹鬼的建筑'
+					装饰性霍格莫德地标
+					'''
+			}
+
+			GrimmauldDoorwayItem: {
+				DisplayName: 格里莫广场门廊
+				Tooltip:
+					'''
+					'凤凰社总部所在地'
+					装饰性安全屋地标
+					'''
+			}
+
+			LeakyCauldronSignItem: {
+				DisplayName: 破釜酒吧招牌
+				Tooltip:
+					'''
+					'麻瓜伦敦与对角巷之间的通道'
+					装饰性酒馆地标
+					'''
+			}
+
+			GringottsFacadeItem: {
+				DisplayName: 古灵阁外墙
+				Tooltip:
+					'''
+					'巫师世界最安全的地方——仅次于霍格沃茨'
+					装饰性古灵阁银行地标
+					'''
+			}
+
+			BorginStorefrontItem: {
+				DisplayName: 博金商店门面
+				Tooltip:
+					'''
+					'博金与伯克氏——黑魔法物品专营'
+					装饰性翻倒巷地标
+					'''
+			}
+
+			StMungosMannequinItem: {
+				DisplayName: 圣芒戈橱窗假人
+				Tooltip:
+					'''
+					'珀奇与道斯有限公司橱窗里的旧假人'
+					装饰性医院入口地标
+					'''
+			}
+
+			ProphecyShelfItem: {
+				DisplayName: 预言球架
+				Tooltip:
+					'''
+					'一排排布满灰尘的玻璃球，每一颗都封存着一则预言'
+					装饰性预言厅地标
+					'''
+			}
+
+			VeilArchItem: {
+				DisplayName: 帷幕拱门
+				Tooltip:
+					'''
+					'古老的石拱门上飘动着神秘的帷幕'
+					装饰性死亡厅地标
 					'''
 			}
 		}
@@ -483,7 +2455,6 @@ Mods: {
 			WardAnchor.DisplayName: 守护锚点
 			CastleWardNode.DisplayName: 城堡守护节点
 			BreachSeal.DisplayName: 突破封印
-
 			// === BOSSES ===
 			BasiliskBoss.DisplayName: 蛇怪
 			HorntailBoss.DisplayName: 匈牙利树蜂龙
@@ -497,7 +2468,6 @@ Mods: {
 			QuirrellBoss.DisplayName: 奇洛教授
 			UmbridgeBoss.DisplayName: 多洛雷斯·乌姆里奇
 			BartyCrouchBoss.DisplayName: 小巴蒂·克劳奇
-
 			// === TOWN NPCs ===
 			Ollivander.DisplayName: 魔杖匠
 			Hagrid.DisplayName: 神奇生物看管者
@@ -515,13 +2485,15 @@ Mods: {
 			Neville.DisplayName: 纳威·隆巴顿
 			CursedOpalDisplay.DisplayName: 诅咒蛋白石项链
 			VanishingCabinetEcho.DisplayName: 消失柜回声
+
 			MadamRosmerta: {
 				DisplayName: 罗斯莫塔夫人
+
 				TownNPCMood: {
 					HateBiome: "{BiomeName}可不适合开酒馆。"
 					LikeBiome: "{BiomeName}让我想起了霍格莫德。"
-					LoveNPC: "我总是很高兴见到{NPCName}！"
-					HateNPC: "我宁可不招待{NPCName}。"
+					LoveNPC: 我总是很高兴见到{NPCName}！
+					HateNPC: 我宁可不招待{NPCName}。
 				}
 			}
 		}
@@ -529,243 +2501,314 @@ Mods: {
 		Buffs: {
 			ForestWisdomBuff: {
 				DisplayName: 森林智慧
-				Description: "森林分享了它的古老知识。+6%伤害，危险感知，夜视，+4生命恢复。"
+				Description: 森林分享了它的古老知识。+6%伤害，危险感知，夜视，+4生命恢复。
 			}
+
 			SafehouseResolveBuff: {
 				DisplayName: 安全屋决心
-				Description: "凤凰社安全屋增强了你的决心。+6防御，+4生命恢复，免疫诅咒，-100仇恨值。"
+				Description: 凤凰社安全屋增强了你的决心。+6防御，+4生命恢复，免疫诅咒，-100仇恨值。
 			}
+
 			TriageResolvedBuff: {
 				DisplayName: 分诊完成
-				Description: "圣芒戈治疗已稳定。+8生命恢复，+5防御，免疫毒液。"
+				Description: 圣芒戈治疗已稳定。+8生命恢复，+5防御，免疫毒液。
 			}
+
 			GoldenSnitchBuff: {
 				DisplayName: 金色飞贼
 				Description: "'我在结束时打开'"
 			}
+
 			NimbusMountBuff: {
 				DisplayName: 光轮2000
 				Description: 骑乘魔法飞天扫帚
 			}
+
 			ButterbeerBuff: {
 				DisplayName: 温暖惬意
-				Description: "'正合我意！'\n饱食效果，+2回复，+2防御"
+				Description:
+					'''
+					'正合我意！'
+					饱食效果，+2回复，+2防御
+					'''
 			}
+
 			FelixFelicisBuff: {
 				DisplayName: 液体幸运
 				Description: 一切似乎都在朝好的方向发展
 			}
+
 			PolyjuiceBuff: {
 				DisplayName: 复方汤剂伪装
 				Description: 你看起来完全像另一个人
 			}
+
 			WolfsbaneBuff: {
 				DisplayName: 狼毒药剂
 				Description: 内心的野兽被控制住了……大概
 			}
+
 			HippogriffMountBuff: {
 				DisplayName: 鹰头马身有翼兽
 				Description: 骑乘一只雄伟的鹰头马身有翼兽
 			}
+
 			FireboltMountBuff: {
 				DisplayName: 火弩箭
 				Description: 现存最出色的竞速飞天扫帚
 			}
+
 			PhoenixMinionBuff: {
 				DisplayName: 凤凰伙伴
 				Description: 一只凤凰在你身旁战斗并治愈你的伤痕
 			}
+
 			NifflerBuff: {
 				DisplayName: 嗅嗅
 				Description: 一个追逐闪亮物品的伙伴增加了金币掉落
 			}
+
 			HedwigBuff: {
 				DisplayName: 海德薇
 				Description: 一只忠诚的雪鸮为你照亮前路
 			}
+
 			HouseElfMinionBuff: {
 				DisplayName: 家养小精灵
 				Description: 一个忠诚的家养小精灵听从你的指挥作战
 			}
+
 			VeritaserumBuff: {
 				DisplayName: 吐真剂
 				Description: 没有什么能躲过你的眼睛
 			}
+
 			AmortentiaBuff: {
 				DisplayName: 迷情剂
 				Description: 敌人似乎对你不那么感兴趣了
 			}
+
 			GillyweedBuff: {
 				DisplayName: 鳃囊草
 				Description: 你可以在水下呼吸和自由游泳
 			}
+
 			PetrifiedDebuff: {
 				DisplayName: 石化
 				Description: 被变成了石头！无法移动或行动
 			}
+
 			JinxedDebuff: {
 				DisplayName: 被施咒
-				Description: "'一个小小的黑魔法诅咒'\n-20%伤害，-15%速度，-5防御"
+				Description:
+					'''
+					'一个小小的黑魔法诅咒'
+					-20%伤害，-15%速度，-5防御
+					'''
 			}
+
 			DarkCurseDebuff: {
 				DisplayName: 黑魔法诅咒
-				Description: "'最黑暗的魔法'\n持续伤害，阻止治疗，-10防御"
+				Description:
+					'''
+					'最黑暗的魔法'
+					持续伤害，阻止治疗，-10防御
+					'''
 			}
+
 			PatronusCharmBuff: {
 				DisplayName: 守护神守卫
 				Description: 一个银色守护者保护着你（+10防御，+2生命回复）
 			}
+
 			PepperupBuff: {
 				DisplayName: 精神焕发
 				Description: 充满活力！速度和攻击速度提升，火焰/寒冷免疫，耳朵冒蒸汽
 			}
+
 			SkeleGroBuff: {
 				DisplayName: 生骨灵
 				Description: 大量生命回复但十分痛苦——移动速度降低
 			}
+
 			KneazleBuff: {
 				DisplayName: 狸猫
 				Description: 一只魔法猫跟随着你并探测敌人
 			}
+
 			Nimbus2001MountBuff: {
 				DisplayName: 光轮2001
 				Description: 最快的飞天扫帚——空中优势赋予额外伤害
 			}
+
 			FirewhiskeyBuff: {
 				DisplayName: 火焰威士忌微醺
 				Description: 伤害和暴击提升，但偶尔会微醉。火焰吐息。
 			}
+
 			PygmyPuffBuff: {
 				DisplayName: 侏儒蒲绒绒
 				Description: 一个可爱的粉色毛球跟着你到处跑
 			}
+
 			ThestralMountBuff: {
 				DisplayName: 夜骐
 				Description: 骑乘一匹隐形的骨骼马——获得夜视和探测
 			}
+
 			AquaFortisBuff: {
 				DisplayName: 强水药剂
 				Description: 水中战士——鳃、水免疫、巨大的水下战斗加成
 			}
+
 			SeekersReflexesBuff: {
 				DisplayName: 找球手反应
 				Description: 闪电般的反应——速度、闪避和攻击速度提升
 			}
+
 			BabyDragonBuff: {
 				DisplayName: 树蜂龙幼崽
 				Description: 一只匈牙利树蜂龙幼崽用龙火为你照亮前路
 			}
+
 			ResurrectionBuff: {
 				DisplayName: 复活
 				Description: 阻止一次死亡——你将浴火重生而非死去
 			}
+
 			ShieldCharmBuff: {
 				DisplayName: 盾牌咒
 				Description: 盔甲护身——+10防御，+8%伤害减免
 			}
+
 			FenrirsWolfsbaneBuff: {
 				DisplayName: 芬里尔的狼毒药剂
 				Description: 头狼之力——夜间获得巨大近战和速度加成
 			}
+
 			StealthDraughtBuff: {
 				DisplayName: 隐匿药水
 				Description: 隐身，大幅降低仇恨，速度提升——光天化日之下隐藏
 			}
+
 			WardOfHopeBuff: {
 				DisplayName: 希望守护
 				Description: 银色抵御绝望的守护——+4防御 +2生命再生 宁静光芒
 			}
+
 			RoomRecoveryBuff: {
 				DisplayName: 恢复之室
 				Description: 房间提供治愈——+12生命再生 +15防御 +10%伤害减免
 			}
+
 			RoomTrainingBuff: {
 				DisplayName: 练习之室
 				Description: 房间提供训练场——+20%咒语伤害 +10咒语暴击 +40最大魔力
 			}
+
 			RoomVaultBuff: {
 				DisplayName: 来去自如室
 				Description: 房间揭示隐藏宝藏——提高运气 宝藏感应 金币吸引
 			}
+
 			RoomSanctuaryBuff: {
 				DisplayName: 避难之室
 				Description: 房间提供庇护——+8防御 +4生命再生 魔力再生 +5%伤害减免
 			}
+
 			RoomRestorationBuff: {
 				DisplayName: 修复之室
 				Description: 房间舒缓绝望——缓解黑暗后遗症 +6防御 +6生命再生 守护延长
 			}
+
 			RoomResistanceBuff: {
 				DisplayName: 抵抗军总部
 				Description: 有求必应屋化为抵抗军总部——+10防御 +8%耐力 +6生命再生 免疫诅咒/黑暗诅咒
 			}
+
 			DAMeetingBuff: {
 				DisplayName: D.A.会议
-				Description: "邓布利多军集结。+5%伤害，+4防御，危险感知，+3生命再生。"
+				Description: 邓布利多军集结。+5%伤害，+4防御，危险感知，+3生命再生。
 			}
+
 			ResistanceResolveBuff: {
 				DisplayName: 抵抗决心
-				Description: "守护阵因你而坚守。+8防御，+6%耐力，免疫诅咒，+4生命再生，+5%运气。"
+				Description: 守护阵因你而坚守。+8防御，+6%耐力，免疫诅咒，+4生命再生，+5%运气。
 			}
+
 			GryffindorFeastBuff: {
 				DisplayName: 格兰芬多盛宴祝福
 				Description: 勇气充满你的心灵——+12%伤害 +8防御 +2生命再生
 			}
+
 			SlytherinFeastBuff: {
 				DisplayName: 斯莱特林盛宴祝福
 				Description: 野心磨砺你的头脑——+10%暴击 +8%速度
 			}
+
 			RavenclawFeastBuff: {
 				DisplayName: 拉文克劳盛宴祝福
 				Description: 智慧引导你的咒语——+15%咒语伤害 +60最大魔力 魔力再生增强
 			}
+
 			HufflepuffFeastBuff: {
 				DisplayName: 赫奇帕奇盛宴祝福
 				Description: 忠诚坚定你的意志——+10防御 +6生命再生 +8%伤害减免
 			}
+
 			QuidditchCupBuff: {
 				DisplayName: 魁地奇杯胜利
 				Description: 你的学院赢得了魁地奇杯！+10%伤害 +10%速度 +幸运
 			}
+
 			TriwizardChampionBuff: {
 				DisplayName: 三强冠军
 				Description: 永恒的荣耀！+15%伤害 +10%速度 增强运气
 			}
+
 			OrderCommendationBuff: {
 				DisplayName: 凤凰社嘉奖
 				Description: 凤凰社认可你的贡献——+10%咒语伤害 +4防御 +3生命再生
 			}
+
 			TemporalInsightBuff: {
 				DisplayName: 时间洞察
 				Description: 时间清晰流动——+8%伤害 +5%速度 危险感知
 			}
+
 			VeilWardBuff: {
 				DisplayName: 帷幕守护
 				Description: 帷幕之力无法触及你——+8防御 +6%耐力 黑暗免疫 绝望抵抗
 			}
+
 			VaultFortuneBuff: {
 				DisplayName: 金库财运
 				Description: 古灵阁奖励勤勉者——+幸运 金币吸引 +5%伤害
 			}
+
 			ShoppingDayBuff: {
 				DisplayName: 购物日
 				Description: 对角巷商业！降低商店价格 +运气 宝藏感应 金币吸引
 			}
+
 			DarkAppraiserBuff: {
 				DisplayName: 暗黑鉴定师
 				Description: 被暗黑知识磨砺的双眼——夜视 +6%伤害 危险感知
 			}
+
 			MoonwardBuff: {
 				DisplayName: 月光守护
 				Description: 棚屋的守护阵维持——+6防御 +4生命再生 黑暗/诅咒免疫 +5%速度
 			}
+
 			CastleVictoryBuff: {
 				DisplayName: 城堡胜利
-				Description: "霍格沃茨屹立不倒！+12%全伤害，+10防御，+6生命恢复，+0.1幸运。"
+				Description: 霍格沃茨屹立不倒！+12%全伤害，+10防御，+6生命恢复，+0.1幸运。
 			}
+
 			CastleDefenseBuff: {
 				DisplayName: 城堡守卫者
-				Description: "石甲卫士与你并肩作战。+8防御。"
+				Description: 石甲卫士与你并肩作战。+8防御。
 			}
 		}
 
@@ -789,7 +2832,7 @@ Mods: {
 			FiendfyreProjectile.DisplayName: 厉火
 			HowlerProjectile.DisplayName: 吼叫信
 			HedwigProjectile.DisplayName: 海德薇
-			ReparoProjectile.DisplayName: 恢复如初
+			// EpiskeyProjectile.DisplayName: Episkey
 			HouseElfMinion.DisplayName: 家养小精灵
 			ChainStupefyProjectile.DisplayName: 连锁昏昏倒地
 			ImpedimentaProjectile.DisplayName: 障碍重重
@@ -809,12 +2852,12 @@ Mods: {
 			ApparitionProjectile.DisplayName: 幻影移形
 			PygmyPuffProjectile.DisplayName: 侏儒蒲绒绒
 			BabyDragonProjectile.DisplayName: 树蜂龙幼崽
+			// AlohomoraProjectile.DisplayName: Alohomora
 		}
 
 		Tiles: {
 			EnchantingTable.MapEntry: 附魔台
-
-			// === 地标建筑 ===
+			// === LANDMARKS ===
 			HousePointHourglass.MapEntry: 学院积分沙漏
 			QuidditchGoalpost.MapEntry: 魁地奇球门柱
 			CastleWardStone.MapEntry: 城堡守护石
@@ -829,1364 +2872,19 @@ Mods: {
 			VeilArch.MapEntry: 帷幕拱门
 		}
 
-		// === PHASE 2 ITEMS ===
-		Items: {
-			HollyWand: {
-				DisplayName: 冬青木魔杖
-				Tooltip: "'黑魔王魔杖的兄弟杖'\n施放除你武器（缴械咒），附带周期性的盔甲护身（铁甲咒）护盾"
-			}
-			VineWand: {
-				DisplayName: 葡萄藤魔杖
-				Tooltip: "'十又四分之三英寸，龙心弦杖芯'\n交替施放羽加迪姆·勒维奥萨和清水如泉"
-			}
-			YewWand: {
-				DisplayName: 紫杉木魔杖
-				Tooltip: "'十三又二分之一英寸，凤凰羽毛杖芯'\n施放钻心剜骨（钻心咒，持续引导），有几率触发粉身碎骨（粉碎咒）爆炸"
-			}
-			BeatersBat: {
-				DisplayName: 击球手球棒
-				Tooltip: "'标准魁地奇装备——是打游走球用的，不是打人的'\n巨大击退力，将敌人弹射上天"
-			}
-			Quaffle: {
-				DisplayName: 鬼飞球
-				Tooltip: "'魁地奇中用来得分的球'\n碰到墙壁会反弹并飞回你手中"
-			}
-			FireboltBroomstick: {
-				DisplayName: 火弩箭
-				Tooltip: "'现存最出色的竞速飞天扫帚'\n升级版飞天扫帚坐骑——比光轮2000更快"
-			}
-			HippogriffFeather: {
-				DisplayName: 鹰头马身有翼兽之羽
-				Tooltip: "'你必须鞠躬然后等待。一定要让鹰头马身有翼兽先行动。'\n召唤一只鹰头马身有翼兽坐骑"
-			}
-			PhoenixFeatherStaff: {
-				DisplayName: 凤凰羽毛法杖
-				Tooltip: "'福克斯赐予了你一位最忠实的伙伴'\n召唤一只凤凰仆从，能攻击并治疗"
-			}
-			NifflerItem: {
-				DisplayName: 嗅嗅袋
-				Tooltip: "'它们会追逐一切闪亮的东西'\n召唤一只寻找金币的嗅嗅宠物"
-			}
-			RiddlesDiary: {
-				DisplayName: 里德尔的日记
-				Tooltip: "'第一个魂器'\n+18%咒术伤害，+8%咒术暴击\n缓慢消耗生命值"
-			}
-			SlytherinsLocket: {
-				DisplayName: 斯莱特林的挂坠盒
-				Tooltip: "'只有蛇佬腔的人才能打开这个挂坠盒'\n+12防御，+8%伤害减免，毒素免疫\n略微降低速度"
-			}
-			HufflepuffsCup: {
-				DisplayName: 赫奇帕奇的金杯
-				Tooltip: "'一个有两个精美手柄的小金杯'\n+8生命回复，+60最大生命值，更快的药水恢复\n降低视野"
-			}
-			DiademOfRavenclaw: {
-				DisplayName: 拉文克劳的冕冠
-				Tooltip: "'超凡的智慧是人类最大的财富'\n+80最大法力，+15%咒术伤害，-15%法力消耗\n降低最大生命值"
-			}
-			SortingHat: {
-				DisplayName: 分院帽
-				Tooltip: "'哦，也许你觉得我不够漂亮，但不要以貌取人'\n增强任何穿戴的霍格沃茨学院套装效果\n不穿学院套装时提供少量通用加成"
-			}
-			FiendfyreWand: {
-				DisplayName: 厉火魔杖
-				Tooltip: "'吞噬一切的诅咒之火'\n发射不断增长的追踪诅咒火焰\n随时间推移变得更强"
-			}
-			Howler: {
-				DisplayName: 吼叫信
-				Tooltip: "'你爸爸和我都绝对恶心透了！'\n追踪尖叫信件，爆炸时附带混乱效果"
-			}
-			ScreechingHowler: {
-				DisplayName: 尖啸吼叫信
-				Tooltip: "'当吼叫信遇上曼德拉草，结果真的是震耳欲聋'\n升级版吼叫信，巨大范围伤害和更高伤害\n由吼叫信+曼德拉草材料制作"
-			}
-			ApparitionCharm: {
-				DisplayName: 幻影移形符咒
-				Tooltip: "'目的地、决心、从容'\n+5%咒术伤害，+8%移动速度"
-			}
-			HedwigItem: {
-				DisplayName: 猫头鹰零食
-				Tooltip: "'海德薇！'\n召唤一只雪鸮发光宠物"
-			}
-			ChocolateFrog: {
-				DisplayName: 巧克力蛙
-				Tooltip: "'吃吧，会好受些的。我刚得到邓布利多！'\n恢复100生命值，获得迅捷和饱食效果"
-			}
-			BertieBottsBeans: {
-				DisplayName: 比比多味豆
-				Tooltip: "'他们说的每一种口味是认真的'\n获得一个随机增益……或减益。感觉幸运吗？"
-			}
-			FizzyWhizbee: {
-				DisplayName: 嘶嘶蜂
-				Tooltip:
-					'''
-					蜂蜜公爵悬浮果冻球
-					'让你飘起来！'
-					获得羽落效果
-					'''
-			}
-			PepperImp: {
-				DisplayName: 辣椒小鬼
-				Tooltip:
-					'''
-					蜂蜜公爵辣椒味糖果
-					'为朋友们喷火吧！'
-					攻击时获得喷火效果
-					'''
-			}
-			SugarQuill: {
-				DisplayName: 糖羽毛笔
-				Tooltip:
-					'''
-					蜂蜜公爵糖制羽毛笔
-					'在课上含着它，看起来若有所思！'
-					获得魔力回复效果
-					'''
-			}
-			AcidPop: {
-				DisplayName: 酸味棒棒糖
-				Tooltip:
-					'''
-					蜂蜜公爵酸味棒棒糖
-					'把我舌头烧了个洞！'
-					获得酸液远程攻击
-					'''
-			}
-			DrooblesBestBlowingGum: {
-				DisplayName: 吹宝超级泡泡糖
-				Tooltip:
-					'''
-					蜂蜜公爵蓝铃色泡泡糖
-					'吹出来的泡泡好几天都不会破！'
-					获得保护泡泡护盾
-					'''
-			}
-			ElmWand: {
-				DisplayName: 榆木魔杖
-				Tooltip: "'榆木偏爱体面、精确与精细魔法'\n施放恢复如初（修复咒）——修复护盾、房间增益与抗绝望结界\n实用支援，而非治疗血肉"
-			}
-			RoomOfRequirementKey: {
-				DisplayName: 有求必应屋钥匙
-				Tooltip:
-					'''
-					'我需要一个地方...'
-					召唤一个适应你当前需求的魔法房间
-					房间会检测你的状态并给予相应的增益效果，持续3分钟
-					房间增益生效期间无法再次使用
-					'''
-			}
-			HouseElfBell: {
-				DisplayName: 家养小精灵铃铛
-				Tooltip: "'摇铃召唤服务'\n召唤一个家养小精灵仆从，能传送并攻击敌人"
-			}
-			Veritaserum: {
-				DisplayName: 吐真剂
-				Tooltip: "'三滴就能让黑魔王自己吐露秘密'\n显示所有敌人、陷阱和宝藏"
-			}
-			Amortentia: {
-				DisplayName: 迷情剂
-				Tooltip: "'现存最强大的爱情魔药'\n大幅降低敌人仇恨，获得生命回复"
-			}
-			HawthornWand: {
-				DisplayName: 山楂木魔杖
-				Tooltip: "'弹性适中，独角兽毛杖芯'\n施放连锁昏昏倒地（昏迷咒）——在最多4个敌人之间弹跳的眩晕弹"
-			}
-			BasiliskFangDagger: {
-				DisplayName: 蛇怪毒牙匕首
-				Tooltip: "'能摧毁魂器的少数物质之一'\n快速近战匕首，施加剧毒"
-			}
-			Gillyweed: {
-				DisplayName: 鳃囊草
-				Tooltip: "'让食用者长出鳃和蹼'\n完全水下呼吸，游泳速度提升，无水中减速"
-			}
-			Remembrall: {
-				DisplayName: 记忆球
-				Tooltip: "'唯一的问题是，我想不起来我忘了什么'\n获得危险感知和宝藏探测\n敌人靠近时发红光"
-			}
-			BlackthornWand: {
-				DisplayName: 黑刺木魔杖
-				Tooltip: "'十二又四分之三英寸，龙心弦'\n施放障碍重重（障碍咒）——减速附近所有敌人的范围诅咒"
-			}
-			WeasleyFireworks: {
-				DisplayName: 韦斯莱旋风烟花
-				Tooltip: "'韦斯莱魔法把戏坊隆重推出……'\n追踪敌人并爆炸的彩色烟花"
-			}
-			Pensieve: {
-				DisplayName: 冥想盆
-				Tooltip: "'我使用冥想盆。只需把多余的思绪抽取出来'\n获得完整GPS信息、敌人探测、夜视和宝藏探测"
-			}
-			WizardHat: {
-				DisplayName: 巫师帽
-				Tooltip: 时装物品
-			}
-			WizardRobe: {
-				DisplayName: 巫师长袍
-				Tooltip: 时装物品
-			}
-			WizardBoots: {
-				DisplayName: 巫师靴
-				Tooltip: 时装物品
-			}
-			CedarWand: {
-				DisplayName: 雪松木魔杖
-				Tooltip: "'与雪松木相配的人有成为可怕对手的潜力'\n施放荧光闪烁·极强（荧光咒强化版）——对亡灵造成伤害的巨大光球"
-			}
-			Portkey: {
-				DisplayName: 门钥匙
-				Tooltip: "'我用了一个门钥匙……'\n瞬间传送至你的重生点\n可以用旧鞋制作！"
-			}
-			ExtendableEars: {
-				DisplayName: 伸缩耳
-				Tooltip: "'韦斯莱魔法把戏坊——听到一切'\n获得敌人探测、危险感知和电线视觉"
-			}
-			PeruvianDarknessPowder: {
-				DisplayName: 秘鲁即时黑暗粉
-				Tooltip: "'需要快速逃跑时非常好用'\n制造一团致盲和混乱敌人的烟雾"
-			}
-			PhilosophersStone: {
-				DisplayName: 魔法石
-				Tooltip:
-					'''
-					'毕竟，对于一个组织良好的头脑来说，死亡不过是下一场伟大的冒险'
-					+10%全伤害，+10%咒术伤害
-					+8生命回复，+40最大生命值
-					敌人掉落更多金币
-					缩短药水冷却时间
-					'''
-			}
-			Deluminator: {
-				DisplayName: 熄灯器
-				Tooltip:
-					'''
-					'灭灯器。我自己发明的。'
-					用光芒环绕你
-					获得夜视和安抚光环
-					'''
-			}
-			Sneakoscope: {
-				DisplayName: 窥镜
-				Tooltip:
-					'''
-					'一种黑暗探测器，非常有用'
-					永久获得危险感知
-					敌人靠近时+5防御和敌人探测
-					Boss在附近时获得额外保护
-					'''
-			}
-			FlooPowder: {
-				DisplayName: 飞路粉
-				Tooltip: "'对角巷！'\n瞬间传送到重生点——比回忆药水更快\n绿色火焰效果"
-			}
-			TriwizardCup: {
-				DisplayName: "[旧版] 三强杯"
-				Tooltip: "'此物品已更名为冠军勋章'\n在背包中自动转换"
-			}
-			ChampionsMedallion: {
-				DisplayName: 冠军勋章
-				Tooltip:
-					'''
-					'由击败的魔法生物战利品锻造'
-					+15%所有伤害 +10%暴击 +8防御 +40魔力 +4生命再生
-					在附魔台用Boss材料制作
-					'''
-			}
-			ShieldHat: {
-				DisplayName: 盾帽
-				Tooltip: "'韦斯莱魔法把戏坊——护盾系列'\n+3防御，+3%咒术伤害\n附有保护咒语"
-			}
-			DecoyDetonator: {
-				DisplayName: 诱饵炸弹
-				Tooltip: "'韦斯莱魔法把戏坊——防御系列'\n吸引敌人仇恨，然后爆炸造成伤害+被施咒减益\n出色的战术转移"
-			}
-			PrefectBadge: {
-				DisplayName: 级长徽章
-				Tooltip: "'当了级长？我们家每个人都是！'\n+5防御，+5%咒术伤害\n附近每个城镇NPC+3%伤害（最多+15%）"
-			}
-			BowtruckleCatch: {
-				DisplayName: 护树罗锅
-				Tooltip: "'一个和平的小树木守护者'\n可以放生或用作钓鱼鱼饵"
-			}
-			EssenceOfMagic: {
-				DisplayName: 魔法精华
-				Tooltip: "'浓缩的魔法能量残留物'\n所有魔法生物掉落\n用于中后期巫师制作"
-			}
-			SecretKeeperNote: {
-				DisplayName: 保密人的纸条
-				Tooltip: "'凤凰社总部可在格里莫广场十二号找到'\n揭示安全屋并启动维护任务\n击败阿兹卡班绝望后由金斯莱出售"
-			}
-			ConcealmentThread: {
-				DisplayName: 隐匿丝线
-				Tooltip: "'由残余结界魔法编织而成'\n格里莫广场任务的制作材料"
-			}
-			GladeDew: {
-				DisplayName: 林间露水
-				Tooltip: "'从独角兽林地收集的净化精华'\n森林远征的制作材料"
-			}
-			StarTrace: {
-				DisplayName: 星辰残迹
-				Tooltip: "'从稳定的预兆之石中收集的天象残留'\n森林远征的制作材料"
-			}
-			BroodVenom: {
-				DisplayName: 巢穴毒液
-				Tooltip: "'从摧毁的八眼巨蛛巢穴节点中提取的毒素'\n森林远征的制作材料"
-			}
-			ForestLantern: {
-				DisplayName: 森林远征灯笼
-				Tooltip: "'海格的魔法灯笼照亮前路'\n夜间在禁忌森林中使用以开始远征\n需要击败蛇妖后"
-			}
-			WillowPassageToken: {
-				DisplayName: 柳树通道令牌
-				Tooltip: "'树节冻结了...通道打开了'\n通往打人柳隧道和尖叫棚屋的秘密通道\n需要：击败芬里尔，仅限夜间"
-			}
-			MoonsilverThread: {
-				DisplayName: 月银丝线
-				Tooltip: "'由月光浸润的守护残留编织'\n制作月光守护装备的材料"
-			}
-			MoonwardPendant: {
-				DisplayName: 月光守护坠饰
-				Tooltip: "'月光触不到它无法触及之物'\n+5防御 +4%耐力\n黑暗和诅咒免疫\n夜间移速加快"
-			}
-			ForestWarden: {
-				DisplayName: 森林守望者徽章
-				Tooltip:
-					'''
-					'通过守护森林而获得'
-					+6防御，+5%伤害减免
-					永久危险感知
-					在禁忌森林中获得夜视和+8%移速
-					由三种远征材料合成
-					'''
-			}
-			OrderSignet: {
-				DisplayName: 凤凰社印记
-				Tooltip:
-					'''
-					'成员有其特权'
-					+5防御，-200仇恨值
-					+4%伤害减免
-					免疫诅咒和混乱
-					缓慢缓解绝望
-					'''
-			}
-			SoulAsh: {
-				DisplayName: 灵魂灰烬
-				Tooltip: "'阿兹卡班破碎结界的绝望残留'\n制作反绝望装备的材料"
-			}
-			PatronusFocus: {
-				DisplayName: 守护神聚焦器
-				Tooltip: "'将希望凝聚为抵御绝望的实体结界'\n持续减轻绝望 +4防御\n守护神激活时: +8防御 +3生命再生 +8%伤害"
-			}
-			MinistryVisitorBadge: {
-				DisplayName: 魔法部访客徽章
-				Tooltip: "'魔法部欢迎你'\n激活神秘事务司检索任务\n需要：击败贝拉特里克斯\n可重复使用——任务间显示状态"
-			}
-			ProphecyDust: {
-				DisplayName: 预言尘
-				Tooltip: "'处理过的预言球的空灵残留'\n制作凤凰社装备的材料"
-			}
-			ChronalSand: {
-				DisplayName: 时间之沙
-				Tooltip: "'稳定沙漏中的时间灌注残留'\n制作时间装备的材料"
-			}
-			VeilThread: {
-				DisplayName: 帷幕丝线
-				Tooltip: "'封印帷幕裂缝的暗黑薄纱'\n制作死亡守护装备的材料"
-			}
-			OrderBadge: {
-				DisplayName: 凤凰社徽章
-				Tooltip: "'邓布利多的军队——凤凰社屹立'\n+8%咒语伤害 +5防御 +4%耐力\n免疫黑暗诅咒 被动绝望抵抗"
-			}
-			AzkabanBreachStone: {
-				DisplayName: 阿兹卡班裂隙石
-				Tooltip: "'监狱反幻影移形结界的碎片'\n召唤阿兹卡班绝望事件\n需要击败石巨人，仅限夜间"
-			}
-			AzkabanWardSigil: {
-				DisplayName: 阿兹卡班守护符印
-				Tooltip: "'以银色和希望描绘的小型守护阵'\n施加希望守护3分钟\n帮助抵抗绝望积累"
-			}
-			GringottsVaultKey: {
-				DisplayName: 古灵阁金库钥匙
-				Tooltip: "'妖精锻造，妖精授权'\n激活授权的古灵阁金库回收任务\n可重复使用——任务间显示状态"
-			}
-			KnockturnPass: {
-				DisplayName: 翻倒巷通行证
-				Tooltip: "'沿着黑暗的小巷走去...'\n激活翻倒巷诅咒物品封锁合同\n需要：已访问对角巷 + 击败贝拉特里克斯"
-			}
-			CursedResidue: {
-				DisplayName: 诅咒残留
-				Tooltip: "'封锁诅咒物品后的暗黑污渍'\n制作暗黑处理装备的材料"
-			}
-			HandOfGlory: {
-				DisplayName: 光荣之手
-				Tooltip: "'只为持有者照亮'\n夜视 矿物感应 减少仇恨\n黑暗中：+6%伤害 +4防御"
-			}
-			LeakyCauldronToken: {
-				DisplayName: 破釜酒吧令牌
-				Tooltip: "'通往对角巷的大门'\n使用进入巫师购物街\n获得购物日增益：更好的价格、运气、宝藏感应\n需要：击败蛇怪"
-			}
-			GalleonDust: {
-				DisplayName: 加隆尘
-				Tooltip: "'来自古老金库的魔法金粉'\n制作寻宝装备的材料"
-			}
-			GoblinLedger: {
-				DisplayName: 妖精账本
-				Tooltip: "'妖精们保持着一丝不苟的记录'\n+幸运 金币吸引 宝藏感应 +5%所有伤害"
-			}
-			AzkabanWardensKey: {
-				DisplayName: 阿兹卡班狱长之钥
-				Tooltip: "'即使最黑暗的夜也会过去'\n免疫黑暗和黑暗诅咒\n守护神激活时: +12%伤害 +4生命再生"
-			}
-			WandOfDestiny: {
-				DisplayName: 旧版命运之杖
-				Tooltip:
-					'''
-					[旧版物品]
-					旧存档中会自动转换为接骨木魔杖
-					“命运之杖”现仅作为接骨木魔杖的 lore 称号
-					'''
-			}
-			PatronusCharm: {
-				DisplayName: 守护神咒
-				Tooltip:
-					'''
-					'呼神护卫！'
-					召唤一个强大的守护神守卫（占用2个仆从栏位）
-					激活时+10防御和+2生命回复
-					对摄魂怪与阿兹卡班系黑暗敌人造成高额额外伤害
-					施放时净化黑魔法腐化
-					警告：黑魔法腐化越高，守护神越弱
-					'''
-			}
-			DarkMarkSummon: {
-				DisplayName: 黑魔标记（尸骨再现）
-				Tooltip: "'尸骨再现！'\n在天空中施放黑魔标记\n触发食死徒入侵\n仅在困难模式夜间可用"
-			}
-			CypressWand: {
-				DisplayName: 柏木魔杖
-				Tooltip: "'与高贵和英勇赴死的意愿相关'\n施放结膜炎恶咒——致盲并诅咒敌人\n专为Boss战设计：长持续时间的被施咒效果削弱强大敌人"
-			}
-			UnbreakableVow: {
-				DisplayName: 牢不可破誓言
-				Tooltip:
-					'''
-					'你必须明白，违背牢不可破誓言的人……会死'
-					+25%召唤伤害，+1最大仆从数
-					但你受到15%更多伤害
-					高风险，高回报
-					'''
-			}
-			RowanWand: {
-				DisplayName: 花楸木魔杖
-				Tooltip: "'花楸木一直深受保护魔法的青睐'\n施放爆炸（爆炸咒）——在区域内摧毁地形的爆炸诅咒\n巫师玩家的挖掘魔杖"
-			}
-			BirchWand: {
-				DisplayName: 桦木魔杖
-				Tooltip: "'适应性极强，最适合年轻人'\n施放倒挂金钟（倒挂金钟咒）——将敌人弹射上天并施加诅咒"
-			}
-			PeppermintToad: {
-				DisplayName: 薄荷蟾蜍
-				Tooltip: "'来自蜂蜜公爵——它真的会在你肚子里跳！'\n获得迅捷、脚蹼和饱食效果，持续5分钟"
-			}
-			ChocolateCauldron: {
-				DisplayName: 巧克力坩埚
-				Tooltip: "'装满火焰威士忌——蜂蜜公爵的精品'\n恢复100法力，获得魔力增强和法力回复"
-			}
-			WeasleyBlazeBox: {
-				DisplayName: 韦斯莱基础烈焰盒
-				Tooltip: "'韦斯莱魔法把戏坊——烈焰系列'\n范围火焰爆发，在大范围内点燃敌人"
-			}
-			LarchWand: {
-				DisplayName: 落叶松魔杖
-				Tooltip:
-					'''
-					'落叶松一直是一种被严重低估的木材'
-					在两个实用咒语之间交替：
-					终了结束（终结咒）——清除你和附近队友的所有减益
-					飞来飞去（飞来咒）——在巨大范围内将所有掉落物品拉向你
-					'''
-			}
-			RedOakWand: {
-				DisplayName: 红橡木魔杖
-				Tooltip: "'红橡木是反应迅速者的理想搭配'\n施放滑稽滑稽——专克博格特的反恐惧咒\n对博格特造成5倍伤害（其真正用途）\n施放时清除恐惧与黑暗类减益\n对付摄魂怪请用守护神"
-			}
-			PepperupPotion: {
-				DisplayName: 胡椒提神汤
-				Tooltip: "'你的耳朵会冒好几个小时的蒸汽'\n+25%速度，+15%攻击速度\n火焰和寒冷免疫"
-			}
-			SkeleGro: {
-				DisplayName: 生骨灵
-				Tooltip: "'你今晚有的受了'——庞弗雷夫人\n大量生命回复（+20回复）\n但十分痛苦：骨骼再生时-10%移动速度"
-			}
-
-			// === BOSS LOOT ===
-			BasiliskBag: {
-				DisplayName: 宝藏袋（蛇怪）
-				Tooltip: "{$CommonItemTooltip.RightClickToOpen}"
-			}
-			BasiliskEye: {
-				DisplayName: 蛇怪之眼
-				Tooltip: "'不要直视它的眼睛'\n免疫石化和石头\n+8%咒术伤害\n[专家模式专属]"
-			}
-			BasiliskTrophy: {
-				DisplayName: 蛇怪奖杯
-				Tooltip: ""
-			}
-			HorntailBag: {
-				DisplayName: 宝藏袋（匈牙利树蜂龙）
-				Tooltip: "{$CommonItemTooltip.RightClickToOpen}"
-			}
-			DragonHeart: {
-				DisplayName: 龙心
-				Tooltip: "'龙心弦能制作最强大的魔杖'\n火焰、熔岩和灼烧免疫\n+12%咒术伤害，高速移动时留下火焰轨迹\n[专家模式专属]"
-			}
-			HorntailTrophy: {
-				DisplayName: 树蜂龙奖杯
-				Tooltip: ""
-			}
-			VoldemortBag: {
-				DisplayName: 宝藏袋（伏地魔）
-				Tooltip: "{$CommonItemTooltip.RightClickToOpen}"
-			}
-			SoulFragment: {
-				DisplayName: 伏地魔灵魂碎片
-				Tooltip:
-					'''
-					'他将灵魂分裂了七次……但这是最后一块碎片'
-					+20%全伤害，+15%咒术伤害，+10防御
-					但会腐蚀：-20最大生命值，黑暗光环
-					[专家模式专属]
-					'''
-			}
-			VoldemortTrophy: {
-				DisplayName: 伏地魔奖杯
-				Tooltip: ""
-			}
-
-			// === PHASE 17 ===
-			DuelingDummyItem: {
-				DisplayName: 决斗假人
-				Tooltip: "'做好防备！'\n放置一个显示伤害数字的训练靶\n测试你的咒术DPS——假人无法被摧毁"
-			}
-			WizardChessSet: {
-				DisplayName: 巫师棋套装
-				Tooltip: "'太野蛮了！''这就是巫师棋。'\n研究战术获得战斗和狂怒增益，持续5分钟\n可重复使用"
-				UseMessage: "你研究棋盘……你的战术意识变得更加敏锐！"
-			}
-
-			// === PHASE 18 ===
-			HogwartsLetter: {
-				DisplayName: 霍格沃茨录取通知书
-				Tooltip:
-					'''
-					'亲爱的学生，我们很高兴通知您……'
-					打开信件了解巫师世界模组
-					获赠一份魔法精华入门包
-					'''
-			}
-			EbonyWand: {
-				DisplayName: 乌木魔杖
-				Tooltip:
-					'''
-					'非常适合各种战斗魔法'
-					施放幻影移形——传送到光标位置！
-					最大范围：37格。无法穿墙。
-					传送间隔3秒冷却
-					'''
-			}
-
-			// === PHASE 15 ===
-			WizardSpectacles: {
-				DisplayName: 巫师眼镜
-				Tooltip: "'圆框眼镜，就像哈利的一样'\n时装饰品"
-			}
-			LightningScar: {
-				DisplayName: 闪电伤疤
-				Tooltip: "'那道伤疤已经十九年没有痛过了。一切安好。'\n获得危险感知——邪恶靠近时伤疤会灼痛\n+3%咒术伤害"
-			}
-			WizardBeard: {
-				DisplayName: 巫师长胡须
-				Tooltip: "'长到可以塞进腰带里'\n时装饰品——释放你内心的邓布利多"
-			}
-			KneazleItem: {
-				DisplayName: 猫粮
-				Tooltip: "'狸猫是非常聪明的类猫生物'\n召唤一只能探测敌人的狸猫宠物"
-			}
-			DailyProphet: {
-				DisplayName: 预言家日报
-				Tooltip: "'所有值得刊登的新闻'\n显示当前世界状态：Boss状况、事件、月相\n可重复使用——使用时不消耗"
-			}
-
-			// === PHASE 20 ===
-			SpellBook: {
-				DisplayName: 标准咒语书
-				Tooltip:
-					'''
-					'米兰达·戈沙克 著'
-					游戏内所有魔杖和咒语的参考指南
-					多次使用可浏览5页
-					展示魔杖等级、伤害数值、咒语和制作提示
-					由奥利凡德出售。可重复使用
-					'''
-				Guide: {
-					OverviewTitle: "=== 标准咒语书 ==="
-					OverviewAuthor: "作者：米兰达·戈沙克"
-					OverviewBrowse: "再次使用以浏览页面（共5页）："
-					OverviewPage1: "  第1页：早期魔杖（Boss前）"
-					OverviewPage2: "  第2页：中期魔杖（Boss后 / 困难模式）"
-					OverviewPage3: "  第3页：后期魔杖（机械Boss后 / 终局）"
-					OverviewPage4: "  第4页：功能咒语"
-					Page1Title: "=== 第1页：早期魔杖 ==="
-					Page1Line1: "橡木魔杖 [12伤害] — Stupefy（眩晕箭）"
-					Page1Line2: "  配方：木材 + 坠星 @ 工作台"
-					Page1Line3: "柳木魔杖 [16伤害] — Expelliarmus（击退箭）"
-					Page1Line4: "  配方：木材 + 坠星 + 蓝宝石 @ 工作台"
-					Page1Line5: "白蜡木魔杖 [22伤害] — Incendio（火焰箭）"
-					Page1Line6: "  配方：白蜡木 + 狱石 + 红宝石 @ 附魔台"
-					Page1Line7: "冬青木魔杖 [28伤害] — Expelliarmus + Protego护盾"
-					Page1Line8: "红橡木魔杖 [32伤害] — Riddikulus（克制博格特 / 恐惧）"
-					Page1Line9: "花楸木魔杖 [30伤害] — Bombarda（可破坏地形！）"
-					Page1Line10: "桦木魔杖 [28伤害] — Levicorpus（将敌人抛向空中）"
-					Page2Title: "=== 第2页：中期魔杖 ==="
-					Page2Line1: "凤凰羽毛 [30伤害] — Incendio（有几率双发）"
-					Page2Line2: "  需求：狱石锭 + 羽毛"
-					Page2Line3: "龙心弦 [42伤害] — Sectumsempra（流血诅咒）"
-					Page2Line4: "山楂木 [38伤害] — 连锁Stupefy（弹跳4个敌人）"
-					Page2Line5: "黑刺李木 [35伤害] — Impedimenta（范围减速）"
-					Page2Line6: "柏木 [30伤害] — Conjunctivitis（Boss减益工具）"
-					Page2Line7: "独角兽毛 [55伤害] — Expecto Patronum（追踪守护者）"
-					Page2Line8: "  需求：珍珠木 + 独角兽角 + 光明之魂"
-					Page2Line9: "紫杉木 [48伤害] — Crucio（持续伤害光束）"
-					Page3Title: "=== 第3页：后期与终局魔杖 ==="
-					Page3Line1: "乌木魔杖 — Apparition（传送到光标处！）"
-					Page3Line2: "  需求：乌木 + 光明/黑暗之魂 + 魔法精华"
-					Page3Line3: "老魔杖 [120伤害] — Avada Kedavra（杀戮咒）"
-					Page3Line4: "  掉落：伏地魔"
-					Page3Line5: "厉火魔杖 [95伤害] — 不断蔓延的诅咒火焰"
-					Page3Line6: "  需求：狱石 + 灵魂 + 日耀碎片 + 魔法精华"
-					Page3Line7: "老魔杖精通已取代旧的命运魔杖路线"
-					Page3Line8: "  通过魔杖精通掌控老魔杖，赢得其传奇称号"
-					Page3Line9: "  “命运魔杖”如今只是传说文本，不再是独立物品"
-					Page4Title: "=== 第4页：功能咒语 ==="
-					Page4Line1: "落叶松魔杖 — 交替施放 Finite Incantatem（清除减益）与 Accio（拉取物品）"
-					Page4Line2: "雪松魔杖 — Lumos Maxima（巨型光球，可伤害不死生物）"
-					Page4Line3: "榆木魔杖 — Reparo（修复结界、Protego力场与房间增益）"
-					Page4Tip1: "提示：附魔台也算工作台！"
-					Page4Tip2: "提示：魔法精华会从所有魔法生物掉落！"
-					Page4Tip3: "提示：Patronus 才是对付摄魂怪的真正答案。对付博格特请用 Riddikulus。"
-				}
-			}
-
-			// === PHASE 22 ===
-			SlytherinsDagger: {
-				DisplayName: 斯莱特林之匕
-				Tooltip:
-					'''
-					'那些狡猾的人会不择手段达到目的'
-					大幅+20%暴击率
-					暴击时施加被施咒，每次命中施加剧毒
-					蛇之一击——快速而致命
-					'''
-			}
-			RavenclawsStaff: {
-				DisplayName: 拉文克劳的智慧法杖
-				Tooltip:
-					'''
-					'超凡的智慧是人类最大的财富'
-					极低法力消耗（5）——智慧节约能量
-					发射穿透性智慧光束
-					手持时所有咒语-10%法力消耗
-					'''
-			}
-			HufflepuffsMace: {
-				DisplayName: 赫奇帕奇的忠诚之锤
-				Tooltip:
-					'''
-					'那些耐心的赫奇帕奇忠诚无畏，不惧辛劳'
-					沉重一击，巨大击退力
-					造成伤害的10%转化为治疗
-					手持时+5防御——獾保护自己人
-					'''
-			}
-			UnicornBlood: {
-				DisplayName: 独角兽血
-				Tooltip:
-					'''
-					'它能让你活着，即使你濒临死亡，但代价是可怕的'
-					稀有掉落——仅在夜间的禁林中出现
-					用于制作最强大的巫师物品
-					'''
-			}
-			MasterWizardBanner: {
-				DisplayName: 大巫师旗帜
-				Tooltip:
-					'''
-					'同时代最伟大的巫师'
-					终极奖杯——需要全部3个Boss奖杯+三强杯+独角兽血
-					+10%全伤害，+5%咒术伤害，+8防御，+20法力，+2回复
-					金色大巫师光环
-					'''
-			}
-			FelixCauldron: {
-				DisplayName: 福灵剂坩埚
-				Tooltip:
-					'''
-					'一个永远在酿制液体幸运的坩埚'
-					使用时给予附近所有玩家10分钟幸运增益
-					胜利的终极庆典
-					'''
-				UseMessage: "坩埚翻涌着液体黄金……你感到自己幸运非凡！"
-			}
-
-			// === PHASE 24 ===
-			DragonScaleHelm: {
-				DisplayName: 龙鳞头盔
-				Tooltip: "+10%咒术伤害，+30最大法力"
-				SetBonus: "龙火护盾：火焰/熔岩免疫，+18%咒术伤害，火焰光环"
-			}
-			DragonScaleBreastplate: {
-				DisplayName: 龙鳞胸甲
-				Tooltip: "+12%咒术伤害，+6%伤害减免，+40最大生命值"
-			}
-			DragonScaleGreaves: {
-				DisplayName: 龙鳞护胫
-				Tooltip: "+15%移动速度，+1最大奔跑速度，+5法力回复"
-			}
-			Nimbus2001Broomstick: {
-				DisplayName: 光轮2001
-				Tooltip:
-					'''
-					'马尔福的父亲给整支队伍买了光轮2001'
-					现存最快的飞天扫帚
-					高速飞行时+8%伤害
-					'''
-			}
-
-			// === PHASE 25 ===
-			PadfootAmulet: {
-				DisplayName: 大脚板护身符
-				Tooltip:
-					'''
-					'恶作剧完毕'
-					小天狼星·布莱克的阿尼马格斯护身符
-					+20%移动速度，+2最大奔跑速度
-					-200敌人仇恨——犬形悄然穿过
-					'''
-			}
-			ProngsCharm: {
-				DisplayName: 尖头叉子护符
-				Tooltip:
-					'''
-					'爱我们的人永远不会真正离开我们'
-					詹姆·波特的牡鹿守护神护符
-					+10%咒术伤害，+5%咒术暴击
-					+10%召唤伤害——增强你的守护神守卫
-					'''
-			}
-
-			// === BOSS EXPANSION ===
-			TrollClub: {
-				DisplayName: 山怪棒
-				Tooltip: "'山怪鼻涕。那更恶心了。'\n缓慢但毁灭性——巨大击退力"
-			}
-			TrollSummonItem: {
-				DisplayName: 臭袜子
-				Tooltip: "'这股味道能引来它'\n召唤山怪"
-			}
-			TrollBag: {
-				DisplayName: 宝藏袋（山怪）
-				Tooltip: "{$CommonItemTooltip.RightClickToOpen}"
-			}
-			TrollHide: {
-				DisplayName: 山怪兽皮
-				Tooltip: "'像城墙一样厚实'\n+8防御，+10%击退抗性\n[专家模式专属]"
-			}
-			TrollTrophy: {
-				DisplayName: 山怪奖杯
-				Tooltip: ""
-			}
-			AragogSummonItem: {
-				DisplayName: 八眼巨蛛卵
-				Tooltip: "'跟着蜘蛛走……'\n召唤八眼巨蛛之祖阿拉戈克\n仅困难模式"
-			}
-			SpiderSilkWeave: {
-				DisplayName: 蛛丝编织物
-				Tooltip: "'比钢铁坚韧，比空气轻盈'\n制作材料"
-			}
-			AragogBag: {
-				DisplayName: 宝藏袋（阿拉戈克）
-				Tooltip: "{$CommonItemTooltip.RightClickToOpen}"
-			}
-			AragogsFang: {
-				DisplayName: 阿拉戈克之牙
-				Tooltip: "'族长的馈赠'\n+15%暴击率\n敌人有10%几率掉落额外战利品\n[专家模式专属]"
-			}
-			AragogTrophy: {
-				DisplayName: 阿拉戈克奖杯
-				Tooltip: ""
-			}
-			FluffySummonItem: {
-				DisplayName: 魔法笛子
-				Tooltip: "'音乐能安抚凶猛的野兽'\n召唤三头犬路威\n需要击败机械Boss后"
-			}
-			CerberusFang: {
-				DisplayName: 三头犬之牙
-				Tooltip: "'来自活板门的守卫者'\n制作材料"
-			}
-			FluffyBag: {
-				DisplayName: 宝藏袋（路威）
-				Tooltip: "{$CommonItemTooltip.RightClickToOpen}"
-			}
-			ThreeHeadedCollar: {
-				DisplayName: 三头项圈
-				Tooltip: "'即使路威也能被驯服……算是吧'\n+3最大仆从数\n-10%移动速度\n[专家模式专属]"
-			}
-			FluffyTrophy: {
-				DisplayName: 路威奖杯
-				Tooltip: ""
-			}
-			BellatrixSummonItem: {
-				DisplayName: 阿兹卡班囚犯标签
-				Tooltip: "'她是他最忠实的仆人'\n召唤贝拉特里克斯·莱斯特兰奇\n需要击败世纪之花后"
-			}
-			DarkArtsTome: {
-				DisplayName: 黑魔法典籍
-				Tooltip: "'高级黑魔法知识'\n制作材料"
-			}
-			BellatrixBag: {
-				DisplayName: 宝藏袋（贝拉特里克斯·莱斯特兰奇）
-				Tooltip: "{$CommonItemTooltip.RightClickToOpen}"
-			}
-			BellatrixWandHand: {
-				DisplayName: 贝拉特里克斯的持杖手
-				Tooltip: "'她是一个真正的信徒'\n+20%咒术伤害，-15%法力消耗\n但受到的伤害增加8%\n[专家模式专属]"
-			}
-			BellatrixTrophy: {
-				DisplayName: 贝拉特里克斯奖杯
-				Tooltip: ""
-			}
-			FenrirSummonItem: {
-				DisplayName: 染血之爪
-				Tooltip: "'改变一切的咬噬'\n召唤芬里尔·格雷伯克\n仅在血月期间可用！"
-			}
-			WerewolfPelt: {
-				DisplayName: 狼人皮毛
-				Tooltip: "'还有余温'\n制作材料"
-			}
-			FenrirBag: {
-				DisplayName: 宝藏袋（芬里尔·格雷伯克）
-				Tooltip: "{$CommonItemTooltip.RightClickToOpen}"
-			}
-			LycansBiteMark: {
-				DisplayName: 狼人咬痕
-				Tooltip: "'改变一切的咬噬'\n+20%近战伤害\n夜间+15%移动速度\n白天-5%伤害\n[专家模式专属]"
-			}
-			FenrirTrophy: {
-				DisplayName: 芬里尔奖杯
-				Tooltip: ""
-			}
-			DementorKingSummonItem: {
-				DisplayName: 冰封灵魂灯笼
-				Tooltip: "'吸引最黑暗生物的光芒'\n召唤摄魂怪之王\n需要击败拜月教徒后，仅限夜间"
-			}
-			DementorsShroud: {
-				DisplayName: 摄魂怪之帷
-				Tooltip: "'由纯粹的绝望编织而成'\n终局制作材料"
-			}
-			DementorKingBag: {
-				DisplayName: 宝藏袋（摄魂怪之王）
-				Tooltip: "{$CommonItemTooltip.RightClickToOpen}"
-			}
-			SoulSiphon: {
-				DisplayName: 灵魂虹吸
-				Tooltip: "'以绝望为食'\n所有伤害为你治疗3%\n附近敌人-5防御\n[专家模式专属]"
-			}
-			DementorKingTrophy: {
-				DisplayName: 摄魂怪之王奖杯
-				Tooltip: ""
-			}
-			QuirrellSummonItem: {
-				DisplayName: 可疑的头巾
-				Tooltip: "'世上没有善恶之分，只有权力'\n召唤奇洛教授"
-			}
-			QuirrellBag: {
-				DisplayName: 宝藏袋（奇洛教授）
-				Tooltip: "{$CommonItemTooltip.RightClickToOpen}"
-			}
-			QuirrellsTurban: {
-				DisplayName: 奇洛的头巾
-				Tooltip: "'那下面藏着什么东西……'\n+5%咒术伤害，显示附近敌人\n但你受到3%更多伤害（伏地魔的影响）\n[专家模式专属]"
-			}
-			QuirrellTrophy: {
-				DisplayName: 奇洛奖杯
-				Tooltip: ""
-			}
-			UmbridgeSummonItem: {
-				DisplayName: 教育法令
-				Tooltip: "'我不可以说谎'\n召唤多洛雷斯·乌姆里奇\n需要击败机械Boss后"
-			}
-			UmbridgeBag: {
-				DisplayName: 宝藏袋（多洛雷斯·乌姆里奇）
-				Tooltip: "{$CommonItemTooltip.RightClickToOpen}"
-			}
-			MinistryBadge: {
-				DisplayName: 魔法部徽章
-				Tooltip: "'魔法部已经决定……'\n免疫被施咒和混乱\n+5防御，但-5%伤害\n[专家模式专属]"
-			}
-			UmbridgeTrophy: {
-				DisplayName: 乌姆里奇奖杯
-				Tooltip: ""
-			}
-			UmbridgesQuill: {
-				DisplayName: 乌姆里奇的血羽毛笔
-				Tooltip: "'我不可以说谎'\n快速咒术武器，施加流血+被施咒"
-			}
-			BartyCrouchSummonItem: {
-				DisplayName: 可疑的酒壶
-				Tooltip: "'时刻保持警惕！'\n召唤伪装中的小巴蒂·克劳奇\n需要击败世纪之花后"
-			}
-			BartyCrouchBag: {
-				DisplayName: 宝藏袋（小巴蒂·克劳奇）
-				Tooltip: "{$CommonItemTooltip.RightClickToOpen}"
-			}
-			PolyjuiceFlask: {
-				DisplayName: 复方汤剂酒壶
-				Tooltip: "'时刻保持警惕！'\n+12%全伤害，+10%移动速度\n每30秒短暂隐身\n[专家模式专属]"
-			}
-			BartyCrouchTrophy: {
-				DisplayName: 小巴蒂·克劳奇奖杯
-				Tooltip: ""
-			}
-			SpiderSilkCloak: {
-				DisplayName: 蛛丝斗篷
-				Tooltip: "'由阿拉戈克最精美的蛛丝编织而成'\n-300敌人仇恨，+10%速度，+8%咒术伤害\n轻盈且几乎隐形"
-			}
-			CerberusFangNecklace: {
-				DisplayName: 三头犬牙项链
-				Tooltip: "'三个头，三个仆从'\n+5防御，+1最大仆从数，增加召唤物击退力"
-			}
-			DarkArtsGrimoire: {
-				DisplayName: 黑魔法魔典
-				Tooltip: "'高级黑魔法，武器化'\n发射3道暗影光束散射\n由贝拉特里克斯的禁忌知识制作"
-			}
-			WerewolfCloak: {
-				DisplayName: 狼人斗篷
-				Tooltip: "'月光下，内心的野兽赋予你力量'\n夜间：+20%近战，+15%速度，+10防御\n白天：+5%近战，+5%速度"
-			}
-			DementorsEmbrace: {
-				DisplayName: 摄魂怪之拥
-				Tooltip: "'拥抱摄魂怪就是将绝望化为力量'\n+15%全伤害，+10%咒术伤害\n但-30最大生命值和黑暗光环\n终局黑暗饰品"
-			}
-			MagicalKoi: {
-				DisplayName: 魔法锦鲤
-				Tooltip: "'一条散发内在魔力光芒的鱼'\n食用获得2分钟幸运+法力回复增益\n也可用作药水原料"
-			}
-			MerfolkScale: {
-				DisplayName: 人鱼鳞片
-				Tooltip: "'由深海人鱼脱落'\n制作材料——海洋钓鱼获得"
-			}
-			EnchantedTadpole: {
-				DisplayName: 魔法蝌蚪
-				Tooltip: "'它在闪闪发光！'\n优质鱼饵（40力量）或食用获得2-4个魔法精华\n在禁林中钓获"
-			}
-			WizardCrate: {
-				DisplayName: 巫师宝箱
-				Tooltip: "'一箱巫师用品'\n右键打开获得随机巫师药水、饰品和精华\n稀有困难模式钓鱼获取"
-			}
-			WizardCrateHardmode: {
-				DisplayName: 大法师宝箱
-				Tooltip: "'一箱注入困难模式魔力的宝箱'\n右键获得困难模式巫师药水、稀有饰品、Boss材料\n稀有机械Boss后钓鱼获取"
-			}
-			SkivingSnackbox: {
-				DisplayName: 逃课零食盒
-				Tooltip: "'韦斯莱魔法把戏坊——逃脱一切！'\n食用装病：5秒无敌+隐身\n敌人完全对你失去兴趣\n触发药水冷却"
-			}
-			PukingPastille: {
-				DisplayName: 呕吐软糖
-				Tooltip: "'不适合胃弱的人'\n立即清除所有减益\n但消耗30生命值——仅供紧急使用"
-			}
-			NosebleedNougat: {
-				DisplayName: 流鼻血牛轧糖
-				Tooltip: "'以血换力'\n失去50生命值，立即恢复200法力\n+30秒法力回复"
-			}
-			DemiguiseHair: {
-				DisplayName: 隐形兽毛发
-				Tooltip: "'用于编织隐形衣'\n消耗获得30秒隐身\n或用作制作材料"
-			}
-			MerfolkAmulet: {
-				DisplayName: 人鱼护身符
-				Tooltip: "'大海回应佩戴它的人'\n永久获得鳃和脚蹼\n水下时+10%伤害和+15%速度"
-			}
-			DragonToothNecklace: {
-				DisplayName: 龙牙项链
-				Tooltip:
-					'''
-					'由龙火和三头之怒锻造'
-					需要树蜂龙+路威材料——跨Boss奖励
-					+12%全伤害，+8护甲穿透
-					移动时留下火焰轨迹
-					'''
-			}
-			VenomSilkWraps: {
-				DisplayName: 毒丝裹布
-				Tooltip:
-					'''
-					'注入蛇怪毒液的蛛丝'
-					需要阿拉戈克+蛇怪材料——跨Boss奖励
-					+10%咒术伤害，+15%暴击率
-					免疫中毒和剧毒
-					'''
-			}
-			DarkLordsBane: {
-				DisplayName: 黑魔王克星
-				Tooltip:
-					'''
-					'克服每一个挑战的联合力量'
-					需要所有巫师Boss的材料
-					+15%全伤害，+10%咒术，+10防御，+4回复
-					免疫中毒、剧毒和火焰
-					终极跨Boss饰品
-					'''
-			}
-			WizardFishingRod: {
-				DisplayName: 附魔钓竿
-				Tooltip: "'鱼几乎会自己上钩！'\n30%钓鱼力量\n附魔吸引魔法鱼类"
-			}
-			Firewhiskey: {
-				DisplayName: 奥格登陈年火焰威士忌
-				Tooltip: "'从内到外温暖你……猛烈地'\n+12%全伤害，+8%暴击，持续4分钟\n副作用：偶尔短暂微醉混乱+火焰吐息"
-			}
-			PygmyPuffItem: {
-				DisplayName: 侏儒蒲绒绒
-				Tooltip: "'韦斯莱魔法把戏坊——我们最可爱的产品！'\n召唤一只粉色侏儒蒲绒绒宠物\n迷你蒲绒绒——可爱又无害"
-			}
-			DirigiblePlumEarring: {
-				DisplayName: 飞天李子耳环
-				Tooltip: "'飞天李子帮助你接受非凡之事'\n缓降，+2跳跃速度，自动跳跃\n卢娜·洛夫古德的标志性饰品"
-			}
-			EnchantedTrollClub: {
-				DisplayName: 附魔山怪棒
-				Tooltip: "'不知怎的，给山怪棒附魔后它变得更加野蛮了'\n升级版山怪棒——攻击产生范围冲击波\n巨大击退力"
-			}
-			WandHolster: {
-				DisplayName: 魔杖套
-				Tooltip: "'拔得更快，施法更快，赢得更快'\n+10%施法速度\n+5%咒术伤害，-5%法力消耗"
-			}
-			ThestralReins: {
-				DisplayName: 夜骐缰绳
-				Tooltip: "'只有目睹过死亡的人才能看到'\n召唤一匹夜骐坐骑——暗黑飞行坐骑\n骑乘时获得夜视+敌人探测"
-			}
-			AshwinderEgg: {
-				DisplayName: 灰蛇蛋
-				Tooltip: "'极度灼热——在它烧毁你的房子之前冻住它！'\n消耗获得2分钟火焰/熔岩免疫+炼狱光环\n爱情魔药的关键原料"
-			}
-			WizengamotHood: {
-				DisplayName: 威森加摩兜帽
-				Tooltip: "+15%咒术伤害，+40最大法力"
-				SetBonus: "奥术权威：+30%咒术伤害，-20%法力消耗，+60法力，+8法力回复"
-			}
-			WizengamotRobes: {
-				DisplayName: 威森加摩长袍
-				Tooltip: "+15%咒术伤害，+15%咒术暴击，+8%伤害减免，+60最大生命值"
-			}
-			WizengamotBoots: {
-				DisplayName: 威森加摩长靴
-				Tooltip: "+15%移动速度，+1.5奔跑速度，+6法力回复"
-			}
-			PhoenixTear: {
-				DisplayName: 凤凰之泪
-				Tooltip:
-					'''
-					'凤凰之泪拥有巨大的治疗力量'
-					立即恢复全部生命值和法力
-					清除所有减益
-					不会触发药水疾病
-					巫师世界中最稀有的治疗物品
-					'''
-			}
-			GrindylowTooth: {
-				DisplayName: 格林迪洛之牙
-				Tooltip: "'锋利且带有微弱魔力'\n制作材料——由格林迪洛掉落或钓鱼获得"
-			}
-			AquaFortis: {
-				DisplayName: 强水药剂
-				Tooltip: "'水中战士的灵药'\n鳃+水免疫\n水下时：+20%伤害，+8防御，+20%速度\n由钓鱼获取物制作"
-			}
-			WizardPocketWatch: {
-				DisplayName: 巫师怀表
-				Tooltip: "'时间是神秘之物'\n显示时间，+5%移动速度，+5%攻击速度"
-			}
-			MandrakeRestorative: {
-				DisplayName: 曼德拉草恢复药水
-				Tooltip: "'成熟后，它们的叫声能使任何石化者复苏'\n恢复50生命值+治愈石化、被施咒、黑魔法诅咒和所有衰弱减益\n经典蛇怪石化解药"
-			}
-			KeeperGloves: {
-				DisplayName: 魁地奇守门员手套
-				Tooltip: "'你休想让鬼飞球穿过这些球门'\n+8防御，击退免疫，20%荆棘伤害\n守门员的最佳伙伴"
-			}
-			SeekersReflexes: {
-				DisplayName: 找球手反应药水
-				Tooltip: "'抓金色飞贼必须手快'\n+15%速度，+10%闪避，+10%攻击速度，持续4分钟\n由稀有金蛋制作"
-			}
-			Spectrespecs: {
-				DisplayName: 分光眼镜
-				Tooltip: "'它们能让疣巴灵可见，你知道的'\n显示所有敌人+危险感知\n+5%咒术暴击率\n卢娜·洛夫古德的标志性彩虹眼镜"
-			}
-			FoeGlass: {
-				DisplayName: 敌镜
-				Tooltip: "'当你的敌人靠近时，影子会变得更清晰'\n显示所有敌人、危险感知、夜视\n+3%伤害。Boss激活时在提示中显示Boss生命值%\n穆迪最爱的黑暗探测器"
-			}
-			GobletOfFire: {
-				DisplayName: 火焰杯
-				Tooltip: "'火焰杯选出勇士'\n使用时给予附近所有玩家战斗+愤怒+狂怒增益\n可重复使用的传奇家具"
-				UseMessage: 火焰杯熊熊燃烧！附近所有勇士获得力量！
-			}
-			BabyDragonItem: {
-				DisplayName: 龙蛋（已孵化）
-				Tooltip: "'是一条龙！海格一定会很自豪的。'\n召唤一只匈牙利树蜂龙幼崽发光宠物\n由树蜂龙的金蛋制作"
-			}
-			FairyWings: {
-				DisplayName: 仙子翅膀
-				Tooltip: "'巫师世界的仙子远比想象的美丽'\n获得飞行+缓降\n飞行时留下闪光轨迹"
-			}
-			QuillOfAcceptance: {
-				DisplayName: 录取之笔
-				Tooltip: "'这支笔自霍格沃茨建校以来就存放于此'\n+8%咒术伤害，+5%咒术暴击，+5咒术护甲穿透"
-			}
-			GoblinSilverSword: {
-				DisplayName: 妖精打造银剑
-				Tooltip: "'妖精是巫师世界最出色的金属工匠'\n命中施加点金——妖精打造，吸收敌人财富\n由银和金在附魔台制作"
-			}
-			MoodysEye: {
-				DisplayName: 穆迪的魔眼
-				Tooltip: "'时刻保持警惕！'\n显示所有敌人、宝藏、陷阱、电线\n夜视+危险感知+5%伤害\n魔眼看穿一切"
-			}
-			DragonScaleRing: {
-				DisplayName: 龙鳞戒指
-				Tooltip: "'在龙火中锻造'\n火焰免疫+8%咒术伤害+5%全伤害\n紧凑的防火戒指"
-			}
-			PhoenixAsh: {
-				DisplayName: 凤凰灰烬
-				Tooltip: "'焚烧日的遗留物'\n消耗获得30秒火焰免疫+回复\n或用作复活物品的制作材料"
-			}
-			ResurrectionPotion: {
-				DisplayName: 复活药水
-				Tooltip: "'浴火重生'\n阻止一次死亡：如果你即将死亡，改为恢复至50%生命值\n增益持续10分钟，触发一次"
-			}
-			ShieldCharmPotion: {
-				DisplayName: 盾牌咒药水
-				Tooltip: "'瓶装盔甲护身'\n+10防御，+8%伤害减免，持续5分钟"
-			}
-			EnchantedMirror: {
-				DisplayName: 附魔手镜
-				Tooltip: "'虽然不是厄里斯魔镜，但它能带你回家'\n+3%咒术伤害被动\n由魔镜+精华制作"
-			}
-			DraconisElixir: {
-				DisplayName: 龙血灵药
-				Tooltip: "'龙血有十二种用途——这瓶药水将它们全部利用'\n获得愤怒+狂怒+火焰免疫+炼狱光环，持续4分钟\n终极龙力战斗药水"
-			}
-			JobberknollFeather: {
-				DisplayName: 叽喳鸟羽毛
-				Tooltip: "'包含这只鸟曾听到的每一个声音的回响'\n吐真剂的关键原料\n由叽喳鸟掉落"
-			}
-			BeastHuntersCharm: {
-				DisplayName: 神奇动物猎人护符
-				Tooltip:
-					'''
-					'纽特·斯卡曼德会惊恐的。查理·韦斯莱会赞同的。'
-					需要龙鳞+三头犬之牙+狼人皮毛——三只野兽的击杀
-					+12%全伤害，免疫流血+破甲
-					探测附近所有生物
-					'''
-			}
-			ImpFlame: {
-				DisplayName: 小鬼火焰
-				Tooltip: "'一个微小的活火焰'\n消耗获得30秒炼狱光环\n火焰药水制作材料\n由魔法小鬼掉落"
-			}
-			DugbogHide: {
-				DisplayName: 泥怪兽皮
-				Tooltip: "'像树皮一样坚韧，与环境融为一体'\n隐匿物品制作材料\n由泥怪掉落"
-			}
-			CamouflageCloak: {
-				DisplayName: 迷彩斗篷
-				Tooltip: "'几乎和隐形衣一样好。几乎。'\n-400仇恨，+10%速度\n静止不动时变为隐身\n由泥怪兽皮+隐形兽毛发制作"
-			}
-			FenrirsWolfsbane: {
-				DisplayName: 芬里尔的狼毒药剂
-				Tooltip: "'由头狼本身的精华酿造'\n升级版狼毒药剂——更强的夜间加成\n夜间：+25%近战，+25%速度，+15防御，+10%暴击"
-			}
-			StealthDraught: {
-				DisplayName: 隐匿药水
-				Tooltip: "'像泥怪融入木头一样融入阴影'\n隐身，-500仇恨，+15%速度，持续4分钟\n由泥怪兽皮+隐形兽毛发酿造"
-			}
-			GreatHallBell: {
-				DisplayName: 大礼堂钟
-				Tooltip:
-					'''
-					'魔法天花板映出漫天星光...'
-					敲响参加大礼堂盛宴（每7天一次）
-					盛宴间歇时显示学院杯排名
-					需要穿戴学院盔甲才能参加
-					'''
-			}
-			QuidditchWhistle: {
-				DisplayName: 魁地奇哨
-				Tooltip:
-					'''
-					'霍琦夫人的银哨——比赛开始！'
-					开始学院间魁地奇比赛
-					需要：白天、骑扫帚、穿戴学院盔甲
-					比赛间隔时显示排名
-					'''
-			}
-			SpectralEssence: {
-				DisplayName: 幽灵精华
-				Tooltip:
-					'''
-					'从夜骐信标中采集的月光残留物'
-					制作材料
-					'''
-			}
-
-			// === 地标可放置物品 ===
-			HousePointHourglassItem: {
-				DisplayName: 学院积分沙漏
-				Tooltip: "'四个巨大的沙漏追踪着各学院的积分'\n装饰性礼堂地标"
-			}
-			QuidditchGoalpostItem: {
-				DisplayName: 魁地奇球门柱
-				Tooltip: "'球场两端各有三个圆环'\n装饰性魁地奇球场地标"
-			}
-			CastleWardStoneItem: {
-				DisplayName: 城堡守护石
-				Tooltip: "'古老的保护结界环绕着城堡'\n装饰性霍格沃茨防御地标"
-			}
-			WhompingWillowStumpItem: {
-				DisplayName: 打人柳树桩
-				Tooltip: "'树根下隐藏着一条秘密通道'\n装饰性通道入口地标"
-			}
-			ShriekingShackSignItem: {
-				DisplayName: 尖叫棚屋招牌
-				Tooltip: "'全英国最闹鬼的建筑'\n装饰性霍格莫德地标"
-			}
-			GrimmauldDoorwayItem: {
-				DisplayName: 格里莫广场门廊
-				Tooltip: "'凤凰社总部所在地'\n装饰性安全屋地标"
-			}
-			LeakyCauldronSignItem: {
-				DisplayName: 破釜酒吧招牌
-				Tooltip: "'麻瓜伦敦与对角巷之间的通道'\n装饰性酒馆地标"
-			}
-			GringottsFacadeItem: {
-				DisplayName: 古灵阁外墙
-				Tooltip: "'巫师世界最安全的地方——仅次于霍格沃茨'\n装饰性古灵阁银行地标"
-			}
-			BorginStorefrontItem: {
-				DisplayName: 博金商店门面
-				Tooltip: "'博金与伯克氏——黑魔法物品专营'\n装饰性翻倒巷地标"
-			}
-			StMungosMannequinItem: {
-				DisplayName: 圣芒戈橱窗假人
-				Tooltip: "'珀奇与道斯有限公司橱窗里的旧假人'\n装饰性医院入口地标"
-			}
-			ProphecyShelfItem: {
-				DisplayName: 预言球架
-				Tooltip: "'一排排布满灰尘的玻璃球，每一颗都封存着一则预言'\n装饰性预言厅地标"
-			}
-			VeilArchItem: {
-				DisplayName: 帷幕拱门
-				Tooltip: "'古老的石拱门上飘动着神秘的帷幕'\n装饰性死亡厅地标"
-			}
-		}
-
-		Bestiary: {
-			Dementor: 世间最邪恶的生物之一。它们会吸走周围一切的平静、希望和快乐。只有守护神咒才能驱退它们。
-			Acromantula: 一种拥有极高智慧和恐怖体型的巨型蜘蛛。最初由巫师培育，可能是作为住宅或宝库的守卫生物。
-			MagicPixie: 电蓝色的捣蛋鬼，以制造混乱为乐。虽然体型小，但力量惊人，能够提起和搬运沉重的物体。
-			Troll: 一种可怕的生物，身高十二英尺，皮肤灰暗如花岗岩。山怪是同类中体型最大、最凶残的。
-			Inferius: 被黑魔法复活的尸体。它们感觉不到痛苦，只惧怕火焰。被最黑暗的巫师用作傀儡士兵。
-			Basilisk: 蛇之王。由蟾蜍孵化的鸡蛋中诞生。它的凝视是致命的，它的毒液能摧毁一切——除了凤凰泪。
-			Horntail: 所有龙种中最危险的品种。它有青铜色的犄角和布满尖刺的尾巴。它的火焰射程可达四十英尺。
-			Voldemort: 有史以来最令人恐惧的黑巫师。原名汤姆·马沃罗·里德尔，他将灵魂分裂成碎片以欺骗死亡。只有团结的死亡圣器才能真正终结他。
-			Thestral: 只有目睹过死亡的人才能看到的生物，这些骨骼般的有翼马尽管外表可怕却性情温和。它们被血的气味所吸引。
-			DeathEater: 黑魔王的追随者，身上带有黑魔标记。他们施行最黑暗的魔法，只听从主人的召唤。
-			Ollivander: 一位大师级魔杖匠，其家族自公元前382年起就在制作精良魔杖。他相信是魔杖选择巫师。
-			Hagrid: 一位心地善良的混血巨人，不幸地对危险生物情有独钟。现在担任神奇生物看管者。
-			PotionsMaster: 一位才华横溢但性情暴躁的魔药师。在酿造艺术上要求完美，对无能之辈毫无耐心。
-			Dobby: 一个自由的家养小精灵，乐于帮助巫师。给他一只袜子，他就会成为你永远的朋友。以收集不成对的袜子和强烈的忠诚闻名。
-			Mandrake: 一种魔法植物，根部看起来像一个沾满泥巴的小婴儿。成熟时它的叫声对听到的人是致命的，不过幼年曼德拉草只会把你弄昏。
-			Boggart: 一种变形生物，会变成最接近的人最恐惧的东西。没有人知道博格特独处时是什么样子。滑稽滑稽！
-			Dumbledore: 被许多人认为是现代最伟大的巫师。霍格沃茨校长，梅林勋章一级获得者，也是黑魔王唯一惧怕的巫师。
-			Werewolf: 患有狼人症的巫师。在满月之下他们会变成凶残的野兽。狼毒药剂能让他们在变身时保持神智清醒。
-			Grindylow: 一种有角的小型水妖，有着细长而脆弱的手指。它们栖息在湖泊中，对进入其领地的人类特别具有攻击性。
-			Doxy: 一种覆盖着浓密黑毛的小型类仙生物，有额外一对手臂和腿。它的毒咬需要解毒剂。它们会侵扰窗帘和老房子。
-			Peeves: 历史上最臭名昭著的骚灵。他以混乱、恶作剧和把人逼疯为乐。他唯一听从的人只有邓布利多和血腥男爵。
-			Nagini: 黑魔王最忠实的伙伴和最后一个魂器。一条品种不明的巨型魔法蛇，能够变成人形。她的毒液维持着伏地魔的肉身存活。
-			Obscurus: 一种黑暗的寄生魔法力量，在压抑自身魔力的巫师体内产生。释放时，它变成一个不可控制的、拥有巨大力量的毁灭性实体。很少有默默然宿主能存活到成年。
-			Bowtruckle: 一种树木守护生物，不超过八英寸高，由树皮和树枝组成，有两只小小的棕色眼睛。除非其栖息的树木受到威胁，否则性情平和，届时会用尖锐的手指挖人的眼睛。
-			Flobberworm: 巫师世界中最无聊的生物。一条粗大的棕色虫子，以生菜为食。它的粘液有时用于增稠药水，这是它唯一已知的用途。
-			BlastEndedSkrewt: 海格创造的蝎尾怪和火螃蟹的可怕杂交品种。成年时长达十英尺，有装甲外壳、强力毒刺，以及从尾部喷出的火焰。
-			Centaur: 上半身为人、下半身为马的高贵而骄傲的生物。他们是天赋异禀的观星者，认为大多数人类魔法不值一提。不要称他们为混血种。
-			AzkabanGuard: 被派去守卫巫师监狱阿兹卡班的精英摄魂怪。比普通同类更大更强，仅其存在就能熄灭一切光明和温暖。它的亲吻不仅是吞噬——而是彻底吞噬灵魂。
-			Aberforth: 阿不福思·邓布利多——阿不思的弟弟，霍格莫德猪头酒吧的老板。一个粗犷而低调的人，默默地从吧台后援助抵抗运动。他的守护神是一只山羊。
-			PrisonWraith: 在阿兹卡班墙内死去的囚犯的灵魂残余。他们的绝望以幽灵回声的形式徘徊，困扰任何扰乱监狱结界的人。[模组原创内容]
-			DespairAnchor: 阿兹卡班古老防御系统中被腐蚀的结界锚点。曾用于关押囚犯，现在向附近所有人散发绝望。摧毁它们可以削弱事件中的黑暗力量。[模组原创内容]
-			Merfolk: 巫师世界的人鱼居住在湖泊和海洋深处。他们说人鱼语，在水面上听起来像尖叫。他们是水下领域的凶猛守卫者，不欢迎入侵者。
-			Sphinx: 一种古老的生物，拥有狮子的身体、鹰的翅膀和人的头部。斯芬克斯极其聪明，喜欢谜语、谜题和谜团。它们是宝藏和秘密之地的优秀守卫者。
-			Giant: 身高二十英尺或更高，巨人是巫师世界中最令人恐惧的生物之一。虽然不算特别聪明，但他们的蛮力无人能及。一些巨人被伏地魔招募参加了霍格沃茨之战。
-			Fwooper: 一种色彩鲜艳的非洲魔法鸟类，其歌声会让听者发疯。饲养者必须对其鸟施加消音咒。有鲜粉色、青绿色、橙色和芥末黄色。
-			SnowWraith: 一位远古已逝北方巫师的冰冻灵魂。在夜间的雪地生物群落中出没，它们带来的非自然寒意会冻结所触及的一切。据传是死于严寒的德姆斯特朗学生的鬼魂。
-			CursedMummy: 一位古代埃及巫师，其躯体被诅咒永远守卫陵墓。保存他们的黑魔法在千年中只增不减。比尔·韦斯莱会知道如何对付这些。
-			FredAndGeorge: 传奇的韦斯莱双胞胎，韦斯莱魔法把戏坊的创始人。发明家、恶作剧专家，也是出人意料的天才巫师。他们在对角巷的店铺是最多彩——也是最危险的——购物之地。
-			TrollBoss: 一只完全成年的山怪，十二英尺高，灰色皮肤，挥舞着一根巨大的木棒。虽然不聪明，但近战中极具毁灭性。任何年轻巫师的经典初遇。
-			AragogBoss: 禁林中八眼巨蛛群落的族长。由海格从蛋中养大，阿拉戈克指挥着他的子女大军。当他召唤时，蜘蛛群蜂拥而至。
-			FluffyBoss: 一只巨大的三头犬，由邓布利多安置在此守卫活板门。每个头独立攻击。唯一通过的方法是音乐——或蛮力。
-			BellatrixBoss: 伏地魔最危险、最忠诚的食死徒。贝拉特里克斯·莱斯特兰奇是一位天才决斗师，以残忍为乐。她杀了小天狼星·布莱克，折磨了隆巴顿夫妇，除了主人的不悦外什么都不怕。
-			FenrirBoss: 现存最残暴的狼人。芬里尔·格雷伯克在满月时专门靠近受害者，渴望咬伤和感染尽可能多的人。他尤其以儿童为目标。
-			DementorKingBoss: 所有摄魂怪的统领——一个纯粹黑暗的远古存在，统率着吸取灵魂的亡灵军团。它的存在会熄灭一切光明和希望。只有最强大的守护神才能与之抗衡。
-			PhantomStag: 一个被神圣之地无尽纯净魔法扭曲和腐化的守护神灵体。曾是希望和保护的象征，如今无差别地攻击一切。一个悲剧性的提醒——即使是光明魔法也可能出错。
-			CursedSpecter: 一位钻研黑魔法过深、被腐化吞噬的巫师幽灵。困在生死之间，它向任何路过的活物发射诅咒火焰。
-			Thunderbird: 一种原产于亚利桑那州的巨大魔法鸟类，与凤凰有亲缘关系。它飞行时能制造风暴，并能在危险到来前感知到。在风暴聚集的天空中出没。
-			GoblinRebel: 巫师历史上妖精大叛乱中的叛军妖精。装备有附魔的古灵阁金币作为投掷武器。他们携带大量财富——如果你能从他们手中夺取的话。
-			Lethifold: 又称活尸布，是魔法世界中最危险的生物之一。它看起来像一件在地面上滑行的黑色斗篷，会窒息沉睡中的受害者。只有守护神咒能驱退它。
-			QuirrellBoss: 一位口吃的黑魔法防御术教授，隐藏着一个可怕的秘密。在他的头巾之下潜伏着黑魔王本人的脸，寄生于奇洛的身体。一场简单的决斗在伏地魔暴露时变成了生死存亡之战。
-			UmbridgeBoss: 魔法部高级副部长，巫师世界中最令人憎恶的女人。她不靠蛮力战斗——她靠官僚主义、减益和教育法令。唯一一个让你宁愿面对伏地魔的Boss。
-			BartyCrouchBoss: 一个如此忠诚的食死徒，他从阿兹卡班越狱，用复方汤剂化装成疯眼汉穆迪整整一年。他的真面目与伪装同样危险——一位以狂热忠诚侍奉黑魔王的决斗大师。
-			Erumpent: 一种类似犀牛的巨大生物，原产于非洲。它的角含有致命液体，能使被注入的任何东西爆炸。毒角兽的角、尾巴和爆炸液均为B类管制贸易品。
-			Occamy: 一种有羽冠的蛇形带翅生物，原产于远东和印度。它具有容纳适应性——意味着它能生长或缩小以适应可用空间。它的蛋由最纯净、最柔软的银制成。
-			Zouwu: 一种大如大象的巨型魔法猫科动物，有着五彩鬃毛和能随意变大变小的身体。极其迅速而强大——一天能行走一千英里。原产于中国。
-			Demiguise: 一种温和的类猿生物，拥有大而深情的眼睛和长而丝滑的银色毛发。受到威胁时能隐形，因此极难捕捉。它的皮毛被用来制作隐形衣。
-			Mooncalf: 一种害羞的生物，只在满月之夜出现。月痴兽在月光下用后腿跳复杂的舞蹈，在麦田中留下精巧的几何图案。日出前收集的银色粪便能让魔法植物飞速生长。
-			Billywig: 一种原产于澳大利亚的微小蓝宝石色昆虫。被它蜇到会头晕目眩，随后悬浮在空中。干燥的彩翼螫虫蜇针用作嘶嘶蜂蜜糖的原料。这种昆虫飞行速度极快，麻瓜几乎看不到。
-			Ashwinder: 一条纤细的灰白色蛇，有着发红光的眼睛，从无人看管的魔法火焰余烬中诞生。它只活一个小时，寻找一个黑暗隐蔽的地点产卵后化为灰烬。蛇卵极度灼热，如果不及时冻住，几分钟内就会引燃房屋。
-			Nundu: 一种原产于东非的巨型魔法豹，被认为是巫师世界中最危险的活体生物。它的呼吸有毒，能摧毁整个村庄。从来没有少于一百名巫师协同作战能制服它的记录。
-			Runespoor: 一种三头蛇，通常长六到七英尺。左头是计划者，中间头是做梦者，右头是批评者。原产于布基纳法索。它的蛋在药水制作中十分珍贵。
-			Jarvey: 一种魔法生物，看起来像一只超大号的雪貂，但能说话。不幸的是，贾维无法进行真正的对话，只会几乎不停地说出简短、通常很粗鲁的词句。分布于英国、爱尔兰和北美。
-			FireCrab: 尽管名字如此，火螃蟹看起来像一只有着镶满宝石外壳的大海龟。产于斐济海岸，出口受到严格管制。火螃蟹的主要防御方式是受到攻击时从尾部喷射火焰。
-			Puffskein: 一种圆形的奶油色毛茸茸生物。它性情温顺，甚至喜欢被人抛来抛去或拥抱。满足时会发出嗡嗡声。一种受欢迎的巫师宠物，也是侏儒蒲绒绒的祖先。
-			Streeler: 一种每小时变换颜色的巨型蜗牛。它留下的毒液痕迹有毒到能枯萎和灼烧所触及的一切植被。喜欢它万花筒般颜色变化的人会将其作为宠物饲养。
-			PeruvianVipertooth: 已知所有龙种中体型最小的，身长仅十五英尺。鳞片光滑呈铜色，有独特的黑色脊线标记。它有毒牙且飞行速度极快，尽管体型小却异常危险。
-			Diricawl: 一种丰满、蓬松、不会飞的鸟类，拥有受到威胁时在一阵羽毛中消失的非凡能力。麻瓜曾称之为渡渡鸟，以为他们将其逼向灭绝——殊不知它只是传送走了。
-			Knarl: 外表与刺猬极为相似，只有一个已知区别：如果你给刺猬留食物，它会感激你。如果你给刺猬精留食物，它会认为你在设陷阱诱捕它，然后摧毁你的花园。
-			Horklump: 一种多肉的粉色蘑菇状生物。它很难与蘑菇区分，这也无所谓，因为它除了自我繁殖外什么都不做。霍克拉普唯一已知的用途是作为弗洛伯毛虫的食物。
-			Jobberknoll: 一种微小的蓝色斑点鸟，在死亡之前绝对不会发出任何声音，死亡时会发出一声长啸，包含它一生中听到的所有声音的倒放。叽喳鸟羽毛用于制作吐真剂和记忆药水。
-			Dugbog: 一种栖息在沼泽中的生物，静止时看起来像一块枯木。当毫无防备的生物或人走过时，泥怪会用布满牙齿的嘴猛扑。它主要以曼德拉草为食，也会咬人的脚踝。
-			MagicalImp: 一种由活火焰构成的微小恶作剧生物。单个魔法小鬼并不特别危险，但它们会在炎热环境中成群产生。它们以点小火和向路人扔火球为乐。
-			MadamHooch: 霍格沃茨的飞行教练和魁地奇裁判。拥有鹰隼般的黄色眼睛和数十年经验，她确保每场比赛公平进行，每个学生都能安全飞行。
-			Kingsley: 金斯莱·沙克尔——高级傲罗和凤凰社成员。冷静、能干，深受邓布利多信任。担任凤凰社魔法部相关行动的联络人。
-			GoblinTeller: 古灵阁银行柜员——目光锐利、言辞犀利，对金子精确到分毫。妖精们经营着巫师世界唯一的银行，积累了数百年的专业知识，对持杖者保持着健康的不信任。
-			MrBorgin: 博金与乔治魔法商店的油滑老板，翻倒巷最臭名昭著的黑魔法器物商店。多疑、交易至上、极度自利。他了解库存中每件诅咒物品的价值。
-		}
+		Bestiary.Neville: 纳威·隆巴顿——格兰芬多学生、D.A.成员、霍格沃茨之战的英雄。出售战斗补给和魂器追踪器。在赢得霍格沃茨之战后出现。
 
 		GreatHall: {
 			FeastAvailable: 一只猫头鹰带来卷轴：'大礼堂盛宴已准备就绪！敲响你的钟参加吧。'
-			FeastBlessing: "大礼堂回荡着欢呼声，{0}获得了学院祝福！"
+			FeastBlessing: 大礼堂回荡着欢呼声，{0}获得了学院祝福！
 			FeastAttendance: 盛宴出席
 			NeedHouseArmor: 你必须穿戴学院盔甲才能参加大礼堂盛宴。
 			AlreadyAttended: 你今天已经参加过盛宴了。
-			NextFeast: "下次盛宴还有{0}天。"
-			PointsAwarded: "+{0} {1}学院积分！（{2}）"
+			NextFeast: 下次盛宴还有{0}天。
+			PointsAwarded: +{0} {1}学院积分！（{2}）
 			HouseCupWon: "{0}赢得了学院杯！"
-			HouseCupCeremony: "大礼堂爆发出欢庆！所有学院旗帜都变成了获胜者的颜色！"
-			Standings: "学院杯排名：格兰芬多 {0} | 斯莱特林 {1} | 拉文克劳 {2} | 赫奇帕奇 {3} | 领先：{4}"
+			HouseCupCeremony: 大礼堂爆发出欢庆！所有学院旗帜都变成了获胜者的颜色！
+			Standings: 学院杯排名：格兰芬多 {0} | 斯莱特林 {1} | 拉文克劳 {2} | 赫奇帕奇 {3} | 领先：{4}
 			SourceChampion: 学院冠军里程碑
 			SourceOwlPost: 猫头鹰邮局投递
 			SourceAzkaban: 阿兹卡班远征完成
@@ -2194,19 +2892,19 @@ Mods: {
 		}
 
 		Quidditch: {
-			MatchStart: "魁地奇比赛：{0} vs {1}！用鬼飞球射门得分！"
-			ScoreGoals: "向敌人投掷鬼飞球得分（每球10分）。得分阶段后金色飞贼将出现！"
+			MatchStart: 魁地奇比赛：{0} vs {1}！用鬼飞球射门得分！
+			ScoreGoals: 向敌人投掷鬼飞球得分（每球10分）。得分阶段后金色飞贼将出现！
 			PlayerScores: "{0}得分！（{1}分）"
 			OpponentScores: "{0}得了{1}分！"
-			SnitchReleased: "金色飞贼已经放出！抓住它结束比赛！（+150分）"
-			CurrentScore: "比分：你 {0} - 对手 {1}"
-			PlayerCatchesSnitch: "你抓住了金色飞贼！+150分！"
+			SnitchReleased: 金色飞贼已经放出！抓住它结束比赛！（+150分）
+			CurrentScore: 比分：你 {0} - 对手 {1}
+			PlayerCatchesSnitch: 你抓住了金色飞贼！+150分！
 			OpponentCatchesSnitch: "{0}的找球手抓住了飞贼！"
 			MatchWin: "{0}获胜！最终比分：{1} - {2}"
 			MatchLoss: "{0}获胜。最终比分：{1} - {2}"
 			CupWon: "{0}赢得了魁地奇杯！"
-			CupCeremony: "球场上爆发出欢庆！银色的魁地奇杯在阳光下闪耀！"
-			Standings: "魁地奇杯：格:{0} 斯:{1} 鹰:{2} 獾:{3} | 比赛：{4}/{5}"
+			CupCeremony: 球场上爆发出欢庆！银色的魁地奇杯在阳光下闪耀！
+			Standings: 魁地奇杯：格:{0} 斯:{1} 鹰:{2} 獾:{3} | 比赛：{4}/{5}
 			SeasonComplete: 魁地奇杯赛季已经结束！
 			NewSeason: 新的魁地奇赛季开始了！
 			NeedHouseArmor: 你必须穿戴学院盔甲才能参加魁地奇。
@@ -2219,108 +2917,100 @@ Mods: {
 
 		Dialogue: {
 			Ollivander: {
-				Standard1: "奇怪……太奇怪了。是魔杖选择巫师，你知道的。"
-				Standard2: "我记得我卖出的每一根魔杖。每一根。"
-				Standard3: "试试这根。独角兽毛杖芯，十一英寸。挥一挥看看！"
-				Standard4: "紫杉木魔杖是比较稀有的种类，它们的理想主人同样不同寻常。"
-				Standard5: "龙心弦魔杖比其他魔杖学得更快，但容易出事故。"
-				Standard6: "独角兽毛杖芯最为忠诚，虽然很少产生最强大的魔法。"
-				Standard7: "你试过附魔台吗？如今最好的魔杖都在那里制作。"
-				Rare: "那个人虽然做了可怕的事……但确实做了伟大的事。"
-				PostVoldemort: "接骨木魔杖选择了你。我从未想过能看到这一天……"
-				PostBasilisk: "你打败了蛇怪？用那根魔杖？了不起。也许你已经准备好用更强的了。"
-				Hardmode: "世界变了。更黑暗的生物四处游荡。你需要更强大的魔杖。看看吧。"
+				Standard1: 奇怪……太奇怪了。是魔杖选择巫师，你知道的。
+				Standard2: 我记得我卖出的每一根魔杖。每一根。
+				Standard3: 试试这根。独角兽毛杖芯，十一英寸。挥一挥看看！
+				Standard4: 紫杉木魔杖是比较稀有的种类，它们的理想主人同样不同寻常。
+				Standard5: 龙心弦魔杖比其他魔杖学得更快，但容易出事故。
+				Standard6: 独角兽毛杖芯最为忠诚，虽然很少产生最强大的魔法。
+				Standard7: 你试过附魔台吗？如今最好的魔杖都在那里制作。
+				Rare: 那个人虽然做了可怕的事……但确实做了伟大的事。
+				PostVoldemort: 接骨木魔杖选择了你。我从未想过能看到这一天……
+				PostBasilisk: 你打败了蛇怪？用那根魔杖？了不起。也许你已经准备好用更强的了。
+				Hardmode: 世界变了。更黑暗的生物四处游荡。你需要更强大的魔杖。看看吧。
 			}
+
 			Hagrid: {
-				Standard1: "我不该告诉你们的。我不该告诉你们的。"
-				Standard2: "我想没有比这里更安全的地方了。"
-				Standard3: "你是个巫师！嗯……差不多吧。"
-				Standard4: "被严重误解的美丽生物，真的。我说的是龙。"
-				Standard5: "诺伯？诺伯塔？啊，别提了……"
-				Standard6: "禁林不适合胆小鬼，但里面也有美丽的东西。"
-				Standard7: "我后院有些可爱的弗洛伯毛虫，你有兴趣吗？没有？随你吧。"
-				Rare: "我愿意把我的命交给邓布利多。"
-				PostBasilisk: "你做到了！蛇怪没了。我想密室现在安全了。"
-				PostAragog: "阿拉戈克……他是个好朋友。但我理解你为什么必须那么做。"
-				PostHorntail: "匈牙利树蜂龙！天哪，连查理都会佩服的！"
-				PostVoldemort: "他走了。这次真的走了。邓布利多会为你骄傲的。"
-				Night: "最好别在夜里去禁林。里面不是所有生物都友好。"
+				Standard1: 我不该告诉你们的。我不该告诉你们的。
+				Standard2: 我想没有比这里更安全的地方了。
+				Standard3: 你是个巫师！嗯……差不多吧。
+				Standard4: 被严重误解的美丽生物，真的。我说的是龙。
+				Standard5: 诺伯？诺伯塔？啊，别提了……
+				Standard6: 禁林不适合胆小鬼，但里面也有美丽的东西。
+				Standard7: 我后院有些可爱的弗洛伯毛虫，你有兴趣吗？没有？随你吧。
+				Rare: 我愿意把我的命交给邓布利多。
+				PostBasilisk: 你做到了！蛇怪没了。我想密室现在安全了。
+				PostAragog: 阿拉戈克……他是个好朋友。但我理解你为什么必须那么做。
+				PostHorntail: 匈牙利树蜂龙！天哪，连查理都会佩服的！
+				PostVoldemort: 他走了。这次真的走了。邓布利多会为你骄傲的。
+				Night: 最好别在夜里去禁林。里面不是所有生物都友好。
 			}
+
 			PotionsMaster: {
-				Standard1: "我可以教你们怎样提高声望，酿造荣耀，甚至阻止死亡。"
-				Standard2: "很明显，名气并不代表一切。翻到第394页。"
-				Standard3: "魔药制作的艺术需要……细腻。"
-				Standard4: "在本店不许胡乱挥舞魔杖。"
-				Standard5: "我看不出你上一瓶药水和池塘水有什么区别。"
-				Standard6: "福灵剂极其难以酿造。一个错误，后果不堪设想。"
-				Standard7: "如果我发现你偷拿原料，我会让你后悔的。"
-				Rare: "一直都是。"
-				SeeFelixBuff: "我看到你服用了福灵剂。自己酿的吗？……还算合格。"
-				SeeFirewhiskeyBuff: "*嗅嗅*……那是火焰威士忌？在我的店里？我应该没收它。……但我不会。"
-				PostVoldemort: "黑魔王走了。我履行了我的承诺。你只需要知道这些。"
+				Standard1: 我可以教你们怎样提高声望，酿造荣耀，甚至阻止死亡。
+				Standard2: 很明显，名气并不代表一切。翻到第394页。
+				Standard3: 魔药制作的艺术需要……细腻。
+				Standard4: 在本店不许胡乱挥舞魔杖。
+				Standard5: 我看不出你上一瓶药水和池塘水有什么区别。
+				Standard6: 福灵剂极其难以酿造。一个错误，后果不堪设想。
+				Standard7: 如果我发现你偷拿原料，我会让你后悔的。
+				Rare: 一直都是。
+				SeeFelixBuff: 我看到你服用了福灵剂。自己酿的吗？……还算合格。
+				SeeFirewhiskeyBuff: *嗅嗅*……那是火焰威士忌？在我的店里？我应该没收它。……但我不会。
+				PostVoldemort: 黑魔王走了。我履行了我的承诺。你只需要知道这些。
 			}
+
 			Dobby: {
-				Standard1: "多比是自由的小精灵！多比可以为先生或女士做任何事！"
-				Standard2: "多比听说过您的伟大事迹，但多比从没想到……"
-				Standard3: "先生想要一双袜子吗？袜子是多比最喜欢的衣服！"
-				Standard4: "多比没有主人！多比是自由的小精灵，多比是来帮忙的！"
-				Standard5: "多比永远会在霍格沃茨帮助那些需要帮助的人。"
-				Standard6: "多比曾经试着烤蛋糕。那……对那栋房子来说不太好。"
-				Standard7: "多比很喜欢这个地方。这里没有人往多比身上扔鞋子。"
-				Rare: "主人给了多比一只袜子！多比自由了！"
-				PostVoldemort: "黑魔王走了！多比太高兴了！多比想用袜子和所有人一起庆祝！"
-				Night: "多比不喜欢黑暗。黑暗中会发生坏事。但多比很勇敢！"
-				PostBasilisk: "大蛇没了？多比记得密室……多比很高兴它安全了。"
+				Standard1: 多比是自由的小精灵！多比可以为先生或女士做任何事！
+				Standard2: 多比听说过您的伟大事迹，但多比从没想到……
+				Standard3: 先生想要一双袜子吗？袜子是多比最喜欢的衣服！
+				Standard4: 多比没有主人！多比是自由的小精灵，多比是来帮忙的！
+				Standard5: 多比永远会在霍格沃茨帮助那些需要帮助的人。
+				Standard6: 多比曾经试着烤蛋糕。那……对那栋房子来说不太好。
+				Standard7: 多比很喜欢这个地方。这里没有人往多比身上扔鞋子。
+				Rare: 主人给了多比一只袜子！多比自由了！
+				PostVoldemort: 黑魔王走了！多比太高兴了！多比想用袜子和所有人一起庆祝！
+				Night: 多比不喜欢黑暗。黑暗中会发生坏事。但多比很勇敢！
+				PostBasilisk: 大蛇没了？多比记得密室……多比很高兴它安全了。
 			}
+
 			Dumbledore: {
-				Standard1: "沉湎于梦想而忘记生活，这是不可取的。"
-				Standard2: "即使在最黑暗的时刻也能找到幸福，只要你记得把灯打开。"
-				Standard3: "决定我们成为什么样的人的，不是我们的能力，而是我们的选择。"
-				Standard4: "在我不那么谦虚的看法中，语言是我们最取之不尽的魔法源泉。"
-				Standard5: "当然这一切都发生在你的脑海中，但为什么就意味着它不是真实的呢？"
-				Standard6: "对于一个组织良好的头脑来说，死亡不过是下一场伟大的冒险。"
-				Standard7: "笨蛋！眼泪！残渣！拧！……我确实喜欢一场盛宴。"
-				Rare: "过了这么久？一直都是。"
-				PostDementorKing: "你征服了绝望本身。没有比希望战胜黑暗更伟大的胜利了。"
-				BloodMoon: "今夜连月亮都在流血。保持警惕——黑暗生物在猩红之光下更加大胆。"
-				HighMana: "我感应到你体内蕴含着强大的魔力。明智地使用它——力量无善恶之分，只有使用者决定一切。"
+				Standard1: 沉湎于梦想而忘记生活，这是不可取的。
+				Standard2: 即使在最黑暗的时刻也能找到幸福，只要你记得把灯打开。
+				Standard3: 决定我们成为什么样的人的，不是我们的能力，而是我们的选择。
+				Standard4: 在我不那么谦虚的看法中，语言是我们最取之不尽的魔法源泉。
+				Standard5: 当然这一切都发生在你的脑海中，但为什么就意味着它不是真实的呢？
+				Standard6: 对于一个组织良好的头脑来说，死亡不过是下一场伟大的冒险。
+				Standard7: 笨蛋！眼泪！残渣！拧！……我确实喜欢一场盛宴。
+				Rare: 过了这么久？一直都是。
+				PostDementorKing: 你征服了绝望本身。没有比希望战胜黑暗更伟大的胜利了。
+				BloodMoon: 今夜连月亮都在流血。保持警惕——黑暗生物在猩红之光下更加大胆。
+				HighMana: 我感应到你体内蕴含着强大的魔力。明智地使用它——力量无善恶之分，只有使用者决定一切。
 			}
+
 			Centaur: {
-				Standard1: "今夜火星格外明亮。将有冲突发生。"
-				Standard2: "我们观察，我们不干预。通常如此。"
-				Standard3: "星辰不会说谎。但它们常常被误读。"
-				Standard4: "人类总是如此急躁。行星以世纪为单位运行，而非分钟。"
-				Standard5: "金星在逆行。我建议你今天不要制作任何重要的东西。"
-				Standard6: "这片森林中的马人已经见证了许多时代的更替。我们记得别人已遗忘的事。"
-				Standard7: "你行走时带着目标。星辰说你承载着伟大的命运……或者一个沉重的背包。"
-				Rare: "人类，我在星辰中看到了一些令我深感不安的事情。"
-				FullMoon: "满月揭示一切真相。今夜，星辰说得很清楚——有某种远古之物正在苏醒。"
-				NewMoon: "新月隐藏了许多。今夜连星辰都不确定。小心行事。"
-				BloodMoon: "火星怒火燃烧！血月降临——今夜最黑暗的生物将出来狩猎。做好战斗准备。"
+				Standard1: 今夜火星格外明亮。将有冲突发生。
+				Standard2: 我们观察，我们不干预。通常如此。
+				Standard3: 星辰不会说谎。但它们常常被误读。
+				Standard4: 人类总是如此急躁。行星以世纪为单位运行，而非分钟。
+				Standard5: 金星在逆行。我建议你今天不要制作任何重要的东西。
+				Standard6: 这片森林中的马人已经见证了许多时代的更替。我们记得别人已遗忘的事。
+				Standard7: 你行走时带着目标。星辰说你承载着伟大的命运……或者一个沉重的背包。
+				Rare: 人类，我在星辰中看到了一些令我深感不安的事情。
+				FullMoon: 满月揭示一切真相。今夜，星辰说得很清楚——有某种远古之物正在苏醒。
+				NewMoon: 新月隐藏了许多。今夜连星辰都不确定。小心行事。
+				BloodMoon: 火星怒火燃烧！血月降临——今夜最黑暗的生物将出来狩猎。做好战斗准备。
 			}
-			FredAndGeorge: {
-				Standard1: "快来看看！韦斯莱魔法把戏坊——一站式魔法与恶作剧商店！"
-				Standard2: "我们这里应有尽有，从逃课零食盒到秘鲁即时黑暗粉！"
-				Standard3: "妈妈还是不赞成，但你看过我们的销售数据吗？"
-				Standard4: "给个差评试试，下一封吼叫信免费奉上。真的。"
-				Standard5: "试试我们的新品流鼻血牛轧糖！以血换法力——完全安全！大概吧。"
-				Standard6: "呕吐软糖是我们的畅销品。没有什么能更快地清除减益——或你的胃。"
-				Standard7: "逃课零食盒：当你绝对必须装死来躲避Boss攻击的时候。"
-				Standard8: "我们曾经把整条走廊变成了一片沼泽。我们人生中最美好的一天。"
-				Rare: "我庄严宣誓我没干好事。"
-				DuringInvasion: "食死徒？太棒了！正好在实战中测试我们的新盾帽！"
-				PostVoldemort: "神秘人走了？！这必须庆祝！烟花免费——货真价实！"
-				PostUmbridge: "你把乌姆里奇赶走了？！我们想做这件事好多年了。你是英雄！"
-				BloodMoon: "红月亮，红火销售！今晚全场五折！……好吧，不是真的。但流鼻血牛轧糖倒是很应景。"
-			}
+
 			MadamHooch: {
-				Standard1: "大家都骑上扫帚！这次请不要再摔下来了。"
-				Standard2: "我在霍格沃茨裁判魁地奇比赛的时间比你们大多数人活着的时间都长。"
-				Standard3: "一把好扫帚值每一个加隆。好好保养你的扫帚。"
-				Standard4: "魁地奇杯才是让霍格沃茨真正活跃起来的东西。"
-				Season: "赛季正在升温！确保你在练习鬼飞球投掷。"
-				CupWon: "这个赛季太精彩了！我多年没见过这样的飞行了。"
+				Standard1: 大家都骑上扫帚！这次请不要再摔下来了。
+				Standard2: 我在霍格沃茨裁判魁地奇比赛的时间比你们大多数人活着的时间都长。
+				Standard3: 一把好扫帚值每一个加隆。好好保养你的扫帚。
+				Standard4: 魁地奇杯才是让霍格沃茨真正活跃起来的东西。
+				Season: 赛季正在升温！确保你在练习鬼飞球投掷。
+				CupWon: 这个赛季太精彩了！我多年没见过这样的飞行了。
 			}
+
 			Kingsley: {
 				Standard1: 凤凰社时刻警惕。黑暗时代需要持续警觉。
 				Standard2: 我在魔法部卧底工作。不要相信你没有测试过的人。
@@ -2329,14 +3019,9 @@ Mods: {
 				Veteran: 你在战场上证明了自己。凤凰社感激你。
 				Night: 凤凰社彻夜守望。黑暗对我们来说并不陌生。
 				Grimmauld: 十二号需要维护。如果安全屋被忽视，结界就会减弱。
+				Kreacher: 克利切不好相处，但他以自己的方式忠于这座房子。
 			}
-			MrBorgin: {
-				Standard1: 啊，一位顾客。还是说……你是来执行魔法部任务的？无论如何，金子说了算。
-				Standard2: 我经营稀有和不寻常的物品。当然，没有违法的。不再有了。
-				Standard3: 不问就别碰。有些东西会咬人。真的会。
-				Standard4: 博金与伯克斯为有眼光的巫师服务了几代人。我们不问问题。
-				Returning: 又来了？你的封锁工作还算……及格。还有更多活要干。
-			}
+
 			GoblinTeller: {
 				Standard1: 时间就是加隆，巫师。说出你的来意。
 				Standard2: 古灵阁屹立了数百年。我们打算继续保持下去。
@@ -2344,73 +3029,109 @@ Mods: {
 				Standard4: 金库越深，守护越强。你已被警告。
 				Returning: 又来了？你的合同记录令人满意。请继续。
 			}
-			Healer: {
-				Standard1: "圣芒戈总是人手不足。每一根能帮忙的魔杖都是欢迎的。"
-				Standard2: "咒术伤害、生物伤害、药水事故——我们在分诊中什么都见过。"
-				Standard3: "病房轮流开放。每个病房都有自己的危险。保持警惕。"
-				Standard4: "治疗师之盐是从我们中和的残留物中蒸馏出来的。对制作很有用。"
-				Veteran: "你在病房里做得很好。病人欠你一份情。"
-			}
-			Lupin: {
-				Standard1: "黑魔法防御术的诀窍在于——知道你害怕什么，然后直面它。"
-				Standard2: "我认识你的父母，可以这么说。他们是勇敢的人。"
-				Standard3: "活点地图从不说谎。它显示每个人、每条通道、每个秘密。"
-				Standard4: "遇到黑暗生物后吃点巧克力会有帮助。相信我。"
-				FullMoon: "我今晚……感觉不太像自己。也许保持距离比较好。"
-				Shack: "尖叫棚屋对我来说有很多回忆。不全是愉快的，但都很重要。"
-			}
+
 			MadamRosmerta: {
-				OwlPostComplete: "今天的投递已经完成了。明天再来吧！"
-				OwlPostSuccess: "太好了！猫头鹰已经带着你的包裹出发了。这是你的奖励！"
+				// Standard1: Welcome to the Three Broomsticks! What'll it be — Butterbeer or something stronger?
+				// Standard2: I stock all the best Honeydukes sweets right here at the tavern. Saves you a trip down the lane!
+				// Standard3: Hogsmeade's the heart of the wizarding world, if you ask me. Everyone passes through sooner or later.
+				// Standard4: Running an inn means you hear everything. Owls in, owls out — I keep this village connected.
+				// Standard5: Honeydukes sends me a fresh crate of Chocolate Frogs every week. They sell faster than Butterbeer some days!
+				// Night: The Three Broomsticks never truly closes. Pull up a chair — nights in Hogsmeade can be long.
+				// PostVoldemort: He's gone... I can hardly believe it. The Three Broomsticks will be pouring free Butterbeer all week!
+				OwlPostComplete: 今天的投递已经完成了。明天再来吧！
+				OwlPostSuccess: 太好了！猫头鹰已经带着你的包裹出发了。这是你的奖励！
 				OwlPostButton: 猫头鹰邮局
 			}
-			Aberforth: {
-				Standard1: "猪头酒吧来者不拒。不问来路。一直如此。"
-				Standard2: "我哥哥有他的宏图大计。我更喜欢低调经营我的酒吧。"
-				Standard3: "别全信你听到的关于阿不思的事。他很出色，但他并不完美。"
-				Standard4: "画像后面的通道通向霍格沃茨。谨慎使用。"
-				Standard5: "黑暗的日子我见过不少。都挺过来了。你也行，只要够聪明。"
-				Resistance: "D.A.今晚开会。守护阵需要加固——霍格沃茨需要你们。"
+
+			MrBorgin: {
+				Standard1: 啊，一位顾客。还是说……你是来执行魔法部任务的？无论如何，金子说了算。
+				Standard2: 我经营稀有和不寻常的物品。当然，没有违法的。不再有了。
+				Standard3: 不问就别碰。有些东西会咬人。真的会。
+				Standard4: 博金与伯克斯为有眼光的巫师服务了几代人。我们不问问题。
+				Returning: 又来了？你的封锁工作还算……及格。还有更多活要干。
 			}
+
+			FredAndGeorge: {
+				Standard1: 快来看看！韦斯莱魔法把戏坊——一站式魔法与恶作剧商店！
+				Standard2: 我们这里应有尽有，从逃课零食盒到秘鲁即时黑暗粉！
+				Standard3: 妈妈还是不赞成，但你看过我们的销售数据吗？
+				Standard4: 给个差评试试，下一封吼叫信免费奉上。真的。
+				Standard5: 试试我们的新品流鼻血牛轧糖！以血换法力——完全安全！大概吧。
+				Standard6: 呕吐软糖是我们的畅销品。没有什么能更快地清除减益——或你的胃。
+				Standard7: 逃课零食盒：当你绝对必须装死来躲避Boss攻击的时候。
+				Standard8: 我们曾经把整条走廊变成了一片沼泽。我们人生中最美好的一天。
+				Rare: 我庄严宣誓我没干好事。
+				DuringInvasion: 食死徒？太棒了！正好在实战中测试我们的新盾帽！
+				PostVoldemort: 神秘人走了？！这必须庆祝！烟花免费——货真价实！
+				PostUmbridge: 你把乌姆里奇赶走了？！我们想做这件事好多年了。你是英雄！
+				BloodMoon: 红月亮，红火销售！今晚全场五折！……好吧，不是真的。但流鼻血牛轧糖倒是很应景。
+			}
+
+			Healer: {
+				Standard1: 圣芒戈总是人手不足。每一根能帮忙的魔杖都是欢迎的。
+				Standard2: 咒术伤害、生物伤害、药水事故——我们在分诊中什么都见过。
+				Standard3: 病房轮流开放。每个病房都有自己的危险。保持警惕。
+				Standard4: 治疗师之盐是从我们中和的残留物中蒸馏出来的。对制作很有用。
+				Veteran: 你在病房里做得很好。病人欠你一份情。
+			}
+
+			Lupin: {
+				Standard1: 黑魔法防御术的诀窍在于——知道你害怕什么，然后直面它。
+				Standard2: 我认识你的父母，可以这么说。他们是勇敢的人。
+				Standard3: 活点地图从不说谎。它显示每个人、每条通道、每个秘密。
+				Standard4: 遇到黑暗生物后吃点巧克力会有帮助。相信我。
+				FullMoon: 我今晚……感觉不太像自己。也许保持距离比较好。
+				Shack: 尖叫棚屋对我来说有很多回忆。不全是愉快的，但都很重要。
+			}
+
+			Aberforth: {
+				Standard1: 猪头酒吧来者不拒。不问来路。一直如此。
+				Standard2: 我哥哥有他的宏图大计。我更喜欢低调经营我的酒吧。
+				Standard3: 别全信你听到的关于阿不思的事。他很出色，但他并不完美。
+				Standard4: 画像后面的通道通向霍格沃茨。谨慎使用。
+				Standard5: 黑暗的日子我见过不少。都挺过来了。你也行，只要够聪明。
+				Resistance: D.A.今晚开会。守护阵需要加固——霍格沃茨需要你们。
+			}
+
 			Neville: {
-				Standard1: "我没有别人说的那么勇敢。我只是做了需要做的事。"
-				Standard2: "奶奶总说我会一事无成。我证明她错了，不是吗？"
-				Standard3: "D.A.教会我的比任何课都多。我们互相照顾。"
-				Standard4: "霍格沃茨值得为之战斗。每一块石头，每一条走廊，每一个学生。"
-				NaginiDone: "纳吉尼倒下了。将黑魔王束缚在这个世界的纽带又少了一条。"
+				Standard1: 我没有别人说的那么勇敢。我只是做了需要做的事。
+				Standard2: 奶奶总说我会一事无成。我证明她错了，不是吗？
+				Standard3: D.A.教会我的比任何课都多。我们互相照顾。
+				Standard4: 霍格沃茨值得为之战斗。每一块石头，每一条走廊，每一个学生。
+				NaginiDone: 纳吉尼倒下了。将黑魔王束缚在这个世界的纽带又少了一条。
 			}
 		}
 
 		DA: {
-			RoomResistance: "有求必应屋：抵抗军总部"
-			Unlocked: "邓布利多军已重组。D.A.加隆闪烁着使命的光芒。"
-			DefenseStart: "守护阵防御——城堡守护阵正遭受攻击！稳定守护锚点！"
-			DefenseComplete: "守护阵坚固如初。霍格沃茨安然无恙。"
-			DefenseFailed: "守护阵已破裂。重整旗鼓再战。"
-			MeetingCalled: "口袋里的D.A.加隆发热了。邓布利多军集结。"
-			MeetingComplete: "会议结束。每个人都更加坚强和坚定。"
-			Progress: "已稳定守护锚点：{0}。城堡防御持续增强。"
-			WardHolds: "守护阵坚守住了！城堡的附魔以焕新之力跳动。"
-			WardFalling: "一个守护阵正在崩溃！在它倒塌前到达锚点！"
+			RoomResistance: 有求必应屋：抵抗军总部
+			Unlocked: 邓布利多军已重组。D.A.加隆闪烁着使命的光芒。
+			DefenseStart: 守护阵防御——城堡守护阵正遭受攻击！稳定守护锚点！
+			DefenseComplete: 守护阵坚固如初。霍格沃茨安然无恙。
+			DefenseFailed: 守护阵已破裂。重整旗鼓再战。
+			MeetingCalled: 口袋里的D.A.加隆发热了。邓布利多军集结。
+			MeetingComplete: 会议结束。每个人都更加坚强和坚定。
+			Progress: 已稳定守护锚点：{0}。城堡防御持续增强。
+			WardHolds: 守护阵坚守住了！城堡的附魔以焕新之力跳动。
+			WardFalling: 一个守护阵正在崩溃！在它倒塌前到达锚点！
 			SourceDefense: 城堡守护阵防御
-			AnchorStabilized: "守护锚点已稳定！附魔网络增强。"
-			AnchorSpawned: "一个守护锚点在城堡防御动摇时具现化。"
-			ThreadWoven: "城堡守护丝线从稳定的守护阵残留中具现化。"
-			RewardGiven: "城堡守护阵为你的付出留下了残余魔力。抵抗决心增强了你。"
-			AberfortthContact: "阿不福思从吧台后点了点头。'通道开着。去吧。'"
-			DANotWeapon: "邓布利多军是一个防御组织——学生们互相保护、守护学校。"
-			HogsHeadDescription: "霍格莫德边缘一间简陋但可靠的酒吧。不是豪华旅馆。"
-			ResistanceNotTournament: "这不是锦标赛。守护阵是真实的，危险也是。"
+			AnchorStabilized: 守护锚点已稳定！附魔网络增强。
+			AnchorSpawned: 一个守护锚点在城堡防御动摇时具现化。
+			ThreadWoven: 城堡守护丝线从稳定的守护阵残留中具现化。
+			RewardGiven: 城堡守护阵为你的付出留下了残余魔力。抵抗决心增强了你。
+			AberfortthContact: 阿不福思从吧台后点了点头。'通道开着。去吧。'
+			DANotWeapon: 邓布利多军是一个防御组织——学生们互相保护、守护学校。
+			HogsHeadDescription: 霍格莫德边缘一间简陋但可靠的酒吧。不是豪华旅馆。
+			ResistanceNotTournament: 这不是锦标赛。守护阵是真实的，危险也是。
 		}
 
 		Passages: {
 			PassageButton: 通道
-			NetworkUnlocked: "秘密通道网络已被揭示！隐蔽传送现已可用。"
-			Discovered: "发现秘密通道：{0}！"
-			Used: "你悄悄穿过了隐藏通道……"
-			NotUnlocked: "通道网络尚未揭示。已发现 {0}/2 条通道。"
-			OnCooldown: "通道仍在稳定中。{0} 秒后可用。"
-			Ready: "通道网络已就绪。已发现 {0} 条通道。与卢平交谈以旅行。"
+			NetworkUnlocked: 秘密通道网络已被揭示！隐蔽传送现已可用。
+			Discovered: 发现秘密通道：{0}！
+			Used: 你悄悄穿过了隐藏通道……
+			NotUnlocked: 通道网络尚未揭示。已发现 {0}/2 条通道。
+			OnCooldown: 通道仍在稳定中。{0} 秒后可用。
+			Ready: 通道网络已就绪。已发现 {0} 条通道。与卢平交谈以旅行。
 		}
 
 		Events: {
@@ -2420,18 +3141,20 @@ Mods: {
 				Wave2: 更多黑暗生物从阴影中涌出！
 				Wave3: 黑魔王最危险的仆人驾到！
 			}
+
 			QuidditchSnitch: {
 				Spawn: 一只金色飞贼出现了！骑上飞天扫帚抓住它获得奖励！
 				Escaped: 金色飞贼逃跑了！
 				Warning: 金色飞贼快要逃走了！还剩10秒！
 				Caught: "{0}抓住了金色飞贼！为其学院赢得150分！"
 			}
+
 			UmbridgeTaunts: {
-				Decree1: "教育法令第24号：所有学生必须接受审问！"
-				Decree2: "教育法令第31号：魔杖即日起被没收！"
-				Decree3: "教育法令第42号：现禁止一切娱乐活动！"
-				Decree4: "我要维持秩序！"
-				Decree5: "魔法部最了解情况，亲爱的。"
+				Decree1: 教育法令第24号：所有学生必须接受审问！
+				Decree2: 教育法令第31号：魔杖即日起被没收！
+				Decree3: 教育法令第42号：现禁止一切娱乐活动！
+				Decree4: 我要维持秩序！
+				Decree5: 魔法部最了解情况，亲爱的。
 			}
 		}
 
@@ -2443,239 +3166,246 @@ Mods: {
 		}
 
 		LoadingTips: {
-			Tip1: "巫师世界：制作一个附魔台，开启你的魔法之旅！"
-			Tip2: "巫师世界：是魔杖选择巫师——试试不同的魔杖获得不同的咒语。"
-			Tip3: "巫师世界：夜间前往禁林，邂逅独特的魔法生物。"
-			Tip4: "巫师世界：从魔法生物身上收集魔法精华，用于高级制作。"
-			Tip5: "巫师世界：击败蛇怪、匈牙利树蜂龙和伏地魔！"
-			Tip6: "巫师世界：从奥利凡德处购买标准咒语书获取完整指南。"
-			Tip7: "巫师世界：每套霍格沃茨学院护甲都有配套的专属武器。"
-			Tip8: "巫师世界：独角兽血仅在禁林中掉落——稀有珍宝。"
-			Tip9: "巫师世界：查看《预言家日报》了解今天的巫师挑战——赚取额外精华！"
-			Tip10: "巫师世界：《巫师年鉴》（邓布利多出售）是一本关于整个模组的10页百科全书。"
+			Tip1: 巫师世界：制作一个附魔台，开启你的魔法之旅！
+			Tip2: 巫师世界：是魔杖选择巫师——试试不同的魔杖获得不同的咒语。
+			Tip3: 巫师世界：夜间前往禁林，邂逅独特的魔法生物。
+			Tip4: 巫师世界：从魔法生物身上收集魔法精华，用于高级制作。
+			Tip5: 巫师世界：击败蛇怪、匈牙利树蜂龙和伏地魔！
+			Tip6: 巫师世界：从奥利凡德处购买标准咒语书获取完整指南。
+			Tip7: 巫师世界：每套霍格沃茨学院护甲都有配套的专属武器。
+			Tip8: 巫师世界：独角兽血仅在禁林中掉落——稀有珍宝。
+			Tip9: 巫师世界：查看《预言家日报》了解今天的巫师挑战——赚取额外精华！
+			Tip10: 巫师世界：《巫师年鉴》（邓布利多出售）是一本关于整个模组的10页百科全书。
 		}
 
+		// InfoDisplays.WizardInfoDisplay.DisplayName: Wizard Boss Progress
+
 		Triwizard: {
-			Unlocked: "火焰杯选中了你作为霍格沃茨冠军！三强争霸赛开始！"
-			Task1Intro: "第一项任务：从龙巢中取回金蛋。打败或智取匈牙利树蜂龙！"
-			Task1Start: "第一项任务：匈牙利树蜂龙守护着金蛋！在时间耗尽前取回它！"
-			Task1Complete: "金蛋到手！第一项任务完成！"
-			Task2Start: "第二项任务：潜入黑湖！从人鱼手中救出3个令牌。已获得鳃囊草！"
-			Task2Complete: "所有人质已救出！第二项任务完成！"
-			Task3Start: "第三项任务：进入三强迷宫！清除5个魔法障碍到达奖杯！"
-			Task3Complete: "三强杯是你的了！"
-			Champion: "你是三强冠军！永恒的荣耀属于你！"
-			ChampionCeremony: "大礼堂爆发出欢庆！一位传奇的冠军诞生了！"
-			RescueProgress: "救援令牌：{0}/{1}"
-			MazeProgress: "障碍清除：{0}/{1}"
-			TimeWarning: "还剩30秒！快！"
-			TaskFailed: "时间到！任务失败。"
-			TryAgain: "使用火焰杯重新尝试。"
-			NotUnlocked: "三强争霸赛尚未开始。先打败匈牙利树蜂龙。"
-			AlreadyChampion: "你已经被加冕为三强冠军了！"
-			Status: "三强争霸赛：任务1：{0} | 任务2：{1} | 任务3：{2}"
+			Unlocked: 火焰杯选中了你作为霍格沃茨冠军！三强争霸赛开始！
+			Task1Intro: 第一项任务：从龙巢中取回金蛋。打败或智取匈牙利树蜂龙！
+			Task1Start: 第一项任务：匈牙利树蜂龙守护着金蛋！在时间耗尽前取回它！
+			Task1Complete: 金蛋到手！第一项任务完成！
+			Task2Start: 第二项任务：潜入黑湖！从人鱼手中救出3个令牌。已获得鳃囊草！
+			Task2Complete: 所有人质已救出！第二项任务完成！
+			Task3Start: 第三项任务：进入三强迷宫！清除5个魔法障碍到达奖杯！
+			Task3Complete: 三强杯是你的了！
+			Champion: 你是三强冠军！永恒的荣耀属于你！
+			ChampionCeremony: 大礼堂爆发出欢庆！一位传奇的冠军诞生了！
+			RescueProgress: 救援令牌：{0}/{1}
+			MazeProgress: 障碍清除：{0}/{1}
+			TimeWarning: 还剩30秒！快！
+			TaskFailed: 时间到！任务失败。
+			TryAgain: 使用火焰杯重新尝试。
+			NotUnlocked: 三强争霸赛尚未开始。先打败匈牙利树蜂龙。
+			AlreadyChampion: 你已经被加冕为三强冠军了！
+			Status: 三强争霸赛：任务1：{0} | 任务2：{1} | 任务3：{2}
 			SourceTask: 三强任务完成
-			GobletSelection: "火焰杯闪烁蓝光！它选中你为霍格沃茨冠军！德姆斯特朗和布斯巴顿也选出了他们的冠军。三强争霸赛开始！"
-			FinalStandings: "最终排名：霍格沃茨 {0} | 德姆斯特朗 {1} | 布斯巴顿 {2}"
-			SchoolStandings: "学校排名：霍格沃茨 {0} | 德姆斯特朗 {1} | 布斯巴顿 {2}"
+			GobletSelection: 火焰杯闪烁蓝光！它选中你为霍格沃茨冠军！德姆斯特朗和布斯巴顿也选出了他们的冠军。三强争霸赛开始！
+			FinalStandings: 最终排名：霍格沃茨 {0} | 德姆斯特朗 {1} | 布斯巴顿 {2}
+			SchoolStandings: 学校排名：霍格沃茨 {0} | 德姆斯特朗 {1} | 布斯巴顿 {2}
 		}
 
 		Ministry: {
-			Unlocked: "金斯莱的猫头鹰到达：'凤凰社需要你。神秘事务司已被入侵。'"
-			OrderBriefing: "你的任务：在食死徒夺取预言球之前回收它们。"
-			MissionStart: "神秘事务司——你进入了预言大厅。回收标记的预言球！"
-			CollectOrbs: "在时间耗尽前收集{0}个预言球。"
-			OrbProgress: "预言球：{0}/{1}"
-			TimeWarning: "还有30秒！食死徒正在逼近！"
-			MissionComplete: "任务完成！{0}个食死徒被击溃。预言球已安全。"
-			OrderReward: "凤凰社致意——获得预言尘和嘉奖。"
-			MissionFailed: "任务失败。食死徒已夺取预言球。"
-			TryAgain: "使用魔法部访客徽章重新尝试。"
-			NotUnlocked: "神秘事务司已封锁。先击败贝拉特里克斯。"
-			ActiveStatus: "任务进行中：{0}/{1}预言球已收集，剩余{2}秒。"
-			ReadyStatus: "已完成魔法部任务：{0}次。准备接受下一个指令。"
+			Unlocked: 金斯莱的猫头鹰到达：'凤凰社需要你。神秘事务司已被入侵。'
+			OrderBriefing: 你的任务：在食死徒夺取预言球之前回收它们。
+			MissionStart: 神秘事务司——你进入了预言大厅。回收标记的预言球！
+			CollectOrbs: 在时间耗尽前收集{0}个预言球。
+			OrbProgress: 预言球：{0}/{1}
+			TimeWarning: 还有30秒！食死徒正在逼近！
+			MissionComplete: 任务完成！{0}个食死徒被击溃。预言球已安全。
+			OrderReward: 凤凰社致意——获得预言尘和嘉奖。
+			MissionFailed: 任务失败。食死徒已夺取预言球。
+			TryAgain: 使用魔法部访客徽章重新尝试。
+			NotUnlocked: 神秘事务司已封锁。先击败贝拉特里克斯。
+			ActiveStatus: 任务进行中：{0}/{1}预言球已收集，剩余{2}秒。
+			ReadyStatus: 已完成魔法部任务：{0}次。准备接受下一个指令。
 			SourceMission: 魔法部任务完成
 			MissionButton: 任务状态
-			TimeChamberUnlocked: "时间密室已显现。不稳定的时间制品需要稳定化。"
-			TimeChamberStart: "时间密室——时间制品正在失控！收集沙漏！"
-			CollectHourglasses: "在时间崩溃前稳定{0}个不稳定沙漏。"
-			HourglassProgress: "沙漏：{0}/{1}"
-			TimeChamberComplete: "时间危机已解除。沙漏已稳定。"
-			TimeChamberFailed: "时间崩溃了。时间制品已丢失。"
+			TimeChamberUnlocked: 时间密室已显现。不稳定的时间制品需要稳定化。
+			TimeChamberStart: 时间密室——时间制品正在失控！收集沙漏！
+			CollectHourglasses: 在时间崩溃前稳定{0}个不稳定沙漏。
+			HourglassProgress: 沙漏：{0}/{1}
+			TimeChamberComplete: 时间危机已解除。沙漏已稳定。
+			TimeChamberFailed: 时间崩溃了。时间制品已丢失。
 			SourceTimeChamber: 时间密室稳定化
-			DeathChamberUnlocked: "死亡密室已打开。帷幕正在碎裂。"
-			VeilWarning: "警告：生死之间的帷幕不可轻视。封印裂缝。不要逗留。"
-			DeathChamberStart: "死亡密室——帷幕正在碎裂！在边界崩溃前封印裂缝！"
-			SealFractures: "封印{0}个帷幕裂缝。用力量摧毁它们。"
-			FractureProgress: "裂缝封印：{0}/{1}"
-			DeathChamberComplete: "帷幕裂缝已封印。生死之间的边界得以维持。"
-			VeilSealed: "神秘事务司致谢。很少有人敢接近帷幕。"
-			DeathChamberFailed: "裂缝扩散失控。帷幕仍然不稳定。"
+			DeathChamberUnlocked: 死亡密室已打开。帷幕正在碎裂。
+			VeilWarning: 警告：生死之间的帷幕不可轻视。封印裂缝。不要逗留。
+			DeathChamberStart: 死亡密室——帷幕正在碎裂！在边界崩溃前封印裂缝！
+			SealFractures: 封印{0}个帷幕裂缝。用力量摧毁它们。
+			FractureProgress: 裂缝封印：{0}/{1}
+			DeathChamberComplete: 帷幕裂缝已封印。生死之间的边界得以维持。
+			VeilSealed: 神秘事务司致谢。很少有人敢接近帷幕。
+			DeathChamberFailed: 裂缝扩散失控。帷幕仍然不稳定。
 			SourceDeathChamber: 死亡密室封印
 		}
 
 		Gringotts: {
-			Unlocked: "一个古灵阁妖精走来：'我们已授权合格巫师进行金库回收合同。'"
-			MissionStart: "古灵阁金库——进入金库并回收标记的遗物。注意安全守护。"
-			CollectRelics: "回收{0}个金库遗物。妖精们在注视着。"
-			RelicProgress: "遗物：{0}/{1}"
-			JinxWarning: "防盗咒触发！金库守护已激活！"
-			TimeWarning: "还有30秒！金库大门即将关闭！"
-			MissionComplete: "所有遗物已回收。妖精们对你的效率表示认可。"
-			GoblinThanks: "加隆尘和金币——公平工作的公平报酬。"
-			MissionFailed: "时间到。金库已自行封锁。"
-			NotUnlocked: "古灵阁金库访问需要先击败蛇怪。"
-			ActiveStatus: "金库行动进行中：{0}/{1}遗物已收集，剩余{2}秒。"
-			ReadyStatus: "已完成金库行动：{0}次。准备接受下一个合同。"
+			Unlocked: 一个古灵阁妖精走来：'我们已授权合格巫师进行金库回收合同。'
+			MissionStart: 古灵阁金库——进入金库并回收标记的遗物。注意安全守护。
+			CollectRelics: 回收{0}个金库遗物。妖精们在注视着。
+			RelicProgress: 遗物：{0}/{1}
+			JinxWarning: 防盗咒触发！金库守护已激活！
+			TimeWarning: 还有30秒！金库大门即将关闭！
+			MissionComplete: 所有遗物已回收。妖精们对你的效率表示认可。
+			GoblinThanks: 加隆尘和金币——公平工作的公平报酬。
+			MissionFailed: 时间到。金库已自行封锁。
+			NotUnlocked: 古灵阁金库访问需要先击败蛇怪。
+			ActiveStatus: 金库行动进行中：{0}/{1}遗物已收集，剩余{2}秒。
+			ReadyStatus: 已完成金库行动：{0}次。准备接受下一个合同。
 			SourceVault: 古灵阁金库合同
 			VaultButton: 金库状态
 		}
 
 		DiagonAlley: {
-			Welcome: "你轻敲破釜酒吧后面的墙壁...砖块自行重新排列，对角巷在你面前展开！"
-			StreetDescription: "鹅卵石街道向前延伸，两旁是魔法店面，熙来攘往的巫师们。"
+			Welcome: 你轻敲破釜酒吧后面的墙壁...砖块自行重新排列，对角巷在你面前展开！
+			StreetDescription: 鹅卵石街道向前延伸，两旁是魔法店面，熙来攘往的巫师们。
 			Gringotts: "  古灵阁银行——白色大理石建筑高耸在前。与妖精柜员交谈获取金库合同。"
 			Ollivanders: "  奥利凡德魔杖店——自公元前382年以来的精品魔杖。最好的魔杖在这里选择它们的巫师。"
 			Wheezes: "  韦斯莱魔法把戏坊——弗雷德和乔治的笑话商店闪烁着色彩和喧嚣。"
 			SourceVisit: 对角巷访问
-			CartDescent1: "妖精带你来到铁轨上的推车。'金库访问已授权。抓紧了。'"
-			CartDescent2: "推车猛地向前冲，深入伦敦地下。火把在身旁飞掠。"
-			CartDescent3: "伴随着刺耳的刹车声，推车停了下来。'你的金库。不要碰不属于你的东西。'"
+			CartDescent1: 妖精带你来到铁轨上的推车。'金库访问已授权。抓紧了。'
+			CartDescent2: 推车猛地向前冲，深入伦敦地下。火把在身旁飞掠。
+			CartDescent3: 伴随着刺耳的刹车声，推车停了下来。'你的金库。不要碰不属于你的东西。'
 		}
 
 		StMungos: {
-			Unlocked: "圣芒戈魔法伤病医院现已开放。与治疗师交谈或使用访客通行证。"
-			Entrance: "病房已开放。治疗师需要分诊协助。"
-			SpellWardStart: "咒术伤害病房——咒术残留节点正在不稳定化。摧毁它们以稳定。"
-			CreatureWardStart: "生物伤害病房——毒伤节点正在扩散毒素。摧毁它们。"
-			PotionWardStart: "药水事故病房——坩埚溢出节点正在泄漏烟雾。中和它们。"
-			StabilizeNodes: "在时间耗尽前稳定{0}个节点。"
-			NodeProgress: "已稳定节点：{0}/{1}"
-			TimeWarning: "还剩30秒！快！"
-			SpellWardComplete: "咒术伤害病房已稳定。咒术已被控制。"
-			CreatureWardComplete: "生物伤害病房已稳定。毒素已被中和。"
-			PotionWardComplete: "药水事故病房已稳定。烟雾已消散。"
-			MissionFailed: "病房已被压垮。分诊失败。"
-			NotUnlocked: "进入圣芒戈需要先击败匈牙利树蜂龙。"
-			ActiveStatus: "分诊进行中：{0}/{1}节点已稳定，剩余{2}秒。"
-			ReadyStatus: "已完成任务：{0}次。下一个病房：{1}。"
+			Unlocked: 圣芒戈魔法伤病医院现已开放。与治疗师交谈或使用访客通行证。
+			Entrance: 病房已开放。治疗师需要分诊协助。
+			SpellWardStart: 咒术伤害病房——咒术残留节点正在不稳定化。摧毁它们以稳定。
+			CreatureWardStart: 生物伤害病房——毒伤节点正在扩散毒素。摧毁它们。
+			PotionWardStart: 药水事故病房——坩埚溢出节点正在泄漏烟雾。中和它们。
+			StabilizeNodes: 在时间耗尽前稳定{0}个节点。
+			NodeProgress: 已稳定节点：{0}/{1}
+			TimeWarning: 还剩30秒！快！
+			SpellWardComplete: 咒术伤害病房已稳定。咒术已被控制。
+			CreatureWardComplete: 生物伤害病房已稳定。毒素已被中和。
+			PotionWardComplete: 药水事故病房已稳定。烟雾已消散。
+			MissionFailed: 病房已被压垮。分诊失败。
+			NotUnlocked: 进入圣芒戈需要先击败匈牙利树蜂龙。
+			ActiveStatus: 分诊进行中：{0}/{1}节点已稳定，剩余{2}秒。
+			ReadyStatus: 已完成任务：{0}次。下一个病房：{1}。
 			SourceTriage: 圣芒戈分诊
 			TriageButton: 分诊状态
 		}
 
 		Knockturn: {
-			Unlocked: "一条狭窄的小巷引起了你的注意……翻倒巷。这里的阴影有重量。"
-			Warning: "博金与伯克斯有封锁合同，给那些够胆的人。处理诅咒物品后果自负。"
-			MissionStart: "翻倒巷——博金有需要封锁的诅咒物品。小心摧毁它们。"
-			ContainObjects: "封锁{0}件危险的黑魔法物品。在它们的诅咒扩散之前击毁它们。"
-			ContainProgress: "已封锁物品：{0}/{1}"
-			TimeWarning: "还剩30秒！诅咒正在增强！"
-			MissionComplete: "合同完成。黑魔法物品已被封锁。"
-			BorginPays: "博金一言不发地把你的报酬推过柜台。"
-			MissionFailed: "诅咒压倒了封锁。博金看起来不太高兴。"
-			NotUnlocked: "翻倒巷已封锁。先击败贝拉特里克斯并访问对角巷。"
-			ActiveStatus: "合同进行中：{0}/{1}物品已封锁，剩余{2}秒。"
-			ReadyStatus: "已完成合同：{0}次。博金还有更多活要干。"
+			Unlocked: 一条狭窄的小巷引起了你的注意……翻倒巷。这里的阴影有重量。
+			Warning: 博金与伯克斯有封锁合同，给那些够胆的人。处理诅咒物品后果自负。
+			MissionStart: 翻倒巷——博金有需要封锁的诅咒物品。小心摧毁它们。
+			ContainObjects: 封锁{0}件危险的黑魔法物品。在它们的诅咒扩散之前击毁它们。
+			ContainProgress: 已封锁物品：{0}/{1}
+			TimeWarning: 还剩30秒！诅咒正在增强！
+			MissionComplete: 合同完成。黑魔法物品已被封锁。
+			BorginPays: 博金一言不发地把你的报酬推过柜台。
+			MissionFailed: 诅咒压倒了封锁。博金看起来不太高兴。
+			NotUnlocked: 翻倒巷已封锁。先击败贝拉特里克斯并访问对角巷。
+			ActiveStatus: 合同进行中：{0}/{1}物品已封锁，剩余{2}秒。
+			ReadyStatus: 已完成合同：{0}次。博金还有更多活要干。
 			SourceContract: 翻倒巷封锁合同
 			ContractButton: 合同状态
-			OpalContained: "诅咒蛋白石项链碎裂了！它的黑暗附魔被打破。"
-			CabinetSealed: "消失柜颤抖着静止了。裂隙已被封锁。"
+			OpalContained: 诅咒蛋白石项链碎裂了！它的黑暗附魔被打破。
+			CabinetSealed: 消失柜颤抖着静止了。裂隙已被封锁。
 		}
 
 		Forest: {
-			Unlocked: "禁忌森林深处的道路已开放。海格的远征任务现已可用。"
-			HagridBriefing: "在禁忌森林中于夜间使用森林远征灯笼开始任务。"
-			UnicornGladeStart: "独角兽林地——黑暗的腐化痕迹已出现。清除它们以恢复林地的纯净。"
-			SkywatchStart: "半人马星象台——不稳定的预兆之石正在干扰天象观测。将它们稳定下来。"
-			NestStart: "八眼巨蛛巢穴——巢穴标记正在产生蜘蛛。摧毁它们以清除巢穴。"
-			CompleteObjectives: "在时间耗尽前摧毁{0}个目标。"
-			ObjectiveProgress: "已完成目标：{0}/{1}"
-			TimeWarning: "剩余30秒！森林变得躁动不安！"
-			UnicornGladeComplete: "腐化痕迹已清除。独角兽林地闪烁着恢复的纯净光芒。"
-			SkywatchComplete: "预兆之石已稳定。半人马们又可以观测星象了。"
-			NestComplete: "巢穴标记已摧毁。蜘蛛巢穴归于沉寂。"
-			MissionFailed: "时间耗尽。森林收回了它的秘密。"
-			NotUnlocked: "森林深处的道路被封印。请先击败蛇妖。"
-			ActiveStatus: "远征进行中：{0}/{1}个目标，剩余{2}秒。"
-			ReadyStatus: "已完成远征：{0}次。下一个任务：{1}。"
+			Entered: 你踏入禁林阴影覆盖的枝叶之下。
+			Exited: 你离开了禁林。
+			EnteredPostHorntail: 焦黑的痕迹穿过灌木丛。更庞大的野兽已经苏醒。
+			EnteredPostVoldemort: 森林记得那场战争。空气仍在注视你。
+			Unlocked: 禁忌森林深处的道路已开放。海格的远征任务现已可用。
+			HagridBriefing: 在禁忌森林中于夜间使用森林远征灯笼开始任务。
+			UnicornGladeStart: 独角兽林地——黑暗的腐化痕迹已出现。清除它们以恢复林地的纯净。
+			SkywatchStart: 半人马星象台——不稳定的预兆之石正在干扰天象观测。将它们稳定下来。
+			NestStart: 八眼巨蛛巢穴——巢穴标记正在产生蜘蛛。摧毁它们以清除巢穴。
+			CompleteObjectives: 在时间耗尽前摧毁{0}个目标。
+			ObjectiveProgress: 已完成目标：{0}/{1}
+			TimeWarning: 剩余30秒！森林变得躁动不安！
+			UnicornGladeComplete: 腐化痕迹已清除。独角兽林地闪烁着恢复的纯净光芒。
+			SkywatchComplete: 预兆之石已稳定。半人马们又可以观测星象了。
+			NestComplete: 巢穴标记已摧毁。蜘蛛巢穴归于沉寂。
+			MissionFailed: 时间耗尽。森林收回了它的秘密。
+			NotUnlocked: 森林深处的道路被封印。请先击败蛇妖。
+			ActiveStatus: 远征进行中：{0}/{1}个目标，剩余{2}秒。
+			ReadyStatus: 已完成远征：{0}次。下一个任务：{1}。
 			SourceExpedition: 森林远征
 			ExpeditionButton: 远征状态
-			ThestralStart: "夜骐空地——月光信标出现在空地上。激活它们以稳定光谱能量。"
-			ThestralComplete: "信标已稳定。夜骐空地在月光宁静中柔和地发光。"
-			HagridExpedition1: "好了！森林需要我们的帮助。带上这盏灯笼，天黑后进去。"
-			HagridExpedition2: "独角兽林地被污染了——是黑暗痕迹，不是独角兽本身。我们保护它们，不猎杀它们。"
-			HagridExpedition3: "半人马们担心他们的星象观测。他们说是不稳定的预兆之石。"
-			HagridExpedition4: "阿拉戈克的旧殖民地失控了。巢穴标记让它们有组织。砸碎那些标记，它们就会散开。"
-			HagridExpedition5: "你在里面干得不错。森林会记住那些帮助它的人。"
-			HagridExpedition6: "森林深处有一片空地，夜骐们聚集在那里。真是美丽的生物。只有见过死亡的人才能看到它们。"
+			ThestralStart: 夜骐空地——月光信标出现在空地上。激活它们以稳定光谱能量。
+			ThestralComplete: 信标已稳定。夜骐空地在月光宁静中柔和地发光。
+			HagridExpedition1: 好了！森林需要我们的帮助。带上这盏灯笼，天黑后进去。
+			HagridExpedition2: 独角兽林地被污染了——是黑暗痕迹，不是独角兽本身。我们保护它们，不猎杀它们。
+			HagridExpedition3: 半人马们担心他们的星象观测。他们说是不稳定的预兆之石。
+			HagridExpedition4: 阿拉戈克的旧殖民地失控了。巢穴标记让它们有组织。砸碎那些标记，它们就会散开。
+			HagridExpedition5: 你在里面干得不错。森林会记住那些帮助它的人。
+			HagridExpedition6: 森林深处有一片空地，夜骐们聚集在那里。真是美丽的生物。只有见过死亡的人才能看到它们。
 		}
 
 		Shack: {
-			Unlocked: "海格悄悄递给你一枚小木牌。'知道怎么让柳树定住？好。小心点。'"
-			WillowStart: "柳树压制——打人柳正在狂暴抽打！瘫痪3个枝干节点！"
-			TunnelStart: "隧道稳定——通道正在坍塌！稳固4个隧道守护！"
-			ShackStart: "棚屋封锁——月光守护阵正在碎裂！在屏障崩溃前封印3处裂缝！"
-			CompleteObjectives: "在时间耗尽前清除{0}个目标。"
-			ObjectiveProgress: "目标：{0}/{1}"
-			TimeWarning: "还剩30秒！通道正在失稳！"
-			WillowComplete: "柳树平静了。通道暂时安全了。"
-			TunnelComplete: "隧道稳住了。守护阵稳定。"
-			ShackComplete: "棚屋的封锁守护阵已加固。月光无法触及其中之物。"
-			MissionFailed: "通道已坍塌。改天晚上再试吧。"
-			NotUnlocked: "打人柳守护着它的秘密。先击败芬里尔·格雷伯克。"
-			ActiveStatus: "任务进行中：{0}/{1}目标已清除，剩余{2}秒。"
-			ReadyStatus: "已完成任务：{0}次。下一个：{1}。"
+			Unlocked: 海格悄悄递给你一枚小木牌。'知道怎么让柳树定住？好。小心点。'
+			WillowStart: 柳树压制——打人柳正在狂暴抽打！瘫痪3个枝干节点！
+			TunnelStart: 隧道稳定——通道正在坍塌！稳固4个隧道守护！
+			ShackStart: 棚屋封锁——月光守护阵正在碎裂！在屏障崩溃前封印3处裂缝！
+			CompleteObjectives: 在时间耗尽前清除{0}个目标。
+			ObjectiveProgress: 目标：{0}/{1}
+			TimeWarning: 还剩30秒！通道正在失稳！
+			WillowComplete: 柳树平静了。通道暂时安全了。
+			TunnelComplete: 隧道稳住了。守护阵稳定。
+			ShackComplete: 棚屋的封锁守护阵已加固。月光无法触及其中之物。
+			MissionFailed: 通道已坍塌。改天晚上再试吧。
+			NotUnlocked: 打人柳守护着它的秘密。先击败芬里尔·格雷伯克。
+			ActiveStatus: 任务进行中：{0}/{1}目标已清除，剩余{2}秒。
+			ReadyStatus: 已完成任务：{0}次。下一个：{1}。
 			SourceMission: 尖叫棚屋任务
-			FullMoonWarning: "满月升起！棚屋的守护阵在增强的月光下紧绷。危险会更强——但奖励也会更丰厚。"
+			SourceShack: 尖叫棚屋封锁
+			FullMoonWarning: 满月升起！棚屋的守护阵在增强的月光下紧绷。危险会更强——但奖励也会更丰厚。
 		}
 
 		Grimmauld: {
-			Revealed: "赤胆忠心咒解除。格里莫广场十二号在你面前现形。"
-			Address: "凤凰社总部可在格里莫广场十二号找到。"
-			Description: "安全屋需要持续维护以应对侵扰、诅咒画像和黑暗生物。"
-			DoxySweepStart: "毒精清扫——房子里嗡嗡作响。在它们失控繁殖前摧毁毒精巢穴！"
-			PortraitStart: "画像压制——沃尔布加的画像又在尖叫了。压制诅咒画框！"
-			BoggartStart: "博格特防护——恐惧显现已扎根。驱逐它们——笑笑咒最有效！"
-			ClearThreats: "在时间耗尽前清除{0}个威胁。"
-			ThreatProgress: "已清除威胁：{0}/{1}"
-			TimeWarning: "还剩30秒！侵扰正在蔓延！"
-			DoxySweepComplete: "毒精巢穴已被摧毁。嗡嗡声停止了——十二号终于松了口气。"
-			PortraitComplete: "沃尔布加的画像终于沉默了。尖叫声已停止。"
-			BoggartComplete: "博格特化为薄雾消散了！衣柜已清空。"
-			MissionFailed: "安全屋已被压垮。结界再次封锁了它。"
-			NotRevealed: "赤胆忠心咒隐藏了这个地方。先击败阿兹卡班绝望并完成一次神秘事务司任务。"
-			ActiveStatus: "安全屋维护进行中：{0}/{1}威胁已清除，剩余{2}秒。"
-			ReadyStatus: "已完成任务：{0}次。下一次维护：{1}。"
+			Revealed: 赤胆忠心咒解除。格里莫广场十二号在你面前现形。
+			Address: 凤凰社总部可在格里莫广场十二号找到。
+			Description: 安全屋需要持续维护以应对侵扰、诅咒画像和黑暗生物。
+			DoxySweepStart: 毒精清扫——房子里嗡嗡作响。在它们失控繁殖前摧毁毒精巢穴！
+			PortraitStart: 画像压制——沃尔布加的画像又在尖叫了。压制诅咒画框！
+			BoggartStart: 博格特防护——恐惧显现已扎根。驱逐它们——笑笑咒最有效！
+			ClearThreats: 在时间耗尽前清除{0}个威胁。
+			ThreatProgress: 已清除威胁：{0}/{1}
+			TimeWarning: 还剩30秒！侵扰正在蔓延！
+			DoxySweepComplete: 毒精巢穴已被摧毁。嗡嗡声停止了——十二号终于松了口气。
+			PortraitComplete: 沃尔布加的画像终于沉默了。尖叫声已停止。
+			BoggartComplete: 博格特化为薄雾消散了！衣柜已清空。
+			MissionFailed: 安全屋已被压垮。结界再次封锁了它。
+			NotRevealed: 赤胆忠心咒隐藏了这个地方。先击败阿兹卡班绝望并完成一次神秘事务司任务。
+			ActiveStatus: 安全屋维护进行中：{0}/{1}威胁已清除，剩余{2}秒。
+			ReadyStatus: 已完成任务：{0}次。下一次维护：{1}。
 			SourceMaintenance: 格里莫安全屋维护
 			MissionButton: 安全屋状态
-			PortraitSilenced: "沃尔布加的画像终于沉默了。尖叫声已停止。"
-			RewardGiven: "凤凰社为你的服务留下了补给。安全屋决心增强了你。"
-			NestSpawning: "嗡嗡声充满房间——一个毒精巢穴正在生成虫群！"
-			PortraitShrieking: "污物！渣滓！血统叛徒！——沃尔布加的画像向所有人尖声咒骂。"
-			BoggartLurking: "衣柜里有什么东西在移动……一只博格特。使用笑笑咒！"
-			WardStable: "赤胆忠心结界坚固地守住了。十二号仍对敌人隐藏。"
-			OrderGratitude: "金斯莱赞许地点头。凤凰社感谢你守护总部。"
-			ConcealmentWoven: "隐匿丝线从稳定的结界残留中具现化。"
+			PortraitSilenced: 沃尔布加的画像终于沉默了。尖叫声已停止。
+			RewardGiven: 凤凰社为你的服务留下了补给。安全屋决心增强了你。
+			NestSpawning: 嗡嗡声充满房间——一个毒精巢穴正在生成虫群！
+			PortraitShrieking: 污物！渣滓！血统叛徒！——沃尔布加的画像向所有人尖声咒骂。
+			BoggartLurking: 衣柜里有什么东西在移动……一只博格特。使用笑笑咒！
+			WardStable: 赤胆忠心结界坚固地守住了。十二号仍对敌人隐藏。
+			OrderGratitude: 金斯莱赞许地点头。凤凰社感谢你守护总部。
+			ConcealmentWoven: 隐匿丝线从稳定的结界残留中具现化。
 		}
 
 		Battle: {
-			Unlocked: "城堡守护阵在颤抖。霍格沃茨之战现在可以开始了。做好准备。"
-			Preparation: "摧毁所有核心魂器、保卫守护阵并面对阿兹卡班绝望后方可解锁城堡围攻。"
-			Phase1Start: "第一阶段：城堡防御——食死徒攻击外围守护阵！保护城堡守护节点！"
-			DefendCastle: "在守护阵崩溃前保卫{0}个城堡守护节点！"
-			Phase2Start: "第二阶段：突破——外围防御已失守！在黑暗吞噬城堡前封住突破封印！"
-			TimeWarning: "还剩30秒！城堡防御正在崩溃！"
-			ObjectiveProgress: "目标完成：{0}/{1}"
-			NaginiSlain: "纳吉尼倒下了——最后一个魂器被摧毁。伏地魔与永生的最后纽带被斩断。"
-			Victory: "霍格沃茨之战胜利了。城堡屹立不倒。希望长存。"
-			VoldemortReady: "黑魔王的防御已被粉碎。现在可以在他最脆弱时与之对决。"
-			Failed: "城堡陷落了。守护阵已被打破。重整旗鼓再试。"
-			NotUnlocked: "霍格沃茨之战尚不可用。需摧毁所有核心魂器、保卫守护阵并击败阿兹卡班绝望。"
-			ActiveStatus: "战斗进行中：第{0}阶段，目标{1}，剩余{2}秒。"
-			ReadyStatus: "已赢得战斗：{0}次。城堡铭记你的功绩。"
+			Unlocked: 城堡守护阵在颤抖。霍格沃茨之战现在可以开始了。做好准备。
+			Preparation: 摧毁所有核心魂器、保卫守护阵并面对阿兹卡班绝望后方可解锁城堡围攻。
+			Phase1Start: 第一阶段：城堡防御——食死徒攻击外围守护阵！保护城堡守护节点！
+			DefendCastle: 在守护阵崩溃前保卫{0}个城堡守护节点！
+			Phase2Start: 第二阶段：突破——外围防御已失守！在黑暗吞噬城堡前封住突破封印！
+			TimeWarning: 还剩30秒！城堡防御正在崩溃！
+			ObjectiveProgress: 目标完成：{0}/{1}
+			NaginiSlain: 纳吉尼倒下了——最后一个魂器被摧毁。伏地魔与永生的最后纽带被斩断。
+			Victory: 霍格沃茨之战胜利了。城堡屹立不倒。希望长存。
+			VoldemortReady: 黑魔王的防御已被粉碎。现在可以在他最脆弱时与之对决。
+			Failed: 城堡陷落了。守护阵已被打破。重整旗鼓再试。
+			NotUnlocked: 霍格沃茨之战尚不可用。需摧毁所有核心魂器、保卫守护阵并击败阿兹卡班绝望。
+			ActiveStatus: 战斗进行中：第{0}阶段，目标{1}，剩余{2}秒。
+			ReadyStatus: 已赢得战斗：{0}次。城堡铭记你的功绩。
 			SourceBattle: 霍格沃茨之战
-			TrackerTitle: "=== 魂器猎杀状态 ==="
-			VoldemortPower: "伏地魔的力量：{0}%"
+			TrackerTitle: === 魂器猎杀状态 ===
+			VoldemortPower: 伏地魔的力量：{0}%
 		}
 
 		Houses: {
@@ -2687,21 +3417,21 @@ Mods: {
 		}
 
 		DarkArts: {
-			Tier2Warning: "你感觉到黑魔法在侵蚀……你的守护神正在减弱。"
-			Tier3Warning: "偏执感袭来。魔法部开始怀疑了。"
-			Tier4Warning: "黑魔法吞噬了你。治疗魔法开始衰退。"
-			Tier5Warning: "你已完全拥抱了黑魔法。也许已经无法回头了。"
-			Cleansed: "黑暗正在消退……"
+			Tier2Warning: 你感觉到黑魔法在侵蚀……你的守护神正在减弱。
+			Tier3Warning: 偏执感袭来。魔法部开始怀疑了。
+			Tier4Warning: 黑魔法吞噬了你。治疗魔法开始衰退。
+			Tier5Warning: 你已完全拥抱了黑魔法。也许已经无法回头了。
+			Cleansed: 黑暗正在消退……
 		}
 
 		RoomOfRequirement: {
-			Restoration: "修复之室"
-			Recovery: "恢复之室"
-			HiddenThings: "隐秘之室"
-			ComeAndGo: "来去自如之室"
-			Sanctuary: "庇护之室"
+			Restoration: 修复之室
+			Recovery: 恢复之室
+			HiddenThings: 隐秘之室
+			ComeAndGo: 来去自如之室
+			Sanctuary: 庇护之室
 			Manifests: "{0}在你周围显现……"
-			TooltipInfo: "召唤一间根据你当前需求变化的魔法房间"
+			TooltipInfo: 召唤一间根据你当前需求变化的魔法房间
 			TooltipResistance: "[c/C8B48C:D.A.加隆 + 已守护城堡：抵抗军总部]"
 			TooltipModes1: "[c/B4C8FF:绝望 > 15%：修复之室] | [c/66FF66:低生命：恢复之室]"
 			TooltipModes2: "[c/6666FF:手持魔杖：训练之室]"
@@ -2709,124 +3439,2648 @@ Mods: {
 		}
 
 		OwlPost: {
-			DescMushroom: "10个蘑菇用于药水订单"
-			DescDaybloom: "5株日光花给药剂大师"
-			DescFallenStar: "3个坠落之星给奥利凡德"
-			DescCobweb: "20个蜘蛛网给海格的生物"
-			DescLens: "5个透镜给半人马的星象观测"
-			DescBook: "3本书给霍格沃茨图书馆"
-			DescBottle: "10个瓶子给药剂学课堂"
-			DescGoldBar: "2根金锭给古灵阁"
-			DescFeather: "5根羽毛给猫头鹰梳理"
-			DescSilk: "5匹丝绸给新校服"
-			DeliveryComplete: "猫头鹰邮递完成！收到{0}个魔法精华。"
-			CompletedToday: "今天的快递已完成。明天再来查看！"
-			NoDeliveries: "尚未发布快递。"
-			RequestFormat: "猫头鹰邮递请求：送达{0}个{1}。奖励：魔法精华 + 增益。"
+			DescMushroom: 10个蘑菇用于药水订单
+			DescDaybloom: 5株日光花给药剂大师
+			DescFallenStar: 3个坠落之星给奥利凡德
+			DescCobweb: 20个蜘蛛网给海格的生物
+			DescLens: 5个透镜给半人马的星象观测
+			DescBook: 3本书给霍格沃茨图书馆
+			DescBottle: 10个瓶子给药剂学课堂
+			DescGoldBar: 2根金锭给古灵阁
+			DescFeather: 5根羽毛给猫头鹰梳理
+			DescSilk: 5匹丝绸给新校服
+			DeliveryComplete: 猫头鹰邮递完成！收到{0}个魔法精华。
+			CompletedToday: 今天的快递已完成。明天再来查看！
+			NoDeliveries: 尚未发布快递。
+			RequestFormat: 猫头鹰邮递请求：送达{0}个{1}。奖励：魔法精华 + 增益。
 		}
 
 		HorcruxHunt: {
-			DiaryName: "里德尔的日记"
-			LocketName: "斯莱特林的挂坠盒"
-			CupName: "赫奇帕奇的金杯"
-			DiademName: "拉文克劳的冠冕"
-			NaginiName: "纳吉尼"
-			DiaryFlavor: "日记尖叫着，墨水如血般从书页中涌出！"
-			LocketFlavor: "挂坠盒猛然弹开——一个阴影般的身影尖叫着消散了！"
-			CupFlavor: "金杯融化变形，黑魔法从中大量流出！"
-			DiademFlavor: "冠冕碎裂——一声幽灵般的哀号回荡在空气中！"
-			DefaultFlavor: "魂器被摧毁了！"
-			SoulDestroyed: "伏地魔的一片灵魂碎片被摧毁了！（{0}/4）"
-			DarkLordWeakens: "黑魔王正在变弱……（{0}%力量剩余）"
-			AllDestroyed: "所有核心魂器已被摧毁！伏地魔的灵魂再也无法躲藏。"
-			SeekCloak: "去找邓布利多的画像。真正的隐形衣现在可以取回了。"
-			EndureAzkaban: "希望必须经受住阿兹卡班的绝望，死亡圣器之路才能继续。"
-			NaginiFalls: "纳吉尼倒下了。又一条将伏地魔束缚在人世的纽带被斩断。"
-			NeedTool: "你需要蛇妖獠牙或格兰芬多之剑才能摧毁这个魂器！"
+			DiaryName: 里德尔的日记
+			LocketName: 斯莱特林的挂坠盒
+			CupName: 赫奇帕奇的金杯
+			DiademName: 拉文克劳的冠冕
+			NaginiName: 纳吉尼
+			DiaryFlavor: 日记尖叫着，墨水如血般从书页中涌出！
+			LocketFlavor: 挂坠盒猛然弹开——一个阴影般的身影尖叫着消散了！
+			CupFlavor: 金杯融化变形，黑魔法从中大量流出！
+			DiademFlavor: 冠冕碎裂——一声幽灵般的哀号回荡在空气中！
+			DefaultFlavor: 魂器被摧毁了！
+			SoulDestroyed: 伏地魔的一片灵魂碎片被摧毁了！（{0}/4）
+			DarkLordWeakens: 黑魔王正在变弱……（{0}%力量剩余）
+			AllDestroyed: 所有核心魂器已被摧毁！伏地魔的灵魂再也无法躲藏。
+			SeekCloak: 去找邓布利多的画像。真正的隐形衣现在可以取回了。
+			EndureAzkaban: 希望必须经受住阿兹卡班的绝望，死亡圣器之路才能继续。
+			NaginiFalls: 纳吉尼倒下了。又一条将伏地魔束缚在人世的纽带被斩断。
+			NeedTool: 你需要蛇妖獠牙或格兰芬多之剑才能摧毁这个魂器！
 		}
 
 		Azkaban: {
-			EventStart1: "一阵寒意席卷大地……阿兹卡班的守护阵正在崩溃！"
-			EventStart2: "保持守护神或守护之光在身边。绝望本身正与摄魂怪一同狩猎。"
-			EventEnd: "摄魂怪撤退回阿兹卡班……{0}个绝望锚点被封印。"
+			EventStart1: 一阵寒意席卷大地……阿兹卡班的守护阵正在崩溃！
+			EventStart2: 保持守护神或守护之光在身边。绝望本身正与摄魂怪一同狩猎。
+			EventEnd: 摄魂怪撤退回阿兹卡班……{0}个绝望锚点被封印。
 		}
 
 		SceneEffects: {
-			AzkabanOppression: "空气变得寒冷。绝望从墙壁中渗出。"
-			MysteryProphecy: "命运的低语回荡在预言厅中。"
-			MysteryTime: "时间在这里扭曲。空气闪烁着时间的扭曲。"
-			MysteryDeath: "帷幕在召唤。远离拱门。"
-			GrimmauldHostile: "黑暗物品蠢蠢欲动。布莱克家族的遗产犹存。"
-			StMungosWard: "魔法疾病弥漫在空气中。请谨慎行事。"
-			BattleSiege: "城堡在攻击下颤抖。坚守阵线。"
-			DiagonBustle: "对角巷的魔法喧嚣环绕着你。"
-			KnockturnShadow: "翻倒巷中的阴影加深了。小心脚下。"
-			GringottsDepth: "在伦敦地底深处，古灵阁的金库等待着。"
-			ShriekingMoonlit: "月光穿透破碎的百叶窗。有什么东西在蠢动。"
-			WillowDanger: "打人柳在头顶狂抽。压低身体。"
+			AzkabanOppression: 空气变得寒冷。绝望从墙壁中渗出。
+			MysteryProphecy: 命运的低语回荡在预言厅中。
+			MysteryTime: 时间在这里扭曲。空气闪烁着时间的扭曲。
+			MysteryDeath: 帷幕在召唤。远离拱门。
+			GrimmauldHostile: 黑暗物品蠢蠢欲动。布莱克家族的遗产犹存。
+			StMungosWard: 魔法疾病弥漫在空气中。请谨慎行事。
+			BattleSiege: 城堡在攻击下颤抖。坚守阵线。
+			DiagonBustle: 对角巷的魔法喧嚣环绕着你。
+			KnockturnShadow: 翻倒巷中的阴影加深了。小心脚下。
+			GringottsDepth: 在伦敦地底深处，古灵阁的金库等待着。
+			ShriekingMoonlit: 月光穿透破碎的百叶窗。有什么东西在蠢动。
+			WillowDanger: 打人柳在头顶狂抽。压低身体。
 		}
 
 		QuidditchMatch: {
-			PitchEntry: "你进入了魁地奇球场！边界标记闪耀起来。"
-			ScoreUpdate: "比分：{0} - {1}"
-			GoalScored: "进球！得{0}分！"
-			HoopHit: "穿过球门环！10分！"
-			Commentary1: "鬼飞球释放了！"
-			Commentary2: "精彩的飞行！"
-			Commentary3: "观众沸腾了！"
-			MatchStart: "比赛开始！球员们，骑上你们的飞天扫帚！"
-			MatchEnd: "比赛结束！最终比分：{0}比{1}"
-			SeasonEvent: "魁地奇赛季到了！多个金飞贼出现了！"
-			SeasonEvent2: "骑上飞天扫帚尽可能多地抓住它们！"
-			RankUp: "魁地奇晋级：{0}！"
-			BoundaryMarker: "魁地奇球场边界"
-			StandsBanner: "魁地奇看台"
+			PitchEntry: 你进入了魁地奇球场！边界标记闪耀起来。
+			ScoreUpdate: 比分：{0} - {1}
+			GoalScored: 进球！得{0}分！
+			HoopHit: 穿过球门环！10分！
+			Commentary1: 鬼飞球释放了！
+			Commentary2: 精彩的飞行！
+			Commentary3: 观众沸腾了！
+			MatchStart: 比赛开始！球员们，骑上你们的飞天扫帚！
+			MatchEnd: 比赛结束！最终比分：{0}比{1}
+			SeasonEvent: 魁地奇赛季到了！多个金飞贼出现了！
+			SeasonEvent2: 骑上飞天扫帚尽可能多地抓住它们！
+			RankUp: 魁地奇晋级：{0}！
+			BoundaryMarker: 魁地奇球场边界
+			StandsBanner: 魁地奇看台
 		}
 
 		Transit: {
-			PassageFade: "墙壁闪烁，一条隐藏通道出现了……"
-			PassageTravel: "你悄悄穿过秘密通道，脚步声在黑暗中回荡……"
-			PassageArrive: "你从通道中走出，拍掉身上的灰尘。"
-			HogsHeadEntry: "阿不福思点了点头。画像后面的通道打开了。"
-			HogsHeadTravel: "蜿蜒的隧道向前延伸，远处的魔杖光照亮了道路。"
-			WillowEntry: "结点冻住了。打人柳静止了。快走……"
-			WillowTunnel: "低矮的天花板，潮湿的泥土。通道向棚屋方向变窄。"
-			GringottsDescend: "矿车猛然下降。火把在身旁飞掠。你的胃翻了一下。"
-			GringottsDeep: "越来越深地潜入伦敦地下。空气变得更冷了。"
-			GringottsArrive: "矿车嘎吱一声停了下来。面前是：一扇金库大门。"
+			PassageFade: 墙壁闪烁，一条隐藏通道出现了……
+			PassageTravel: 你悄悄穿过秘密通道，脚步声在黑暗中回荡……
+			PassageArrive: 你从通道中走出，拍掉身上的灰尘。
+			HogsHeadEntry: 阿不福思点了点头。画像后面的通道打开了。
+			HogsHeadTravel: 蜿蜒的隧道向前延伸，远处的魔杖光照亮了道路。
+			WillowEntry: 结点冻住了。打人柳静止了。快走……
+			WillowTunnel: 低矮的天花板，潮湿的泥土。通道向棚屋方向变窄。
+			GringottsDescend: 矿车猛然下降。火把在身旁飞掠。你的胃翻了一下。
+			GringottsDeep: 越来越深地潜入伦敦地下。空气变得更冷了。
+			GringottsArrive: 矿车嘎吱一声停了下来。面前是：一扇金库大门。
 		}
 
 		BattleEndgame: {
-			NaginiPhase: "纳吉尼蜷缩着保护性地盘踞！趁现在出手——摧毁最后一个魂器！"
-			NaginiStrike: "纳威举起格兰芬多之剑！纳吉尼必须倒下！"
-			CastleDefenders: "城堡守卫者集结！石甲卫士向前线进发。"
-			McGonagallRally: "麦格教授举起魔杖：'石墩出击！'城堡的雕像列队出征。"
-			DefenderFlavor: "石质守卫者在走廊巡逻，保护学生免受伤害。"
-			SiegeIntensity: "城堡在颤抖。明暗魔法的爆炸照亮了天空。"
+			NaginiPhase: 纳吉尼蜷缩着保护性地盘踞！趁现在出手——摧毁最后一个魂器！
+			NaginiStrike: 纳威举起格兰芬多之剑！纳吉尼必须倒下！
+			CastleDefenders: 城堡守卫者集结！石甲卫士向前线进发。
+			McGonagallRally: 麦格教授举起魔杖：'石墩出击！'城堡的雕像列队出征。
+			DefenderFlavor: 石质守卫者在走廊巡逻，保护学生免受伤害。
+			SiegeIntensity: 城堡在颤抖。明暗魔法的爆炸照亮了天空。
 		}
 
-		// === PHASE 30 ===
 		DailyChallenge: {
-			Complete: "每日巫师挑战完成！获得了魔法精华奖励！"
+			DefeatCreatures: 击败 20 个魔法生物
+			DefeatForest: 在禁林中击败 10 个敌人
+			DefeatDarkForces: 击败 5 个摄魂怪或食死徒
+			DefeatUnderground: 击败 15 个地下魔法生物
+			DefeatAny: 击败 30 个任意巫师敌人
+			Status: 每日挑战：{0}（{1}/{2}）
+			CompleteToday: 今日挑战已完成。明天再来吧。
+			Complete: 每日巫师挑战完成！获得了魔法精华奖励！
 		}
 
 		HogwartsLetterEvent: {
-			OwlArrives: "一只猫头鹰俯冲而下，在你脚边投下了一封信！"
-			Accepted: "你已被巫师世界录取！"
+			OwlArrives: 一只猫头鹰俯冲而下，在你脚边投下了一封信！
+			Accepted: 你已被巫师世界录取！
 		}
 
 		Renown: {
-			Champion: "学院冠军！声望达到顶点！"
-			MajorBuff: "150 学院声望！高级学院加成已激活！"
-			MinorBuff: "50 学院声望！初级学院加成已激活！"
+			Champion: 学院冠军！声望达到顶点！
+			MajorBuff: 150 学院声望！高级学院加成已激活！
+			MinorBuff: 50 学院声望！初级学院加成已激活！
 		}
 
-		Resurrection: {
-			RiseFromAshes: "你从灰烬中重生！"
+		Resurrection.RiseFromAshes: 你从灰烬中重生！
+
+		BossDialogue: {
+			QuirrellPhase2: 头巾下的面孔动了。更可怕的东西正在醒来。
+			QuirrellPhase3: 伏地魔的阴影接管了身体。撑过最后的诅咒风暴！
+			UmbridgePhase2: 咳咳。现在，禁闭将变成永久措施。
+			UmbridgePhase3: 秩序！我要的是秩序！
+			UmbridgeSummon: 调查行动组响应了乌姆里奇的召唤！
+			UmbridgeDecree: 教育法令第 {0} 号：{1} 现已被禁止！
+			BellatrixPhase2: 贝拉特里克斯尖笑着消失在诅咒风暴中！
+			BellatrixPhase3: 她抛弃了克制。决斗变成了纯粹的疯狂。
+			BellatrixTaunt1: 我杀了小天狼星·布莱克！
+			BellatrixTaunt2: 你敢和我决斗？
+			BellatrixTaunt3: 钻心剜骨！
+			BellatrixTaunt4: 黑魔王会为此奖赏我！
+			BellatrixSummon: 贝拉特里克斯从阴影中召来黑暗盟友！
 		}
 
-		Bestiary: {
-			Neville: "纳威·隆巴顿——格兰芬多学生、D.A.成员、霍格沃茨之战的英雄。出售战斗补给和魂器追踪器。在赢得霍格沃茨之战后出现。"
+		ClassQuest: {
+			TaskComplete: 课堂任务完成：{0}
+			DADAMastery: 黑魔法防御术精通提升至 {0}。
+			PotionsMastery: 魔药课精通提升至 {0}。
+			CreaturesMastery: 保护神奇生物课精通提升至 {0}。
+			CharmsMastery: 魔咒课精通提升至 {0}。
+		}
+
+		Hallows: {
+			GuidanceHorcruxes: 寻找圣器前，先摧毁核心魂器。
+			GuidanceAzkaban: 摄魂怪之王倒下后，斗篷才会被托付给你。
+			GuidanceCloak: 去问邓布利多真正的隐形斗篷。
+			GuidanceVoldemort: 伏地魔仍挡在你和复活石之间。
+			GuidanceRing: 战争结束后，把刚特戒指带给邓布利多。
+			GuidancePurify: 现在可以净化戒指。不要等待。
+			GuidanceUnite: 同时装备老魔杖、真正的隐形斗篷和复活石。
+			GuidanceComplete: 圣器已经合一。死亡在此没有主人。
+			CloakReveal1: 邓布利多揭示了真正的隐形斗篷。
+			CloakReveal2: 它像安静的承诺一样落在你肩上。
+			StoneReveal1: 刚特戒指裂开。复活石苏醒了。
+			StoneReveal2: 逝者不会归来，但他们的勇气仍在。
+			MasterOfDeath1: 死亡圣器一同回应了你。
+			MasterOfDeath2: 你已成为死亡之主。
+			MasterOfDeath3: 命运会弯曲，但不会折断。
+			DeathRespite: 圣器把你从死亡边缘拉了回来。
+			DespairMedium: "{0} 正压迫你的思绪。"
+			DespairHigh: 绝望逼近。抓紧你的守护神。
+			DespairCritical: 黑暗几乎完全吞没了一切。
 		}
 	}
+}
+
+// InfoDisplays.WizardInfoDisplay.DisplayName: Wizard Info Display
+
+Biomes: {
+	ForbiddenForestBiome: {
+		// DisplayName: Forbidden Forest Biome
+		// TownNPCDialogueName: the Forbidden Forest Biome
+	}
+}
+
+// DamageClasses.SpellDamage.DisplayName: Spell Damage
+
+Items: {
+	DarkWizardHood: {
+		// SetBonus: Mods.WizardingWorld.Items.DarkWizardHood.SetBonus
+		// DisplayName: Dark Wizard Hood
+		// Tooltip: ""
+	}
+
+	DragonScaleHelm: {
+		// SetBonus: Mods.WizardingWorld.Items.DragonScaleHelm.SetBonus
+		// DisplayName: Dragon Scale Helm
+		// Tooltip: ""
+	}
+
+	GryffindorHood: {
+		// SetBonus: Mods.WizardingWorld.Items.GryffindorHood.SetBonus
+		// DisplayName: Gryffindor Hood
+		// Tooltip: ""
+	}
+
+	HufflepuffHood: {
+		// SetBonus: Mods.WizardingWorld.Items.HufflepuffHood.SetBonus
+		// DisplayName: Hufflepuff Hood
+		// Tooltip: ""
+	}
+
+	RavenclawHood: {
+		// SetBonus: Mods.WizardingWorld.Items.RavenclawHood.SetBonus
+		// DisplayName: Ravenclaw Hood
+		// Tooltip: ""
+	}
+
+	SlytherinHood: {
+		// SetBonus: Mods.WizardingWorld.Items.SlytherinHood.SetBonus
+		// DisplayName: Slytherin Hood
+		// Tooltip: ""
+	}
+
+	WizengamotHood: {
+		// SetBonus: Mods.WizardingWorld.Items.WizengamotHood.SetBonus
+		// DisplayName: Wizengamot Hood
+		// Tooltip: ""
+	}
+
+	ApparitionCharm: {
+		// DisplayName: Apparition Charm
+		// Tooltip: ""
+	}
+
+	AzkabanWardensKey: {
+		// DisplayName: Azkaban Wardens Key
+		// Tooltip: ""
+	}
+
+	BasiliskFang: {
+		// DisplayName: Basilisk Fang
+		// Tooltip: ""
+	}
+
+	BeastHuntersCharm: {
+		// DisplayName: Beast Hunters Charm
+		// Tooltip: ""
+	}
+
+	BossCompass: {
+		DisplayName: Boss 进度罗盘
+		Tooltip:
+			'''
+			'它总是指向你的下一项重大挑战'
+			在提示中显示下一个巫师 Boss
+			追踪 Boss 和魂器进度
+			+3%伤害
+			'''
+
+		Dynamic: {
+			NextChallenge: "[c/FFD700:下一项挑战：{0}]"
+			ProgressTooltip: "[c/AAAAAA:{0}]"
+			HorcruxTooltip: "[c/CC88FF:魂器猎杀：已摧毁 {0}/4{1}]"
+			NaginiSuffix: ，纳吉尼已击败
+			NextTroll: 山怪（使用臭袜子）
+			NextQuirrell: 奇洛教授（山怪 + 克苏鲁之眼后使用可疑的头巾）
+			NextBasilisk: 蛇怪（奇洛 + 骷髅王后使用蛇怪日记）
+			NextAragog: 阿拉戈克（困难模式使用八眼巨蛛卵）
+			NextFluffy: 路威（机械 Boss 后使用附魔长笛）
+			NextHorntail: 匈牙利树蜂龙（使用龙蛋）
+			NextUmbridge: 多洛雷斯·乌姆里奇（使用教育法令）
+			NextFenrir: 芬里尔·格雷伯克（血月使用染血利爪）
+			NextBellatrix: 贝拉特里克斯·莱斯特兰奇（芬里尔和世纪之花后使用囚徒标记）
+			NextBartyCrouch: 小巴蒂·克劳奇（贝拉特里克斯和世纪之花后使用可疑烧瓶）
+			NextDementorKing: 摄魂怪之王（小巴蒂和魔像后，夜间使用冰魂提灯）
+			NextVoldemortReady: 伏地魔（拜月教邪教徒后夜晚使用黑魔标记；魂器猎杀已削弱他）
+			NextVoldemortBlocked: 面对伏地魔前先摧毁更多魂器
+			NextPurifyRing: 把刚特戒指带给邓布利多
+			NextClaimCloak: 去向邓布利多询问真正的隐形斗篷
+			NextUniteHallows: 集齐圣器以完成隐藏结局路线
+			Completed: 所有巫师目标已完成。你已成为死亡之主。
+			ProgressSummary: 巫师 Boss：已击败 {0}/12
+		}
+	}
+
+	CamouflageCloak: {
+		// DisplayName: Camouflage Cloak
+		// Tooltip: ""
+	}
+
+	CerberusFangNecklace: {
+		// DisplayName: Cerberus Fang Necklace
+		// Tooltip: ""
+	}
+
+	CerberusFang: {
+		// DisplayName: Cerberus Fang
+		// Tooltip: ""
+	}
+
+	ChampionsMedallion: {
+		// DisplayName: Champions Medallion
+		// Tooltip: ""
+	}
+
+	ChampionsTrophy: {
+		// DisplayName: Champions Trophy
+		// Tooltip: ""
+	}
+
+	DarkLordsBane: {
+		// DisplayName: Dark Lords Bane
+		// Tooltip: ""
+	}
+
+	DefendersSignet: {
+		// DisplayName: Defenders Signet
+		// Tooltip: ""
+	}
+
+	Deluminator: {
+		// DisplayName: Deluminator
+		// Tooltip: ""
+	}
+
+	DementorsEmbrace: {
+		// DisplayName: Dementors Embrace
+		// Tooltip: ""
+	}
+
+	DemiguiseCloak: {
+		// DisplayName: Demiguise Cloak
+		// Tooltip: ""
+	}
+
+	DiademOfRavenclaw: {
+		// DisplayName: Diadem Of Ravenclaw
+		// Tooltip: ""
+	}
+
+	DirigiblePlumEarring: {
+		// DisplayName: Dirigible Plum Earring
+		// Tooltip: ""
+	}
+
+	DragonScaleRing: {
+		// DisplayName: Dragon Scale Ring
+		// Tooltip: ""
+	}
+
+	DragonToothNecklace: {
+		// DisplayName: Dragon Tooth Necklace
+		// Tooltip: ""
+	}
+
+	EnchantedMirror: {
+		// DisplayName: Enchanted Mirror
+		// Tooltip: ""
+	}
+
+	ExtendableEars: {
+		// DisplayName: Extendable Ears
+		// Tooltip: ""
+	}
+
+	FairyWings: {
+		// DisplayName: Fairy Wings
+		// Tooltip: ""
+	}
+
+	FoeGlass: {
+		// DisplayName: Foe Glass
+		// Tooltip: ""
+	}
+
+	ForestWarden: {
+		// DisplayName: Forest Warden
+		// Tooltip: ""
+	}
+
+	GauntsRing: {
+		// DisplayName: Gaunts Ring
+		// Tooltip: ""
+	}
+
+	GoblinLedger: {
+		// DisplayName: Goblin Ledger
+		// Tooltip: ""
+	}
+
+	HandOfGlory: {
+		// DisplayName: Hand Of Glory
+		// Tooltip: ""
+	}
+
+	HealersSatchel: {
+		// DisplayName: Healers Satchel
+		// Tooltip: ""
+	}
+
+	HufflepuffsCup: {
+		// DisplayName: Hufflepuffs Cup
+		// Tooltip: ""
+	}
+
+	InvisibilityCloak: {
+		// DisplayName: Invisibility Cloak
+		// Tooltip: ""
+	}
+
+	KeeperGloves: {
+		// DisplayName: Keeper Gloves
+		// Tooltip: ""
+	}
+
+	LightningScar: {
+		// DisplayName: Lightning Scar
+		// Tooltip: ""
+	}
+
+	MaraudersMap: {
+		// DisplayName: Marauders Map
+		// Tooltip: ""
+	}
+
+	MasterWizardBanner: {
+		// DisplayName: Master Wizard Banner
+		// Tooltip: ""
+	}
+
+	MerfolkAmulet: {
+		// DisplayName: Merfolk Amulet
+		// Tooltip: ""
+	}
+
+	MoodysEye: {
+		// DisplayName: Moodys Eye
+		// Tooltip: ""
+	}
+
+	MoonwardPendant: {
+		// DisplayName: Moonward Pendant
+		// Tooltip: ""
+	}
+
+	OrderBadge: {
+		// DisplayName: Order Badge
+		// Tooltip: ""
+	}
+
+	OrderSignet: {
+		// DisplayName: Order Signet
+		// Tooltip: ""
+	}
+
+	PadfootAmulet: {
+		// DisplayName: Padfoot Amulet
+		// Tooltip: ""
+	}
+
+	PatronusCharm: {
+		// DisplayName: Patronus Charm
+		// Tooltip: ""
+	}
+
+	PatronusFocus: {
+		// DisplayName: Patronus Focus
+		// Tooltip: ""
+	}
+
+	Pensieve: {
+		// DisplayName: Pensieve
+		// Tooltip: ""
+	}
+
+	PhilosophersStone: {
+		// DisplayName: Philosophers Stone
+		// Tooltip: ""
+	}
+
+	PrefectBadge: {
+		// DisplayName: Prefect Badge
+		// Tooltip: ""
+	}
+
+	ProngsCharm: {
+		// DisplayName: Prongs Charm
+		// Tooltip: ""
+	}
+
+	ProtectorsBadge: {
+		// DisplayName: Protectors Badge
+		// Tooltip: ""
+	}
+
+	QuillOfAcceptance: {
+		// DisplayName: Quill Of Acceptance
+		// Tooltip: ""
+	}
+
+	Remembrall: {
+		// DisplayName: Remembrall
+		// Tooltip: ""
+	}
+
+	ResurrectionStone: {
+		// DisplayName: Resurrection Stone
+		// Tooltip: ""
+	}
+
+	RiddlesDiary: {
+		// DisplayName: Riddles Diary
+		// Tooltip: ""
+	}
+
+	ShieldHat: {
+		// DisplayName: Shield Hat
+		// Tooltip: ""
+	}
+
+	SlytherinsLocket: {
+		// DisplayName: Slytherins Locket
+		// Tooltip: ""
+	}
+
+	Sneakoscope: {
+		// DisplayName: Sneakoscope
+		// Tooltip: ""
+	}
+
+	SortingHat: {
+		// DisplayName: Sorting Hat
+		// Tooltip: ""
+	}
+
+	Spectrespecs: {
+		// DisplayName: Spectrespecs
+		// Tooltip: ""
+	}
+
+	SpiderSilkCloak: {
+		// DisplayName: Spider Silk Cloak
+		// Tooltip: ""
+	}
+
+	TimeTurner: {
+		// DisplayName: Time Turner
+		// Tooltip: ""
+	}
+
+	TriwizardCup: {
+		// DisplayName: Triwizard Cup
+		// Tooltip: ""
+	}
+
+	UnbreakableVow: {
+		// DisplayName: Unbreakable Vow
+		// Tooltip: ""
+	}
+
+	VenomSilkWraps: {
+		// DisplayName: Venom Silk Wraps
+		// Tooltip: ""
+	}
+
+	WandHolster: {
+		// DisplayName: Wand Holster
+		// Tooltip: ""
+	}
+
+	WerewolfCloak: {
+		// DisplayName: Werewolf Cloak
+		// Tooltip: ""
+	}
+
+	WizardBeard: {
+		// DisplayName: Wizard Beard
+		// Tooltip: ""
+	}
+
+	WizardPocketWatch: {
+		// DisplayName: Wizard Pocket Watch
+		// Tooltip: ""
+	}
+
+	WizardSpectacles: {
+		// DisplayName: Wizard Spectacles
+		// Tooltip: ""
+	}
+
+	DarkWizardLeggings: {
+		// DisplayName: Dark Wizard Leggings
+		// Tooltip: ""
+	}
+
+	DarkWizardRobes: {
+		// DisplayName: Dark Wizard Robes
+		// Tooltip: ""
+	}
+
+	DragonScaleBreastplate: {
+		// DisplayName: Dragon Scale Breastplate
+		// Tooltip: ""
+	}
+
+	DragonScaleGreaves: {
+		// DisplayName: Dragon Scale Greaves
+		// Tooltip: ""
+	}
+
+	DragonScale: {
+		// DisplayName: Dragon Scale
+		// Tooltip: ""
+	}
+
+	GryffindorLeggings: {
+		// DisplayName: Gryffindor Leggings
+		// Tooltip: ""
+	}
+
+	GryffindorRobes: {
+		// DisplayName: Gryffindor Robes
+		// Tooltip: ""
+	}
+
+	HufflepuffLeggings: {
+		// DisplayName: Hufflepuff Leggings
+		// Tooltip: ""
+	}
+
+	HufflepuffRobes: {
+		// DisplayName: Hufflepuff Robes
+		// Tooltip: ""
+	}
+
+	RavenclawLeggings: {
+		// DisplayName: Ravenclaw Leggings
+		// Tooltip: ""
+	}
+
+	RavenclawRobes: {
+		// DisplayName: Ravenclaw Robes
+		// Tooltip: ""
+	}
+
+	SlytherinLeggings: {
+		// DisplayName: Slytherin Leggings
+		// Tooltip: ""
+	}
+
+	SlytherinRobes: {
+		// DisplayName: Slytherin Robes
+		// Tooltip: ""
+	}
+
+	WizardBoots: {
+		// DisplayName: Wizard Boots
+		// Tooltip: ""
+	}
+
+	WizardHat: {
+		// DisplayName: Wizard Hat
+		// Tooltip: ""
+	}
+
+	WizardRobe: {
+		// DisplayName: Wizard Robe
+		// Tooltip: ""
+	}
+
+	WizengamotBoots: {
+		// DisplayName: Wizengamot Boots
+		// Tooltip: ""
+	}
+
+	WizengamotRobes: {
+		// DisplayName: Wizengamot Robes
+		// Tooltip: ""
+	}
+
+	AragogBag: {
+		// DisplayName: Aragog Bag
+		// Tooltip: ""
+	}
+
+	AragogsFang: {
+		// DisplayName: Aragogs Fang
+		// Tooltip: ""
+	}
+
+	AragogTrophy: {
+		// DisplayName: Aragog Trophy
+		// Tooltip: ""
+	}
+
+	BartyCrouchBag: {
+		// DisplayName: Barty Crouch Bag
+		// Tooltip: ""
+	}
+
+	BartyCrouchTrophy: {
+		// DisplayName: Barty Crouch Trophy
+		// Tooltip: ""
+	}
+
+	PolyjuiceFlask: {
+		// DisplayName: Polyjuice Flask
+		// Tooltip: ""
+	}
+
+	BasiliskBag: {
+		// DisplayName: Basilisk Bag
+		// Tooltip: ""
+	}
+
+	BasiliskEye: {
+		// DisplayName: Basilisk Eye
+		// Tooltip: ""
+	}
+
+	BasiliskTrophy: {
+		// DisplayName: Basilisk Trophy
+		// Tooltip: ""
+	}
+
+	BellatrixBag: {
+		// DisplayName: Bellatrix Bag
+		// Tooltip: ""
+	}
+
+	BellatrixTrophy: {
+		// DisplayName: Bellatrix Trophy
+		// Tooltip: ""
+	}
+
+	BellatrixWandHand: {
+		// DisplayName: Bellatrix Wand Hand
+		// Tooltip: ""
+	}
+
+	DementorKingBag: {
+		// DisplayName: Dementor King Bag
+		// Tooltip: ""
+	}
+
+	DementorKingTrophy: {
+		// DisplayName: Dementor King Trophy
+		// Tooltip: ""
+	}
+
+	SoulSiphon: {
+		// DisplayName: Soul Siphon
+		// Tooltip: ""
+	}
+
+	FenrirBag: {
+		// DisplayName: Fenrir Bag
+		// Tooltip: ""
+	}
+
+	FenrirTrophy: {
+		// DisplayName: Fenrir Trophy
+		// Tooltip: ""
+	}
+
+	LycansBiteMark: {
+		// DisplayName: Lycans Bite Mark
+		// Tooltip: ""
+	}
+
+	FluffyBag: {
+		// DisplayName: Fluffy Bag
+		// Tooltip: ""
+	}
+
+	FluffyTrophy: {
+		// DisplayName: Fluffy Trophy
+		// Tooltip: ""
+	}
+
+	ThreeHeadedCollar: {
+		// DisplayName: Three Headed Collar
+		// Tooltip: ""
+	}
+
+	DragonHeart: {
+		// DisplayName: Dragon Heart
+		// Tooltip: ""
+	}
+
+	HorntailBag: {
+		// DisplayName: Horntail Bag
+		// Tooltip: ""
+	}
+
+	HorntailTrophy: {
+		// DisplayName: Horntail Trophy
+		// Tooltip: ""
+	}
+
+	QuirrellBag: {
+		// DisplayName: Quirrell Bag
+		// Tooltip: ""
+	}
+
+	QuirrellsTurban: {
+		// DisplayName: Quirrells Turban
+		// Tooltip: ""
+	}
+
+	QuirrellTrophy: {
+		// DisplayName: Quirrell Trophy
+		// Tooltip: ""
+	}
+
+	TrollBag: {
+		// DisplayName: Troll Bag
+		// Tooltip: ""
+	}
+
+	TrollHide: {
+		// DisplayName: Troll Hide
+		// Tooltip: ""
+	}
+
+	TrollTrophy: {
+		// DisplayName: Troll Trophy
+		// Tooltip: ""
+	}
+
+	MinistryBadge: {
+		// DisplayName: Ministry Badge
+		// Tooltip: ""
+	}
+
+	UmbridgeBag: {
+		// DisplayName: Umbridge Bag
+		// Tooltip: ""
+	}
+
+	UmbridgeTrophy: {
+		// DisplayName: Umbridge Trophy
+		// Tooltip: ""
+	}
+
+	SoulFragment: {
+		// DisplayName: Soul Fragment
+		// Tooltip: ""
+	}
+
+	VoldemortBag: {
+		// DisplayName: Voldemort Bag
+		// Tooltip: ""
+	}
+
+	VoldemortTrophy: {
+		// DisplayName: Voldemort Trophy
+		// Tooltip: ""
+	}
+
+	AcidPop: {
+		// DisplayName: Acid Pop
+		// Tooltip: ""
+	}
+
+	AragogSummonItem: {
+		// DisplayName: Acromantula Egg
+		/* Tooltip:
+			'''
+			'Follow the spiders'
+			Summons Aragog
+			Hardmode only
+			''' */
+	}
+
+	AshwinderEgg: {
+		// DisplayName: Ashwinder Egg
+		// Tooltip: ""
+	}
+
+	AzkabanBreachStone: {
+		// DisplayName: Azkaban Breach Stone
+		// Tooltip: ""
+	}
+
+	AzkabanWardSigil: {
+		// DisplayName: Azkaban Ward Sigil
+		// Tooltip: ""
+	}
+
+	BartyCrouchSummonItem: {
+		// DisplayName: Suspicious Flask
+		/* Tooltip:
+			'''
+			'Constant vigilance!'
+			Summons Barty Crouch Jr. in disguise
+			Requires Bellatrix and Plantera defeated
+			''' */
+	}
+
+	BasiliskSummonItem: {
+		DisplayName: 蛇怪日记
+		Tooltip:
+			'''
+			'打开请自负风险'
+			召唤蛇怪
+			需要击败奇洛教授和骷髅王
+			'''
+	}
+
+	BellatrixSummonItem: {
+		// DisplayName: Azkaban Prisoner Tag
+		/* Tooltip:
+			'''
+			'She is his most faithful servant'
+			Summons Bellatrix Lestrange
+			Requires Fenrir and Plantera defeated
+			''' */
+	}
+
+	BertieBottsBeans: {
+		// DisplayName: Bertie Botts Beans
+		// Tooltip: ""
+	}
+
+	BowtruckleCatch: {
+		// DisplayName: Bowtruckle Catch
+		// Tooltip: ""
+	}
+
+	BroodVenom: {
+		// DisplayName: Brood Venom
+		// Tooltip: ""
+	}
+
+	CastleDefenseRune: {
+		// DisplayName: Castle Defense Rune
+		// Tooltip: ""
+	}
+
+	CastleWardThread: {
+		// DisplayName: Castle Ward Thread
+		// Tooltip: ""
+	}
+
+	ChocolateCauldron: {
+		// DisplayName: Chocolate Cauldron
+		// Tooltip: ""
+	}
+
+	ChocolateFrog: {
+		// DisplayName: Chocolate Frog
+		// Tooltip: ""
+	}
+
+	ChronalSand: {
+		// DisplayName: Chronal Sand
+		// Tooltip: ""
+	}
+
+	ConcealmentThread: {
+		// DisplayName: Concealment Thread
+		// Tooltip: ""
+	}
+
+	CursedResidue: {
+		// DisplayName: Cursed Residue
+		// Tooltip: ""
+	}
+
+	DAGalleon: {
+		// DisplayName: D A Galleon
+		// Tooltip: ""
+	}
+
+	DailyProphet: {
+		// DisplayName: Daily Prophet
+		// Tooltip: ""
+	}
+
+	DarkArtsTome: {
+		// DisplayName: Dark Arts Tome
+		// Tooltip: ""
+	}
+
+	DarkMarkSummon: {
+		// DisplayName: Dark Mark (Morsmordre)
+		/* Tooltip:
+			'''
+			'MORSMORDRE!'
+			Triggers a Death Eater Invasion
+			Usable only at night during Hardmode
+			''' */
+	}
+
+	DementorKingSummonItem: {
+		// DisplayName: Frozen Soul Lantern
+		/* Tooltip:
+			'''
+			'A light that draws the darkest things'
+			Summons the Dementor King
+			Requires Barty and Golem defeated; night only
+			''' */
+	}
+
+	DementorsShroud: {
+		// DisplayName: Dementors Shroud
+		// Tooltip: ""
+	}
+
+	DemiguiseHair: {
+		// DisplayName: Demiguise Hair
+		// Tooltip: ""
+	}
+
+	DrooblesBestBlowingGum: {
+		// DisplayName: Droobles Best Blowing Gum
+		// Tooltip: ""
+	}
+
+	DuelingDummyItem: {
+		// DisplayName: Dueling Dummy
+		/* Tooltip:
+			'''
+			'On your guard!'
+			Places a training target for spell damage tests
+			''' */
+	}
+
+	DugbogHide: {
+		// DisplayName: Dugbog Hide
+		// Tooltip: ""
+	}
+
+	EnchantedTadpole: {
+		// DisplayName: Enchanted Tadpole
+		// Tooltip: ""
+	}
+
+	EssenceOfMagic: {
+		// DisplayName: Essence Of Magic
+		// Tooltip: ""
+	}
+
+	FenrirSummonItem: {
+		// DisplayName: Bloodied Claw
+		/* Tooltip:
+			'''
+			'The bite that changes everything'
+			Summons Fenrir Greyback
+			Requires Umbridge defeated
+			Blood Moon only
+			''' */
+	}
+
+	FizzyWhizbee: {
+		// DisplayName: Fizzy Whizbee
+		// Tooltip: ""
+	}
+
+	FlooPowder: {
+		// DisplayName: Floo Powder
+		// Tooltip: ""
+	}
+
+	FluffySummonItem: {
+		// DisplayName: Enchanted Flute
+		/* Tooltip:
+			'''
+			'Music soothes the savage beast'
+			Summons Fluffy
+			Requires mechanical bosses defeated
+			''' */
+	}
+
+	ForestLantern: {
+		// DisplayName: Forest Lantern
+		// Tooltip: ""
+	}
+
+	GalleonDust: {
+		// DisplayName: Galleon Dust
+		// Tooltip: ""
+	}
+
+	GladeDew: {
+		// DisplayName: Glade Dew
+		// Tooltip: ""
+	}
+
+	GoldenEgg: {
+		// DisplayName: Golden Egg
+		// Tooltip: ""
+	}
+
+	GreatHallBell: {
+		// DisplayName: Great Hall Bell
+		// Tooltip: ""
+	}
+
+	GrindylowTooth: {
+		// DisplayName: Grindylow Tooth
+		// Tooltip: ""
+	}
+
+	GringottsVaultKey: {
+		// DisplayName: Gringotts Vault Key
+		// Tooltip: ""
+	}
+
+	HealersSalts: {
+		// DisplayName: Healers Salts
+		// Tooltip: ""
+	}
+
+	HogwartsLetter: {
+		// DisplayName: Hogwarts Letter
+		// Tooltip: ""
+	}
+
+	HorcruxTracker: {
+		// DisplayName: Horcrux Tracker
+		// Tooltip: ""
+	}
+
+	HorntailSummonItem: {
+		DisplayName: 龙蛋（裂开）
+		Tooltip:
+			'''
+			'它要孵化了！'
+			召唤匈牙利角尾龙
+			需要击败任意机械 Boss
+			'''
+		NeedMech: 龙蛋（裂开）需要先击败任意机械 Boss。
+		NeedMechDebug: QA 可使用 /wwdebug vanilla mech。
+		AlreadyActive: 匈牙利角尾龙已经存在。
+	}
+
+	ImpFlame: {
+		// DisplayName: Imp Flame
+		// Tooltip: ""
+	}
+
+	JobberknollFeather: {
+		// DisplayName: Jobberknoll Feather
+		// Tooltip: ""
+	}
+
+	KnockturnPass: {
+		// DisplayName: Knockturn Pass
+		// Tooltip: ""
+	}
+
+	LakeRescueToken: {
+		// DisplayName: Lake Rescue Token
+		// Tooltip: ""
+	}
+
+	LeakyCauldronToken: {
+		// DisplayName: Leaky Cauldron Token
+		// Tooltip: ""
+	}
+
+	MagicalKoi: {
+		// DisplayName: Magical Koi
+		// Tooltip: ""
+	}
+
+	MerfolkScale: {
+		// DisplayName: Merfolk Scale
+		// Tooltip: ""
+	}
+
+	MinistryVisitorBadge: {
+		// DisplayName: Ministry Visitor Badge
+		// Tooltip: ""
+	}
+
+	MoonsilverThread: {
+		// DisplayName: Moonsilver Thread
+		// Tooltip: ""
+	}
+
+	NosebleedNougat: {
+		// DisplayName: Nosebleed Nougat
+		// Tooltip: ""
+	}
+
+	PepperImp: {
+		// DisplayName: Pepper Imp
+		// Tooltip: ""
+	}
+
+	PeppermintToad: {
+		// DisplayName: Peppermint Toad
+		// Tooltip: ""
+	}
+
+	PhoenixAsh: {
+		// DisplayName: Phoenix Ash
+		// Tooltip: ""
+	}
+
+	PhoenixTear: {
+		// DisplayName: Phoenix Tear
+		// Tooltip: ""
+	}
+
+	Portkey: {
+		// DisplayName: Portkey
+		// Tooltip: ""
+	}
+
+	Amortentia: {
+		// DisplayName: Amortentia
+		// Tooltip: ""
+	}
+
+	AquaFortis: {
+		// DisplayName: Aqua Fortis
+		// Tooltip: ""
+	}
+
+	Butterbeer: {
+		// DisplayName: Butterbeer
+		// Tooltip: ""
+	}
+
+	DraconisElixir: {
+		// DisplayName: Draconis Elixir
+		// Tooltip: ""
+	}
+
+	FelixFelicis: {
+		// DisplayName: Felix Felicis
+		// Tooltip: ""
+	}
+
+	FenrirsWolfsbane: {
+		// DisplayName: Fenrirs Wolfsbane
+		// Tooltip: ""
+	}
+
+	Firewhiskey: {
+		// DisplayName: Firewhiskey
+		// Tooltip: ""
+	}
+
+	Gillyweed: {
+		// DisplayName: Gillyweed
+		// Tooltip: ""
+	}
+
+	MandrakeRestorative: {
+		// DisplayName: Mandrake Restorative
+		// Tooltip: ""
+	}
+
+	MemoryPotion: {
+		// DisplayName: Memory Potion
+		// Tooltip: ""
+	}
+
+	PepperupPotion: {
+		// DisplayName: Pepperup Potion
+		// Tooltip: ""
+	}
+
+	PolyjuicePotion: {
+		// DisplayName: Polyjuice Potion
+		// Tooltip: ""
+	}
+
+	ResurrectionPotion: {
+		// DisplayName: Resurrection Potion
+		// Tooltip: ""
+	}
+
+	SeekersReflexes: {
+		// DisplayName: Seekers Reflexes
+		// Tooltip: ""
+	}
+
+	ShieldCharmPotion: {
+		// DisplayName: Shield Charm Potion
+		// Tooltip: ""
+	}
+
+	SkeleGro: {
+		// DisplayName: Skele Gro
+		// Tooltip: ""
+	}
+
+	StealthDraught: {
+		// DisplayName: Stealth Draught
+		// Tooltip: ""
+	}
+
+	Veritaserum: {
+		// DisplayName: Veritaserum
+		// Tooltip: ""
+	}
+
+	WolfsbanePotion: {
+		// DisplayName: Wolfsbane Potion
+		// Tooltip: ""
+	}
+
+	ProphecyDust: {
+		// DisplayName: Prophecy Dust
+		// Tooltip: ""
+	}
+
+	PukingPastille: {
+		// DisplayName: Puking Pastille
+		// Tooltip: ""
+	}
+
+	QuidditchWhistle: {
+		// DisplayName: Quidditch Whistle
+		// Tooltip: ""
+	}
+
+	QuirrellSummonItem: {
+		// DisplayName: Suspicious Turban
+		/* Tooltip:
+			'''
+			'There is no good and evil, there is only power'
+			Summons Professor Quirrell
+			Requires Mountain Troll and Eye of Cthulhu defeated
+			''' */
+	}
+
+	RoomOfRequirementKey: {
+		// DisplayName: Room Of Requirement Key
+		// Tooltip: ""
+	}
+
+	SecretKeeperNote: {
+		// DisplayName: Secret Keeper Note
+		// Tooltip: ""
+	}
+
+	SkivingSnackbox: {
+		// DisplayName: Skiving Snackbox
+		// Tooltip: ""
+	}
+
+	SoulAsh: {
+		// DisplayName: Soul Ash
+		// Tooltip: ""
+	}
+
+	SpectralEssence: {
+		// DisplayName: Spectral Essence
+		// Tooltip: ""
+	}
+
+	SpellBook: {
+		// DisplayName: Spell Book
+		// Tooltip: ""
+	}
+
+	SpiderSilkWeave: {
+		// DisplayName: Spider Silk Weave
+		// Tooltip: ""
+	}
+
+	StarTrace: {
+		// DisplayName: Star Trace
+		// Tooltip: ""
+	}
+
+	StMungosPass: {
+		// DisplayName: St Mungos Pass
+		// Tooltip: ""
+	}
+
+	SugarQuill: {
+		// DisplayName: Sugar Quill
+		// Tooltip: ""
+	}
+
+	TrollSummonItem: {
+		// DisplayName: Smelly Sock
+		/* Tooltip:
+			'''
+			'The smell attracts it'
+			Summons the Mountain Troll
+			First Wizarding World boss
+			''' */
+	}
+
+	UmbridgeSummonItem: {
+		// DisplayName: Educational Decree
+		/* Tooltip:
+			'''
+			'I must not tell lies'
+			Summons Dolores Umbridge
+			Requires Horntail and a mechanical boss defeated
+			''' */
+	}
+
+	UnicornBlood: {
+		// DisplayName: Unicorn Blood
+		// Tooltip: ""
+	}
+
+	VeilThread: {
+		// DisplayName: Veil Thread
+		// Tooltip: ""
+	}
+
+	VoldemortSummonItem: {
+		// DisplayName: Dark Mark
+		/* Tooltip:
+			'''
+			'He Who Must Not Be Named has returned'
+			Summons Lord Voldemort
+			''' */
+	}
+
+	WerewolfPelt: {
+		// DisplayName: Werewolf Pelt
+		// Tooltip: ""
+	}
+
+	WillowPassageToken: {
+		// DisplayName: Willow Passage Token
+		// Tooltip: ""
+	}
+
+	WizardChessSet: {
+		// DisplayName: Wizard Chess Set
+		// Tooltip: ""
+	}
+
+	WizardCrate: {
+		// DisplayName: Wizard Crate
+		// Tooltip: ""
+	}
+
+	WizardCrateHardmode: {
+		// DisplayName: Wizard Crate Hardmode
+		// Tooltip: ""
+	}
+
+	WizardsAlmanac: {
+		// DisplayName: Wizards Almanac
+		// Tooltip: ""
+	}
+
+	BorginStorefrontItem: {
+		// DisplayName: Borgin Storefront Item
+		// Tooltip: ""
+	}
+
+	CastleWardStoneItem: {
+		// DisplayName: Castle Ward Stone Item
+		// Tooltip: ""
+	}
+
+	EnchantingTableItem: {
+		DisplayName: 附魔台
+		Tooltip:
+			'''
+			'魔法成形之处'
+			制作魔杖、药水、装备和 Boss 召唤物的核心工作站
+			可在工作台制作，也可从奥利凡德处购买
+			'''
+	}
+
+	FelixCauldron: {
+		// DisplayName: Felix Cauldron
+		// Tooltip: ""
+	}
+
+	GobletOfFire: {
+		// DisplayName: Goblet Of Fire
+		// Tooltip: ""
+	}
+
+	GrimmauldDoorwayItem: {
+		// DisplayName: Grimmauld Doorway Item
+		// Tooltip: ""
+	}
+
+	GringottsFacadeItem: {
+		// DisplayName: Gringotts Facade Item
+		// Tooltip: ""
+	}
+
+	HousePointHourglassItem: {
+		// DisplayName: House Point Hourglass Item
+		// Tooltip: ""
+	}
+
+	LeakyCauldronSignItem: {
+		// DisplayName: Leaky Cauldron Sign Item
+		// Tooltip: ""
+	}
+
+	ProphecyShelfItem: {
+		// DisplayName: Prophecy Shelf Item
+		// Tooltip: ""
+	}
+
+	QuidditchGoalpostItem: {
+		// DisplayName: Quidditch Goalpost Item
+		// Tooltip: ""
+	}
+
+	ShriekingShackSignItem: {
+		// DisplayName: Shrieking Shack Sign Item
+		// Tooltip: ""
+	}
+
+	StMungosMannequinItem: {
+		// DisplayName: St Mungos Mannequin Item
+		// Tooltip: ""
+	}
+
+	VeilArchItem: {
+		// DisplayName: Veil Arch Item
+		// Tooltip: ""
+	}
+
+	WhompingWillowStumpItem: {
+		// DisplayName: Whomping Willow Stump Item
+		// Tooltip: ""
+	}
+
+	BasiliskFangDagger: {
+		// DisplayName: Basilisk Fang Dagger
+		// Tooltip: ""
+	}
+
+	BeatersBat: {
+		// DisplayName: Beaters Bat
+		// Tooltip: ""
+	}
+
+	DarkArtsGrimoire: {
+		// DisplayName: Dark Arts Grimoire
+		// Tooltip: ""
+	}
+
+	DecoyDetonator: {
+		// DisplayName: Decoy Detonator
+		// Tooltip: ""
+	}
+
+	EnchantedTrollClub: {
+		// DisplayName: Enchanted Troll Club
+		// Tooltip: ""
+	}
+
+	FireboltBroomstick: {
+		// DisplayName: Firebolt Broomstick
+		// Tooltip: ""
+	}
+
+	GoblinSilverSword: {
+		// DisplayName: Goblin Silver Sword
+		// Tooltip: ""
+	}
+
+	HippogriffFeather: {
+		// DisplayName: Hippogriff Feather
+		// Tooltip: ""
+	}
+
+	HouseElfBell: {
+		// DisplayName: House Elf Bell
+		// Tooltip: ""
+	}
+
+	Howler: {
+		// DisplayName: Howler
+		// Tooltip: ""
+	}
+
+	HufflepuffsMace: {
+		// DisplayName: Hufflepuffs Mace
+		// Tooltip: ""
+	}
+
+	Nimbus2001Broomstick: {
+		// DisplayName: Nimbus2001 Broomstick
+		// Tooltip: ""
+	}
+
+	NimbusBroomstick: {
+		// DisplayName: Nimbus Broomstick
+		// Tooltip: ""
+	}
+
+	PeruvianDarknessPowder: {
+		// DisplayName: Peruvian Darkness Powder
+		// Tooltip: ""
+	}
+
+	PhoenixFeatherStaff: {
+		// DisplayName: Phoenix Feather Staff
+		// Tooltip: ""
+	}
+
+	Quaffle: {
+		// DisplayName: Quaffle
+		// Tooltip: ""
+	}
+
+	RavenclawsStaff: {
+		// DisplayName: Ravenclaws Staff
+		// Tooltip: ""
+	}
+
+	ScreechingHowler: {
+		// DisplayName: Screeching Howler
+		// Tooltip: ""
+	}
+
+	SlytherinsDagger: {
+		// DisplayName: Slytherins Dagger
+		// Tooltip: ""
+	}
+
+	SwordOfGryffindor: {
+		// DisplayName: Sword Of Gryffindor
+		// Tooltip: ""
+	}
+
+	ThestralReins: {
+		// DisplayName: Thestral Reins
+		// Tooltip: ""
+	}
+
+	TrollClub: {
+		// DisplayName: Troll Club
+		// Tooltip: ""
+	}
+
+	UmbridgesQuill: {
+		// DisplayName: Umbridges Quill
+		// Tooltip: ""
+	}
+
+	VenomousSwordOfGryffindor: {
+		// DisplayName: Venomous Sword Of Gryffindor
+		// Tooltip: ""
+	}
+
+	AlderWand: {
+		// DisplayName: Alder Wand
+		// Tooltip: ""
+	}
+
+	AlohomoraKey: {
+		// DisplayName: Alohomora Key
+		// Tooltip: ""
+	}
+
+	AshWand: {
+		// DisplayName: Ash Wand
+		// Tooltip: ""
+	}
+
+	BirchWand: {
+		// DisplayName: Birch Wand
+		// Tooltip: ""
+	}
+
+	BlackthornWand: {
+		// DisplayName: Blackthorn Wand
+		// Tooltip: ""
+	}
+
+	CedarWand: {
+		// DisplayName: Cedar Wand
+		// Tooltip: ""
+	}
+
+	CypressWand: {
+		// DisplayName: Cypress Wand
+		// Tooltip: ""
+	}
+
+	DragonHeartstringWand: {
+		// DisplayName: Dragon Heartstring Wand
+		// Tooltip: ""
+	}
+
+	EbonyWand: {
+		// DisplayName: Ebony Wand
+		// Tooltip: ""
+	}
+
+	ElderWand: {
+		// DisplayName: Elder Wand
+		// Tooltip: ""
+	}
+
+	ElmWand: {
+		// DisplayName: Elm Wand
+		// Tooltip: ""
+	}
+
+	FiendfyreWand: {
+		// DisplayName: Fiendfyre Wand
+		// Tooltip: ""
+	}
+
+	HawthornWand: {
+		// DisplayName: Hawthorn Wand
+		// Tooltip: ""
+	}
+
+	HollyWand: {
+		// DisplayName: Holly Wand
+		// Tooltip: ""
+	}
+
+	InfernalPhoenixWand: {
+		// DisplayName: Infernal Phoenix Wand
+		// Tooltip: ""
+	}
+
+	LarchWand: {
+		// DisplayName: Larch Wand
+		// Tooltip: ""
+	}
+
+	OakWand: {
+		// DisplayName: Oak Wand
+		// Tooltip: ""
+	}
+
+	PhoenixFeatherWand: {
+		// DisplayName: Phoenix Feather Wand
+		// Tooltip: ""
+	}
+
+	QATestWand: {
+		DisplayName: QA测试魔杖
+		Tooltip:
+			'''
+			仅用于调试流程测试
+			600咒术伤害，无魔力消耗
+			不属于正常流程
+			'''
+	}
+
+	RedOakWand: {
+		// DisplayName: Red Oak Wand
+		// Tooltip: ""
+	}
+
+	RowanWand: {
+		// DisplayName: Rowan Wand
+		// Tooltip: ""
+	}
+
+	ShadowElderWand: {
+		// DisplayName: Shadow Elder Wand
+		// Tooltip: ""
+	}
+
+	UnicornHairWand: {
+		// DisplayName: Unicorn Hair Wand
+		// Tooltip: ""
+	}
+
+	VineWand: {
+		// DisplayName: Vine Wand
+		// Tooltip: ""
+	}
+
+	WandOfDestiny: {
+		// DisplayName: Wand Of Destiny
+		// Tooltip: ""
+	}
+
+	WillowWand: {
+		// DisplayName: Willow Wand
+		// Tooltip: ""
+	}
+
+	YewWand: {
+		// DisplayName: Yew Wand
+		// Tooltip: ""
+	}
+
+	WeasleyBlazeBox: {
+		// DisplayName: Weasley Blaze Box
+		// Tooltip: ""
+	}
+
+	WeasleyFireworks: {
+		// DisplayName: Weasley Fireworks
+		// Tooltip: ""
+	}
+
+	WizardFishingRod: {
+		// DisplayName: Wizard Fishing Rod
+		// Tooltip: ""
+	}
+
+	BabyDragonItem: {
+		// DisplayName: Baby Dragon Item
+		// Tooltip: ""
+	}
+
+	GoldenSnitchItem: {
+		// DisplayName: Golden Snitch Item
+		// Tooltip: ""
+	}
+
+	HedwigItem: {
+		// DisplayName: Hedwig Item
+		// Tooltip: ""
+	}
+
+	KneazleItem: {
+		// DisplayName: Kneazle Item
+		// Tooltip: ""
+	}
+
+	NifflerItem: {
+		// DisplayName: Niffler Item
+		// Tooltip: ""
+	}
+
+	PygmyPuffItem: {
+		// DisplayName: Pygmy Puff Item
+		// Tooltip: ""
+	}
+}
+
+Tiles: {
+	// EnchantingTable.MapEntry: Enchanting Table
+	// BorginStorefront.MapEntry: Borgin Storefront
+	// CastleWardStone.MapEntry: Castle Ward Stone
+	// GrimmauldDoorway.MapEntry: Grimmauld Doorway
+	// GringottsFacade.MapEntry: Gringotts Facade
+	// HousePointHourglass.MapEntry: House Point Hourglass
+	// LeakyCauldronSign.MapEntry: Leaky Cauldron Sign
+	// ProphecyShelf.MapEntry: Prophecy Shelf
+	// QuidditchGoalpost.MapEntry: Quidditch Goalpost
+	// ShriekingShackSign.MapEntry: Shrieking Shack Sign
+	// StMungosMannequin.MapEntry: St Mungos Mannequin
+	// VeilArch.MapEntry: Veil Arch
+	// WhompingWillowStump.MapEntry: Whomping Willow Stump
+}
+
+Buffs: {
+	AmortentiaBuff: {
+		// DisplayName: Amortentia Buff
+		// Description: Mods.WizardingWorld.Buffs.AmortentiaBuff.Description
+	}
+
+	AquaFortisBuff: {
+		// DisplayName: Aqua Fortis Buff
+		// Description: Mods.WizardingWorld.Buffs.AquaFortisBuff.Description
+	}
+
+	ButterbeerBuff: {
+		// DisplayName: Butterbeer Buff
+		// Description: Mods.WizardingWorld.Buffs.ButterbeerBuff.Description
+	}
+
+	CastleDefenseBuff: {
+		// DisplayName: Castle Defense Buff
+		// Description: Mods.WizardingWorld.Buffs.CastleDefenseBuff.Description
+	}
+
+	CastleVictoryBuff: {
+		// DisplayName: Castle Victory Buff
+		// Description: Mods.WizardingWorld.Buffs.CastleVictoryBuff.Description
+	}
+
+	DAMeetingBuff: {
+		// DisplayName: D A Meeting Buff
+		// Description: Mods.WizardingWorld.Buffs.DAMeetingBuff.Description
+	}
+
+	DarkAppraiserBuff: {
+		// DisplayName: Dark Appraiser Buff
+		// Description: Mods.WizardingWorld.Buffs.DarkAppraiserBuff.Description
+	}
+
+	DarkCurseDebuff: {
+		// DisplayName: Dark Curse Debuff
+		// Description: Mods.WizardingWorld.Buffs.DarkCurseDebuff.Description
+	}
+
+	JinxedDebuff: {
+		// DisplayName: Jinxed Debuff
+		// Description: Mods.WizardingWorld.Buffs.JinxedDebuff.Description
+	}
+
+	PetrifiedDebuff: {
+		// DisplayName: Petrified Debuff
+		// Description: Mods.WizardingWorld.Buffs.PetrifiedDebuff.Description
+	}
+
+	FelixFelicisBuff: {
+		// DisplayName: Felix Felicis Buff
+		// Description: Mods.WizardingWorld.Buffs.FelixFelicisBuff.Description
+	}
+
+	FenrirsWolfsbaneBuff: {
+		// DisplayName: Fenrirs Wolfsbane Buff
+		// Description: Mods.WizardingWorld.Buffs.FenrirsWolfsbaneBuff.Description
+	}
+
+	FireboltMountBuff: {
+		// DisplayName: Firebolt Mount Buff
+		// Description: Mods.WizardingWorld.Buffs.FireboltMountBuff.Description
+	}
+
+	FirewhiskeyBuff: {
+		// DisplayName: Firewhiskey Buff
+		// Description: Mods.WizardingWorld.Buffs.FirewhiskeyBuff.Description
+	}
+
+	ForestWisdomBuff: {
+		// DisplayName: Forest Wisdom Buff
+		// Description: Mods.WizardingWorld.Buffs.ForestWisdomBuff.Description
+	}
+
+	GillyweedBuff: {
+		// DisplayName: Gillyweed Buff
+		// Description: Mods.WizardingWorld.Buffs.GillyweedBuff.Description
+	}
+
+	GryffindorFeastBuff: {
+		// DisplayName: Gryffindor Feast Buff
+		// Description: Mods.WizardingWorld.Buffs.GryffindorFeastBuff.Description
+	}
+
+	HippogriffMountBuff: {
+		// DisplayName: Hippogriff Mount Buff
+		// Description: Mods.WizardingWorld.Buffs.HippogriffMountBuff.Description
+	}
+
+	HouseElfMinionBuff: {
+		// DisplayName: House Elf Minion Buff
+		// Description: Mods.WizardingWorld.Buffs.HouseElfMinionBuff.Description
+	}
+
+	HufflepuffFeastBuff: {
+		// DisplayName: Hufflepuff Feast Buff
+		// Description: Mods.WizardingWorld.Buffs.HufflepuffFeastBuff.Description
+	}
+
+	MoonwardBuff: {
+		// DisplayName: Moonward Buff
+		// Description: Mods.WizardingWorld.Buffs.MoonwardBuff.Description
+	}
+
+	Nimbus2001MountBuff: {
+		// DisplayName: Nimbus2001 Mount Buff
+		// Description: Mods.WizardingWorld.Buffs.Nimbus2001MountBuff.Description
+	}
+
+	NimbusMountBuff: {
+		// DisplayName: Nimbus Mount Buff
+		// Description: Mods.WizardingWorld.Buffs.NimbusMountBuff.Description
+	}
+
+	OrderCommendationBuff: {
+		// DisplayName: Order Commendation Buff
+		// Description: Mods.WizardingWorld.Buffs.OrderCommendationBuff.Description
+	}
+
+	PatronusCharmBuff: {
+		// DisplayName: Patronus Charm Buff
+		// Description: Mods.WizardingWorld.Buffs.PatronusCharmBuff.Description
+	}
+
+	PepperupBuff: {
+		// DisplayName: Pepperup Buff
+		// Description: Mods.WizardingWorld.Buffs.PepperupBuff.Description
+	}
+
+	PhoenixMinionBuff: {
+		// DisplayName: Phoenix Minion Buff
+		// Description: Mods.WizardingWorld.Buffs.PhoenixMinionBuff.Description
+	}
+
+	PolyjuiceBuff: {
+		// DisplayName: Polyjuice Buff
+		// Description: Mods.WizardingWorld.Buffs.PolyjuiceBuff.Description
+	}
+
+	QuidditchCupBuff: {
+		// DisplayName: Quidditch Cup Buff
+		// Description: Mods.WizardingWorld.Buffs.QuidditchCupBuff.Description
+	}
+
+	RavenclawFeastBuff: {
+		// DisplayName: Ravenclaw Feast Buff
+		// Description: Mods.WizardingWorld.Buffs.RavenclawFeastBuff.Description
+	}
+
+	ResistanceResolveBuff: {
+		// DisplayName: Resistance Resolve Buff
+		// Description: Mods.WizardingWorld.Buffs.ResistanceResolveBuff.Description
+	}
+
+	ResurrectionBuff: {
+		// DisplayName: Resurrection Buff
+		// Description: Mods.WizardingWorld.Buffs.ResurrectionBuff.Description
+	}
+
+	RoomRecoveryBuff: {
+		// DisplayName: Room Recovery Buff
+		// Description: Mods.WizardingWorld.Buffs.RoomRecoveryBuff.Description
+	}
+
+	RoomResistanceBuff: {
+		// DisplayName: Room Resistance Buff
+		// Description: Mods.WizardingWorld.Buffs.RoomResistanceBuff.Description
+	}
+
+	RoomRestorationBuff: {
+		// DisplayName: Room Restoration Buff
+		// Description: Mods.WizardingWorld.Buffs.RoomRestorationBuff.Description
+	}
+
+	RoomSanctuaryBuff: {
+		// DisplayName: Room Sanctuary Buff
+		// Description: Mods.WizardingWorld.Buffs.RoomSanctuaryBuff.Description
+	}
+
+	RoomTrainingBuff: {
+		// DisplayName: Room Training Buff
+		// Description: Mods.WizardingWorld.Buffs.RoomTrainingBuff.Description
+	}
+
+	RoomVaultBuff: {
+		// DisplayName: Room Vault Buff
+		// Description: Mods.WizardingWorld.Buffs.RoomVaultBuff.Description
+	}
+
+	SafehouseResolveBuff: {
+		// DisplayName: Safehouse Resolve Buff
+		// Description: Mods.WizardingWorld.Buffs.SafehouseResolveBuff.Description
+	}
+
+	SeekersReflexesBuff: {
+		// DisplayName: Seekers Reflexes Buff
+		// Description: Mods.WizardingWorld.Buffs.SeekersReflexesBuff.Description
+	}
+
+	ShieldCharmBuff: {
+		// DisplayName: Shield Charm Buff
+		// Description: Mods.WizardingWorld.Buffs.ShieldCharmBuff.Description
+	}
+
+	ShoppingDayBuff: {
+		// DisplayName: Shopping Day Buff
+		// Description: Mods.WizardingWorld.Buffs.ShoppingDayBuff.Description
+	}
+
+	SkeleGroBuff: {
+		// DisplayName: Skele Gro Buff
+		// Description: Mods.WizardingWorld.Buffs.SkeleGroBuff.Description
+	}
+
+	SlytherinFeastBuff: {
+		// DisplayName: Slytherin Feast Buff
+		// Description: Mods.WizardingWorld.Buffs.SlytherinFeastBuff.Description
+	}
+
+	StealthDraughtBuff: {
+		// DisplayName: Stealth Draught Buff
+		// Description: Mods.WizardingWorld.Buffs.StealthDraughtBuff.Description
+	}
+
+	TemporalInsightBuff: {
+		// DisplayName: Temporal Insight Buff
+		// Description: Mods.WizardingWorld.Buffs.TemporalInsightBuff.Description
+	}
+
+	ThestralMountBuff: {
+		// DisplayName: Thestral Mount Buff
+		// Description: Mods.WizardingWorld.Buffs.ThestralMountBuff.Description
+	}
+
+	TriageResolvedBuff: {
+		// DisplayName: Triage Resolved Buff
+		// Description: Mods.WizardingWorld.Buffs.TriageResolvedBuff.Description
+	}
+
+	TriwizardChampionBuff: {
+		// DisplayName: Triwizard Champion Buff
+		// Description: Mods.WizardingWorld.Buffs.TriwizardChampionBuff.Description
+	}
+
+	VaultFortuneBuff: {
+		// DisplayName: Vault Fortune Buff
+		// Description: Mods.WizardingWorld.Buffs.VaultFortuneBuff.Description
+	}
+
+	VeilWardBuff: {
+		// DisplayName: Veil Ward Buff
+		// Description: Mods.WizardingWorld.Buffs.VeilWardBuff.Description
+	}
+
+	VeritaserumBuff: {
+		// DisplayName: Veritaserum Buff
+		// Description: Mods.WizardingWorld.Buffs.VeritaserumBuff.Description
+	}
+
+	WardOfHopeBuff: {
+		// DisplayName: Ward Of Hope Buff
+		// Description: Mods.WizardingWorld.Buffs.WardOfHopeBuff.Description
+	}
+
+	WolfsbaneBuff: {
+		// DisplayName: Wolfsbane Buff
+		// Description: Mods.WizardingWorld.Buffs.WolfsbaneBuff.Description
+	}
+
+	BabyDragonBuff: {
+		// DisplayName: Baby Dragon Buff
+		// Description: Mods.WizardingWorld.Buffs.BabyDragonBuff.Description
+	}
+
+	GoldenSnitchBuff: {
+		// DisplayName: Golden Snitch Buff
+		// Description: Mods.WizardingWorld.Buffs.GoldenSnitchBuff.Description
+	}
+
+	HedwigBuff: {
+		// DisplayName: Hedwig Buff
+		// Description: Mods.WizardingWorld.Buffs.HedwigBuff.Description
+	}
+
+	KneazleBuff: {
+		// DisplayName: Kneazle Buff
+		// Description: Mods.WizardingWorld.Buffs.KneazleBuff.Description
+	}
+
+	NifflerBuff: {
+		// DisplayName: Niffler Buff
+		// Description: Mods.WizardingWorld.Buffs.NifflerBuff.Description
+	}
+
+	PygmyPuffBuff: {
+		// DisplayName: Pygmy Puff Buff
+		// Description: Mods.WizardingWorld.Buffs.PygmyPuffBuff.Description
+	}
+}
+
+NPCs: {
+	// AragogBoss.DisplayName: Aragog Boss
+	// BartyCrouchBoss.DisplayName: Barty Crouch Boss
+	// BasiliskBoss.DisplayName: Basilisk Boss
+	// BellatrixBoss.DisplayName: Bellatrix Boss
+	// DementorKingBoss.DisplayName: Dementor King Boss
+	// Dementor.DisplayName: Dementor
+	// FenrirBoss.DisplayName: Fenrir Boss
+	// FluffyBoss.DisplayName: Fluffy Boss
+	// HorntailBoss.DisplayName: Horntail Boss
+	// QuirrellBoss.DisplayName: Quirrell Boss
+	// TrollBoss.DisplayName: Troll Boss
+	// Troll.DisplayName: Troll
+	// UmbridgeBoss.DisplayName: Umbridge Boss
+	// VoldemortBoss.DisplayName: Voldemort Boss
+	// Acromantula.DisplayName: Acromantula
+	// Ashwinder.DisplayName: Ashwinder
+	// AzkabanGuard.DisplayName: Azkaban Guard
+	// Billywig.DisplayName: Billywig
+	// BlastEndedSkrewt.DisplayName: Blast Ended Skrewt
+	// Bludger.DisplayName: Bludger
+	// Boggart.DisplayName: Boggart
+	// Bowtruckle.DisplayName: Bowtruckle
+	// BreachSeal.DisplayName: Breach Seal
+	// BroodMarker.DisplayName: Brood Marker
+	// CastleWardNode.DisplayName: Castle Ward Node
+	// CauldronSpillNode.DisplayName: Cauldron Spill Node
+	// CorruptedTrace.DisplayName: Corrupted Trace
+	// CursedMummy.DisplayName: Cursed Mummy
+	// CursedOpalDisplay.DisplayName: Cursed Opal Display
+	// CursedSpecter.DisplayName: Cursed Specter
+	// CursedTreasure.DisplayName: Cursed Treasure
+	// DeathEater.DisplayName: Death Eater
+	// Demiguise.DisplayName: Demiguise
+	// DespairAnchor.DisplayName: Despair Anchor
+	// Diricawl.DisplayName: Diricawl
+	// Doxy.DisplayName: Doxy
+	// DoxyNest.DisplayName: Doxy Nest
+	// DuelingDummy.DisplayName: Dueling Dummy
+	// Dugbog.DisplayName: Dugbog
+	// Erumpent.DisplayName: Erumpent
+	// FireCrab.DisplayName: Fire Crab
+	// Flobberworm.DisplayName: Flobberworm
+	// Fwooper.DisplayName: Fwooper
+	// Giant.DisplayName: Giant
+	// GoblinRebel.DisplayName: Goblin Rebel
+	// GrimmauldBoggart.DisplayName: Grimmauld Boggart
+	// Grindylow.DisplayName: Grindylow
+	// HexResidueNode.DisplayName: Hex Residue Node
+	// Horklump.DisplayName: Horklump
+	// Inferius.DisplayName: Inferius
+	// Jarvey.DisplayName: Jarvey
+	// Jobberknoll.DisplayName: Jobberknoll
+	// Knarl.DisplayName: Knarl
+	// Lethifold.DisplayName: Lethifold
+	// MagicalImp.DisplayName: Magical Imp
+	// MagicPixie.DisplayName: Magic Pixie
+	// Mandrake.DisplayName: Mandrake
+	// Merfolk.DisplayName: Merfolk
+	// Mooncalf.DisplayName: Mooncalf
+	// MoonWardFracture.DisplayName: Moon Ward Fracture
+	// Nagini.DisplayName: Nagini
+	// Nundu.DisplayName: Nundu
+	// Obscurus.DisplayName: Obscurus
+	// Occamy.DisplayName: Occamy
+	// OmenStone.DisplayName: Omen Stone
+	// Peeves.DisplayName: Peeves
+	// PeruvianVipertooth.DisplayName: Peruvian Vipertooth
+	// PhantomStag.DisplayName: Phantom Stag
+	// PrisonWraith.DisplayName: Prison Wraith
+	// ProphecyOrb.DisplayName: Prophecy Orb
+	// Puffskein.DisplayName: Puffskein
+	// QuidditchHoop.DisplayName: Quidditch Hoop
+	// Runespoor.DisplayName: Runespoor
+	// SnowWraith.DisplayName: Snow Wraith
+	// Sphinx.DisplayName: Sphinx
+	// Streeler.DisplayName: Streeler
+	// Thestral.DisplayName: Thestral
+	// ThestralBeacon.DisplayName: Thestral Beacon
+	// Thunderbird.DisplayName: Thunderbird
+	// TunnelWard.DisplayName: Tunnel Ward
+	// UnstableHourglass.DisplayName: Unstable Hourglass
+	// VanishingCabinetEcho.DisplayName: Vanishing Cabinet Echo
+	// VaultRelic.DisplayName: Vault Relic
+	// VeilFracture.DisplayName: Veil Fracture
+	// VenomWoundNode.DisplayName: Venom Wound Node
+	// WalburgaPortrait.DisplayName: Walburga Portrait
+	// WardAnchor.DisplayName: Ward Anchor
+	// Werewolf.DisplayName: Werewolf
+	// WillowKnot.DisplayName: Willow Knot
+	// Zouwu.DisplayName: Zouwu
+
+	Aberforth: {
+		// DisplayName: Aberforth
+
+		TownNPCMood: {
+			// Content: I am content.
+			// NoHome: I hate not having a home.
+			// FarFromHome: I am too far from home.
+			// LoveSpace: I love having so much space.
+			// DislikeCrowded: I dislike how crowded I am.
+			// HateCrowded: I hate how crowded I am.
+			// LoveBiome: I love {BiomeName}.
+			// LikeBiome: I like {BiomeName}.
+			// DislikeBiome: I dislike {BiomeName}.
+			// LikeNPC: I like {NPCName}.
+			// DislikeNPC: I dislike {NPCName}.
+			// LikeNPC_Princess: I like {NPCName}.
+			// Princess_LovesNPC: I like {NPCName}.
+		}
+	}
+
+	Centaur: {
+		// DisplayName: Centaur
+
+		TownNPCMood: {
+			// Content: I am content.
+			// NoHome: I hate not having a home.
+			// FarFromHome: I am too far from home.
+			// LoveSpace: I love having so much space.
+			// DislikeCrowded: I dislike how crowded I am.
+			// HateCrowded: I hate how crowded I am.
+			// LoveBiome: I love {BiomeName}.
+			// LikeBiome: I like {BiomeName}.
+			// DislikeBiome: I dislike {BiomeName}.
+			// HateBiome: I hate {BiomeName}.
+			// LoveNPC: I love {NPCName}.
+			// LikeNPC: I like {NPCName}.
+			// DislikeNPC: I dislike {NPCName}.
+			// LikeNPC_Princess: I like {NPCName}.
+			// Princess_LovesNPC: I like {NPCName}.
+		}
+	}
+
+	Dobby: {
+		// DisplayName: Dobby
+
+		TownNPCMood: {
+			// Content: I am content.
+			// NoHome: I hate not having a home.
+			// FarFromHome: I am too far from home.
+			// LoveSpace: I love having so much space.
+			// DislikeCrowded: I dislike how crowded I am.
+			// HateCrowded: I hate how crowded I am.
+			// LoveBiome: I love {BiomeName}.
+			// LikeBiome: I like {BiomeName}.
+			// HateBiome: I hate {BiomeName}.
+			// LoveNPC: I love {NPCName}.
+			// LikeNPC: I like {NPCName}.
+			// LikeNPC_Princess: I like {NPCName}.
+			// Princess_LovesNPC: I like {NPCName}.
+		}
+	}
+
+	Dumbledore: {
+		// DisplayName: Dumbledore
+
+		TownNPCMood: {
+			// Content: I am content.
+			// NoHome: I hate not having a home.
+			// FarFromHome: I am too far from home.
+			// LoveSpace: I love having so much space.
+			// DislikeCrowded: I dislike how crowded I am.
+			// HateCrowded: I hate how crowded I am.
+			// LoveBiome: I love {BiomeName}.
+			// LikeBiome: I like {BiomeName}.
+			// DislikeBiome: I dislike {BiomeName}.
+			// LoveNPC: I love {NPCName}.
+			// LikeNPC: I like {NPCName}.
+			// LikeNPC_Princess: I like {NPCName}.
+			// Princess_LovesNPC: I like {NPCName}.
+		}
+	}
+
+	FredAndGeorge: {
+		// DisplayName: Fred And George
+
+		TownNPCMood: {
+			// Content: I am content.
+			// NoHome: I hate not having a home.
+			// FarFromHome: I am too far from home.
+			// LoveSpace: I love having so much space.
+			// DislikeCrowded: I dislike how crowded I am.
+			// HateCrowded: I hate how crowded I am.
+			// LoveBiome: I love {BiomeName}.
+			// LikeBiome: I like {BiomeName}.
+			// DislikeBiome: I dislike {BiomeName}.
+			// LoveNPC: I love {NPCName}.
+			// LikeNPC: I like {NPCName}.
+			// HateNPC: I hate {NPCName}.
+			// LikeNPC_Princess: I like {NPCName}.
+			// Princess_LovesNPC: I like {NPCName}.
+		}
+	}
+
+	GoblinTeller: {
+		// DisplayName: Goblin Teller
+
+		TownNPCMood: {
+			// Content: I am content.
+			// NoHome: I hate not having a home.
+			// FarFromHome: I am too far from home.
+			// LoveSpace: I love having so much space.
+			// DislikeCrowded: I dislike how crowded I am.
+			// HateCrowded: I hate how crowded I am.
+			// LikeNPC_Princess: I like {NPCName}.
+			// Princess_LovesNPC: I like {NPCName}.
+		}
+	}
+
+	Hagrid: {
+		// DisplayName: Hagrid
+
+		TownNPCMood: {
+			// Content: I am content.
+			// NoHome: I hate not having a home.
+			// FarFromHome: I am too far from home.
+			// LoveSpace: I love having so much space.
+			// DislikeCrowded: I dislike how crowded I am.
+			// HateCrowded: I hate how crowded I am.
+			// LoveBiome: I love {BiomeName}.
+			// LikeBiome: I like {BiomeName}.
+			// DislikeBiome: I dislike {BiomeName}.
+			// LoveNPC: I love {NPCName}.
+			// LikeNPC: I like {NPCName}.
+			// DislikeNPC: I dislike {NPCName}.
+			// LikeNPC_Princess: I like {NPCName}.
+			// Princess_LovesNPC: I like {NPCName}.
+		}
+	}
+
+	Healer: {
+		// DisplayName: Healer
+
+		TownNPCMood: {
+			// Content: I am content.
+			// NoHome: I hate not having a home.
+			// FarFromHome: I am too far from home.
+			// LoveSpace: I love having so much space.
+			// DislikeCrowded: I dislike how crowded I am.
+			// HateCrowded: I hate how crowded I am.
+			// LikeNPC_Princess: I like {NPCName}.
+			// Princess_LovesNPC: I like {NPCName}.
+		}
+	}
+
+	Kingsley: {
+		// DisplayName: Kingsley
+
+		TownNPCMood: {
+			// Content: I am content.
+			// NoHome: I hate not having a home.
+			// FarFromHome: I am too far from home.
+			// LoveSpace: I love having so much space.
+			// DislikeCrowded: I dislike how crowded I am.
+			// HateCrowded: I hate how crowded I am.
+			// LoveBiome: I love {BiomeName}.
+			// LikeBiome: I like {BiomeName}.
+			// HateBiome: I hate {BiomeName}.
+			// LikeNPC: I like {NPCName}.
+			// LikeNPC_Princess: I like {NPCName}.
+			// Princess_LovesNPC: I like {NPCName}.
+		}
+	}
+
+	Lupin: {
+		// DisplayName: Lupin
+
+		TownNPCMood: {
+			// Content: I am content.
+			// NoHome: I hate not having a home.
+			// FarFromHome: I am too far from home.
+			// LoveSpace: I love having so much space.
+			// DislikeCrowded: I dislike how crowded I am.
+			// HateCrowded: I hate how crowded I am.
+			// LoveBiome: I love {BiomeName}.
+			// LikeBiome: I like {BiomeName}.
+			// HateBiome: I hate {BiomeName}.
+			// LikeNPC: I like {NPCName}.
+			// LikeNPC_Princess: I like {NPCName}.
+			// Princess_LovesNPC: I like {NPCName}.
+		}
+	}
+
+	MadamHooch: {
+		// DisplayName: Madam Hooch
+
+		TownNPCMood: {
+			// Content: I am content.
+			// NoHome: I hate not having a home.
+			// FarFromHome: I am too far from home.
+			// LoveSpace: I love having so much space.
+			// DislikeCrowded: I dislike how crowded I am.
+			// HateCrowded: I hate how crowded I am.
+			// LoveBiome: I love {BiomeName}.
+			// LikeBiome: I like {BiomeName}.
+			// DislikeBiome: I dislike {BiomeName}.
+			// LikeNPC: I like {NPCName}.
+			// DislikeNPC: I dislike {NPCName}.
+			// LikeNPC_Princess: I like {NPCName}.
+			// Princess_LovesNPC: I like {NPCName}.
+		}
+	}
+
+	MadamRosmerta: {
+		// DisplayName: Madam Rosmerta
+
+		TownNPCMood: {
+			// Content: I am content.
+			// NoHome: I hate not having a home.
+			// FarFromHome: I am too far from home.
+			// LoveSpace: I love having so much space.
+			// DislikeCrowded: I dislike how crowded I am.
+			// HateCrowded: I hate how crowded I am.
+			// LoveBiome: I love {BiomeName}.
+			// LikeBiome: I like {BiomeName}.
+			// DislikeBiome: I dislike {BiomeName}.
+			// LoveNPC: I love {NPCName}.
+			// LikeNPC: I like {NPCName}.
+			// LikeNPC_Princess: I like {NPCName}.
+			// Princess_LovesNPC: I like {NPCName}.
+		}
+	}
+
+	MrBorgin: {
+		// DisplayName: Mr Borgin
+
+		TownNPCMood: {
+			// Content: I am content.
+			// NoHome: I hate not having a home.
+			// FarFromHome: I am too far from home.
+			// LoveSpace: I love having so much space.
+			// DislikeCrowded: I dislike how crowded I am.
+			// HateCrowded: I hate how crowded I am.
+			// LikeNPC_Princess: I like {NPCName}.
+			// Princess_LovesNPC: I like {NPCName}.
+		}
+	}
+
+	Neville: {
+		// DisplayName: Neville
+
+		TownNPCMood: {
+			// Content: I am content.
+			// NoHome: I hate not having a home.
+			// FarFromHome: I am too far from home.
+			// LoveSpace: I love having so much space.
+			// DislikeCrowded: I dislike how crowded I am.
+			// HateCrowded: I hate how crowded I am.
+			// LikeNPC_Princess: I like {NPCName}.
+			// Princess_LovesNPC: I like {NPCName}.
+		}
+	}
+
+	Ollivander: {
+		// DisplayName: Ollivander
+
+		TownNPCMood: {
+			// Content: I am content.
+			// NoHome: I hate not having a home.
+			// FarFromHome: I am too far from home.
+			// LoveSpace: I love having so much space.
+			// DislikeCrowded: I dislike how crowded I am.
+			// HateCrowded: I hate how crowded I am.
+			// LoveBiome: I love {BiomeName}.
+			// LikeBiome: I like {BiomeName}.
+			// DislikeBiome: I dislike {BiomeName}.
+			// LoveNPC: I love {NPCName}.
+			// LikeNPC: I like {NPCName}.
+			// DislikeNPC: I dislike {NPCName}.
+			// LikeNPC_Princess: I like {NPCName}.
+			// Princess_LovesNPC: I like {NPCName}.
+		}
+	}
+
+	PotionsMaster: {
+		// DisplayName: Potions Master
+
+		TownNPCMood: {
+			// Content: I am content.
+			// NoHome: I hate not having a home.
+			// FarFromHome: I am too far from home.
+			// LoveSpace: I love having so much space.
+			// DislikeCrowded: I dislike how crowded I am.
+			// HateCrowded: I hate how crowded I am.
+			// LoveBiome: I love {BiomeName}.
+			// LikeBiome: I like {BiomeName}.
+			// DislikeBiome: I dislike {BiomeName}.
+			// LoveNPC: I love {NPCName}.
+			// LikeNPC: I like {NPCName}.
+			// DislikeNPC: I dislike {NPCName}.
+			// LikeNPC_Princess: I like {NPCName}.
+			// Princess_LovesNPC: I like {NPCName}.
+		}
+	}
+}
+
+Projectiles: {
+	// BabyDragonProjectile.DisplayName: Baby Dragon Projectile
+	// GoldenSnitchProjectile.DisplayName: Golden Snitch Projectile
+	// HedwigProjectile.DisplayName: Hedwig Projectile
+	// KneazleProjectile.DisplayName: Kneazle Projectile
+	// NifflerProjectile.DisplayName: Niffler Projectile
+	// PygmyPuffProjectile.DisplayName: Pygmy Puff Projectile
+	// BlazeBoxProjectile.DisplayName: Blaze Box Projectile
+	// DarknessPowderProjectile.DisplayName: Darkness Powder Projectile
+	// DecoyDetonatorProjectile.DisplayName: Decoy Detonator Projectile
+	// HouseElfMinion.DisplayName: House Elf Minion
+	// HowlerProjectile.DisplayName: Howler Projectile
+	// PatronusGuardian.DisplayName: Patronus Guardian
+	// PhoenixMinion.DisplayName: Phoenix Minion
+	// QuaffleProjectile.DisplayName: Quaffle Projectile
+	// AccioProjectile.DisplayName: Accio Projectile
+	// AguamentiProjectile.DisplayName: Aguamenti Projectile
+	// AlohomoraProjectile.DisplayName: Alohomora Projectile
+	// ApparitionProjectile.DisplayName: Apparition Projectile
+	// AvadaKedavraProjectile.DisplayName: Avada Kedavra Projectile
+	// BombardaProjectile.DisplayName: Bombarda Projectile
+	// ChainStupefyProjectile.DisplayName: Chain Stupefy Projectile
+	// ConjunctivitisProjectile.DisplayName: Conjunctivitis Projectile
+	// CrucioProjectile.DisplayName: Crucio Projectile
+	// EpiskeyProjectile.DisplayName: Episkey Projectile
+	// ExpelliarmusProjectile.DisplayName: Expelliarmus Projectile
+	// FiendfyreProjectile.DisplayName: Fiendfyre Projectile
+	// FiniteIncantatemProjectile.DisplayName: Finite Incantatem Projectile
+	// ImpedimentaProjectile.DisplayName: Impedimenta Projectile
+	// IncendioProjectile.DisplayName: Incendio Projectile
+	// LevicorpusProjectile.DisplayName: Levicorpus Projectile
+	// LumosMaximaProjectile.DisplayName: Lumos Maxima Projectile
+	// LumosProjectile.DisplayName: Lumos Projectile
+	// PatronusProjectile.DisplayName: Patronus Projectile
+	// ProtegoProjectile.DisplayName: Protego Projectile
+	// ReductoProjectile.DisplayName: Reducto Projectile
+	// ReparoProjectile.DisplayName: Reparo Projectile
+	// RiddikulusProjectile.DisplayName: Riddikulus Projectile
+	// SectumsempraProjectile.DisplayName: Sectumsempra Projectile
+	// StupefyProjectile.DisplayName: Stupefy Projectile
+	// WingardiumProjectile.DisplayName: Wingardium Projectile
+	// WeasleyFireworkProjectile.DisplayName: Weasley Firework Projectile
+}
+
+Configs: {
+	WizardConfig: {
+		// DisplayName: Wizard Config
+
+		Headers: {
+			// SpawnRates: Spawn Rates Header
+			// Difficulty: Difficulty Header
+			// Events: Events Header
+		}
+
+		EnemySpawnMultiplier: {
+			// Label: Enemy Spawn Multiplier
+			// Tooltip: ""
+		}
+
+		CritterSpawnMultiplier: {
+			// Label: Critter Spawn Multiplier
+			// Tooltip: ""
+		}
+
+		BossHealthMultiplier: {
+			// Label: Boss Health Multiplier
+			// Tooltip: ""
+		}
+
+		SpellDamageMultiplier: {
+			// Label: Spell Damage Multiplier
+			// Tooltip: ""
+		}
+
+		InvasionChanceMultiplier: {
+			// Label: Invasion Chance Multiplier
+			// Tooltip: ""
+		}
+
+		EssenceDropMultiplier: {
+			// Label: Essence Drop Multiplier
+			// Tooltip: ""
+		}
+	}
+}
+
+Conditions: {
+	// DownedBasilisk: Mods.WizardingWorld.Conditions.DownedBasilisk
+	// DownedHorntail: Mods.WizardingWorld.Conditions.DownedHorntail
+	// DownedVoldemort: Mods.WizardingWorld.Conditions.DownedVoldemort
+	// DownedFenrir: Mods.WizardingWorld.Conditions.DownedFenrir
+	// PostDementorKing: Mods.WizardingWorld.Conditions.PostDementorKing
+	// DownedAnyMechBoss: Mods.WizardingWorld.Conditions.DownedAnyMechBoss
+	// DownedHorntailAndAnyMechBoss: Mods.WizardingWorld.Conditions.DownedHorntailAndAnyMechBoss
+	// DownedUmbridge: Mods.WizardingWorld.Conditions.DownedUmbridge
+	// PostFenrirAndPlantera: Mods.WizardingWorld.Conditions.PostFenrirAndPlantera
+	// PostBellatrixAndPlantera: Mods.WizardingWorld.Conditions.PostBellatrixAndPlantera
+	// PostBartyAndGolem: Mods.WizardingWorld.Conditions.PostBartyAndGolem
 }

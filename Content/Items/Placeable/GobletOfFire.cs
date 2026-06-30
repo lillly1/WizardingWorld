@@ -14,6 +14,9 @@ namespace WizardingWorld.Content.Items.Placeable
 	/// </summary>
 	public class GobletOfFire : ModItem
 	{
+		private static string Text(string suffix, string fallback, params object[] args) =>
+			Common.Systems.WizardLocalization.Text($"Mods.WizardingWorld.Items.GobletOfFire.{suffix}", fallback, args);
+
 		public override void SetDefaults()
 		{
 			Item.width = 24;
@@ -69,7 +72,7 @@ namespace WizardingWorld.Content.Items.Placeable
 					dust.noGravity = true;
 				}
 
-				Main.NewText(Language.GetTextValue("Mods.WizardingWorld.Items.GobletOfFire.UseMessage"), 100, 150, 255);
+				Main.NewText(Text("UseMessage", "The Goblet of Fire blazes! All nearby champions are empowered!"), 100, 150, 255);
 			}
 
 			return true;

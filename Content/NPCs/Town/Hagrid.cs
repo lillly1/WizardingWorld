@@ -53,7 +53,9 @@ namespace WizardingWorld.Content.NPCs.Town
 
 		public override bool CanTownNPCSpawn(int numTownNPCs)
 		{
-			return Common.Systems.DownedBossSystem.downedBasilisk || numTownNPCs >= 5;
+			return Common.Systems.DownedBossSystem.downedTroll
+				|| Common.Systems.DownedBossSystem.downedBasilisk
+				|| numTownNPCs >= 5;
 		}
 
 		public override List<string> SetNPCNameList()
@@ -103,7 +105,7 @@ namespace WizardingWorld.Content.NPCs.Town
 		{
 			new NPCShop(Type, ShopName)
 				.Add<Items.Consumables.BasiliskSummonItem>(Common.Systems.WizardConditions.DownedBasilisk)
-				.Add<Items.Consumables.HorntailSummonItem>(Condition.Hardmode)
+				.Add<Items.Consumables.HorntailSummonItem>(Common.Systems.WizardConditions.DownedAnyMechBoss)
 				.Add<Pets.GoldenSnitch.GoldenSnitchItem>()
 				.Add(ItemID.Cobweb, Condition.InBelowSurface)
 				.Add(ItemID.SpiderFang, Condition.Hardmode)

@@ -79,17 +79,17 @@ namespace WizardingWorld.Content.Items.Consumables
 		{
 			T("=== BOSS PROGRESSION ===", 255, 150, 150);
 			ShowBossLine("Mountain Troll", 2000, "Smelly Sock", DownedBossSystem.downedTroll);
-			ShowBossLine("Prof. Quirrell", 3500, "Suspicious Turban", DownedBossSystem.downedQuirrell);
-			ShowBossLine("Basilisk", 4500, "Serpent's Diary", DownedBossSystem.downedBasilisk);
+			ShowBossLine("Prof. Quirrell", 3500, "Suspicious Turban [post-Troll + Eye]", DownedBossSystem.downedQuirrell);
+			ShowBossLine("Basilisk", 4500, "Serpent's Diary [post-Quirrell + Skeletron]", DownedBossSystem.downedBasilisk);
 			ShowBossLine("Aragog", 8000, "Acromantula Egg [HM]", DownedBossSystem.downedAragog);
 			ShowBossLine("Fluffy", 18000, "Enchanted Flute [post-Mech]", DownedBossSystem.downedFluffy);
 			ShowBossLine("Horntail", 28000, "Dragon Egg [HM]", DownedBossSystem.downedHorntail);
-			ShowBossLine("Umbridge", 20000, "Educational Decree [post-Mech]", DownedBossSystem.downedUmbridge);
-			ShowBossLine("Fenrir", 25000, "Bloodied Claw [Blood Moon]", DownedBossSystem.downedFenrir);
-			ShowBossLine("Bellatrix", 35000, "Prisoner Tag [post-Plantera]", DownedBossSystem.downedBellatrix);
-			ShowBossLine("Barty Crouch", 30000, "Suspicious Flask [post-Plantera]", DownedBossSystem.downedBartyCrouch);
-			ShowBossLine("Dementor King", 45000, "Frozen Soul Lantern [post-Golem]", DownedBossSystem.downedDementorKing);
-			ShowBossLine("Voldemort", 60000, "Dark Mark [post-Cultist]", DownedBossSystem.downedVoldemort);
+			ShowBossLine("Umbridge", 20000, "Educational Decree [post-Horntail + Mech]", DownedBossSystem.downedUmbridge);
+			ShowBossLine("Fenrir", 25000, "Bloodied Claw [post-Umbridge + Blood Moon]", DownedBossSystem.downedFenrir);
+			ShowBossLine("Bellatrix", 35000, "Prisoner Tag [post-Fenrir + Plantera]", DownedBossSystem.downedBellatrix);
+			ShowBossLine("Barty Crouch", 30000, "Suspicious Flask [post-Bellatrix + Plantera]", DownedBossSystem.downedBartyCrouch);
+			ShowBossLine("Dementor King", 45000, "Frozen Soul Lantern [post-Barty + Golem + night]", DownedBossSystem.downedDementorKing);
+			ShowBossLine("Voldemort", 60000, "Dark Mark [post-Cultist + night]", DownedBossSystem.downedVoldemort);
 		}
 
 		private void ShowBossLine(string name, int hp, string summon, bool downed)
@@ -214,10 +214,10 @@ namespace WizardingWorld.Content.Items.Consumables
 			if (DownedBossSystem.downedDementorKing) bossesDefeated++;
 
 			T($"  Wizard Bosses Defeated: {bossesDefeated}/12", 200, 200, 200);
-			T("  Mod Size: 443 source files, 458 sprites, 958 project files", 150, 150, 150);
-			T("  Content: 23 wands + 1 upgrade, 51 enemies, 53 accessories, 19 potions", 150, 150, 150);
-			T("  Features: 12 bosses, 8 armor sets, 5 mounts, 6 pets total, 3 languages", 150, 150, 150);
-			T("  Major systems: 10 core progression/combat/world systems", 150, 150, 150);
+			T("  Content: 12 bosses, 16 town NPCs, 20+ wands, 60+ accessories", 150, 150, 150);
+			T("  Features: armor sets, mounts, pets, landmarks, events, and quest systems", 150, 150, 150);
+			T("  Languages: English, Simplified Chinese, Traditional Chinese", 150, 150, 150);
+			T("  Major systems: progression, Hallows, Horcruxes, mastery, shops, and events", 150, 150, 150);
 			T("", 150, 150, 150);
 
 			if (bossesDefeated == 12)

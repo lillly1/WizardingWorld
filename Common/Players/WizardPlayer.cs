@@ -36,6 +36,7 @@ namespace WizardingWorld.Common.Players
 
 		// Despair state — used by Azkaban and Dementor content.
 		public float despair;
+		public bool debugGodMode;
 
 		// House affiliation for armor bonuses
 		public int houseSet; // 0=none, 1=Gryffindor, 2=Slytherin, 3=Ravenclaw, 4=Hufflepuff, 5=DarkWizard
@@ -73,6 +74,9 @@ namespace WizardingWorld.Common.Players
 
 			if (hallowsRespiteCooldown > 0)
 				hallowsRespiteCooldown--;
+
+			if (debugGodMode)
+				ApplyDebugGodMode();
 
 			// Patronus timer
 			if (patronusTimer > 0)
@@ -143,6 +147,12 @@ namespace WizardingWorld.Common.Players
 
 		public override bool ConsumableDodge(Player.HurtInfo info)
 		{
+			if (debugGodMode)
+			{
+				Player.SetImmuneTimeForAllTypes(60);
+				return true;
+			}
+
 			if (hasTimeTurner && timeTurnerCooldown <= 0)
 			{
 				timeTurnerCooldown = 600; // 10 second cooldown
@@ -177,12 +187,18 @@ namespace WizardingWorld.Common.Players
 				}
 
 				if (Player.whoAmI == Main.myPlayer)
-					Main.NewText(Language.GetTextValue("Mods.WizardingWorld.Hallows.DeathRespite"), 255, 235, 180);
+				Main.NewText(Common.Systems.HallowsSystem.HallowsText("DeathRespite", "The Hallows pull you back from the edge of death."), 255, 235, 180);
 
 				return true;
 			}
 
 			return false;
+		}
+
+		public override void ModifyHurt(ref Player.HurtModifiers modifiers)
+		{
+			if (debugGodMode)
+				modifiers.FinalDamage *= 0f;
 		}
 
 		public override void UpdateDead()
@@ -195,6 +211,22 @@ namespace WizardingWorld.Common.Players
 		}
 
 		// --- Wand Mastery ---
+
+		private void ApplyDebugGodMode()
+		{
+			Player.statLife = Player.statLifeMax2;
+			Player.statMana = Player.statManaMax2;
+			Player.immune = true;
+			Player.immuneTime = Math.Max(Player.immuneTime, 2);
+			Player.noFallDmg = true;
+			Player.lavaImmune = true;
+			Player.fireWalk = true;
+			Player.buffImmune[Terraria.ID.BuffID.OnFire] = true;
+			Player.buffImmune[Terraria.ID.BuffID.OnFire3] = true;
+			Player.buffImmune[Terraria.ID.BuffID.Burning] = true;
+			Player.buffImmune[Terraria.ID.BuffID.Poisoned] = true;
+			Player.buffImmune[Terraria.ID.BuffID.Venom] = true;
+		}
 
 		private void UpdateDespair()
 		{
@@ -264,11 +296,11 @@ namespace WizardingWorld.Common.Players
 				return;
 
 			if (old < 0.35f && despair >= 0.35f)
-				Main.NewText(Language.GetTextValue("Mods.WizardingWorld.Hallows.DespairMedium", source), 120, 120, 220);
+				Main.NewText(Common.Systems.HallowsSystem.HallowsText("DespairMedium", "{0} presses against your thoughts.", source), 120, 120, 220);
 			if (old < 0.65f && despair >= 0.65f)
-				Main.NewText(Language.GetTextValue("Mods.WizardingWorld.Hallows.DespairHigh"), 180, 180, 255);
+				Main.NewText(Common.Systems.HallowsSystem.HallowsText("DespairHigh", "Despair closes in. Hold to your Patronus."), 180, 180, 255);
 			if (old < 0.85f && despair >= 0.85f)
-				Main.NewText(Language.GetTextValue("Mods.WizardingWorld.Hallows.DespairCritical"), 220, 220, 255);
+				Main.NewText(Common.Systems.HallowsSystem.HallowsText("DespairCritical", "The darkness is almost complete."), 220, 220, 255);
 		}
 
 		public void RelieveDespair(float amount)

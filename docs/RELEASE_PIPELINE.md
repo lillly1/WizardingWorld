@@ -38,13 +38,20 @@ python generate_english_pdf.py
 python generate_chinese_pdf.py
 
 # Snapshot release metadata
-python scripts/generate_release_manifest.py --phase "asset-ready" --commit "local-asset-ready"
+python scripts/generate_release_manifest.py --phase "release-candidate" --commit "local-release-candidate"
 
 # Create source release asset for GitHub/local handoff
 python scripts/package_release_source.py
 ```
 
-The full `dotnet tModLoader.dll -server -build ...` packaging step must run from a normal local tModLoader environment. Restricted sandboxes can block socket creation during tModLoader server initialization.
+The final `.tmod` packaging step must run from a normal local tModLoader environment. For public packages, build Release so developer-only `/wwdebug` commands are omitted:
+
+```powershell
+cd "$env:USERPROFILE\Documents\My Games\Terraria\tModLoader\ModSources\WizardingWorld"
+dotnet build -c Release --no-restore
+```
+
+Use the default Debug build only for QA sessions that need in-game diagnostics.
 
 ## CI (GitHub Actions)
 
@@ -73,7 +80,7 @@ Steps:
 - Verification result
 - Generated artifact list
 
-`dist/WizardingWorld_asset-ready_source.zip` is a source release asset. It excludes `bin/`, `obj/`, `dist/`, caches, and local editor folders so build output does not pollute release counts.
+`dist/WizardingWorld_release-candidate_source.zip` is a source release asset. It excludes `bin/`, `obj/`, `dist/`, caches, and local editor folders so build output does not pollute release counts.
 
 ## Wiring CI as Merge Gate
 

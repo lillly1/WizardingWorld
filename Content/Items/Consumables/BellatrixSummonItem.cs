@@ -5,7 +5,7 @@ using Terraria.ModLoader;
 
 namespace WizardingWorld.Content.Items.Consumables
 {
-	/// <summary>Azkaban Prisoner Tag — summons Bellatrix Lestrange. Requires Plantera defeated.</summary>
+	/// <summary>Azkaban Prisoner Tag — summons Bellatrix Lestrange. Requires Fenrir and Plantera defeated.</summary>
 	public class BellatrixSummonItem : ModItem
 	{
 		public override void SetDefaults()
@@ -23,7 +23,8 @@ namespace WizardingWorld.Content.Items.Consumables
 
 		public override bool CanUseItem(Player player)
 		{
-			return NPC.downedPlantBoss && !NPC.AnyNPCs(ModContent.NPCType<NPCs.Bosses.Bellatrix.BellatrixBoss>());
+			return Common.Systems.WizardConditions.BellatrixGateOpen
+				&& !NPC.AnyNPCs(ModContent.NPCType<NPCs.Bosses.Bellatrix.BellatrixBoss>());
 		}
 
 		public override bool? UseItem(Player player)
@@ -49,6 +50,7 @@ namespace WizardingWorld.Content.Items.Consumables
 				.AddIngredient(ItemID.SoulofNight, 10)
 				.AddIngredient(ItemID.DarkShard, 2)
 				.AddIngredient(ModContent.ItemType<EssenceOfMagic>(), 15)
+				.AddCondition(Common.Systems.WizardConditions.PostFenrirAndPlantera)
 				.AddTile<Tiles.EnchantingTable>()
 				.Register();
 		}

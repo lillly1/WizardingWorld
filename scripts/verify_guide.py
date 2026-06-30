@@ -2099,15 +2099,23 @@ class Verifier:
                             f"Item localization missing for {lm} in {lang_name}")
 
         # 7. Phase 30 new localization sections exist in all 3 languages
-        phase30_sections = ["DailyChallenge:", "HogwartsLetterEvent:", "Renown:", "Resurrection:"]
+        phase30_sections = [
+            ("DailyChallenge", ["DailyChallenge:"]),
+            ("HogwartsLetterEvent", ["HogwartsLetterEvent:"]),
+            ("Renown", ["Renown:"]),
+            # EN/ZH-Hans use the equivalent flat HJSON key form here; ZH-Hant
+            # currently uses the nested section form. Both compile to the same
+            # Mods.WizardingWorld.Resurrection.RiseFromAshes localization key.
+            ("Resurrection", ["Resurrection:", "Resurrection.RiseFromAshes:"]),
+        ]
         for lang_name, lang_path in [("EN", en_path), ("ZH-Hans", hans_path), ("ZH-Hant", hant_path)]:
             if not lang_path.exists():
                 continue
             lang_text = lang_path.read_text(encoding="utf-8", errors="replace")
-            for section in phase30_sections:
-                self.check(f"{lang_name} has Phase 30 {section.rstrip(':')} section",
-                            section in lang_text,
-                            f"{section} missing in {lang_name}")
+            for section_name, accepted_forms in phase30_sections:
+                self.check(f"{lang_name} has Phase 30 {section_name} section",
+                            any(form in lang_text for form in accepted_forms),
+                            f"{section_name} missing in {lang_name}")
 
         # 8. Hardcoded strings targeted by Phase 30 sweep are gone
         sweep_targets = [

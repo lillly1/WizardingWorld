@@ -5,7 +5,7 @@ using Terraria.ModLoader;
 
 namespace WizardingWorld.Content.Items.Consumables
 {
-	/// <summary>Frozen Soul Lantern — summons the Dementor King. Requires Lunatic Cultist defeated. Night only.</summary>
+	/// <summary>Frozen Soul Lantern — summons Azkaban's Despair. Requires Barty and Golem defeated. Night only.</summary>
 	public class DementorKingSummonItem : ModItem
 	{
 		public override void SetDefaults()
@@ -23,8 +23,7 @@ namespace WizardingWorld.Content.Items.Consumables
 
 		public override bool CanUseItem(Player player)
 		{
-			// Post-Golem (moved from post-Cultist — Voldemort is now the true final boss)
-			return NPC.downedGolemBoss
+			return Common.Systems.WizardConditions.DementorGateOpen
 				&& !Main.dayTime
 				&& !NPC.AnyNPCs(ModContent.NPCType<NPCs.Bosses.DementorKing.DementorKingBoss>());
 		}
@@ -52,6 +51,7 @@ namespace WizardingWorld.Content.Items.Consumables
 				.AddIngredient(ItemID.Ectoplasm, 10)
 				.AddIngredient(ModContent.ItemType<EssenceOfMagic>(), 25)
 				.AddIngredient(ModContent.ItemType<UnicornBlood>(), 3)
+				.AddCondition(Common.Systems.WizardConditions.PostBartyAndGolem)
 				.AddTile<Tiles.EnchantingTable>()
 				.Register();
 		}

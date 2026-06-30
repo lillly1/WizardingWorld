@@ -182,6 +182,10 @@ namespace WizardingWorld.Common.Systems
 				chest.item[slot].stack = 10;
 				slot++;
 
+				// Core crafting station so exploration can jump-start the mod loop.
+				chest.item[slot].SetDefaults(ModContent.ItemType<Content.Items.Placeable.EnchantingTableItem>());
+				slot++;
+
 				// Random accessory
 				int[] possibleAccessories = {
 					ModContent.ItemType<Content.Items.Accessories.Remembrall>(),
