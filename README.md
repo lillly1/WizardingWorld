@@ -33,7 +33,7 @@ A comprehensive Harry Potter Hogwarts experience mod for Terraria via tModLoader
 - 3-language support (English, Chinese Simplified, Chinese Traditional)
 - Canon-audited: true Invisibility Cloak is unique, Gaunt's Ring awakens the Resurrection Stone, Demiguise gear is ordinary stealth gear
 
-## Release QA Summary
+## 【new】 Release QA Summary
 
 As of July 1, 2026, Wizarding World is treated as a **1.0.0 release candidate**. The focus is no longer adding new systems; the current scope is packaging, publishing, and wider community validation.
 
@@ -200,7 +200,7 @@ The included in-game sprites are complete and release-checked. Asset coverage is
 - **Modding Framework**: tModLoader
 - **Inspiration**: J.K. Rowling's Harry Potter series, Fantastic Beasts
 
-## Looking for help
+## 【new】 Looking for help
 
 This mod is in release-candidate shape. The core content pass is complete: in-game assets are present, release packaging is ready, debug-only QA tools are excluded from public Release builds, and the primary single-player route has been tested from early game through all 12 bosses, Voldemort, and the Deathly Hallows ending.
 
