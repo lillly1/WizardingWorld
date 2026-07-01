@@ -83,6 +83,12 @@
 
 ## 推荐实施顺序
 
+## 已落地的第一批场景贴图
+
+- Forbidden Forest: `Assets/Backgrounds/ForbiddenForestFar.png`, `ForbiddenForestMiddle.png`, `ForbiddenForestClose.png`，已接入 `ForbiddenForestBiome`。
+- Battle of Hogwarts: `Assets/Backgrounds/BattleOfHogwartsFar.png`, `BattleOfHogwartsMiddle.png`, `BattleOfHogwartsClose.png`，已接入 `BattleSceneEffect`。
+- 预览合成图：`release_assets/visual_preview/preview_scene_background_slice_v1.png`。
+
 ### 第一切片：证明画风和技术管线
 
 1. 重绘 Mountain Troll。

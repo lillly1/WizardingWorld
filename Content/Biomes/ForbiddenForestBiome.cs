@@ -21,6 +21,8 @@ namespace WizardingWorld.Content.Biomes
 
 		public override int Music => MusicLoader.GetMusicSlot(Mod, "Assets/Music/ForbiddenForest");
 
+		public override ModSurfaceBackgroundStyle SurfaceBackgroundStyle => ModContent.GetInstance<Common.Systems.ForbiddenForestSurfaceBackgroundStyle>();
+
 		public override string BestiaryIcon => "WizardingWorld/Content/Biomes/ForbiddenForestBiome_Icon";
 
 		public override Color? BackgroundColor => new Color(20, 40, 20);

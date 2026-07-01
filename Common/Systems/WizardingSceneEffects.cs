@@ -51,6 +51,8 @@ namespace WizardingWorld.Common.Systems
     {
         public override int Music => MusicLoader.GetMusicSlot(Mod, "Assets/Music/VoldemortBoss");
 
+        public override ModSurfaceBackgroundStyle SurfaceBackgroundStyle => ModContent.GetInstance<BattleOfHogwartsSurfaceBackgroundStyle>();
+
         public override SceneEffectPriority Priority => SceneEffectPriority.BossHigh;
 
         public override bool IsSceneEffectActive(Player player)
