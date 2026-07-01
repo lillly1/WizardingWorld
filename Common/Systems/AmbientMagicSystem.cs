@@ -19,6 +19,12 @@ namespace WizardingWorld.Common.Systems
 	{
 		private int enchantingTableHumCooldown;
 		private int forestWindCooldown;
+		private int forestOwlCooldown;
+		private int azkabanAmbientCooldown;
+		private int battleAmbientCooldown;
+		private int gringottsAmbientCooldown;
+		private int knockturnAmbientCooldown;
+		private int shackAmbientCooldown;
 
 		public override void PostUpdateWorld()
 		{
@@ -33,6 +39,7 @@ namespace WizardingWorld.Common.Systems
 			EnchantingTableParticles(player);
 			ForbiddenForestMist(player);
 			WizardStarParticles(player);
+			SceneAmbientSounds(player);
 		}
 
 		private void EnchantingTableParticles(Player player)
@@ -95,6 +102,17 @@ namespace WizardingWorld.Common.Systems
 				forestWindCooldown = Main.rand.Next(600, 1200);
 			}
 
+			if (forestOwlCooldown > 0)
+			{
+				forestOwlCooldown--;
+			}
+			else
+			{
+				Vector2 owlPos = player.Center + new Vector2(Main.rand.NextFloat(-700f, 700f), Main.rand.NextFloat(-240f, -80f));
+				SoundEngine.PlaySound(WizardSoundStyles.OwlHoot, owlPos);
+				forestOwlCooldown = Main.rand.Next(900, 1600);
+			}
+
 			// Eerie green mist particles in the Forbidden Forest
 			if (Main.rand.NextBool(15))
 			{
@@ -134,6 +152,72 @@ namespace WizardingWorld.Common.Systems
 				dust.velocity *= 0.1f;
 				dust.fadeIn = 0.8f;
 			}
+		}
+
+		private void SceneAmbientSounds(Player player)
+		{
+			if (AzkabanDespairEvent.eventActive)
+			{
+				PlayAmbientCue(player, ref azkabanAmbientCooldown, WizardSoundStyles.DementorScream, 540, 960, 700f, 260f, -80f);
+			}
+			else
+			{
+				azkabanAmbientCooldown = 0;
+			}
+
+			if (BattleOfHogwartsSystem.battleActive)
+			{
+				SoundStyle cue = Main.rand.NextBool(3) ? WizardSoundStyles.DragonRoar : WizardSoundStyles.GhostWail;
+				PlayAmbientCue(player, ref battleAmbientCooldown, cue, 480, 840, 800f, 320f, -120f);
+			}
+			else
+			{
+				battleAmbientCooldown = 0;
+			}
+
+			if (GringottsVaultSystem.missionActive)
+			{
+				PlayAmbientCue(player, ref gringottsAmbientCooldown, WizardSoundStyles.MagicHum, 600, 1100, 360f, 160f);
+			}
+			else
+			{
+				gringottsAmbientCooldown = 0;
+			}
+
+			if (KnockturnAlleySystem.missionActive)
+			{
+				PlayAmbientCue(player, ref knockturnAmbientCooldown, WizardSoundStyles.GhostWail, 680, 1200, 420f, 220f);
+			}
+			else
+			{
+				knockturnAmbientCooldown = 0;
+			}
+
+			if (ShriekingShackSystem.missionActive)
+			{
+				SoundStyle cue = Main.moonPhase == 0 ? WizardSoundStyles.WerewolfHowl : WizardSoundStyles.GhostWail;
+				PlayAmbientCue(player, ref shackAmbientCooldown, cue, 620, 1120, 500f, 180f, -60f);
+			}
+			else
+			{
+				shackAmbientCooldown = 0;
+			}
+		}
+
+		private void PlayAmbientCue(Player player, ref int cooldown, SoundStyle cue, int minDelay, int maxDelay, float spreadX, float spreadY, float offsetY = 0f)
+		{
+			if (cooldown > 0)
+			{
+				cooldown--;
+				return;
+			}
+
+			Vector2 cuePos = player.Center + new Vector2(
+				Main.rand.NextFloat(-spreadX, spreadX),
+				Main.rand.NextFloat(-spreadY, spreadY) + offsetY);
+
+			SoundEngine.PlaySound(cue, cuePos);
+			cooldown = Main.rand.Next(minDelay, maxDelay);
 		}
 	}
 }
