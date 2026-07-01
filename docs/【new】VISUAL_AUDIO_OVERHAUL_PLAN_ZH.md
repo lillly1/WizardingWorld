@@ -87,7 +87,8 @@
 
 - Forbidden Forest: `Assets/Backgrounds/ForbiddenForestFar.png`, `ForbiddenForestMiddle.png`, `ForbiddenForestClose.png`，已接入 `ForbiddenForestBiome`。
 - Battle of Hogwarts: `Assets/Backgrounds/BattleOfHogwartsFar.png`, `BattleOfHogwartsMiddle.png`, `BattleOfHogwartsClose.png`，已接入 `BattleSceneEffect`。
-- 预览合成图：`release_assets/visual_preview/preview_scene_background_slice_v1.png`。
+- 场景贴图已升级到 v2 半写实像素风：禁林增加树皮、蛛网、雾带、月光和远景城堡；霍格沃茨之战增加石墙纹理、火光、烟柱、咒语弧线和废墟。
+- 预览合成图：`release_assets/visual_preview/preview_scene_background_slice_v2.png`。
 
 ### 第一切片：证明画风和技术管线
 
