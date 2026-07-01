@@ -1,4 +1,5 @@
 using Microsoft.Xna.Framework;
+using Terraria;
 using Terraria.ModLoader;
 
 namespace WizardingWorld.Common.Systems
@@ -52,6 +53,28 @@ namespace WizardingWorld.Common.Systems
 			scale = 1f;
 			parallax = 0.38;
 			return BackgroundTextureLoader.GetBackgroundSlot(Mod, "Assets/Backgrounds/BattleOfHogwartsClose");
+		}
+	}
+
+	public class WizardingGlobalBackgroundStyle : GlobalBackgroundStyle
+	{
+		public override void ChooseSurfaceBackgroundStyle(ref int style)
+		{
+			if (Main.dedServ || Main.gameMenu)
+				return;
+
+			Player player = Main.LocalPlayer;
+			if (player == null || !player.active)
+				return;
+
+			if (BattleOfHogwartsSystem.battleActive)
+			{
+				style = ModContent.GetInstance<BattleOfHogwartsSurfaceBackgroundStyle>().Slot;
+				return;
+			}
+
+			if (player.InModBiome<Content.Biomes.ForbiddenForestBiome>())
+				style = ModContent.GetInstance<ForbiddenForestSurfaceBackgroundStyle>().Slot;
 		}
 	}
 }
