@@ -44,8 +44,8 @@ namespace WizardingWorld.Content.NPCs.Bosses.Basilisk
 
 		public override void SetDefaults()
 		{
-			NPC.width = 60;
-			NPC.height = 60;
+			NPC.width = 96;
+			NPC.height = 70;
 			NPC.damage = 40;
 			NPC.defense = 16;
 			NPC.lifeMax = 4500;
@@ -100,7 +100,23 @@ namespace WizardingWorld.Content.NPCs.Bosses.Basilisk
 			else
 				DoFirstPhase(player);
 
-			NPC.rotation = NPC.velocity.ToRotation() + MathHelper.PiOver2;
+			NPC.spriteDirection = 1;
+			NPC.rotation = NPC.velocity.ToRotation();
+		}
+
+		public override void FindFrame(int frameHeight)
+		{
+			int frameSpeed = SecondPhase ? 5 : 7;
+			NPC.frameCounter++;
+
+			if (NPC.frameCounter >= frameSpeed)
+			{
+				NPC.frameCounter = 0;
+				NPC.frame.Y += frameHeight;
+
+				if (NPC.frame.Y >= frameHeight * Main.npcFrameCount[Type])
+					NPC.frame.Y = 0;
+			}
 		}
 
 		private void DoFirstPhase(Player player)

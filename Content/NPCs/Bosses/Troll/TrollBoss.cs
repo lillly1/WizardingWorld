@@ -45,8 +45,8 @@ namespace WizardingWorld.Content.NPCs.Bosses.Troll
 
 		public override void SetDefaults()
 		{
-			NPC.width = 50;
-			NPC.height = 60;
+			NPC.width = 72;
+			NPC.height = 96;
 			NPC.damage = 22;
 			NPC.defense = 6;
 			NPC.lifeMax = 1500;
@@ -104,6 +104,21 @@ namespace WizardingWorld.Content.NPCs.Bosses.Troll
 			// Face the player
 			NPC.spriteDirection = NPC.Center.X < player.Center.X ? 1 : -1;
 			NPC.rotation = 0f;
+		}
+
+		public override void FindFrame(int frameHeight)
+		{
+			int frameSpeed = Enraged ? 6 : 8;
+			NPC.frameCounter++;
+
+			if (NPC.frameCounter >= frameSpeed)
+			{
+				NPC.frameCounter = 0;
+				NPC.frame.Y += frameHeight;
+
+				if (NPC.frame.Y >= frameHeight * Main.npcFrameCount[Type])
+					NPC.frame.Y = 0;
+			}
 		}
 
 		private void DoWalkingPhase(Player player)
