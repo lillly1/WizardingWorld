@@ -57,6 +57,20 @@ namespace WizardingWorld.Common.Systems
                     .UseColor(0.3f, 0.3f, 0.5f)
                     .UseOpacity(0.2f),
                 EffectPriority.Medium);
+
+            SkyManager.Instance["WizardingWorld:ForbiddenForest"] = new WizardingLayeredSky(
+                "WizardingWorld/Assets/Backgrounds/ForbiddenForestFar",
+                "WizardingWorld/Assets/Backgrounds/ForbiddenForestMiddle",
+                "WizardingWorld/Assets/Backgrounds/ForbiddenForestClose",
+                new Color(30, 70, 42),
+                0.72f);
+
+            SkyManager.Instance["WizardingWorld:BattleOfHogwarts"] = new WizardingLayeredSky(
+                "WizardingWorld/Assets/Backgrounds/BattleOfHogwartsFar",
+                "WizardingWorld/Assets/Backgrounds/BattleOfHogwartsMiddle",
+                "WizardingWorld/Assets/Backgrounds/BattleOfHogwartsClose",
+                new Color(80, 38, 38),
+                0.76f);
         }
     }
 
