@@ -39,6 +39,7 @@ namespace WizardingWorld.Content.NPCs.Bosses.Umbridge
 
 		private bool spawnedSquad;
 		private int decreeNumber = 24; // Start at Educational Decree #24
+		private readonly int[] squadNpcIndices = { -1, -1 };
 
 		// Debuffs to randomly apply via decrees
 		private static readonly int[] DecreeDebuffs = new int[]
@@ -64,7 +65,7 @@ namespace WizardingWorld.Content.NPCs.Bosses.Umbridge
 
 		public override void SetStaticDefaults()
 		{
-			Main.npcFrameCount[Type] = 6;
+			Main.npcFrameCount[Type] = 8;
 			NPCID.Sets.MPAllowedEnemies[Type] = true;
 			NPCID.Sets.BossBestiaryPriority.Add(Type);
 			NPCID.Sets.SpecificDebuffImmunity[Type][BuffID.Poisoned] = true;
@@ -76,8 +77,8 @@ namespace WizardingWorld.Content.NPCs.Bosses.Umbridge
 
 		public override void SetDefaults()
 		{
-			NPC.width = 40;
-			NPC.height = 56;
+			NPC.width = 44;
+			NPC.height = 64;
 			NPC.damage = 40;
 			NPC.defense = 35;
 			NPC.lifeMax = 20000;
@@ -149,6 +150,20 @@ namespace WizardingWorld.Content.NPCs.Bosses.Umbridge
 			}
 		}
 
+		public override void FindFrame(int frameHeight)
+		{
+			NPC.frameCounter++;
+
+			if (NPC.frameCounter >= (Phase >= 1 ? 7 : 9))
+			{
+				NPC.frameCounter = 0;
+				NPC.frame.Y += frameHeight;
+
+				if (NPC.frame.Y >= frameHeight * Main.npcFrameCount[Type])
+					NPC.frame.Y = 0;
+			}
+		}
+
 		private void DoPhase1(Player player)
 		{
 			AttackTimer++;
@@ -166,7 +181,7 @@ namespace WizardingWorld.Content.NPCs.Bosses.Umbridge
 			{
 				AttackTimer = 0;
 				Vector2 fireDir = (player.Center - NPC.Center).SafeNormalize(Vector2.UnitY) * 10f;
-				Projectile.NewProjectile(NPC.GetSource_FromAI(), NPC.Center, fireDir,
+				WizardingBossAttackVisuals.SpawnProjectile(WizardBossAttackStyle.Umbridge, NPC.GetSource_FromAI(), NPC.Center, fireDir,
 					ProjectileID.PinkLaser, NPC.damage / 3, 0f, Main.myPlayer);
 
 				SoundEngine.PlaySound(SoundID.Item12, NPC.Center);
@@ -198,7 +213,7 @@ namespace WizardingWorld.Content.NPCs.Bosses.Umbridge
 			{
 				AttackTimer = 0;
 				Vector2 fireDir = (player.Center - NPC.Center).SafeNormalize(Vector2.UnitY) * 12f;
-				Projectile.NewProjectile(NPC.GetSource_FromAI(), NPC.Center, fireDir,
+				WizardingBossAttackVisuals.SpawnProjectile(WizardBossAttackStyle.Umbridge, NPC.GetSource_FromAI(), NPC.Center, fireDir,
 					ProjectileID.PinkLaser, NPC.damage / 3, 0f, Main.myPlayer);
 
 				// Occasionally fire a spread
@@ -207,7 +222,7 @@ namespace WizardingWorld.Content.NPCs.Bosses.Umbridge
 					for (int i = -1; i <= 1; i += 2)
 					{
 						Vector2 spreadDir = fireDir.RotatedBy(MathHelper.ToRadians(i * 15));
-						Projectile.NewProjectile(NPC.GetSource_FromAI(), NPC.Center, spreadDir,
+						WizardingBossAttackVisuals.SpawnProjectile(WizardBossAttackStyle.Umbridge, NPC.GetSource_FromAI(), NPC.Center, spreadDir,
 							ProjectileID.PinkLaser, NPC.damage / 4, 0f, Main.myPlayer);
 					}
 				}
@@ -229,7 +244,7 @@ namespace WizardingWorld.Content.NPCs.Bosses.Umbridge
 				for (int i = 0; i < 2; i++)
 				{
 					Vector2 spawnPos = NPC.Center + Main.rand.NextVector2Circular(200, 200);
-					NPC.NewNPC(NPC.GetSource_FromAI(), (int)spawnPos.X, (int)spawnPos.Y,
+					squadNpcIndices[i] = NPC.NewNPC(NPC.GetSource_FromAI(), (int)spawnPos.X, (int)spawnPos.Y,
 						NPCID.EnchantedSword);
 				}
 
@@ -256,7 +271,7 @@ namespace WizardingWorld.Content.NPCs.Bosses.Umbridge
 				AttackTimer = 0;
 				Vector2 fireDir = (player.Center - NPC.Center).SafeNormalize(Vector2.UnitY) * 14f;
 				fireDir = fireDir.RotatedByRandom(MathHelper.ToRadians(12));
-				Projectile.NewProjectile(NPC.GetSource_FromAI(), NPC.Center, fireDir,
+				WizardingBossAttackVisuals.SpawnProjectile(WizardBossAttackStyle.Umbridge, NPC.GetSource_FromAI(), NPC.Center, fireDir,
 					ProjectileID.PinkLaser, NPC.damage / 2, 0f, Main.myPlayer);
 			}
 
@@ -371,7 +386,55 @@ namespace WizardingWorld.Content.NPCs.Bosses.Umbridge
 
 		public override void OnKill()
 		{
+			ClearLingeringSummonsAndProjectiles();
 			NPC.SetEventFlagCleared(ref DownedBossSystem.downedUmbridge, -1);
+		}
+
+		private void ClearLingeringSummonsAndProjectiles()
+		{
+			if (Main.netMode == NetmodeID.MultiplayerClient)
+				return;
+
+			for (int i = 0; i < squadNpcIndices.Length; i++)
+			{
+				int npcIndex = squadNpcIndices[i];
+				if (npcIndex >= 0 && npcIndex < Main.maxNPCs)
+					ClearSquadSword(Main.npc[npcIndex]);
+			}
+
+			for (int i = 0; i < Main.maxNPCs; i++)
+			{
+				NPC npc = Main.npc[i];
+				if (npc.active
+					&& npc.type == NPCID.EnchantedSword
+					&& Vector2.Distance(npc.Center, NPC.Center) < 2200f)
+				{
+					ClearSquadSword(npc);
+				}
+			}
+
+			for (int i = 0; i < Main.maxProjectiles; i++)
+			{
+				Projectile projectile = Main.projectile[i];
+				if (!projectile.active)
+					continue;
+
+				WizardingBossAttackProjectile visual = projectile.GetGlobalProjectile<WizardingBossAttackProjectile>();
+				if (visual.Style != WizardBossAttackStyle.Umbridge)
+					continue;
+
+				projectile.Kill();
+			}
+		}
+
+		private static void ClearSquadSword(NPC npc)
+		{
+			if (!npc.active || npc.type != NPCID.EnchantedSword)
+				return;
+
+			npc.life = 0;
+			npc.active = false;
+			npc.netUpdate = true;
 		}
 
 		public override bool CanHitPlayer(Player target, ref int cooldownSlot)

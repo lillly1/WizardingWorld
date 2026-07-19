@@ -33,7 +33,7 @@ namespace WizardingWorld.Content.NPCs.Bosses.Voldemort
 
 		public override void SetStaticDefaults()
 		{
-			Main.npcFrameCount[Type] = 6;
+			Main.npcFrameCount[Type] = 8;
 			NPCID.Sets.MPAllowedEnemies[Type] = true;
 			NPCID.Sets.BossBestiaryPriority.Add(Type);
 			NPCID.Sets.SpecificDebuffImmunity[Type][BuffID.Poisoned] = true;
@@ -46,8 +46,8 @@ namespace WizardingWorld.Content.NPCs.Bosses.Voldemort
 
 		public override void SetDefaults()
 		{
-			NPC.width = 40;
-			NPC.height = 60;
+			NPC.width = 58;
+			NPC.height = 92;
 
 			// Horcrux Hunt scaling — destroying Horcruxes weakens Voldemort. Canon Tier A.
 			float power = Common.Systems.HorcruxHuntSystem.GetVoldemortPowerMultiplier();
@@ -113,6 +113,20 @@ namespace WizardingWorld.Content.NPCs.Bosses.Voldemort
 			}
 		}
 
+		public override void FindFrame(int frameHeight)
+		{
+			NPC.frameCounter++;
+
+			if (NPC.frameCounter >= (Phase >= 2 ? 6 : 8))
+			{
+				NPC.frameCounter = 0;
+				NPC.frame.Y += frameHeight;
+
+				if (NPC.frame.Y >= frameHeight * Main.npcFrameCount[Type])
+					NPC.frame.Y = 0;
+			}
+		}
+
 		private void DoPhase1(Player player)
 		{
 			AttackTimer++;
@@ -131,7 +145,7 @@ namespace WizardingWorld.Content.NPCs.Bosses.Voldemort
 				AttackTimer = 0;
 				Vector2 fireDir = (player.Center - NPC.Center).SafeNormalize(Vector2.UnitY) * 12f;
 				// Green bolt (Avada Kedavra style)
-				Projectile.NewProjectile(NPC.GetSource_FromAI(), NPC.Center, fireDir,
+				WizardingBossAttackVisuals.SpawnProjectile(WizardBossAttackStyle.Voldemort, NPC.GetSource_FromAI(), NPC.Center, fireDir,
 					ProjectileID.CursedFlameHostile, NPC.damage / 3, 0f, Main.myPlayer);
 				SoundEngine.PlaySound(WizardSoundStyles.AvadaKedavra, NPC.Center);
 			}
@@ -165,7 +179,7 @@ namespace WizardingWorld.Content.NPCs.Bosses.Voldemort
 
 				// Alternate between different hostile projectiles
 				int projType = Main.rand.NextBool() ? ProjectileID.CursedFlameHostile : ProjectileID.ShadowBeamHostile;
-				Projectile.NewProjectile(NPC.GetSource_FromAI(), NPC.Center, fireDir,
+				WizardingBossAttackVisuals.SpawnProjectile(WizardBossAttackStyle.Voldemort, NPC.GetSource_FromAI(), NPC.Center, fireDir,
 					projType, NPC.damage / 3, 0f, Main.myPlayer);
 				SoundEngine.PlaySound(projType == ProjectileID.CursedFlameHostile
 					? WizardSoundStyles.AvadaKedavra
@@ -213,7 +227,7 @@ namespace WizardingWorld.Content.NPCs.Bosses.Voldemort
 				AttackTimer = 0;
 				Vector2 fireDir = (player.Center - NPC.Center).SafeNormalize(Vector2.UnitY) * 16f;
 				fireDir = fireDir.RotatedByRandom(MathHelper.ToRadians(10));
-				Projectile.NewProjectile(NPC.GetSource_FromAI(), NPC.Center, fireDir,
+				WizardingBossAttackVisuals.SpawnProjectile(WizardBossAttackStyle.Voldemort, NPC.GetSource_FromAI(), NPC.Center, fireDir,
 					ProjectileID.CursedFlameHostile, NPC.damage / 3, 0f, Main.myPlayer);
 				SoundEngine.PlaySound(WizardSoundStyles.AvadaKedavra, NPC.Center);
 			}
@@ -235,7 +249,7 @@ namespace WizardingWorld.Content.NPCs.Bosses.Voldemort
 				{
 					float angle = MathHelper.TwoPi / boltCount * i;
 					Vector2 ringDir = angle.ToRotationVector2() * 8f;
-					Projectile.NewProjectile(NPC.GetSource_FromAI(), NPC.Center, ringDir,
+					WizardingBossAttackVisuals.SpawnProjectile(WizardBossAttackStyle.Voldemort, NPC.GetSource_FromAI(), NPC.Center, ringDir,
 						ProjectileID.CursedFlameHostile, NPC.damage / 4, 0f, Main.myPlayer);
 				}
 

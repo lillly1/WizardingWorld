@@ -41,7 +41,7 @@ namespace WizardingWorld.Content.NPCs.Bosses.Bellatrix
 
 		public override void SetStaticDefaults()
 		{
-			Main.npcFrameCount[Type] = 6;
+			Main.npcFrameCount[Type] = 8;
 			NPCID.Sets.MPAllowedEnemies[Type] = true;
 			NPCID.Sets.BossBestiaryPriority.Add(Type);
 			NPCID.Sets.SpecificDebuffImmunity[Type][BuffID.Poisoned] = true;
@@ -53,8 +53,8 @@ namespace WizardingWorld.Content.NPCs.Bosses.Bellatrix
 
 		public override void SetDefaults()
 		{
-			NPC.width = 40;
-			NPC.height = 60;
+			NPC.width = 46;
+			NPC.height = 72;
 			NPC.damage = 70;
 			NPC.defense = 30;
 			NPC.lifeMax = 35000;
@@ -127,6 +127,20 @@ namespace WizardingWorld.Content.NPCs.Bosses.Bellatrix
 			}
 		}
 
+		public override void FindFrame(int frameHeight)
+		{
+			NPC.frameCounter++;
+
+			if (NPC.frameCounter >= (Phase >= 1 ? 6 : 8))
+			{
+				NPC.frameCounter = 0;
+				NPC.frame.Y += frameHeight;
+
+				if (NPC.frame.Y >= frameHeight * Main.npcFrameCount[Type])
+					NPC.frame.Y = 0;
+			}
+		}
+
 		private void DoPhase1(Player player)
 		{
 			AttackTimer++;
@@ -192,7 +206,7 @@ namespace WizardingWorld.Content.NPCs.Bosses.Bellatrix
 				for (int i = -1; i <= 1; i++)
 				{
 					Vector2 fireDir = baseDir.RotatedBy(MathHelper.ToRadians(i * 20));
-					Projectile.NewProjectile(NPC.GetSource_FromAI(), NPC.Center, fireDir,
+					WizardingBossAttackVisuals.SpawnProjectile(WizardBossAttackStyle.Bellatrix, NPC.GetSource_FromAI(), NPC.Center, fireDir,
 						ProjectileID.InfernoHostileBolt, NPC.damage / 2, 0f, Main.myPlayer);
 				}
 
@@ -237,7 +251,7 @@ namespace WizardingWorld.Content.NPCs.Bosses.Bellatrix
 				{
 					Vector2 fireDir = (player.Center - NPC.Center).SafeNormalize(Vector2.UnitY) * 12f;
 					fireDir = fireDir.RotatedByRandom(MathHelper.ToRadians(15));
-					Projectile.NewProjectile(NPC.GetSource_FromAI(), NPC.Center, fireDir,
+					WizardingBossAttackVisuals.SpawnProjectile(WizardBossAttackStyle.Bellatrix, NPC.GetSource_FromAI(), NPC.Center, fireDir,
 						ProjectileID.InfernoHostileBolt, NPC.damage / 2, 0f, Main.myPlayer);
 				}
 			}
@@ -296,7 +310,7 @@ namespace WizardingWorld.Content.NPCs.Bosses.Bellatrix
 					break;
 			}
 
-			Projectile.NewProjectile(NPC.GetSource_FromAI(), NPC.Center, fireDir,
+			WizardingBossAttackVisuals.SpawnProjectile(WizardBossAttackStyle.Bellatrix, NPC.GetSource_FromAI(), NPC.Center, fireDir,
 				projType, NPC.damage / 3, 0f, Main.myPlayer);
 
 			spellCycle++;

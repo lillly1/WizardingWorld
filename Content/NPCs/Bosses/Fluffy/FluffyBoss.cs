@@ -37,7 +37,7 @@ namespace WizardingWorld.Content.NPCs.Bosses.Fluffy
 
 		public override void SetStaticDefaults()
 		{
-			Main.npcFrameCount[Type] = 6;
+			Main.npcFrameCount[Type] = 8;
 			NPCID.Sets.MPAllowedEnemies[Type] = true;
 			NPCID.Sets.BossBestiaryPriority.Add(Type);
 			NPCID.Sets.SpecificDebuffImmunity[Type][BuffID.Poisoned] = true;
@@ -47,8 +47,8 @@ namespace WizardingWorld.Content.NPCs.Bosses.Fluffy
 
 		public override void SetDefaults()
 		{
-			NPC.width = 80;
-			NPC.height = 70;
+			NPC.width = 116;
+			NPC.height = 90;
 			NPC.damage = 60;
 			NPC.defense = 25;
 			NPC.lifeMax = 18000;
@@ -121,6 +121,20 @@ namespace WizardingWorld.Content.NPCs.Bosses.Fluffy
 			NPC.rotation = NPC.velocity.X * 0.01f;
 		}
 
+		public override void FindFrame(int frameHeight)
+		{
+			NPC.frameCounter++;
+
+			if (NPC.frameCounter >= (Phase >= 1 ? 6 : 8))
+			{
+				NPC.frameCounter = 0;
+				NPC.frame.Y += frameHeight;
+
+				if (NPC.frame.Y >= frameHeight * Main.npcFrameCount[Type])
+					NPC.frame.Y = 0;
+			}
+		}
+
 		private void DoPhase1(Player player)
 		{
 			// 3 different attack patterns cycling: bite, pounce, bark shockwave
@@ -165,15 +179,15 @@ namespace WizardingWorld.Content.NPCs.Bosses.Fluffy
 				Vector2 baseDir = (player.Center - NPC.Center).SafeNormalize(Vector2.UnitX);
 
 				// Head 1 — direct snapping lunge debris
-				Projectile.NewProjectile(NPC.GetSource_FromAI(), NPC.Center + new Vector2(0, -20),
+				WizardingBossAttackVisuals.SpawnProjectile(WizardBossAttackStyle.Fluffy, NPC.GetSource_FromAI(), NPC.Center + new Vector2(0, -20),
 					baseDir * 12f, ProjectileID.BoulderStaffOfEarth, NPC.damage / 3, 0f, Main.myPlayer);
 
 				// Head 2 — high bark burst
-				Projectile.NewProjectile(NPC.GetSource_FromAI(), NPC.Center + new Vector2(0, -30),
+				WizardingBossAttackVisuals.SpawnProjectile(WizardBossAttackStyle.Fluffy, NPC.GetSource_FromAI(), NPC.Center + new Vector2(0, -30),
 					baseDir.RotatedBy(-0.25f) * 11f, ProjectileID.DD2OgreSmash, NPC.damage / 3, 0f, Main.myPlayer);
 
 				// Head 3 — low bark burst
-				Projectile.NewProjectile(NPC.GetSource_FromAI(), NPC.Center + new Vector2(0, -10),
+				WizardingBossAttackVisuals.SpawnProjectile(WizardBossAttackStyle.Fluffy, NPC.GetSource_FromAI(), NPC.Center + new Vector2(0, -10),
 					baseDir.RotatedBy(0.25f) * 11f, ProjectileID.DD2OgreSmash, NPC.damage / 3, 0f, Main.myPlayer);
 
 				SoundEngine.PlaySound(SoundID.NPCHit1, NPC.Center);
@@ -243,7 +257,7 @@ namespace WizardingWorld.Content.NPCs.Bosses.Fluffy
 				{
 					Vector2 offset = new Vector2(0, head * 15 - 15);
 					Vector2 biteDir = baseDir.RotatedBy(head * 0.20f) * 14f;
-					Projectile.NewProjectile(NPC.GetSource_FromAI(), NPC.Center + offset, biteDir,
+					WizardingBossAttackVisuals.SpawnProjectile(WizardBossAttackStyle.Fluffy, NPC.GetSource_FromAI(), NPC.Center + offset, biteDir,
 						ProjectileID.BoulderStaffOfEarth, NPC.damage / 3, 2f, Main.myPlayer);
 				}
 
@@ -371,7 +385,7 @@ namespace WizardingWorld.Content.NPCs.Bosses.Fluffy
 				for (int i = -3; i <= 3; i++)
 				{
 					Vector2 spreadDir = baseDir.RotatedBy(MathHelper.ToRadians(i * 15)) * 8f;
-					Projectile.NewProjectile(NPC.GetSource_FromAI(), NPC.Center, spreadDir,
+					WizardingBossAttackVisuals.SpawnProjectile(WizardBossAttackStyle.Fluffy, NPC.GetSource_FromAI(), NPC.Center, spreadDir,
 						ProjectileID.DD2OgreSmash, NPC.damage / 4, 0f, Main.myPlayer);
 				}
 

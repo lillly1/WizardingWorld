@@ -1,4 +1,3 @@
-#if DEBUG
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
@@ -34,4 +33,3 @@ namespace WizardingWorld.Content.Items.Weapons.Wands
 		}
 	}
 }
-#endif

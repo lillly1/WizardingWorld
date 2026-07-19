@@ -149,7 +149,7 @@ namespace WizardingWorld.Common.Players
 		{
 			if (debugGodMode)
 			{
-				Player.SetImmuneTimeForAllTypes(60);
+				Player.SetImmuneTimeForAllTypes(300);
 				return true;
 			}
 
@@ -195,6 +195,16 @@ namespace WizardingWorld.Common.Players
 			return false;
 		}
 
+		public override bool FreeDodge(Player.HurtInfo info)
+		{
+			if (!debugGodMode)
+				return false;
+
+			Player.statLife = Player.statLifeMax2;
+			Player.SetImmuneTimeForAllTypes(300);
+			return true;
+		}
+
 		public override void ModifyHurt(ref Player.HurtModifiers modifiers)
 		{
 			if (debugGodMode)
@@ -217,7 +227,9 @@ namespace WizardingWorld.Common.Players
 			Player.statLife = Player.statLifeMax2;
 			Player.statMana = Player.statManaMax2;
 			Player.immune = true;
-			Player.immuneTime = Math.Max(Player.immuneTime, 2);
+			Player.immuneNoBlink = true;
+			Player.immuneTime = Math.Max(Player.immuneTime, 300);
+			Player.noKnockback = true;
 			Player.noFallDmg = true;
 			Player.lavaImmune = true;
 			Player.fireWalk = true;
@@ -226,6 +238,17 @@ namespace WizardingWorld.Common.Players
 			Player.buffImmune[Terraria.ID.BuffID.Burning] = true;
 			Player.buffImmune[Terraria.ID.BuffID.Poisoned] = true;
 			Player.buffImmune[Terraria.ID.BuffID.Venom] = true;
+			Player.buffImmune[Terraria.ID.BuffID.Confused] = true;
+			Player.buffImmune[Terraria.ID.BuffID.Cursed] = true;
+			Player.buffImmune[Terraria.ID.BuffID.Darkness] = true;
+			Player.buffImmune[Terraria.ID.BuffID.Blackout] = true;
+			Player.buffImmune[Terraria.ID.BuffID.Bleeding] = true;
+			Player.buffImmune[Terraria.ID.BuffID.BrokenArmor] = true;
+			Player.buffImmune[Terraria.ID.BuffID.Frozen] = true;
+			Player.buffImmune[Terraria.ID.BuffID.Stoned] = true;
+			Player.buffImmune[ModContent.BuffType<Content.Buffs.Debuffs.PetrifiedDebuff>()] = true;
+			Player.buffImmune[ModContent.BuffType<Content.Buffs.Debuffs.JinxedDebuff>()] = true;
+			Player.buffImmune[ModContent.BuffType<Content.Buffs.Debuffs.DarkCurseDebuff>()] = true;
 		}
 
 		private void UpdateDespair()

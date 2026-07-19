@@ -58,19 +58,29 @@ namespace WizardingWorld.Common.Systems
                     .UseOpacity(0.2f),
                 EffectPriority.Medium);
 
-            SkyManager.Instance["WizardingWorld:ForbiddenForest"] = new WizardingLayeredSky(
-                "WizardingWorld/Assets/Backgrounds/ForbiddenForestFar",
-                "WizardingWorld/Assets/Backgrounds/ForbiddenForestMiddle",
-                "WizardingWorld/Assets/Backgrounds/ForbiddenForestClose",
-                new Color(30, 70, 42),
-                0.72f);
+            Filters.Scene[WizardingSurfaceSceneRules.SurfaceSkyKey] = new Filter(
+                new ScreenShaderData("FilterMiniTower")
+                    .UseColor(1f, 1f, 1f)
+                    .UseOpacity(0f),
+                EffectPriority.Low);
 
-            SkyManager.Instance["WizardingWorld:BattleOfHogwarts"] = new WizardingLayeredSky(
-                "WizardingWorld/Assets/Backgrounds/BattleOfHogwartsFar",
-                "WizardingWorld/Assets/Backgrounds/BattleOfHogwartsMiddle",
-                "WizardingWorld/Assets/Backgrounds/BattleOfHogwartsClose",
+            Filters.Scene["WizardingWorld:ForbiddenForest"] = new Filter(
+                new ScreenShaderData("FilterMiniTower")
+                    .UseColor(0.2f, 0.35f, 0.22f)
+                    .UseOpacity(0f),
+                EffectPriority.Low);
+
+            SkyManager.Instance[WizardingSurfaceSceneRules.SurfaceSkyKey] = new WizardingSurfaceSceneSky();
+
+            SkyManager.Instance["WizardingWorld:ForbiddenForest"] = new WizardingSingleSceneSky(
+                "WizardingWorld/Assets/Backgrounds/SceneForbiddenForest",
+                new Color(30, 70, 42),
+                1f);
+
+            SkyManager.Instance["WizardingWorld:BattleOfHogwarts"] = new WizardingSingleSceneSky(
+                "WizardingWorld/Assets/Backgrounds/SceneHogwartsCastle",
                 new Color(80, 38, 38),
-                0.76f);
+                1f);
         }
     }
 

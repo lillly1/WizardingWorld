@@ -14,19 +14,19 @@ namespace WizardingWorld.Common.Systems
 
 		public override int ChooseFarTexture()
 		{
-			return BackgroundTextureLoader.GetBackgroundSlot(Mod, "Assets/Backgrounds/ForbiddenForestFar");
+			return BackgroundTextureLoader.GetBackgroundSlot(Mod, "Assets/Backgrounds/SceneForbiddenForest");
 		}
 
 		public override int ChooseMiddleTexture()
 		{
-			return BackgroundTextureLoader.GetBackgroundSlot(Mod, "Assets/Backgrounds/ForbiddenForestMiddle");
+			return BackgroundTextureLoader.GetBackgroundSlot(Mod, "Assets/Backgrounds/SceneForbiddenForest");
 		}
 
 		public override int ChooseCloseTexture(ref float scale, ref double parallax, ref float a, ref float b)
 		{
 			scale = 1f;
 			parallax = 0.42;
-			return BackgroundTextureLoader.GetBackgroundSlot(Mod, "Assets/Backgrounds/ForbiddenForestClose");
+			return BackgroundTextureLoader.GetBackgroundSlot(Mod, "Assets/Backgrounds/SceneForbiddenForest");
 		}
 	}
 
@@ -40,19 +40,19 @@ namespace WizardingWorld.Common.Systems
 
 		public override int ChooseFarTexture()
 		{
-			return BackgroundTextureLoader.GetBackgroundSlot(Mod, "Assets/Backgrounds/BattleOfHogwartsFar");
+			return BackgroundTextureLoader.GetBackgroundSlot(Mod, "Assets/Backgrounds/SceneHogwartsCastle");
 		}
 
 		public override int ChooseMiddleTexture()
 		{
-			return BackgroundTextureLoader.GetBackgroundSlot(Mod, "Assets/Backgrounds/BattleOfHogwartsMiddle");
+			return BackgroundTextureLoader.GetBackgroundSlot(Mod, "Assets/Backgrounds/SceneHogwartsCastle");
 		}
 
 		public override int ChooseCloseTexture(ref float scale, ref double parallax, ref float a, ref float b)
 		{
 			scale = 1f;
 			parallax = 0.38;
-			return BackgroundTextureLoader.GetBackgroundSlot(Mod, "Assets/Backgrounds/BattleOfHogwartsClose");
+			return BackgroundTextureLoader.GetBackgroundSlot(Mod, "Assets/Backgrounds/SceneHogwartsCastle");
 		}
 	}
 

@@ -6,6 +6,28 @@ using Terraria.ModLoader;
 namespace WizardingWorld.Common.Systems
 {
     /// <summary>
+    /// Lightweight surface panorama for the wizarding route. It keeps the
+    /// original Terraria world intact while drawing the player's five supplied
+    /// scene plates as a continuous left-to-right background band.
+    /// </summary>
+    public class WizardingSurfaceSceneEffect : ModSceneEffect
+    {
+        public override SceneEffectPriority Priority => SceneEffectPriority.BiomeLow;
+
+        public override bool IsSceneEffectActive(Player player)
+        {
+            return WizardingSurfaceSceneRules.ShouldShow(player)
+                && !BattleOfHogwartsSystem.battleActive
+                && !player.InModBiome<Content.Biomes.ForbiddenForestBiome>();
+        }
+
+        public override void SpecialVisuals(Player player, bool isActive)
+        {
+            player.ManageSpecialBiomeVisuals(WizardingSurfaceSceneRules.SurfaceSkyKey, isActive);
+        }
+    }
+
+    /// <summary>
     /// Scene effects for key Wizarding World locations and events.
     /// Each provides ambient atmosphere (music, screen tint) tied to
     /// existing system state fields — no new game logic, just presentation.

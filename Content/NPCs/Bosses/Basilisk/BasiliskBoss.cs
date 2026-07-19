@@ -34,7 +34,7 @@ namespace WizardingWorld.Content.NPCs.Bosses.Basilisk
 
 		public override void SetStaticDefaults()
 		{
-			Main.npcFrameCount[Type] = 6;
+			Main.npcFrameCount[Type] = 12;
 			NPCID.Sets.MPAllowedEnemies[Type] = true;
 			NPCID.Sets.BossBestiaryPriority.Add(Type);
 			NPCID.Sets.SpecificDebuffImmunity[Type][BuffID.Poisoned] = true;
@@ -44,8 +44,8 @@ namespace WizardingWorld.Content.NPCs.Bosses.Basilisk
 
 		public override void SetDefaults()
 		{
-			NPC.width = 96;
-			NPC.height = 70;
+			NPC.width = 160;
+			NPC.height = 58;
 			NPC.damage = 40;
 			NPC.defense = 16;
 			NPC.lifeMax = 4500;
@@ -106,7 +106,7 @@ namespace WizardingWorld.Content.NPCs.Bosses.Basilisk
 
 		public override void FindFrame(int frameHeight)
 		{
-			int frameSpeed = SecondPhase ? 5 : 7;
+			int frameSpeed = SecondPhase ? 3 : 4;
 			NPC.frameCounter++;
 
 			if (NPC.frameCounter >= frameSpeed)
@@ -189,7 +189,7 @@ namespace WizardingWorld.Content.NPCs.Bosses.Basilisk
 				if (Main.netMode != NetmodeID.MultiplayerClient)
 				{
 					Vector2 dir = (player.Center - NPC.Center).SafeNormalize(Vector2.UnitY) * 10f;
-					Projectile.NewProjectile(NPC.GetSource_FromAI(), NPC.Center, dir,
+					WizardingBossAttackVisuals.SpawnProjectile(WizardBossAttackStyle.Basilisk, NPC.GetSource_FromAI(), NPC.Center, dir,
 						ProjectileID.CursedFlameHostile, NPC.damage / 2, 0f, Main.myPlayer);
 				}
 			}

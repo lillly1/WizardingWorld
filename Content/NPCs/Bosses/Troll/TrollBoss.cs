@@ -35,7 +35,7 @@ namespace WizardingWorld.Content.NPCs.Bosses.Troll
 
 		public override void SetStaticDefaults()
 		{
-			Main.npcFrameCount[Type] = 6;
+			Main.npcFrameCount[Type] = 8;
 			NPCID.Sets.MPAllowedEnemies[Type] = true;
 			NPCID.Sets.BossBestiaryPriority.Add(Type);
 			NPCID.Sets.SpecificDebuffImmunity[Type][BuffID.Poisoned] = true;
@@ -45,8 +45,8 @@ namespace WizardingWorld.Content.NPCs.Bosses.Troll
 
 		public override void SetDefaults()
 		{
-			NPC.width = 72;
-			NPC.height = 96;
+			NPC.width = 88;
+			NPC.height = 104;
 			NPC.damage = 22;
 			NPC.defense = 6;
 			NPC.lifeMax = 1500;
@@ -195,7 +195,7 @@ namespace WizardingWorld.Content.NPCs.Bosses.Troll
 				if (Main.netMode != NetmodeID.MultiplayerClient)
 				{
 					Vector2 rockDir = (player.Center - NPC.Center).SafeNormalize(Vector2.UnitY) * 8f;
-					Projectile.NewProjectile(NPC.GetSource_FromAI(), NPC.Center, rockDir,
+					WizardingBossAttackVisuals.SpawnProjectile(WizardBossAttackStyle.Troll, NPC.GetSource_FromAI(), NPC.Center, rockDir,
 						ProjectileID.BoulderStaffOfEarth, NPC.damage / 3, 3f, Main.myPlayer);
 				}
 

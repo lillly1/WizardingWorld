@@ -31,7 +31,7 @@ namespace WizardingWorld.Content.NPCs.Bosses.Horntail
 
 		public override void SetStaticDefaults()
 		{
-			Main.npcFrameCount[Type] = 6;
+			Main.npcFrameCount[Type] = 8;
 			NPCID.Sets.MPAllowedEnemies[Type] = true;
 			NPCID.Sets.BossBestiaryPriority.Add(Type);
 			NPCID.Sets.SpecificDebuffImmunity[Type][BuffID.Poisoned] = true;
@@ -42,8 +42,8 @@ namespace WizardingWorld.Content.NPCs.Bosses.Horntail
 
 		public override void SetDefaults()
 		{
-			NPC.width = 80;
-			NPC.height = 80;
+			NPC.width = 148;
+			NPC.height = 92;
 			NPC.damage = 70;
 			NPC.defense = 30;
 			NPC.lifeMax = 28000;
@@ -100,6 +100,20 @@ namespace WizardingWorld.Content.NPCs.Bosses.Horntail
 			}
 		}
 
+		public override void FindFrame(int frameHeight)
+		{
+			NPC.frameCounter++;
+
+			if (NPC.frameCounter >= (Phase >= 1 ? 6 : 7))
+			{
+				NPC.frameCounter = 0;
+				NPC.frame.Y += frameHeight;
+
+				if (NPC.frame.Y >= frameHeight * Main.npcFrameCount[Type])
+					NPC.frame.Y = 0;
+			}
+		}
+
 		private void DoPhase1(Player player)
 		{
 			AttackTimer++;
@@ -117,7 +131,7 @@ namespace WizardingWorld.Content.NPCs.Bosses.Horntail
 			{
 				AttackTimer = 0;
 				Vector2 fireDir = (player.Center - NPC.Center).SafeNormalize(Vector2.UnitY) * 12f;
-				Projectile.NewProjectile(NPC.GetSource_FromAI(), NPC.Center, fireDir,
+				WizardingBossAttackVisuals.SpawnProjectile(WizardBossAttackStyle.Horntail, NPC.GetSource_FromAI(), NPC.Center, fireDir,
 					ProjectileID.Fireball, NPC.damage / 3, 0f, Main.myPlayer);
 			}
 
@@ -153,7 +167,7 @@ namespace WizardingWorld.Content.NPCs.Bosses.Horntail
 					for (int i = -2; i <= 2; i++)
 					{
 						Vector2 spreadDir = baseDir.RotatedBy(MathHelper.ToRadians(i * 12));
-						Projectile.NewProjectile(NPC.GetSource_FromAI(), NPC.Center, spreadDir,
+						WizardingBossAttackVisuals.SpawnProjectile(WizardBossAttackStyle.Horntail, NPC.GetSource_FromAI(), NPC.Center, spreadDir,
 							ProjectileID.Fireball, NPC.damage / 3, 0f, Main.myPlayer);
 					}
 				}
@@ -184,7 +198,7 @@ namespace WizardingWorld.Content.NPCs.Bosses.Horntail
 			{
 				AttackTimer = 0;
 				Vector2 fireDir = (player.Center - NPC.Center).SafeNormalize(Vector2.UnitY) * 14f;
-				Projectile.NewProjectile(NPC.GetSource_FromAI(), NPC.Center, fireDir,
+				WizardingBossAttackVisuals.SpawnProjectile(WizardBossAttackStyle.Horntail, NPC.GetSource_FromAI(), NPC.Center, fireDir,
 					ProjectileID.Fireball, NPC.damage / 3, 0f, Main.myPlayer);
 			}
 
@@ -195,7 +209,7 @@ namespace WizardingWorld.Content.NPCs.Bosses.Horntail
 				for (int i = 0; i < 5; i++)
 				{
 					Vector2 spawnPos = player.Center + new Vector2(Main.rand.Next(-300, 300), -600);
-					Projectile.NewProjectile(NPC.GetSource_FromAI(), spawnPos, new Vector2(0, 8f),
+					WizardingBossAttackVisuals.SpawnProjectile(WizardBossAttackStyle.Horntail, NPC.GetSource_FromAI(), spawnPos, new Vector2(0, 8f),
 						ProjectileID.Fireball, NPC.damage / 4, 0f, Main.myPlayer);
 				}
 			}

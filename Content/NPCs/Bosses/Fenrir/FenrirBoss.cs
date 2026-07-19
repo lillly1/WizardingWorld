@@ -39,7 +39,7 @@ namespace WizardingWorld.Content.NPCs.Bosses.Fenrir
 
 		public override void SetStaticDefaults()
 		{
-			Main.npcFrameCount[Type] = 6;
+			Main.npcFrameCount[Type] = 8;
 			NPCID.Sets.MPAllowedEnemies[Type] = true;
 			NPCID.Sets.BossBestiaryPriority.Add(Type);
 			NPCID.Sets.SpecificDebuffImmunity[Type][BuffID.Poisoned] = true;
@@ -50,8 +50,8 @@ namespace WizardingWorld.Content.NPCs.Bosses.Fenrir
 
 		public override void SetDefaults()
 		{
-			NPC.width = 50;
-			NPC.height = 60;
+			NPC.width = 58;
+			NPC.height = 76;
 			NPC.damage = 75;
 			NPC.defense = 22;
 			NPC.lifeMax = 25000;
@@ -119,6 +119,20 @@ namespace WizardingWorld.Content.NPCs.Bosses.Fenrir
 			}
 
 			NPC.spriteDirection = NPC.direction;
+		}
+
+		public override void FindFrame(int frameHeight)
+		{
+			NPC.frameCounter++;
+
+			if (NPC.frameCounter >= (Phase >= 1 ? 6 : 8))
+			{
+				NPC.frameCounter = 0;
+				NPC.frame.Y += frameHeight;
+
+				if (NPC.frame.Y >= frameHeight * Main.npcFrameCount[Type])
+					NPC.frame.Y = 0;
+			}
 		}
 
 		private void DoPhase1(Player player)

@@ -41,7 +41,7 @@ namespace WizardingWorld.Content.NPCs.Bosses.Quirrell
 
 		public override void SetStaticDefaults()
 		{
-			Main.npcFrameCount[Type] = 6;
+			Main.npcFrameCount[Type] = 8;
 			NPCID.Sets.MPAllowedEnemies[Type] = true;
 			NPCID.Sets.BossBestiaryPriority.Add(Type);
 			NPCID.Sets.SpecificDebuffImmunity[Type][BuffID.Poisoned] = true;
@@ -51,8 +51,8 @@ namespace WizardingWorld.Content.NPCs.Bosses.Quirrell
 
 		public override void SetDefaults()
 		{
-			NPC.width = 40;
-			NPC.height = 56;
+			NPC.width = 44;
+			NPC.height = 64;
 			NPC.damage = 35;
 			NPC.defense = 12;
 			NPC.lifeMax = 3500;
@@ -126,6 +126,20 @@ namespace WizardingWorld.Content.NPCs.Bosses.Quirrell
 				NPC.rotation = NPC.velocity.X * 0.02f;
 		}
 
+		public override void FindFrame(int frameHeight)
+		{
+			NPC.frameCounter++;
+
+			if (NPC.frameCounter >= (Phase >= 1 ? 6 : 8))
+			{
+				NPC.frameCounter = 0;
+				NPC.frame.Y += frameHeight;
+
+				if (NPC.frame.Y >= frameHeight * Main.npcFrameCount[Type])
+					NPC.frame.Y = 0;
+			}
+		}
+
 		private void DoPhase1_Quirrell(Player player)
 		{
 			AttackTimer++;
@@ -173,7 +187,7 @@ namespace WizardingWorld.Content.NPCs.Bosses.Quirrell
 			{
 				AttackTimer = 0;
 				Vector2 dir = (player.Center - NPC.Center).SafeNormalize(Vector2.UnitY) * 7f;
-				Projectile.NewProjectile(NPC.GetSource_FromAI(), NPC.Center, dir,
+				WizardingBossAttackVisuals.SpawnProjectile(WizardBossAttackStyle.Quirrell, NPC.GetSource_FromAI(), NPC.Center, dir,
 					ProjectileID.ShadowBeamHostile, NPC.damage / 3, 0f, Main.myPlayer);
 
 				SoundEngine.PlaySound(SoundID.Item8, NPC.Center);
@@ -205,7 +219,7 @@ namespace WizardingWorld.Content.NPCs.Bosses.Quirrell
 			{
 				AttackTimer = 0;
 				Vector2 fireDir = (player.Center - NPC.Center).SafeNormalize(Vector2.UnitY) * 12f;
-				Projectile.NewProjectile(NPC.GetSource_FromAI(), NPC.Center, fireDir,
+				WizardingBossAttackVisuals.SpawnProjectile(WizardBossAttackStyle.Quirrell, NPC.GetSource_FromAI(), NPC.Center, fireDir,
 					ProjectileID.CursedFlameHostile, NPC.damage / 2, 0f, Main.myPlayer);
 
 				SoundEngine.PlaySound(SoundID.Item20, NPC.Center);
@@ -248,7 +262,7 @@ namespace WizardingWorld.Content.NPCs.Bosses.Quirrell
 				AttackTimer = 0;
 				Vector2 fireDir = (player.Center - NPC.Center).SafeNormalize(Vector2.UnitY) * 14f;
 				fireDir = fireDir.RotatedByRandom(MathHelper.ToRadians(10));
-				Projectile.NewProjectile(NPC.GetSource_FromAI(), NPC.Center, fireDir,
+				WizardingBossAttackVisuals.SpawnProjectile(WizardBossAttackStyle.Quirrell, NPC.GetSource_FromAI(), NPC.Center, fireDir,
 					ProjectileID.CursedFlameHostile, NPC.damage / 2, 0f, Main.myPlayer);
 			}
 
@@ -269,7 +283,7 @@ namespace WizardingWorld.Content.NPCs.Bosses.Quirrell
 				{
 					float angle = MathHelper.TwoPi / numProjectiles * i;
 					Vector2 ringDir = new Vector2((float)Math.Cos(angle), (float)Math.Sin(angle)) * 8f;
-					Projectile.NewProjectile(NPC.GetSource_FromAI(), NPC.Center, ringDir,
+					WizardingBossAttackVisuals.SpawnProjectile(WizardBossAttackStyle.Quirrell, NPC.GetSource_FromAI(), NPC.Center, ringDir,
 						ProjectileID.CursedFlameHostile, NPC.damage / 3, 0f, Main.myPlayer);
 				}
 

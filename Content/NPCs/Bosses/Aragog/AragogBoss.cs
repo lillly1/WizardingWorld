@@ -36,7 +36,7 @@ namespace WizardingWorld.Content.NPCs.Bosses.Aragog
 
 		public override void SetStaticDefaults()
 		{
-			Main.npcFrameCount[Type] = 6;
+			Main.npcFrameCount[Type] = 8;
 			NPCID.Sets.MPAllowedEnemies[Type] = true;
 			NPCID.Sets.BossBestiaryPriority.Add(Type);
 			NPCID.Sets.SpecificDebuffImmunity[Type][BuffID.Poisoned] = true;
@@ -46,8 +46,8 @@ namespace WizardingWorld.Content.NPCs.Bosses.Aragog
 
 		public override void SetDefaults()
 		{
-			NPC.width = 80;
-			NPC.height = 60;
+			NPC.width = 112;
+			NPC.height = 78;
 			NPC.damage = 45;
 			NPC.defense = 18;
 			NPC.lifeMax = 8000;
@@ -105,6 +105,20 @@ namespace WizardingWorld.Content.NPCs.Bosses.Aragog
 			// Face the player
 			NPC.spriteDirection = NPC.Center.X < player.Center.X ? 1 : -1;
 			NPC.rotation = 0f;
+		}
+
+		public override void FindFrame(int frameHeight)
+		{
+			NPC.frameCounter++;
+
+			if (NPC.frameCounter >= (Frenzied ? 6 : 8))
+			{
+				NPC.frameCounter = 0;
+				NPC.frame.Y += frameHeight;
+
+				if (NPC.frame.Y >= frameHeight * Main.npcFrameCount[Type])
+					NPC.frame.Y = 0;
+			}
 		}
 
 		private void DoCrawlingPhase(Player player)
@@ -191,7 +205,7 @@ namespace WizardingWorld.Content.NPCs.Bosses.Aragog
 					for (int i = -1; i <= 1; i++)
 					{
 						Vector2 spreadDir = webDir.RotatedBy(MathHelper.ToRadians(10f * i));
-						Projectile.NewProjectile(NPC.GetSource_FromAI(), NPC.Center, spreadDir,
+						WizardingBossAttackVisuals.SpawnProjectile(WizardBossAttackStyle.Aragog, NPC.GetSource_FromAI(), NPC.Center, spreadDir,
 							ProjectileID.WebSpit, NPC.damage / 3, 2f, Main.myPlayer);
 					}
 				}

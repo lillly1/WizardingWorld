@@ -1,4 +1,3 @@
-#if DEBUG
 using System.Collections.Generic;
 using System.Text;
 using Microsoft.Xna.Framework;
@@ -677,7 +676,7 @@ namespace WizardingWorld.Common.Systems
 		{
 			if (args.Length < 2)
 			{
-				caller.Reply("Usage: /wwdebug kit <intro|troll|quirrell|basilisk|aragog|fluffy|horntail|posthorntail|umbridge|fenrir|bellatrix|barty|dementor|voldemort|weapon>. Use these in a disposable single-player QA world.", Color.Yellow);
+				caller.Reply("Usage: /wwdebug kit <intro|troll|quirrell|basilisk|aragog|fluffy|horntail|posthorntail|umbridge|fenrir|bellatrix|barty|dementor|voldemort|bosses|weapon>. Use these in a disposable single-player QA world.", Color.Yellow);
 				return;
 			}
 
@@ -762,11 +761,17 @@ namespace WizardingWorld.Common.Systems
 				case "finale":
 					GrantVoldemortKit(caller);
 					break;
+				case "bosses":
+				case "summons":
+				case "allsummons":
+				case "allbosses":
+					GrantAllBossSummonItems(caller);
+					break;
 				case "weapon":
 					GrantQaTestWeapon(caller);
 					break;
 				default:
-					caller.Reply("Unknown QA kit. Use: intro, troll, quirrell, basilisk, aragog, fluffy, horntail, posthorntail, umbridge, fenrir, bellatrix, barty, dementor, voldemort, weapon", Color.Red);
+					caller.Reply("Unknown QA kit. Use: intro, troll, quirrell, basilisk, aragog, fluffy, horntail, posthorntail, umbridge, fenrir, bellatrix, barty, dementor, voldemort, bosses, weapon", Color.Red);
 					return;
 			}
 
@@ -1229,6 +1234,24 @@ namespace WizardingWorld.Common.Systems
 			GrantItem(caller, ItemID.SoulofNight, 15);
 			GrantItem(caller, ItemID.Ectoplasm, 10);
 			GrantItem(caller, ItemID.LunarTabletFragment, 5);
+		}
+
+		private static void GrantAllBossSummonItems(CommandCaller caller)
+		{
+			const int stack = 3;
+
+			GrantItem(caller, ModContent.ItemType<Content.Items.Consumables.TrollSummonItem>(), stack);
+			GrantItem(caller, ModContent.ItemType<Content.Items.Consumables.QuirrellSummonItem>(), stack);
+			GrantItem(caller, ModContent.ItemType<Content.Items.Consumables.BasiliskSummonItem>(), stack);
+			GrantItem(caller, ModContent.ItemType<Content.Items.Consumables.AragogSummonItem>(), stack);
+			GrantItem(caller, ModContent.ItemType<Content.Items.Consumables.FluffySummonItem>(), stack);
+			GrantItem(caller, ModContent.ItemType<Content.Items.Consumables.HorntailSummonItem>(), stack);
+			GrantItem(caller, ModContent.ItemType<Content.Items.Consumables.UmbridgeSummonItem>(), stack);
+			GrantItem(caller, ModContent.ItemType<Content.Items.Consumables.FenrirSummonItem>(), stack);
+			GrantItem(caller, ModContent.ItemType<Content.Items.Consumables.BellatrixSummonItem>(), stack);
+			GrantItem(caller, ModContent.ItemType<Content.Items.Consumables.BartyCrouchSummonItem>(), stack);
+			GrantItem(caller, ModContent.ItemType<Content.Items.Consumables.DementorKingSummonItem>(), stack);
+			GrantItem(caller, ModContent.ItemType<Content.Items.Consumables.VoldemortSummonItem>(), stack);
 		}
 
 		private static void GrantHallowsKit(CommandCaller caller)
@@ -2146,4 +2169,3 @@ namespace WizardingWorld.Common.Systems
 		}
 	}
 }
-#endif

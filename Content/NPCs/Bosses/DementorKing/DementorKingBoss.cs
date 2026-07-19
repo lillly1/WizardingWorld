@@ -41,7 +41,7 @@ namespace WizardingWorld.Content.NPCs.Bosses.DementorKing
 
 		public override void SetStaticDefaults()
 		{
-			Main.npcFrameCount[Type] = 6;
+			Main.npcFrameCount[Type] = 8;
 			NPCID.Sets.MPAllowedEnemies[Type] = true;
 			NPCID.Sets.BossBestiaryPriority.Add(Type);
 			NPCID.Sets.SpecificDebuffImmunity[Type][BuffID.Poisoned] = true;
@@ -55,8 +55,8 @@ namespace WizardingWorld.Content.NPCs.Bosses.DementorKing
 
 		public override void SetDefaults()
 		{
-			NPC.width = 60;
-			NPC.height = 80;
+			NPC.width = 76;
+			NPC.height = 104;
 			NPC.damage = 85;
 			NPC.defense = 35;
 			NPC.lifeMax = 45000;
@@ -147,6 +147,20 @@ namespace WizardingWorld.Content.NPCs.Bosses.DementorKing
 			}
 		}
 
+		public override void FindFrame(int frameHeight)
+		{
+			NPC.frameCounter++;
+
+			if (NPC.frameCounter >= (Phase >= 1 ? 6 : 7))
+			{
+				NPC.frameCounter = 0;
+				NPC.frame.Y += frameHeight;
+
+				if (NPC.frame.Y >= frameHeight * Main.npcFrameCount[Type])
+					NPC.frame.Y = 0;
+			}
+		}
+
 		private void DoPhase1(Player player)
 		{
 			AttackTimer++;
@@ -168,7 +182,7 @@ namespace WizardingWorld.Content.NPCs.Bosses.DementorKing
 				for (int i = -2; i <= 2; i++)
 				{
 					Vector2 fireDir = new Vector2(i * 3f, 10f);
-					Projectile.NewProjectile(NPC.GetSource_FromAI(), NPC.Center, fireDir,
+					WizardingBossAttackVisuals.SpawnProjectile(WizardBossAttackStyle.DementorKing, NPC.GetSource_FromAI(), NPC.Center, fireDir,
 						ProjectileID.ShadowBeamHostile, NPC.damage / 3, 0f, Main.myPlayer);
 				}
 			}
@@ -207,13 +221,13 @@ namespace WizardingWorld.Content.NPCs.Bosses.DementorKing
 				{
 					AttackTimer = 0;
 					Vector2 fireDir = (player.Center - NPC.Center).SafeNormalize(Vector2.UnitY) * 12f;
-					Projectile.NewProjectile(NPC.GetSource_FromAI(), NPC.Center, fireDir,
+					WizardingBossAttackVisuals.SpawnProjectile(WizardBossAttackStyle.DementorKing, NPC.GetSource_FromAI(), NPC.Center, fireDir,
 						ProjectileID.ShadowBeamHostile, NPC.damage / 3, 0f, Main.myPlayer);
 
 					// Side bolts
-					Projectile.NewProjectile(NPC.GetSource_FromAI(), NPC.Center, fireDir.RotatedBy(0.3f),
+					WizardingBossAttackVisuals.SpawnProjectile(WizardBossAttackStyle.DementorKing, NPC.GetSource_FromAI(), NPC.Center, fireDir.RotatedBy(0.3f),
 						ProjectileID.ShadowBeamHostile, NPC.damage / 4, 0f, Main.myPlayer);
-					Projectile.NewProjectile(NPC.GetSource_FromAI(), NPC.Center, fireDir.RotatedBy(-0.3f),
+					WizardingBossAttackVisuals.SpawnProjectile(WizardBossAttackStyle.DementorKing, NPC.GetSource_FromAI(), NPC.Center, fireDir.RotatedBy(-0.3f),
 						ProjectileID.ShadowBeamHostile, NPC.damage / 4, 0f, Main.myPlayer);
 				}
 
@@ -319,7 +333,7 @@ namespace WizardingWorld.Content.NPCs.Bosses.DementorKing
 				AttackTimer = 0;
 				Vector2 fireDir = (player.Center - NPC.Center).SafeNormalize(Vector2.UnitY) * 14f;
 				fireDir = fireDir.RotatedByRandom(MathHelper.ToRadians(15));
-				Projectile.NewProjectile(NPC.GetSource_FromAI(), NPC.Center, fireDir,
+				WizardingBossAttackVisuals.SpawnProjectile(WizardBossAttackStyle.DementorKing, NPC.GetSource_FromAI(), NPC.Center, fireDir,
 					ProjectileID.ShadowBeamHostile, NPC.damage / 3, 0f, Main.myPlayer);
 			}
 

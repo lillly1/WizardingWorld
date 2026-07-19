@@ -35,7 +35,7 @@ namespace WizardingWorld.Content.NPCs.Bosses.BartyCrouch
 
 		public override void SetStaticDefaults()
 		{
-			Main.npcFrameCount[Type] = 6;
+			Main.npcFrameCount[Type] = 8;
 			NPCID.Sets.MPAllowedEnemies[Type] = true;
 			NPCID.Sets.BossBestiaryPriority.Add(Type);
 			NPCID.Sets.SpecificDebuffImmunity[Type][BuffID.Poisoned] = true;
@@ -46,8 +46,8 @@ namespace WizardingWorld.Content.NPCs.Bosses.BartyCrouch
 
 		public override void SetDefaults()
 		{
-			NPC.width = 40;
-			NPC.height = 56;
+			NPC.width = 46;
+			NPC.height = 72;
 			NPC.damage = 65;
 			NPC.defense = 28;
 			NPC.lifeMax = 30000;
@@ -121,6 +121,20 @@ namespace WizardingWorld.Content.NPCs.Bosses.BartyCrouch
 		}
 
 		/// <summary>Phase 1 — Disguised as "Moody". Walks on ground, fires bolts, drinks flask.</summary>
+		public override void FindFrame(int frameHeight)
+		{
+			NPC.frameCounter++;
+
+			if (NPC.frameCounter >= (Phase >= 1 ? 6 : 8))
+			{
+				NPC.frameCounter = 0;
+				NPC.frame.Y += frameHeight;
+
+				if (NPC.frame.Y >= frameHeight * Main.npcFrameCount[Type])
+					NPC.frame.Y = 0;
+			}
+		}
+
 		private void DoPhase1_Disguise(Player player)
 		{
 			AttackTimer++;
@@ -138,7 +152,7 @@ namespace WizardingWorld.Content.NPCs.Bosses.BartyCrouch
 			{
 				AttackTimer = 0;
 				Vector2 fireDir = (player.Center - NPC.Center).SafeNormalize(Vector2.UnitY) * 10f;
-				Projectile.NewProjectile(NPC.GetSource_FromAI(), NPC.Center, fireDir,
+				WizardingBossAttackVisuals.SpawnProjectile(WizardBossAttackStyle.BartyCrouch, NPC.GetSource_FromAI(), NPC.Center, fireDir,
 					ProjectileID.CursedFlameHostile, NPC.damage / 3, 0f, Main.myPlayer);
 				SoundEngine.PlaySound(SoundID.Item8, NPC.Center);
 			}
@@ -219,7 +233,7 @@ namespace WizardingWorld.Content.NPCs.Bosses.BartyCrouch
 				AttackTimer = 0;
 				Vector2 fireDir = (player.Center - NPC.Center).SafeNormalize(Vector2.UnitY) * 13f;
 				int projType = Main.rand.NextBool() ? ProjectileID.CursedFlameHostile : ProjectileID.ShadowBeamHostile;
-				Projectile.NewProjectile(NPC.GetSource_FromAI(), NPC.Center, fireDir,
+				WizardingBossAttackVisuals.SpawnProjectile(WizardBossAttackStyle.BartyCrouch, NPC.GetSource_FromAI(), NPC.Center, fireDir,
 					projType, NPC.damage / 3, 0f, Main.myPlayer);
 			}
 
@@ -231,7 +245,7 @@ namespace WizardingWorld.Content.NPCs.Bosses.BartyCrouch
 				{
 					Vector2 fireDir = (player.Center - NPC.Center).SafeNormalize(Vector2.UnitY) * 11f;
 					fireDir = fireDir.RotatedBy(MathHelper.ToRadians(i * 15));
-					Projectile.NewProjectile(NPC.GetSource_FromAI(), NPC.Center, fireDir,
+					WizardingBossAttackVisuals.SpawnProjectile(WizardBossAttackStyle.BartyCrouch, NPC.GetSource_FromAI(), NPC.Center, fireDir,
 						ProjectileID.ShadowBeamHostile, NPC.damage / 3, 0f, Main.myPlayer);
 				}
 				SoundEngine.PlaySound(SoundID.Item103, NPC.Center);
@@ -271,7 +285,7 @@ namespace WizardingWorld.Content.NPCs.Bosses.BartyCrouch
 				for (int i = -2; i <= 2; i++)
 				{
 					Vector2 spreadDir = baseDir.RotatedBy(MathHelper.ToRadians(i * 10));
-					Projectile.NewProjectile(NPC.GetSource_FromAI(), NPC.Center, spreadDir,
+					WizardingBossAttackVisuals.SpawnProjectile(WizardBossAttackStyle.BartyCrouch, NPC.GetSource_FromAI(), NPC.Center, spreadDir,
 						ProjectileID.CursedFlameHostile, NPC.damage / 3, 0f, Main.myPlayer);
 				}
 			}
